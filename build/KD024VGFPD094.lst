@@ -1,0 +1,2340 @@
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTKI4ZU.s 			page 1
+
+
+   1              		.cpu cortex-m7
+   2              		.arch armv7e-m
+   3              		.fpu fpv5-d16
+   4              		.eabi_attribute 28, 1
+   5              		.eabi_attribute 20, 1
+   6              		.eabi_attribute 21, 1
+   7              		.eabi_attribute 23, 3
+   8              		.eabi_attribute 24, 1
+   9              		.eabi_attribute 25, 1
+  10              		.eabi_attribute 26, 1
+  11              		.eabi_attribute 30, 1
+  12              		.eabi_attribute 34, 1
+  13              		.eabi_attribute 18, 4
+  14              		.file	"KD024VGFPD094.c"
+  15              		.text
+  16              	.Ltext0:
+  17              		.cfi_sections	.debug_frame
+  18              		.section	.text.read_data,"ax",%progbits
+  19              		.align	1
+  20              		.global	read_data
+  21              		.syntax unified
+  22              		.thumb
+  23              		.thumb_func
+  25              	read_data:
+  26              	.LVL0:
+  27              	.LFB147:
+  28              		.file 1 "Core/Src/KD024VGFPD094.c"
+   1:Core/Src/KD024VGFPD094.c **** #include "KD024VGFPD094.h"
+   2:Core/Src/KD024VGFPD094.c **** #include <stdarg.h>
+   3:Core/Src/KD024VGFPD094.c **** // 读取SDO数据
+   4:Core/Src/KD024VGFPD094.c **** void read_data(unsigned char y, unsigned char *readValue)
+   5:Core/Src/KD024VGFPD094.c **** {
+  29              		.loc 1 5 1 view -0
+  30              		.cfi_startproc
+  31              		@ args = 0, pretend = 0, frame = 0
+  32              		@ frame_needed = 0, uses_anonymous_args = 0
+  33              		.loc 1 5 1 is_stmt 0 view .LVU1
+  34 0000 F8B5     		push	{r3, r4, r5, r6, r7, lr}
+  35              		.cfi_def_cfa_offset 24
+  36              		.cfi_offset 3, -24
+  37              		.cfi_offset 4, -20
+  38              		.cfi_offset 5, -16
+  39              		.cfi_offset 6, -12
+  40              		.cfi_offset 7, -8
+  41              		.cfi_offset 14, -4
+  42 0002 0446     		mov	r4, r0
+  43 0004 0F46     		mov	r7, r1
+   6:Core/Src/KD024VGFPD094.c ****     unsigned char j;
+  44              		.loc 1 6 5 is_stmt 1 view .LVU2
+   7:Core/Src/KD024VGFPD094.c ****     unsigned char data = 0;
+  45              		.loc 1 7 5 view .LVU3
+  46              	.LVL1:
+   8:Core/Src/KD024VGFPD094.c **** 
+   9:Core/Src/KD024VGFPD094.c ****     unsigned char i;
+  47              		.loc 1 9 5 view .LVU4
+  10:Core/Src/KD024VGFPD094.c **** 
+  11:Core/Src/KD024VGFPD094.c ****     HAL_GPIO_WritePin(CSB_GPIO_Port, CSB_Pin, GPIO_PIN_RESET);   // 使能CSB
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTKI4ZU.s 			page 2
+
+
+  48              		.loc 1 11 5 view .LVU5
+  49 0006 364D     		ldr	r5, .L15
+  50 0008 0022     		movs	r2, #0
+  51 000a 1021     		movs	r1, #16
+  52              	.LVL2:
+  53              		.loc 1 11 5 is_stmt 0 view .LVU6
+  54 000c 2846     		mov	r0, r5
+  55              	.LVL3:
+  56              		.loc 1 11 5 view .LVU7
+  57 000e FFF7FEFF 		bl	HAL_GPIO_WritePin
+  58              	.LVL4:
+  12:Core/Src/KD024VGFPD094.c ****     HAL_GPIO_WritePin(SCLB_GPIO_Port, SCLB_Pin, GPIO_PIN_RESET); // 开始时钟为低
+  59              		.loc 1 12 5 is_stmt 1 view .LVU8
+  60 0012 0022     		movs	r2, #0
+  61 0014 2021     		movs	r1, #32
+  62 0016 2846     		mov	r0, r5
+  63 0018 FFF7FEFF 		bl	HAL_GPIO_WritePin
+  64              	.LVL5:
+  13:Core/Src/KD024VGFPD094.c ****     HAL_GPIO_WritePin(SDI_GPIO_Port, SDI_Pin, GPIO_PIN_RESET);   // D/C为低，表示写命令
+  65              		.loc 1 13 5 view .LVU9
+  66 001c 0022     		movs	r2, #0
+  67 001e 8021     		movs	r1, #128
+  68 0020 2846     		mov	r0, r5
+  69 0022 FFF7FEFF 		bl	HAL_GPIO_WritePin
+  70              	.LVL6:
+  14:Core/Src/KD024VGFPD094.c ****     HAL_GPIO_WritePin(SCLB_GPIO_Port, SCLB_Pin, GPIO_PIN_SET);   // 时钟上升沿
+  71              		.loc 1 14 5 view .LVU10
+  72 0026 0122     		movs	r2, #1
+  73 0028 2021     		movs	r1, #32
+  74 002a 2846     		mov	r0, r5
+  75 002c FFF7FEFF 		bl	HAL_GPIO_WritePin
+  76              	.LVL7:
+  15:Core/Src/KD024VGFPD094.c **** 
+  16:Core/Src/KD024VGFPD094.c ****     for (i = 0; i < 8; i++)
+  77              		.loc 1 16 5 view .LVU11
+  78              		.loc 1 16 12 is_stmt 0 view .LVU12
+  79 0030 0025     		movs	r5, #0
+  80              		.loc 1 16 5 view .LVU13
+  81 0032 0DE0     		b	.L2
+  82              	.LVL8:
+  83              	.L12:
+  17:Core/Src/KD024VGFPD094.c ****     {
+  18:Core/Src/KD024VGFPD094.c ****         HAL_GPIO_WritePin(SCLB_GPIO_Port, SCLB_Pin, GPIO_PIN_RESET); // 下降沿准备数据
+  19:Core/Src/KD024VGFPD094.c ****         HAL_GPIO_WritePin(CSB_GPIO_Port, CSB_Pin, GPIO_PIN_RESET);
+  20:Core/Src/KD024VGFPD094.c **** 
+  21:Core/Src/KD024VGFPD094.c ****         if (y & 0x80)
+  22:Core/Src/KD024VGFPD094.c ****             HAL_GPIO_WritePin(SDI_GPIO_Port, SDI_Pin, GPIO_PIN_SET);
+  84              		.loc 1 22 13 is_stmt 1 view .LVU14
+  85 0034 0122     		movs	r2, #1
+  86 0036 8021     		movs	r1, #128
+  87 0038 3046     		mov	r0, r6
+  88 003a FFF7FEFF 		bl	HAL_GPIO_WritePin
+  89              	.LVL9:
+  90              	.L4:
+  23:Core/Src/KD024VGFPD094.c ****         else
+  24:Core/Src/KD024VGFPD094.c ****             HAL_GPIO_WritePin(SDI_GPIO_Port, SDI_Pin, GPIO_PIN_RESET);
+  25:Core/Src/KD024VGFPD094.c **** 
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTKI4ZU.s 			page 3
+
+
+  26:Core/Src/KD024VGFPD094.c ****         HAL_GPIO_WritePin(SCLB_GPIO_Port, SCLB_Pin, GPIO_PIN_SET); // 上升沿发送数据
+  91              		.loc 1 26 9 discriminator 2 view .LVU15
+  92 003e 0122     		movs	r2, #1
+  93 0040 2021     		movs	r1, #32
+  94 0042 2748     		ldr	r0, .L15
+  95 0044 FFF7FEFF 		bl	HAL_GPIO_WritePin
+  96              	.LVL10:
+  27:Core/Src/KD024VGFPD094.c **** 
+  28:Core/Src/KD024VGFPD094.c ****         y = y << 1; // 准备下一个比特
+  97              		.loc 1 28 9 discriminator 2 view .LVU16
+  98              		.loc 1 28 11 is_stmt 0 discriminator 2 view .LVU17
+  99 0048 6400     		lsls	r4, r4, #1
+ 100              	.LVL11:
+ 101              		.loc 1 28 11 discriminator 2 view .LVU18
+ 102 004a E4B2     		uxtb	r4, r4
+ 103              	.LVL12:
+  16:Core/Src/KD024VGFPD094.c ****     {
+ 104              		.loc 1 16 24 is_stmt 1 discriminator 2 view .LVU19
+  16:Core/Src/KD024VGFPD094.c ****     {
+ 105              		.loc 1 16 25 is_stmt 0 discriminator 2 view .LVU20
+ 106 004c 0135     		adds	r5, r5, #1
+ 107              	.LVL13:
+  16:Core/Src/KD024VGFPD094.c ****     {
+ 108              		.loc 1 16 25 discriminator 2 view .LVU21
+ 109 004e EDB2     		uxtb	r5, r5
+ 110              	.LVL14:
+ 111              	.L2:
+  16:Core/Src/KD024VGFPD094.c ****     {
+ 112              		.loc 1 16 17 is_stmt 1 discriminator 1 view .LVU22
+  16:Core/Src/KD024VGFPD094.c ****     {
+ 113              		.loc 1 16 5 is_stmt 0 discriminator 1 view .LVU23
+ 114 0050 072D     		cmp	r5, #7
+ 115 0052 13D8     		bhi	.L11
+  18:Core/Src/KD024VGFPD094.c ****         HAL_GPIO_WritePin(CSB_GPIO_Port, CSB_Pin, GPIO_PIN_RESET);
+ 116              		.loc 1 18 9 is_stmt 1 view .LVU24
+ 117 0054 224E     		ldr	r6, .L15
+ 118 0056 0022     		movs	r2, #0
+ 119 0058 2021     		movs	r1, #32
+ 120 005a 3046     		mov	r0, r6
+ 121 005c FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 122              	.LVL15:
+  19:Core/Src/KD024VGFPD094.c **** 
+ 123              		.loc 1 19 9 view .LVU25
+ 124 0060 0022     		movs	r2, #0
+ 125 0062 1021     		movs	r1, #16
+ 126 0064 3046     		mov	r0, r6
+ 127 0066 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 128              	.LVL16:
+  21:Core/Src/KD024VGFPD094.c ****             HAL_GPIO_WritePin(SDI_GPIO_Port, SDI_Pin, GPIO_PIN_SET);
+ 129              		.loc 1 21 9 view .LVU26
+  21:Core/Src/KD024VGFPD094.c ****             HAL_GPIO_WritePin(SDI_GPIO_Port, SDI_Pin, GPIO_PIN_SET);
+ 130              		.loc 1 21 12 is_stmt 0 view .LVU27
+ 131 006a 14F0800F 		tst	r4, #128
+ 132 006e E1D1     		bne	.L12
+  24:Core/Src/KD024VGFPD094.c **** 
+ 133              		.loc 1 24 13 is_stmt 1 view .LVU28
+ 134 0070 0022     		movs	r2, #0
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTKI4ZU.s 			page 4
+
+
+ 135 0072 8021     		movs	r1, #128
+ 136 0074 1A48     		ldr	r0, .L15
+ 137 0076 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 138              	.LVL17:
+ 139 007a E0E7     		b	.L4
+ 140              	.L11:
+   7:Core/Src/KD024VGFPD094.c **** 
+ 141              		.loc 1 7 19 is_stmt 0 view .LVU29
+ 142 007c 0026     		movs	r6, #0
+  29:Core/Src/KD024VGFPD094.c ****     }
+  30:Core/Src/KD024VGFPD094.c **** 
+  31:Core/Src/KD024VGFPD094.c ****     // 给25个SCL时钟信号，每个时钟信号的上升沿读取SDO
+  32:Core/Src/KD024VGFPD094.c ****     for (j = 0; j < 25; j++)
+ 143              		.loc 1 32 12 view .LVU30
+ 144 007e 3446     		mov	r4, r6
+ 145              	.LVL18:
+ 146              		.loc 1 32 12 view .LVU31
+ 147 0080 07E0     		b	.L6
+ 148              	.LVL19:
+ 149              	.L14:
+  33:Core/Src/KD024VGFPD094.c ****     {
+  34:Core/Src/KD024VGFPD094.c ****         HAL_GPIO_WritePin(CSB_GPIO_Port, CSB_Pin, GPIO_PIN_RESET);
+  35:Core/Src/KD024VGFPD094.c **** 
+  36:Core/Src/KD024VGFPD094.c ****         // 产生时钟下降沿
+  37:Core/Src/KD024VGFPD094.c ****         HAL_GPIO_WritePin(SCLB_GPIO_Port, SCLB_Pin, GPIO_PIN_RESET);
+  38:Core/Src/KD024VGFPD094.c ****         // 微小延迟, 如果需要的话
+  39:Core/Src/KD024VGFPD094.c ****         // __NOP(); 或者任何合适的延迟函数
+  40:Core/Src/KD024VGFPD094.c **** 
+  41:Core/Src/KD024VGFPD094.c ****         // 产生时钟上升沿
+  42:Core/Src/KD024VGFPD094.c ****         HAL_GPIO_WritePin(SCLB_GPIO_Port, SCLB_Pin, GPIO_PIN_SET);
+  43:Core/Src/KD024VGFPD094.c **** 
+  44:Core/Src/KD024VGFPD094.c ****         // 在时钟线的上升沿读取SDO数据
+  45:Core/Src/KD024VGFPD094.c ****         if (HAL_GPIO_ReadPin(SDO_GPIO_Port, SDO_Pin) == GPIO_PIN_SET)
+  46:Core/Src/KD024VGFPD094.c ****         {
+  47:Core/Src/KD024VGFPD094.c ****             // 如果读到的是高电平，则当前位设置为1
+  48:Core/Src/KD024VGFPD094.c ****             data |= (1 << (24 - j));
+ 150              		.loc 1 48 13 is_stmt 1 view .LVU32
+ 151              		.loc 1 48 31 is_stmt 0 view .LVU33
+ 152 0082 C4F11802 		rsb	r2, r4, #24
+ 153              		.loc 1 48 24 view .LVU34
+ 154 0086 0123     		movs	r3, #1
+ 155 0088 9340     		lsls	r3, r3, r2
+ 156              		.loc 1 48 18 view .LVU35
+ 157 008a 1E43     		orrs	r6, r6, r3
+ 158              	.LVL20:
+ 159              		.loc 1 48 18 view .LVU36
+ 160 008c F6B2     		uxtb	r6, r6
+ 161              	.LVL21:
+ 162              	.L8:
+  32:Core/Src/KD024VGFPD094.c ****     {
+ 163              		.loc 1 32 25 is_stmt 1 discriminator 2 view .LVU37
+  32:Core/Src/KD024VGFPD094.c ****     {
+ 164              		.loc 1 32 26 is_stmt 0 discriminator 2 view .LVU38
+ 165 008e 0134     		adds	r4, r4, #1
+ 166              	.LVL22:
+  32:Core/Src/KD024VGFPD094.c ****     {
+ 167              		.loc 1 32 26 discriminator 2 view .LVU39
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTKI4ZU.s 			page 5
+
+
+ 168 0090 E4B2     		uxtb	r4, r4
+ 169              	.LVL23:
+ 170              	.L6:
+  32:Core/Src/KD024VGFPD094.c ****     {
+ 171              		.loc 1 32 17 is_stmt 1 discriminator 1 view .LVU40
+  32:Core/Src/KD024VGFPD094.c ****     {
+ 172              		.loc 1 32 5 is_stmt 0 discriminator 1 view .LVU41
+ 173 0092 182C     		cmp	r4, #24
+ 174 0094 1CD8     		bhi	.L13
+  34:Core/Src/KD024VGFPD094.c **** 
+ 175              		.loc 1 34 9 is_stmt 1 view .LVU42
+ 176 0096 124D     		ldr	r5, .L15
+ 177 0098 0022     		movs	r2, #0
+ 178 009a 1021     		movs	r1, #16
+ 179 009c 2846     		mov	r0, r5
+ 180 009e FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 181              	.LVL24:
+  37:Core/Src/KD024VGFPD094.c ****         // 微小延迟, 如果需要的话
+ 182              		.loc 1 37 9 view .LVU43
+ 183 00a2 0022     		movs	r2, #0
+ 184 00a4 2021     		movs	r1, #32
+ 185 00a6 2846     		mov	r0, r5
+ 186 00a8 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 187              	.LVL25:
+  42:Core/Src/KD024VGFPD094.c **** 
+ 188              		.loc 1 42 9 view .LVU44
+ 189 00ac 0122     		movs	r2, #1
+ 190 00ae 2021     		movs	r1, #32
+ 191 00b0 2846     		mov	r0, r5
+ 192 00b2 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 193              	.LVL26:
+  45:Core/Src/KD024VGFPD094.c ****         {
+ 194              		.loc 1 45 9 view .LVU45
+  45:Core/Src/KD024VGFPD094.c ****         {
+ 195              		.loc 1 45 13 is_stmt 0 view .LVU46
+ 196 00b6 4021     		movs	r1, #64
+ 197 00b8 2846     		mov	r0, r5
+ 198 00ba FFF7FEFF 		bl	HAL_GPIO_ReadPin
+ 199              	.LVL27:
+  45:Core/Src/KD024VGFPD094.c ****         {
+ 200              		.loc 1 45 12 view .LVU47
+ 201 00be 0128     		cmp	r0, #1
+ 202 00c0 DFD0     		beq	.L14
+  49:Core/Src/KD024VGFPD094.c ****         }
+  50:Core/Src/KD024VGFPD094.c ****         else
+  51:Core/Src/KD024VGFPD094.c ****         {
+  52:Core/Src/KD024VGFPD094.c ****             // 如果读到的是低电平，则当前位保持为0，这一步其实可以省略�
+  53:Core/Src/KD024VGFPD094.c ****             data &= ~(1 << (24 - j));
+ 203              		.loc 1 53 13 is_stmt 1 view .LVU48
+ 204              		.loc 1 53 32 is_stmt 0 view .LVU49
+ 205 00c2 C4F11802 		rsb	r2, r4, #24
+ 206              		.loc 1 53 25 view .LVU50
+ 207 00c6 0123     		movs	r3, #1
+ 208 00c8 9340     		lsls	r3, r3, r2
+ 209              		.loc 1 53 18 view .LVU51
+ 210 00ca 26EA0306 		bic	r6, r6, r3
+ 211              	.LVL28:
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTKI4ZU.s 			page 6
+
+
+ 212              		.loc 1 53 18 view .LVU52
+ 213 00ce DEE7     		b	.L8
+ 214              	.L13:
+  54:Core/Src/KD024VGFPD094.c ****         }
+  55:Core/Src/KD024VGFPD094.c **** 
+  56:Core/Src/KD024VGFPD094.c ****         // 微小延迟, 如果需要的话
+  57:Core/Src/KD024VGFPD094.c ****         // __NOP(); 或者任何合适的延迟函数
+  58:Core/Src/KD024VGFPD094.c ****     }
+  59:Core/Src/KD024VGFPD094.c **** 
+  60:Core/Src/KD024VGFPD094.c ****     // 禁用片选信号
+  61:Core/Src/KD024VGFPD094.c ****     HAL_GPIO_WritePin(CSB_GPIO_Port, CSB_Pin, GPIO_PIN_SET);
+ 215              		.loc 1 61 5 is_stmt 1 view .LVU53
+ 216 00d0 0122     		movs	r2, #1
+ 217 00d2 1021     		movs	r1, #16
+ 218 00d4 0248     		ldr	r0, .L15
+ 219 00d6 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 220              	.LVL29:
+  62:Core/Src/KD024VGFPD094.c **** 
+  63:Core/Src/KD024VGFPD094.c ****     // 将读到的数据存储到提供的地址
+  64:Core/Src/KD024VGFPD094.c ****     *readValue = data;
+ 221              		.loc 1 64 5 view .LVU54
+ 222              		.loc 1 64 16 is_stmt 0 view .LVU55
+ 223 00da 3E70     		strb	r6, [r7]
+  65:Core/Src/KD024VGFPD094.c **** }
+ 224              		.loc 1 65 1 view .LVU56
+ 225 00dc F8BD     		pop	{r3, r4, r5, r6, r7, pc}
+ 226              	.LVL30:
+ 227              	.L16:
+ 228              		.loc 1 65 1 view .LVU57
+ 229 00de 00BF     		.align	2
+ 230              	.L15:
+ 231 00e0 00000258 		.word	1476526080
+ 232              		.cfi_endproc
+ 233              	.LFE147:
+ 235              		.section	.text.write_command,"ax",%progbits
+ 236              		.align	1
+ 237              		.global	write_command
+ 238              		.syntax unified
+ 239              		.thumb
+ 240              		.thumb_func
+ 242              	write_command:
+ 243              	.LVL31:
+ 244              	.LFB148:
+  66:Core/Src/KD024VGFPD094.c **** 
+  67:Core/Src/KD024VGFPD094.c **** void write_command(unsigned char y)
+  68:Core/Src/KD024VGFPD094.c **** {
+ 245              		.loc 1 68 1 is_stmt 1 view -0
+ 246              		.cfi_startproc
+ 247              		@ args = 0, pretend = 0, frame = 0
+ 248              		@ frame_needed = 0, uses_anonymous_args = 0
+ 249              		.loc 1 68 1 is_stmt 0 view .LVU59
+ 250 0000 38B5     		push	{r3, r4, r5, lr}
+ 251              		.cfi_def_cfa_offset 16
+ 252              		.cfi_offset 3, -16
+ 253              		.cfi_offset 4, -12
+ 254              		.cfi_offset 5, -8
+ 255              		.cfi_offset 14, -4
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTKI4ZU.s 			page 7
+
+
+ 256 0002 0446     		mov	r4, r0
+  69:Core/Src/KD024VGFPD094.c ****     unsigned char i;
+ 257              		.loc 1 69 5 is_stmt 1 view .LVU60
+  70:Core/Src/KD024VGFPD094.c **** 
+  71:Core/Src/KD024VGFPD094.c ****     HAL_GPIO_WritePin(CSB_GPIO_Port, CSB_Pin, GPIO_PIN_RESET);   // 使能CSB
+ 258              		.loc 1 71 5 view .LVU61
+ 259 0004 1D4D     		ldr	r5, .L24
+ 260 0006 0022     		movs	r2, #0
+ 261 0008 1021     		movs	r1, #16
+ 262 000a 2846     		mov	r0, r5
+ 263              	.LVL32:
+ 264              		.loc 1 71 5 is_stmt 0 view .LVU62
+ 265 000c FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 266              	.LVL33:
+  72:Core/Src/KD024VGFPD094.c ****     HAL_GPIO_WritePin(SCLB_GPIO_Port, SCLB_Pin, GPIO_PIN_RESET); // 开始时钟为低
+ 267              		.loc 1 72 5 is_stmt 1 view .LVU63
+ 268 0010 0022     		movs	r2, #0
+ 269 0012 2021     		movs	r1, #32
+ 270 0014 2846     		mov	r0, r5
+ 271 0016 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 272              	.LVL34:
+  73:Core/Src/KD024VGFPD094.c ****     HAL_GPIO_WritePin(SDI_GPIO_Port, SDI_Pin, GPIO_PIN_RESET);   // D/C为低，表示写命令
+ 273              		.loc 1 73 5 view .LVU64
+ 274 001a 0022     		movs	r2, #0
+ 275 001c 8021     		movs	r1, #128
+ 276 001e 2846     		mov	r0, r5
+ 277 0020 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 278              	.LVL35:
+  74:Core/Src/KD024VGFPD094.c ****     HAL_GPIO_WritePin(SCLB_GPIO_Port, SCLB_Pin, GPIO_PIN_SET);   // 时钟上升沿
+ 279              		.loc 1 74 5 view .LVU65
+ 280 0024 0122     		movs	r2, #1
+ 281 0026 2021     		movs	r1, #32
+ 282 0028 2846     		mov	r0, r5
+ 283 002a FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 284              	.LVL36:
+  75:Core/Src/KD024VGFPD094.c **** 
+  76:Core/Src/KD024VGFPD094.c ****     for (i = 0; i < 8; i++)
+ 285              		.loc 1 76 5 view .LVU66
+ 286              		.loc 1 76 12 is_stmt 0 view .LVU67
+ 287 002e 0025     		movs	r5, #0
+ 288              		.loc 1 76 5 view .LVU68
+ 289 0030 0DE0     		b	.L18
+ 290              	.LVL37:
+ 291              	.L19:
+  77:Core/Src/KD024VGFPD094.c ****     {
+  78:Core/Src/KD024VGFPD094.c ****         HAL_GPIO_WritePin(SCLB_GPIO_Port, SCLB_Pin, GPIO_PIN_RESET); // 下降沿准备数据
+  79:Core/Src/KD024VGFPD094.c ****         if (y & 0x80)
+  80:Core/Src/KD024VGFPD094.c ****             HAL_GPIO_WritePin(SDI_GPIO_Port, SDI_Pin, GPIO_PIN_SET);
+  81:Core/Src/KD024VGFPD094.c ****         else
+  82:Core/Src/KD024VGFPD094.c ****             HAL_GPIO_WritePin(SDI_GPIO_Port, SDI_Pin, GPIO_PIN_RESET);
+ 292              		.loc 1 82 13 is_stmt 1 view .LVU69
+ 293 0032 0022     		movs	r2, #0
+ 294 0034 8021     		movs	r1, #128
+ 295 0036 1148     		ldr	r0, .L24
+ 296 0038 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 297              	.LVL38:
+ 298              	.L20:
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTKI4ZU.s 			page 8
+
+
+  83:Core/Src/KD024VGFPD094.c **** 
+  84:Core/Src/KD024VGFPD094.c ****         HAL_GPIO_WritePin(SCLB_GPIO_Port, SCLB_Pin, GPIO_PIN_SET); // 上升沿发送数据
+ 299              		.loc 1 84 9 discriminator 2 view .LVU70
+ 300 003c 0122     		movs	r2, #1
+ 301 003e 2021     		movs	r1, #32
+ 302 0040 0E48     		ldr	r0, .L24
+ 303 0042 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 304              	.LVL39:
+  85:Core/Src/KD024VGFPD094.c **** 
+  86:Core/Src/KD024VGFPD094.c ****         y = y << 1; // 准备下一个比特
+ 305              		.loc 1 86 9 discriminator 2 view .LVU71
+ 306              		.loc 1 86 11 is_stmt 0 discriminator 2 view .LVU72
+ 307 0046 6400     		lsls	r4, r4, #1
+ 308              	.LVL40:
+ 309              		.loc 1 86 11 discriminator 2 view .LVU73
+ 310 0048 E4B2     		uxtb	r4, r4
+ 311              	.LVL41:
+  76:Core/Src/KD024VGFPD094.c ****     {
+ 312              		.loc 1 76 24 is_stmt 1 discriminator 2 view .LVU74
+  76:Core/Src/KD024VGFPD094.c ****     {
+ 313              		.loc 1 76 25 is_stmt 0 discriminator 2 view .LVU75
+ 314 004a 0135     		adds	r5, r5, #1
+ 315              	.LVL42:
+  76:Core/Src/KD024VGFPD094.c ****     {
+ 316              		.loc 1 76 25 discriminator 2 view .LVU76
+ 317 004c EDB2     		uxtb	r5, r5
+ 318              	.LVL43:
+ 319              	.L18:
+  76:Core/Src/KD024VGFPD094.c ****     {
+ 320              		.loc 1 76 17 is_stmt 1 discriminator 1 view .LVU77
+  76:Core/Src/KD024VGFPD094.c ****     {
+ 321              		.loc 1 76 5 is_stmt 0 discriminator 1 view .LVU78
+ 322 004e 072D     		cmp	r5, #7
+ 323 0050 0DD8     		bhi	.L23
+  78:Core/Src/KD024VGFPD094.c ****         if (y & 0x80)
+ 324              		.loc 1 78 9 is_stmt 1 view .LVU79
+ 325 0052 0022     		movs	r2, #0
+ 326 0054 2021     		movs	r1, #32
+ 327 0056 0948     		ldr	r0, .L24
+ 328 0058 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 329              	.LVL44:
+  79:Core/Src/KD024VGFPD094.c ****             HAL_GPIO_WritePin(SDI_GPIO_Port, SDI_Pin, GPIO_PIN_SET);
+ 330              		.loc 1 79 9 view .LVU80
+  79:Core/Src/KD024VGFPD094.c ****             HAL_GPIO_WritePin(SDI_GPIO_Port, SDI_Pin, GPIO_PIN_SET);
+ 331              		.loc 1 79 12 is_stmt 0 view .LVU81
+ 332 005c 14F0800F 		tst	r4, #128
+ 333 0060 E7D0     		beq	.L19
+  80:Core/Src/KD024VGFPD094.c ****         else
+ 334              		.loc 1 80 13 is_stmt 1 view .LVU82
+ 335 0062 0122     		movs	r2, #1
+ 336 0064 8021     		movs	r1, #128
+ 337 0066 0548     		ldr	r0, .L24
+ 338 0068 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 339              	.LVL45:
+ 340 006c E6E7     		b	.L20
+ 341              	.L23:
+  87:Core/Src/KD024VGFPD094.c ****     }
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTKI4ZU.s 			page 9
+
+
+  88:Core/Src/KD024VGFPD094.c **** 
+  89:Core/Src/KD024VGFPD094.c ****     HAL_GPIO_WritePin(CSB_GPIO_Port, CSB_Pin, GPIO_PIN_SET); // 禁用CSB
+ 342              		.loc 1 89 5 view .LVU83
+ 343 006e 0122     		movs	r2, #1
+ 344 0070 1021     		movs	r1, #16
+ 345 0072 0248     		ldr	r0, .L24
+ 346 0074 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 347              	.LVL46:
+  90:Core/Src/KD024VGFPD094.c **** }
+ 348              		.loc 1 90 1 is_stmt 0 view .LVU84
+ 349 0078 38BD     		pop	{r3, r4, r5, pc}
+ 350              	.LVL47:
+ 351              	.L25:
+ 352              		.loc 1 90 1 view .LVU85
+ 353 007a 00BF     		.align	2
+ 354              	.L24:
+ 355 007c 00000258 		.word	1476526080
+ 356              		.cfi_endproc
+ 357              	.LFE148:
+ 359              		.section	.text.write_data,"ax",%progbits
+ 360              		.align	1
+ 361              		.global	write_data
+ 362              		.syntax unified
+ 363              		.thumb
+ 364              		.thumb_func
+ 366              	write_data:
+ 367              	.LVL48:
+ 368              	.LFB149:
+  91:Core/Src/KD024VGFPD094.c **** 
+  92:Core/Src/KD024VGFPD094.c **** // 这个函数发送数据
+  93:Core/Src/KD024VGFPD094.c **** void write_data(unsigned char w)
+  94:Core/Src/KD024VGFPD094.c **** {
+ 369              		.loc 1 94 1 is_stmt 1 view -0
+ 370              		.cfi_startproc
+ 371              		@ args = 0, pretend = 0, frame = 0
+ 372              		@ frame_needed = 0, uses_anonymous_args = 0
+ 373              		.loc 1 94 1 is_stmt 0 view .LVU87
+ 374 0000 38B5     		push	{r3, r4, r5, lr}
+ 375              		.cfi_def_cfa_offset 16
+ 376              		.cfi_offset 3, -16
+ 377              		.cfi_offset 4, -12
+ 378              		.cfi_offset 5, -8
+ 379              		.cfi_offset 14, -4
+ 380 0002 0446     		mov	r4, r0
+  95:Core/Src/KD024VGFPD094.c ****     unsigned char i;
+ 381              		.loc 1 95 5 is_stmt 1 view .LVU88
+  96:Core/Src/KD024VGFPD094.c **** 
+  97:Core/Src/KD024VGFPD094.c ****     HAL_GPIO_WritePin(CSB_GPIO_Port, CSB_Pin, GPIO_PIN_RESET);   // 使能CSB
+ 382              		.loc 1 97 5 view .LVU89
+ 383 0004 1D4D     		ldr	r5, .L33
+ 384 0006 0022     		movs	r2, #0
+ 385 0008 1021     		movs	r1, #16
+ 386 000a 2846     		mov	r0, r5
+ 387              	.LVL49:
+ 388              		.loc 1 97 5 is_stmt 0 view .LVU90
+ 389 000c FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 390              	.LVL50:
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTKI4ZU.s 			page 10
+
+
+  98:Core/Src/KD024VGFPD094.c ****     HAL_GPIO_WritePin(SCLB_GPIO_Port, SCLB_Pin, GPIO_PIN_RESET); // 开始时钟为低
+ 391              		.loc 1 98 5 is_stmt 1 view .LVU91
+ 392 0010 0022     		movs	r2, #0
+ 393 0012 2021     		movs	r1, #32
+ 394 0014 2846     		mov	r0, r5
+ 395 0016 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 396              	.LVL51:
+  99:Core/Src/KD024VGFPD094.c ****     HAL_GPIO_WritePin(SDI_GPIO_Port, SDI_Pin, GPIO_PIN_SET);     // D/C为高，表示写数据
+ 397              		.loc 1 99 5 view .LVU92
+ 398 001a 0122     		movs	r2, #1
+ 399 001c 8021     		movs	r1, #128
+ 400 001e 2846     		mov	r0, r5
+ 401 0020 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 402              	.LVL52:
+ 100:Core/Src/KD024VGFPD094.c ****     HAL_GPIO_WritePin(SCLB_GPIO_Port, SCLB_Pin, GPIO_PIN_SET);   // 时钟上升沿
+ 403              		.loc 1 100 5 view .LVU93
+ 404 0024 0122     		movs	r2, #1
+ 405 0026 2021     		movs	r1, #32
+ 406 0028 2846     		mov	r0, r5
+ 407 002a FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 408              	.LVL53:
+ 101:Core/Src/KD024VGFPD094.c **** 
+ 102:Core/Src/KD024VGFPD094.c ****     for (i = 0; i < 8; i++)
+ 409              		.loc 1 102 5 view .LVU94
+ 410              		.loc 1 102 12 is_stmt 0 view .LVU95
+ 411 002e 0025     		movs	r5, #0
+ 412              		.loc 1 102 5 view .LVU96
+ 413 0030 0DE0     		b	.L27
+ 414              	.LVL54:
+ 415              	.L28:
+ 103:Core/Src/KD024VGFPD094.c ****     {
+ 104:Core/Src/KD024VGFPD094.c ****         HAL_GPIO_WritePin(SCLB_GPIO_Port, SCLB_Pin, GPIO_PIN_RESET); // 下降沿准备数据
+ 105:Core/Src/KD024VGFPD094.c **** 
+ 106:Core/Src/KD024VGFPD094.c ****         if (w & 0x80)
+ 107:Core/Src/KD024VGFPD094.c ****             HAL_GPIO_WritePin(SDI_GPIO_Port, SDI_Pin, GPIO_PIN_SET);
+ 108:Core/Src/KD024VGFPD094.c ****         else
+ 109:Core/Src/KD024VGFPD094.c ****             HAL_GPIO_WritePin(SDI_GPIO_Port, SDI_Pin, GPIO_PIN_RESET);
+ 416              		.loc 1 109 13 is_stmt 1 view .LVU97
+ 417 0032 0022     		movs	r2, #0
+ 418 0034 8021     		movs	r1, #128
+ 419 0036 1148     		ldr	r0, .L33
+ 420 0038 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 421              	.LVL55:
+ 422              	.L29:
+ 110:Core/Src/KD024VGFPD094.c **** 
+ 111:Core/Src/KD024VGFPD094.c ****         HAL_GPIO_WritePin(SCLB_GPIO_Port, SCLB_Pin, GPIO_PIN_SET); // 上升沿发送数据
+ 423              		.loc 1 111 9 discriminator 2 view .LVU98
+ 424 003c 0122     		movs	r2, #1
+ 425 003e 2021     		movs	r1, #32
+ 426 0040 0E48     		ldr	r0, .L33
+ 427 0042 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 428              	.LVL56:
+ 112:Core/Src/KD024VGFPD094.c **** 
+ 113:Core/Src/KD024VGFPD094.c ****         w = w << 1; // 准备下一个比特
+ 429              		.loc 1 113 9 discriminator 2 view .LVU99
+ 430              		.loc 1 113 11 is_stmt 0 discriminator 2 view .LVU100
+ 431 0046 6400     		lsls	r4, r4, #1
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTKI4ZU.s 			page 11
+
+
+ 432              	.LVL57:
+ 433              		.loc 1 113 11 discriminator 2 view .LVU101
+ 434 0048 E4B2     		uxtb	r4, r4
+ 435              	.LVL58:
+ 102:Core/Src/KD024VGFPD094.c ****     {
+ 436              		.loc 1 102 24 is_stmt 1 discriminator 2 view .LVU102
+ 102:Core/Src/KD024VGFPD094.c ****     {
+ 437              		.loc 1 102 25 is_stmt 0 discriminator 2 view .LVU103
+ 438 004a 0135     		adds	r5, r5, #1
+ 439              	.LVL59:
+ 102:Core/Src/KD024VGFPD094.c ****     {
+ 440              		.loc 1 102 25 discriminator 2 view .LVU104
+ 441 004c EDB2     		uxtb	r5, r5
+ 442              	.LVL60:
+ 443              	.L27:
+ 102:Core/Src/KD024VGFPD094.c ****     {
+ 444              		.loc 1 102 17 is_stmt 1 discriminator 1 view .LVU105
+ 102:Core/Src/KD024VGFPD094.c ****     {
+ 445              		.loc 1 102 5 is_stmt 0 discriminator 1 view .LVU106
+ 446 004e 072D     		cmp	r5, #7
+ 447 0050 0DD8     		bhi	.L32
+ 104:Core/Src/KD024VGFPD094.c **** 
+ 448              		.loc 1 104 9 is_stmt 1 view .LVU107
+ 449 0052 0022     		movs	r2, #0
+ 450 0054 2021     		movs	r1, #32
+ 451 0056 0948     		ldr	r0, .L33
+ 452 0058 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 453              	.LVL61:
+ 106:Core/Src/KD024VGFPD094.c ****             HAL_GPIO_WritePin(SDI_GPIO_Port, SDI_Pin, GPIO_PIN_SET);
+ 454              		.loc 1 106 9 view .LVU108
+ 106:Core/Src/KD024VGFPD094.c ****             HAL_GPIO_WritePin(SDI_GPIO_Port, SDI_Pin, GPIO_PIN_SET);
+ 455              		.loc 1 106 12 is_stmt 0 view .LVU109
+ 456 005c 14F0800F 		tst	r4, #128
+ 457 0060 E7D0     		beq	.L28
+ 107:Core/Src/KD024VGFPD094.c ****         else
+ 458              		.loc 1 107 13 is_stmt 1 view .LVU110
+ 459 0062 0122     		movs	r2, #1
+ 460 0064 8021     		movs	r1, #128
+ 461 0066 0548     		ldr	r0, .L33
+ 462 0068 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 463              	.LVL62:
+ 464 006c E6E7     		b	.L29
+ 465              	.L32:
+ 114:Core/Src/KD024VGFPD094.c ****     }
+ 115:Core/Src/KD024VGFPD094.c **** 
+ 116:Core/Src/KD024VGFPD094.c ****     HAL_GPIO_WritePin(CSB_GPIO_Port, CSB_Pin, GPIO_PIN_SET); // 禁用CSB
+ 466              		.loc 1 116 5 view .LVU111
+ 467 006e 0122     		movs	r2, #1
+ 468 0070 1021     		movs	r1, #16
+ 469 0072 0248     		ldr	r0, .L33
+ 470 0074 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 471              	.LVL63:
+ 117:Core/Src/KD024VGFPD094.c **** }
+ 472              		.loc 1 117 1 is_stmt 0 view .LVU112
+ 473 0078 38BD     		pop	{r3, r4, r5, pc}
+ 474              	.LVL64:
+ 475              	.L34:
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTKI4ZU.s 			page 12
+
+
+ 476              		.loc 1 117 1 view .LVU113
+ 477 007a 00BF     		.align	2
+ 478              	.L33:
+ 479 007c 00000258 		.word	1476526080
+ 480              		.cfi_endproc
+ 481              	.LFE149:
+ 483              		.section	.rodata.KD024VGFPD094_init.str1.4,"aMS",%progbits,1
+ 484              		.align	2
+ 485              	.LC0:
+ 486 0000 4C434420 		.ascii	"LCD init done\000"
+ 486      696E6974 
+ 486      20646F6E 
+ 486      6500
+ 487              		.section	.text.KD024VGFPD094_init,"ax",%progbits
+ 488              		.align	1
+ 489              		.global	KD024VGFPD094_init
+ 490              		.syntax unified
+ 491              		.thumb
+ 492              		.thumb_func
+ 494              	KD024VGFPD094_init:
+ 495              	.LFB150:
+ 118:Core/Src/KD024VGFPD094.c **** void KD024VGFPD094_init(void)
+ 119:Core/Src/KD024VGFPD094.c **** {
+ 496              		.loc 1 119 1 is_stmt 1 view -0
+ 497              		.cfi_startproc
+ 498              		@ args = 0, pretend = 0, frame = 0
+ 499              		@ frame_needed = 0, uses_anonymous_args = 0
+ 500 0000 10B5     		push	{r4, lr}
+ 501              		.cfi_def_cfa_offset 8
+ 502              		.cfi_offset 4, -8
+ 503              		.cfi_offset 14, -4
+ 120:Core/Src/KD024VGFPD094.c ****     // res = 1;
+ 121:Core/Src/KD024VGFPD094.c ****     // HAL_GPIO_WritePin(SPI1_RST_GPIO_Port, SPI1_RST_Pin, SET);
+ 122:Core/Src/KD024VGFPD094.c ****     HAL_Delay(1);
+ 504              		.loc 1 122 5 view .LVU115
+ 505 0002 0120     		movs	r0, #1
+ 506 0004 FFF7FEFF 		bl	HAL_Delay
+ 507              	.LVL65:
+ 123:Core/Src/KD024VGFPD094.c ****     // res = 0;
+ 124:Core/Src/KD024VGFPD094.c ****     HAL_GPIO_WritePin(SPI1_RST_GPIO_Port, SPI1_RST_Pin, RESET);
+ 508              		.loc 1 124 5 view .LVU116
+ 509 0008 FD4C     		ldr	r4, .L37
+ 510 000a 0022     		movs	r2, #0
+ 511 000c 0121     		movs	r1, #1
+ 512 000e 2046     		mov	r0, r4
+ 513 0010 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 514              	.LVL66:
+ 125:Core/Src/KD024VGFPD094.c ****     HAL_Delay(10);
+ 515              		.loc 1 125 5 view .LVU117
+ 516 0014 0A20     		movs	r0, #10
+ 517 0016 FFF7FEFF 		bl	HAL_Delay
+ 518              	.LVL67:
+ 126:Core/Src/KD024VGFPD094.c ****     // res = 1;
+ 127:Core/Src/KD024VGFPD094.c ****     HAL_GPIO_WritePin(SPI1_RST_GPIO_Port, SPI1_RST_Pin, SET);
+ 519              		.loc 1 127 5 view .LVU118
+ 520 001a 0122     		movs	r2, #1
+ 521 001c 1146     		mov	r1, r2
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTKI4ZU.s 			page 13
+
+
+ 522 001e 2046     		mov	r0, r4
+ 523 0020 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 524              	.LVL68:
+ 128:Core/Src/KD024VGFPD094.c ****     HAL_Delay(120);
+ 525              		.loc 1 128 5 view .LVU119
+ 526 0024 7820     		movs	r0, #120
+ 527 0026 FFF7FEFF 		bl	HAL_Delay
+ 528              	.LVL69:
+ 129:Core/Src/KD024VGFPD094.c ****     //***************************************************************//LCD SETING
+ 130:Core/Src/KD024VGFPD094.c ****     write_command(0xFF); // PAGE3
+ 529              		.loc 1 130 5 view .LVU120
+ 530 002a FF20     		movs	r0, #255
+ 531 002c FFF7FEFF 		bl	write_command
+ 532              	.LVL70:
+ 131:Core/Src/KD024VGFPD094.c ****     write_data(0x77);
+ 533              		.loc 1 131 5 view .LVU121
+ 534 0030 7720     		movs	r0, #119
+ 535 0032 FFF7FEFF 		bl	write_data
+ 536              	.LVL71:
+ 132:Core/Src/KD024VGFPD094.c ****     write_data(0x01);
+ 537              		.loc 1 132 5 view .LVU122
+ 538 0036 0120     		movs	r0, #1
+ 539 0038 FFF7FEFF 		bl	write_data
+ 540              	.LVL72:
+ 133:Core/Src/KD024VGFPD094.c ****     write_data(0x00);
+ 541              		.loc 1 133 5 view .LVU123
+ 542 003c 0020     		movs	r0, #0
+ 543 003e FFF7FEFF 		bl	write_data
+ 544              	.LVL73:
+ 134:Core/Src/KD024VGFPD094.c ****     write_data(0x00);
+ 545              		.loc 1 134 5 view .LVU124
+ 546 0042 0020     		movs	r0, #0
+ 547 0044 FFF7FEFF 		bl	write_data
+ 548              	.LVL74:
+ 135:Core/Src/KD024VGFPD094.c ****     write_data(0x13);
+ 549              		.loc 1 135 5 view .LVU125
+ 550 0048 1320     		movs	r0, #19
+ 551 004a FFF7FEFF 		bl	write_data
+ 552              	.LVL75:
+ 136:Core/Src/KD024VGFPD094.c **** 
+ 137:Core/Src/KD024VGFPD094.c ****     write_command(0xEF);
+ 553              		.loc 1 137 5 view .LVU126
+ 554 004e EF20     		movs	r0, #239
+ 555 0050 FFF7FEFF 		bl	write_command
+ 556              	.LVL76:
+ 138:Core/Src/KD024VGFPD094.c ****     write_data(0x08);
+ 557              		.loc 1 138 5 view .LVU127
+ 558 0054 0820     		movs	r0, #8
+ 559 0056 FFF7FEFF 		bl	write_data
+ 560              	.LVL77:
+ 139:Core/Src/KD024VGFPD094.c **** 
+ 140:Core/Src/KD024VGFPD094.c ****     write_command(0xFF); // PAGE01
+ 561              		.loc 1 140 5 view .LVU128
+ 562 005a FF20     		movs	r0, #255
+ 563 005c FFF7FEFF 		bl	write_command
+ 564              	.LVL78:
+ 141:Core/Src/KD024VGFPD094.c ****     write_data(0x77);
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTKI4ZU.s 			page 14
+
+
+ 565              		.loc 1 141 5 view .LVU129
+ 566 0060 7720     		movs	r0, #119
+ 567 0062 FFF7FEFF 		bl	write_data
+ 568              	.LVL79:
+ 142:Core/Src/KD024VGFPD094.c ****     write_data(0x01);
+ 569              		.loc 1 142 5 view .LVU130
+ 570 0066 0120     		movs	r0, #1
+ 571 0068 FFF7FEFF 		bl	write_data
+ 572              	.LVL80:
+ 143:Core/Src/KD024VGFPD094.c ****     write_data(0x00);
+ 573              		.loc 1 143 5 view .LVU131
+ 574 006c 0020     		movs	r0, #0
+ 575 006e FFF7FEFF 		bl	write_data
+ 576              	.LVL81:
+ 144:Core/Src/KD024VGFPD094.c ****     write_data(0x00);
+ 577              		.loc 1 144 5 view .LVU132
+ 578 0072 0020     		movs	r0, #0
+ 579 0074 FFF7FEFF 		bl	write_data
+ 580              	.LVL82:
+ 145:Core/Src/KD024VGFPD094.c ****     write_data(0x10);
+ 581              		.loc 1 145 5 view .LVU133
+ 582 0078 1020     		movs	r0, #16
+ 583 007a FFF7FEFF 		bl	write_data
+ 584              	.LVL83:
+ 146:Core/Src/KD024VGFPD094.c **** 
+ 147:Core/Src/KD024VGFPD094.c ****     write_command(0xC0); // Display Line Setting
+ 585              		.loc 1 147 5 view .LVU134
+ 586 007e C020     		movs	r0, #192
+ 587 0080 FFF7FEFF 		bl	write_command
+ 588              	.LVL84:
+ 148:Core/Src/KD024VGFPD094.c ****     write_data(0x4F);
+ 589              		.loc 1 148 5 view .LVU135
+ 590 0084 4F20     		movs	r0, #79
+ 591 0086 FFF7FEFF 		bl	write_data
+ 592              	.LVL85:
+ 149:Core/Src/KD024VGFPD094.c ****     write_data(0x00);
+ 593              		.loc 1 149 5 view .LVU136
+ 594 008a 0020     		movs	r0, #0
+ 595 008c FFF7FEFF 		bl	write_data
+ 596              	.LVL86:
+ 150:Core/Src/KD024VGFPD094.c **** 
+ 151:Core/Src/KD024VGFPD094.c ****     write_command(0xC1); // Porch Control
+ 597              		.loc 1 151 5 view .LVU137
+ 598 0090 C120     		movs	r0, #193
+ 599 0092 FFF7FEFF 		bl	write_command
+ 600              	.LVL87:
+ 152:Core/Src/KD024VGFPD094.c ****     write_data(0x10);
+ 601              		.loc 1 152 5 view .LVU138
+ 602 0096 1020     		movs	r0, #16
+ 603 0098 FFF7FEFF 		bl	write_data
+ 604              	.LVL88:
+ 153:Core/Src/KD024VGFPD094.c ****     write_data(0x0C);
+ 605              		.loc 1 153 5 view .LVU139
+ 606 009c 0C20     		movs	r0, #12
+ 607 009e FFF7FEFF 		bl	write_data
+ 608              	.LVL89:
+ 154:Core/Src/KD024VGFPD094.c **** 
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTKI4ZU.s 			page 15
+
+
+ 155:Core/Src/KD024VGFPD094.c ****     write_command(0xC2); // Inversion set
+ 609              		.loc 1 155 5 view .LVU140
+ 610 00a2 C220     		movs	r0, #194
+ 611 00a4 FFF7FEFF 		bl	write_command
+ 612              	.LVL90:
+ 156:Core/Src/KD024VGFPD094.c ****     write_data(0x01);
+ 613              		.loc 1 156 5 view .LVU141
+ 614 00a8 0120     		movs	r0, #1
+ 615 00aa FFF7FEFF 		bl	write_data
+ 616              	.LVL91:
+ 157:Core/Src/KD024VGFPD094.c ****     write_data(0x14);
+ 617              		.loc 1 157 5 view .LVU142
+ 618 00ae 1420     		movs	r0, #20
+ 619 00b0 FFF7FEFF 		bl	write_data
+ 620              	.LVL92:
+ 158:Core/Src/KD024VGFPD094.c **** 
+ 159:Core/Src/KD024VGFPD094.c ****     write_command(0xCC);
+ 621              		.loc 1 159 5 view .LVU143
+ 622 00b4 CC20     		movs	r0, #204
+ 623 00b6 FFF7FEFF 		bl	write_command
+ 624              	.LVL93:
+ 160:Core/Src/KD024VGFPD094.c ****     write_data(0x10);
+ 625              		.loc 1 160 5 view .LVU144
+ 626 00ba 1020     		movs	r0, #16
+ 627 00bc FFF7FEFF 		bl	write_data
+ 628              	.LVL94:
+ 161:Core/Src/KD024VGFPD094.c **** 
+ 162:Core/Src/KD024VGFPD094.c ****     write_command(0xB0); // Positive Voltage Gamma Control
+ 629              		.loc 1 162 5 view .LVU145
+ 630 00c0 B020     		movs	r0, #176
+ 631 00c2 FFF7FEFF 		bl	write_command
+ 632              	.LVL95:
+ 163:Core/Src/KD024VGFPD094.c ****     write_data(0x00);
+ 633              		.loc 1 163 5 view .LVU146
+ 634 00c6 0020     		movs	r0, #0
+ 635 00c8 FFF7FEFF 		bl	write_data
+ 636              	.LVL96:
+ 164:Core/Src/KD024VGFPD094.c ****     write_data(0x0B);
+ 637              		.loc 1 164 5 view .LVU147
+ 638 00cc 0B20     		movs	r0, #11
+ 639 00ce FFF7FEFF 		bl	write_data
+ 640              	.LVL97:
+ 165:Core/Src/KD024VGFPD094.c ****     write_data(0x13);
+ 641              		.loc 1 165 5 view .LVU148
+ 642 00d2 1320     		movs	r0, #19
+ 643 00d4 FFF7FEFF 		bl	write_data
+ 644              	.LVL98:
+ 166:Core/Src/KD024VGFPD094.c ****     write_data(0x0D);
+ 645              		.loc 1 166 5 view .LVU149
+ 646 00d8 0D20     		movs	r0, #13
+ 647 00da FFF7FEFF 		bl	write_data
+ 648              	.LVL99:
+ 167:Core/Src/KD024VGFPD094.c ****     write_data(0x10);
+ 649              		.loc 1 167 5 view .LVU150
+ 650 00de 1020     		movs	r0, #16
+ 651 00e0 FFF7FEFF 		bl	write_data
+ 652              	.LVL100:
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTKI4ZU.s 			page 16
+
+
+ 168:Core/Src/KD024VGFPD094.c ****     write_data(0x07);
+ 653              		.loc 1 168 5 view .LVU151
+ 654 00e4 0720     		movs	r0, #7
+ 655 00e6 FFF7FEFF 		bl	write_data
+ 656              	.LVL101:
+ 169:Core/Src/KD024VGFPD094.c ****     write_data(0x02);
+ 657              		.loc 1 169 5 view .LVU152
+ 658 00ea 0220     		movs	r0, #2
+ 659 00ec FFF7FEFF 		bl	write_data
+ 660              	.LVL102:
+ 170:Core/Src/KD024VGFPD094.c ****     write_data(0x08);
+ 661              		.loc 1 170 5 view .LVU153
+ 662 00f0 0820     		movs	r0, #8
+ 663 00f2 FFF7FEFF 		bl	write_data
+ 664              	.LVL103:
+ 171:Core/Src/KD024VGFPD094.c ****     write_data(0x07);
+ 665              		.loc 1 171 5 view .LVU154
+ 666 00f6 0720     		movs	r0, #7
+ 667 00f8 FFF7FEFF 		bl	write_data
+ 668              	.LVL104:
+ 172:Core/Src/KD024VGFPD094.c ****     write_data(0x1F);
+ 669              		.loc 1 172 5 view .LVU155
+ 670 00fc 1F20     		movs	r0, #31
+ 671 00fe FFF7FEFF 		bl	write_data
+ 672              	.LVL105:
+ 173:Core/Src/KD024VGFPD094.c ****     write_data(0x04);
+ 673              		.loc 1 173 5 view .LVU156
+ 674 0102 0420     		movs	r0, #4
+ 675 0104 FFF7FEFF 		bl	write_data
+ 676              	.LVL106:
+ 174:Core/Src/KD024VGFPD094.c ****     write_data(0x11);
+ 677              		.loc 1 174 5 view .LVU157
+ 678 0108 1120     		movs	r0, #17
+ 679 010a FFF7FEFF 		bl	write_data
+ 680              	.LVL107:
+ 175:Core/Src/KD024VGFPD094.c ****     write_data(0x0F);
+ 681              		.loc 1 175 5 view .LVU158
+ 682 010e 0F20     		movs	r0, #15
+ 683 0110 FFF7FEFF 		bl	write_data
+ 684              	.LVL108:
+ 176:Core/Src/KD024VGFPD094.c ****     write_data(0x28);
+ 685              		.loc 1 176 5 view .LVU159
+ 686 0114 2820     		movs	r0, #40
+ 687 0116 FFF7FEFF 		bl	write_data
+ 688              	.LVL109:
+ 177:Core/Src/KD024VGFPD094.c ****     write_data(0x2F);
+ 689              		.loc 1 177 5 view .LVU160
+ 690 011a 2F20     		movs	r0, #47
+ 691 011c FFF7FEFF 		bl	write_data
+ 692              	.LVL110:
+ 178:Core/Src/KD024VGFPD094.c ****     write_data(0x1F);
+ 693              		.loc 1 178 5 view .LVU161
+ 694 0120 1F20     		movs	r0, #31
+ 695 0122 FFF7FEFF 		bl	write_data
+ 696              	.LVL111:
+ 179:Core/Src/KD024VGFPD094.c **** 
+ 180:Core/Src/KD024VGFPD094.c ****     write_command(0xB1); // Negative Voltage Gamma Control
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTKI4ZU.s 			page 17
+
+
+ 697              		.loc 1 180 5 view .LVU162
+ 698 0126 B120     		movs	r0, #177
+ 699 0128 FFF7FEFF 		bl	write_command
+ 700              	.LVL112:
+ 181:Core/Src/KD024VGFPD094.c ****     write_data(0x00);
+ 701              		.loc 1 181 5 view .LVU163
+ 702 012c 0020     		movs	r0, #0
+ 703 012e FFF7FEFF 		bl	write_data
+ 704              	.LVL113:
+ 182:Core/Src/KD024VGFPD094.c ****     write_data(0x0C);
+ 705              		.loc 1 182 5 view .LVU164
+ 706 0132 0C20     		movs	r0, #12
+ 707 0134 FFF7FEFF 		bl	write_data
+ 708              	.LVL114:
+ 183:Core/Src/KD024VGFPD094.c ****     write_data(0x13);
+ 709              		.loc 1 183 5 view .LVU165
+ 710 0138 1320     		movs	r0, #19
+ 711 013a FFF7FEFF 		bl	write_data
+ 712              	.LVL115:
+ 184:Core/Src/KD024VGFPD094.c ****     write_data(0x0C);
+ 713              		.loc 1 184 5 view .LVU166
+ 714 013e 0C20     		movs	r0, #12
+ 715 0140 FFF7FEFF 		bl	write_data
+ 716              	.LVL116:
+ 185:Core/Src/KD024VGFPD094.c ****     write_data(0x10);
+ 717              		.loc 1 185 5 view .LVU167
+ 718 0144 1020     		movs	r0, #16
+ 719 0146 FFF7FEFF 		bl	write_data
+ 720              	.LVL117:
+ 186:Core/Src/KD024VGFPD094.c ****     write_data(0x05);
+ 721              		.loc 1 186 5 view .LVU168
+ 722 014a 0520     		movs	r0, #5
+ 723 014c FFF7FEFF 		bl	write_data
+ 724              	.LVL118:
+ 187:Core/Src/KD024VGFPD094.c ****     write_data(0x02);
+ 725              		.loc 1 187 5 view .LVU169
+ 726 0150 0220     		movs	r0, #2
+ 727 0152 FFF7FEFF 		bl	write_data
+ 728              	.LVL119:
+ 188:Core/Src/KD024VGFPD094.c ****     write_data(0x08);
+ 729              		.loc 1 188 5 view .LVU170
+ 730 0156 0820     		movs	r0, #8
+ 731 0158 FFF7FEFF 		bl	write_data
+ 732              	.LVL120:
+ 189:Core/Src/KD024VGFPD094.c ****     write_data(0x08);
+ 733              		.loc 1 189 5 view .LVU171
+ 734 015c 0820     		movs	r0, #8
+ 735 015e FFF7FEFF 		bl	write_data
+ 736              	.LVL121:
+ 190:Core/Src/KD024VGFPD094.c ****     write_data(0x1E);
+ 737              		.loc 1 190 5 view .LVU172
+ 738 0162 1E20     		movs	r0, #30
+ 739 0164 FFF7FEFF 		bl	write_data
+ 740              	.LVL122:
+ 191:Core/Src/KD024VGFPD094.c ****     write_data(0x05);
+ 741              		.loc 1 191 5 view .LVU173
+ 742 0168 0520     		movs	r0, #5
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTKI4ZU.s 			page 18
+
+
+ 743 016a FFF7FEFF 		bl	write_data
+ 744              	.LVL123:
+ 192:Core/Src/KD024VGFPD094.c ****     write_data(0x13);
+ 745              		.loc 1 192 5 view .LVU174
+ 746 016e 1320     		movs	r0, #19
+ 747 0170 FFF7FEFF 		bl	write_data
+ 748              	.LVL124:
+ 193:Core/Src/KD024VGFPD094.c ****     write_data(0x11);
+ 749              		.loc 1 193 5 view .LVU175
+ 750 0174 1120     		movs	r0, #17
+ 751 0176 FFF7FEFF 		bl	write_data
+ 752              	.LVL125:
+ 194:Core/Src/KD024VGFPD094.c ****     write_data(0x27);
+ 753              		.loc 1 194 5 view .LVU176
+ 754 017a 2720     		movs	r0, #39
+ 755 017c FFF7FEFF 		bl	write_data
+ 756              	.LVL126:
+ 195:Core/Src/KD024VGFPD094.c ****     write_data(0x30);
+ 757              		.loc 1 195 5 view .LVU177
+ 758 0180 3020     		movs	r0, #48
+ 759 0182 FFF7FEFF 		bl	write_data
+ 760              	.LVL127:
+ 196:Core/Src/KD024VGFPD094.c ****     write_data(0x1F);
+ 761              		.loc 1 196 5 view .LVU178
+ 762 0186 1F20     		movs	r0, #31
+ 763 0188 FFF7FEFF 		bl	write_data
+ 764              	.LVL128:
+ 197:Core/Src/KD024VGFPD094.c **** 
+ 198:Core/Src/KD024VGFPD094.c ****     write_command(0xFF); // PAGE1
+ 765              		.loc 1 198 5 view .LVU179
+ 766 018c FF20     		movs	r0, #255
+ 767 018e FFF7FEFF 		bl	write_command
+ 768              	.LVL129:
+ 199:Core/Src/KD024VGFPD094.c ****     write_data(0x77);
+ 769              		.loc 1 199 5 view .LVU180
+ 770 0192 7720     		movs	r0, #119
+ 771 0194 FFF7FEFF 		bl	write_data
+ 772              	.LVL130:
+ 200:Core/Src/KD024VGFPD094.c ****     write_data(0x01);
+ 773              		.loc 1 200 5 view .LVU181
+ 774 0198 0120     		movs	r0, #1
+ 775 019a FFF7FEFF 		bl	write_data
+ 776              	.LVL131:
+ 201:Core/Src/KD024VGFPD094.c ****     write_data(0x00);
+ 777              		.loc 1 201 5 view .LVU182
+ 778 019e 0020     		movs	r0, #0
+ 779 01a0 FFF7FEFF 		bl	write_data
+ 780              	.LVL132:
+ 202:Core/Src/KD024VGFPD094.c ****     write_data(0x00);
+ 781              		.loc 1 202 5 view .LVU183
+ 782 01a4 0020     		movs	r0, #0
+ 783 01a6 FFF7FEFF 		bl	write_data
+ 784              	.LVL133:
+ 203:Core/Src/KD024VGFPD094.c ****     write_data(0x11);
+ 785              		.loc 1 203 5 view .LVU184
+ 786 01aa 1120     		movs	r0, #17
+ 787 01ac FFF7FEFF 		bl	write_data
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTKI4ZU.s 			page 19
+
+
+ 788              	.LVL134:
+ 204:Core/Src/KD024VGFPD094.c **** 
+ 205:Core/Src/KD024VGFPD094.c ****     write_command(0xB0); // Vop Amplitude setting
+ 789              		.loc 1 205 5 view .LVU185
+ 790 01b0 B020     		movs	r0, #176
+ 791 01b2 FFF7FEFF 		bl	write_command
+ 792              	.LVL135:
+ 206:Core/Src/KD024VGFPD094.c ****     write_data(0x4D);    //
+ 793              		.loc 1 206 5 view .LVU186
+ 794 01b6 4D20     		movs	r0, #77
+ 795 01b8 FFF7FEFF 		bl	write_data
+ 796              	.LVL136:
+ 207:Core/Src/KD024VGFPD094.c **** 
+ 208:Core/Src/KD024VGFPD094.c ****     write_command(0xB1); // VCOM amplitude setting
+ 797              		.loc 1 208 5 view .LVU187
+ 798 01bc B120     		movs	r0, #177
+ 799 01be FFF7FEFF 		bl	write_command
+ 800              	.LVL137:
+ 209:Core/Src/KD024VGFPD094.c ****     write_data(0x3D);    //
+ 801              		.loc 1 209 5 view .LVU188
+ 802 01c2 3D20     		movs	r0, #61
+ 803 01c4 FFF7FEFF 		bl	write_data
+ 804              	.LVL138:
+ 210:Core/Src/KD024VGFPD094.c **** 
+ 211:Core/Src/KD024VGFPD094.c ****     write_command(0xB2); // VGH Voltage setting
+ 805              		.loc 1 211 5 view .LVU189
+ 806 01c8 B220     		movs	r0, #178
+ 807 01ca FFF7FEFF 		bl	write_command
+ 808              	.LVL139:
+ 212:Core/Src/KD024VGFPD094.c ****     write_data(0x87);
+ 809              		.loc 1 212 5 view .LVU190
+ 810 01ce 8720     		movs	r0, #135
+ 811 01d0 FFF7FEFF 		bl	write_data
+ 812              	.LVL140:
+ 213:Core/Src/KD024VGFPD094.c **** 
+ 214:Core/Src/KD024VGFPD094.c ****     write_command(0xB3); // TEST Command Setting
+ 813              		.loc 1 214 5 view .LVU191
+ 814 01d4 B320     		movs	r0, #179
+ 815 01d6 FFF7FEFF 		bl	write_command
+ 816              	.LVL141:
+ 215:Core/Src/KD024VGFPD094.c ****     write_data(0x80);
+ 817              		.loc 1 215 5 view .LVU192
+ 818 01da 8020     		movs	r0, #128
+ 819 01dc FFF7FEFF 		bl	write_data
+ 820              	.LVL142:
+ 216:Core/Src/KD024VGFPD094.c **** 
+ 217:Core/Src/KD024VGFPD094.c ****     write_command(0xB5); // VGL Voltage setting
+ 821              		.loc 1 217 5 view .LVU193
+ 822 01e0 B520     		movs	r0, #181
+ 823 01e2 FFF7FEFF 		bl	write_command
+ 824              	.LVL143:
+ 218:Core/Src/KD024VGFPD094.c ****     write_data(0x45);
+ 825              		.loc 1 218 5 view .LVU194
+ 826 01e6 4520     		movs	r0, #69
+ 827 01e8 FFF7FEFF 		bl	write_data
+ 828              	.LVL144:
+ 219:Core/Src/KD024VGFPD094.c **** 
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTKI4ZU.s 			page 20
+
+
+ 220:Core/Src/KD024VGFPD094.c ****     write_command(0xB7); // Power Control 1
+ 829              		.loc 1 220 5 view .LVU195
+ 830 01ec B720     		movs	r0, #183
+ 831 01ee FFF7FEFF 		bl	write_command
+ 832              	.LVL145:
+ 221:Core/Src/KD024VGFPD094.c ****     write_data(0x85);
+ 833              		.loc 1 221 5 view .LVU196
+ 834 01f2 8520     		movs	r0, #133
+ 835 01f4 FFF7FEFF 		bl	write_data
+ 836              	.LVL146:
+ 222:Core/Src/KD024VGFPD094.c **** 
+ 223:Core/Src/KD024VGFPD094.c ****     write_command(0xB8); // Power Control 2
+ 837              		.loc 1 223 5 view .LVU197
+ 838 01f8 B820     		movs	r0, #184
+ 839 01fa FFF7FEFF 		bl	write_command
+ 840              	.LVL147:
+ 224:Core/Src/KD024VGFPD094.c ****     write_data(0x20);
+ 841              		.loc 1 224 5 view .LVU198
+ 842 01fe 2020     		movs	r0, #32
+ 843 0200 FFF7FEFF 		bl	write_data
+ 844              	.LVL148:
+ 225:Core/Src/KD024VGFPD094.c **** 
+ 226:Core/Src/KD024VGFPD094.c ****     write_command(0xC0);
+ 845              		.loc 1 226 5 view .LVU199
+ 846 0204 C020     		movs	r0, #192
+ 847 0206 FFF7FEFF 		bl	write_command
+ 848              	.LVL149:
+ 227:Core/Src/KD024VGFPD094.c ****     write_data(0x09);
+ 849              		.loc 1 227 5 view .LVU200
+ 850 020a 0920     		movs	r0, #9
+ 851 020c FFF7FEFF 		bl	write_data
+ 852              	.LVL150:
+ 228:Core/Src/KD024VGFPD094.c **** 
+ 229:Core/Src/KD024VGFPD094.c ****     write_command(0xC1); // Source pre_drive timing set1
+ 853              		.loc 1 229 5 view .LVU201
+ 854 0210 C120     		movs	r0, #193
+ 855 0212 FFF7FEFF 		bl	write_command
+ 856              	.LVL151:
+ 230:Core/Src/KD024VGFPD094.c ****     write_data(0x78);
+ 857              		.loc 1 230 5 view .LVU202
+ 858 0216 7820     		movs	r0, #120
+ 859 0218 FFF7FEFF 		bl	write_data
+ 860              	.LVL152:
+ 231:Core/Src/KD024VGFPD094.c **** 
+ 232:Core/Src/KD024VGFPD094.c ****     write_command(0xC2); // Source EQ2 Setting
+ 861              		.loc 1 232 5 view .LVU203
+ 862 021c C220     		movs	r0, #194
+ 863 021e FFF7FEFF 		bl	write_command
+ 864              	.LVL153:
+ 233:Core/Src/KD024VGFPD094.c ****     write_data(0x78);
+ 865              		.loc 1 233 5 view .LVU204
+ 866 0222 7820     		movs	r0, #120
+ 867 0224 FFF7FEFF 		bl	write_data
+ 868              	.LVL154:
+ 234:Core/Src/KD024VGFPD094.c **** 
+ 235:Core/Src/KD024VGFPD094.c ****     write_command(0xD0); // Source EQ2 Setting
+ 869              		.loc 1 235 5 view .LVU205
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTKI4ZU.s 			page 21
+
+
+ 870 0228 D020     		movs	r0, #208
+ 871 022a FFF7FEFF 		bl	write_command
+ 872              	.LVL155:
+ 236:Core/Src/KD024VGFPD094.c ****     write_data(0x88);
+ 873              		.loc 1 236 5 view .LVU206
+ 874 022e 8820     		movs	r0, #136
+ 875 0230 FFF7FEFF 		bl	write_data
+ 876              	.LVL156:
+ 237:Core/Src/KD024VGFPD094.c **** 
+ 238:Core/Src/KD024VGFPD094.c ****     HAL_Delay(100);
+ 877              		.loc 1 238 5 view .LVU207
+ 878 0234 6420     		movs	r0, #100
+ 879 0236 FFF7FEFF 		bl	HAL_Delay
+ 880              	.LVL157:
+ 239:Core/Src/KD024VGFPD094.c ****     //*********GIP SET*************//
+ 240:Core/Src/KD024VGFPD094.c ****     write_command(0xE0);
+ 881              		.loc 1 240 5 view .LVU208
+ 882 023a E020     		movs	r0, #224
+ 883 023c FFF7FEFF 		bl	write_command
+ 884              	.LVL158:
+ 241:Core/Src/KD024VGFPD094.c ****     write_data(0x00);
+ 885              		.loc 1 241 5 view .LVU209
+ 886 0240 0020     		movs	r0, #0
+ 887 0242 FFF7FEFF 		bl	write_data
+ 888              	.LVL159:
+ 242:Core/Src/KD024VGFPD094.c ****     write_data(0x00);
+ 889              		.loc 1 242 5 view .LVU210
+ 890 0246 0020     		movs	r0, #0
+ 891 0248 FFF7FEFF 		bl	write_data
+ 892              	.LVL160:
+ 243:Core/Src/KD024VGFPD094.c ****     write_data(0x02);
+ 893              		.loc 1 243 5 view .LVU211
+ 894 024c 0220     		movs	r0, #2
+ 895 024e FFF7FEFF 		bl	write_data
+ 896              	.LVL161:
+ 244:Core/Src/KD024VGFPD094.c **** 
+ 245:Core/Src/KD024VGFPD094.c ****     write_command(0xE1);
+ 897              		.loc 1 245 5 view .LVU212
+ 898 0252 E120     		movs	r0, #225
+ 899 0254 FFF7FEFF 		bl	write_command
+ 900              	.LVL162:
+ 246:Core/Src/KD024VGFPD094.c ****     write_data(0x04);
+ 901              		.loc 1 246 5 view .LVU213
+ 902 0258 0420     		movs	r0, #4
+ 903 025a FFF7FEFF 		bl	write_data
+ 904              	.LVL163:
+ 247:Core/Src/KD024VGFPD094.c ****     write_data(0xB0);
+ 905              		.loc 1 247 5 view .LVU214
+ 906 025e B020     		movs	r0, #176
+ 907 0260 FFF7FEFF 		bl	write_data
+ 908              	.LVL164:
+ 248:Core/Src/KD024VGFPD094.c ****     write_data(0x06);
+ 909              		.loc 1 248 5 view .LVU215
+ 910 0264 0620     		movs	r0, #6
+ 911 0266 FFF7FEFF 		bl	write_data
+ 912              	.LVL165:
+ 249:Core/Src/KD024VGFPD094.c ****     write_data(0xB0);
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTKI4ZU.s 			page 22
+
+
+ 913              		.loc 1 249 5 view .LVU216
+ 914 026a B020     		movs	r0, #176
+ 915 026c FFF7FEFF 		bl	write_data
+ 916              	.LVL166:
+ 250:Core/Src/KD024VGFPD094.c ****     write_data(0x05);
+ 917              		.loc 1 250 5 view .LVU217
+ 918 0270 0520     		movs	r0, #5
+ 919 0272 FFF7FEFF 		bl	write_data
+ 920              	.LVL167:
+ 251:Core/Src/KD024VGFPD094.c ****     write_data(0xB0);
+ 921              		.loc 1 251 5 view .LVU218
+ 922 0276 B020     		movs	r0, #176
+ 923 0278 FFF7FEFF 		bl	write_data
+ 924              	.LVL168:
+ 252:Core/Src/KD024VGFPD094.c ****     write_data(0x07);
+ 925              		.loc 1 252 5 view .LVU219
+ 926 027c 0720     		movs	r0, #7
+ 927 027e FFF7FEFF 		bl	write_data
+ 928              	.LVL169:
+ 253:Core/Src/KD024VGFPD094.c ****     write_data(0xB0);
+ 929              		.loc 1 253 5 view .LVU220
+ 930 0282 B020     		movs	r0, #176
+ 931 0284 FFF7FEFF 		bl	write_data
+ 932              	.LVL170:
+ 254:Core/Src/KD024VGFPD094.c ****     write_data(0x00);
+ 933              		.loc 1 254 5 view .LVU221
+ 934 0288 0020     		movs	r0, #0
+ 935 028a FFF7FEFF 		bl	write_data
+ 936              	.LVL171:
+ 255:Core/Src/KD024VGFPD094.c ****     write_data(0x44);
+ 937              		.loc 1 255 5 view .LVU222
+ 938 028e 4420     		movs	r0, #68
+ 939 0290 FFF7FEFF 		bl	write_data
+ 940              	.LVL172:
+ 256:Core/Src/KD024VGFPD094.c ****     write_data(0x44);
+ 941              		.loc 1 256 5 view .LVU223
+ 942 0294 4420     		movs	r0, #68
+ 943 0296 FFF7FEFF 		bl	write_data
+ 944              	.LVL173:
+ 257:Core/Src/KD024VGFPD094.c **** 
+ 258:Core/Src/KD024VGFPD094.c ****     write_command(0xE2);
+ 945              		.loc 1 258 5 view .LVU224
+ 946 029a E220     		movs	r0, #226
+ 947 029c FFF7FEFF 		bl	write_command
+ 948              	.LVL174:
+ 259:Core/Src/KD024VGFPD094.c ****     write_data(0x20);
+ 949              		.loc 1 259 5 view .LVU225
+ 950 02a0 2020     		movs	r0, #32
+ 951 02a2 FFF7FEFF 		bl	write_data
+ 952              	.LVL175:
+ 260:Core/Src/KD024VGFPD094.c ****     write_data(0x20);
+ 953              		.loc 1 260 5 view .LVU226
+ 954 02a6 2020     		movs	r0, #32
+ 955 02a8 FFF7FEFF 		bl	write_data
+ 956              	.LVL176:
+ 261:Core/Src/KD024VGFPD094.c ****     write_data(0x44);
+ 957              		.loc 1 261 5 view .LVU227
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTKI4ZU.s 			page 23
+
+
+ 958 02ac 4420     		movs	r0, #68
+ 959 02ae FFF7FEFF 		bl	write_data
+ 960              	.LVL177:
+ 262:Core/Src/KD024VGFPD094.c ****     write_data(0x44);
+ 961              		.loc 1 262 5 view .LVU228
+ 962 02b2 4420     		movs	r0, #68
+ 963 02b4 FFF7FEFF 		bl	write_data
+ 964              	.LVL178:
+ 263:Core/Src/KD024VGFPD094.c ****     write_data(0x96);
+ 965              		.loc 1 263 5 view .LVU229
+ 966 02b8 9620     		movs	r0, #150
+ 967 02ba FFF7FEFF 		bl	write_data
+ 968              	.LVL179:
+ 264:Core/Src/KD024VGFPD094.c ****     write_data(0xA0);
+ 969              		.loc 1 264 5 view .LVU230
+ 970 02be A020     		movs	r0, #160
+ 971 02c0 FFF7FEFF 		bl	write_data
+ 972              	.LVL180:
+ 265:Core/Src/KD024VGFPD094.c ****     write_data(0x00);
+ 973              		.loc 1 265 5 view .LVU231
+ 974 02c4 0020     		movs	r0, #0
+ 975 02c6 FFF7FEFF 		bl	write_data
+ 976              	.LVL181:
+ 266:Core/Src/KD024VGFPD094.c ****     write_data(0x00);
+ 977              		.loc 1 266 5 view .LVU232
+ 978 02ca 0020     		movs	r0, #0
+ 979 02cc FFF7FEFF 		bl	write_data
+ 980              	.LVL182:
+ 267:Core/Src/KD024VGFPD094.c ****     write_data(0x96);
+ 981              		.loc 1 267 5 view .LVU233
+ 982 02d0 9620     		movs	r0, #150
+ 983 02d2 FFF7FEFF 		bl	write_data
+ 984              	.LVL183:
+ 268:Core/Src/KD024VGFPD094.c ****     write_data(0xA0);
+ 985              		.loc 1 268 5 view .LVU234
+ 986 02d6 A020     		movs	r0, #160
+ 987 02d8 FFF7FEFF 		bl	write_data
+ 988              	.LVL184:
+ 269:Core/Src/KD024VGFPD094.c ****     write_data(0x00);
+ 989              		.loc 1 269 5 view .LVU235
+ 990 02dc 0020     		movs	r0, #0
+ 991 02de FFF7FEFF 		bl	write_data
+ 992              	.LVL185:
+ 270:Core/Src/KD024VGFPD094.c ****     write_data(0x00);
+ 993              		.loc 1 270 5 view .LVU236
+ 994 02e2 0020     		movs	r0, #0
+ 995 02e4 FFF7FEFF 		bl	write_data
+ 996              	.LVL186:
+ 271:Core/Src/KD024VGFPD094.c **** 
+ 272:Core/Src/KD024VGFPD094.c ****     write_command(0xE3);
+ 997              		.loc 1 272 5 view .LVU237
+ 998 02e8 E320     		movs	r0, #227
+ 999 02ea FFF7FEFF 		bl	write_command
+ 1000              	.LVL187:
+ 273:Core/Src/KD024VGFPD094.c ****     write_data(0x00);
+ 1001              		.loc 1 273 5 view .LVU238
+ 1002 02ee 0020     		movs	r0, #0
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTKI4ZU.s 			page 24
+
+
+ 1003 02f0 FFF7FEFF 		bl	write_data
+ 1004              	.LVL188:
+ 274:Core/Src/KD024VGFPD094.c ****     write_data(0x00);
+ 1005              		.loc 1 274 5 view .LVU239
+ 1006 02f4 0020     		movs	r0, #0
+ 1007 02f6 FFF7FEFF 		bl	write_data
+ 1008              	.LVL189:
+ 275:Core/Src/KD024VGFPD094.c ****     write_data(0x22);
+ 1009              		.loc 1 275 5 view .LVU240
+ 1010 02fa 2220     		movs	r0, #34
+ 1011 02fc FFF7FEFF 		bl	write_data
+ 1012              	.LVL190:
+ 276:Core/Src/KD024VGFPD094.c ****     write_data(0x22);
+ 1013              		.loc 1 276 5 view .LVU241
+ 1014 0300 2220     		movs	r0, #34
+ 1015 0302 FFF7FEFF 		bl	write_data
+ 1016              	.LVL191:
+ 277:Core/Src/KD024VGFPD094.c **** 
+ 278:Core/Src/KD024VGFPD094.c ****     write_command(0xE4);
+ 1017              		.loc 1 278 5 view .LVU242
+ 1018 0306 E420     		movs	r0, #228
+ 1019 0308 FFF7FEFF 		bl	write_command
+ 1020              	.LVL192:
+ 279:Core/Src/KD024VGFPD094.c ****     write_data(0x44);
+ 1021              		.loc 1 279 5 view .LVU243
+ 1022 030c 4420     		movs	r0, #68
+ 1023 030e FFF7FEFF 		bl	write_data
+ 1024              	.LVL193:
+ 280:Core/Src/KD024VGFPD094.c ****     write_data(0x44);
+ 1025              		.loc 1 280 5 view .LVU244
+ 1026 0312 4420     		movs	r0, #68
+ 1027 0314 FFF7FEFF 		bl	write_data
+ 1028              	.LVL194:
+ 281:Core/Src/KD024VGFPD094.c **** 
+ 282:Core/Src/KD024VGFPD094.c ****     write_command(0xE5);
+ 1029              		.loc 1 282 5 view .LVU245
+ 1030 0318 E520     		movs	r0, #229
+ 1031 031a FFF7FEFF 		bl	write_command
+ 1032              	.LVL195:
+ 283:Core/Src/KD024VGFPD094.c ****     write_data(0x0C);
+ 1033              		.loc 1 283 5 view .LVU246
+ 1034 031e 0C20     		movs	r0, #12
+ 1035 0320 FFF7FEFF 		bl	write_data
+ 1036              	.LVL196:
+ 284:Core/Src/KD024VGFPD094.c ****     write_data(0x90);
+ 1037              		.loc 1 284 5 view .LVU247
+ 1038 0324 9020     		movs	r0, #144
+ 1039 0326 FFF7FEFF 		bl	write_data
+ 1040              	.LVL197:
+ 285:Core/Src/KD024VGFPD094.c ****     write_data(0xB0);
+ 1041              		.loc 1 285 5 view .LVU248
+ 1042 032a B020     		movs	r0, #176
+ 1043 032c FFF7FEFF 		bl	write_data
+ 1044              	.LVL198:
+ 286:Core/Src/KD024VGFPD094.c ****     write_data(0xA0);
+ 1045              		.loc 1 286 5 view .LVU249
+ 1046 0330 A020     		movs	r0, #160
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTKI4ZU.s 			page 25
+
+
+ 1047 0332 FFF7FEFF 		bl	write_data
+ 1048              	.LVL199:
+ 287:Core/Src/KD024VGFPD094.c ****     write_data(0x0E);
+ 1049              		.loc 1 287 5 view .LVU250
+ 1050 0336 0E20     		movs	r0, #14
+ 1051 0338 FFF7FEFF 		bl	write_data
+ 1052              	.LVL200:
+ 288:Core/Src/KD024VGFPD094.c ****     write_data(0x92);
+ 1053              		.loc 1 288 5 view .LVU251
+ 1054 033c 9220     		movs	r0, #146
+ 1055 033e FFF7FEFF 		bl	write_data
+ 1056              	.LVL201:
+ 289:Core/Src/KD024VGFPD094.c ****     write_data(0xB0);
+ 1057              		.loc 1 289 5 view .LVU252
+ 1058 0342 B020     		movs	r0, #176
+ 1059 0344 FFF7FEFF 		bl	write_data
+ 1060              	.LVL202:
+ 290:Core/Src/KD024VGFPD094.c ****     write_data(0xA0);
+ 1061              		.loc 1 290 5 view .LVU253
+ 1062 0348 A020     		movs	r0, #160
+ 1063 034a FFF7FEFF 		bl	write_data
+ 1064              	.LVL203:
+ 291:Core/Src/KD024VGFPD094.c ****     write_data(0x08);
+ 1065              		.loc 1 291 5 view .LVU254
+ 1066 034e 0820     		movs	r0, #8
+ 1067 0350 FFF7FEFF 		bl	write_data
+ 1068              	.LVL204:
+ 292:Core/Src/KD024VGFPD094.c ****     write_data(0x8C);
+ 1069              		.loc 1 292 5 view .LVU255
+ 1070 0354 8C20     		movs	r0, #140
+ 1071 0356 FFF7FEFF 		bl	write_data
+ 1072              	.LVL205:
+ 293:Core/Src/KD024VGFPD094.c ****     write_data(0xB0);
+ 1073              		.loc 1 293 5 view .LVU256
+ 1074 035a B020     		movs	r0, #176
+ 1075 035c FFF7FEFF 		bl	write_data
+ 1076              	.LVL206:
+ 294:Core/Src/KD024VGFPD094.c ****     write_data(0xA0);
+ 1077              		.loc 1 294 5 view .LVU257
+ 1078 0360 A020     		movs	r0, #160
+ 1079 0362 FFF7FEFF 		bl	write_data
+ 1080              	.LVL207:
+ 295:Core/Src/KD024VGFPD094.c ****     write_data(0x0A);
+ 1081              		.loc 1 295 5 view .LVU258
+ 1082 0366 0A20     		movs	r0, #10
+ 1083 0368 FFF7FEFF 		bl	write_data
+ 1084              	.LVL208:
+ 296:Core/Src/KD024VGFPD094.c ****     write_data(0x8E);
+ 1085              		.loc 1 296 5 view .LVU259
+ 1086 036c 8E20     		movs	r0, #142
+ 1087 036e FFF7FEFF 		bl	write_data
+ 1088              	.LVL209:
+ 297:Core/Src/KD024VGFPD094.c ****     write_data(0xB0);
+ 1089              		.loc 1 297 5 view .LVU260
+ 1090 0372 B020     		movs	r0, #176
+ 1091 0374 FFF7FEFF 		bl	write_data
+ 1092              	.LVL210:
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTKI4ZU.s 			page 26
+
+
+ 298:Core/Src/KD024VGFPD094.c ****     write_data(0xA0);
+ 1093              		.loc 1 298 5 view .LVU261
+ 1094 0378 A020     		movs	r0, #160
+ 1095 037a FFF7FEFF 		bl	write_data
+ 1096              	.LVL211:
+ 299:Core/Src/KD024VGFPD094.c **** 
+ 300:Core/Src/KD024VGFPD094.c ****     write_command(0xE6);
+ 1097              		.loc 1 300 5 view .LVU262
+ 1098 037e E620     		movs	r0, #230
+ 1099 0380 FFF7FEFF 		bl	write_command
+ 1100              	.LVL212:
+ 301:Core/Src/KD024VGFPD094.c ****     write_data(0x00);
+ 1101              		.loc 1 301 5 view .LVU263
+ 1102 0384 0020     		movs	r0, #0
+ 1103 0386 FFF7FEFF 		bl	write_data
+ 1104              	.LVL213:
+ 302:Core/Src/KD024VGFPD094.c ****     write_data(0x00);
+ 1105              		.loc 1 302 5 view .LVU264
+ 1106 038a 0020     		movs	r0, #0
+ 1107 038c FFF7FEFF 		bl	write_data
+ 1108              	.LVL214:
+ 303:Core/Src/KD024VGFPD094.c ****     write_data(0x22);
+ 1109              		.loc 1 303 5 view .LVU265
+ 1110 0390 2220     		movs	r0, #34
+ 1111 0392 FFF7FEFF 		bl	write_data
+ 1112              	.LVL215:
+ 304:Core/Src/KD024VGFPD094.c ****     write_data(0x22);
+ 1113              		.loc 1 304 5 view .LVU266
+ 1114 0396 2220     		movs	r0, #34
+ 1115 0398 FFF7FEFF 		bl	write_data
+ 1116              	.LVL216:
+ 305:Core/Src/KD024VGFPD094.c **** 
+ 306:Core/Src/KD024VGFPD094.c ****     write_command(0xE7);
+ 1117              		.loc 1 306 5 view .LVU267
+ 1118 039c E720     		movs	r0, #231
+ 1119 039e FFF7FEFF 		bl	write_command
+ 1120              	.LVL217:
+ 307:Core/Src/KD024VGFPD094.c ****     write_data(0x44);
+ 1121              		.loc 1 307 5 view .LVU268
+ 1122 03a2 4420     		movs	r0, #68
+ 1123 03a4 FFF7FEFF 		bl	write_data
+ 1124              	.LVL218:
+ 308:Core/Src/KD024VGFPD094.c ****     write_data(0x44);
+ 1125              		.loc 1 308 5 view .LVU269
+ 1126 03a8 4420     		movs	r0, #68
+ 1127 03aa FFF7FEFF 		bl	write_data
+ 1128              	.LVL219:
+ 309:Core/Src/KD024VGFPD094.c **** 
+ 310:Core/Src/KD024VGFPD094.c ****     write_command(0xE8);
+ 1129              		.loc 1 310 5 view .LVU270
+ 1130 03ae E820     		movs	r0, #232
+ 1131 03b0 FFF7FEFF 		bl	write_command
+ 1132              	.LVL220:
+ 311:Core/Src/KD024VGFPD094.c ****     write_data(0x0D);
+ 1133              		.loc 1 311 5 view .LVU271
+ 1134 03b4 0D20     		movs	r0, #13
+ 1135 03b6 FFF7FEFF 		bl	write_data
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTKI4ZU.s 			page 27
+
+
+ 1136              	.LVL221:
+ 312:Core/Src/KD024VGFPD094.c ****     write_data(0x91);
+ 1137              		.loc 1 312 5 view .LVU272
+ 1138 03ba 9120     		movs	r0, #145
+ 1139 03bc FFF7FEFF 		bl	write_data
+ 1140              	.LVL222:
+ 313:Core/Src/KD024VGFPD094.c ****     write_data(0xB0);
+ 1141              		.loc 1 313 5 view .LVU273
+ 1142 03c0 B020     		movs	r0, #176
+ 1143 03c2 FFF7FEFF 		bl	write_data
+ 1144              	.LVL223:
+ 314:Core/Src/KD024VGFPD094.c ****     write_data(0xA0);
+ 1145              		.loc 1 314 5 view .LVU274
+ 1146 03c6 A020     		movs	r0, #160
+ 1147 03c8 FFF7FEFF 		bl	write_data
+ 1148              	.LVL224:
+ 315:Core/Src/KD024VGFPD094.c ****     write_data(0x0F);
+ 1149              		.loc 1 315 5 view .LVU275
+ 1150 03cc 0F20     		movs	r0, #15
+ 1151 03ce FFF7FEFF 		bl	write_data
+ 1152              	.LVL225:
+ 316:Core/Src/KD024VGFPD094.c ****     write_data(0x93);
+ 1153              		.loc 1 316 5 view .LVU276
+ 1154 03d2 9320     		movs	r0, #147
+ 1155 03d4 FFF7FEFF 		bl	write_data
+ 1156              	.LVL226:
+ 317:Core/Src/KD024VGFPD094.c ****     write_data(0xB0);
+ 1157              		.loc 1 317 5 view .LVU277
+ 1158 03d8 B020     		movs	r0, #176
+ 1159 03da FFF7FEFF 		bl	write_data
+ 1160              	.LVL227:
+ 318:Core/Src/KD024VGFPD094.c ****     write_data(0xA0);
+ 1161              		.loc 1 318 5 view .LVU278
+ 1162 03de A020     		movs	r0, #160
+ 1163 03e0 FFF7FEFF 		bl	write_data
+ 1164              	.LVL228:
+ 319:Core/Src/KD024VGFPD094.c ****     write_data(0x09);
+ 1165              		.loc 1 319 5 view .LVU279
+ 1166 03e4 0920     		movs	r0, #9
+ 1167 03e6 FFF7FEFF 		bl	write_data
+ 1168              	.LVL229:
+ 320:Core/Src/KD024VGFPD094.c ****     write_data(0x8D);
+ 1169              		.loc 1 320 5 view .LVU280
+ 1170 03ea 8D20     		movs	r0, #141
+ 1171 03ec FFF7FEFF 		bl	write_data
+ 1172              	.LVL230:
+ 321:Core/Src/KD024VGFPD094.c ****     write_data(0xB0);
+ 1173              		.loc 1 321 5 view .LVU281
+ 1174 03f0 B020     		movs	r0, #176
+ 1175 03f2 FFF7FEFF 		bl	write_data
+ 1176              	.LVL231:
+ 322:Core/Src/KD024VGFPD094.c ****     write_data(0xA0);
+ 1177              		.loc 1 322 5 view .LVU282
+ 1178 03f6 A020     		movs	r0, #160
+ 1179 03f8 FFF7FEFF 		bl	write_data
+ 1180              	.LVL232:
+ 323:Core/Src/KD024VGFPD094.c ****     write_data(0x0B);
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTKI4ZU.s 			page 28
+
+
+ 1181              		.loc 1 323 5 view .LVU283
+ 1182 03fc 0B20     		movs	r0, #11
+ 1183 03fe 01E0     		b	.L38
+ 1184              	.L39:
+ 1185              		.align	2
+ 1186              	.L37:
+ 1187 0400 00000258 		.word	1476526080
+ 1188              	.L38:
+ 1189 0404 FFF7FEFF 		bl	write_data
+ 1190              	.LVL233:
+ 324:Core/Src/KD024VGFPD094.c ****     write_data(0x8F);
+ 1191              		.loc 1 324 5 view .LVU284
+ 1192 0408 8F20     		movs	r0, #143
+ 1193 040a FFF7FEFF 		bl	write_data
+ 1194              	.LVL234:
+ 325:Core/Src/KD024VGFPD094.c ****     write_data(0xB0);
+ 1195              		.loc 1 325 5 view .LVU285
+ 1196 040e B020     		movs	r0, #176
+ 1197 0410 FFF7FEFF 		bl	write_data
+ 1198              	.LVL235:
+ 326:Core/Src/KD024VGFPD094.c ****     write_data(0xA0);
+ 1199              		.loc 1 326 5 view .LVU286
+ 1200 0414 A020     		movs	r0, #160
+ 1201 0416 FFF7FEFF 		bl	write_data
+ 1202              	.LVL236:
+ 327:Core/Src/KD024VGFPD094.c **** 
+ 328:Core/Src/KD024VGFPD094.c ****     write_command(0xE9);
+ 1203              		.loc 1 328 5 view .LVU287
+ 1204 041a E920     		movs	r0, #233
+ 1205 041c FFF7FEFF 		bl	write_command
+ 1206              	.LVL237:
+ 329:Core/Src/KD024VGFPD094.c ****     write_data(0x36);
+ 1207              		.loc 1 329 5 view .LVU288
+ 1208 0420 3620     		movs	r0, #54
+ 1209 0422 FFF7FEFF 		bl	write_data
+ 1210              	.LVL238:
+ 330:Core/Src/KD024VGFPD094.c ****     write_data(0x00);
+ 1211              		.loc 1 330 5 view .LVU289
+ 1212 0426 0020     		movs	r0, #0
+ 1213 0428 FFF7FEFF 		bl	write_data
+ 1214              	.LVL239:
+ 331:Core/Src/KD024VGFPD094.c **** 
+ 332:Core/Src/KD024VGFPD094.c ****     write_command(0xEB);
+ 1215              		.loc 1 332 5 view .LVU290
+ 1216 042c EB20     		movs	r0, #235
+ 1217 042e FFF7FEFF 		bl	write_command
+ 1218              	.LVL240:
+ 333:Core/Src/KD024VGFPD094.c ****     write_data(0x00);
+ 1219              		.loc 1 333 5 view .LVU291
+ 1220 0432 0020     		movs	r0, #0
+ 1221 0434 FFF7FEFF 		bl	write_data
+ 1222              	.LVL241:
+ 334:Core/Src/KD024VGFPD094.c ****     write_data(0x00);
+ 1223              		.loc 1 334 5 view .LVU292
+ 1224 0438 0020     		movs	r0, #0
+ 1225 043a FFF7FEFF 		bl	write_data
+ 1226              	.LVL242:
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTKI4ZU.s 			page 29
+
+
+ 335:Core/Src/KD024VGFPD094.c ****     write_data(0xE4);
+ 1227              		.loc 1 335 5 view .LVU293
+ 1228 043e E420     		movs	r0, #228
+ 1229 0440 FFF7FEFF 		bl	write_data
+ 1230              	.LVL243:
+ 336:Core/Src/KD024VGFPD094.c ****     write_data(0xE4);
+ 1231              		.loc 1 336 5 view .LVU294
+ 1232 0444 E420     		movs	r0, #228
+ 1233 0446 FFF7FEFF 		bl	write_data
+ 1234              	.LVL244:
+ 337:Core/Src/KD024VGFPD094.c ****     write_data(0x44);
+ 1235              		.loc 1 337 5 view .LVU295
+ 1236 044a 4420     		movs	r0, #68
+ 1237 044c FFF7FEFF 		bl	write_data
+ 1238              	.LVL245:
+ 338:Core/Src/KD024VGFPD094.c ****     write_data(0x88);
+ 1239              		.loc 1 338 5 view .LVU296
+ 1240 0450 8820     		movs	r0, #136
+ 1241 0452 FFF7FEFF 		bl	write_data
+ 1242              	.LVL246:
+ 339:Core/Src/KD024VGFPD094.c ****     write_data(0x40);
+ 1243              		.loc 1 339 5 view .LVU297
+ 1244 0456 4020     		movs	r0, #64
+ 1245 0458 FFF7FEFF 		bl	write_data
+ 1246              	.LVL247:
+ 340:Core/Src/KD024VGFPD094.c **** 
+ 341:Core/Src/KD024VGFPD094.c ****     write_command(0xED);
+ 1247              		.loc 1 341 5 view .LVU298
+ 1248 045c ED20     		movs	r0, #237
+ 1249 045e FFF7FEFF 		bl	write_command
+ 1250              	.LVL248:
+ 342:Core/Src/KD024VGFPD094.c ****     write_data(0xC1);
+ 1251              		.loc 1 342 5 view .LVU299
+ 1252 0462 C120     		movs	r0, #193
+ 1253 0464 FFF7FEFF 		bl	write_data
+ 1254              	.LVL249:
+ 343:Core/Src/KD024VGFPD094.c ****     write_data(0xA2);
+ 1255              		.loc 1 343 5 view .LVU300
+ 1256 0468 A220     		movs	r0, #162
+ 1257 046a FFF7FEFF 		bl	write_data
+ 1258              	.LVL250:
+ 344:Core/Src/KD024VGFPD094.c ****     write_data(0xBF);
+ 1259              		.loc 1 344 5 view .LVU301
+ 1260 046e BF20     		movs	r0, #191
+ 1261 0470 FFF7FEFF 		bl	write_data
+ 1262              	.LVL251:
+ 345:Core/Src/KD024VGFPD094.c ****     write_data(0x0F);
+ 1263              		.loc 1 345 5 view .LVU302
+ 1264 0474 0F20     		movs	r0, #15
+ 1265 0476 FFF7FEFF 		bl	write_data
+ 1266              	.LVL252:
+ 346:Core/Src/KD024VGFPD094.c ****     write_data(0x67);
+ 1267              		.loc 1 346 5 view .LVU303
+ 1268 047a 6720     		movs	r0, #103
+ 1269 047c FFF7FEFF 		bl	write_data
+ 1270              	.LVL253:
+ 347:Core/Src/KD024VGFPD094.c ****     write_data(0x45);
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTKI4ZU.s 			page 30
+
+
+ 1271              		.loc 1 347 5 view .LVU304
+ 1272 0480 4520     		movs	r0, #69
+ 1273 0482 FFF7FEFF 		bl	write_data
+ 1274              	.LVL254:
+ 348:Core/Src/KD024VGFPD094.c ****     write_data(0xFF);
+ 1275              		.loc 1 348 5 view .LVU305
+ 1276 0486 FF20     		movs	r0, #255
+ 1277 0488 FFF7FEFF 		bl	write_data
+ 1278              	.LVL255:
+ 349:Core/Src/KD024VGFPD094.c ****     write_data(0xFF);
+ 1279              		.loc 1 349 5 view .LVU306
+ 1280 048c FF20     		movs	r0, #255
+ 1281 048e FFF7FEFF 		bl	write_data
+ 1282              	.LVL256:
+ 350:Core/Src/KD024VGFPD094.c ****     write_data(0xFF);
+ 1283              		.loc 1 350 5 view .LVU307
+ 1284 0492 FF20     		movs	r0, #255
+ 1285 0494 FFF7FEFF 		bl	write_data
+ 1286              	.LVL257:
+ 351:Core/Src/KD024VGFPD094.c ****     write_data(0xFF);
+ 1287              		.loc 1 351 5 view .LVU308
+ 1288 0498 FF20     		movs	r0, #255
+ 1289 049a FFF7FEFF 		bl	write_data
+ 1290              	.LVL258:
+ 352:Core/Src/KD024VGFPD094.c ****     write_data(0x54);
+ 1291              		.loc 1 352 5 view .LVU309
+ 1292 049e 5420     		movs	r0, #84
+ 1293 04a0 FFF7FEFF 		bl	write_data
+ 1294              	.LVL259:
+ 353:Core/Src/KD024VGFPD094.c ****     write_data(0x76);
+ 1295              		.loc 1 353 5 view .LVU310
+ 1296 04a4 7620     		movs	r0, #118
+ 1297 04a6 FFF7FEFF 		bl	write_data
+ 1298              	.LVL260:
+ 354:Core/Src/KD024VGFPD094.c ****     write_data(0xF0);
+ 1299              		.loc 1 354 5 view .LVU311
+ 1300 04aa F020     		movs	r0, #240
+ 1301 04ac FFF7FEFF 		bl	write_data
+ 1302              	.LVL261:
+ 355:Core/Src/KD024VGFPD094.c ****     write_data(0xFB);
+ 1303              		.loc 1 355 5 view .LVU312
+ 1304 04b0 FB20     		movs	r0, #251
+ 1305 04b2 FFF7FEFF 		bl	write_data
+ 1306              	.LVL262:
+ 356:Core/Src/KD024VGFPD094.c ****     write_data(0x2A);
+ 1307              		.loc 1 356 5 view .LVU313
+ 1308 04b6 2A20     		movs	r0, #42
+ 1309 04b8 FFF7FEFF 		bl	write_data
+ 1310              	.LVL263:
+ 357:Core/Src/KD024VGFPD094.c ****     write_data(0x1C);
+ 1311              		.loc 1 357 5 view .LVU314
+ 1312 04bc 1C20     		movs	r0, #28
+ 1313 04be FFF7FEFF 		bl	write_data
+ 1314              	.LVL264:
+ 358:Core/Src/KD024VGFPD094.c **** 
+ 359:Core/Src/KD024VGFPD094.c ****     write_command(0xEF);
+ 1315              		.loc 1 359 5 view .LVU315
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTKI4ZU.s 			page 31
+
+
+ 1316 04c2 EF20     		movs	r0, #239
+ 1317 04c4 FFF7FEFF 		bl	write_command
+ 1318              	.LVL265:
+ 360:Core/Src/KD024VGFPD094.c ****     write_data(0x10);
+ 1319              		.loc 1 360 5 view .LVU316
+ 1320 04c8 1020     		movs	r0, #16
+ 1321 04ca FFF7FEFF 		bl	write_data
+ 1322              	.LVL266:
+ 361:Core/Src/KD024VGFPD094.c ****     write_data(0x0D);
+ 1323              		.loc 1 361 5 view .LVU317
+ 1324 04ce 0D20     		movs	r0, #13
+ 1325 04d0 FFF7FEFF 		bl	write_data
+ 1326              	.LVL267:
+ 362:Core/Src/KD024VGFPD094.c ****     write_data(0x04);
+ 1327              		.loc 1 362 5 view .LVU318
+ 1328 04d4 0420     		movs	r0, #4
+ 1329 04d6 FFF7FEFF 		bl	write_data
+ 1330              	.LVL268:
+ 363:Core/Src/KD024VGFPD094.c ****     write_data(0x08);
+ 1331              		.loc 1 363 5 view .LVU319
+ 1332 04da 0820     		movs	r0, #8
+ 1333 04dc FFF7FEFF 		bl	write_data
+ 1334              	.LVL269:
+ 364:Core/Src/KD024VGFPD094.c ****     write_data(0x3F);
+ 1335              		.loc 1 364 5 view .LVU320
+ 1336 04e0 3F20     		movs	r0, #63
+ 1337 04e2 FFF7FEFF 		bl	write_data
+ 1338              	.LVL270:
+ 365:Core/Src/KD024VGFPD094.c ****     write_data(0x1F);
+ 1339              		.loc 1 365 5 view .LVU321
+ 1340 04e6 1F20     		movs	r0, #31
+ 1341 04e8 FFF7FEFF 		bl	write_data
+ 1342              	.LVL271:
+ 366:Core/Src/KD024VGFPD094.c **** 
+ 367:Core/Src/KD024VGFPD094.c ****     write_command(0xFF);
+ 1343              		.loc 1 367 5 view .LVU322
+ 1344 04ec FF20     		movs	r0, #255
+ 1345 04ee FFF7FEFF 		bl	write_command
+ 1346              	.LVL272:
+ 368:Core/Src/KD024VGFPD094.c ****     write_data(0x77);
+ 1347              		.loc 1 368 5 view .LVU323
+ 1348 04f2 7720     		movs	r0, #119
+ 1349 04f4 FFF7FEFF 		bl	write_data
+ 1350              	.LVL273:
+ 369:Core/Src/KD024VGFPD094.c ****     write_data(0x01);
+ 1351              		.loc 1 369 5 view .LVU324
+ 1352 04f8 0120     		movs	r0, #1
+ 1353 04fa FFF7FEFF 		bl	write_data
+ 1354              	.LVL274:
+ 370:Core/Src/KD024VGFPD094.c ****     write_data(0x00);
+ 1355              		.loc 1 370 5 view .LVU325
+ 1356 04fe 0020     		movs	r0, #0
+ 1357 0500 FFF7FEFF 		bl	write_data
+ 1358              	.LVL275:
+ 371:Core/Src/KD024VGFPD094.c ****     write_data(0x00);
+ 1359              		.loc 1 371 5 view .LVU326
+ 1360 0504 0020     		movs	r0, #0
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTKI4ZU.s 			page 32
+
+
+ 1361 0506 FFF7FEFF 		bl	write_data
+ 1362              	.LVL276:
+ 372:Core/Src/KD024VGFPD094.c ****     write_data(0x13);
+ 1363              		.loc 1 372 5 view .LVU327
+ 1364 050a 1320     		movs	r0, #19
+ 1365 050c FFF7FEFF 		bl	write_data
+ 1366              	.LVL277:
+ 373:Core/Src/KD024VGFPD094.c **** 
+ 374:Core/Src/KD024VGFPD094.c ****     write_command(0xE8);
+ 1367              		.loc 1 374 5 view .LVU328
+ 1368 0510 E820     		movs	r0, #232
+ 1369 0512 FFF7FEFF 		bl	write_command
+ 1370              	.LVL278:
+ 375:Core/Src/KD024VGFPD094.c ****     write_data(0x00);
+ 1371              		.loc 1 375 5 view .LVU329
+ 1372 0516 0020     		movs	r0, #0
+ 1373 0518 FFF7FEFF 		bl	write_data
+ 1374              	.LVL279:
+ 376:Core/Src/KD024VGFPD094.c ****     write_data(0x0E);
+ 1375              		.loc 1 376 5 view .LVU330
+ 1376 051c 0E20     		movs	r0, #14
+ 1377 051e FFF7FEFF 		bl	write_data
+ 1378              	.LVL280:
+ 377:Core/Src/KD024VGFPD094.c **** 
+ 378:Core/Src/KD024VGFPD094.c ****     write_command(0xFF);
+ 1379              		.loc 1 378 5 view .LVU331
+ 1380 0522 FF20     		movs	r0, #255
+ 1381 0524 FFF7FEFF 		bl	write_command
+ 1382              	.LVL281:
+ 379:Core/Src/KD024VGFPD094.c ****     write_data(0x77);
+ 1383              		.loc 1 379 5 view .LVU332
+ 1384 0528 7720     		movs	r0, #119
+ 1385 052a FFF7FEFF 		bl	write_data
+ 1386              	.LVL282:
+ 380:Core/Src/KD024VGFPD094.c ****     write_data(0x01);
+ 1387              		.loc 1 380 5 view .LVU333
+ 1388 052e 0120     		movs	r0, #1
+ 1389 0530 FFF7FEFF 		bl	write_data
+ 1390              	.LVL283:
+ 381:Core/Src/KD024VGFPD094.c ****     write_data(0x00);
+ 1391              		.loc 1 381 5 view .LVU334
+ 1392 0534 0020     		movs	r0, #0
+ 1393 0536 FFF7FEFF 		bl	write_data
+ 1394              	.LVL284:
+ 382:Core/Src/KD024VGFPD094.c ****     write_data(0x00);
+ 1395              		.loc 1 382 5 view .LVU335
+ 1396 053a 0020     		movs	r0, #0
+ 1397 053c FFF7FEFF 		bl	write_data
+ 1398              	.LVL285:
+ 383:Core/Src/KD024VGFPD094.c ****     write_data(0x00);
+ 1399              		.loc 1 383 5 view .LVU336
+ 1400 0540 0020     		movs	r0, #0
+ 1401 0542 FFF7FEFF 		bl	write_data
+ 1402              	.LVL286:
+ 384:Core/Src/KD024VGFPD094.c **** 
+ 385:Core/Src/KD024VGFPD094.c ****     write_command(0x11);
+ 1403              		.loc 1 385 5 view .LVU337
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTKI4ZU.s 			page 33
+
+
+ 1404 0546 1120     		movs	r0, #17
+ 1405 0548 FFF7FEFF 		bl	write_command
+ 1406              	.LVL287:
+ 386:Core/Src/KD024VGFPD094.c ****     HAL_Delay(120);
+ 1407              		.loc 1 386 5 view .LVU338
+ 1408 054c 7820     		movs	r0, #120
+ 1409 054e FFF7FEFF 		bl	HAL_Delay
+ 1410              	.LVL288:
+ 387:Core/Src/KD024VGFPD094.c **** 
+ 388:Core/Src/KD024VGFPD094.c ****     write_command(0xFF);
+ 1411              		.loc 1 388 5 view .LVU339
+ 1412 0552 FF20     		movs	r0, #255
+ 1413 0554 FFF7FEFF 		bl	write_command
+ 1414              	.LVL289:
+ 389:Core/Src/KD024VGFPD094.c ****     write_data(0x77);
+ 1415              		.loc 1 389 5 view .LVU340
+ 1416 0558 7720     		movs	r0, #119
+ 1417 055a FFF7FEFF 		bl	write_data
+ 1418              	.LVL290:
+ 390:Core/Src/KD024VGFPD094.c ****     write_data(0x01);
+ 1419              		.loc 1 390 5 view .LVU341
+ 1420 055e 0120     		movs	r0, #1
+ 1421 0560 FFF7FEFF 		bl	write_data
+ 1422              	.LVL291:
+ 391:Core/Src/KD024VGFPD094.c ****     write_data(0x00);
+ 1423              		.loc 1 391 5 view .LVU342
+ 1424 0564 0020     		movs	r0, #0
+ 1425 0566 FFF7FEFF 		bl	write_data
+ 1426              	.LVL292:
+ 392:Core/Src/KD024VGFPD094.c ****     write_data(0x00);
+ 1427              		.loc 1 392 5 view .LVU343
+ 1428 056a 0020     		movs	r0, #0
+ 1429 056c FFF7FEFF 		bl	write_data
+ 1430              	.LVL293:
+ 393:Core/Src/KD024VGFPD094.c ****     write_data(0x13);
+ 1431              		.loc 1 393 5 view .LVU344
+ 1432 0570 1320     		movs	r0, #19
+ 1433 0572 FFF7FEFF 		bl	write_data
+ 1434              	.LVL294:
+ 394:Core/Src/KD024VGFPD094.c **** 
+ 395:Core/Src/KD024VGFPD094.c ****     write_command(0xE8);
+ 1435              		.loc 1 395 5 view .LVU345
+ 1436 0576 E820     		movs	r0, #232
+ 1437 0578 FFF7FEFF 		bl	write_command
+ 1438              	.LVL295:
+ 396:Core/Src/KD024VGFPD094.c ****     write_data(0x00);
+ 1439              		.loc 1 396 5 view .LVU346
+ 1440 057c 0020     		movs	r0, #0
+ 1441 057e FFF7FEFF 		bl	write_data
+ 1442              	.LVL296:
+ 397:Core/Src/KD024VGFPD094.c ****     write_data(0x0C);
+ 1443              		.loc 1 397 5 view .LVU347
+ 1444 0582 0C20     		movs	r0, #12
+ 1445 0584 FFF7FEFF 		bl	write_data
+ 1446              	.LVL297:
+ 398:Core/Src/KD024VGFPD094.c ****     HAL_Delay(10);
+ 1447              		.loc 1 398 5 view .LVU348
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTKI4ZU.s 			page 34
+
+
+ 1448 0588 0A20     		movs	r0, #10
+ 1449 058a FFF7FEFF 		bl	HAL_Delay
+ 1450              	.LVL298:
+ 399:Core/Src/KD024VGFPD094.c **** 
+ 400:Core/Src/KD024VGFPD094.c ****     write_command(0xE8);
+ 1451              		.loc 1 400 5 view .LVU349
+ 1452 058e E820     		movs	r0, #232
+ 1453 0590 FFF7FEFF 		bl	write_command
+ 1454              	.LVL299:
+ 401:Core/Src/KD024VGFPD094.c ****     write_data(0x00);
+ 1455              		.loc 1 401 5 view .LVU350
+ 1456 0594 0020     		movs	r0, #0
+ 1457 0596 FFF7FEFF 		bl	write_data
+ 1458              	.LVL300:
+ 402:Core/Src/KD024VGFPD094.c ****     write_data(0x00);
+ 1459              		.loc 1 402 5 view .LVU351
+ 1460 059a 0020     		movs	r0, #0
+ 1461 059c FFF7FEFF 		bl	write_data
+ 1462              	.LVL301:
+ 403:Core/Src/KD024VGFPD094.c **** 
+ 404:Core/Src/KD024VGFPD094.c ****     write_command(0xFF);
+ 1463              		.loc 1 404 5 view .LVU352
+ 1464 05a0 FF20     		movs	r0, #255
+ 1465 05a2 FFF7FEFF 		bl	write_command
+ 1466              	.LVL302:
+ 405:Core/Src/KD024VGFPD094.c ****     write_data(0x77);
+ 1467              		.loc 1 405 5 view .LVU353
+ 1468 05a6 7720     		movs	r0, #119
+ 1469 05a8 FFF7FEFF 		bl	write_data
+ 1470              	.LVL303:
+ 406:Core/Src/KD024VGFPD094.c ****     write_data(0x01);
+ 1471              		.loc 1 406 5 view .LVU354
+ 1472 05ac 0120     		movs	r0, #1
+ 1473 05ae FFF7FEFF 		bl	write_data
+ 1474              	.LVL304:
+ 407:Core/Src/KD024VGFPD094.c ****     write_data(0x00);
+ 1475              		.loc 1 407 5 view .LVU355
+ 1476 05b2 0020     		movs	r0, #0
+ 1477 05b4 FFF7FEFF 		bl	write_data
+ 1478              	.LVL305:
+ 408:Core/Src/KD024VGFPD094.c ****     write_data(0x00);
+ 1479              		.loc 1 408 5 view .LVU356
+ 1480 05b8 0020     		movs	r0, #0
+ 1481 05ba FFF7FEFF 		bl	write_data
+ 1482              	.LVL306:
+ 409:Core/Src/KD024VGFPD094.c ****     write_data(0x00);
+ 1483              		.loc 1 409 5 view .LVU357
+ 1484 05be 0020     		movs	r0, #0
+ 1485 05c0 FFF7FEFF 		bl	write_data
+ 1486              	.LVL307:
+ 410:Core/Src/KD024VGFPD094.c **** 
+ 411:Core/Src/KD024VGFPD094.c ****     write_command(0x3a);
+ 1487              		.loc 1 411 5 view .LVU358
+ 1488 05c4 3A20     		movs	r0, #58
+ 1489 05c6 FFF7FEFF 		bl	write_command
+ 1490              	.LVL308:
+ 412:Core/Src/KD024VGFPD094.c ****     write_data(0x70); // 24BIT
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTKI4ZU.s 			page 35
+
+
+ 1491              		.loc 1 412 5 view .LVU359
+ 1492 05ca 7020     		movs	r0, #112
+ 1493 05cc FFF7FEFF 		bl	write_data
+ 1494              	.LVL309:
+ 413:Core/Src/KD024VGFPD094.c **** 
+ 414:Core/Src/KD024VGFPD094.c ****     write_command(0x29); // DISPLAY ON
+ 1495              		.loc 1 414 5 view .LVU360
+ 1496 05d0 2920     		movs	r0, #41
+ 1497 05d2 FFF7FEFF 		bl	write_command
+ 1498              	.LVL310:
+ 415:Core/Src/KD024VGFPD094.c ****     HAL_Delay(50);
+ 1499              		.loc 1 415 5 view .LVU361
+ 1500 05d6 3220     		movs	r0, #50
+ 1501 05d8 FFF7FEFF 		bl	HAL_Delay
+ 1502              	.LVL311:
+ 416:Core/Src/KD024VGFPD094.c **** 
+ 417:Core/Src/KD024VGFPD094.c ****     printf("LCD init done\n");
+ 1503              		.loc 1 417 5 view .LVU362
+ 1504 05dc 0148     		ldr	r0, .L40
+ 1505 05de FFF7FEFF 		bl	puts
+ 1506              	.LVL312:
+ 418:Core/Src/KD024VGFPD094.c **** }
+ 1507              		.loc 1 418 1 is_stmt 0 view .LVU363
+ 1508 05e2 10BD     		pop	{r4, pc}
+ 1509              	.L41:
+ 1510              		.align	2
+ 1511              	.L40:
+ 1512 05e4 00000000 		.word	.LC0
+ 1513              		.cfi_endproc
+ 1514              	.LFE150:
+ 1516              		.section	.text.EnterSleep,"ax",%progbits
+ 1517              		.align	1
+ 1518              		.global	EnterSleep
+ 1519              		.syntax unified
+ 1520              		.thumb
+ 1521              		.thumb_func
+ 1523              	EnterSleep:
+ 1524              	.LFB151:
+ 419:Core/Src/KD024VGFPD094.c **** //*******************************************
+ 420:Core/Src/KD024VGFPD094.c **** void EnterSleep(void)
+ 421:Core/Src/KD024VGFPD094.c **** {
+ 1525              		.loc 1 421 1 is_stmt 1 view -0
+ 1526              		.cfi_startproc
+ 1527              		@ args = 0, pretend = 0, frame = 0
+ 1528              		@ frame_needed = 0, uses_anonymous_args = 0
+ 1529 0000 08B5     		push	{r3, lr}
+ 1530              		.cfi_def_cfa_offset 8
+ 1531              		.cfi_offset 3, -8
+ 1532              		.cfi_offset 14, -4
+ 422:Core/Src/KD024VGFPD094.c ****     write_command(0x28);
+ 1533              		.loc 1 422 5 view .LVU365
+ 1534 0002 2820     		movs	r0, #40
+ 1535 0004 FFF7FEFF 		bl	write_command
+ 1536              	.LVL313:
+ 423:Core/Src/KD024VGFPD094.c ****     HAL_Delay(10);
+ 1537              		.loc 1 423 5 view .LVU366
+ 1538 0008 0A20     		movs	r0, #10
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTKI4ZU.s 			page 36
+
+
+ 1539 000a FFF7FEFF 		bl	HAL_Delay
+ 1540              	.LVL314:
+ 424:Core/Src/KD024VGFPD094.c ****     write_command(0x10);
+ 1541              		.loc 1 424 5 view .LVU367
+ 1542 000e 1020     		movs	r0, #16
+ 1543 0010 FFF7FEFF 		bl	write_command
+ 1544              	.LVL315:
+ 425:Core/Src/KD024VGFPD094.c **** }
+ 1545              		.loc 1 425 1 is_stmt 0 view .LVU368
+ 1546 0014 08BD     		pop	{r3, pc}
+ 1547              		.cfi_endproc
+ 1548              	.LFE151:
+ 1550              		.section	.text.ExitSleep,"ax",%progbits
+ 1551              		.align	1
+ 1552              		.global	ExitSleep
+ 1553              		.syntax unified
+ 1554              		.thumb
+ 1555              		.thumb_func
+ 1557              	ExitSleep:
+ 1558              	.LFB152:
+ 426:Core/Src/KD024VGFPD094.c **** 
+ 427:Core/Src/KD024VGFPD094.c **** //*********************************************************
+ 428:Core/Src/KD024VGFPD094.c **** void ExitSleep(void)
+ 429:Core/Src/KD024VGFPD094.c **** 
+ 430:Core/Src/KD024VGFPD094.c **** {
+ 1559              		.loc 1 430 1 is_stmt 1 view -0
+ 1560              		.cfi_startproc
+ 1561              		@ args = 0, pretend = 0, frame = 0
+ 1562              		@ frame_needed = 0, uses_anonymous_args = 0
+ 1563 0000 08B5     		push	{r3, lr}
+ 1564              		.cfi_def_cfa_offset 8
+ 1565              		.cfi_offset 3, -8
+ 1566              		.cfi_offset 14, -4
+ 431:Core/Src/KD024VGFPD094.c ****     write_command(0x11);
+ 1567              		.loc 1 431 5 view .LVU370
+ 1568 0002 1120     		movs	r0, #17
+ 1569 0004 FFF7FEFF 		bl	write_command
+ 1570              	.LVL316:
+ 432:Core/Src/KD024VGFPD094.c ****     HAL_Delay(120);
+ 1571              		.loc 1 432 5 view .LVU371
+ 1572 0008 7820     		movs	r0, #120
+ 1573 000a FFF7FEFF 		bl	HAL_Delay
+ 1574              	.LVL317:
+ 433:Core/Src/KD024VGFPD094.c ****     write_command(0x29);
+ 1575              		.loc 1 433 5 view .LVU372
+ 1576 000e 2920     		movs	r0, #41
+ 1577 0010 FFF7FEFF 		bl	write_command
+ 1578              	.LVL318:
+ 434:Core/Src/KD024VGFPD094.c **** }
+ 1579              		.loc 1 434 1 is_stmt 0 view .LVU373
+ 1580 0014 08BD     		pop	{r3, pc}
+ 1581              		.cfi_endproc
+ 1582              	.LFE152:
+ 1584              		.section	.text.SSD_SEND,"ax",%progbits
+ 1585              		.align	1
+ 1586              		.global	SSD_SEND
+ 1587              		.syntax unified
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTKI4ZU.s 			page 37
+
+
+ 1588              		.thumb
+ 1589              		.thumb_func
+ 1591              	SSD_SEND:
+ 1592              	.LVL319:
+ 1593              	.LFB153:
+ 435:Core/Src/KD024VGFPD094.c **** void SSD_SEND(uint8_t numArgs, ...)
+ 436:Core/Src/KD024VGFPD094.c **** {
+ 1594              		.loc 1 436 1 is_stmt 1 view -0
+ 1595              		.cfi_startproc
+ 1596              		@ args = 4, pretend = 16, frame = 8
+ 1597              		@ frame_needed = 0, uses_anonymous_args = 1
+ 1598              		.loc 1 436 1 is_stmt 0 view .LVU375
+ 1599 0000 0FB4     		push	{r0, r1, r2, r3}
+ 1600              		.cfi_def_cfa_offset 16
+ 1601              		.cfi_offset 0, -16
+ 1602              		.cfi_offset 1, -12
+ 1603              		.cfi_offset 2, -8
+ 1604              		.cfi_offset 3, -4
+ 1605 0002 30B5     		push	{r4, r5, lr}
+ 1606              		.cfi_def_cfa_offset 28
+ 1607              		.cfi_offset 4, -28
+ 1608              		.cfi_offset 5, -24
+ 1609              		.cfi_offset 14, -20
+ 1610 0004 83B0     		sub	sp, sp, #12
+ 1611              		.cfi_def_cfa_offset 40
+ 1612 0006 06AB     		add	r3, sp, #24
+ 1613 0008 13F8045B 		ldrb	r5, [r3], #4	@ zero_extendqisi2
+ 437:Core/Src/KD024VGFPD094.c ****     va_list args;
+ 1614              		.loc 1 437 5 is_stmt 1 view .LVU376
+ 438:Core/Src/KD024VGFPD094.c ****     va_start(args, numArgs);
+ 1615              		.loc 1 438 5 view .LVU377
+ 1616 000c 0193     		str	r3, [sp, #4]
+ 439:Core/Src/KD024VGFPD094.c **** 
+ 440:Core/Src/KD024VGFPD094.c ****     // 选择SPI设备
+ 441:Core/Src/KD024VGFPD094.c ****     HAL_GPIO_WritePin(CSB_GPIO_Port, CSB_Pin, GPIO_PIN_RESET);
+ 1617              		.loc 1 441 5 view .LVU378
+ 1618 000e 0022     		movs	r2, #0
+ 1619 0010 1021     		movs	r1, #16
+ 1620 0012 0F48     		ldr	r0, .L50
+ 1621 0014 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 1622              	.LVL320:
+ 442:Core/Src/KD024VGFPD094.c **** 
+ 443:Core/Src/KD024VGFPD094.c ****     uint8_t data;
+ 1623              		.loc 1 443 5 view .LVU379
+ 444:Core/Src/KD024VGFPD094.c ****     for (uint8_t i = 0; i < numArgs; ++i)
+ 1624              		.loc 1 444 5 view .LVU380
+ 1625              	.LBB2:
+ 1626              		.loc 1 444 10 view .LVU381
+ 1627              		.loc 1 444 18 is_stmt 0 view .LVU382
+ 1628 0018 0024     		movs	r4, #0
+ 1629              		.loc 1 444 5 view .LVU383
+ 1630 001a 0CE0     		b	.L47
+ 1631              	.LVL321:
+ 1632              	.L48:
+ 445:Core/Src/KD024VGFPD094.c ****     {
+ 446:Core/Src/KD024VGFPD094.c ****         // 获取下一个参数并发送
+ 447:Core/Src/KD024VGFPD094.c ****         data = va_arg(args, int); // Note: va_arg第二个参数是你要获取的类型
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTKI4ZU.s 			page 38
+
+
+ 1633              		.loc 1 447 9 is_stmt 1 view .LVU384
+ 1634              		.loc 1 447 16 is_stmt 0 view .LVU385
+ 1635 001c 019B     		ldr	r3, [sp, #4]
+ 1636 001e 1A1D     		adds	r2, r3, #4
+ 1637 0020 0192     		str	r2, [sp, #4]
+ 1638 0022 1B68     		ldr	r3, [r3]
+ 1639              		.loc 1 447 14 view .LVU386
+ 1640 0024 8DF80330 		strb	r3, [sp, #3]
+ 448:Core/Src/KD024VGFPD094.c **** 
+ 449:Core/Src/KD024VGFPD094.c ****         // 发送数据
+ 450:Core/Src/KD024VGFPD094.c ****         write_data(&data);
+ 1641              		.loc 1 450 9 is_stmt 1 view .LVU387
+ 1642 0028 0DF10300 		add	r0, sp, #3
+ 1643 002c C0B2     		uxtb	r0, r0
+ 1644 002e FFF7FEFF 		bl	write_data
+ 1645              	.LVL322:
+ 444:Core/Src/KD024VGFPD094.c ****     {
+ 1646              		.loc 1 444 38 view .LVU388
+ 1647 0032 0134     		adds	r4, r4, #1
+ 1648              	.LVL323:
+ 444:Core/Src/KD024VGFPD094.c ****     {
+ 1649              		.loc 1 444 38 is_stmt 0 view .LVU389
+ 1650 0034 E4B2     		uxtb	r4, r4
+ 1651              	.LVL324:
+ 1652              	.L47:
+ 444:Core/Src/KD024VGFPD094.c ****     {
+ 1653              		.loc 1 444 25 is_stmt 1 discriminator 1 view .LVU390
+ 444:Core/Src/KD024VGFPD094.c ****     {
+ 1654              		.loc 1 444 5 is_stmt 0 discriminator 1 view .LVU391
+ 1655 0036 AC42     		cmp	r4, r5
+ 1656 0038 F0D3     		bcc	.L48
+ 1657              	.LBE2:
+ 451:Core/Src/KD024VGFPD094.c ****     }
+ 452:Core/Src/KD024VGFPD094.c **** 
+ 453:Core/Src/KD024VGFPD094.c ****     // 取消选择SPI设备
+ 454:Core/Src/KD024VGFPD094.c ****     HAL_GPIO_WritePin(CSB_GPIO_Port, CSB_Pin, GPIO_PIN_SET);
+ 1658              		.loc 1 454 5 is_stmt 1 view .LVU392
+ 1659 003a 0122     		movs	r2, #1
+ 1660 003c 1021     		movs	r1, #16
+ 1661 003e 0448     		ldr	r0, .L50
+ 1662 0040 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 1663              	.LVL325:
+ 455:Core/Src/KD024VGFPD094.c **** 
+ 456:Core/Src/KD024VGFPD094.c ****     va_end(args);
+ 1664              		.loc 1 456 5 view .LVU393
+ 457:Core/Src/KD024VGFPD094.c **** }...
+ 1665              		.loc 1 457 1 is_stmt 0 view .LVU394
+ 1666 0044 03B0     		add	sp, sp, #12
+ 1667              		.cfi_def_cfa_offset 28
+ 1668              		@ sp needed
+ 1669 0046 BDE83040 		pop	{r4, r5, lr}
+ 1670              		.cfi_restore 14
+ 1671              		.cfi_restore 5
+ 1672              		.cfi_restore 4
+ 1673              		.cfi_def_cfa_offset 16
+ 1674              	.LVL326:
+ 1675              		.loc 1 457 1 view .LVU395
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTKI4ZU.s 			page 39
+
+
+ 1676 004a 04B0     		add	sp, sp, #16
+ 1677              		.cfi_restore 3
+ 1678              		.cfi_restore 2
+ 1679              		.cfi_restore 1
+ 1680              		.cfi_restore 0
+ 1681              		.cfi_def_cfa_offset 0
+ 1682 004c 7047     		bx	lr
+ 1683              	.L51:
+ 1684 004e 00BF     		.align	2
+ 1685              	.L50:
+ 1686 0050 00000258 		.word	1476526080
+ 1687              		.cfi_endproc
+ 1688              	.LFE153:
+ 1690              		.text
+ 1691              	.Letext0:
+ 1692              		.file 2 "c:\\tools\\gcc-arm-none-eabi\\arm-none-eabi\\include\\machine\\_default_types.h"
+ 1693              		.file 3 "c:\\tools\\gcc-arm-none-eabi\\arm-none-eabi\\include\\sys\\_stdint.h"
+ 1694              		.file 4 "Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h743xx.h"
+ 1695              		.file 5 "Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h"
+ 1696              		.file 6 "Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_gpio.h"
+ 1697              		.file 7 "c:\\tools\\gcc-arm-none-eabi\\lib\\gcc\\arm-none-eabi\\10.3.1\\include\\stdarg.h"
+ 1698              		.file 8 "c:\\tools\\gcc-arm-none-eabi\\arm-none-eabi\\include\\stdio.h"
+ 1699              		.file 9 "Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h"
+ 1700              		.file 10 "<built-in>"
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTKI4ZU.s 			page 40
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 KD024VGFPD094.c
+C:\Users\OSD\AppData\Local\Temp\ccTKI4ZU.s:19     .text.read_data:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccTKI4ZU.s:25     .text.read_data:00000000 read_data
+C:\Users\OSD\AppData\Local\Temp\ccTKI4ZU.s:231    .text.read_data:000000e0 $d
+C:\Users\OSD\AppData\Local\Temp\ccTKI4ZU.s:236    .text.write_command:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccTKI4ZU.s:242    .text.write_command:00000000 write_command
+C:\Users\OSD\AppData\Local\Temp\ccTKI4ZU.s:355    .text.write_command:0000007c $d
+C:\Users\OSD\AppData\Local\Temp\ccTKI4ZU.s:360    .text.write_data:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccTKI4ZU.s:366    .text.write_data:00000000 write_data
+C:\Users\OSD\AppData\Local\Temp\ccTKI4ZU.s:479    .text.write_data:0000007c $d
+C:\Users\OSD\AppData\Local\Temp\ccTKI4ZU.s:484    .rodata.KD024VGFPD094_init.str1.4:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccTKI4ZU.s:488    .text.KD024VGFPD094_init:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccTKI4ZU.s:494    .text.KD024VGFPD094_init:00000000 KD024VGFPD094_init
+C:\Users\OSD\AppData\Local\Temp\ccTKI4ZU.s:1187   .text.KD024VGFPD094_init:00000400 $d
+C:\Users\OSD\AppData\Local\Temp\ccTKI4ZU.s:1189   .text.KD024VGFPD094_init:00000404 $t
+C:\Users\OSD\AppData\Local\Temp\ccTKI4ZU.s:1512   .text.KD024VGFPD094_init:000005e4 $d
+C:\Users\OSD\AppData\Local\Temp\ccTKI4ZU.s:1517   .text.EnterSleep:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccTKI4ZU.s:1523   .text.EnterSleep:00000000 EnterSleep
+C:\Users\OSD\AppData\Local\Temp\ccTKI4ZU.s:1551   .text.ExitSleep:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccTKI4ZU.s:1557   .text.ExitSleep:00000000 ExitSleep
+C:\Users\OSD\AppData\Local\Temp\ccTKI4ZU.s:1585   .text.SSD_SEND:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccTKI4ZU.s:1591   .text.SSD_SEND:00000000 SSD_SEND
+C:\Users\OSD\AppData\Local\Temp\ccTKI4ZU.s:1686   .text.SSD_SEND:00000050 $d
+
+UNDEFINED SYMBOLS
+HAL_GPIO_WritePin
+HAL_GPIO_ReadPin
+HAL_Delay
+puts
