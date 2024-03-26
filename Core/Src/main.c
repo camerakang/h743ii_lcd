@@ -1,8 +1,9 @@
 /* USER CODE BEGIN Header */
 /**
  ******************************************************************************
- * @file           : main.c
- * @brief          : Main program body
+ * @file    ltdc.c
+ * @brief   This file provides code for the configuration
+ *          of the LTDC instances.
  ******************************************************************************
  * @attention
  *
@@ -18,12 +19,15 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "dma2d.h"
+#include "ltdc.h"
 #include "usart.h"
 #include "gpio.h"
+#include "fmc.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "KD024VGFPD094.h"
+
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -49,14 +53,14 @@
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
+static void MPU_Config(void);
 /* USER CODE BEGIN PFP */
-void delay_us(uint32_t us);
+
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-unsigned char command = 0xA1;
-unsigned char receivedData = 0;
+#include "lcd_rgb.h"
 /* USER CODE END 0 */
 
 /**
@@ -68,6 +72,15 @@ int main(void)
   /* USER CODE BEGIN 1 */
 
   /* USER CODE END 1 */
+
+  /* MPU Configuration--------------------------------------------------------*/
+  MPU_Config();
+
+  /* Enable I-Cache---------------------------------------------------------*/
+  SCB_EnableICache();
+
+  /* Enable D-Cache---------------------------------------------------------*/
+  SCB_EnableDCache();
 
   /* MCU Configuration--------------------------------------------------------*/
 
@@ -88,27 +101,10 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_USART1_UART_Init();
+  MX_FMC_Init();
+  MX_DMA2D_Init();
+  MX_LTDC_Init();
   /* USER CODE BEGIN 2 */
-  HAL_GPIO_WritePin(CSB_GPIO_Port, CSB_Pin, SET);
-  KD024VGFPD094_init();
-  HAL_Delay(100);
-  write_command(0xff);
-  write_data(0x77);
-  write_data(0x01);
-  write_data(0x00);
-  write_data(0x00);
-  write_data(0x12);
-  write_command(0xD1);
-  write_data(0x81);
-  write_command(0xD2);
-  write_data(0x08);
-  printf("LCD init done\n");
-  // SSD_SEND(6, 0XFF, 0X77, 0X01, 0X00, 0X00, 0X12); // 娉ㄦ剰锛氱�?????涓弬鏁拌�?�绀洪殢鍚庡弬鏁扮殑鏁伴�????
-  // SSD_SEND(2, 0xD1, 0x81);                         // BIST EN
-  // SSD_SEND(2, 0xD2, 0x01);                         // 鐢婚�????00-0B 涓嶅悓鐢婚潰杞�????
-  // SSD_SEND(0XFF, 0X77, 0X01, 0X00, 0X00, 0X12);
-  // SSD_SEND(0xD1, 0x81);
-  // SSD_SEND(0xD2, 0x06); // 画面00-0B 不同画面转换
 
   /* USER CODE END 2 */
 
@@ -116,14 +112,85 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+    LCD_SetBackColor(DARK_GREY);
+    // HAL_Delay(1000);
+    // LCD_ClearRect(240, 0, 480, 640);
+    LCD_Clear();
+    HAL_Delay(2000);
+    LCD_SetBackColor(LCD_GREEN);
+    // LCD_ClearRect(0, 0, 240, 640);
+    LCD_Clear();
+    HAL_Delay(2000);
+    // LCD_Test_Image();
+    //     HAL_Delay(1000);
+    // LCD_SetBackColor(LCD_BLACK);
+    // LCD_Clear();
+    // HAL_Delay(1000);
+    // LCD_SetBackColor(LCD_BLUE);
+    // LCD_Clear();
+    // HAL_Delay(1000);
+    // LCD_SetBackColor(LCD_GREEN);
+    // LCD_Clear();
+    // HAL_Delay(1000);
+    // LCD_SetBackColor(LCD_RED);
+    // LCD_Clear();
+    // HAL_Delay(1000);
+    // LCD_SetBackColor(LCD_CYAN);
+    // LCD_Clear();
+    // HAL_Delay(1000);
+    // LCD_SetBackColor(LCD_MAGENTA);
+    // LCD_Clear();
+    // HAL_Delay(1000);
+    // LCD_SetBackColor(LCD_YELLOW);
+    // LCD_Clear();
+    // HAL_Delay(1000);
+    // LCD_SetBackColor(LCD_GREY);
+    // LCD_Clear();
+    // HAL_Delay(1000);
+    // LCD_SetBackColor(LIGHT_BLUE);
+    // LCD_Clear();
+    // HAL_Delay(1000);
+    // LCD_SetBackColor(LIGHT_GREEN);
+    // LCD_Clear();
+    // HAL_Delay(1000);
+    // LCD_SetBackColor(LIGHT_RED);
+    // LCD_Clear();
+    // HAL_Delay(1000);
+    // LCD_SetBackColor(LIGHT_CYAN);
+    // LCD_Clear();
+    // HAL_Delay(1000);
+    // LCD_SetBackColor(LIGHT_MAGENTA);
+    // LCD_Clear();
+    // HAL_Delay(1000);
+    // LCD_SetBackColor(LIGHT_YELLOW);
+    // LCD_Clear();
+    // HAL_Delay(1000);
 
-    // 生成时钟信号的高电平
-    HAL_GPIO_WritePin(LCD_PCLK_GPIO_Port, LCD_PCLK_Pin,GPIO_PIN_SET);
-    delay_us(42); // 42 us（根据需要进行调整）
+    // LCD_SetBackColor(LIGHT_GREY);
+    // LCD_Clear();
+    // HAL_Delay(1000);
+    // LCD_SetBackColor(DARK_BLUE);
+    // LCD_Clear();
+    // HAL_Delay(1000);
+    // LCD_SetBackColor(DARK_GREEN);
+    // LCD_Clear();
+    // HAL_Delay(1000);
+    // LCD_SetBackColor(DARK_RED);
+    // LCD_Clear();
+    // HAL_Delay(1000);
+    // LCD_SetBackColor(DARK_CYAN);
+    // LCD_Clear();
+    // HAL_Delay(1000);
+    // LCD_SetBackColor(DARK_MAGENTA);
+    // LCD_Clear();
+    // HAL_Delay(1000);
+    // LCD_SetBackColor(DARK_YELLOW);
+    // LCD_Clear();
+    // HAL_Delay(1000);
+    // LCD_SetBackColor(DARK_GREY);
+    // LCD_Clear();
+    // HAL_Delay(1000);
 
-    // 生成时钟信号的低电平
-    HAL_GPIO_WritePin(LCD_PCLK_GPIO_Port, LCD_PCLK_Pin,GPIO_PIN_RESET);
-    delay_us(42); // 42 us（根据需要进行调整）
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -169,7 +236,7 @@ void SystemClock_Config(void)
   RCC_OscInitStruct.PLL.PLLM = 5;
   RCC_OscInitStruct.PLL.PLLN = 192;
   RCC_OscInitStruct.PLL.PLLP = 2;
-  RCC_OscInitStruct.PLL.PLLQ = 5;
+  RCC_OscInitStruct.PLL.PLLQ = 2;
   RCC_OscInitStruct.PLL.PLLR = 2;
   RCC_OscInitStruct.PLL.PLLRGE = RCC_PLL1VCIRANGE_2;
   RCC_OscInitStruct.PLL.PLLVCOSEL = RCC_PLL1VCOWIDE;
@@ -197,21 +264,36 @@ void SystemClock_Config(void)
 }
 
 /* USER CODE BEGIN 4 */
-int _write(int fd, char *ptr, int len)
-{
-  HAL_UART_Transmit(&huart1, (uint8_t *)ptr, len, 0xFFFF);
-  return len;
-}
 
-void delay_us(uint32_t us)
-{
-  us *= (SystemCoreClock / 1000000) / 5;
-  while (us--)
-  {
-    __NOP();
-  }
-}
 /* USER CODE END 4 */
+
+/* MPU Configuration */
+
+void MPU_Config(void)
+{
+  MPU_Region_InitTypeDef MPU_InitStruct = {0};
+
+  /* Disables the MPU */
+  HAL_MPU_Disable();
+
+  /** Initializes and configures the Region and the memory to be protected
+   */
+  MPU_InitStruct.Enable = MPU_REGION_ENABLE;
+  MPU_InitStruct.Number = MPU_REGION_NUMBER0;
+  MPU_InitStruct.BaseAddress = 0xC0000000;
+  MPU_InitStruct.Size = MPU_REGION_SIZE_32MB;
+  MPU_InitStruct.SubRegionDisable = 0x0;
+  MPU_InitStruct.TypeExtField = MPU_TEX_LEVEL0;
+  MPU_InitStruct.AccessPermission = MPU_REGION_FULL_ACCESS;
+  MPU_InitStruct.DisableExec = MPU_INSTRUCTION_ACCESS_ENABLE;
+  MPU_InitStruct.IsShareable = MPU_ACCESS_NOT_SHAREABLE;
+  MPU_InitStruct.IsCacheable = MPU_ACCESS_NOT_CACHEABLE;
+  MPU_InitStruct.IsBufferable = MPU_ACCESS_NOT_BUFFERABLE;
+
+  HAL_MPU_ConfigRegion(&MPU_InitStruct);
+  /* Enables the MPU */
+  HAL_MPU_Enable(MPU_PRIVILEGED_DEFAULT);
+}
 
 /**
  * @brief  This function is executed in case of error occurrence.

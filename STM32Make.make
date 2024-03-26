@@ -37,7 +37,14 @@ BUILD_DIR = build
 # C sources
 C_SOURCES =  \
 Core/Src/KD024VGFPD094.c \
+Core/Src/dma2d.c \
+Core/Src/fmc.c \
 Core/Src/gpio.c \
+Core/Src/lcd_fonts.c \
+Core/Src/lcd_image.c \
+Core/Src/lcd_rgb.c \
+Core/Src/lcd_test.c \
+Core/Src/ltdc.c \
 Core/Src/main.c \
 Core/Src/stm32h7xx_hal_msp.c \
 Core/Src/stm32h7xx_it.c \
@@ -46,6 +53,7 @@ Core/Src/usart.c \
 Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c \
 Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c \
 Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c \
+Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma2d.c \
 Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c \
 Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c \
 Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c \
@@ -54,15 +62,19 @@ Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c \
 Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c \
 Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c \
 Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c \
+Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.c \
+Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc_ex.c \
 Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c \
 Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c \
 Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c \
 Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c \
 Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c \
+Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sdram.c \
 Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c \
 Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c \
 Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c \
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c
+Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c \
+Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_fmc.c
 
 
 CPP_SOURCES = \

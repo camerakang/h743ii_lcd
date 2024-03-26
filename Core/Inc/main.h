@@ -69,8 +69,6 @@ void Error_Handler(void);
 #define SDI_GPIO_Port GPIOA
 #define LCD_BL_Pin GPIO_PIN_6
 #define LCD_BL_GPIO_Port GPIOH
-#define LCD_PCLK_Pin GPIO_PIN_7
-#define LCD_PCLK_GPIO_Port GPIOG
 
 /* USER CODE BEGIN Private defines */
 #include "stdio.h"
