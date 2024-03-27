@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
   29:lvgl/src/widgets/lv_btnmatrix.c ****  *      TYPEDEFS
   30:lvgl/src/widgets/lv_btnmatrix.c ****  **********************/
   31:lvgl/src/widgets/lv_btnmatrix.c **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 2
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 2
 
 
   32:lvgl/src/widgets/lv_btnmatrix.c **** /**********************
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
   86:lvgl/src/widgets/lv_btnmatrix.c ****     return obj;
   87:lvgl/src/widgets/lv_btnmatrix.c **** }
   88:lvgl/src/widgets/lv_btnmatrix.c **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 3
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 3
 
 
   89:lvgl/src/widgets/lv_btnmatrix.c **** /*=====================
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  143:lvgl/src/widgets/lv_btnmatrix.c **** 
  144:lvgl/src/widgets/lv_btnmatrix.c ****         /*Set the button size and positions*/
  145:lvgl/src/widgets/lv_btnmatrix.c ****         lv_coord_t max_w_no_gap = max_w - (pcol * (btn_cnt - 1));
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 4
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 4
 
 
  146:lvgl/src/widgets/lv_btnmatrix.c ****         if(max_w_no_gap < 0) max_w_no_gap = 0;
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  200:lvgl/src/widgets/lv_btnmatrix.c ****     if(btn_id >= btnm->btn_cnt && btn_id != LV_BTNMATRIX_BTN_NONE) return;
  201:lvgl/src/widgets/lv_btnmatrix.c **** 
  202:lvgl/src/widgets/lv_btnmatrix.c ****     invalidate_button_area(obj, btnm->btn_id_sel);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 5
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 5
 
 
  203:lvgl/src/widgets/lv_btnmatrix.c ****     btnm->btn_id_sel = btn_id;
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  257:lvgl/src/widgets/lv_btnmatrix.c ****         lv_obj_refresh_ext_draw_size(obj);
  258:lvgl/src/widgets/lv_btnmatrix.c ****     }
  259:lvgl/src/widgets/lv_btnmatrix.c **** }
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 6
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 6
 
 
  260:lvgl/src/widgets/lv_btnmatrix.c **** 
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  314:lvgl/src/widgets/lv_btnmatrix.c ****     lv_btnmatrix_t * btnm = (lv_btnmatrix_t *)obj;;
  315:lvgl/src/widgets/lv_btnmatrix.c ****     return btnm->map_p;
  316:lvgl/src/widgets/lv_btnmatrix.c **** }
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 7
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 7
 
 
  317:lvgl/src/widgets/lv_btnmatrix.c **** 
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  371:lvgl/src/widgets/lv_btnmatrix.c ****  *   STATIC FUNCTIONS
  372:lvgl/src/widgets/lv_btnmatrix.c ****  **********************/
  373:lvgl/src/widgets/lv_btnmatrix.c **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 8
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 8
 
 
  374:lvgl/src/widgets/lv_btnmatrix.c **** static void lv_btnmatrix_constructor(const lv_obj_class_t * class_p, lv_obj_t * obj)
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  428:lvgl/src/widgets/lv_btnmatrix.c ****     }
  429:lvgl/src/widgets/lv_btnmatrix.c ****     else if(code == LV_EVENT_SIZE_CHANGED) {
  430:lvgl/src/widgets/lv_btnmatrix.c ****         lv_btnmatrix_set_map(obj, btnm->map_p);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 9
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 9
 
 
  431:lvgl/src/widgets/lv_btnmatrix.c ****     }
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  485:lvgl/src/widgets/lv_btnmatrix.c ****             lv_indev_reset_long_press(param); /*Start the log press time again on the new button*/
  486:lvgl/src/widgets/lv_btnmatrix.c ****             if(btn_pr != LV_BTNMATRIX_BTN_NONE &&
  487:lvgl/src/widgets/lv_btnmatrix.c ****                button_is_inactive(btnm->ctrl_bits[btn_pr]) == false &&
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 10
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 10
 
 
  488:lvgl/src/widgets/lv_btnmatrix.c ****                button_is_hidden(btnm->ctrl_bits[btn_pr]) == false) {
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  542:lvgl/src/widgets/lv_btnmatrix.c ****     }
  543:lvgl/src/widgets/lv_btnmatrix.c ****     else if(code == LV_EVENT_FOCUSED) {
  544:lvgl/src/widgets/lv_btnmatrix.c ****         if(btnm->btn_cnt == 0) return;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 11
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 11
 
 
  545:lvgl/src/widgets/lv_btnmatrix.c **** 
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  599:lvgl/src/widgets/lv_btnmatrix.c ****         }
  600:lvgl/src/widgets/lv_btnmatrix.c ****         else if(c == LV_KEY_LEFT) {
  601:lvgl/src/widgets/lv_btnmatrix.c ****             if(btnm->btn_id_sel == LV_BTNMATRIX_BTN_NONE) btnm->btn_id_sel = 0;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 12
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 12
 
 
  602:lvgl/src/widgets/lv_btnmatrix.c **** 
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  656:lvgl/src/widgets/lv_btnmatrix.c ****                         btnm->btn_id_sel = LV_BTNMATRIX_BTN_NONE;
  657:lvgl/src/widgets/lv_btnmatrix.c ****                         break;
  658:lvgl/src/widgets/lv_btnmatrix.c ****                     }
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 13
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 13
 
 
  659:lvgl/src/widgets/lv_btnmatrix.c ****                 }
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  713:lvgl/src/widgets/lv_btnmatrix.c ****     lv_draw_rect_dsc_init(&draw_rect_dsc_def);
  714:lvgl/src/widgets/lv_btnmatrix.c ****     lv_draw_label_dsc_init(&draw_label_dsc_def);
  715:lvgl/src/widgets/lv_btnmatrix.c ****     lv_obj_init_draw_rect_dsc(obj, LV_PART_ITEMS, &draw_rect_dsc_def);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 14
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 14
 
 
  716:lvgl/src/widgets/lv_btnmatrix.c ****     lv_obj_init_draw_label_dsc(obj, LV_PART_ITEMS, &draw_label_dsc_def);
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  770:lvgl/src/widgets/lv_btnmatrix.c ****         }
  771:lvgl/src/widgets/lv_btnmatrix.c ****         /*In other cases get the styles directly without caching them*/
  772:lvgl/src/widgets/lv_btnmatrix.c ****         else {
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 15
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 15
 
 
  773:lvgl/src/widgets/lv_btnmatrix.c ****             obj->state = btn_state;
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  827:lvgl/src/widgets/lv_btnmatrix.c **** 
  828:lvgl/src/widgets/lv_btnmatrix.c ****         btn_area.x1 += (lv_area_get_width(&btn_area) - txt_size.x) / 2;
  829:lvgl/src/widgets/lv_btnmatrix.c ****         btn_area.y1 += (lv_area_get_height(&btn_area) - txt_size.y) / 2;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 16
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 16
 
 
  830:lvgl/src/widgets/lv_btnmatrix.c ****         btn_area.x2 = btn_area.x1 + txt_size.x;
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  884:lvgl/src/widgets/lv_btnmatrix.c ****     btnm->button_areas = lv_mem_alloc(sizeof(lv_area_t) * btn_cnt);
  885:lvgl/src/widgets/lv_btnmatrix.c ****     LV_ASSERT_MALLOC(btnm->button_areas);
  886:lvgl/src/widgets/lv_btnmatrix.c ****     btnm->ctrl_bits = lv_mem_alloc(sizeof(lv_btnmatrix_ctrl_t) * btn_cnt);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 17
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 17
 
 
  887:lvgl/src/widgets/lv_btnmatrix.c ****     LV_ASSERT_MALLOC(btnm->ctrl_bits);
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  909:lvgl/src/widgets/lv_btnmatrix.c **** }
   62              		.loc 1 909 1 is_stmt 0 view .LVU8
   63 0000 C0F30010 		ubfx	r0, r0, #4, #1
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 18
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 18
 
 
   64              	.LVL3:
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  112 0004 7047     		bx	lr
  113              		.cfi_endproc
  114              	.LFE184:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 19
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 19
 
 
  116              		.section	.text.button_is_inactive,"ax",%progbits
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  164              		.syntax unified
  165              		.thumb
  166              		.thumb_func
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 20
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 20
 
 
  168              	button_is_popover:
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  216              	.LFB189:
  940:lvgl/src/widgets/lv_btnmatrix.c **** 
  941:lvgl/src/widgets/lv_btnmatrix.c **** static bool button_get_checked(lv_btnmatrix_ctrl_t ctrl_bits)
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 21
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 21
 
 
  942:lvgl/src/widgets/lv_btnmatrix.c **** {
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  950:lvgl/src/widgets/lv_btnmatrix.c **** /**
  951:lvgl/src/widgets/lv_btnmatrix.c ****  * Gives the button id of a button under a given point
  952:lvgl/src/widgets/lv_btnmatrix.c ****  * @param obj pointer to a button matrix object
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 22
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 22
 
 
  953:lvgl/src/widgets/lv_btnmatrix.c ****  * @param p a point with absolute coordinates
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
 1007:lvgl/src/widgets/lv_btnmatrix.c **** }
 1008:lvgl/src/widgets/lv_btnmatrix.c **** 
 1009:lvgl/src/widgets/lv_btnmatrix.c **** static void invalidate_button_area(const lv_obj_t * obj, uint16_t btn_idx)
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 23
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 23
 
 
 1010:lvgl/src/widgets/lv_btnmatrix.c **** {
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
 1064:lvgl/src/widgets/lv_btnmatrix.c ****  * @param obj Button matrix object
 1065:lvgl/src/widgets/lv_btnmatrix.c ****  * @return true if at least one button has the flag, false otherwise
 1066:lvgl/src/widgets/lv_btnmatrix.c ****  */
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 24
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 24
 
 
 1067:lvgl/src/widgets/lv_btnmatrix.c **** static bool has_popovers_in_top_row(lv_obj_t * obj)
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  307              	.LVL23:
  308              		.loc 1 1078 28 discriminator 1 view .LVU57
  309 0020 90B1     		cbz	r0, .L19
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 25
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 25
 
 
  310              		.loc 1 1078 86 discriminator 2 view .LVU58
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  355              		.cfi_offset 7, -12
  356              		.cfi_offset 8, -8
  357              		.cfi_offset 14, -4
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 26
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 26
 
 
 1085:lvgl/src/widgets/lv_btnmatrix.c **** }
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  407              		.loc 1 960 5 view .LVU78
  408              	.LVL32:
  960:lvgl/src/widgets/lv_btnmatrix.c ****     uint16_t i;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 27
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 27
 
 
  409              		.loc 1 960 51 view .LVU79
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
   21:lvgl/src/widgets/../core/lv_obj_style_gen.h ****     lv_style_value_t v = lv_obj_get_style_prop(obj, part, LV_STYLE_HEIGHT);
   22:lvgl/src/widgets/../core/lv_obj_style_gen.h ****     return (lv_coord_t)v.num;
   23:lvgl/src/widgets/../core/lv_obj_style_gen.h **** }
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 28
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 28
 
 
   24:lvgl/src/widgets/../core/lv_obj_style_gen.h **** 
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
   78:lvgl/src/widgets/../core/lv_obj_style_gen.h **** 
   79:lvgl/src/widgets/../core/lv_obj_style_gen.h **** static inline lv_coord_t lv_obj_get_style_transform_zoom(const struct _lv_obj_t * obj, uint32_t par
   80:lvgl/src/widgets/../core/lv_obj_style_gen.h **** {
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 29
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 29
 
 
   81:lvgl/src/widgets/../core/lv_obj_style_gen.h ****     lv_style_value_t v = lv_obj_get_style_prop(obj, part, LV_STYLE_TRANSFORM_ZOOM);
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  967:lvgl/src/widgets/lv_btnmatrix.c ****     lv_coord_t ptop = lv_obj_get_style_pad_top(obj, LV_PART_MAIN);
  451              		.loc 1 967 5 is_stmt 1 view .LVU94
  452              	.LBB83:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 30
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 30
 
 
  453              	.LBI83:
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  492              		.loc 2 109 26 view .LVU109
  493              	.LBB88:
  111:lvgl/src/widgets/../core/lv_obj_style_gen.h ****     return (lv_coord_t)v.num;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 31
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 31
 
 
  494              		.loc 2 111 5 view .LVU110
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  533              	.LBB92:
  134:lvgl/src/widgets/../core/lv_obj_style_gen.h **** {
  135:lvgl/src/widgets/../core/lv_obj_style_gen.h ****     lv_style_value_t v = lv_obj_get_style_prop(obj, part, LV_STYLE_PAD_COLUMN);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 32
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 32
 
 
  534              		.loc 2 135 5 view .LVU124
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  577              		.loc 1 977 10 is_stmt 0 view .LVU139
  578 0096 0D2F     		cmp	r7, #13
  579 0098 A8BF     		it	ge
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 33
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 33
 
 
  580 009a 0D27     		movge	r7, #13
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  621              	.LVL62:
  622              	.L30:
  986:lvgl/src/widgets/lv_btnmatrix.c **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 34
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 34
 
 
  623              		.loc 1 986 14 is_stmt 1 view .LVU153
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  999:lvgl/src/widgets/lv_btnmatrix.c ****             break;
  662              		.loc 1 999 9 is_stmt 1 view .LVU169
  999:lvgl/src/widgets/lv_btnmatrix.c ****             break;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 35
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 35
 
 
  663              		.loc 1 999 12 is_stmt 0 view .LVU170
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
   13:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** /*********************
   14:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  *      INCLUDES
   15:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  *********************/
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 36
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 36
 
 
   16:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** #include "../lv_conf_internal.h"
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
   70:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****     LV_ALIGN_OUT_LEFT_MID,
   71:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****     LV_ALIGN_OUT_LEFT_BOTTOM,
   72:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****     LV_ALIGN_OUT_RIGHT_TOP,
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 37
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 37
 
 
   73:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****     LV_ALIGN_OUT_RIGHT_MID,
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  707              		.loc 3 114 5 is_stmt 1 view .LVU188
  708              		.loc 3 114 19 is_stmt 0 view .LVU189
  709 0138 B3F90410 		ldrsh	r1, [r3, #4]
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 38
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 38
 
 
  710              		.loc 3 114 14 view .LVU190
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  751 017c 4FF00D0C 		movge	ip, #13
  752 0180 1FFA8CFC 		uxth	ip, ip
  988:lvgl/src/widgets/lv_btnmatrix.c ****         else btn_area.y1 += obj_cords.y1 - prow;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 39
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 39
 
 
  753              		.loc 1 988 61 discriminator 1 view .LVU207
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  995:lvgl/src/widgets/lv_btnmatrix.c ****                                                                                     BTN_EXTRA_CLICK
  792              		.loc 1 995 68 is_stmt 0 discriminator 1 view .LVU223
  793 01c0 BDF81A10 		ldrh	r1, [sp, #26]
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 40
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 40
 
 
  995:lvgl/src/widgets/lv_btnmatrix.c ****                                                                                     BTN_EXTRA_CLICK
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  840              	.LVL71:
  841              	.LFB192:
 1010:lvgl/src/widgets/lv_btnmatrix.c ****     if(btn_idx == LV_BTNMATRIX_BTN_NONE) return;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 41
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 41
 
 
  842              		.loc 1 1010 1 is_stmt 1 view -0
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
 1019:lvgl/src/widgets/lv_btnmatrix.c ****     lv_obj_get_coords(obj, &obj_area);
  885              		.loc 1 1019 5 is_stmt 1 view .LVU246
 1019:lvgl/src/widgets/lv_btnmatrix.c ****     lv_obj_get_coords(obj, &obj_area);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 42
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 42
 
 
  886              		.loc 1 1019 34 is_stmt 0 view .LVU247
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  926              		.loc 1 1024 5 is_stmt 1 view .LVU265
  927              	.LBB97:
  928              	.LBI97:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 43
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 43
 
 
  127:lvgl/src/widgets/../core/lv_obj_style_gen.h **** {
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  970 0064 FFF7FEFF 		bl	lv_disp_get_dpi
  971              	.LVL85:
 1029:lvgl/src/widgets/lv_btnmatrix.c ****     col_gap = LV_MAX(col_gap, dpi / 10);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 44
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 44
 
 
  972              		.loc 1 1029 5 is_stmt 1 view .LVU282
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  1011 009e BDF80A70 		ldrh	r7, [sp, #10]
  1012 00a2 17FA81F1 		uxtah	r1, r7, r1
  1013 00a6 89B2     		uxth	r1, r1
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 45
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 45
 
 
  1014 00a8 ADF80A10 		strh	r1, [sp, #10]	@ movhi
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
 1038:lvgl/src/widgets/lv_btnmatrix.c ****         /*Push up the upper boundary of the btn area to also invalidate the popover*/
  1053              		.loc 1 1038 38 discriminator 1 view .LVU313
  1054 00e0 12F4806F 		tst	r2, #1024
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 46
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 46
 
 
  1055 00e4 F4D0     		beq	.L48
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  1086 00f6 7047     		bx	lr
  1087              	.L57:
  1088              		.align	2
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 47
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 47
 
 
  1089              	.L56:
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  1136              		.cfi_remember_state
  1137              		.cfi_def_cfa_offset 36
  1138              		@ sp needed
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 48
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 48
 
 
  1139 0012 BDE8F08F 		pop	{r4, r5, r6, r7, r8, r9, r10, fp, pc}
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  710:lvgl/src/widgets/lv_btnmatrix.c ****     obj->state = LV_STATE_DEFAULT;
  1176              		.loc 1 710 16 is_stmt 0 view .LVU348
  1177 0036 2C8C     		ldrh	r4, [r5, #32]
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 49
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 49
 
 
  1178              	.LVL104:
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  720:lvgl/src/widgets/lv_btnmatrix.c ****     lv_coord_t pbottom = lv_obj_get_style_pad_bottom(obj, LV_PART_MAIN);
  1219              		.loc 1 720 5 is_stmt 1 view .LVU362
  1220              	.LVL110:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 50
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 50
 
 
  1221              	.LBB103:
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  1261              	.LBB107:
  1262              	.LBI107:
  115:lvgl/src/widgets/../core/lv_obj_style_gen.h **** {
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 51
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 51
 
 
  1263              		.loc 2 115 26 view .LVU377
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  1303 00b6 0CA8     		add	r0, sp, #48
  1304 00b8 FFF7FEFF 		bl	lv_obj_draw_dsc_init
  1305              	.LVL119:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 52
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 52
 
 
  732:lvgl/src/widgets/lv_btnmatrix.c ****     part_draw_dsc.class_p = MY_CLASS;
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  740:lvgl/src/widgets/lv_btnmatrix.c ****             txt_i++;
  1343              		.loc 1 740 26 is_stmt 0 view .LVU409
  1344 00d8 6B6A     		ldr	r3, [r5, #36]
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 53
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 53
 
 
  740:lvgl/src/widgets/lv_btnmatrix.c ****             txt_i++;
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  1384              		.loc 1 751 12 is_stmt 0 view .LVU424
  1385 0112 4846     		mov	r0, r9
  1386 0114 FFF7FEFF 		bl	button_is_inactive
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 54
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 54
 
 
  1387              	.LVL129:
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  1423 0140 B2F90600 		ldrsh	r0, [r2, #6]
  115:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** }
  1424              		.loc 3 115 14 view .LVU443
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 55
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 55
 
 
  1425 0144 ADF86E01 		strh	r0, [sp, #366]	@ movhi
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  1464 0180 FFF7FEFF 		bl	lv_memcpy
  1465              	.LVL134:
  1466              	.L72:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 56
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 56
 
 
  783:lvgl/src/widgets/lv_btnmatrix.c ****         if(recolor) draw_label_dsc_act.flag |= LV_TEXT_FLAG_RECOLOR;
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  793:lvgl/src/widgets/lv_btnmatrix.c ****             if(btn_area.x1 == obj->coords.x1 + pleft) draw_rect_dsc_act.border_side &= ~LV_BORDER_S
  1505              		.loc 1 793 13 is_stmt 1 view .LVU475
  793:lvgl/src/widgets/lv_btnmatrix.c ****             if(btn_area.x1 == obj->coords.x1 + pleft) draw_rect_dsc_act.border_side &= ~LV_BORDER_S
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 57
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 57
 
 
  1506              		.loc 1 793 43 is_stmt 0 view .LVU476
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  1545 01fc 00F00381 		beq	.L91
  1546              	.L78:
  797:lvgl/src/widgets/lv_btnmatrix.c ****         }
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 58
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 58
 
 
  1547              		.loc 1 797 13 is_stmt 1 view .LVU492
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  1590              		.loc 1 802 62 discriminator 1 view .LVU510
  1591 0236 31F80B10 		ldrh	r1, [r1, fp]
  802:lvgl/src/widgets/lv_btnmatrix.c ****             /*Push up the upper boundary of the btn area to create the popover*/
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 59
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 59
 
 
  1592              		.loc 1 802 43 discriminator 1 view .LVU511
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  1629              		.loc 3 125 36 view .LVU528
  1630 0260 5B1A     		subs	r3, r3, r1
  1631 0262 9BB2     		uxth	r3, r3
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 60
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 60
 
 
  125:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** }
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  1672              	.LBE119:
  1673              	.LBE118:
  828:lvgl/src/widgets/lv_btnmatrix.c ****         btn_area.y1 += (lv_area_get_height(&btn_area) - txt_size.y) / 2;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 61
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 61
 
 
  1674              		.loc 1 828 64 view .LVU543
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  830:lvgl/src/widgets/lv_btnmatrix.c ****         btn_area.y2 = btn_area.y1 + txt_size.y;
  1719              		.loc 1 830 21 view .LVU560
  1720 02ce ADF86C11 		strh	r1, [sp, #364]	@ movhi
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 62
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 62
 
 
  831:lvgl/src/widgets/lv_btnmatrix.c **** 
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  1761              		.loc 1 842 9 view .LVU574
  1762 031a 0CAA     		add	r2, sp, #48
  1763 031c 1B21     		movs	r1, #27
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 63
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 63
 
 
  1764 031e 2846     		mov	r0, r5
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  752:lvgl/src/widgets/lv_btnmatrix.c ****             if(state_ori & LV_STATE_PRESSED) btn_state |= LV_STATE_PRESSED;
  1805              		.loc 1 752 30 is_stmt 0 view .LVU588
  1806 0348 AB8E     		ldrh	r3, [r5, #52]
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 64
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 64
 
 
  752:lvgl/src/widgets/lv_btnmatrix.c ****             if(state_ori & LV_STATE_PRESSED) btn_state |= LV_STATE_PRESSED;
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  1845              		.loc 1 756 45 is_stmt 1 discriminator 1 view .LVU604
  756:lvgl/src/widgets/lv_btnmatrix.c ****         }
  1846              		.loc 1 756 55 is_stmt 0 discriminator 1 view .LVU605
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 65
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 65
 
 
  1847 037e 48F00808 		orr	r8, r8, #8
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  1888 03c4 85F82230 		strb	r3, [r5, #34]
  1889 03c8 DCE6     		b	.L72
  1890              	.LVL166:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 66
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 66
 
 
  1891              	.L73:
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  1935 0424 02F01E02 		and	r2, r2, #30
  1936 0428 62F34503 		bfi	r3, r2, #1, #5
  1937 042c 8DF84B31 		strb	r3, [sp, #331]
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 67
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 67
 
 
  1938 0430 EFE6     		b	.L75
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  1984              	.LVL172:
  398:lvgl/src/widgets/lv_btnmatrix.c ****     btnm->button_areas = NULL;
  1985              		.loc 1 398 5 is_stmt 1 view .LVU639
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 68
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 68
 
 
  1986 000a E06A     		ldr	r0, [r4, #44]
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  2030              		.loc 1 858 19 is_stmt 0 view .LVU651
  2031 0006 0123     		movs	r3, #1
  2032 0008 4386     		strh	r3, [r0, #50]	@ movhi
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 69
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 69
 
 
  860:lvgl/src/widgets/lv_btnmatrix.c ****     uint16_t i       = 0;
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  2069              		.loc 1 863 9 is_stmt 1 view .LVU669
  863:lvgl/src/widgets/lv_btnmatrix.c ****             btn_cnt++;
  2070              		.loc 1 863 12 is_stmt 0 view .LVU670
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 70
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 70
 
 
  2071 0024 1549     		ldr	r1, .L117
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  879:lvgl/src/widgets/lv_btnmatrix.c ****         lv_mem_free(btnm->ctrl_bits);
  2109              		.loc 1 879 7 view .LVU687
  2110 0048 18B1     		cbz	r0, .L108
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 71
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 71
 
 
  880:lvgl/src/widgets/lv_btnmatrix.c ****         btnm->ctrl_bits = NULL;
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  888:lvgl/src/widgets/lv_btnmatrix.c **** 
  2146              		.loc 1 888 7 discriminator 2 view .LVU707
  2147 0068 33B1     		cbz	r3, .L116
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 72
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 72
 
 
  2148              	.LVL187:
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  2184              		.align	2
  2185              	.L117:
  2186 007c 00000000 		.word	.LC0
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 73
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 73
 
 
  2187              		.cfi_endproc
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  2231              	.L122:
   87:lvgl/src/widgets/lv_btnmatrix.c **** 
  2232              		.loc 1 87 1 view .LVU738
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 74
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 74
 
 
  2233              		.align	2
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  2280              	.LVL199:
  102:lvgl/src/widgets/lv_btnmatrix.c **** 
  2281              		.loc 1 102 5 view .LVU748
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 75
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 75
 
 
  102:lvgl/src/widgets/lv_btnmatrix.c **** 
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  183:lvgl/src/widgets/../core/lv_obj_style_gen.h ****     lv_style_value_t v = lv_obj_get_style_prop(obj, part, LV_STYLE_BG_GRAD_STOP);
  184:lvgl/src/widgets/../core/lv_obj_style_gen.h ****     return (lv_coord_t)v.num;
  185:lvgl/src/widgets/../core/lv_obj_style_gen.h **** }
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 76
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 76
 
 
  186:lvgl/src/widgets/../core/lv_obj_style_gen.h **** 
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  240:lvgl/src/widgets/../core/lv_obj_style_gen.h **** 
  241:lvgl/src/widgets/../core/lv_obj_style_gen.h **** static inline lv_color_t lv_obj_get_style_border_color_filtered(const struct _lv_obj_t * obj, uint3
  242:lvgl/src/widgets/../core/lv_obj_style_gen.h **** {
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 77
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 77
 
 
  243:lvgl/src/widgets/../core/lv_obj_style_gen.h ****     lv_style_value_t v = _lv_obj_style_apply_color_filter(obj, part, lv_obj_get_style_prop(obj, par
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  297:lvgl/src/widgets/../core/lv_obj_style_gen.h ****     lv_style_value_t v = lv_obj_get_style_prop(obj, part, LV_STYLE_OUTLINE_PAD);
  298:lvgl/src/widgets/../core/lv_obj_style_gen.h ****     return (lv_coord_t)v.num;
  299:lvgl/src/widgets/../core/lv_obj_style_gen.h **** }
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 78
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 78
 
 
  300:lvgl/src/widgets/../core/lv_obj_style_gen.h **** 
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  354:lvgl/src/widgets/../core/lv_obj_style_gen.h **** 
  355:lvgl/src/widgets/../core/lv_obj_style_gen.h **** static inline lv_color_t lv_obj_get_style_img_recolor_filtered(const struct _lv_obj_t * obj, uint32
  356:lvgl/src/widgets/../core/lv_obj_style_gen.h **** {
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 79
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 79
 
 
  357:lvgl/src/widgets/../core/lv_obj_style_gen.h ****     lv_style_value_t v = _lv_obj_style_apply_color_filter(obj, part, lv_obj_get_style_prop(obj, par
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  411:lvgl/src/widgets/../core/lv_obj_style_gen.h ****     lv_style_value_t v = lv_obj_get_style_prop(obj, part, LV_STYLE_ARC_WIDTH);
  412:lvgl/src/widgets/../core/lv_obj_style_gen.h ****     return (lv_coord_t)v.num;
  413:lvgl/src/widgets/../core/lv_obj_style_gen.h **** }
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 80
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 80
 
 
  414:lvgl/src/widgets/../core/lv_obj_style_gen.h **** 
@@ -4798,7 +4798,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  468:lvgl/src/widgets/../core/lv_obj_style_gen.h **** 
  469:lvgl/src/widgets/../core/lv_obj_style_gen.h **** static inline lv_coord_t lv_obj_get_style_text_letter_space(const struct _lv_obj_t * obj, uint32_t 
  470:lvgl/src/widgets/../core/lv_obj_style_gen.h **** {
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 81
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 81
 
 
  471:lvgl/src/widgets/../core/lv_obj_style_gen.h ****     lv_style_value_t v = lv_obj_get_style_prop(obj, part, LV_STYLE_TEXT_LETTER_SPACE);
@@ -4858,7 +4858,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  525:lvgl/src/widgets/../core/lv_obj_style_gen.h ****     lv_style_value_t v = lv_obj_get_style_prop(obj, part, LV_STYLE_COLOR_FILTER_OPA);
  526:lvgl/src/widgets/../core/lv_obj_style_gen.h ****     return (lv_opa_t)v.num;
  527:lvgl/src/widgets/../core/lv_obj_style_gen.h **** }
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 82
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 82
 
 
  528:lvgl/src/widgets/../core/lv_obj_style_gen.h **** 
@@ -4918,7 +4918,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  2301              	.LVL202:
  2302              		.loc 2 568 12 view .LVU756
  2303              	.LBE124:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 83
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 83
 
 
  2304              	.LBE123:
@@ -4978,7 +4978,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  2344              		.loc 2 127 26 view .LVU770
  2345              	.LBB130:
  129:lvgl/src/widgets/../core/lv_obj_style_gen.h ****     return (lv_coord_t)v.num;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 84
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 84
 
 
  2346              		.loc 2 129 5 view .LVU771
@@ -5038,7 +5038,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  2386              		.loc 1 112 35 is_stmt 0 view .LVU785
  2387 005e 5846     		mov	r0, fp
  2388 0060 FFF7FEFF 		bl	lv_obj_get_content_width
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 85
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 85
 
 
  2389              	.LVL212:
@@ -5098,7 +5098,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  131:lvgl/src/widgets/lv_btnmatrix.c ****             btn_cnt++;
  2426              		.loc 1 131 46 is_stmt 0 view .LVU803
  2427 0084 DBF82C30 		ldr	r3, [fp, #44]
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 86
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 86
 
 
  131:lvgl/src/widgets/lv_btnmatrix.c ****             btn_cnt++;
@@ -5158,7 +5158,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  2467 00b4 6CB9     		cbnz	r4, .L128
  137:lvgl/src/widgets/lv_btnmatrix.c ****             continue;
  2468              		.loc 1 137 13 is_stmt 1 view .LVU819
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 87
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 87
 
 
  137:lvgl/src/widgets/lv_btnmatrix.c ****             continue;
@@ -5218,7 +5218,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  2508 00de BDF83C30 		ldrh	r3, [sp, #60]
  2509 00e2 1A44     		add	r2, r2, r3
  141:lvgl/src/widgets/lv_btnmatrix.c ****         lv_coord_t row_y2 = ptop + (max_h_no_gap * (row + 1)) / btnm->row_cnt + row * prow - 1;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 88
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 88
 
 
  2510              		.loc 1 141 73 view .LVU835
@@ -5278,7 +5278,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  2550 011c 002C     		cmp	r4, #0
  2551 011e 06DB     		blt	.L142
  2552              	.LVL229:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 89
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 89
 
 
  2553              	.L130:
@@ -5338,7 +5338,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  169:lvgl/src/widgets/lv_btnmatrix.c **** 
  2592              		.loc 1 169 13 discriminator 2 view .LVU865
  2593 0144 039A     		ldr	r2, [sp, #12]
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 90
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 90
 
 
  2594 0146 09B2     		sxth	r1, r1
@@ -5398,7 +5398,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  2632              		.loc 1 153 24 view .LVU881
  2633 017a 09B2     		sxth	r1, r1
  2634              	.LVL240:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 91
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 91
 
 
  154:lvgl/src/widgets/lv_btnmatrix.c **** 
@@ -5458,7 +5458,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  2672              		.loc 1 163 32 is_stmt 0 view .LVU898
  2673 019c A3EB0C03 		sub	r3, r3, ip
  163:lvgl/src/widgets/lv_btnmatrix.c ****             }
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 92
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 92
 
 
  2674              		.loc 1 163 24 view .LVU899
@@ -5518,7 +5518,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  2717              		.cfi_restore 7
  2718              		.cfi_restore 8
  2719              		.cfi_restore 9
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 93
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 93
 
 
  2720              		.cfi_restore 10
@@ -5578,7 +5578,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  2764 000a 4FF6FF72 		movw	r2, #65535
  2765 000e 8A86     		strh	r2, [r1, #52]	@ movhi
  382:lvgl/src/widgets/lv_btnmatrix.c ****     btnm->ctrl_bits      = NULL;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 94
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 94
 
 
  2766              		.loc 1 382 5 is_stmt 1 view .LVU923
@@ -5638,7 +5638,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  185:lvgl/src/widgets/lv_btnmatrix.c ****     LV_ASSERT_OBJ(obj, MY_CLASS);
  2810              		.loc 1 185 1 is_stmt 0 view .LVU936
  2811 0000 10B5     		push	{r4, lr}
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 95
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 95
 
 
  2812              		.cfi_def_cfa_offset 8
@@ -5698,7 +5698,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  195:lvgl/src/widgets/lv_btnmatrix.c ****     LV_ASSERT_OBJ(obj, MY_CLASS);
  2856              		.loc 1 195 1 is_stmt 0 view .LVU949
  2857 0000 38B5     		push	{r3, r4, r5, lr}
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 96
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 96
 
 
  2858              		.cfi_def_cfa_offset 16
@@ -5758,7 +5758,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  2898              	.L152:
  205:lvgl/src/widgets/lv_btnmatrix.c **** 
  2899              		.loc 1 205 1 is_stmt 0 view .LVU964
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 97
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 97
 
 
  2900 0026 38BD     		pop	{r3, r4, r5, pc}
@@ -5818,7 +5818,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  2944              	.L158:
  253:lvgl/src/widgets/lv_btnmatrix.c ****     invalidate_button_area(obj, btn_id);
  2945              		.loc 1 253 5 is_stmt 1 view .LVU977
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 98
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 98
 
 
  253:lvgl/src/widgets/lv_btnmatrix.c ****     invalidate_button_area(obj, btn_id);
@@ -5878,7 +5878,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  2988              	.LVL277:
  2989              	.L160:
  2990              		.cfi_def_cfa_offset 0
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 99
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 99
 
 
  2991              		.cfi_restore 4
@@ -5938,7 +5938,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  3035              	.LVL280:
  3036              	.L167:
  279:lvgl/src/widgets/lv_btnmatrix.c ****     }
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 100
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 100
 
 
  3037              		.loc 1 279 9 is_stmt 1 discriminator 3 view .LVU1002
@@ -5998,7 +5998,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  3080              		.loc 1 211 5 view .LVU1015
  213:lvgl/src/widgets/lv_btnmatrix.c **** 
  3081              		.loc 1 213 5 view .LVU1016
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 101
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 101
 
 
  213:lvgl/src/widgets/lv_btnmatrix.c **** 
@@ -6058,7 +6058,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  3122              		.loc 1 223 26 view .LVU1030
  3123 002a 0023     		movs	r3, #0
  3124              	.LBE139:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 102
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 102
 
 
  221:lvgl/src/widgets/lv_btnmatrix.c ****         if(btnm->btn_cnt > 1) {
@@ -6118,7 +6118,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  3164 0048 32F81320 		ldrh	r2, [r2, r3, lsl #1]
  225:lvgl/src/widgets/lv_btnmatrix.c ****             }
  3165              		.loc 1 225 19 view .LVU1046
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 103
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 103
 
 
  3166 004c 12F0100F 		tst	r2, #16
@@ -6178,7 +6178,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  238:lvgl/src/widgets/lv_btnmatrix.c **** 
  3207              		.loc 1 238 1 view .LVU1060
  3208 007a 70BD     		pop	{r4, r5, r6, pc}
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 104
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 104
 
 
  3209              	.LVL298:
@@ -6238,7 +6238,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  3256              		.loc 1 265 51 view .LVU1069
  266:lvgl/src/widgets/lv_btnmatrix.c ****     for(i = 0; i < btnm->btn_cnt; i++) {
  3257              		.loc 1 266 5 view .LVU1070
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 105
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 105
 
 
  267:lvgl/src/widgets/lv_btnmatrix.c ****         lv_btnmatrix_set_btn_ctrl(obj, i, ctrl);
@@ -6298,7 +6298,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  3301              		.loc 1 284 1 is_stmt 1 view -0
  3302              		.cfi_startproc
  3303              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 106
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 106
 
 
  3304              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -6358,7 +6358,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  3341 0028 416A     		ldr	r1, [r0, #36]
  3342              	.LVL309:
  292:lvgl/src/widgets/lv_btnmatrix.c **** }
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 107
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 107
 
 
  3343              		.loc 1 292 5 is_stmt 0 view .LVU1101
@@ -6418,7 +6418,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  3390              		.loc 1 319 1 is_stmt 1 view -0
  3391              		.cfi_startproc
  3392              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 108
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 108
 
 
  3393              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -6478,7 +6478,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  3436              		.loc 1 328 5 view .LVU1125
  330:lvgl/src/widgets/lv_btnmatrix.c **** 
  3437              		.loc 1 330 5 view .LVU1126
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 109
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 109
 
 
  330:lvgl/src/widgets/lv_btnmatrix.c **** 
@@ -6538,7 +6538,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  343:lvgl/src/widgets/lv_btnmatrix.c ****     }
  3478              		.loc 1 343 9 is_stmt 1 view .LVU1141
  343:lvgl/src/widgets/lv_btnmatrix.c ****     }
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 110
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 110
 
 
  3479              		.loc 1 343 23 is_stmt 0 view .LVU1142
@@ -6598,7 +6598,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  3519 0056 FBE7     		b	.L199
  3520              	.LVL329:
  3521              	.L205:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 111
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 111
 
 
  333:lvgl/src/widgets/lv_btnmatrix.c **** 
@@ -6658,7 +6658,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  3565              		.loc 1 358 5 is_stmt 1 view .LVU1169
  358:lvgl/src/widgets/lv_btnmatrix.c **** }
  3566              		.loc 1 358 18 is_stmt 0 view .LVU1170
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 112
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 112
 
 
  3567 0006 C36A     		ldr	r3, [r0, #44]
@@ -6718,7 +6718,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  3614              	.LVL337:
 1055:lvgl/src/widgets/lv_btnmatrix.c **** 
  3615              		.loc 1 1055 24 view .LVU1180
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 113
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 113
 
 
  3616 000e 0546     		mov	r5, r0
@@ -6778,7 +6778,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  3664              		.cfi_offset 10, -12
  3665              		.cfi_offset 11, -8
  3666              		.cfi_offset 14, -4
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 114
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 114
 
 
  3667 0004 83B0     		sub	sp, sp, #12
@@ -6838,7 +6838,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  3708 0026 0646     		mov	r6, r0
  3709              	.LVL351:
  416:lvgl/src/widgets/lv_btnmatrix.c ****     lv_point_t p;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 115
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 115
 
 
  3710              		.loc 1 416 5 is_stmt 1 view .LVU1202
@@ -6898,7 +6898,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  3746              		.loc 1 543 10 is_stmt 1 view .LVU1220
  543:lvgl/src/widgets/lv_btnmatrix.c ****         if(btnm->btn_cnt == 0) return;
  3747              		.loc 1 543 12 is_stmt 0 view .LVU1221
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 116
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 116
 
 
  3748 0050 0E2C     		cmp	r4, #14
@@ -6958,7 +6958,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  423:lvgl/src/widgets/lv_btnmatrix.c ****         }
  3788              		.loc 1 423 13 is_stmt 1 discriminator 4 view .LVU1236
  3789 0082 2846     		mov	r0, r5
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 117
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 117
 
 
  3790 0084 FFF7FEFF 		bl	lv_event_set_ext_draw_size
@@ -7018,7 +7018,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  3833 00b8 3046     		mov	r0, r6
  3834              	.LVL363:
  434:lvgl/src/widgets/lv_btnmatrix.c **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 118
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 118
 
 
  3835              		.loc 1 434 9 is_stmt 0 view .LVU1248
@@ -7078,7 +7078,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  3875              		.loc 1 457 81 discriminator 1 view .LVU1262
  3876 00ee 0028     		cmp	r0, #0
  3877 00f0 8FD1     		bne	.L218
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 119
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 119
 
 
  459:lvgl/src/widgets/lv_btnmatrix.c ****                button_is_hidden(btnm->ctrl_bits[btnm->btn_id_sel]) == false) {
@@ -7138,7 +7138,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  3918              		.loc 1 441 13 is_stmt 1 view .LVU1276
  441:lvgl/src/widgets/lv_btnmatrix.c ****             /*Handle the case where there is no button there*/
  3919              		.loc 1 441 22 is_stmt 0 view .LVU1277
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 120
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 120
 
 
  3920 011c 01A9     		add	r1, sp, #4
@@ -7198,7 +7198,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  3959              		.loc 1 448 21 is_stmt 1 view .LVU1292
  3960 014c 2146     		mov	r1, r4
  3961 014e 3046     		mov	r0, r6
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 121
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 121
 
 
  3962 0150 FFF7FEFF 		bl	invalidate_button_area
@@ -7258,7 +7258,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  476:lvgl/src/widgets/lv_btnmatrix.c ****         /*Invalidate to old and the new areas*/
  4003              		.loc 1 476 9 is_stmt 1 view .LVU1306
  476:lvgl/src/widgets/lv_btnmatrix.c ****         /*Invalidate to old and the new areas*/
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 122
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 122
 
 
  4004              		.loc 1 476 18 is_stmt 0 view .LVU1307
@@ -7318,7 +7318,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  486:lvgl/src/widgets/lv_btnmatrix.c ****                button_is_inactive(btnm->ctrl_bits[btn_pr]) == false &&
  4045              		.loc 1 486 48 discriminator 1 view .LVU1321
  4046 01b2 0028     		cmp	r0, #0
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 123
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 123
 
 
  4047 01b4 7FF42DAF 		bne	.L218
@@ -7378,7 +7378,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  4087 01f2 3046     		mov	r0, r6
  4088 01f4 FFF7FEFF 		bl	lv_event_send
  4089              	.LVL401:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 124
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 124
 
 
  495:lvgl/src/widgets/lv_btnmatrix.c ****                 }
@@ -7438,7 +7438,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  4130              	.LVL409:
  503:lvgl/src/widgets/lv_btnmatrix.c ****                !button_is_inactive(btnm->ctrl_bits[btnm->btn_id_sel])) {
  4131              		.loc 1 503 71 discriminator 1 view .LVU1350
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 125
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 125
 
 
  4132 0220 B0B9     		cbnz	r0, .L233
@@ -7498,7 +7498,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  4170 0258 2046     		mov	r0, r4
  4171 025a FFF7FEFF 		bl	button_is_click_trig
  4172              	.LVL411:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 126
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 126
 
 
  514:lvgl/src/widgets/lv_btnmatrix.c ****                 button_is_popover(btnm->ctrl_bits[btnm->btn_id_sel]) == true) &&
@@ -7558,7 +7558,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  4214              		.loc 1 519 17 is_stmt 1 view .LVU1379
  519:lvgl/src/widgets/lv_btnmatrix.c ****                 if(res != LV_RES_OK) return;
  4215              		.loc 1 519 30 is_stmt 0 view .LVU1380
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 127
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 127
 
 
  4216 028e 6A46     		mov	r2, sp
@@ -7618,7 +7618,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  4257 02c6 7FF4A4AE 		bne	.L218
  532:lvgl/src/widgets/lv_btnmatrix.c ****                 uint32_t b = btnm->btn_id_sel;
  4258              		.loc 1 532 16 view .LVU1394
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 128
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 128
 
 
  4259 02ca 2846     		mov	r0, r5
@@ -7678,7 +7678,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  544:lvgl/src/widgets/lv_btnmatrix.c **** 
  4301              		.loc 1 544 11 view .LVU1407
  4302 02fa 002B     		cmp	r3, #0
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 129
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 129
 
 
  4303 02fc 3FF489AE 		beq	.L218
@@ -7738,7 +7738,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  558:lvgl/src/widgets/lv_btnmatrix.c ****                 uint32_t b = 0;
  4342              		.loc 1 558 91 discriminator 1 view .LVU1423
  4343 032a 042D     		cmp	r5, #4
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 130
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 130
 
 
  4344 032c 14BF     		ite	ne
@@ -7798,7 +7798,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  562:lvgl/src/widgets/lv_btnmatrix.c ****                 }
  4385              		.loc 1 562 75 is_stmt 1 view .LVU1437
  562:lvgl/src/widgets/lv_btnmatrix.c ****                 }
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 131
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 131
 
 
  4386              		.loc 1 562 76 is_stmt 0 view .LVU1438
@@ -7858,7 +7858,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  4428              	.LVL446:
  4429              	.L249:
  565:lvgl/src/widgets/lv_btnmatrix.c ****                 }
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 132
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 132
 
 
  4430              		.loc 1 565 107 is_stmt 1 discriminator 4 view .LVU1451
@@ -7918,7 +7918,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  4470              		.loc 1 576 11 view .LVU1465
  4471 03aa 4FF6FF73 		movw	r3, #65535
  4472 03ae 9942     		cmp	r1, r3
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 133
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 133
 
 
  4473 03b0 03D1     		bne	.L306
@@ -7978,7 +7978,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  4513              		.loc 1 648 14 is_stmt 1 view .LVU1479
  648:lvgl/src/widgets/lv_btnmatrix.c ****             lv_coord_t col_gap = lv_obj_get_style_pad_column(obj, LV_PART_MAIN);
  4514              		.loc 1 648 16 is_stmt 0 view .LVU1480
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 134
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 134
 
 
  4515 03de 112B     		cmp	r3, #17
@@ -8038,7 +8038,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  589:lvgl/src/widgets/lv_btnmatrix.c ****             while(button_is_hidden(btnm->ctrl_bits[btnm->btn_id_sel]) || button_is_inactive(btnm->c
  4557              		.loc 1 589 13 is_stmt 1 view .LVU1493
  589:lvgl/src/widgets/lv_btnmatrix.c ****             while(button_is_hidden(btnm->ctrl_bits[btnm->btn_id_sel]) || button_is_inactive(btnm->c
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 135
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 135
 
 
  4558              		.loc 1 589 22 is_stmt 0 view .LVU1494
@@ -8098,7 +8098,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  590:lvgl/src/widgets/lv_btnmatrix.c ****                 btnm->btn_id_sel++;
  4597              		.loc 1 590 40 is_stmt 0 view .LVU1510
  4598 0428 F36A     		ldr	r3, [r6, #44]
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 136
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 136
 
 
  590:lvgl/src/widgets/lv_btnmatrix.c ****                 btnm->btn_id_sel++;
@@ -8158,7 +8158,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  603:lvgl/src/widgets/lv_btnmatrix.c ****             else if(btnm->btn_id_sel > 0) btnm->btn_id_sel--;
  4640              		.loc 1 603 13 is_stmt 1 view .LVU1524
  603:lvgl/src/widgets/lv_btnmatrix.c ****             else if(btnm->btn_id_sel > 0) btnm->btn_id_sel--;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 137
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 137
 
 
  4641              		.loc 1 603 20 is_stmt 0 view .LVU1525
@@ -8218,7 +8218,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  608:lvgl/src/widgets/lv_btnmatrix.c ****                 else btnm->btn_id_sel = btnm->btn_cnt - 1;
  4679              		.loc 1 608 19 is_stmt 0 view .LVU1542
  4680 0472 9CB1     		cbz	r4, .L266
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 138
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 138
 
 
  608:lvgl/src/widgets/lv_btnmatrix.c ****                 else btnm->btn_id_sel = btnm->btn_cnt - 1;
@@ -8278,7 +8278,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  609:lvgl/src/widgets/lv_btnmatrix.c **** 
  4720              		.loc 1 609 39 view .LVU1558
  4721 04a0 B386     		strh	r3, [r6, #52]	@ movhi
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 139
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 139
 
 
  4722 04a2 E9E7     		b	.L267
@@ -8338,7 +8338,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  4762              	.LBB160:
  631:lvgl/src/widgets/lv_btnmatrix.c ****                 lv_coord_t pr_center =
  4763              		.loc 1 631 17 is_stmt 1 view .LVU1573
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 140
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 140
 
 
  632:lvgl/src/widgets/lv_btnmatrix.c ****                     btnm->button_areas[btnm->btn_id_sel].x1 + (lv_area_get_width(&btnm->button_area
@@ -8398,7 +8398,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  4802              		.loc 1 621 17 is_stmt 1 view .LVU1589
  621:lvgl/src/widgets/lv_btnmatrix.c ****                 while(button_is_hidden(btnm->ctrl_bits[btnm->btn_id_sel]) || button_is_inactive(btn
  4803              		.loc 1 621 34 is_stmt 0 view .LVU1590
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 141
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 141
 
 
  4804 04e2 0023     		movs	r3, #0
@@ -8458,7 +8458,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  4844              	.L316:
  625:lvgl/src/widgets/lv_btnmatrix.c ****                         break;
  4845              		.loc 1 625 25 is_stmt 1 view .LVU1605
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 142
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 142
 
 
  625:lvgl/src/widgets/lv_btnmatrix.c ****                         break;
@@ -8518,7 +8518,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  4884 053e B3F90430 		ldrsh	r3, [r3, #4]
  638:lvgl/src/widgets/lv_btnmatrix.c ****                        button_is_inactive(btnm->ctrl_bits[area_below]) == false &&
  4885              		.loc 1 638 71 view .LVU1622
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 143
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 143
 
 
  4886 0542 4344     		add	r3, r3, r8
@@ -8578,7 +8578,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  135:lvgl/src/widgets/../core/lv_obj_style_gen.h ****     return (lv_coord_t)v.num;
  4927              		.loc 2 135 5 view .LVU1636
  135:lvgl/src/widgets/../core/lv_obj_style_gen.h ****     return (lv_coord_t)v.num;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 144
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 144
 
 
  4928              		.loc 2 135 26 is_stmt 0 view .LVU1637
@@ -8638,7 +8638,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  4967              		.loc 3 125 36 view .LVU1652
  4968 0590 9B1A     		subs	r3, r3, r2
  4969 0592 9BB2     		uxth	r3, r3
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 145
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 145
 
 
  125:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** }
@@ -8698,7 +8698,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  5008 05b0 328E     		ldrh	r2, [r6, #48]
  655:lvgl/src/widgets/lv_btnmatrix.c ****                         btnm->btn_id_sel = LV_BTNMATRIX_BTN_NONE;
  5009              		.loc 1 655 23 view .LVU1669
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 146
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 146
 
 
  5010 05b2 9342     		cmp	r3, r2
@@ -8758,7 +8758,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  5051              	.L280:
  666:lvgl/src/widgets/lv_btnmatrix.c ****                     if(btnm->button_areas[area_above].y1 < btnm->button_areas[btnm->btn_id_sel].y1 
  5052              		.loc 1 666 52 is_stmt 1 discriminator 1 view .LVU1683
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 147
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 147
 
 
  666:lvgl/src/widgets/lv_btnmatrix.c ****                     if(btnm->button_areas[area_above].y1 < btnm->button_areas[btnm->btn_id_sel].y1 
@@ -8818,7 +8818,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  670:lvgl/src/widgets/lv_btnmatrix.c ****                        button_is_hidden(btnm->ctrl_bits[area_above]) == false) {
  5092              		.loc 1 670 81 view .LVU1699
  5093 061e 0028     		cmp	r0, #0
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 148
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 148
 
 
  5094 0620 DCD1     		bne	.L281
@@ -8878,7 +8878,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  5137 0002 90F83620 		ldrb	r2, [r0, #54]	@ zero_extendqisi2
  5138 0006 61F30002 		bfi	r2, r1, #0, #1
  5139 000a 80F83620 		strb	r2, [r0, #54]
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 149
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 149
 
 
  303:lvgl/src/widgets/lv_btnmatrix.c **** }
@@ -8938,7 +8938,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  5185 0000 42746E31 		.ascii	"Btn1\000"
  5185      00
  5186 0005 000000   		.align	2
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 150
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 150
 
 
  5187              	.LC2:
@@ -8998,7 +8998,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  5241              		.file 12 "lvgl/src/widgets/../core/../misc/lv_style.h"
  5242              		.file 13 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\draw\\lv_img_buf.h"
  5243              		.file 14 "lvgl/src/widgets/../core/lv_obj.h"
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 151
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 151
 
 
  5244              		.file 15 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\draw\\lv_draw_rect.h"
@@ -9024,99 +9024,99 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 1
  5264              		.file 35 "lvgl/src/widgets/../core/lv_obj_tree.h"
  5265              		.file 36 "lvgl/src/widgets/../core/../misc/lv_mem.h"
  5266              		.file 37 "lvgl/src/widgets/../core/lv_indev.h"
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 152
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 152
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 lv_btnmatrix.c
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:19     .text.get_button_width:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:24     .text.get_button_width:00000000 get_button_width
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:48     .text.button_is_hidden:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:53     .text.button_is_hidden:00000000 button_is_hidden
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:71     .text.button_is_checked:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:76     .text.button_is_checked:00000000 button_is_checked
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:94     .text.button_is_repeat_disabled:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:99     .text.button_is_repeat_disabled:00000000 button_is_repeat_disabled
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:117    .text.button_is_inactive:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:122    .text.button_is_inactive:00000000 button_is_inactive
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:140    .text.button_is_click_trig:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:145    .text.button_is_click_trig:00000000 button_is_click_trig
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:163    .text.button_is_popover:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:168    .text.button_is_popover:00000000 button_is_popover
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:186    .text.button_is_checkable:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:191    .text.button_is_checkable:00000000 button_is_checkable
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:209    .text.button_get_checked:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:214    .text.button_get_checked:00000000 button_get_checked
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:232    .text.button_is_recolor:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:237    .text.button_is_recolor:00000000 button_is_recolor
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:255    .rodata.has_popovers_in_top_row.str1.4:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:259    .text.has_popovers_in_top_row:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:264    .text.has_popovers_in_top_row:00000000 has_popovers_in_top_row
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:372    .text.has_popovers_in_top_row:0000004c $d
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:377    .text.get_button_from_point:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:382    .text.get_button_from_point:00000000 get_button_from_point
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:834    .text.invalidate_button_area:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:839    .text.invalidate_button_area:00000000 invalidate_button_area
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:1090   .text.invalidate_button_area:000000f8 $d
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:1095   .text.draw_main:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:1100   .text.draw_main:00000000 draw_main
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:1910   .text.draw_main:000003e8 $d
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:1915   .text.draw_main:000003f0 $t
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:1957   .text.lv_btnmatrix_destructor:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:1962   .text.lv_btnmatrix_destructor:00000000 lv_btnmatrix_destructor
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:2004   .text.allocate_btn_areas_and_controls:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:2009   .text.allocate_btn_areas_and_controls:00000000 allocate_btn_areas_and_controls
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:2186   .text.allocate_btn_areas_and_controls:0000007c $d
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:2191   .text.lv_btnmatrix_create:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:2197   .text.lv_btnmatrix_create:00000000 lv_btnmatrix_create
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:2235   .text.lv_btnmatrix_create:00000014 $d
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:2240   .text.lv_btnmatrix_set_map:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:2246   .text.lv_btnmatrix_set_map:00000000 lv_btnmatrix_set_map
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:2728   .text.lv_btnmatrix_set_map:000001c4 $d
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:2733   .text.lv_btnmatrix_constructor:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:2738   .text.lv_btnmatrix_constructor:00000000 lv_btnmatrix_constructor
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:2792   .text.lv_btnmatrix_constructor:0000002c $d
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:2797   .text.lv_btnmatrix_set_ctrl_map:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:2803   .text.lv_btnmatrix_set_ctrl_map:00000000 lv_btnmatrix_set_ctrl_map
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:2843   .text.lv_btnmatrix_set_selected_btn:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:2849   .text.lv_btnmatrix_set_selected_btn:00000000 lv_btnmatrix_set_selected_btn
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:2906   .text.lv_btnmatrix_clear_btn_ctrl:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:2912   .text.lv_btnmatrix_clear_btn_ctrl:00000000 lv_btnmatrix_clear_btn_ctrl
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:3001   .text.lv_btnmatrix_clear_btn_ctrl_all:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:3007   .text.lv_btnmatrix_clear_btn_ctrl_all:00000000 lv_btnmatrix_clear_btn_ctrl_all
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 153
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:19     .text.get_button_width:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:24     .text.get_button_width:00000000 get_button_width
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:48     .text.button_is_hidden:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:53     .text.button_is_hidden:00000000 button_is_hidden
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:71     .text.button_is_checked:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:76     .text.button_is_checked:00000000 button_is_checked
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:94     .text.button_is_repeat_disabled:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:99     .text.button_is_repeat_disabled:00000000 button_is_repeat_disabled
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:117    .text.button_is_inactive:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:122    .text.button_is_inactive:00000000 button_is_inactive
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:140    .text.button_is_click_trig:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:145    .text.button_is_click_trig:00000000 button_is_click_trig
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:163    .text.button_is_popover:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:168    .text.button_is_popover:00000000 button_is_popover
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:186    .text.button_is_checkable:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:191    .text.button_is_checkable:00000000 button_is_checkable
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:209    .text.button_get_checked:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:214    .text.button_get_checked:00000000 button_get_checked
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:232    .text.button_is_recolor:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:237    .text.button_is_recolor:00000000 button_is_recolor
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:255    .rodata.has_popovers_in_top_row.str1.4:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:259    .text.has_popovers_in_top_row:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:264    .text.has_popovers_in_top_row:00000000 has_popovers_in_top_row
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:372    .text.has_popovers_in_top_row:0000004c $d
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:377    .text.get_button_from_point:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:382    .text.get_button_from_point:00000000 get_button_from_point
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:834    .text.invalidate_button_area:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:839    .text.invalidate_button_area:00000000 invalidate_button_area
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:1090   .text.invalidate_button_area:000000f8 $d
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:1095   .text.draw_main:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:1100   .text.draw_main:00000000 draw_main
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:1910   .text.draw_main:000003e8 $d
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:1915   .text.draw_main:000003f0 $t
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:1957   .text.lv_btnmatrix_destructor:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:1962   .text.lv_btnmatrix_destructor:00000000 lv_btnmatrix_destructor
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:2004   .text.allocate_btn_areas_and_controls:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:2009   .text.allocate_btn_areas_and_controls:00000000 allocate_btn_areas_and_controls
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:2186   .text.allocate_btn_areas_and_controls:0000007c $d
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:2191   .text.lv_btnmatrix_create:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:2197   .text.lv_btnmatrix_create:00000000 lv_btnmatrix_create
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:2235   .text.lv_btnmatrix_create:00000014 $d
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:2240   .text.lv_btnmatrix_set_map:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:2246   .text.lv_btnmatrix_set_map:00000000 lv_btnmatrix_set_map
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:2728   .text.lv_btnmatrix_set_map:000001c4 $d
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:2733   .text.lv_btnmatrix_constructor:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:2738   .text.lv_btnmatrix_constructor:00000000 lv_btnmatrix_constructor
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:2792   .text.lv_btnmatrix_constructor:0000002c $d
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:2797   .text.lv_btnmatrix_set_ctrl_map:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:2803   .text.lv_btnmatrix_set_ctrl_map:00000000 lv_btnmatrix_set_ctrl_map
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:2843   .text.lv_btnmatrix_set_selected_btn:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:2849   .text.lv_btnmatrix_set_selected_btn:00000000 lv_btnmatrix_set_selected_btn
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:2906   .text.lv_btnmatrix_clear_btn_ctrl:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:2912   .text.lv_btnmatrix_clear_btn_ctrl:00000000 lv_btnmatrix_clear_btn_ctrl
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:3001   .text.lv_btnmatrix_clear_btn_ctrl_all:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:3007   .text.lv_btnmatrix_clear_btn_ctrl_all:00000000 lv_btnmatrix_clear_btn_ctrl_all
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 153
 
 
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:3064   .text.lv_btnmatrix_set_btn_ctrl:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:3070   .text.lv_btnmatrix_set_btn_ctrl:00000000 lv_btnmatrix_set_btn_ctrl
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:3229   .text.lv_btnmatrix_set_btn_ctrl_all:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:3235   .text.lv_btnmatrix_set_btn_ctrl_all:00000000 lv_btnmatrix_set_btn_ctrl_all
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:3292   .text.lv_btnmatrix_set_btn_width:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:3298   .text.lv_btnmatrix_set_btn_width:00000000 lv_btnmatrix_set_btn_width
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:3352   .text.lv_btnmatrix_get_map:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:3358   .text.lv_btnmatrix_get_map:00000000 lv_btnmatrix_get_map
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:3381   .text.lv_btnmatrix_get_selected_btn:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:3387   .text.lv_btnmatrix_get_selected_btn:00000000 lv_btnmatrix_get_selected_btn
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:3410   .text.lv_btnmatrix_get_btn_text:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:3416   .text.lv_btnmatrix_get_btn_text:00000000 lv_btnmatrix_get_btn_text
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:3535   .text.lv_btnmatrix_get_btn_text:00000060 $d
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:3540   .text.lv_btnmatrix_has_btn_ctrl:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:3546   .text.lv_btnmatrix_has_btn_ctrl:00000000 lv_btnmatrix_has_btn_ctrl
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:3589   .text.make_one_button_checked:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:3594   .text.make_one_button_checked:00000000 make_one_button_checked
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:3643   .text.lv_btnmatrix_event:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:3648   .text.lv_btnmatrix_event:00000000 lv_btnmatrix_event
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:4281   .text.lv_btnmatrix_event:000002e4 $d
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:4287   .text.lv_btnmatrix_event:000002e8 $t
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:5111   .text.lv_btnmatrix_set_one_checked:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:5117   .text.lv_btnmatrix_set_one_checked:00000000 lv_btnmatrix_set_one_checked
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:5152   .text.lv_btnmatrix_get_one_checked:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:5158   .text.lv_btnmatrix_get_one_checked:00000000 lv_btnmatrix_get_one_checked
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:5219   .rodata.lv_btnmatrix_class:00000000 lv_btnmatrix_class
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:5183   .rodata.str1.4:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:5202   .data.lv_btnmatrix_def_map:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:5206   .data.lv_btnmatrix_def_map:00000000 lv_btnmatrix_def_map
-C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s:5215   .rodata.lv_btnmatrix_class:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:3064   .text.lv_btnmatrix_set_btn_ctrl:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:3070   .text.lv_btnmatrix_set_btn_ctrl:00000000 lv_btnmatrix_set_btn_ctrl
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:3229   .text.lv_btnmatrix_set_btn_ctrl_all:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:3235   .text.lv_btnmatrix_set_btn_ctrl_all:00000000 lv_btnmatrix_set_btn_ctrl_all
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:3292   .text.lv_btnmatrix_set_btn_width:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:3298   .text.lv_btnmatrix_set_btn_width:00000000 lv_btnmatrix_set_btn_width
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:3352   .text.lv_btnmatrix_get_map:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:3358   .text.lv_btnmatrix_get_map:00000000 lv_btnmatrix_get_map
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:3381   .text.lv_btnmatrix_get_selected_btn:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:3387   .text.lv_btnmatrix_get_selected_btn:00000000 lv_btnmatrix_get_selected_btn
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:3410   .text.lv_btnmatrix_get_btn_text:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:3416   .text.lv_btnmatrix_get_btn_text:00000000 lv_btnmatrix_get_btn_text
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:3535   .text.lv_btnmatrix_get_btn_text:00000060 $d
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:3540   .text.lv_btnmatrix_has_btn_ctrl:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:3546   .text.lv_btnmatrix_has_btn_ctrl:00000000 lv_btnmatrix_has_btn_ctrl
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:3589   .text.make_one_button_checked:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:3594   .text.make_one_button_checked:00000000 make_one_button_checked
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:3643   .text.lv_btnmatrix_event:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:3648   .text.lv_btnmatrix_event:00000000 lv_btnmatrix_event
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:4281   .text.lv_btnmatrix_event:000002e4 $d
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:4287   .text.lv_btnmatrix_event:000002e8 $t
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:5111   .text.lv_btnmatrix_set_one_checked:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:5117   .text.lv_btnmatrix_set_one_checked:00000000 lv_btnmatrix_set_one_checked
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:5152   .text.lv_btnmatrix_get_one_checked:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:5158   .text.lv_btnmatrix_get_one_checked:00000000 lv_btnmatrix_get_one_checked
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:5219   .rodata.lv_btnmatrix_class:00000000 lv_btnmatrix_class
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:5183   .rodata.str1.4:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:5202   .data.lv_btnmatrix_def_map:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:5206   .data.lv_btnmatrix_def_map:00000000 lv_btnmatrix_def_map
+C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s:5215   .rodata.lv_btnmatrix_class:00000000 $d
 
 UNDEFINED SYMBOLS
 strcmp
@@ -9144,7 +9144,7 @@ lv_mem_free
 lv_mem_alloc
 lv_memset_00
 lv_obj_class_create_obj
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cci3LI5d.s 			page 154
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnvvkrZ.s 			page 154
 
 
 lv_obj_class_init_obj

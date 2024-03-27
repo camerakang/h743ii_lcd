@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 1
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 1
   28:lvgl/src/misc/lv_color.c **** /**********************
   29:lvgl/src/misc/lv_color.c ****  *      MACROS
   30:lvgl/src/misc/lv_color.c ****  **********************/
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 2
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s 			page 2
 
 
   31:lvgl/src/misc/lv_color.c **** 
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 1
   34              		.loc 1 79 5 view .LVU1
   35              		.loc 1 79 10 is_stmt 0 view .LVU2
   36 0000 11E0     		b	.L2
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 3
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s 			page 3
 
 
   37              	.L3:
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 1
   75 0010 C161     		str	r1, [r0, #28]
   96:lvgl/src/misc/lv_color.c ****         buf++;
   76              		.loc 1 96 9 is_stmt 1 view .LVU26
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 4
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s 			page 4
 
 
   77              	.LVL8:
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 1
  114              		.loc 1 113 14 is_stmt 0 view .LVU49
  115 0020 C163     		str	r1, [r0, #60]
  114:lvgl/src/misc/lv_color.c ****         buf++;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 5
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s 			page 5
 
 
  116              		.loc 1 114 9 is_stmt 1 view .LVU50
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 1
  125:lvgl/src/misc/lv_color.c **** 
  126:lvgl/src/misc/lv_color.c **** lv_color_t lv_color_lighten(lv_color_t c, lv_opa_t lvl)
  127:lvgl/src/misc/lv_color.c **** {
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 6
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s 			page 6
 
 
  159              		.loc 1 127 1 is_stmt 1 view -0
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 1
   41:lvgl/src/misc/lv_color.h **** enum {
   42:lvgl/src/misc/lv_color.h ****     LV_OPA_TRANSP = 0,
   43:lvgl/src/misc/lv_color.h ****     LV_OPA_0      = 0,
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 7
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s 			page 7
 
 
   44:lvgl/src/misc/lv_color.h ****     LV_OPA_10     = 25,
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 1
   98:lvgl/src/misc/lv_color.h **** #endif
   99:lvgl/src/misc/lv_color.h **** 
  100:lvgl/src/misc/lv_color.h **** /*---------------------------------------
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 8
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s 			page 8
 
 
  101:lvgl/src/misc/lv_color.h ****  * Macros for all existing color depths
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 1
  155:lvgl/src/misc/lv_color.h **** 
  156:lvgl/src/misc/lv_color.h **** # define LV_COLOR_SET_R32(c, v) (c).ch.red = (uint8_t)((v) & 0xFF)
  157:lvgl/src/misc/lv_color.h **** # define LV_COLOR_SET_G32(c, v) (c).ch.green = (uint8_t)((v) & 0xFF)
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 9
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s 			page 9
 
 
  158:lvgl/src/misc/lv_color.h **** # define LV_COLOR_SET_B32(c, v) (c).ch.blue = (uint8_t)((v) & 0xFF)
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 1
  212:lvgl/src/misc/lv_color.h ****         uint16_t green : 6;
  213:lvgl/src/misc/lv_color.h ****         uint16_t red : 5;
  214:lvgl/src/misc/lv_color.h **** #else
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 10
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s 			page 10
 
 
  215:lvgl/src/misc/lv_color.h ****         uint16_t green_h : 3;
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 1
  269:lvgl/src/misc/lv_color.h ****     LV_PALETTE_LIME,
  270:lvgl/src/misc/lv_color.h ****     LV_PALETTE_YELLOW,
  271:lvgl/src/misc/lv_color.h ****     LV_PALETTE_AMBER,
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 11
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s 			page 11
 
 
  272:lvgl/src/misc/lv_color.h ****     LV_PALETTE_ORANGE,
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 1
  326:lvgl/src/misc/lv_color.h **** static inline uint8_t lv_color_to8(lv_color_t color)
  327:lvgl/src/misc/lv_color.h **** {
  328:lvgl/src/misc/lv_color.h **** #if LV_COLOR_DEPTH == 1
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 12
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s 			page 12
 
 
  329:lvgl/src/misc/lv_color.h ****     if(color.full == 0)
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 1
  383:lvgl/src/misc/lv_color.h ****     LV_COLOR_SET_R32(ret, LV_COLOR_GET_R(color) * 36); /*(2^8 - 1)/(2^3 - 1) = 255/7 = 36*/
  384:lvgl/src/misc/lv_color.h ****     LV_COLOR_SET_G32(ret, LV_COLOR_GET_G(color) * 36); /*(2^8 - 1)/(2^3 - 1) = 255/7 = 36*/
  385:lvgl/src/misc/lv_color.h ****     LV_COLOR_SET_B32(ret, LV_COLOR_GET_B(color) * 85); /*(2^8 - 1)/(2^2 - 1) = 255/3 = 85*/
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 13
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s 			page 13
 
 
  386:lvgl/src/misc/lv_color.h ****     LV_COLOR_SET_A32(ret, 0xFF);
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 1
  440:lvgl/src/misc/lv_color.h ****     lv_color_t ret;
  441:lvgl/src/misc/lv_color.h **** 
  442:lvgl/src/misc/lv_color.h **** #if LV_COLOR_DEPTH == 16 && LV_COLOR_MIX_ROUND_OFS == 0
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 14
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s 			page 14
 
 
  443:lvgl/src/misc/lv_color.h **** #if LV_COLOR_16_SWAP == 1
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 1
  497:lvgl/src/misc/lv_color.h ****  * @note 255 won't give clearly `c1`.
  498:lvgl/src/misc/lv_color.h ****  */
  499:lvgl/src/misc/lv_color.h **** static inline lv_color_t LV_ATTRIBUTE_FAST_MEM lv_color_mix_premult(uint16_t * premult_c1, lv_color
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 15
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s 			page 15
 
 
  500:lvgl/src/misc/lv_color.h **** {
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 1
  554:lvgl/src/misc/lv_color.h ****         static lv_color_t fg_color_save = _LV_COLOR_ZERO_INITIALIZER;
  555:lvgl/src/misc/lv_color.h ****         static lv_color_t bg_color_save = _LV_COLOR_ZERO_INITIALIZER;
  556:lvgl/src/misc/lv_color.h ****         static lv_color_t res_color_saved = _LV_COLOR_ZERO_INITIALIZER;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 16
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s 			page 16
 
 
  557:lvgl/src/misc/lv_color.h ****         static lv_opa_t res_opa_saved = 0;
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 1
  611:lvgl/src/misc/lv_color.h **** 
  612:lvgl/src/misc/lv_color.h ****         A bit better:
  613:lvgl/src/misc/lv_color.h ****                     r = ((c & 0xF80000) >> 8)
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 17
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s 			page 17
 
 
  614:lvgl/src/misc/lv_color.h ****                     g = ((c & 0xFC00) >> 5)
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 1
  668:lvgl/src/misc/lv_color.h ****  * @param b8 8-bit blue
  669:lvgl/src/misc/lv_color.h ****  * @return the given RGB color in HSV
  670:lvgl/src/misc/lv_color.h ****  */
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 18
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s 			page 18
 
 
  671:lvgl/src/misc/lv_color.h **** lv_color_hsv_t lv_color_rgb_to_hsv(uint8_t r8, uint8_t g8, uint8_t b8);
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 1
  193              		.loc 2 440 5 view .LVU73
  459:lvgl/src/misc/lv_color.h ****                                    (255 - mix) + LV_COLOR_MIX_ROUND_OFS));
  194              		.loc 2 459 5 view .LVU74
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 19
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s 			page 19
 
 
  195 0006 4FEA1E64 		lsr	r4, lr, #24
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 1
  240              	.LFE19:
  242              		.section	.text.lv_color_darken,"ax",%progbits
  243              		.align	1
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 20
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s 			page 20
 
 
  244              		.global	lv_color_darken
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 1
  438:lvgl/src/misc/lv_color.h **** {
  287              		.loc 2 438 48 is_stmt 1 view .LVU93
  288              	.LBB61:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 21
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s 			page 21
 
 
  440:lvgl/src/misc/lv_color.h **** 
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 1
  332              		.loc 1 134 1 view .LVU104
  333 007c 4CF07F40 		orr	r0, ip, #-16777216
  334 0080 10BD     		pop	{r4, pc}
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 22
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s 			page 22
 
 
  335              		.cfi_endproc
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 1
  380              		.loc 1 141 17 is_stmt 0 view .LVU116
  381 001a 7F39     		subs	r1, r1, #127
  382              	.LVL40:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 23
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s 			page 23
 
 
  141:lvgl/src/misc/lv_color.c ****     else return lv_color_lighten(c, (lvl - LV_OPA_50) * 2);
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 1
  426 0008 374B     		ldr	r3, .L30
  427 000a A3FB0030 		umull	r3, r0, r3, r0
  428 000e 4FEA900C 		lsr	ip, r0, #2
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 24
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s 			page 24
 
 
  429              		.loc 1 153 7 view .LVU125
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 1
  470 0048 04FB0022 		mla	r2, r4, r0, r2
  471              		.loc 1 166 15 view .LVU143
  472 004c 02EB4202 		add	r2, r2, r2, lsl #1
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 25
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s 			page 25
 
 
  473 0050 5200     		lsls	r2, r2, #1
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 1
  521 0096 21       		.byte	(.L22-.L23)/2
  522 0097 00       		.p2align 1
  523              	.L29:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 26
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s 			page 26
 
 
  162:lvgl/src/misc/lv_color.c ****     }
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 1
  191:lvgl/src/misc/lv_color.c ****             b = v;
  192:lvgl/src/misc/lv_color.c ****             break;
  193:lvgl/src/misc/lv_color.c ****         case 4:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 27
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s 			page 27
 
 
  194:lvgl/src/misc/lv_color.c ****             r = t;
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 1
  583              		.loc 1 184 15 is_stmt 0 view .LVU184
  584 00c4 F446     		mov	ip, lr
  585              	.LVL68:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 28
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s 			page 28
 
 
  186:lvgl/src/misc/lv_color.c ****             break;
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 1
  623 00da 9446     		mov	ip, r2
  624              	.LVL77:
  197:lvgl/src/misc/lv_color.c ****         default:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 29
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s 			page 29
 
 
  625              		.loc 1 197 13 view .LVU202
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 1
  217:lvgl/src/misc/lv_color.c **** {
  664              		.loc 1 217 1 is_stmt 1 view -0
  665              		.cfi_startproc
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 30
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s 			page 30
 
 
  666              		@ args = 0, pretend = 0, frame = 8
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 1
  715 0030 28BF     		it	cs
  716 0032 3346     		movcs	r3, r6
  717 0034 9BB2     		uxth	r3, r3
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 31
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s 			page 31
 
 
  718              	.L34:
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 1
  756 0066 5FFA8EFE 		uxtb	lr, lr
  757 006a 8DF802E0 		strb	lr, [sp, #2]
  239:lvgl/src/misc/lv_color.c ****     if(hsv.s < 3) {
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 32
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s 			page 32
 
 
  758              		.loc 1 239 5 is_stmt 1 view .LVU244
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 1
  796 0098 80B2     		uxth	r0, r0
  797 009a D3E7     		b	.L36
  798              	.LVL95:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 33
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s 			page 33
 
 
  799              	.L48:
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 1
  247:lvgl/src/misc/lv_color.c ****     else if(rgbMax == g)
  837              		.loc 1 247 23 view .LVU273
  838 00be 8002     		lsls	r0, r0, #10
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 34
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s 			page 34
 
 
  247:lvgl/src/misc/lv_color.c ****     else if(rgbMax == g)
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 1
  883              		@ sp needed
  884 00f6 70BD     		pop	{r4, r5, r6, pc}
  885              	.LVL106:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 35
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s 			page 35
 
 
  886              	.L45:
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 1
  251:lvgl/src/misc/lv_color.c ****     else
  926              		.loc 1 251 11 view .LVU303
  927 0122 D4E7     		b	.L42
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 36
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s 			page 36
 
 
  928              	.LVL116:
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 1
  969              		.loc 2 425 5 view .LVU312
  970              	.LBE67:
  971              	.LBE66:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 37
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s 			page 37
 
 
  271:lvgl/src/misc/lv_color.c ****     return lv_color_rgb_to_hsv(color32.ch.red, color32.ch.green, color32.ch.blue);
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 1
  1014 0002 03D8     		bhi	.L61
  285:lvgl/src/misc/lv_color.c ****         LV_LOG_WARN("Invalid palette: %d", p);
  286:lvgl/src/misc/lv_color.c ****         return lv_color_black();
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 38
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s 			page 38
 
 
  287:lvgl/src/misc/lv_color.c ****     }
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 1
  1053 001e 7047     		bx	lr
  1054              	.L63:
  1055              		.align	2
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 39
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s 			page 39
 
 
  1056              	.L62:
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 1
  1081              		.loc 1 322 5 is_stmt 1 view .LVU340
  1082              		.loc 1 322 17 is_stmt 0 view .LVU341
  1083 0004 0139     		subs	r1, r1, #1
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 40
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s 			page 40
 
 
  1084              	.LVL127:
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 1
  1122 001a 0020     		movs	r0, #0
  1123              	.LVL132:
  596:lvgl/src/misc/lv_color.h **** }
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 41
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s 			page 41
 
 
  1124              		.loc 2 596 12 view .LVU359
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 1
  324:lvgl/src/misc/lv_color.c ****     }
  1166              		.loc 1 324 16 view .LVU373
  1167 0040 7047     		bx	lr
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 42
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s 			page 42
 
 
  1168              	.L71:
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 1
  360:lvgl/src/misc/lv_color.c **** 
  361:lvgl/src/misc/lv_color.c ****     if(lvl == 0 || lvl > 4) {
  1195              		.loc 1 361 5 is_stmt 1 view .LVU378
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 43
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s 			page 43
 
 
  1196              		.loc 1 361 17 is_stmt 0 view .LVU379
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 1
  1234 0018 0020     		movs	r0, #0
  1235              	.LVL143:
  596:lvgl/src/misc/lv_color.h **** }
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 44
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s 			page 44
 
 
  1236              		.loc 2 596 12 view .LVU396
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 1
  363:lvgl/src/misc/lv_color.c ****     }
  1278              		.loc 1 363 16 view .LVU410
  1279 003e 7047     		bx	lr
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 45
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s 			page 45
 
 
  1280              	.L79:
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 1
  1337 002c 8C       		.byte	-116
  1338 002d 14       		.byte	20
  1339 002e 4A       		.byte	74
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 46
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s 			page 46
 
 
  1340 002f FF       		.byte	-1
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 1
  1394 0065 88       		.byte	-120
  1395 0066 02       		.byte	2
  1396 0067 FF       		.byte	-1
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 47
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s 			page 47
 
 
  1397 0068 BD       		.byte	-67
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 1
  1451 009e 1B       		.byte	27
  1452 009f FF       		.byte	-1
  1453 00a0 42       		.byte	66
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 48
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s 			page 48
 
 
  1454 00a1 B3       		.byte	-77
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 1
  1508 00d7 FF       		.byte	-1
  1509 00d8 00       		.byte	0
  1510 00d9 8F       		.byte	-113
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 49
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s 			page 49
 
 
  1511 00da FF       		.byte	-1
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 1
  1565 0110 7A       		.byte	122
  1566 0111 6E       		.byte	110
  1567 0112 54       		.byte	84
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 50
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s 			page 50
 
 
  1568 0113 FF       		.byte	-1
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 1
  1624 0015 40       		.byte	64
  1625 0016 EC       		.byte	-20
  1626 0017 FF       		.byte	-1
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 51
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s 			page 51
 
 
  1627 0018 92       		.byte	-110
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 1
  1681 004e ED       		.byte	-19
  1682 004f FF       		.byte	-1
  1683 0050 C0       		.byte	-64
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 52
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s 			page 52
 
 
  1684 0051 6B       		.byte	107
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 1
  1738 0087 FF       		.byte	-1
  1739 0088 FE       		.byte	-2
  1740 0089 F5       		.byte	-11
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 53
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s 			page 53
 
 
  1741 008a E1       		.byte	-31
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 1
  1795 00c0 C9       		.byte	-55
  1796 00c1 E6       		.byte	-26
  1797 00c2 C8       		.byte	-56
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 54
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s 			page 54
 
 
  1798 00c3 FF       		.byte	-1
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 1
  1852 00f9 F5       		.byte	-11
  1853 00fa FF       		.byte	-1
  1854 00fb FF       		.byte	-1
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 55
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s 			page 55
 
 
  1855 00fc C4       		.byte	-60
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 1
  1909 0132 FF       		.byte	-1
  1910 0133 FF       		.byte	-1
  1911 0134 91       		.byte	-111
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 56
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s 			page 56
 
 
  1912 0135 AB       		.byte	-85
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 1
  1966 016b FF       		.byte	-1
  1967 016c E0       		.byte	-32
  1968 016d E0       		.byte	-32
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 57
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s 			page 57
 
 
  1969 016e E0       		.byte	-32
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 1
  2025 0024 50       		.byte	80
  2026 0025 AF       		.byte	-81
  2027 0026 4C       		.byte	76
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 58
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s 			page 58
 
 
  2028 0027 FF       		.byte	-1
@@ -3462,44 +3462,44 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 1
  2066              	.Letext0:
  2067              		.file 3 "c:\\tools\\gcc-arm-none-eabi\\arm-none-eabi\\include\\machine\\_default_types.h"
  2068              		.file 4 "c:\\tools\\gcc-arm-none-eabi\\arm-none-eabi\\include\\sys\\_stdint.h"
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s 			page 59
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s 			page 59
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 lv_color.c
-C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s:19     .text.lv_color_fill:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s:25     .text.lv_color_fill:00000000 lv_color_fill
-C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s:150    .text.lv_color_lighten:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s:156    .text.lv_color_lighten:00000000 lv_color_lighten
-C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s:243    .text.lv_color_darken:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s:249    .text.lv_color_darken:00000000 lv_color_darken
-C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s:339    .text.lv_color_change_lightness:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s:345    .text.lv_color_change_lightness:00000000 lv_color_change_lightness
-C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s:402    .text.lv_color_hsv_to_rgb:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s:408    .text.lv_color_hsv_to_rgb:00000000 lv_color_hsv_to_rgb
-C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s:517    .text.lv_color_hsv_to_rgb:00000092 $d
-C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s:648    .text.lv_color_hsv_to_rgb:000000e8 $d
-C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s:655    .text.lv_color_rgb_to_hsv:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s:661    .text.lv_color_rgb_to_hsv:00000000 lv_color_rgb_to_hsv
-C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s:939    .text.lv_color_rgb_to_hsv:0000012c $d
-C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s:944    .text.lv_color_to_hsv:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s:950    .text.lv_color_to_hsv:00000000 lv_color_to_hsv
-C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s:996    .text.lv_palette_main:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s:1002   .text.lv_palette_main:00000000 lv_palette_main
-C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s:1057   .text.lv_palette_main:00000020 $d
-C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s:1062   .text.lv_palette_lighten:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s:1068   .text.lv_palette_lighten:00000000 lv_palette_lighten
-C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s:1171   .text.lv_palette_lighten:00000044 $d
-C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s:1176   .text.lv_palette_darken:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s:1182   .text.lv_palette_darken:00000000 lv_palette_darken
-C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s:1283   .text.lv_palette_darken:00000040 $d
-C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s:1288   .rodata.colors.0:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s:1292   .rodata.colors.0:00000000 colors.0
-C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s:1598   .rodata.colors.1:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s:1602   .rodata.colors.1:00000000 colors.1
-C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s:1984   .rodata.colors.2:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s:1988   .rodata.colors.2:00000000 colors.2
-C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s:522    .text.lv_color_hsv_to_rgb:00000097 $d
-C:\Users\OSD\AppData\Local\Temp\ccCs5vco.s:522    .text.lv_color_hsv_to_rgb:00000098 $t
+C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s:19     .text.lv_color_fill:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s:25     .text.lv_color_fill:00000000 lv_color_fill
+C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s:150    .text.lv_color_lighten:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s:156    .text.lv_color_lighten:00000000 lv_color_lighten
+C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s:243    .text.lv_color_darken:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s:249    .text.lv_color_darken:00000000 lv_color_darken
+C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s:339    .text.lv_color_change_lightness:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s:345    .text.lv_color_change_lightness:00000000 lv_color_change_lightness
+C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s:402    .text.lv_color_hsv_to_rgb:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s:408    .text.lv_color_hsv_to_rgb:00000000 lv_color_hsv_to_rgb
+C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s:517    .text.lv_color_hsv_to_rgb:00000092 $d
+C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s:648    .text.lv_color_hsv_to_rgb:000000e8 $d
+C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s:655    .text.lv_color_rgb_to_hsv:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s:661    .text.lv_color_rgb_to_hsv:00000000 lv_color_rgb_to_hsv
+C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s:939    .text.lv_color_rgb_to_hsv:0000012c $d
+C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s:944    .text.lv_color_to_hsv:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s:950    .text.lv_color_to_hsv:00000000 lv_color_to_hsv
+C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s:996    .text.lv_palette_main:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s:1002   .text.lv_palette_main:00000000 lv_palette_main
+C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s:1057   .text.lv_palette_main:00000020 $d
+C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s:1062   .text.lv_palette_lighten:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s:1068   .text.lv_palette_lighten:00000000 lv_palette_lighten
+C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s:1171   .text.lv_palette_lighten:00000044 $d
+C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s:1176   .text.lv_palette_darken:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s:1182   .text.lv_palette_darken:00000000 lv_palette_darken
+C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s:1283   .text.lv_palette_darken:00000040 $d
+C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s:1288   .rodata.colors.0:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s:1292   .rodata.colors.0:00000000 colors.0
+C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s:1598   .rodata.colors.1:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s:1602   .rodata.colors.1:00000000 colors.1
+C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s:1984   .rodata.colors.2:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s:1988   .rodata.colors.2:00000000 colors.2
+C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s:522    .text.lv_color_hsv_to_rgb:00000097 $d
+C:\Users\OSD\AppData\Local\Temp\ccUCsznu.s:522    .text.lv_color_hsv_to_rgb:00000098 $t
 
 NO UNDEFINED SYMBOLS

@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
   29:lvgl/src/misc/lv_area.c ****  *  STATIC VARIABLES
   30:lvgl/src/misc/lv_area.c ****  **********************/
   31:lvgl/src/misc/lv_area.c **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 2
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 2
 
 
   32:lvgl/src/misc/lv_area.c **** /**********************
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
   86:lvgl/src/misc/lv_area.c ****     area_p->x1   = x;
   87:lvgl/src/misc/lv_area.c ****     area_p->y1   = y;
   88:lvgl/src/misc/lv_area.c ****     lv_area_set_width(area_p, w);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 3
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 3
 
 
   89:lvgl/src/misc/lv_area.c ****     lv_area_set_height(area_p, h);
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  143:lvgl/src/misc/lv_area.c ****     return union_ok;
  144:lvgl/src/misc/lv_area.c **** }
  145:lvgl/src/misc/lv_area.c **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 4
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 4
 
 
  146:lvgl/src/misc/lv_area.c **** /**
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  200:lvgl/src/misc/lv_area.c ****         n.y2 = y1 + sh;
  201:lvgl/src/misc/lv_area.c ****         res_p[res_c++] = n;
  202:lvgl/src/misc/lv_area.c ****     }
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 5
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 5
 
 
  203:lvgl/src/misc/lv_area.c **** 
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  257:lvgl/src/misc/lv_area.c ****         radius = max_radius;
  258:lvgl/src/misc/lv_area.c **** 
  259:lvgl/src/misc/lv_area.c ****     /*Check if it's in one of the corners*/
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 6
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 6
 
 
  260:lvgl/src/misc/lv_area.c ****     lv_area_t corner_area;
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  314:lvgl/src/misc/lv_area.c **** 
  315:lvgl/src/misc/lv_area.c **** /**
  316:lvgl/src/misc/lv_area.c ****  * Check if an area is fully on an other
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 7
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 7
 
 
  317:lvgl/src/misc/lv_area.c ****  * @param ain_p pointer to an area which could be in 'aholder_p'
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  371:lvgl/src/misc/lv_area.c **** 
  372:lvgl/src/misc/lv_area.c ****     /*Check if the corner points are outside the radius or not*/
  373:lvgl/src/misc/lv_area.c ****     lv_point_t p;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 8
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 8
 
 
  374:lvgl/src/misc/lv_area.c **** 
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  428:lvgl/src/misc/lv_area.c ****             y = 0;
  429:lvgl/src/misc/lv_area.c ****             break;
  430:lvgl/src/misc/lv_area.c **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 9
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 9
 
 
  431:lvgl/src/misc/lv_area.c ****         case LV_ALIGN_BOTTOM_LEFT:
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  485:lvgl/src/misc/lv_area.c ****         case LV_ALIGN_OUT_LEFT_TOP:
  486:lvgl/src/misc/lv_area.c ****             x = -lv_area_get_width(to_align);
  487:lvgl/src/misc/lv_area.c ****             y = 0;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 10
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 10
 
 
  488:lvgl/src/misc/lv_area.c ****             break;
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  542:lvgl/src/misc/lv_area.c ****         p->x = (((int32_t)(p->x) * zoom) >> 8) + pivot->x;
  543:lvgl/src/misc/lv_area.c ****         p->y = (((int32_t)(p->y) * zoom) >> 8) + pivot->y;
  544:lvgl/src/misc/lv_area.c ****         return;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 11
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 11
 
 
  545:lvgl/src/misc/lv_area.c ****     }
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
   37 0004 B0F90020 		ldrsh	r2, [r0]
   38              		.loc 1 589 42 view .LVU4
   39 0008 9B1A     		subs	r3, r3, r2
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 12
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 12
 
 
   40 000a 17D4     		bmi	.L5
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  601:lvgl/src/misc/lv_area.c **** 
  602:lvgl/src/misc/lv_area.c ****     if(dist <= r_sqrd)
   83              		.loc 1 602 5 is_stmt 1 view .LVU22
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 13
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 13
 
 
   84              		.loc 1 602 7 is_stmt 0 view .LVU23
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  128 0004 8380     		strh	r3, [r0, #4]	@ movhi
   53:lvgl/src/misc/lv_area.c **** }
  129              		.loc 1 53 5 is_stmt 1 view .LVU36
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 14
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 14
 
 
   53:lvgl/src/misc/lv_area.c **** }
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  178              	.LVL16:
  179              	.LFB7:
   72:lvgl/src/misc/lv_area.c ****     area_p->y2 = area_p->y1 + h - 1;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 15
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 15
 
 
  180              		.loc 1 72 1 is_stmt 1 view -0
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
    1:lvgl/src/misc/lv_area.h **** /**
    2:lvgl/src/misc/lv_area.h ****  * @file lv_area.h
    3:lvgl/src/misc/lv_area.h ****  *
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 16
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 16
 
 
    4:lvgl/src/misc/lv_area.h ****  */
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
   58:lvgl/src/misc/lv_area.h ****     LV_ALIGN_BOTTOM_RIGHT,
   59:lvgl/src/misc/lv_area.h ****     LV_ALIGN_LEFT_MID,
   60:lvgl/src/misc/lv_area.h ****     LV_ALIGN_RIGHT_MID,
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 17
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 17
 
 
   61:lvgl/src/misc/lv_area.h ****     LV_ALIGN_CENTER,
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  115:lvgl/src/misc/lv_area.h ****     dest->y2 = src->y2;
  116:lvgl/src/misc/lv_area.h **** }
  117:lvgl/src/misc/lv_area.h **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 18
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 18
 
 
  118:lvgl/src/misc/lv_area.h **** /**
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  262              	.LBE125:
  263              	.LBE124:
   86:lvgl/src/misc/lv_area.c ****     area_p->y1   = y;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 19
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 19
 
 
  264              		.loc 1 86 5 is_stmt 1 view .LVU73
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  307 0004 B0F90030 		ldrsh	r3, [r0]
  101:lvgl/src/misc/lv_area.c **** 
  308              		.loc 1 101 34 view .LVU87
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 20
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 20
 
 
  309 0008 D21A     		subs	r2, r2, r3
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  352              		.loc 1 109 14 is_stmt 0 view .LVU100
  353 0008 8388     		ldrh	r3, [r0, #4]
  354 000a 1944     		add	r1, r1, r3
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 21
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 21
 
 
  355              	.LVL29:
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  117:lvgl/src/misc/lv_area.c ****     area->y1 += y_ofs;
  399              		.loc 1 117 5 is_stmt 1 view .LVU113
  117:lvgl/src/misc/lv_area.c ****     area->y1 += y_ofs;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 22
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 22
 
 
  400              		.loc 1 117 14 is_stmt 0 view .LVU114
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  132:lvgl/src/misc/lv_area.c ****     res_p->y1 = LV_MAX(a1_p->y1, a2_p->y1);
  445              		.loc 1 132 17 is_stmt 0 view .LVU126
  446 0002 B2F900C0 		ldrsh	ip, [r2]
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 23
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 23
 
 
  447 0006 B1F90030 		ldrsh	r3, [r1]
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  139:lvgl/src/misc/lv_area.c ****         union_ok = false;
  487              		.loc 1 139 7 is_stmt 0 view .LVU141
  488 0046 9C45     		cmp	ip, r3
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 24
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 24
 
 
  489 0048 03DC     		bgt	.L16
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  534 0000 B2F90030 		ldrsh	r3, [r2]
  535 0004 B1F900C0 		ldrsh	ip, [r1]
  536 0008 6345     		cmp	r3, ip
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 25
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 25
 
 
  537 000a A8BF     		it	ge
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  580              		.thumb_func
  582              	_lv_area_is_point_on:
  583              	.LVL45:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 26
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 26
 
 
  584              	.LFB15:
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  625 002e B4F90610 		ldrsh	r1, [r4, #6]
  243:lvgl/src/misc/lv_area.c ****         is_on_rect = true;
  626              		.loc 1 243 72 discriminator 3 view .LVU178
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 27
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 27
 
 
  627 0032 8E42     		cmp	r6, r1
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  666              	.LBI128:
  133:lvgl/src/misc/lv_area.h **** {
  667              		.loc 2 133 26 view .LVU194
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 28
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 28
 
 
  668              	.LBB129:
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  263:lvgl/src/misc/lv_area.c ****     corner_area.y1 = a_p->y1;
  712              		.loc 1 263 30 is_stmt 0 view .LVU212
  713 007c B6B2     		uxth	r6, r6
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 29
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 29
 
 
  263:lvgl/src/misc/lv_area.c ****     corner_area.y1 = a_p->y1;
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  751 00b0 ADF80660 		strh	r6, [sp, #6]	@ movhi
  269:lvgl/src/misc/lv_area.c ****     }
  752              		.loc 1 269 9 is_stmt 1 view .LVU230
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 30
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 30
 
 
  269:lvgl/src/misc/lv_area.c ****     }
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  793 00e2 BDF80430 		ldrh	r3, [sp, #4]
  794 00e6 3344     		add	r3, r3, r6
  795 00e8 ADF80430 		strh	r3, [sp, #4]	@ movhi
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 31
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 31
 
 
  276:lvgl/src/misc/lv_area.c ****         return lv_point_within_circle(&corner_area, p_p);
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  834 011c BDF80030 		ldrh	r3, [sp]
  835 0120 9B1B     		subs	r3, r3, r6
  836 0122 ADF80030 		strh	r3, [sp]	@ movhi
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 32
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 32
 
 
  284:lvgl/src/misc/lv_area.c ****         return lv_point_within_circle(&corner_area, p_p);
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  291:lvgl/src/misc/lv_area.c ****         corner_area.y2 += radius;
  876              		.loc 1 291 9 is_stmt 1 view .LVU276
  291:lvgl/src/misc/lv_area.c ****         corner_area.y2 += radius;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 33
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 33
 
 
  877              		.loc 1 291 24 is_stmt 0 view .LVU277
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  922 018a 0120     		movs	r0, #1
  923 018c F5E7     		b	.L21
  924              		.cfi_endproc
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 34
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 34
 
 
  925              	.LFE15:
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  307:lvgl/src/misc/lv_area.c ****         return true;
  968              		.loc 1 307 83 discriminator 3 view .LVU300
  969 002c 9A42     		cmp	r2, r3
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 35
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 35
 
 
  970 002e 07DA     		bge	.L43
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  1016              	.LFB17:
  323:lvgl/src/misc/lv_area.c ****     bool is_in = false;
  1017              		.loc 1 323 1 is_stmt 1 view -0
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 36
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 36
 
 
  1018              		.cfi_startproc
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  1060 002e 38DC     		bgt	.L48
  327:lvgl/src/misc/lv_area.c ****         is_in = true;
  1061              		.loc 1 327 13 discriminator 3 view .LVU324
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 37
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 37
 
 
  1062 0030 B0F90680 		ldrsh	r8, [r0, #6]
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  341:lvgl/src/misc/lv_area.c ****     p.y = ain_p->y1;
  1099              		.loc 1 341 5 is_stmt 1 view .LVU342
  341:lvgl/src/misc/lv_area.c ****     p.y = ain_p->y1;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 38
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 38
 
 
  1100              		.loc 1 341 9 is_stmt 0 view .LVU343
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  351:lvgl/src/misc/lv_area.c **** 
  1137              		.loc 1 351 5 view .LVU361
  351:lvgl/src/misc/lv_area.c **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 39
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 39
 
 
  1138              		.loc 1 351 8 is_stmt 0 view .LVU362
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  1185              		.syntax unified
  1186              		.thumb
  1187              		.thumb_func
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 40
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 40
 
 
  1189              	_lv_area_diff:
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  1233 0026 40F0AA80 		bne	.L59
  162:lvgl/src/misc/lv_area.c **** 
  1234              		.loc 1 162 5 is_stmt 1 view .LVU381
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 41
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 41
 
 
  1235              	.LVL116:
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  1277 004e 1FFA88F1 		uxth	r1, r8
  170:lvgl/src/misc/lv_area.c ****     if(th > 0) {
  1278              		.loc 1 170 30 view .LVU399
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 42
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 42
 
 
  1279 0052 A1EB0C01 		sub	r1, r1, ip
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  1315              		.loc 1 180 33 view .LVU417
  1316 007c B5F90600 		ldrsh	r0, [r5, #6]
  1317 0080 87B2     		uxth	r7, r0
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 43
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 43
 
 
  180:lvgl/src/misc/lv_area.c ****     if(bh > 0 && a2_p->y2 < a1_p->y2) {
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  1354 00ac ADF80670 		strh	r7, [sp, #6]	@ movhi
  186:lvgl/src/misc/lv_area.c ****     }
  1355              		.loc 1 186 9 is_stmt 1 view .LVU436
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 44
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 44
 
 
  186:lvgl/src/misc/lv_area.c ****     }
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  1395 00e4 AEEB0701 		sub	r1, lr, r7
  192:lvgl/src/misc/lv_area.c **** 
  1396              		.loc 1 192 16 view .LVU452
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 45
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 45
 
 
  1397 00e8 09B2     		sxth	r1, r1
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  1433              	.LVL134:
  201:lvgl/src/misc/lv_area.c ****     }
  1434              		.loc 1 201 14 view .LVU471
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 46
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 46
 
 
  1435 011a 06EBCC09 		add	r9, r6, ip, lsl #3
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  1473 0146 ADF80270 		strh	r7, [sp, #2]	@ movhi
  209:lvgl/src/misc/lv_area.c ****         n.y2 = y1 + sh;
  1474              		.loc 1 209 9 is_stmt 1 view .LVU488
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 47
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 47
 
 
  209:lvgl/src/misc/lv_area.c ****         n.y2 = y1 + sh;
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  1516 0178 4FF0FF3C 		mov	ip, #-1
  1517 017c F5E7     		b	.L54
  1518              	.L59:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 48
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 48
 
 
  159:lvgl/src/misc/lv_area.c **** 
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  1566 001c B1F90230 		ldrsh	r3, [r1, #2]
  365:lvgl/src/misc/lv_area.c ****        aout_p->y1 > aholder_p->y2) {
  1567              		.loc 1 365 35 discriminator 1 view .LVU511
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 49
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 49
 
 
  1568 0020 9945     		cmp	r9, r3
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  377:lvgl/src/misc/lv_area.c **** 
  1606              		.loc 1 377 8 view .LVU528
  1607 0050 FFF7FEFF 		bl	_lv_area_is_point_on
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 50
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 50
 
 
  1608              	.LVL150:
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  1645 0084 01A9     		add	r1, sp, #4
  1646 0086 2046     		mov	r0, r4
  1647 0088 FFF7FEFF 		bl	_lv_area_is_point_on
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 51
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 51
 
 
  1648              	.LVL152:
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  1690 00b4 F9E7     		b	.L63
  1691              	.LVL157:
  1692              	.L66:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 52
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 52
 
 
  367:lvgl/src/misc/lv_area.c ****     }
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  1738 0018 9A42     		cmp	r2, r3
  1739 001a 01D0     		beq	.L82
  396:lvgl/src/misc/lv_area.c **** }
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 53
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 53
 
 
  1740              		.loc 1 396 63 view .LVU569
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  1781              	.LFE19:
  1783              		.section	.text.lv_area_align,"ax",%progbits
  1784              		.align	1
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 54
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 54
 
 
  1785              		.global	lv_area_align
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  1834              		.p2align 1
  1835              	.L99:
  413:lvgl/src/misc/lv_area.c ****             y = lv_area_get_height(base) / 2 - lv_area_get_height(to_align) / 2;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 55
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 55
 
 
  1836              		.loc 1 413 13 is_stmt 1 view .LVU589
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  1874              		.loc 2 125 12 view .LVU605
  1875              	.LBE137:
  1876              	.LBE136:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 56
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 56
 
 
  413:lvgl/src/misc/lv_area.c ****             y = lv_area_get_height(base) / 2 - lv_area_get_height(to_align) / 2;
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  1926              		.loc 2 135 12 view .LVU623
  1927 0092 0FFA8CFC 		sxth	ip, ip
  1928              	.LVL176:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 57
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 57
 
 
  1929              		.loc 2 135 12 view .LVU624
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  1969              		.loc 2 125 44 view .LVU638
  1970 00ba 0888     		ldrh	r0, [r1]
  125:lvgl/src/misc/lv_area.h **** }
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 58
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 58
 
 
  1971              		.loc 2 125 36 view .LVU639
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  527:lvgl/src/misc/lv_area.c ****     to_align->y2 = to_align->y1 + h - 1;
  2014              		.loc 1 527 5 is_stmt 1 view .LVU657
  527:lvgl/src/misc/lv_area.c ****     to_align->y2 = to_align->y1 + h - 1;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 59
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 59
 
 
  2015              		.loc 1 527 33 is_stmt 0 view .LVU658
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  2056              		.loc 2 125 31 is_stmt 0 view .LVU671
  2057 0118 A088     		ldrh	r0, [r4, #4]
  125:lvgl/src/misc/lv_area.h **** }
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 60
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 60
 
 
  2058              		.loc 2 125 44 view .LVU672
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  2099 0142 07DB     		blt	.L134
  2100              	.L112:
  2101 0144 A0EB6C00 		sub	r0, r0, ip, asr #1
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 61
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 61
 
 
  422:lvgl/src/misc/lv_area.c ****             y = 0;
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  2141              		.loc 2 125 5 view .LVU700
  125:lvgl/src/misc/lv_area.h **** }
  2142              		.loc 2 125 31 is_stmt 0 view .LVU701
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 62
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 62
 
 
  2143 0160 8A88     		ldrh	r2, [r1, #4]
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  2185              		.loc 2 135 5 view .LVU719
  2186              		.loc 2 135 31 is_stmt 0 view .LVU720
  2187 017a B1F806C0 		ldrh	ip, [r1, #6]
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 63
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 63
 
 
  2188              		.loc 2 135 44 view .LVU721
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  2228              	.LBB160:
  2229              	.LBI160:
  123:lvgl/src/misc/lv_area.h **** {
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 64
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 64
 
 
  2230              		.loc 2 123 26 is_stmt 1 view .LVU737
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  2273 01c6 A2EB0C02 		sub	r2, r2, ip
  2274              	.LVL203:
  2275              		.loc 2 135 36 view .LVU753
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 65
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 65
 
 
  2276              	.LBE163:
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  2319              		.loc 2 125 36 view .LVU768
  2320 01ee 801A     		subs	r0, r0, r2
  2321              	.LVL208:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 66
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 66
 
 
  125:lvgl/src/misc/lv_area.h **** }
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  2365              		.loc 2 135 31 is_stmt 0 view .LVU786
  2366 020a B1F806E0 		ldrh	lr, [r1, #6]
  2367              		.loc 2 135 44 view .LVU787
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 67
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 67
 
 
  2368 020e B1F802C0 		ldrh	ip, [r1, #2]
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  2415 0238 801A     		subs	r0, r0, r2
  2416 023a 80B2     		uxth	r0, r0
  2417              		.loc 2 135 49 view .LVU807
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 68
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 68
 
 
  2418 023c 0130     		adds	r0, r0, #1
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  125:lvgl/src/misc/lv_area.h **** }
  2462              		.loc 2 125 44 view .LVU820
  2463 0268 2288     		ldrh	r2, [r4]
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 69
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 69
 
 
  125:lvgl/src/misc/lv_area.h **** }
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  2507              		.loc 2 135 12 view .LVU838
  2508              	.LBE183:
  2509              	.LBE182:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 70
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 70
 
 
  2510              	.LBB184:
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  2557              		.loc 1 457 13 view .LVU852
  2558              	.LBB186:
  2559              	.LBI186:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 71
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 71
 
 
  133:lvgl/src/misc/lv_area.h **** {
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  125:lvgl/src/misc/lv_area.h **** }
  2601              		.loc 2 125 12 view .LVU870
  2602              	.LBE189:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 72
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 72
 
 
  2603              	.LBE188:
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  2645 030e B1F806C0 		ldrh	ip, [r1, #6]
  2646              		.loc 2 135 44 view .LVU885
  2647 0312 4A88     		ldrh	r2, [r1, #2]
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 73
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 73
 
 
  2648              	.LVL234:
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  125:lvgl/src/misc/lv_area.h **** }
  2690              		.loc 2 125 31 is_stmt 0 view .LVU899
  2691 0330 8A88     		ldrh	r2, [r1, #4]
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 74
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 74
 
 
  125:lvgl/src/misc/lv_area.h **** }
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  2735 0350 E288     		ldrh	r2, [r4, #6]
  2736              		.loc 2 135 44 view .LVU917
  2737 0352 6088     		ldrh	r0, [r4, #2]
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 75
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 75
 
 
  2738              		.loc 2 135 36 view .LVU918
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  2779              		.loc 2 123 26 is_stmt 1 view .LVU934
  2780              	.LBB205:
  125:lvgl/src/misc/lv_area.h **** }
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 76
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 76
 
 
  2781              		.loc 2 125 5 view .LVU935
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  2825 039e 0132     		adds	r2, r2, #1
  2826              		.loc 2 135 12 view .LVU951
  2827 03a0 12B2     		sxth	r2, r2
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 77
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 77
 
 
  2828              	.LVL249:
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  2869              	.LVL253:
  125:lvgl/src/misc/lv_area.h **** }
  2870              		.loc 2 125 44 view .LVU966
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 78
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 78
 
 
  2871              	.LBE211:
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  125:lvgl/src/misc/lv_area.h **** }
  2915              		.loc 2 125 44 view .LVU984
  2916              	.LBE215:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 79
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 79
 
 
  2917              	.LBE214:
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  2957 03f0 B4F806E0 		ldrh	lr, [r4, #6]
  2958              		.loc 2 135 44 view .LVU1001
  2959 03f4 6288     		ldrh	r2, [r4, #2]
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 80
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 80
 
 
  2960              		.loc 2 135 36 view .LVU1002
@@ -4798,7 +4798,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  3009              		.loc 1 492 46 is_stmt 0 view .LVU1017
  3010 0436 0EF10102 		add	r2, lr, #1
  3011 043a F3E7     		b	.L123
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 81
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 81
 
 
  3012              	.L146:
@@ -4858,7 +4858,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  3056              		.loc 2 135 5 view .LVU1033
  3057              		.loc 2 135 31 is_stmt 0 view .LVU1034
  3058 0456 B1F806E0 		ldrh	lr, [r1, #6]
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 82
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 82
 
 
  3059              		.loc 2 135 44 view .LVU1035
@@ -4918,7 +4918,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  3098              		.loc 1 502 15 is_stmt 0 view .LVU1051
  3099 0476 0022     		movs	r2, #0
  503:lvgl/src/misc/lv_area.c **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 83
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 83
 
 
  3100              		.loc 1 503 13 view .LVU1052
@@ -4978,7 +4978,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  3143              		.loc 2 135 12 view .LVU1070
  3144              	.LBE233:
  3145              	.LBE232:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 84
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 84
 
 
  3146              	.LBB234:
@@ -5038,7 +5038,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  3194              	.LBI236:
  123:lvgl/src/misc/lv_area.h **** {
  3195              		.loc 2 123 26 view .LVU1084
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 85
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 85
 
 
  3196              	.LBB237:
@@ -5098,7 +5098,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  3240              	.LBE241:
  3241              	.LBE240:
  512:lvgl/src/misc/lv_area.c ****             break;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 86
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 86
 
 
  3242              		.loc 1 512 42 view .LVU1104
@@ -5158,7 +5158,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  3291 0010 83B0     		sub	sp, sp, #12
  3292              		.cfi_def_cfa_offset 48
  3293 0012 0446     		mov	r4, r0
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 87
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 87
 
 
  3294 0014 1746     		mov	r7, r2
@@ -5218,7 +5218,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  3332              		.loc 1 551 9 is_stmt 1 view .LVU1127
  3333              	.LVL290:
  552:lvgl/src/misc/lv_area.c ****         if(angle_limited < 0) angle_limited += 3600;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 88
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 88
 
 
  3334              		.loc 1 552 9 view .LVU1128
@@ -5278,7 +5278,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  3373              		.loc 1 560 9 is_stmt 1 view .LVU1143
  560:lvgl/src/misc/lv_area.c **** 
  3374              		.loc 1 560 22 is_stmt 0 view .LVU1144
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 89
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 89
 
 
  3375 0070 0FFA8BF0 		sxth	r0, fp
@@ -5338,7 +5338,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  566:lvgl/src/misc/lv_area.c ****         sinma = sinma >> (LV_TRIGO_SHIFT - _LV_TRANSFORM_TRIGO_SHIFT);
  3416              		.loc 1 566 9 is_stmt 1 view .LVU1158
  566:lvgl/src/misc/lv_area.c ****         sinma = sinma >> (LV_TRIGO_SHIFT - _LV_TRANSFORM_TRIGO_SHIFT);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 90
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 90
 
 
  3417              		.loc 1 566 45 is_stmt 0 view .LVU1159
@@ -5398,7 +5398,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  3455              	.LVL310:
  573:lvgl/src/misc/lv_area.c ****         p->x = ((cosma * x - sinma * y) >> _LV_TRANSFORM_TRIGO_SHIFT) + pivot->x;
  3456              		.loc 1 573 5 is_stmt 1 view .LVU1176
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 91
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 91
 
 
  573:lvgl/src/misc/lv_area.c ****         p->x = ((cosma * x - sinma * y) >> _LV_TRANSFORM_TRIGO_SHIFT) + pivot->x;
@@ -5458,7 +5458,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  3494              		.loc 1 581 1 view .LVU1193
  3495 0114 03B0     		add	sp, sp, #12
  3496              		.cfi_remember_state
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 92
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 92
 
 
  3497              		.cfi_def_cfa_offset 36
@@ -5518,7 +5518,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  3536              		.loc 1 553 45 discriminator 1 view .LVU1208
  3537 013c 85E7     		b	.L154
  3538              	.LVL318:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 93
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 93
 
 
  3539              	.L163:
@@ -5578,7 +5578,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  3579              		.cfi_restore 8
  3580              		.cfi_restore 9
  3581              		.cfi_restore 10
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 94
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 94
 
 
  3582              		.cfi_restore 11
@@ -5615,56 +5615,56 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 1
  3619              		.file 3 "c:\\tools\\gcc-arm-none-eabi\\arm-none-eabi\\include\\machine\\_default_types.h"
  3620              		.file 4 "c:\\tools\\gcc-arm-none-eabi\\arm-none-eabi\\include\\sys\\_stdint.h"
  3621              		.file 5 "lvgl/src/misc/lv_math.h"
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s 			page 95
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s 			page 95
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 lv_area.c
-C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s:19     .text.lv_point_within_circle:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s:24     .text.lv_point_within_circle:00000000 lv_point_within_circle
-C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s:106    .text.lv_area_set:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s:112    .text.lv_area_set:00000000 lv_area_set
-C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s:141    .text.lv_area_set_width:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s:147    .text.lv_area_set_width:00000000 lv_area_set_width
-C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s:171    .text.lv_area_set_height:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s:177    .text.lv_area_set_height:00000000 lv_area_set_height
-C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s:201    .text._lv_area_set_pos:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s:207    .text._lv_area_set_pos:00000000 _lv_area_set_pos
-C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s:288    .text.lv_area_get_size:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s:294    .text.lv_area_get_size:00000000 lv_area_get_size
-C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s:330    .text.lv_area_increase:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s:336    .text.lv_area_increase:00000000 lv_area_increase
-C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s:378    .text.lv_area_move:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s:384    .text.lv_area_move:00000000 lv_area_move
-C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s:426    .text._lv_area_intersect:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s:432    .text._lv_area_intersect:00000000 _lv_area_intersect
-C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s:518    .text._lv_area_join:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s:524    .text._lv_area_join:00000000 _lv_area_join
-C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s:576    .text._lv_area_is_point_on:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s:582    .text._lv_area_is_point_on:00000000 _lv_area_is_point_on
-C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s:928    .text._lv_area_is_on:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s:934    .text._lv_area_is_on:00000000 _lv_area_is_on
-C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s:1008   .text._lv_area_is_in:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s:1014   .text._lv_area_is_in:00000000 _lv_area_is_in
-C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s:1183   .text._lv_area_diff:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s:1189   .text._lv_area_diff:00000000 _lv_area_diff
-C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s:1526   .text._lv_area_is_out:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s:1532   .text._lv_area_is_out:00000000 _lv_area_is_out
-C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s:1705   .text._lv_area_is_equal:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s:1711   .text._lv_area_is_equal:00000000 _lv_area_is_equal
-C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s:1784   .text.lv_area_align:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s:1790   .text.lv_area_align:00000000 lv_area_align
-C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s:1814   .text.lv_area_align:00000010 $d
-C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s:1834   .text.lv_area_align:00000038 $t
-C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s:3260   .text.lv_point_transform:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s:3266   .text.lv_point_transform:00000000 lv_point_transform
-C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s:3589   .text.lv_point_transform:0000016c $d
-C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s:3597   .bss.cosma.0:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s:3601   .bss.cosma.0:00000000 cosma.0
-C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s:3604   .bss.sinma.1:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s:3608   .bss.sinma.1:00000000 sinma.1
-C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s:3611   .data.angle_prev.2:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\ccx0d5Nb.s:3615   .data.angle_prev.2:00000000 angle_prev.2
+C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s:19     .text.lv_point_within_circle:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s:24     .text.lv_point_within_circle:00000000 lv_point_within_circle
+C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s:106    .text.lv_area_set:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s:112    .text.lv_area_set:00000000 lv_area_set
+C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s:141    .text.lv_area_set_width:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s:147    .text.lv_area_set_width:00000000 lv_area_set_width
+C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s:171    .text.lv_area_set_height:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s:177    .text.lv_area_set_height:00000000 lv_area_set_height
+C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s:201    .text._lv_area_set_pos:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s:207    .text._lv_area_set_pos:00000000 _lv_area_set_pos
+C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s:288    .text.lv_area_get_size:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s:294    .text.lv_area_get_size:00000000 lv_area_get_size
+C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s:330    .text.lv_area_increase:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s:336    .text.lv_area_increase:00000000 lv_area_increase
+C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s:378    .text.lv_area_move:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s:384    .text.lv_area_move:00000000 lv_area_move
+C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s:426    .text._lv_area_intersect:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s:432    .text._lv_area_intersect:00000000 _lv_area_intersect
+C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s:518    .text._lv_area_join:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s:524    .text._lv_area_join:00000000 _lv_area_join
+C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s:576    .text._lv_area_is_point_on:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s:582    .text._lv_area_is_point_on:00000000 _lv_area_is_point_on
+C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s:928    .text._lv_area_is_on:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s:934    .text._lv_area_is_on:00000000 _lv_area_is_on
+C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s:1008   .text._lv_area_is_in:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s:1014   .text._lv_area_is_in:00000000 _lv_area_is_in
+C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s:1183   .text._lv_area_diff:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s:1189   .text._lv_area_diff:00000000 _lv_area_diff
+C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s:1526   .text._lv_area_is_out:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s:1532   .text._lv_area_is_out:00000000 _lv_area_is_out
+C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s:1705   .text._lv_area_is_equal:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s:1711   .text._lv_area_is_equal:00000000 _lv_area_is_equal
+C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s:1784   .text.lv_area_align:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s:1790   .text.lv_area_align:00000000 lv_area_align
+C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s:1814   .text.lv_area_align:00000010 $d
+C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s:1834   .text.lv_area_align:00000038 $t
+C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s:3260   .text.lv_point_transform:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s:3266   .text.lv_point_transform:00000000 lv_point_transform
+C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s:3589   .text.lv_point_transform:0000016c $d
+C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s:3597   .bss.cosma.0:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s:3601   .bss.cosma.0:00000000 cosma.0
+C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s:3604   .bss.sinma.1:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s:3608   .bss.sinma.1:00000000 sinma.1
+C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s:3611   .data.angle_prev.2:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccN7KhMe.s:3615   .data.angle_prev.2:00000000 angle_prev.2
 
 UNDEFINED SYMBOLS
 lv_trigo_sin

@@ -224,8 +224,7 @@ build/lv_demo_widgets.o: lvgl/demos/widgets/lv_demo_widgets.c \
  d:\kzc\stm32\h743ii_lcd\lvgl\src\lvgl.h \
  lvgl/demos/widgets/../../src/extra/widgets/span/lv_span.h \
  d:\kzc\stm32\h743ii_lcd\lvgl\src\lvgl.h \
- lvgl/demos/widgets/../music/lv_demo_music.h \
- lvgl/demos/widgets/../music/../lv_demos.h
+ lvgl/demos/widgets/../widgets/lv_demo_widgets.h
 lvgl/demos/widgets/lv_demo_widgets.h:
 lvgl/demos/widgets/../lv_demos.h:
 lvgl/demos/widgets/../../lvgl.h:
@@ -453,5 +452,4 @@ lvgl/demos/widgets/../../src/extra/widgets/imgbtn/lv_imgbtn.h:
 d:\kzc\stm32\h743ii_lcd\lvgl\src\lvgl.h:
 lvgl/demos/widgets/../../src/extra/widgets/span/lv_span.h:
 d:\kzc\stm32\h743ii_lcd\lvgl\src\lvgl.h:
-lvgl/demos/widgets/../music/lv_demo_music.h:
-lvgl/demos/widgets/../music/../lv_demos.h:
+lvgl/demos/widgets/../widgets/lv_demo_widgets.h:

@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 1
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 1
   29:lvgl/src/font/lv_font_loader.c ****     uint16_t font_size;
   30:lvgl/src/font/lv_font_loader.c ****     uint16_t ascent;
   31:lvgl/src/font/lv_font_loader.c ****     int16_t descent;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 2
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s 			page 2
 
 
   32:lvgl/src/font/lv_font_loader.c ****     uint16_t typo_ascent;
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 1
   86:lvgl/src/font/lv_font_loader.c **** lv_font_t * lv_font_load(const char * font_name)
   87:lvgl/src/font/lv_font_loader.c **** {
   88:lvgl/src/font/lv_font_loader.c ****     lv_fs_file_t file;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 3
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s 			page 3
 
 
   89:lvgl/src/font/lv_font_loader.c ****     lv_fs_res_t res = lv_fs_open(&file, font_name, LV_FS_MODE_RD);
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 1
  143:lvgl/src/font/lv_font_loader.c ****                     if(kern_dsc->class_pair_values)
  144:lvgl/src/font/lv_font_loader.c ****                         lv_mem_free((void *)kern_dsc->class_pair_values);
  145:lvgl/src/font/lv_font_loader.c **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 4
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s 			page 4
 
 
  146:lvgl/src/font/lv_font_loader.c ****                     if(kern_dsc->left_class_mapping)
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 1
   38              		.loc 1 189 16 is_stmt 0 view .LVU5
   39 0002 FF22     		movs	r2, #255
   40 0004 0271     		strb	r2, [r0, #4]
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 5
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s 			page 5
 
 
  190:lvgl/src/font/lv_font_loader.c ****     it.byte_value = 0;
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 1
  201:lvgl/src/font/lv_font_loader.c ****         if(it->bit_pos < 0) {
  202:lvgl/src/font/lv_font_loader.c ****             it->bit_pos = 7;
  203:lvgl/src/font/lv_font_loader.c ****             *res = lv_fs_read(it->fp, &(it->byte_value), 1, NULL);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 6
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s 			page 6
 
 
  204:lvgl/src/font/lv_font_loader.c ****             if(*res != LV_FS_RES_OK) {
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 1
  121              		.loc 1 199 20 view .LVU33
  122 0022 013B     		subs	r3, r3, #1
  123 0024 5BB2     		sxtb	r3, r3
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 7
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s 			page 7
 
 
  124 0026 2371     		strb	r3, [r4, #4]
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 1
  162              	.LVL12:
  163              	.L2:
  214:lvgl/src/font/lv_font_loader.c **** }
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 8
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s 			page 8
 
 
  164              		.loc 1 214 1 is_stmt 0 view .LVU50
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 1
  212              		.loc 1 222 5 is_stmt 1 view .LVU63
  223:lvgl/src/font/lv_font_loader.c **** }
  213              		.loc 1 223 1 is_stmt 0 view .LVU64
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 9
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s 			page 9
 
 
  214 001c 10BD     		pop	{r4, pc}
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 1
  248              		.loc 1 245 5 is_stmt 1 view .LVU67
  249              		.loc 1 245 43 is_stmt 0 view .LVU68
  250 000c 4A8A     		ldrh	r2, [r1, #18]
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 10
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s 			page 10
 
 
  251              	.LVL18:
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 1
  285              	.LVL25:
  286 002c 0146     		mov	r1, r0
  287              	.LVL26:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 11
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s 			page 11
 
 
  266:lvgl/src/font/lv_font_loader.c **** 
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 1
  327              		.loc 1 250 66 is_stmt 0 view .LVU96
  328 004e 2B01     		lsls	r3, r5, #4
  329 0050 08EB0514 		add	r4, r8, r5, lsl #4
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 12
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s 			page 12
 
 
  250:lvgl/src/font/lv_font_loader.c ****         if(res != LV_FS_RES_OK) {
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 1
  260:lvgl/src/font/lv_font_loader.c **** 
  366              		.loc 1 260 35 is_stmt 0 view .LVU115
  367 007e A37B     		ldrb	r3, [r4, #14]	@ zero_extendqisi2
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 13
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s 			page 13
 
 
  260:lvgl/src/font/lv_font_loader.c **** 
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 1
  408              		.loc 1 284 39 view .LVU130
  409 00b4 3382     		strh	r3, [r6, #16]	@ movhi
  285:lvgl/src/font/lv_font_loader.c **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 14
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s 			page 14
 
 
  286:lvgl/src/font/lv_font_loader.c ****                     if(lv_fs_read(fp, unicode_list, list_size, NULL) != LV_FS_RES_OK) {
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 1
  296:lvgl/src/font/lv_font_loader.c ****                             return false;
  454              		.loc 1 296 36 view .LVU148
  455 00e4 0020     		movs	r0, #0
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 15
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s 			page 15
 
 
  456 00e6 02E0     		b	.L14
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 1
  494              	.L24:
  495              	.LBB9:
  270:lvgl/src/font/lv_font_loader.c ****                     }
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 16
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s 			page 16
 
 
  496              		.loc 1 270 32 view .LVU158
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 1
  232:lvgl/src/font/lv_font_loader.c ****        || lv_fs_read(fp, buf, 4, NULL) != LV_FS_RES_OK
  544              		.loc 1 232 5 view .LVU167
  232:lvgl/src/font/lv_font_loader.c ****        || lv_fs_read(fp, buf, 4, NULL) != LV_FS_RES_OK
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 17
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s 			page 17
 
 
  545              		.loc 1 232 8 is_stmt 0 view .LVU168
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 1
  587              		.loc 1 236 9 view .LVU180
  236:lvgl/src/font/lv_font_loader.c ****     }
  588              		.loc 1 236 16 is_stmt 0 view .LVU181
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 18
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s 			page 18
 
 
  589 003e 4FF0FF30 		mov	r0, #-1
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 1
  313:lvgl/src/font/lv_font_loader.c ****         return -1;
  314:lvgl/src/font/lv_font_loader.c ****     }
  315:lvgl/src/font/lv_font_loader.c **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 19
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s 			page 19
 
 
  316:lvgl/src/font/lv_font_loader.c ****     uint32_t cmaps_subtables_count;
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 1
  681 0054 6382     		strh	r3, [r4, #18]	@ movhi
  328:lvgl/src/font/lv_font_loader.c **** 
  329:lvgl/src/font/lv_font_loader.c ****     cmap_table_bin_t * cmaps_tables = lv_mem_alloc(sizeof(cmap_table_bin_t) * font_dsc->cmap_num);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 20
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s 			page 20
 
 
  682              		.loc 1 329 5 is_stmt 1 view .LVU206
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 1
  727 0082 4FF0FF35 		mov	r5, #-1
  728              	.LVL76:
  318:lvgl/src/font/lv_font_loader.c ****     }
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 21
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s 			page 21
 
 
  729              		.loc 1 318 16 view .LVU218
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 1
  778 000a 0391     		str	r1, [sp, #12]
  779 000c 1146     		mov	r1, r2
  780              	.LVL80:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 22
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s 			page 22
 
 
  781              		.loc 1 340 1 view .LVU223
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 1
  820              	.LBB15:
  821              		.loc 1 355 9 view .LVU238
  822              		.loc 1 355 22 is_stmt 0 view .LVU239
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 23
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s 			page 23
 
 
  823 0038 0026     		movs	r6, #0
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 1
  859              	.LBE19:
  371:lvgl/src/font/lv_font_loader.c ****                 return -1;
  372:lvgl/src/font/lv_font_loader.c ****             }
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 24
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s 			page 24
 
 
  373:lvgl/src/font/lv_font_loader.c ****         }
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 1
  427:lvgl/src/font/lv_font_loader.c ****         }
  428:lvgl/src/font/lv_font_loader.c ****         bit_iterator_t bit_it = init_bit_iterator(fp);
  429:lvgl/src/font/lv_font_loader.c **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 25
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s 			page 25
 
 
  430:lvgl/src/font/lv_font_loader.c ****         int nbits = header->advance_width_bits + 2 * header->xy_bits + 2 * header->wh_bits;
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 1
  873 0066 029A     		ldr	r2, [sp, #8]
  874 0068 72E0     		b	.L50
  875              	.LVL93:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 26
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s 			page 26
 
 
  876              	.L71:
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 1
  356:lvgl/src/font/lv_font_loader.c **** 
  914              		.loc 1 356 39 view .LVU269
  915 008a 07EBC604 		add	r4, r7, r6, lsl #3
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 27
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s 			page 27
 
 
  916              	.LVL97:
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 1
  375:lvgl/src/font/lv_font_loader.c ****             gdsc->adv_w *= 16;
  955              		.loc 1 375 18 is_stmt 0 view .LVU285
  956 00c4 2B7F     		ldrb	r3, [r5, #28]	@ zero_extendqisi2
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 28
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s 			page 28
 
 
  375:lvgl/src/font/lv_font_loader.c ****             gdsc->adv_w *= 16;
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 1
  996 0102 002B     		cmp	r3, #0
  997 0104 A8D1     		bne	.L46
  389:lvgl/src/font/lv_font_loader.c ****         if(res != LV_FS_RES_OK) {
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 29
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s 			page 29
 
 
  998              		.loc 1 389 9 is_stmt 1 view .LVU301
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 1
  1036 013c EA7F     		ldrb	r2, [r5, #31]	@ zero_extendqisi2
  399:lvgl/src/font/lv_font_loader.c ****         int next_offset = (i < loca_count - 1) ? glyph_offset[i + 1] : (uint32_t)glyph_length;
  1037              		.loc 1 399 13 view .LVU318
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 30
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s 			page 30
 
 
  1038 013e 03EB4203 		add	r3, r3, r2, lsl #1
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 1
  412:lvgl/src/font/lv_font_loader.c ****             cur_bmp_size += bmp_size;
  1077              		.loc 1 412 30 view .LVU334
  1078 016c 6179     		ldrb	r1, [r4, #5]	@ zero_extendqisi2
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 31
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s 			page 31
 
 
  412:lvgl/src/font/lv_font_loader.c ****             cur_bmp_size += bmp_size;
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 1
  1117              		.loc 1 423 5 view .LVU350
  1118 0190 14E0     		b	.L55
  1119              	.LVL114:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 32
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s 			page 32
 
 
  1120              	.L67:
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 1
  1160 01b8 0AF1010A 		add	r10, r10, #1
  1161              	.LVL121:
  1162              	.L55:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 33
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s 			page 33
 
 
  423:lvgl/src/font/lv_font_loader.c ****         lv_fs_res_t res = lv_fs_seek(fp, start + glyph_offset[i], LV_FS_SEEK_SET);
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 1
  430:lvgl/src/font/lv_font_loader.c **** 
  1202              		.loc 1 430 13 view .LVU380
  1203 01f6 06EB4306 		add	r6, r6, r3, lsl #1
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 34
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s 			page 34
 
 
  1204              	.LVL124:
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 1
  450:lvgl/src/font/lv_font_loader.c ****                 glyph_bmp[cur_bmp_size + k] = read_bits(&bit_it, 8, &res);
  1244              		.loc 1 450 21 view .LVU395
  1245 0232 0024     		movs	r4, #0
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 35
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s 			page 35
 
 
  1246              	.L61:
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 1
  1284 025e 03F00703 		and	r3, r3, #7
  1285 0262 58BF     		it	pl
  1286 0264 5E42     		rsbpl	r6, r3, #0
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 36
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s 			page 36
 
 
  456:lvgl/src/font/lv_font_loader.c ****             if(res != LV_FS_RES_OK) {
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 1
  1328              	.L73:
  1329 02a0 00000000 		.word	.LC1
  1330              		.cfi_endproc
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 37
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s 			page 37
 
 
  1331              	.LFE212:
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 1
  1376 0016 10D1     		bne	.L78
  1377              	.LBB28:
  125:lvgl/src/font/lv_font_loader.c ****                     (lv_font_fmt_txt_kern_pair_t *)dsc->kern_dsc;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 38
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s 			page 38
 
 
  1378              		.loc 1 125 17 is_stmt 1 view .LVU436
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 1
  159:lvgl/src/font/lv_font_loader.c ****                 for(int i = 0; i < dsc->cmap_num; ++i) {
  1416              		.loc 1 159 15 is_stmt 0 view .LVU453
  1417 0034 5FB3     		cbz	r7, .L86
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 39
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s 			page 39
 
 
  1418              	.LBB29:
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 1
  1456 0050 A068     		ldr	r0, [r4, #8]
  149:lvgl/src/font/lv_font_loader.c ****                         lv_mem_free((void *)kern_dsc->right_class_mapping);
  1457              		.loc 1 149 23 view .LVU470
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 40
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s 			page 40
 
 
  1458 0052 08B1     		cbz	r0, .L84
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 1
  1498 007c A868     		ldr	r0, [r5, #8]
  163:lvgl/src/font/lv_font_loader.c ****                         lv_mem_free((void *)cmaps[i].unicode_list);
  1499              		.loc 1 163 23 view .LVU485
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 41
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s 			page 41
 
 
  1500 007e 0028     		cmp	r0, #0
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 1
  1540 00a4 4046     		mov	r0, r8
  1541 00a6 FFF7FEFF 		bl	lv_mem_free
  1542              	.LVL157:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 42
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s 			page 42
 
 
  1543              	.LBE26:
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 1
  492:lvgl/src/font/lv_font_loader.c ****     /*header*/
  493:lvgl/src/font/lv_font_loader.c ****     int32_t header_length = read_label(fp, 0, "head");
  494:lvgl/src/font/lv_font_loader.c ****     if(header_length < 0) {
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 43
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s 			page 43
 
 
  495:lvgl/src/font/lv_font_loader.c ****         return false;
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 1
  549:lvgl/src/font/lv_font_loader.c ****             failed = true;
  550:lvgl/src/font/lv_font_loader.c ****         }
  551:lvgl/src/font/lv_font_loader.c ****     }
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 44
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s 			page 44
 
 
  552:lvgl/src/font/lv_font_loader.c ****     else {
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 1
  1591 0006 0446     		mov	r4, r0
  1592 0008 0E46     		mov	r6, r1
  1593 000a 9046     		mov	r8, r2
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 45
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s 			page 45
 
 
  589:lvgl/src/font/lv_font_loader.c ****     int32_t kern_length = read_label(fp, start, "kern");
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 1
  1634              		.loc 1 601 10 is_stmt 0 view .LVU519
  1635 003c 9DF80F30 		ldrb	r3, [sp, #15]	@ zero_extendqisi2
  1636              		.loc 1 601 7 view .LVU520
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 46
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s 			page 46
 
 
  1637 0040 002B     		cmp	r3, #0
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 1
  642:lvgl/src/font/lv_font_loader.c ****         memset(kern_classes, 0, sizeof(lv_font_fmt_txt_kern_classes_t));
  1651              		.loc 1 642 9 is_stmt 1 view .LVU525
  1652 0052 0023     		movs	r3, #0
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 47
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s 			page 47
 
 
  1653 0054 0360     		str	r3, [r0]	@ unaligned
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 1
  1695 0094 FFF7FEFF 		bl	lv_fs_read
  1696              	.LVL171:
  652:lvgl/src/font/lv_font_loader.c ****            lv_fs_read(fp, &kern_table_rows, sizeof(uint8_t), NULL) != LV_FS_RES_OK ||
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 48
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s 			page 48
 
 
  1697              		.loc 1 652 84 view .LVU540
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 1
  1739              		.loc 1 665 38 is_stmt 0 view .LVU557
  1740 00cc 9DF80230 		ldrb	r3, [sp, #2]	@ zero_extendqisi2
  1741 00d0 2B73     		strb	r3, [r5, #12]
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 49
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s 			page 49
 
 
  666:lvgl/src/font/lv_font_loader.c ****         kern_classes->right_class_cnt = kern_table_cols;
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 1
  673:lvgl/src/font/lv_font_loader.c ****         }
  674:lvgl/src/font/lv_font_loader.c ****     }
  675:lvgl/src/font/lv_font_loader.c ****     else {
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 50
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s 			page 50
 
 
  676:lvgl/src/font/lv_font_loader.c ****         LV_LOG_WARN("Unknown kern_format_type: %d", kern_format_type);
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 1
  1824 0134 F274     		strb	r2, [r6, #19]
  609:lvgl/src/font/lv_font_loader.c ****         if(lv_fs_read(fp, &glyph_entries, sizeof(uint32_t), NULL) != LV_FS_RES_OK) {
  1825              		.loc 1 609 9 is_stmt 1 view .LVU582
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 51
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s 			page 51
 
 
  610:lvgl/src/font/lv_font_loader.c ****             return -1;
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 1
  625:lvgl/src/font/lv_font_loader.c ****         kern_pair->pair_cnt = glyph_entries;
  1865              		.loc 1 625 35 is_stmt 0 view .LVU598
  1866 0160 EB7A     		ldrb	r3, [r5, #11]	@ zero_extendqisi2
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 52
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s 			page 52
 
 
  1867 0162 68F38713 		bfi	r3, r8, #6, #2
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 1
  1907              	.L103:
  611:lvgl/src/font/lv_font_loader.c ****         }
  1908              		.loc 1 611 20 discriminator 1 view .LVU613
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 53
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s 			page 53
 
 
  1909 0194 4FF0FF37 		mov	r7, #-1
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 1
  1953              		.section	.rodata.lvgl_load_font.str1.4,"aMS",%progbits,1
  1954              		.align	2
  1955              	.LC3:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 54
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s 			page 54
 
 
  1956 0000 68656164 		.ascii	"head\000"
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 1
  2002 001a C160     		str	r1, [r0, #12]	@ unaligned
  2003 001c 0161     		str	r1, [r0, #16]	@ unaligned
  2004 001e 4161     		str	r1, [r0, #20]	@ unaligned
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 55
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s 			page 55
 
 
  490:lvgl/src/font/lv_font_loader.c **** 
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 1
  504:lvgl/src/font/lv_font_loader.c ****     font->get_glyph_dsc = lv_font_get_glyph_dsc_fmt_txt;
  2043              		.loc 1 504 5 is_stmt 1 view .LVU648
  504:lvgl/src/font/lv_font_loader.c ****     font->get_glyph_dsc = lv_font_get_glyph_dsc_fmt_txt;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 56
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s 			page 56
 
 
  2044              		.loc 1 504 36 is_stmt 0 view .LVU649
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 1
  2080 0078 62F34403 		bfi	r3, r2, #1, #4
  2081 007c E374     		strb	r3, [r4, #19]
  512:lvgl/src/font/lv_font_loader.c ****     font_dsc->bitmap_format = font_header.compression_id;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 57
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s 			page 57
 
 
  2082              		.loc 1 512 5 is_stmt 1 view .LVU668
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 1
  2120              	.LVL224:
  525:lvgl/src/font/lv_font_loader.c ****         return false;
  2121              		.loc 1 525 5 is_stmt 1 view .LVU685
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 58
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s 			page 58
 
 
  525:lvgl/src/font/lv_font_loader.c ****         return false;
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 1
  2160              		.loc 1 547 12 is_stmt 0 view .LVU701
  2161 00d4 012B     		cmp	r3, #1
  2162 00d6 17D0     		beq	.L137
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 59
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s 			page 59
 
 
  2163              	.LVL230:
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 1
  538:lvgl/src/font/lv_font_loader.c ****             uint16_t offset;
  2204              		.loc 1 538 49 is_stmt 1 view .LVU715
  2205 0104 0135     		adds	r5, r5, #1
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 60
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s 			page 60
 
 
  2206              	.LVL235:
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 1
  2249              	.LVL243:
  567:lvgl/src/font/lv_font_loader.c **** 
  2250              		.loc 1 567 5 is_stmt 0 view .LVU727
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 61
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s 			page 61
 
 
  2251 0134 FFF7FEFF 		bl	lv_mem_free
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 1
  2288 015c 2146     		mov	r1, r4
  2289 015e 3846     		mov	r0, r7
  2290 0160 FFF7FEFF 		bl	load_kern
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 62
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s 			page 62
 
 
  2291              	.LVL247:
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 1
  2334 017e 00BF     		.align	2
  2335              	.L138:
  2336 0180 00000000 		.word	.LC3
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 63
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s 			page 63
 
 
  2337 0184 00000000 		.word	lv_font_get_glyph_dsc_fmt_txt
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 1
  2382 0012 FFF7FEFF 		bl	lv_mem_alloc
  2383              	.LVL261:
   94:lvgl/src/font/lv_font_loader.c ****         memset(font, 0, sizeof(lv_font_t));
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 64
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s 			page 64
 
 
  2384              		.loc 1 94 5 is_stmt 1 view .LVU767
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 1
   97:lvgl/src/font/lv_font_loader.c ****             /*
  2427              		.loc 1 97 13 view .LVU779
  103:lvgl/src/font/lv_font_loader.c ****             font = NULL;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 65
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s 			page 65
 
 
  2428              		.loc 1 103 13 view .LVU780
@@ -3870,43 +3870,43 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 1
  2452              		.file 8 "lvgl/src/font/../../src/misc/lv_mem.h"
  2453              		.file 9 "c:\\tools\\gcc-arm-none-eabi\\arm-none-eabi\\include\\string.h"
  2454              		.file 10 "<built-in>"
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s 			page 66
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s 			page 66
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 lv_font_loader.c
-C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s:19     .text.init_bit_iterator:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s:24     .text.init_bit_iterator:00000000 init_bit_iterator
-C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s:52     .text.read_bits:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s:57     .text.read_bits:00000000 read_bits
-C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s:172    .text.read_bits_signed:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s:177    .text.read_bits_signed:00000000 read_bits_signed
-C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s:219    .text.load_cmaps_tables:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s:224    .text.load_cmaps_tables:00000000 load_cmaps_tables
-C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s:380    .text.load_cmaps_tables:00000090 $d
-C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s:384    .text.load_cmaps_tables:000000a0 $t
-C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s:514    .text.read_label:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s:519    .text.read_label:00000000 read_label
-C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s:595    .rodata.load_cmaps.str1.4:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s:599    .text.load_cmaps:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s:604    .text.load_cmaps:00000000 load_cmaps
-C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s:741    .text.load_cmaps:00000090 $d
-C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s:746    .rodata.load_glyph.str1.4:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s:750    .text.load_glyph:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s:755    .text.load_glyph:00000000 load_glyph
-C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s:1329   .text.load_glyph:000002a0 $d
-C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s:1334   .text.lv_font_free:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s:1340   .text.lv_font_free:00000000 lv_font_free
-C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s:1561   .rodata.load_kern.str1.4:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s:1565   .text.load_kern:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s:1571   .text.load_kern:00000000 load_kern
-C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s:1949   .text.load_kern:000001b4 $d
-C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s:1954   .rodata.lvgl_load_font.str1.4:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s:1961   .text.lvgl_load_font:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s:1966   .text.lvgl_load_font:00000000 lvgl_load_font
-C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s:2336   .text.lvgl_load_font:00000180 $d
-C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s:2344   .text.lv_font_load:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccVdyyqr.s:2350   .text.lv_font_load:00000000 lv_font_load
+C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s:19     .text.init_bit_iterator:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s:24     .text.init_bit_iterator:00000000 init_bit_iterator
+C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s:52     .text.read_bits:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s:57     .text.read_bits:00000000 read_bits
+C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s:172    .text.read_bits_signed:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s:177    .text.read_bits_signed:00000000 read_bits_signed
+C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s:219    .text.load_cmaps_tables:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s:224    .text.load_cmaps_tables:00000000 load_cmaps_tables
+C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s:380    .text.load_cmaps_tables:00000090 $d
+C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s:384    .text.load_cmaps_tables:000000a0 $t
+C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s:514    .text.read_label:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s:519    .text.read_label:00000000 read_label
+C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s:595    .rodata.load_cmaps.str1.4:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s:599    .text.load_cmaps:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s:604    .text.load_cmaps:00000000 load_cmaps
+C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s:741    .text.load_cmaps:00000090 $d
+C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s:746    .rodata.load_glyph.str1.4:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s:750    .text.load_glyph:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s:755    .text.load_glyph:00000000 load_glyph
+C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s:1329   .text.load_glyph:000002a0 $d
+C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s:1334   .text.lv_font_free:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s:1340   .text.lv_font_free:00000000 lv_font_free
+C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s:1561   .rodata.load_kern.str1.4:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s:1565   .text.load_kern:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s:1571   .text.load_kern:00000000 load_kern
+C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s:1949   .text.load_kern:000001b4 $d
+C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s:1954   .rodata.lvgl_load_font.str1.4:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s:1961   .text.lvgl_load_font:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s:1966   .text.lvgl_load_font:00000000 lvgl_load_font
+C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s:2336   .text.lvgl_load_font:00000180 $d
+C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s:2344   .text.lv_font_load:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccBOdJyN.s:2350   .text.lv_font_load:00000000 lv_font_load
 
 UNDEFINED SYMBOLS
 lv_fs_read

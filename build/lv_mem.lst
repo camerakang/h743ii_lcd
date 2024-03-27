@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 1
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Cqfsc.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 1
   29:lvgl/src/misc/lv_mem.c ****     #define LV_MEM_ADD_JUNK  0
   30:lvgl/src/misc/lv_mem.c **** #endif
   31:lvgl/src/misc/lv_mem.c **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 2
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Cqfsc.s 			page 2
 
 
   32:lvgl/src/misc/lv_mem.c **** #ifdef LV_ARCH_64
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 1
   86:lvgl/src/misc/lv_mem.c **** void lv_mem_init(void)
   87:lvgl/src/misc/lv_mem.c **** {
   28              		.loc 1 87 1 view -0
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 3
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Cqfsc.s 			page 3
 
 
   29              		.cfi_startproc
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 1
   54              		.cfi_endproc
   55              	.LFE25:
   57              		.section	.text.lv_mem_alloc,"ax",%progbits
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 4
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Cqfsc.s 			page 4
 
 
   58              		.align	1
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 1
  154:lvgl/src/misc/lv_mem.c **** 
  155:lvgl/src/misc/lv_mem.c ****     if(alloc) {
  156:lvgl/src/misc/lv_mem.c **** #if LV_MEM_CUSTOM == 0
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 5
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Cqfsc.s 			page 5
 
 
  157:lvgl/src/misc/lv_mem.c ****         cur_used += size;
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 1
  164:lvgl/src/misc/lv_mem.c **** 
  165:lvgl/src/misc/lv_mem.c **** /**
  166:lvgl/src/misc/lv_mem.c ****  * Free an allocated data
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 6
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Cqfsc.s 			page 6
 
 
  167:lvgl/src/misc/lv_mem.c ****  * @param data pointer to an allocated memory
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 1
  153              		.thumb_func
  155              	lv_mem_realloc:
  156              	.LVL6:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 7
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Cqfsc.s 			page 7
 
 
  157              	.LFB28:
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 1
  215:lvgl/src/misc/lv_mem.c ****     MEM_TRACE("allocated at %p", new_p);
  216:lvgl/src/misc/lv_mem.c ****     return new_p;
  217:lvgl/src/misc/lv_mem.c **** }
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 8
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Cqfsc.s 			page 8
 
 
  182              		.loc 1 217 1 is_stmt 0 view .LVU40
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 1
  226              		.loc 1 221 5 view .LVU50
  227              		.loc 1 221 17 is_stmt 0 view .LVU51
  228 0000 044B     		ldr	r3, .L30
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 9
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Cqfsc.s 			page 9
 
 
  229 0002 1A68     		ldr	r2, [r3]
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 1
  246:lvgl/src/misc/lv_mem.c **** void lv_mem_monitor(lv_mem_monitor_t * mon_p)
  247:lvgl/src/misc/lv_mem.c **** {
  248:lvgl/src/misc/lv_mem.c ****     /*Init the data*/
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 10
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Cqfsc.s 			page 10
 
 
  249:lvgl/src/misc/lv_mem.c ****     lv_memset(mon_p, 0, sizeof(lv_mem_monitor_t));
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 1
  278 0008 0023     		movs	r3, #0
  279              	.LBE2:
  282:lvgl/src/misc/lv_mem.c ****     for(uint8_t i = 0; i < LV_MEM_BUF_MAX_NUM; i++) {
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 11
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Cqfsc.s 			page 11
 
 
  280              		.loc 1 282 12 view .LVU61
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 1
  321 002c 18D8     		bhi	.L51
  284:lvgl/src/misc/lv_mem.c ****             if(LV_GC_ROOT(lv_mem_buf[i]).size == size) {
  322              		.loc 1 284 9 is_stmt 1 view .LVU76
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 12
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Cqfsc.s 			page 12
 
 
  284:lvgl/src/misc/lv_mem.c ****             if(LV_GC_ROOT(lv_mem_buf[i]).size == size) {
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 1
  298:lvgl/src/misc/lv_mem.c **** 
  299:lvgl/src/misc/lv_mem.c ****     if(i_guess >= 0) {
  362              		.loc 1 299 5 is_stmt 1 view .LVU92
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 13
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Cqfsc.s 			page 13
 
 
  363              		.loc 1 299 7 is_stmt 0 view .LVU93
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 1
  401 0086 8B79     		ldrb	r3, [r1, #6]	@ zero_extendqisi2
  402              	.LVL27:
  300:lvgl/src/misc/lv_mem.c ****         LV_GC_ROOT(lv_mem_buf[i_guess]).used = 1;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 14
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Cqfsc.s 			page 14
 
 
  403              		.loc 1 300 46 view .LVU107
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 1
  431 00a0 50B1     		cbz	r0, .L42
  311:lvgl/src/misc/lv_mem.c ****             if(buf == NULL) return NULL;
  432              		.loc 1 311 13 view .LVU118
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 15
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Cqfsc.s 			page 15
 
 
  312:lvgl/src/misc/lv_mem.c **** 
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 1
  323:lvgl/src/misc/lv_mem.c ****     return NULL;
  467              		.loc 1 323 5 discriminator 2 view .LVU139
  323:lvgl/src/misc/lv_mem.c ****     return NULL;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 16
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Cqfsc.s 			page 16
 
 
  468              		.loc 1 323 5 discriminator 2 view .LVU140
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 1
  512              	.L59:
  513              		.loc 1 335 24 is_stmt 1 discriminator 1 view .LVU149
  514              		.loc 1 335 5 is_stmt 0 discriminator 1 view .LVU150
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 17
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Cqfsc.s 			page 17
 
 
  515 0002 0F2B     		cmp	r3, #15
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 1
  557              	.LFE32:
  559              		.section	.text.lv_mem_buf_free_all,"ax",%progbits
  560              		.align	1
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 18
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Cqfsc.s 			page 18
 
 
  561              		.global	lv_mem_buf_free_all
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 1
  607              	.LVL46:
  353:lvgl/src/misc/lv_mem.c ****             LV_GC_ROOT(lv_mem_buf[i]).p = NULL;
  608              		.loc 1 353 13 view .LVU178
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 19
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Cqfsc.s 			page 19
 
 
  609              		.loc 1 353 41 is_stmt 0 view .LVU179
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 1
  650              		@ link register save eliminated.
  651              		.loc 1 368 1 is_stmt 0 view .LVU187
  652 0000 10B4     		push	{r4}
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 20
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Cqfsc.s 			page 20
 
 
  653              		.cfi_def_cfa_offset 4
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 1
  680 001a 0346     		mov	r3, r0
  681              	.LVL53:
  682              	.L83:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 21
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Cqfsc.s 			page 21
 
 
  683              		.loc 1 394 14 is_stmt 1 view .LVU202
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 1
  378:lvgl/src/misc/lv_mem.c ****             REPEAT8(COPY8);
  726              		.loc 1 378 13 view .LVU221
  378:lvgl/src/misc/lv_mem.c ****             REPEAT8(COPY8);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 22
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Cqfsc.s 			page 22
 
 
  727              		.loc 1 378 13 view .LVU222
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 1
  763              		.loc 1 379 13 view .LVU240
  379:lvgl/src/misc/lv_mem.c ****             REPEAT8(COPY8);
  764              		.loc 1 379 13 view .LVU241
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 23
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Cqfsc.s 			page 23
 
 
  765 0080 91F809C0 		ldrb	ip, [r1, #9]	@ zero_extendqisi2
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 1
  801 00b0 91F80FC0 		ldrb	ip, [r1, #15]	@ zero_extendqisi2
  802 00b4 83F80FC0 		strb	ip, [r3, #15]
  379:lvgl/src/misc/lv_mem.c ****             REPEAT8(COPY8);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 24
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Cqfsc.s 			page 24
 
 
  803              		.loc 1 379 13 view .LVU260
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 1
  839 00e4 83F815C0 		strb	ip, [r3, #21]
  380:lvgl/src/misc/lv_mem.c ****             REPEAT8(COPY8);
  840              		.loc 1 380 13 view .LVU279
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 25
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Cqfsc.s 			page 25
 
 
  841              	.LVL80:
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 1
  381:lvgl/src/misc/lv_mem.c ****             len -= 32;
  877              		.loc 1 381 13 view .LVU298
  878              	.LVL86:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 26
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Cqfsc.s 			page 26
 
 
  381:lvgl/src/misc/lv_mem.c ****             len -= 32;
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 1
  377:lvgl/src/misc/lv_mem.c ****             REPEAT8(COPY8);
  916              		.loc 1 377 14 is_stmt 0 view .LVU316
  917 0144 06E0     		b	.L79
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 27
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Cqfsc.s 			page 27
 
 
  918              	.LVL93:
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 1
  416:lvgl/src/misc/lv_mem.c ****         COPY8
  417:lvgl/src/misc/lv_mem.c ****         len--;
  418:lvgl/src/misc/lv_mem.c ****     }
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 28
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Cqfsc.s 			page 28
 
 
  419:lvgl/src/misc/lv_mem.c **** 
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 1
  982              	.LVL105:
  404:lvgl/src/misc/lv_mem.c ****         len -= 32;
  983              		.loc 1 404 9 view .LVU341
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 29
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Cqfsc.s 			page 29
 
 
  404:lvgl/src/misc/lv_mem.c ****         len -= 32;
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 1
  1023              	.L88:
  409:lvgl/src/misc/lv_mem.c ****         len -= 4;
  1024              		.loc 1 409 9 is_stmt 1 view .LVU357
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 30
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Cqfsc.s 			page 30
 
 
  1025 018e 51F8044B 		ldr	r4, [r1], #4
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 1
  1065              		.global	lv_memset
  1066              		.syntax unified
  1067              		.thumb
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 31
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Cqfsc.s 			page 31
 
 
  1068              		.thumb_func
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 1
  1103              		.loc 1 441 16 is_stmt 0 view .LVU387
  1104 0016 013A     		subs	r2, r2, #1
  1105              	.LVL125:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 32
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Cqfsc.s 			page 32
 
 
  442:lvgl/src/misc/lv_mem.c ****             d_align--;
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 1
  1150              		.loc 1 451 9 view .LVU409
  1151              	.LVL135:
  1152              		.loc 1 451 9 view .LVU410
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 33
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Cqfsc.s 			page 33
 
 
  1153 0036 8361     		str	r3, [r0, #24]
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 1
  1193              		.loc 1 462 9 view .LVU427
  1194              		.loc 1 462 16 view .LVU428
  463:lvgl/src/misc/lv_mem.c ****         len--;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 34
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Cqfsc.s 			page 34
 
 
  1195              		.loc 1 463 9 view .LVU429
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 1
  467:lvgl/src/misc/lv_mem.c **** /**
  468:lvgl/src/misc/lv_mem.c ****  * Same as `memset(dst, 0x00, len)` but optimized for 4 byte operation.
  469:lvgl/src/misc/lv_mem.c ****  * @param dst pointer to the destination buffer
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 35
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Cqfsc.s 			page 35
 
 
  470:lvgl/src/misc/lv_mem.c ****  * @param len number of byte to set
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 1
  1286              	.LVL152:
  1287              	.L113:
  484:lvgl/src/misc/lv_mem.c ****         }
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 36
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Cqfsc.s 			page 36
 
 
  485:lvgl/src/misc/lv_mem.c ****     }
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 1
  491:lvgl/src/misc/lv_mem.c ****     }
  492:lvgl/src/misc/lv_mem.c **** 
  493:lvgl/src/misc/lv_mem.c ****     while(len > 4) {
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 37
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Cqfsc.s 			page 37
 
 
  494:lvgl/src/misc/lv_mem.c ****         SET32(0);
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 1
  1379              	.LFB37:
  504:lvgl/src/misc/lv_mem.c **** 
  505:lvgl/src/misc/lv_mem.c **** /**
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 38
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Cqfsc.s 			page 38
 
 
  506:lvgl/src/misc/lv_mem.c ****  * Same as `memset(dst, 0xFF, len)` but optimized for 4 byte operation.
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 1
  1418              		.loc 1 521 20 view .LVU507
  1419 001c F5E7     		b	.L121
  1420              	.LVL173:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 39
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Cqfsc.s 			page 39
 
 
  1421              	.L124:
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 1
  1466 003a 04E0     		b	.L125
  1467              	.L126:
  529:lvgl/src/misc/lv_mem.c ****     }
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 40
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Cqfsc.s 			page 40
 
 
  530:lvgl/src/misc/lv_mem.c **** 
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 1
  1512              	.Letext0:
  1513              		.file 2 "c:\\tools\\gcc-arm-none-eabi\\arm-none-eabi\\include\\machine\\_default_types.h"
  1514              		.file 3 "c:\\tools\\gcc-arm-none-eabi\\arm-none-eabi\\include\\sys\\_stdint.h"
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 41
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Cqfsc.s 			page 41
 
 
  1515              		.file 4 "c:\\tools\\gcc-arm-none-eabi\\lib\\gcc\\arm-none-eabi\\10.3.1\\include\\stddef.h"
@@ -2406,48 +2406,48 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 1
  1517              		.file 6 "lvgl/src/misc/lv_mem.h"
  1518              		.file 7 "lvgl/src/misc/lv_gc.h"
  1519              		.file 8 "c:\\tools\\gcc-arm-none-eabi\\arm-none-eabi\\include\\stdlib.h"
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s 			page 42
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Cqfsc.s 			page 42
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 lv_mem.c
-C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s:19     .text.lv_mem_init:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s:25     .text.lv_mem_init:00000000 lv_mem_init
-C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s:39     .text.lv_mem_deinit:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s:45     .text.lv_mem_deinit:00000000 lv_mem_deinit
-C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s:58     .text.lv_mem_alloc:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s:64     .text.lv_mem_alloc:00000000 lv_mem_alloc
-C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s:103    .text.lv_mem_alloc:00000010 $d
-C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s:108    .text.lv_mem_free:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s:114    .text.lv_mem_free:00000000 lv_mem_free
-C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s:144    .text.lv_mem_free:00000010 $d
-C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s:149    .text.lv_mem_realloc:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s:155    .text.lv_mem_realloc:00000000 lv_mem_realloc
-C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s:208    .text.lv_mem_realloc:00000020 $d
-C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s:213    .text.lv_mem_test:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s:219    .text.lv_mem_test:00000000 lv_mem_test
-C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s:245    .text.lv_mem_test:00000014 $d
-C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s:251    .text.lv_mem_buf_get:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s:257    .text.lv_mem_buf_get:00000000 lv_mem_buf_get
-C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s:486    .text.lv_mem_buf_get:000000c0 $d
-C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s:491    .text.lv_mem_buf_release:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s:497    .text.lv_mem_buf_release:00000000 lv_mem_buf_release
-C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s:555    .text.lv_mem_buf_release:0000002c $d
-C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s:560    .text.lv_mem_buf_free_all:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s:566    .text.lv_mem_buf_free_all:00000000 lv_mem_buf_free_all
-C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s:632    .text.lv_mem_buf_free_all:00000038 $d
-C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s:637    .text.lv_memcpy:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s:643    .text.lv_memcpy:00000000 lv_memcpy
-C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s:1064   .text.lv_memset:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s:1070   .text.lv_memset:00000000 lv_memset
-C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s:1208   .text.lv_mem_monitor:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s:1214   .text.lv_mem_monitor:00000000 lv_mem_monitor
-C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s:1237   .text.lv_memset_00:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s:1243   .text.lv_memset_00:00000000 lv_memset_00
-C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s:1371   .text.lv_memset_ff:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s:1377   .text.lv_memset_ff:00000000 lv_memset_ff
-C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s:1505   .data.zero_mem:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\ccmW0pJ8.s:1509   .data.zero_mem:00000000 zero_mem
+C:\Users\OSD\AppData\Local\Temp\cc2Cqfsc.s:19     .text.lv_mem_init:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\cc2Cqfsc.s:25     .text.lv_mem_init:00000000 lv_mem_init
+C:\Users\OSD\AppData\Local\Temp\cc2Cqfsc.s:39     .text.lv_mem_deinit:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\cc2Cqfsc.s:45     .text.lv_mem_deinit:00000000 lv_mem_deinit
+C:\Users\OSD\AppData\Local\Temp\cc2Cqfsc.s:58     .text.lv_mem_alloc:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\cc2Cqfsc.s:64     .text.lv_mem_alloc:00000000 lv_mem_alloc
+C:\Users\OSD\AppData\Local\Temp\cc2Cqfsc.s:103    .text.lv_mem_alloc:00000010 $d
+C:\Users\OSD\AppData\Local\Temp\cc2Cqfsc.s:108    .text.lv_mem_free:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\cc2Cqfsc.s:114    .text.lv_mem_free:00000000 lv_mem_free
+C:\Users\OSD\AppData\Local\Temp\cc2Cqfsc.s:144    .text.lv_mem_free:00000010 $d
+C:\Users\OSD\AppData\Local\Temp\cc2Cqfsc.s:149    .text.lv_mem_realloc:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\cc2Cqfsc.s:155    .text.lv_mem_realloc:00000000 lv_mem_realloc
+C:\Users\OSD\AppData\Local\Temp\cc2Cqfsc.s:208    .text.lv_mem_realloc:00000020 $d
+C:\Users\OSD\AppData\Local\Temp\cc2Cqfsc.s:213    .text.lv_mem_test:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\cc2Cqfsc.s:219    .text.lv_mem_test:00000000 lv_mem_test
+C:\Users\OSD\AppData\Local\Temp\cc2Cqfsc.s:245    .text.lv_mem_test:00000014 $d
+C:\Users\OSD\AppData\Local\Temp\cc2Cqfsc.s:251    .text.lv_mem_buf_get:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\cc2Cqfsc.s:257    .text.lv_mem_buf_get:00000000 lv_mem_buf_get
+C:\Users\OSD\AppData\Local\Temp\cc2Cqfsc.s:486    .text.lv_mem_buf_get:000000c0 $d
+C:\Users\OSD\AppData\Local\Temp\cc2Cqfsc.s:491    .text.lv_mem_buf_release:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\cc2Cqfsc.s:497    .text.lv_mem_buf_release:00000000 lv_mem_buf_release
+C:\Users\OSD\AppData\Local\Temp\cc2Cqfsc.s:555    .text.lv_mem_buf_release:0000002c $d
+C:\Users\OSD\AppData\Local\Temp\cc2Cqfsc.s:560    .text.lv_mem_buf_free_all:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\cc2Cqfsc.s:566    .text.lv_mem_buf_free_all:00000000 lv_mem_buf_free_all
+C:\Users\OSD\AppData\Local\Temp\cc2Cqfsc.s:632    .text.lv_mem_buf_free_all:00000038 $d
+C:\Users\OSD\AppData\Local\Temp\cc2Cqfsc.s:637    .text.lv_memcpy:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\cc2Cqfsc.s:643    .text.lv_memcpy:00000000 lv_memcpy
+C:\Users\OSD\AppData\Local\Temp\cc2Cqfsc.s:1064   .text.lv_memset:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\cc2Cqfsc.s:1070   .text.lv_memset:00000000 lv_memset
+C:\Users\OSD\AppData\Local\Temp\cc2Cqfsc.s:1208   .text.lv_mem_monitor:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\cc2Cqfsc.s:1214   .text.lv_mem_monitor:00000000 lv_mem_monitor
+C:\Users\OSD\AppData\Local\Temp\cc2Cqfsc.s:1237   .text.lv_memset_00:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\cc2Cqfsc.s:1243   .text.lv_memset_00:00000000 lv_memset_00
+C:\Users\OSD\AppData\Local\Temp\cc2Cqfsc.s:1371   .text.lv_memset_ff:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\cc2Cqfsc.s:1377   .text.lv_memset_ff:00000000 lv_memset_ff
+C:\Users\OSD\AppData\Local\Temp\cc2Cqfsc.s:1505   .data.zero_mem:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\cc2Cqfsc.s:1509   .data.zero_mem:00000000 zero_mem
 
 UNDEFINED SYMBOLS
 malloc

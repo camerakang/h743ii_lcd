@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
   29:lvgl/src/hal/lv_hal_disp.c **** 
   30:lvgl/src/hal/lv_hal_disp.c **** #if LV_USE_THEME_DEFAULT
   31:lvgl/src/hal/lv_hal_disp.c ****     #include "../extra/themes/default/lv_theme_default.h"
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 2
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 2
 
 
   32:lvgl/src/hal/lv_hal_disp.c **** #endif
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
   86:lvgl/src/hal/lv_hal_disp.c ****     lv_memset_00(driver, sizeof(lv_disp_drv_t));
   87:lvgl/src/hal/lv_hal_disp.c **** 
   88:lvgl/src/hal/lv_hal_disp.c ****     driver->hor_res          = 320;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 3
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 3
 
 
   89:lvgl/src/hal/lv_hal_disp.c ****     driver->ver_res          = 240;
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
  143:lvgl/src/hal/lv_hal_disp.c ****  *             (sending to the display) parallel.
  144:lvgl/src/hal/lv_hal_disp.c ****  *             In the `disp_drv->flush` you should use DMA or similar hardware to send
  145:lvgl/src/hal/lv_hal_disp.c ****  *             the image to the display in the background.
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 4
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 4
 
 
  146:lvgl/src/hal/lv_hal_disp.c ****  *             It lets LVGL to render next frame into the other buffer while previous is being
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
  200:lvgl/src/hal/lv_hal_disp.c ****     }
  201:lvgl/src/hal/lv_hal_disp.c **** 
  202:lvgl/src/hal/lv_hal_disp.c ****     if(driver->full_refresh && driver->draw_buf->size < (uint32_t)driver->hor_res * driver->ver_res
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 5
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 5
 
 
  203:lvgl/src/hal/lv_hal_disp.c ****         driver->full_refresh = 0;
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
  257:lvgl/src/hal/lv_hal_disp.c ****         LV_LOG_WARN("full_refresh requires at least screen sized draw buffer(s)");
  258:lvgl/src/hal/lv_hal_disp.c ****     }
  259:lvgl/src/hal/lv_hal_disp.c **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 6
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 6
 
 
  260:lvgl/src/hal/lv_hal_disp.c ****     lv_coord_t w = lv_disp_get_hor_res(disp);
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
  314:lvgl/src/hal/lv_hal_disp.c ****     }
  315:lvgl/src/hal/lv_hal_disp.c ****     while(disp->screen_cnt != 0) {
  316:lvgl/src/hal/lv_hal_disp.c ****         /*Delete the screenst*/
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 7
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 7
 
 
  317:lvgl/src/hal/lv_hal_disp.c ****         lv_obj_del(disp->screens[0]);
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
  371:lvgl/src/hal/lv_hal_disp.c ****  * @param disp pointer to a display (NULL to use the default display)
  372:lvgl/src/hal/lv_hal_disp.c ****  * @return the vertical resolution of the display
  373:lvgl/src/hal/lv_hal_disp.c ****  */
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 8
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 8
 
 
  374:lvgl/src/hal/lv_hal_disp.c **** lv_coord_t lv_disp_get_ver_res(lv_disp_t * disp)
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
  428:lvgl/src/hal/lv_hal_disp.c ****         switch(disp->driver->rotated) {
  429:lvgl/src/hal/lv_hal_disp.c ****             case LV_DISP_ROT_90:
  430:lvgl/src/hal/lv_hal_disp.c ****             case LV_DISP_ROT_270:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 9
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 9
 
 
  431:lvgl/src/hal/lv_hal_disp.c ****                 return disp->driver->physical_hor_res > 0 ? disp->driver->physical_hor_res : disp->
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
  485:lvgl/src/hal/lv_hal_disp.c ****                 return disp->driver->offset_y;
  486:lvgl/src/hal/lv_hal_disp.c ****         }
  487:lvgl/src/hal/lv_hal_disp.c ****     }
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 10
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 10
 
 
  488:lvgl/src/hal/lv_hal_disp.c **** }
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
  542:lvgl/src/hal/lv_hal_disp.c **** {
  543:lvgl/src/hal/lv_hal_disp.c ****     if(disp == NULL)
  544:lvgl/src/hal/lv_hal_disp.c ****         return _lv_ll_get_head(&LV_GC_ROOT(_lv_disp_ll));
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 11
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 11
 
 
  545:lvgl/src/hal/lv_hal_disp.c ****     else
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
  599:lvgl/src/hal/lv_hal_disp.c ****             break;
  600:lvgl/src/hal/lv_hal_disp.c ****         case LV_IMG_CF_ALPHA_8BIT:
  601:lvgl/src/hal/lv_hal_disp.c ****             disp_drv->set_px_cb = set_px_cb_alpha8;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 12
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 12
 
 
  602:lvgl/src/hal/lv_hal_disp.c ****             break;
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
  629:lvgl/src/hal/lv_hal_disp.c **** 
  630:lvgl/src/hal/lv_hal_disp.c ****     set_px_alpha_generic(&d, x, y, color, opa);
  631:lvgl/src/hal/lv_hal_disp.c **** }
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 13
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 13
 
 
  632:lvgl/src/hal/lv_hal_disp.c **** 
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
   66              		.cfi_offset 6, -16
   67              		.cfi_offset 7, -12
   68              		.cfi_offset 8, -8
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 14
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 14
 
 
   69              		.cfi_offset 14, -4
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
   27:lvgl/src/hal/../draw/../misc/lv_color.h **** #error "LV_COLOR_16_SWAP requires LV_COLOR_DEPTH == 16. Set it in lv_conf.h"
   28:lvgl/src/hal/../draw/../misc/lv_color.h **** #endif
   29:lvgl/src/hal/../draw/../misc/lv_color.h **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 15
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 15
 
 
   30:lvgl/src/hal/../draw/../misc/lv_color.h **** #include <stdint.h>
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
   84:lvgl/src/hal/../draw/../misc/lv_color.h **** #define _LV_COLOR_HAS_MODERN_CPP 1
   85:lvgl/src/hal/../draw/../misc/lv_color.h **** #endif
   86:lvgl/src/hal/../draw/../misc/lv_color.h **** #endif
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 16
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 16
 
 
   87:lvgl/src/hal/../draw/../misc/lv_color.h **** #endif /*__cplusplus*/
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
  141:lvgl/src/hal/../draw/../misc/lv_color.h **** # define LV_COLOR_GET_G16(c) (c).ch.green
  142:lvgl/src/hal/../draw/../misc/lv_color.h **** #else
  143:lvgl/src/hal/../draw/../misc/lv_color.h **** # define LV_COLOR_GET_G16(c) (((c).ch.green_h << 3) + (c).ch.green_l)
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 17
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 17
 
 
  144:lvgl/src/hal/../draw/../misc/lv_color.h **** #endif
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
  198:lvgl/src/hal/../draw/../misc/lv_color.h **** 
  199:lvgl/src/hal/../draw/../misc/lv_color.h **** typedef union {
  200:lvgl/src/hal/../draw/../misc/lv_color.h ****     struct {
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 18
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 18
 
 
  201:lvgl/src/hal/../draw/../misc/lv_color.h ****         uint8_t blue : 2;
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
  255:lvgl/src/hal/../draw/../misc/lv_color.h **** } lv_color_filter_dsc_t;
  256:lvgl/src/hal/../draw/../misc/lv_color.h **** 
  257:lvgl/src/hal/../draw/../misc/lv_color.h **** typedef enum {
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 19
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 19
 
 
  258:lvgl/src/hal/../draw/../misc/lv_color.h ****     LV_PALETTE_RED,
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
  312:lvgl/src/hal/../draw/../misc/lv_color.h ****     }
  313:lvgl/src/hal/../draw/../misc/lv_color.h ****     else {
  314:lvgl/src/hal/../draw/../misc/lv_color.h ****         return 0;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 20
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 20
 
 
  315:lvgl/src/hal/../draw/../misc/lv_color.h ****     }
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
  369:lvgl/src/hal/../draw/../misc/lv_color.h ****     LV_COLOR_SET_B16(ret, LV_COLOR_GET_B(color) >> 3); /*8 - 5  = 3*/
  370:lvgl/src/hal/../draw/../misc/lv_color.h ****     return ret.full;
  371:lvgl/src/hal/../draw/../misc/lv_color.h **** #endif
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 21
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 21
 
 
  372:lvgl/src/hal/../draw/../misc/lv_color.h **** }
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
  426:lvgl/src/hal/../draw/../misc/lv_color.h **** #endif
  427:lvgl/src/hal/../draw/../misc/lv_color.h **** }
  428:lvgl/src/hal/../draw/../misc/lv_color.h **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 22
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 22
 
 
  429:lvgl/src/hal/../draw/../misc/lv_color.h **** //! @cond Doxygen_Suppress
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
  483:lvgl/src/hal/../draw/../misc/lv_color.h ****     out[0] = LV_COLOR_GET_R(c);
  484:lvgl/src/hal/../draw/../misc/lv_color.h ****     out[1] = LV_COLOR_GET_G(c);
  485:lvgl/src/hal/../draw/../misc/lv_color.h ****     out[2] = LV_COLOR_GET_B(c);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 23
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 23
 
 
  486:lvgl/src/hal/../draw/../misc/lv_color.h **** #endif
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
  540:lvgl/src/hal/../draw/../misc/lv_color.h ****     else if(fg_opa <= LV_OPA_MIN) {
  541:lvgl/src/hal/../draw/../misc/lv_color.h ****         res_color->full = bg_color.full;
  542:lvgl/src/hal/../draw/../misc/lv_color.h ****         *res_opa = bg_opa;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 24
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 24
 
 
  543:lvgl/src/hal/../draw/../misc/lv_color.h ****     }
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
   99              		.loc 2 374 24 view .LVU18
  100              	.LBB25:
  425:lvgl/src/hal/../draw/../misc/lv_color.h **** #endif
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 25
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 25
 
 
  101              		.loc 2 425 5 view .LVU19
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
  682:lvgl/src/hal/lv_hal_disp.c ****         uint8_t bg = lv_img_buf_get_px_alpha(d, x, y);
  145              		.loc 1 682 22 is_stmt 0 view .LVU35
  146 0050 3246     		mov	r2, r6
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 26
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 26
 
 
  147 0052 2946     		mov	r1, r5
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
  193              	.LVL16:
  664:lvgl/src/hal/lv_hal_disp.c **** 
  194              		.loc 1 664 5 is_stmt 1 view .LVU46
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 27
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 27
 
 
  666:lvgl/src/hal/lv_hal_disp.c ****     lv_img_dsc_t d;
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
  672:lvgl/src/hal/lv_hal_disp.c **** }
  236              		.loc 1 672 5 is_stmt 0 view .LVU60
  237 003c E8E7     		b	.L7
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 28
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 28
 
 
  238              		.cfi_endproc
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
  654:lvgl/src/hal/lv_hal_disp.c ****     d.header.w = buf_w;
  285              		.loc 1 654 5 view .LVU70
  654:lvgl/src/hal/lv_hal_disp.c ****     d.header.w = buf_w;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 29
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 29
 
 
  286              		.loc 1 654 12 is_stmt 0 view .LVU71
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
  332 0002 87B0     		sub	sp, sp, #28
  333              		.cfi_def_cfa_offset 32
  334 0004 0846     		mov	r0, r1
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 30
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 30
 
 
  335              	.LVL32:
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
  374 0024 0C20     		movs	r0, #12
  375 0026 60F30402 		bfi	r2, r0, #0, #5
  376 002a 8DF80C20 		strb	r2, [sp, #12]
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 31
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 31
 
 
  644:lvgl/src/hal/lv_hal_disp.c **** }
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
  423              		.loc 1 631 1 view .LVU106
  424 0010 07B0     		add	sp, sp, #28
  425              		.cfi_remember_state
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 32
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 32
 
 
  426              		.cfi_def_cfa_offset 4
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
  471              	.LFB189:
  688:lvgl/src/hal/lv_hal_disp.c **** 
  689:lvgl/src/hal/lv_hal_disp.c **** static void set_px_true_color_alpha(lv_disp_drv_t * disp_drv, uint8_t * buf, lv_coord_t buf_w,
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 33
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 33
 
 
  690:lvgl/src/hal/lv_hal_disp.c ****                                     lv_coord_t x, lv_coord_t y,
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
  503 0016 51F82300 		ldr	r0, [r1, r3, lsl #2]
  504              	.LVL54:
  713:lvgl/src/hal/lv_hal_disp.c ****     lv_color_mix_with_alpha(bg_color, bg_opa, color, opa, &res_color, &buf_px[3]);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 34
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 34
 
 
  505              		.loc 1 713 5 is_stmt 1 view .LVU131
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
  545              		.loc 1 716 5 is_stmt 1 view .LVU148
  546              		.loc 1 716 29 is_stmt 0 view .LVU149
  547 0040 C0F30723 		ubfx	r3, r0, #8, #8
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 35
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 35
 
 
  548              		.loc 1 716 15 view .LVU150
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
  459:lvgl/src/hal/../draw/../misc/lv_color.h ****                                    (255 - mix) + LV_COLOR_MIX_ROUND_OFS));
  587              		.loc 2 459 5 is_stmt 0 view .LVU166
  588 0068 C0F30744 		ubfx	r4, r0, #16, #8
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 36
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 36
 
 
  589              	.LVL61:
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
  547:lvgl/src/hal/../draw/../misc/lv_color.h ****     }
  633              		.loc 2 547 9 is_stmt 1 view .LVU177
  547:lvgl/src/hal/../draw/../misc/lv_color.h ****     }
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 37
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 37
 
 
  634              		.loc 2 547 18 is_stmt 0 view .LVU178
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
  564:lvgl/src/hal/../draw/../misc/lv_color.h ****             /*Info:
  672              		.loc 2 564 13 is_stmt 1 view .LVU195
  564:lvgl/src/hal/../draw/../misc/lv_color.h ****             /*Info:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 38
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 38
 
 
  673              		.loc 2 564 32 is_stmt 0 view .LVU196
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
  710              		.loc 2 559 34 view .LVU213
  711 0116 9442     		cmp	r4, r2
  712 0118 E1D1     		bne	.L32
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 39
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 39
 
 
  559:lvgl/src/hal/../draw/../misc/lv_color.h ****            bg_color.full != bg_color_save.full) {
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
  754 0150 05EB0526 		add	r6, r5, r5, lsl #8
  755 0154 05EBC615 		add	r5, r5, r6, lsl #7
  756 0158 C5F3C755 		ubfx	r5, r5, #23, #8
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 40
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 40
 
 
  757 015c 0026     		movs	r6, #0
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
  800              	.L33:
  570:lvgl/src/hal/../draw/../misc/lv_color.h **** 
  801              		.loc 2 570 31 view .LVU238
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 41
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 41
 
 
  802              	.LBE43:
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
   86:lvgl/src/hal/lv_hal_disp.c **** 
  851              		.loc 1 86 5 is_stmt 1 view .LVU246
  852 0004 5021     		movs	r1, #80
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 42
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 42
 
 
  853 0006 FFF7FEFF 		bl	lv_memset_00
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
  889 0032 2369     		ldr	r3, [r4, #16]
  890 0034 8222     		movs	r2, #130
  891 0036 62F3D013 		bfi	r3, r2, #7, #10
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 43
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 43
 
 
  892 003a 2361     		str	r3, [r4, #16]
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
  908              		.loc 1 97 32 view .LVU272
  909 0040 A363     		str	r3, [r4, #56]
  128:lvgl/src/hal/lv_hal_disp.c ****     driver->draw_ctx_deinit = lv_draw_sw_init_ctx;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 44
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 44
 
 
  910              		.loc 1 128 5 is_stmt 1 view .LVU273
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
  956              		.cfi_offset 14, -4
  957 0002 0446     		mov	r4, r0
  958 0004 0D46     		mov	r5, r1
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 45
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 45
 
 
  959 0006 1746     		mov	r7, r2
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
  1001              		.cfi_def_cfa_offset 16
  1002              		.cfi_offset 4, -16
  1003              		.cfi_offset 5, -12
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 46
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 46
 
 
  1004              		.cfi_offset 6, -8
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
  1042 0024 0123     		movs	r3, #1
  1043 0026 C4F85831 		str	r3, [r4, #344]
  189:lvgl/src/hal/lv_hal_disp.c **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 47
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 47
 
 
  1044              		.loc 1 189 5 is_stmt 1 view .LVU314
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
  1081              		.loc 1 202 48 discriminator 1 view .LVU331
  1082 0054 DA68     		ldr	r2, [r3, #12]
  202:lvgl/src/hal/lv_hal_disp.c ****         driver->full_refresh = 0;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 48
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 48
 
 
  1083              		.loc 1 202 73 discriminator 1 view .LVU332
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
  652:lvgl/src/hal/../draw/../misc/lv_color.h **** 
  653:lvgl/src/hal/../draw/../misc/lv_color.h **** lv_color_t lv_color_change_lightness(lv_color_t c, lv_opa_t lvl);
  654:lvgl/src/hal/../draw/../misc/lv_color.h **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 49
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 49
 
 
  655:lvgl/src/hal/../draw/../misc/lv_color.h **** /**
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
  1113              		.loc 2 596 5 view .LVU345
  596:lvgl/src/hal/../draw/../misc/lv_color.h **** }
  1114              		.loc 2 596 12 is_stmt 0 view .LVU346
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 50
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 50
 
 
  1115 006e 4FF0FF33 		mov	r3, #-1
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
  224:lvgl/src/hal/lv_hal_disp.c ****     disp->top_layer = lv_obj_create(NULL); /*Create top layer on the display*/
  1157              		.loc 1 224 23 is_stmt 0 view .LVU359
  1158 00a2 0020     		movs	r0, #0
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 51
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 51
 
 
  1159 00a4 FFF7FEFF 		bl	lv_obj_create
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
   24:lvgl/src/hal/../core/lv_obj_style.h **** /**********************
   25:lvgl/src/hal/../core/lv_obj_style.h ****  *      TYPEDEFS
   26:lvgl/src/hal/../core/lv_obj_style.h ****  **********************/
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 52
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 52
 
 
   27:lvgl/src/hal/../core/lv_obj_style.h **** /*Can't include lv_obj.h because it includes this header file*/
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
   81:lvgl/src/hal/../core/lv_obj_style.h ****  * @param selector  OR-ed values of states and a part to remove only styles with matching selectors
   82:lvgl/src/hal/../core/lv_obj_style.h ****  * @example lv_obj_remove_style(obj, &style, LV_PART_ANY | LV_STATE_ANY); //Remove a specific style
   83:lvgl/src/hal/../core/lv_obj_style.h ****  * @example lv_obj_remove_style(obj, NULL, LV_PART_MAIN | LV_STATE_ANY); //Remove all styles from t
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 53
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 53
 
 
   84:lvgl/src/hal/../core/lv_obj_style.h ****  * @example lv_obj_remove_style(obj, NULL, LV_PART_ANY | LV_STATE_ANY); //Remove all styles
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
  1220 00e2 E069     		ldr	r0, [r4, #28]
  1221 00e4 FFF7FEFF 		bl	lv_obj_set_scrollbar_mode
  1222              	.LVL115:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 54
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 54
 
 
  233:lvgl/src/hal/lv_hal_disp.c **** 
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
  1262              	.L61:
  1263              	.LBB56:
  176:lvgl/src/hal/lv_hal_disp.c ****         LV_ASSERT_MALLOC(draw_ctx);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 55
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 55
 
 
  1264              		.loc 1 176 9 view .LVU393
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
  1299              		.loc 1 177 9 discriminator 2 view .LVU412
  1300 0120 FEE7     		b	.L53
  1301              	.LVL125:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 56
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 56
 
 
  1302              	.L55:
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
  1346              	.LFB166:
  333:lvgl/src/hal/lv_hal_disp.c ****     disp_def = disp;
  1347              		.loc 1 333 1 is_stmt 1 view -0
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 57
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 57
 
 
  1348              		.cfi_startproc
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
  1400              	.LFB165:
  292:lvgl/src/hal/lv_hal_disp.c ****     bool was_default = false;
  1401              		.loc 1 292 1 is_stmt 1 view -0
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 58
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 58
 
 
  1402              		.cfi_startproc
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
  303:lvgl/src/hal/lv_hal_disp.c ****     }
  1443              		.loc 1 303 17 is_stmt 0 view .LVU446
  1444 001a FFF7FEFF 		bl	lv_indev_get_next
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 59
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 59
 
 
  1445              	.LVL136:
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
  1482              		.loc 1 312 9 is_stmt 1 view .LVU463
  1483 003e FFF7FEFF 		bl	lv_obj_del
  1484              	.LVL139:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 60
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 60
 
 
  313:lvgl/src/hal/lv_hal_disp.c ****     }
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
  1524 006e 2046     		mov	r0, r4
  1525 0070 FFF7FEFF 		bl	lv_mem_free
  1526              	.LVL144:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 61
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 61
 
 
  325:lvgl/src/hal/lv_hal_disp.c **** }
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
  1572              		.loc 1 353 7 is_stmt 0 view .LVU489
  1573 0002 0346     		mov	r3, r0
  1574 0004 58B1     		cbz	r0, .L95
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 62
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 62
 
 
  1575              	.L89:
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
  1613              		.loc 1 367 1 view .LVU505
  1614 002a 08BD     		pop	{r3, pc}
  1615              	.LVL154:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 63
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 63
 
 
  1616              	.L93:
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
  1660 0012 08D0     		beq	.L99
  1661 0014 032B     		cmp	r3, #3
  1662 0016 06D0     		beq	.L99
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 64
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 64
 
 
  387:lvgl/src/hal/lv_hal_disp.c ****         }
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
  1707              	.LFB164:
  251:lvgl/src/hal/lv_hal_disp.c ****     disp->driver = new_drv;
  1708              		.loc 1 251 1 is_stmt 1 view -0
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 65
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 65
 
 
  1709              		.cfi_startproc
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
  1749 0026 6FF34103 		bfc	r3, #1, #1
  1750 002a 0B74     		strb	r3, [r1, #16]
  1751              	.L105:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 66
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 66
 
 
  257:lvgl/src/hal/lv_hal_disp.c ****     }
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
  266:lvgl/src/hal/lv_hal_disp.c ****         lv_area_set_height(&disp->screens[i]->coords, h);
  1789              		.loc 1 266 32 is_stmt 0 discriminator 3 view .LVU562
  1790 004c EB68     		ldr	r3, [r5, #12]
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 67
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 67
 
 
  266:lvgl/src/hal/lv_hal_disp.c ****         lv_area_set_height(&disp->screens[i]->coords, h);
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
  1830 007e 4FF48071 		mov	r1, #256
  1831 0082 05F13400 		add	r0, r5, #52
  1832 0086 FFF7FEFF 		bl	lv_memset_00
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 68
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 68
 
 
  1833              	.LVL176:
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
  1873 00b6 F0BD     		pop	{r4, r5, r6, r7, pc}
  1874              	.LVL181:
  1875              	.L112:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 69
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 69
 
 
  285:lvgl/src/hal/lv_hal_disp.c **** 
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
  410:lvgl/src/hal/lv_hal_disp.c ****         }
  1921              		.loc 1 410 17 is_stmt 1 view .LVU603
  410:lvgl/src/hal/lv_hal_disp.c ****         }
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 70
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 70
 
 
  1922              		.loc 1 410 36 is_stmt 0 view .LVU604
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
  1963 0040 F9E7     		b	.L115
  1964              		.cfi_endproc
  1965              	.LFE170:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 71
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 71
 
 
  1967              		.section	.text.lv_disp_get_physical_ver_res,"ax",%progbits
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
  2009              		.loc 1 433 92 view .LVU630
  2010 001c 0028     		cmp	r0, #0
  2011 001e 0ADC     		bgt	.L126
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 72
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 72
 
 
  433:lvgl/src/hal/lv_hal_disp.c ****         }
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
  2055              		.thumb
  2056              		.thumb_func
  2058              	lv_disp_get_offset_x:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 73
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 73
 
 
  2059              	.LVL198:
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
  2099              		.loc 1 445 22 is_stmt 1 discriminator 1 view .LVU656
  445:lvgl/src/hal/lv_hal_disp.c **** 
  2100              		.loc 1 445 29 is_stmt 0 discriminator 1 view .LVU657
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 74
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 74
 
 
  2101 0022 FFF7FEFF 		bl	lv_disp_get_default
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
  2141              	.LVL209:
  457:lvgl/src/hal/lv_hal_disp.c ****             default:
  2142              		.loc 1 457 24 view .LVU672
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 75
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 75
 
 
  2143 0046 80B2     		uxth	r0, r0
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
  477:lvgl/src/hal/lv_hal_disp.c ****             case LV_DISP_ROT_90:
  2188              		.loc 1 477 20 is_stmt 0 view .LVU684
  2189 0008 1468     		ldr	r4, [r2]
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 76
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 76
 
 
  477:lvgl/src/hal/lv_hal_disp.c ****             case LV_DISP_ROT_90:
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
  2230              	.LVL219:
  481:lvgl/src/hal/lv_hal_disp.c ****             case LV_DISP_ROT_270:
  2231              		.loc 1 481 24 view .LVU699
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 77
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 77
 
 
  2232 0032 FFF7FEFF 		bl	lv_disp_get_physical_ver_res
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
  2277              	.LVL226:
  2278              	.LFB174:
  496:lvgl/src/hal/lv_hal_disp.c ****     if(disp == NULL) disp = lv_disp_get_default();
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 78
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 78
 
 
  2279              		.loc 1 496 1 is_stmt 1 view -0
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
  498:lvgl/src/hal/lv_hal_disp.c **** 
  2319              		.loc 1 498 29 view .LVU726
  2320 001a 0020     		movs	r0, #0
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 79
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 79
 
 
  2321              	.LVL231:
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
  2365              	.LVL234:
  2366              	.L166:
  510:lvgl/src/hal/lv_hal_disp.c ****     if(disp == NULL) return LV_DPI_DEF;  /*Do not return 0 because it might be a divider*/
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 80
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 80
 
 
  2367              		.loc 1 510 22 is_stmt 1 discriminator 1 view .LVU739
@@ -4798,7 +4798,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
  523:lvgl/src/hal/lv_hal_disp.c **** 
  2411              		.loc 1 523 1 view .LVU752
  2412 000a 7047     		bx	lr
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 81
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 81
 
 
  2413              		.cfi_endproc
@@ -4858,7 +4858,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
  543:lvgl/src/hal/lv_hal_disp.c ****         return _lv_ll_get_head(&LV_GC_ROOT(_lv_disp_ll));
  2464              		.loc 1 543 5 is_stmt 1 view .LVU760
  543:lvgl/src/hal/lv_hal_disp.c ****         return _lv_ll_get_head(&LV_GC_ROOT(_lv_disp_ll));
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 82
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 82
 
 
  2465              		.loc 1 543 7 is_stmt 0 view .LVU761
@@ -4918,7 +4918,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
  2511              		.loc 1 556 16 is_stmt 0 view .LVU771
  2512 0000 0368     		ldr	r3, [r0]
  557:lvgl/src/hal/lv_hal_disp.c **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 83
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 83
 
 
  2513              		.loc 1 557 1 view .LVU772
@@ -4978,7 +4978,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
  2558 0014 1968     		ldr	r1, [r3]
  2559 0016 1846     		mov	r0, r3
  570:lvgl/src/hal/lv_hal_disp.c **** }
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 84
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 84
 
 
  2560              		.loc 1 570 5 is_stmt 0 view .LVU784
@@ -5038,7 +5038,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
  2605              		.loc 1 581 7 is_stmt 0 view .LVU795
  2606 0006 43B1     		cbz	r3, .L185
  582:lvgl/src/hal/lv_hal_disp.c **** }
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 85
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 85
 
 
  2607              		.loc 1 582 5 is_stmt 1 view .LVU796
@@ -5098,7 +5098,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
  2652              		@ link register save eliminated.
  587:lvgl/src/hal/lv_hal_disp.c ****         case LV_IMG_CF_TRUE_COLOR_ALPHA:
  2653              		.loc 1 587 5 view .LVU808
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 86
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 86
 
 
  2654 0000 0539     		subs	r1, r1, #5
@@ -5158,7 +5158,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
  2696 0026 074B     		ldr	r3, .L197+12
  2697 0028 C361     		str	r3, [r0, #28]
  599:lvgl/src/hal/lv_hal_disp.c ****         case LV_IMG_CF_ALPHA_8BIT:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 87
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 87
 
 
  2698              		.loc 1 599 13 is_stmt 1 view .LVU821
@@ -5218,7 +5218,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
  2757 0000 00       		.space	1
  2758              		.section	.bss.res_color_saved.0,"aw",%nobits
  2759              		.align	2
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 88
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 88
 
 
  2760              		.set	.LANCHOR5,. + 0
@@ -5262,97 +5262,97 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 1
  2802              		.file 33 "lvgl/src/hal/../draw/sw/../../core/lv_obj_pos.h"
  2803              		.file 34 "lvgl/src/hal/../draw/../misc/lv_mem.h"
  2804              		.file 35 "lvgl/src/hal/../extra/themes/default/lv_theme_default.h"
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 89
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 89
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 lv_hal_disp.c
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:19     .text.invalidate_layout_cb:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:24     .text.invalidate_layout_cb:00000000 invalidate_layout_cb
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:49     .text.set_px_alpha_generic:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:54     .text.set_px_alpha_generic:00000000 set_px_alpha_generic
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:168    .text.set_px_cb_alpha8:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:173    .text.set_px_cb_alpha8:00000000 set_px_cb_alpha8
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:242    .text.set_px_cb_alpha4:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:247    .text.set_px_cb_alpha4:00000000 set_px_cb_alpha4
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:316    .text.set_px_cb_alpha2:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:321    .text.set_px_cb_alpha2:00000000 set_px_cb_alpha2
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:390    .text.set_px_cb_alpha1:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:395    .text.set_px_cb_alpha1:00000000 set_px_cb_alpha1
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:464    .text.set_px_true_color_alpha:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:469    .text.set_px_true_color_alpha:00000000 set_px_true_color_alpha
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:819    .text.set_px_true_color_alpha:000001bc $d
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:832    .text.lv_disp_drv_init:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:838    .text.lv_disp_drv_init:00000000 lv_disp_drv_init
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:930    .text.lv_disp_drv_init:00000050 $d
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:935    .text.lv_disp_draw_buf_init:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:941    .text.lv_disp_draw_buf_init:00000000 lv_disp_draw_buf_init
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:986    .text.lv_disp_drv_register:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:992    .text.lv_disp_drv_register:00000000 lv_disp_drv_register
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:1329   .text.lv_disp_drv_register:00000130 $d
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:1338   .text.lv_disp_set_default:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:1344   .text.lv_disp_set_default:00000000 lv_disp_set_default
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:1361   .text.lv_disp_set_default:00000008 $d
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:1366   .text.lv_disp_get_default:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:1372   .text.lv_disp_get_default:00000000 lv_disp_get_default
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:1387   .text.lv_disp_get_default:00000008 $d
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:1392   .text.lv_disp_remove:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:1398   .text.lv_disp_remove:00000000 lv_disp_remove
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:1548   .text.lv_disp_remove:00000084 $d
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:1553   .text.lv_disp_get_hor_res:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:1559   .text.lv_disp_get_hor_res:00000000 lv_disp_get_hor_res
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:1626   .text.lv_disp_get_ver_res:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:1632   .text.lv_disp_get_ver_res:00000000 lv_disp_get_ver_res
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:1699   .text.lv_disp_drv_update:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:1705   .text.lv_disp_drv_update:00000000 lv_disp_drv_update
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:1879   .text.lv_disp_drv_update:000000b8 $d
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:1884   .text.lv_disp_get_physical_hor_res:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:1890   .text.lv_disp_get_physical_hor_res:00000000 lv_disp_get_physical_hor_res
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:1968   .text.lv_disp_get_physical_ver_res:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:1974   .text.lv_disp_get_physical_ver_res:00000000 lv_disp_get_physical_ver_res
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:2052   .text.lv_disp_get_offset_x:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:2058   .text.lv_disp_get_offset_x:00000000 lv_disp_get_offset_x
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:2161   .text.lv_disp_get_offset_y:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:2167   .text.lv_disp_get_offset_y:00000000 lv_disp_get_offset_y
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:2270   .text.lv_disp_get_antialiasing:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:2276   .text.lv_disp_get_antialiasing:00000000 lv_disp_get_antialiasing
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:2328   .text.lv_disp_get_dpi:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:2334   .text.lv_disp_get_dpi:00000000 lv_disp_get_dpi
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:2386   .text.lv_disp_flush_ready:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:2392   .text.lv_disp_flush_ready:00000000 lv_disp_flush_ready
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:2417   .text.lv_disp_flush_is_last:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:2423   .text.lv_disp_flush_is_last:00000000 lv_disp_flush_is_last
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 90
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:19     .text.invalidate_layout_cb:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:24     .text.invalidate_layout_cb:00000000 invalidate_layout_cb
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:49     .text.set_px_alpha_generic:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:54     .text.set_px_alpha_generic:00000000 set_px_alpha_generic
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:168    .text.set_px_cb_alpha8:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:173    .text.set_px_cb_alpha8:00000000 set_px_cb_alpha8
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:242    .text.set_px_cb_alpha4:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:247    .text.set_px_cb_alpha4:00000000 set_px_cb_alpha4
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:316    .text.set_px_cb_alpha2:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:321    .text.set_px_cb_alpha2:00000000 set_px_cb_alpha2
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:390    .text.set_px_cb_alpha1:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:395    .text.set_px_cb_alpha1:00000000 set_px_cb_alpha1
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:464    .text.set_px_true_color_alpha:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:469    .text.set_px_true_color_alpha:00000000 set_px_true_color_alpha
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:819    .text.set_px_true_color_alpha:000001bc $d
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:832    .text.lv_disp_drv_init:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:838    .text.lv_disp_drv_init:00000000 lv_disp_drv_init
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:930    .text.lv_disp_drv_init:00000050 $d
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:935    .text.lv_disp_draw_buf_init:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:941    .text.lv_disp_draw_buf_init:00000000 lv_disp_draw_buf_init
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:986    .text.lv_disp_drv_register:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:992    .text.lv_disp_drv_register:00000000 lv_disp_drv_register
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:1329   .text.lv_disp_drv_register:00000130 $d
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:1338   .text.lv_disp_set_default:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:1344   .text.lv_disp_set_default:00000000 lv_disp_set_default
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:1361   .text.lv_disp_set_default:00000008 $d
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:1366   .text.lv_disp_get_default:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:1372   .text.lv_disp_get_default:00000000 lv_disp_get_default
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:1387   .text.lv_disp_get_default:00000008 $d
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:1392   .text.lv_disp_remove:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:1398   .text.lv_disp_remove:00000000 lv_disp_remove
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:1548   .text.lv_disp_remove:00000084 $d
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:1553   .text.lv_disp_get_hor_res:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:1559   .text.lv_disp_get_hor_res:00000000 lv_disp_get_hor_res
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:1626   .text.lv_disp_get_ver_res:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:1632   .text.lv_disp_get_ver_res:00000000 lv_disp_get_ver_res
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:1699   .text.lv_disp_drv_update:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:1705   .text.lv_disp_drv_update:00000000 lv_disp_drv_update
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:1879   .text.lv_disp_drv_update:000000b8 $d
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:1884   .text.lv_disp_get_physical_hor_res:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:1890   .text.lv_disp_get_physical_hor_res:00000000 lv_disp_get_physical_hor_res
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:1968   .text.lv_disp_get_physical_ver_res:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:1974   .text.lv_disp_get_physical_ver_res:00000000 lv_disp_get_physical_ver_res
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:2052   .text.lv_disp_get_offset_x:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:2058   .text.lv_disp_get_offset_x:00000000 lv_disp_get_offset_x
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:2161   .text.lv_disp_get_offset_y:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:2167   .text.lv_disp_get_offset_y:00000000 lv_disp_get_offset_y
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:2270   .text.lv_disp_get_antialiasing:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:2276   .text.lv_disp_get_antialiasing:00000000 lv_disp_get_antialiasing
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:2328   .text.lv_disp_get_dpi:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:2334   .text.lv_disp_get_dpi:00000000 lv_disp_get_dpi
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:2386   .text.lv_disp_flush_ready:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:2392   .text.lv_disp_flush_ready:00000000 lv_disp_flush_ready
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:2417   .text.lv_disp_flush_is_last:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:2423   .text.lv_disp_flush_is_last:00000000 lv_disp_flush_is_last
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 90
 
 
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:2446   .text.lv_disp_get_next:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:2452   .text.lv_disp_get_next:00000000 lv_disp_get_next
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:2491   .text.lv_disp_get_next:00000018 $d
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:2496   .text.lv_disp_get_draw_buf:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:2502   .text.lv_disp_get_draw_buf:00000000 lv_disp_get_draw_buf
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:2522   .text.lv_disp_set_rotation:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:2528   .text.lv_disp_set_rotation:00000000 lv_disp_set_rotation
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:2581   .text.lv_disp_get_rotation:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:2587   .text.lv_disp_get_rotation:00000000 lv_disp_get_rotation
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:2639   .text.lv_disp_drv_use_generic_set_px_cb:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:2645   .text.lv_disp_drv_use_generic_set_px_cb:00000000 lv_disp_drv_use_generic_set_px_cb
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:2661   .text.lv_disp_drv_use_generic_set_px_cb:0000000a $d
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:2671   .text.lv_disp_drv_use_generic_set_px_cb:00000014 $t
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:2717   .text.lv_disp_drv_use_generic_set_px_cb:00000038 $d
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:2726   .bss.bg_color_save.2:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:2730   .bss.bg_color_save.2:00000000 bg_color_save.2
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:2736   .bss.bg_opa_save.4:00000000 bg_opa_save.4
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:2737   .bss.bg_opa_save.4:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:2739   .bss.disp_def:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:2743   .bss.disp_def:00000000 disp_def
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:2746   .bss.fg_color_save.3:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:2750   .bss.fg_color_save.3:00000000 fg_color_save.3
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:2756   .bss.fg_opa_save.5:00000000 fg_opa_save.5
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:2757   .bss.fg_opa_save.5:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:2759   .bss.res_color_saved.0:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:2763   .bss.res_color_saved.0:00000000 res_color_saved.0
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:2769   .bss.res_opa_saved.1:00000000 res_opa_saved.1
-C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s:2770   .bss.res_opa_saved.1:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:2446   .text.lv_disp_get_next:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:2452   .text.lv_disp_get_next:00000000 lv_disp_get_next
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:2491   .text.lv_disp_get_next:00000018 $d
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:2496   .text.lv_disp_get_draw_buf:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:2502   .text.lv_disp_get_draw_buf:00000000 lv_disp_get_draw_buf
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:2522   .text.lv_disp_set_rotation:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:2528   .text.lv_disp_set_rotation:00000000 lv_disp_set_rotation
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:2581   .text.lv_disp_get_rotation:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:2587   .text.lv_disp_get_rotation:00000000 lv_disp_get_rotation
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:2639   .text.lv_disp_drv_use_generic_set_px_cb:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:2645   .text.lv_disp_drv_use_generic_set_px_cb:00000000 lv_disp_drv_use_generic_set_px_cb
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:2661   .text.lv_disp_drv_use_generic_set_px_cb:0000000a $d
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:2671   .text.lv_disp_drv_use_generic_set_px_cb:00000014 $t
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:2717   .text.lv_disp_drv_use_generic_set_px_cb:00000038 $d
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:2726   .bss.bg_color_save.2:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:2730   .bss.bg_color_save.2:00000000 bg_color_save.2
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:2736   .bss.bg_opa_save.4:00000000 bg_opa_save.4
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:2737   .bss.bg_opa_save.4:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:2739   .bss.disp_def:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:2743   .bss.disp_def:00000000 disp_def
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:2746   .bss.fg_color_save.3:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:2750   .bss.fg_color_save.3:00000000 fg_color_save.3
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:2756   .bss.fg_opa_save.5:00000000 fg_opa_save.5
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:2757   .bss.fg_opa_save.5:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:2759   .bss.res_color_saved.0:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:2763   .bss.res_color_saved.0:00000000 res_color_saved.0
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:2769   .bss.res_opa_saved.1:00000000 res_opa_saved.1
+C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s:2770   .bss.res_opa_saved.1:00000000 $d
 
 UNDEFINED SYMBOLS
 lv_obj_mark_layout_as_dirty
@@ -5382,7 +5382,7 @@ lv_obj_del
 _lv_ll_remove
 _lv_ll_clear
 lv_timer_del
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDD6lYO.s 			page 91
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccVfrVkZ.s 			page 91
 
 
 lv_mem_free

@@ -210,7 +210,8 @@ build/main.o: Core/Src/main.c Core/Inc/main.h \
  d:\kzc\stm32\h743ii_lcd\lvgl\src\lvgl.h \
  lvgl/src/extra/widgets/span/lv_span.h \
  d:\kzc\stm32\h743ii_lcd\lvgl\src\lvgl.h Core/Inc/lcd_rgb.h \
- Core/Inc/usart.h Core/Inc/lcd_fonts.h Core/Inc/fmc.h
+ Core/Inc/usart.h Core/Inc/lcd_fonts.h Core/Inc/fmc.h lvgl/lv_port_disp.h \
+ lvgl/lvgl.h
 Core/Inc/main.h:
 Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:
 Core/Inc/stm32h7xx_hal_conf.h:
@@ -486,3 +487,5 @@ Core/Inc/lcd_rgb.h:
 Core/Inc/usart.h:
 Core/Inc/lcd_fonts.h:
 Core/Inc/fmc.h:
+lvgl/lv_port_disp.h:
+lvgl/lvgl.h:

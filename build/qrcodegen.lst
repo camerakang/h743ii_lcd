@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
   29:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 
   30:lvgl/src/extra/libs/qrcode/qrcodegen.c **** #ifndef QRCODEGEN_TEST
   31:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 	#define testable static  // Keep functions private
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 2
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 2
 
 
   32:lvgl/src/extra/libs/qrcode/qrcodegen.c **** #else
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
   86:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 
   87:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 
   88:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 3
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 3
 
 
   89:lvgl/src/extra/libs/qrcode/qrcodegen.c **** /*---- Private tables of constants ----*/
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  143:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 			goto fail;
  144:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 		seg = qrcodegen_makeAlphanumeric(text, tempBuffer);
  145:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 	} else {
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 4
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 4
 
 
  146:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 		if (textLen > bufLen)
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
   41              		.loc 1 185 2 discriminator 2 view .LVU4
   42 0006 30FA01F4 		lsrs	r4, r0, r1
   43 000a 00D0     		beq	.L3
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 5
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 5
 
 
   44              	.L2:
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  186:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 	for (int i = numBits - 1; i >= 0; i--, (*bitLen)++)
   92              		.loc 1 186 28 is_stmt 1 discriminator 1 view .LVU28
  186:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 	for (int i = numBits - 1; i >= 0; i--, (*bitLen)++)
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 6
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 6
 
 
   93              		.loc 1 186 2 is_stmt 0 discriminator 1 view .LVU29
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  206:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 	LV_ASSERT(qrcodegen_VERSION_MIN <= minVersion && minVersion <= maxVersion && maxVersion <= qrcodeg
  207:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 	LV_ASSERT(0 <= (int)ecl && (int)ecl <= 3 && -1 <= (int)mask && (int)mask <= 7);
  208:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 7
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 7
 
 
  209:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 	// Find the minimal version number to use
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  263:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 	if (mask == qrcodegen_Mask_AUTO) {  // Automatically choose best mask
  264:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 		long minPenalty = LONG_MAX;
  265:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 		for (int i = 0; i < 8; i++) {
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 8
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 8
 
 
  266:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 			enum qrcodegen_Mask msk = (enum qrcodegen_Mask)i;
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  320:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 
  321:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 
  322:lvgl/src/extra/libs/qrcode/qrcodegen.c **** // Returns the number of 8-bit codewords that can be used for storing data (not ECC),
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 9
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 9
 
 
  323:lvgl/src/extra/libs/qrcode/qrcodegen.c **** // for the given version number and error correction level. The result is in the range [9, 2956].
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  161              	.LBB3:
  340:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 		int numAlign = ver / 7 + 2;
  162              		.loc 1 340 3 is_stmt 1 view .LVU56
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 10
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 10
 
 
  163              		.loc 1 340 22 is_stmt 0 view .LVU57
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  213              	.LVL11:
  214              	.LFB7:
  324:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 	int v = version, e = (int)ecl;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 11
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 11
 
 
  215              		.loc 1 324 71 is_stmt 1 view -0
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  254              	.LVL13:
  328:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 		* NUM_ERROR_CORRECTION_BLOCKS[e][v];
  255              		.loc 1 328 35 discriminator 2 view .LVU88
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 12
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 12
 
 
  256 001c 064A     		ldr	r2, .L23
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  365:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 		for (int j = 0; j < degree; j++) {
  366:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 			result[j] = finiteFieldMultiply(result[j], root);
  367:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 			if (j + 1 < degree)
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 13
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 13
 
 
  368:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 				result[j] ^= result[j + 1];
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  310              	.LBB5:
  311              		.loc 1 400 2 view .LVU100
  312 0008 10E0     		b	.L26
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 14
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 14
 
 
  313              	.LVL18:
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  407:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 
  408:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 
  409:lvgl/src/extra/libs/qrcode/qrcodegen.c **** /*---- Drawing function modules ----*/
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 15
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 15
 
 
  410:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  464:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 			if (dist == 2 || dist == 4) {
  465:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 				setModuleBounded(qrcode, 3 + dx, 3 + dy, false);
  466:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 				setModuleBounded(qrcode, qrsize - 4 + dx, 3 + dy, false);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 16
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 16
 
 
  467:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 				setModuleBounded(qrcode, 3 + dx, qrsize - 4 + dy, false);
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  521:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 
  522:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 	// Draw first copy
  523:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 	for (int i = 0; i <= 5; i++)
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 17
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 17
 
 
  524:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 		setModule(qrcode, 8, i, getBit(bits, i));
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  386              		.cfi_def_cfa_offset 4
  387              		.cfi_offset 14, -4
  550:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 		(version*4 + numAlign*2 + 1) / (numAlign*2 - 2) * 2;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 18
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 18
 
 
  388              		.loc 1 550 14 discriminator 1 view .LVU123
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  439              		.cfi_def_cfa_offset 4
  440              		.cfi_offset 14, -4
  552:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 		result[i] = pos;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 19
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 19
 
 
  441              		.loc 1 552 3 is_stmt 1 discriminator 3 view .LVU142
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  551:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 		result[i] = pos;
  482              		.loc 1 551 61 is_stmt 1 view .LVU159
  551:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 		result[i] = pos;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 20
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 20
 
 
  483              		.loc 1 551 62 is_stmt 0 view .LVU160
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  566:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 
  567:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 
  568:lvgl/src/extra/libs/qrcode/qrcodegen.c **** /*---- Drawing data modules and masking ----*/
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 21
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 21
 
 
  569:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  623:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 			setModule(qrcode, x, y, val ^ invert);
  624:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 		}
  625:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 	}
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 22
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 22
 
 
  626:lvgl/src/extra/libs/qrcode/qrcodegen.c **** }
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  680:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 		}
  681:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 		addRunToHistory(runY, runHistory);
  682:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 		if (color)
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 23
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 23
 
 
  683:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 			addRunToHistory(0, runHistory);  // Dummy run of white
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  728:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 	// The maximum QR Code size is 177, hence the run length n <= 177.
  729:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 	// Arithmetic is promoted to int, so n*4 will not overflow.
  730:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 	return n > 0 && runHistory[2] == n && runHistory[4] == n && runHistory[5] == n
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 24
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 24
 
 
  530              		.loc 1 730 2 is_stmt 1 view .LVU173
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  577 002c 0020     		movs	r0, #0
  578              	.LVL52:
  579              		.loc 1 731 29 view .LVU191
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 25
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 25
 
 
  580 002e 7047     		bx	lr
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  734:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 
  735:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 
  736:lvgl/src/extra/libs/qrcode/qrcodegen.c **** /*---- Basic QR Code information ----*/
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 26
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 26
 
 
  737:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  656 0016 0124     		movle	r4, #1
  657 0018 0029     		cmp	r1, #0
  658 001a 15DB     		blt	.L60
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 27
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 27
 
 
  659 001c A4B9     		cbnz	r4, .L60
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  768:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 	int index = y * qrsize + x;
  704              		.loc 1 768 2 discriminator 1 view .LVU229
  768:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 	int index = y * qrsize + x;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 28
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 28
 
 
  705              		.loc 1 768 2 discriminator 1 view .LVU230
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  751              		.cfi_offset 9, -12
  752              		.cfi_offset 10, -8
  753              		.cfi_offset 14, -4
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 29
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 29
 
 
  754 0004 8046     		mov	r8, r0
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  795 002c 01DA     		bge	.L72
  796              	.LBB11:
  561:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 			setModule(qrcode, left + dx, top + dy, true);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 30
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 30
 
 
  797              		.loc 1 561 12 view .LVU255
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  844 0018 00DB     		blt	.L73
  845 001a 04B9     		cbnz	r4, .L79
  846              	.LVL80:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 31
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 31
 
 
  847              	.L73:
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  895              		.thumb_func
  897              	getModule:
  898              	.LVL86:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 32
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 32
 
 
  899              	.LFB24:
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  940              		.loc 1 761 22 is_stmt 0 discriminator 6 view .LVU286
  941 002e 00EBE100 		add	r0, r0, r1, asr #3
  942              	.LVL89:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 33
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 33
 
 
  761:lvgl/src/extra/libs/qrcode/qrcodegen.c **** }
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  984              	.LFB31:
  791:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 
  792:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 34
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 34
 
 
  793:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  993 0004 30D2     		bcs	.L100
  839:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 		return -1;
  840:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 	long result = (long)numChars;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 35
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 35
 
 
  994              		.loc 1 840 2 is_stmt 1 view .LVU305
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  842:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 	else if (mode == qrcodegen_Mode_ALPHANUMERIC)
  1033              		.loc 1 842 25 view .LVU325
  1034 0026 0231     		adds	r1, r1, #2
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 36
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 36
 
 
  842:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 	else if (mode == qrcodegen_Mode_ALPHANUMERIC)
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  1075 0050 0131     		adds	r1, r1, #1
  1076 0052 FBE7     		b	.L94
  1077              	.LVL103:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 37
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 37
 
 
  1078              	.L105:
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  1116              	.LVL112:
  839:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 	long result = (long)numChars;
  1117              		.loc 1 839 10 view .LVU355
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 38
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 38
 
 
  1118 006c 7047     		bx	lr
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  897:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 		if (accumCount == 3) {
  898:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 			appendBitsToBuffer(accumData, 10, buf, &result.bitLength);
  899:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 			accumData = 0;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 39
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 39
 
 
  900:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 			accumCount = 0;
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  954:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 		memset(buf, 0, 1 * sizeof(buf[0]));
  955:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 		appendBitsToBuffer(assignVal, 8, buf, &result.bitLength);
  956:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 	} else if (assignVal < (1 << 14)) {
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 40
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 40
 
 
  957:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 		memset(buf, 0, 2 * sizeof(buf[0]));
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  1146              	.L111:
  1147              		.loc 1 1000 2 discriminator 1 view .LVU360
  1148              		.loc 1 1000 2 discriminator 1 view .LVU361
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 41
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 41
 
 
  1149              		.loc 1 1000 2 discriminator 1 view .LVU362
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  1199              		.loc 1 1004 90 is_stmt 0 view .LVU379
  1200 0030 094B     		ldr	r3, .L120+8
  1201 0032 53F82100 		ldr	r0, [r3, r1, lsl #2]
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 42
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 42
 
 
  1202 0036 7047     		bx	lr
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  1250              		.align	1
  1251              		.syntax unified
  1252              		.thumb
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 43
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 43
 
 
  1253              		.thumb_func
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  1296              		.loc 1 982 3 discriminator 2 view .LVU408
  982:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 		LV_ASSERT(0 <= bitLength && bitLength <= INT16_MAX);
  1297              		.loc 1 982 3 discriminator 2 view .LVU409
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 44
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 44
 
 
  982:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 		LV_ASSERT(0 <= bitLength && bitLength <= INT16_MAX);
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  1333              	.LBB21:
  979:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 		int numChars  = segs[i].numChars;
  1334              		.loc 1 979 21 is_stmt 1 discriminator 1 view .LVU429
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 45
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 45
 
 
  979:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 		int numChars  = segs[i].numChars;
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  1371              		.loc 1 986 3 discriminator 2 view .LVU447
  986:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 			return -1;  // The segment's length doesn't fit the field's bit width
  1372              		.loc 1 986 23 is_stmt 0 discriminator 2 view .LVU448
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 46
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 46
 
 
  1373 004c 0123     		movs	r3, #1
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  992:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 	return (int)result;
  1411              		.loc 1 992 2 discriminator 5 view .LVU465
  992:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 	return (int)result;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 47
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 47
 
 
  1412              		.loc 1 992 2 discriminator 5 view .LVU466
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  1460              		.cfi_offset 5, -28
  1461              		.cfi_offset 6, -24
  1462              		.cfi_offset 7, -20
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 48
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 48
 
 
  1463              		.cfi_offset 8, -16
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  1501              	.LBB24:
  363:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 		// Multiply the current product by (x - r^i)
  1502              		.loc 1 363 7 discriminator 2 view .LVU491
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 49
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 49
 
 
  363:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 		// Multiply the current product by (x - r^i)
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  366:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 			if (j + 1 < degree)
  1543              		.loc 1 366 14 view .LVU506
  1544 004c 2855     		strb	r0, [r5, r4]
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 50
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 50
 
 
  367:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 				result[j] ^= result[j + 1];
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  1590              		.cfi_offset 8, -12
  1591              		.cfi_offset 9, -8
  1592              		.cfi_offset 14, -4
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 51
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 51
 
 
  1593 0004 85B0     		sub	sp, sp, #20
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  1634 0038 0123     		movs	r3, #1
  1635 003a 2246     		mov	r2, r4
  1636 003c 0621     		movs	r1, #6
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 52
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 52
 
 
  1637 003e 0020     		movs	r0, #0
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  431:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 		for (int j = 0; j < numAlign; j++) {
  1681              		.loc 1 431 2 view .LVU541
  1682 007e 25E0     		b	.L152
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 53
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 53
 
 
  1683              	.LVL163:
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  1725              		.loc 1 432 19 is_stmt 1 discriminator 1 view .LVU553
  432:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 			// Don't draw on the three finder corners
  1726              		.loc 1 432 3 is_stmt 0 discriminator 1 view .LVU554
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 54
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 54
 
 
  1727 00b0 B442     		cmp	r4, r6
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  1767 00d4 B8F1060F 		cmp	r8, #6
  1768 00d8 02DC     		bgt	.L165
  1769              	.LVL168:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 55
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 55
 
 
  1770              	.L150:
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  1819              		.cfi_def_cfa_offset 36
  1820              		.cfi_offset 4, -36
  1821              		.cfi_offset 5, -32
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 56
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 56
 
 
  1822              		.cfi_offset 6, -28
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  383:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 		uint8_t factor = data[i] ^ result[0];
  1863              		.loc 1 383 2 is_stmt 1 discriminator 2 view .LVU589
  1864              	.LBB30:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 57
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 57
 
 
  383:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 		uint8_t factor = data[i] ^ result[0];
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  384:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 		memmove(&result[0], &result[1], (degree - 1) * sizeof(result[0]));
  1905              		.loc 1 384 3 is_stmt 1 view .LVU604
  384:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 		memmove(&result[0], &result[1], (degree - 1) * sizeof(result[0]));
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 58
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 58
 
 
  1906              		.loc 1 384 24 is_stmt 0 view .LVU605
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  1951              	addEccAndInterleave:
  1952              	.LVL186:
  1953              	.LFB6:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 59
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 59
 
 
  291:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 	// Calculate parameter numbers
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  293:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 	int numBlocks = NUM_ERROR_CORRECTION_BLOCKS[(int)ecl][version];
  1997              		.loc 1 293 2 discriminator 1 view .LVU628
  1998 0024 FEE7     		b	.L176
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 60
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 60
 
 
  1999              	.L177:
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  298:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 	int shortBlockDataLen = rawCodewords / numBlocks - blockEccLen;
  2040              		.loc 1 298 2 is_stmt 1 discriminator 4 view .LVU642
  298:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 	int shortBlockDataLen = rawCodewords / numBlocks - blockEccLen;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 61
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 61
 
 
  2041              		.loc 1 298 48 is_stmt 0 discriminator 4 view .LVU643
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  2080 0078 09F10709 		add	r9, r9, #7
  2081 007c E4E7     		b	.L178
  2082              	.LVL204:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 62
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 62
 
 
  2083              	.L181:
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  2121              	.LVL208:
  315:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 			result[k] = ecc[j];
  2122              		.loc 1 315 19 is_stmt 0 view .LVU675
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 63
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 63
 
 
  2123 0094 049B     		ldr	r3, [sp, #16]
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  2160              		.loc 1 306 34 is_stmt 0 discriminator 2 view .LVU692
  2161 00ae 0BF1010B 		add	fp, fp, #1
  2162              	.LVL215:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 64
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 64
 
 
  2163              	.L179:
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  2204              	.LBE40:
  2205              	.LBE42:
  319:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 65
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 65
 
 
  2206              		.loc 1 319 1 view .LVU706
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  2254 0010 38BD     		pop	{r3, r4, r5, pc}
  720:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 
  2255              		.loc 1 720 1 view .LVU715
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 66
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 66
 
 
  2256              		.cfi_endproc
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  2297              		.loc 1 740 2 discriminator 1 view .LVU730
  740:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 	int result = qrcode[0];
  2298              		.loc 1 740 2 discriminator 1 view .LVU731
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 67
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 67
 
 
  740:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 	int result = qrcode[0];
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  2345              		.loc 1 573 15 view .LVU741
  2346 000e FFF7FEFF 		bl	qrcodegen_getSize
  2347              	.LVL230:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 68
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 68
 
 
  573:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 	int i = 0;  // Bit index into the data
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  2389              	.LVL237:
  584:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 					bool black = getBit(data[i >> 3], 7 - (i & 7));
  2390              		.loc 1 584 8 discriminator 4 view .LVU755
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 69
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 69
 
 
  2391 0030 18B9     		cbnz	r0, .L204
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  2430              		.loc 1 585 6 is_stmt 1 view .LVU770
  585:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 					setModule(qrcode, x, y, black);
  2431              		.loc 1 585 33 is_stmt 0 view .LVU771
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 70
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 70
 
 
  2432 0052 4FEAEA03 		asr	r3, r10, #3
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  2474              	.L216:
  2475              	.LBE49:
  2476              	.LBE44:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 71
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 71
 
 
  576:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 		if (right == 6)
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  594:lvgl/src/extra/libs/qrcode/qrcodegen.c **** }
  2514              		.loc 1 594 2 discriminator 1 view .LVU801
  594:lvgl/src/extra/libs/qrcode/qrcodegen.c **** }
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 72
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 72
 
 
  2515              		.loc 1 594 2 discriminator 1 view .LVU802
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  2563              		.loc 1 453 2 is_stmt 1 view .LVU810
  2564              	.LBB52:
  453:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 		setModule(qrcode, 6, i, false);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 73
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 73
 
 
  2565              		.loc 1 453 7 view .LVU811
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  2607              		.loc 1 464 7 is_stmt 0 view .LVU823
  2608 003c 042B     		cmp	r3, #4
  2609 003e 18BF     		it	ne
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 74
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 74
 
 
  2610 0040 022B     		cmpne	r3, #2
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  2651 006e 4046     		mov	r0, r8
  2652 0070 FFF7FEFF 		bl	setModuleBounded
  2653              	.LVL265:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 75
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 75
 
 
  466:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 				setModuleBounded(qrcode, 3 + dx, qrsize - 4 + dy, false);
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  2695 009e 6946     		mov	r1, sp
  2696 00a0 5046     		mov	r0, r10
  2697 00a2 FFF7FEFF 		bl	getAlignmentPatternPositions
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 76
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 76
 
 
  2698              	.LVL269:
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  2737 00c8 BB42     		cmp	r3, r7
  2738 00ca 21D1     		bne	.L244
  477:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 				continue;  // Don't draw on the three finder corners
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 77
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 77
 
 
  2739              		.loc 1 477 82 discriminator 5 view .LVU865
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  2782              	.L232:
  479:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 				for (int dx = -1; dx <= 1; dx++)
  2783              		.loc 1 479 22 is_stmt 1 discriminator 1 view .LVU877
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 78
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 78
 
 
  479:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 				for (int dx = -1; dx <= 1; dx++)
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  2826              		.cfi_def_cfa_offset 36
  2827              		@ sp needed
  2828 0128 BDE8F08F 		pop	{r4, r5, r6, r7, r8, r9, r10, fp, pc}
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 79
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 79
 
 
  2829              	.LVL280:
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  493:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 
  2867              		.loc 1 493 3 discriminator 1 view .LVU906
  493:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 80
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 80
 
 
  2868              		.loc 1 493 3 discriminator 1 view .LVU907
@@ -4798,7 +4798,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  501:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 			}
  2911              		.loc 1 501 10 discriminator 3 view .LVU919
  2912              	.LBE69:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 81
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 81
 
 
  497:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 				int k = qrsize - 11 + j;
@@ -4858,7 +4858,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  2957              	.LFB19:
  631:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 	int qrsize = qrcodegen_getSize(qrcode);
  2958              		.loc 1 631 53 is_stmt 1 view -0
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 82
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 82
 
 
  2959              		.cfi_startproc
@@ -4918,7 +4918,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  3001              		.loc 1 644 13 is_stmt 0 view .LVU944
  3002 0016 0AF1030A 		add	r10, r10, #3
  3003              	.LVL298:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 83
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 83
 
 
  644:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 				else if (runX > 5)
@@ -4978,7 +4978,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  3044              	.LVL305:
  3045              	.L259:
  640:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 			if (getModule(qrcode, x, y) == color) {
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 84
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 84
 
 
  3046              		.loc 1 640 19 is_stmt 1 discriminator 1 view .LVU959
@@ -5038,7 +5038,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  3084              		.loc 1 655 3 is_stmt 1 view .LVU975
  3085 006a 02A9     		add	r1, sp, #8
  3086 006c 3046     		mov	r0, r6
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 85
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 85
 
 
  3087 006e FFF7FEFF 		bl	addRunToHistory
@@ -5098,7 +5098,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  639:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 		for (int x = 0; x < qrsize; x++) {
  3126              		.loc 1 639 3 view .LVU991
  640:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 			if (getModule(qrcode, x, y) == color) {
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 86
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 86
 
 
  3127              		.loc 1 640 3 view .LVU992
@@ -5158,7 +5158,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  670:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 				else if (runY > 5)
  3169              		.loc 1 670 13 view .LVU1005
  3170 00b4 13E0     		b	.L272
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 87
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 87
 
 
  3171              	.L270:
@@ -5218,7 +5218,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  3211              		.loc 1 666 19 is_stmt 1 discriminator 1 view .LVU1019
  666:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 			if (getModule(qrcode, x, y) == color) {
  3212              		.loc 1 666 3 is_stmt 0 discriminator 1 view .LVU1020
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 88
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 88
 
 
  3213 00e0 BD42     		cmp	r5, r7
@@ -5278,7 +5278,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  3252 0108 FFF7FEFF 		bl	addRunToHistory
  3253              	.LVL332:
  682:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 			addRunToHistory(0, runHistory);  // Dummy run of white
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 89
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 89
 
 
  3254              		.loc 1 682 3 view .LVU1036
@@ -5338,7 +5338,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  3292              		.loc 1 666 3 view .LVU1052
  3293              	.LBB81:
  666:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 			if (getModule(qrcode, x, y) == color) {
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 90
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 90
 
 
  3294              		.loc 1 666 8 view .LVU1053
@@ -5398,7 +5398,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  3336              	.LBE88:
  3337              	.LBB89:
  3338              	.LBB85:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 91
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 91
 
 
  690:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 			bool  color = getModule(qrcode, x, y);
@@ -5458,7 +5458,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  3382 018c B042     		cmp	r0, r6
  3383 018e DCD1     		bne	.L279
  695:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 		}
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 92
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 92
 
 
  3384              		.loc 1 695 5 is_stmt 1 view .LVU1077
@@ -5518,7 +5518,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  3425              		.loc 1 702 32 is_stmt 0 discriminator 2 view .LVU1090
  3426 01ac 0135     		adds	r5, r5, #1
  3427              	.LVL352:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 93
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 93
 
 
  3428              	.L285:
@@ -5578,7 +5578,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  707:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 	// Compute the smallest integer k >= 0 such that (45-5k)% <= black/total <= (55+5k)%
  3468              		.loc 1 707 2 is_stmt 1 view .LVU1105
  707:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 	// Compute the smallest integer k >= 0 such that (45-5k)% <= black/total <= (55+5k)%
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 94
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 94
 
 
  3469              		.loc 1 707 6 is_stmt 0 view .LVU1106
@@ -5638,7 +5638,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  3508              		.loc 1 712 1 view .LVU1121
  3509              		.cfi_endproc
  3510              	.LFE19:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 95
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 95
 
 
  3512              		.section	.text.applyMask,"ax",%progbits
@@ -5698,7 +5698,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  605:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 	for (int y = 0; y < qrsize; y++) {
  3555              		.loc 1 605 15 is_stmt 0 discriminator 2 view .LVU1134
  3556 0012 0846     		mov	r0, r1
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 96
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 96
 
 
  3557              	.LVL363:
@@ -5758,7 +5758,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  3597 0036 4046     		mov	r0, r8
  3598 0038 FFF7FEFF 		bl	getModule
  3599              	.LVL369:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 97
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 97
 
 
  623:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 		}
@@ -5818,7 +5818,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  3642 0070 27000000 		.word	.L315+1
  3643 0074 91000000 		.word	.L314+1
  3644 0078 9D000000 		.word	.L313+1
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 98
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 98
 
 
  3645 007c B5000000 		.word	.L312+1
@@ -5878,7 +5878,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  3687 00bc A3EBE773 		sub	r3, r3, r7, asr #31
  3688 00c0 03EB4303 		add	r3, r3, r3, lsl #1
  615:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 				case 4:  invert = (x / 3 + y / 2) % 2 == 0;            break;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 99
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 99
 
 
  3689              		.loc 1 615 21 view .LVU1173
@@ -5938,7 +5938,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  3730              		.loc 1 617 25 is_stmt 0 view .LVU1186
  3731 00f2 04FB05F2 		mul	r2, r4, r5
  617:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 				case 6:  invert = (x * y % 2 + x * y % 3) % 2 == 0;    break;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 100
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 100
 
 
  3732              		.loc 1 617 29 view .LVU1187
@@ -5998,7 +5998,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  3776 0146 0027     		movne	r7, #0
  3777              	.LVL385:
  618:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 				case 7:  invert = ((x + y) % 2 + x * y % 3) % 2 == 0;  break;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 101
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 101
 
 
  3778              		.loc 1 618 60 is_stmt 1 view .LVU1198
@@ -6058,7 +6058,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  3817 0178 FEE7     		b	.L306
  3818              	.L324:
  620:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 			}
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 102
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 102
 
 
  3819              		.loc 1 620 15 is_stmt 0 discriminator 2 view .LVU1214
@@ -6118,7 +6118,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  513:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 	static const int table[] = {1, 0, 3, 2};
  3864              		.loc 1 513 2 discriminator 1 view .LVU1226
  513:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 	static const int table[] = {1, 0, 3, 2};
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 103
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 103
 
 
  3865              		.loc 1 513 2 discriminator 1 view .LVU1227
@@ -6178,7 +6178,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  3904              	.LVL396:
  3905              	.L332:
  518:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 	int bits = (data << 10 | rem) ^ 0x5412;  // uint15
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 104
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 104
 
 
  3906              		.loc 1 518 3 is_stmt 1 discriminator 3 view .LVU1243
@@ -6238,7 +6238,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  3943              		.loc 1 520 2 discriminator 2 view .LVU1260
  520:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 
  3944              		.loc 1 520 2 discriminator 2 view .LVU1261
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 105
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 105
 
 
  520:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 
@@ -6298,7 +6298,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  3990 007c 1146     		mov	r1, r2
  3991 007e 2846     		mov	r0, r5
  3992 0080 FFF7FEFF 		bl	setModule
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 106
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 106
 
 
  3993              	.LVL409:
@@ -6358,7 +6358,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  4037              		.loc 1 528 26 discriminator 3 view .LVU1280
  528:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 		setModule(qrcode, 14 - i, 8, getBit(bits, i));
  4038              		.loc 1 528 27 is_stmt 0 discriminator 3 view .LVU1281
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 107
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 107
 
 
  4039 00b6 0137     		adds	r7, r7, #1
@@ -6418,7 +6418,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  533:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 		setModule(qrcode, qrsize - 1 - i, 8, getBit(bits, i));
  4081              		.loc 1 533 18 is_stmt 1 discriminator 1 view .LVU1294
  533:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 		setModule(qrcode, qrsize - 1 - i, 8, getBit(bits, i));
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 108
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 108
 
 
  4082              		.loc 1 533 2 is_stmt 0 discriminator 1 view .LVU1295
@@ -6478,7 +6478,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  538:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 
  4126              		.loc 1 538 1 is_stmt 0 view .LVU1306
  4127 0118 BDE8F081 		pop	{r4, r5, r6, r7, r8, pc}
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 109
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 109
 
 
  4128              	.LVL430:
@@ -6538,7 +6538,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  4178              	.L349:
  205:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 	LV_ASSERT(qrcodegen_VERSION_MIN <= minVersion && minVersion <= maxVersion && maxVersion <= qrcodeg
  4179              		.loc 1 205 2 is_stmt 1 discriminator 1 view .LVU1313
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 110
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 110
 
 
  205:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 	LV_ASSERT(qrcodegen_VERSION_MIN <= minVersion && minVersion <= maxVersion && maxVersion <= qrcodeg
@@ -6598,7 +6598,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  4216              		.loc 1 207 2 discriminator 4 view .LVU1331
  207:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 
  4217              		.loc 1 207 2 discriminator 4 view .LVU1332
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 111
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 111
 
 
  4218 003c 119B     		ldr	r3, [sp, #68]
@@ -6658,7 +6658,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  4260 0072 FFF7FEFF 		bl	getTotalBits
  4261              	.LVL437:
  214:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 			break;  // This version number is found to be suitable
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 112
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 112
 
 
  4262              		.loc 1 214 3 is_stmt 1 view .LVU1345
@@ -6718,7 +6718,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  4302              		@ sp needed
  4303 0096 BDE8F08F 		pop	{r4, r5, r6, r7, r8, r9, r10, fp, pc}
  4304              	.LVL440:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 113
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 113
 
 
  4305              	.L354:
@@ -6778,7 +6778,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  225:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 			ecl = (enum qrcodegen_Ecc)i;
  4343              		.loc 1 225 6 is_stmt 0 view .LVU1376
  4344 00b8 B8F1000F 		cmp	r8, #0
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 114
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 114
 
 
  4345 00bc F7D0     		beq	.L359
@@ -6838,7 +6838,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  232:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 		const struct qrcodegen_Segment *seg = &segs[i];
  4387              		.loc 1 232 14 is_stmt 0 view .LVU1389
  4388 00f0 9B46     		mov	fp, r3
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 115
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 115
 
 
  4389 00f2 CDF80CA0 		str	r10, [sp, #12]
@@ -6898,7 +6898,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  4430              		.loc 1 236 19 is_stmt 1 discriminator 1 view .LVU1402
  236:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 			appendBitsToBuffer((seg->data[j >> 3] >> (7 - (j & 7))) & 1, 1, qrcode, &bitLen);
  4431              		.loc 1 236 26 is_stmt 0 discriminator 1 view .LVU1403
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 116
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 116
 
 
  4432 0124 FB68     		ldr	r3, [r7, #12]
@@ -6958,7 +6958,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  4473 015a 05AB     		add	r3, sp, #20
  4474 015c 4246     		mov	r2, r8
  4475 015e 0298     		ldr	r0, [sp, #8]
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 117
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 117
 
 
  4476 0160 FFF7FEFF 		bl	appendBitsToBuffer
@@ -7018,7 +7018,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  4513 017c 2046     		mov	r0, r4
  4514 017e FFF7FEFF 		bl	getNumDataCodewords
  4515              	.LVL460:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 118
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 118
 
 
  242:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 	LV_ASSERT(bitLen <= dataCapacityBits);
@@ -7078,7 +7078,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  4552              		.loc 1 248 36 is_stmt 0 view .LVU1451
  4553 01a0 059B     		ldr	r3, [sp, #20]
  4554 01a2 5A42     		rsbs	r2, r3, #0
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 119
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 119
 
 
  4555 01a4 03F00703 		and	r3, r3, #7
@@ -7138,7 +7138,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  4596              		.loc 1 252 66 is_stmt 0 discriminator 3 view .LVU1464
  4597 01e2 88F0FD08 		eor	r8, r8, #253
  4598              	.LVL468:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 120
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 120
 
 
  4599              	.L371:
@@ -7198,7 +7198,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  263:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 		long minPenalty = LONG_MAX;
  4643              		.loc 1 263 2 view .LVU1475
  263:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 		long minPenalty = LONG_MAX;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 121
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 121
 
 
  4644              		.loc 1 263 5 is_stmt 0 view .LVU1476
@@ -7258,7 +7258,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  274:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 		}
  4686              		.loc 1 274 4 is_stmt 0 discriminator 2 view .LVU1489
  4687 0244 FFF7FEFF 		bl	applyMask
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 122
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 122
 
 
  4688              	.LVL480:
@@ -7318,7 +7318,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  4728              	.LVL486:
  272:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 			}
  4729              		.loc 1 272 5 is_stmt 1 view .LVU1504
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 123
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 123
 
 
  272:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 			}
@@ -7378,7 +7378,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  4771              		.loc 1 280 2 discriminator 2 view .LVU1517
  280:lvgl/src/extra/libs/qrcode/qrcodegen.c **** }
  4772              		.loc 1 280 9 is_stmt 0 discriminator 2 view .LVU1518
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 124
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 124
 
 
  4773 0296 FCE6     		b	.L356
@@ -7438,7 +7438,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  172:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 		qrcode[0] = 0;  // Set size to invalid value for safety
  4819              		.loc 1 172 5 is_stmt 0 view .LVU1529
  4820 0018 B0F1FF3F 		cmp	r0, #-1
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 125
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 125
 
 
  4821 001c 13D0     		beq	.L398
@@ -7498,7 +7498,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  4865              		.align	1
  4866              		.global	qrcodegen_encodeSegments
  4867              		.syntax unified
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 126
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 126
 
 
  4868              		.thumb
@@ -7558,7 +7558,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  4918              	.LFB23:
  749:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 	LV_ASSERT(qrcode != NULL);
  4919              		.loc 1 749 64 is_stmt 1 view -0
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 127
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 127
 
 
  4920              		.cfi_startproc
@@ -7618,7 +7618,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  4961              		.cfi_def_cfa_offset 0
  4962              		.cfi_restore 3
  4963              		.cfi_restore 14
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 128
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 128
 
 
  750:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 	int qrsize = qrcode[0];
@@ -7678,7 +7678,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  5003              		.section	.text.qrcodegen_isAlphanumeric,"ax",%progbits
  5004              		.align	1
  5005              		.global	qrcodegen_isAlphanumeric
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 129
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 129
 
 
  5006              		.syntax unified
@@ -7738,7 +7738,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  798:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 	for (; *text != '\0'; text++) {
  5048              		.loc 1 798 2 discriminator 1 view .LVU1587
  798:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 	for (; *text != '\0'; text++) {
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 130
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 130
 
 
  5049              		.loc 1 798 2 discriminator 1 view .LVU1588
@@ -7798,7 +7798,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  5095 0004 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
  810:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 		if (*text < '0' || *text > '9')
  5096              		.loc 1 810 2 is_stmt 0 discriminator 1 view .LVU1599
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 131
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 131
 
 
  5097 0006 33B1     		cbz	r3, .L427
@@ -7858,7 +7858,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  5137              		.thumb
  5138              		.thumb_func
  5140              	qrcodegen_calcSegmentBufferSize:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 132
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 132
 
 
  5141              	.LVL524:
@@ -7918,7 +7918,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  824:lvgl/src/extra/libs/qrcode/qrcodegen.c **** }
  5178              		.loc 1 824 28 discriminator 2 view .LVU1632
  5179 0016 C008     		lsrs	r0, r0, #3
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 133
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 133
 
 
  5180              	.LVL527:
@@ -7978,7 +7978,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  5228              	.L436:
  864:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 	struct qrcodegen_Segment result;
  5229              		.loc 1 864 2 is_stmt 1 discriminator 1 view .LVU1641
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 134
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 134
 
 
  864:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 	struct qrcodegen_Segment result;
@@ -8038,7 +8038,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  5264              		.loc 1 870 5 is_stmt 0 discriminator 2 view .LVU1661
  5265 002e 1EB9     		cbnz	r6, .L441
  5266              	.L439:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 135
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 135
 
 
  872:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 	return result;
@@ -8098,7 +8098,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  5309              		.loc 1 879 2 view .LVU1675
  5310 0000 D9B1     		cbz	r1, .L444
  878:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 	LV_ASSERT(digits != NULL);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 136
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 136
 
 
  5311              		.loc 1 878 83 is_stmt 0 discriminator 2 view .LVU1676
@@ -8158,7 +8158,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  5352 0024 B0F1FF3F 		cmp	r0, #-1
  5353 0028 08D0     		beq	.L446
  884:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 	result.numChars = (int)len;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 137
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 137
 
 
  5354              		.loc 1 884 2 discriminator 2 view .LVU1690
@@ -8218,7 +8218,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  5391 003a FEE7     		b	.L444
  5392              	.LVL546:
  5393              	.L446:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 138
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 138
 
 
  5394              		.cfi_def_cfa_offset 40
@@ -8278,7 +8278,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  5432              	.L451:
  894:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 		accumData = accumData * 10 + (unsigned int)(c - '0');
  5433              		.loc 1 894 3 is_stmt 0 discriminator 3 view .LVU1724
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 139
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 139
 
 
  5434              	.LBE122:
@@ -8338,7 +8338,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  898:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 			accumData = 0;
  5472              		.loc 1 898 4 is_stmt 1 view .LVU1741
  5473 0070 03AB     		add	r3, sp, #12
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 140
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 140
 
 
  5474 0072 2A46     		mov	r2, r5
@@ -8398,7 +8398,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  904:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 	LV_ASSERT(result.bitLength == bitLen);
  5512              		.loc 1 904 3 view .LVU1758
  904:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 	LV_ASSERT(result.bitLength == bitLen);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 141
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 141
 
 
  5513              		.loc 1 904 44 is_stmt 0 view .LVU1759
@@ -8458,7 +8458,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  5558              		.loc 1 913 2 view .LVU1770
  913:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 	struct qrcodegen_Segment result;
  5559              		.loc 1 913 2 view .LVU1771
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 142
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 142
 
 
  5560 0000 D1B1     		cbz	r1, .L463
@@ -8518,7 +8518,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  5601              		.loc 1 918 2 is_stmt 1 discriminator 2 view .LVU1784
  918:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 	result.numChars = (int)len;
  5602              		.loc 1 918 2 discriminator 2 view .LVU1785
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 143
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 143
 
 
  5603 0024 B0F1FF3F 		cmp	r0, #-1
@@ -8578,7 +8578,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  5641              		.loc 1 913 2 discriminator 1 view .LVU1801
  913:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 	struct qrcodegen_Segment result;
  5642              		.loc 1 913 2 discriminator 1 view .LVU1802
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 144
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 144
 
 
  913:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 	struct qrcodegen_Segment result;
@@ -8638,7 +8638,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  928:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 		accumData = accumData * 45 + (unsigned int)(temp - ALPHANUMERIC_CHARSET);
  5682              		.loc 1 928 3 discriminator 3 view .LVU1818
  928:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 		accumData = accumData * 45 + (unsigned int)(temp - ALPHANUMERIC_CHARSET);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 145
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 145
 
 
  5683              		.loc 1 928 3 discriminator 3 view .LVU1819
@@ -8698,7 +8698,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  5721              	.LVL583:
  930:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 		if (accumCount == 2) {
  5722              		.loc 1 930 3 is_stmt 1 discriminator 2 view .LVU1836
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 146
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 146
 
 
  930:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 		if (accumCount == 2) {
@@ -8758,7 +8758,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  939:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 	result.data = buf;
  5762              		.loc 1 939 2 discriminator 4 view .LVU1852
  939:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 	result.data = buf;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 147
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 147
 
 
  5763              		.loc 1 939 2 discriminator 4 view .LVU1853
@@ -8818,7 +8818,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  5807              		.thumb_func
  5809              	qrcodegen_encodeText:
  5810              	.LVL590:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 148
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 148
 
 
  5811              	.LFB1:
@@ -8878,7 +8878,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  5856              		.loc 1 136 2 is_stmt 1 view .LVU1873
  137:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 		if (qrcodegen_calcSegmentBufferSize(qrcodegen_Mode_NUMERIC, textLen) > bufLen)
  5857              		.loc 1 137 2 view .LVU1874
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 149
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 149
 
 
  137:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 		if (qrcodegen_calcSegmentBufferSize(qrcodegen_Mode_NUMERIC, textLen) > bufLen)
@@ -8938,7 +8938,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  5899              		.loc 1 133 10 view .LVU1887
  5900 0064 FFF7FEFF 		bl	qrcodegen_encodeSegmentsAdvanced
  5901              	.LVL598:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 150
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 150
 
 
  5902              	.L484:
@@ -8998,7 +8998,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  5948              		.loc 1 141 9 is_stmt 1 view .LVU1895
  141:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 		if (qrcodegen_calcSegmentBufferSize(qrcodegen_Mode_ALPHANUMERIC, textLen) > bufLen)
  5949              		.loc 1 141 13 is_stmt 0 view .LVU1896
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 151
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 151
 
 
  5950 00a6 2846     		mov	r0, r5
@@ -9058,7 +9058,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  5992              		.loc 1 149 4 is_stmt 1 discriminator 3 view .LVU1908
  149:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 		seg.mode = qrcodegen_Mode_BYTE;
  5993              		.loc 1 149 20 is_stmt 0 discriminator 3 view .LVU1909
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 152
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 152
 
 
  5994 00da EA5C     		ldrb	r2, [r5, r3]	@ zero_extendqisi2
@@ -9118,7 +9118,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  6033              		.align	1
  6034              		.global	qrcodegen_makeEci
  6035              		.syntax unified
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 153
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 153
 
 
  6036              		.thumb
@@ -9178,7 +9178,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  6077              		.loc 1 956 9 is_stmt 1 view .LVU1939
  956:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 		memset(buf, 0, 2 * sizeof(buf[0]));
  6078              		.loc 1 956 12 is_stmt 0 view .LVU1940
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 154
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 154
 
 
  6079 001c B4F5804F 		cmp	r4, #16384
@@ -9238,7 +9238,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  6115              	.LVL615:
  6116              	.L501:
  966:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 	}
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 155
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 155
 
 
  6117              		.loc 1 966 3 is_stmt 1 discriminator 2 view .LVU1959
@@ -9298,7 +9298,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  6160 0068 0023     		movs	r3, #0
  6161 006a 1380     		strh	r3, [r2]	@ unaligned
  6162 006c 9370     		strb	r3, [r2, #2]
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 156
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 156
 
 
  962:lvgl/src/extra/libs/qrcode/qrcodegen.c **** 		appendBitsToBuffer(assignVal >> 10, 11, buf, &result.bitLength);
@@ -9358,7 +9358,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  6211              		.cfi_def_cfa_offset 16
  6212              		.cfi_offset 4, -16
  6213              		.cfi_offset 5, -12
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 157
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 157
 
 
  6214              		.cfi_offset 6, -8
@@ -9418,7 +9418,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  6261 0024 FFF7FEFF 		bl	getNumDataCodewords
  6262              	.LVL634:
  6263              		.loc 1 1020 7 view .LVU1997
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 158
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 158
 
 
  6264 0028 C500     		lsls	r5, r0, #3
@@ -9478,7 +9478,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  6311              		.thumb
  6312              		.thumb_func
  6314              	qrcodegen_version2size:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 159
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 159
 
 
  6315              	.LVL640:
@@ -9538,7 +9538,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  6353      1E
  6354 0027 1E1E     		.ascii	"\036\036"
  6355 0029 FF0A101A 		.ascii	"\377\012\020\032\022\030\020\022\026\026\032\036\026"
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 160
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 160
 
 
  6355      12181012 
@@ -9598,7 +9598,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  6376 0027 1819     		.ascii	"\030\031"
  6377 0029 FF010101 		.ascii	"\377\001\001\001\002\002\004\004\004\005\005\005\010"
  6377      02020404 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 161
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 161
 
 
  6377      04050505 
@@ -9658,7 +9658,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  6413 0008 10000000 		.word	16
  6414              		.section	.rodata.temp.3,"a"
  6415              		.align	2
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 162
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 162
 
 
  6416              		.set	.LANCHOR3,. + 0
@@ -9681,127 +9681,127 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 1
  6437              		.file 5 "lvgl/src/extra/libs/qrcode/qrcodegen.h"
  6438              		.file 6 "c:\\tools\\gcc-arm-none-eabi\\arm-none-eabi\\include\\string.h"
  6439              		.file 7 "<built-in>"
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 163
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 163
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 qrcodegen.c
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:19     .text.appendBitsToBuffer:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:24     .text.appendBitsToBuffer:00000000 appendBitsToBuffer
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:116    .text.getNumRawDataModules:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:121    .text.getNumRawDataModules:00000000 getNumRawDataModules
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:202    .text.getNumRawDataModules:00000044 $d
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:207    .text.getNumDataCodewords:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:212    .text.getNumDataCodewords:00000000 getNumDataCodewords
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:276    .text.getNumDataCodewords:00000038 $d
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:282    .text.finiteFieldMultiply:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:287    .text.finiteFieldMultiply:00000000 finiteFieldMultiply
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:351    .text.getAlignmentPatternPositions:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:356    .text.getAlignmentPatternPositions:00000000 getAlignmentPatternPositions
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:508    .text.getAlignmentPatternPositions:00000078 $d
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:513    .text.hasFinderLikePattern:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:518    .text.hasFinderLikePattern:00000000 hasFinderLikePattern
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:626    .text.setModule:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:631    .text.setModule:00000000 setModule
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:731    .text.fillRectangle:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:736    .text.fillRectangle:00000000 fillRectangle
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:810    .text.setModuleBounded:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:815    .text.setModuleBounded:00000000 setModuleBounded
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:868    .text.getBit:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:873    .text.getBit:00000000 getBit
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:892    .text.getModule:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:897    .text.getModule:00000000 getModule
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:977    .text.calcSegmentBitLength:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:982    .text.calcSegmentBitLength:00000000 calcSegmentBitLength
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:1128   .text.numCharCountBits:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:1133   .text.numCharCountBits:00000000 numCharCountBits
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:1176   .text.numCharCountBits:00000020 $d
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:1184   .text.numCharCountBits:00000028 $t
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:1241   .text.numCharCountBits:00000050 $d
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:1250   .text.getTotalBits:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:1255   .text.getTotalBits:00000000 getTotalBits
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:1444   .text.calcReedSolomonGenerator:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:1449   .text.calcReedSolomonGenerator:00000000 calcReedSolomonGenerator
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:1571   .text.initializeFunctionModules:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:1576   .text.initializeFunctionModules:00000000 initializeFunctionModules
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:1805   .text.calcReedSolomonRemainder:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:1810   .text.calcReedSolomonRemainder:00000000 calcReedSolomonRemainder
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:1946   .text.addEccAndInterleave:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:1951   .text.addEccAndInterleave:00000000 addEccAndInterleave
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:2216   .text.addEccAndInterleave:000000e8 $d
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:2222   .text.addRunToHistory:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:2227   .text.addRunToHistory:00000000 addRunToHistory
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:2260   .text.qrcodegen_getSize:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:2266   .text.qrcodegen_getSize:00000000 qrcodegen_getSize
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:2312   .text.drawCodewords:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:2317   .text.drawCodewords:00000000 drawCodewords
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:2528   .text.drawWhiteFunctionModules:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:2533   .text.drawWhiteFunctionModules:00000000 drawWhiteFunctionModules
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:2950   .text.getPenaltyScore:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:2955   .text.getPenaltyScore:00000000 getPenaltyScore
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:3513   .text.applyMask:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:3518   .text.applyMask:00000000 applyMask
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 164
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:19     .text.appendBitsToBuffer:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:24     .text.appendBitsToBuffer:00000000 appendBitsToBuffer
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:116    .text.getNumRawDataModules:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:121    .text.getNumRawDataModules:00000000 getNumRawDataModules
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:202    .text.getNumRawDataModules:00000044 $d
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:207    .text.getNumDataCodewords:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:212    .text.getNumDataCodewords:00000000 getNumDataCodewords
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:276    .text.getNumDataCodewords:00000038 $d
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:282    .text.finiteFieldMultiply:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:287    .text.finiteFieldMultiply:00000000 finiteFieldMultiply
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:351    .text.getAlignmentPatternPositions:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:356    .text.getAlignmentPatternPositions:00000000 getAlignmentPatternPositions
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:508    .text.getAlignmentPatternPositions:00000078 $d
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:513    .text.hasFinderLikePattern:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:518    .text.hasFinderLikePattern:00000000 hasFinderLikePattern
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:626    .text.setModule:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:631    .text.setModule:00000000 setModule
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:731    .text.fillRectangle:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:736    .text.fillRectangle:00000000 fillRectangle
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:810    .text.setModuleBounded:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:815    .text.setModuleBounded:00000000 setModuleBounded
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:868    .text.getBit:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:873    .text.getBit:00000000 getBit
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:892    .text.getModule:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:897    .text.getModule:00000000 getModule
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:977    .text.calcSegmentBitLength:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:982    .text.calcSegmentBitLength:00000000 calcSegmentBitLength
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:1128   .text.numCharCountBits:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:1133   .text.numCharCountBits:00000000 numCharCountBits
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:1176   .text.numCharCountBits:00000020 $d
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:1184   .text.numCharCountBits:00000028 $t
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:1241   .text.numCharCountBits:00000050 $d
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:1250   .text.getTotalBits:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:1255   .text.getTotalBits:00000000 getTotalBits
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:1444   .text.calcReedSolomonGenerator:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:1449   .text.calcReedSolomonGenerator:00000000 calcReedSolomonGenerator
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:1571   .text.initializeFunctionModules:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:1576   .text.initializeFunctionModules:00000000 initializeFunctionModules
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:1805   .text.calcReedSolomonRemainder:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:1810   .text.calcReedSolomonRemainder:00000000 calcReedSolomonRemainder
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:1946   .text.addEccAndInterleave:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:1951   .text.addEccAndInterleave:00000000 addEccAndInterleave
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:2216   .text.addEccAndInterleave:000000e8 $d
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:2222   .text.addRunToHistory:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:2227   .text.addRunToHistory:00000000 addRunToHistory
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:2260   .text.qrcodegen_getSize:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:2266   .text.qrcodegen_getSize:00000000 qrcodegen_getSize
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:2312   .text.drawCodewords:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:2317   .text.drawCodewords:00000000 drawCodewords
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:2528   .text.drawWhiteFunctionModules:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:2533   .text.drawWhiteFunctionModules:00000000 drawWhiteFunctionModules
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:2950   .text.getPenaltyScore:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:2955   .text.getPenaltyScore:00000000 getPenaltyScore
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:3513   .text.applyMask:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:3518   .text.applyMask:00000000 applyMask
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 164
 
 
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:3642   .text.applyMask:00000070 $d
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:3650   .text.applyMask:00000090 $t
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:3839   .text.applyMask:00000184 $d
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:3844   .text.drawFormatBits:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:3849   .text.drawFormatBits:00000000 drawFormatBits
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:4133   .text.drawFormatBits:0000011c $d
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:4138   .text.qrcodegen_encodeSegmentsAdvanced:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:4144   .text.qrcodegen_encodeSegmentsAdvanced:00000000 qrcodegen_encodeSegmentsAdvanced
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:4778   .text.qrcodegen_encodeBinary:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:4784   .text.qrcodegen_encodeBinary:00000000 qrcodegen_encodeBinary
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:4865   .text.qrcodegen_encodeSegments:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:4871   .text.qrcodegen_encodeSegments:00000000 qrcodegen_encodeSegments
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:4910   .text.qrcodegen_getModule:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:4916   .text.qrcodegen_getModule:00000000 qrcodegen_getModule
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:5000   .rodata.qrcodegen_isAlphanumeric.str1.4:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:5004   .text.qrcodegen_isAlphanumeric:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:5010   .text.qrcodegen_isAlphanumeric:00000000 qrcodegen_isAlphanumeric
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:5069   .text.qrcodegen_isAlphanumeric:00000020 $d
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:5074   .text.qrcodegen_isNumeric:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:5080   .text.qrcodegen_isNumeric:00000000 qrcodegen_isNumeric
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:5134   .text.qrcodegen_calcSegmentBufferSize:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:5140   .text.qrcodegen_calcSegmentBufferSize:00000000 qrcodegen_calcSegmentBufferSize
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:5195   .text.qrcodegen_makeBytes:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:5201   .text.qrcodegen_makeBytes:00000000 qrcodegen_makeBytes
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:5295   .text.qrcodegen_makeNumeric:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:5301   .text.qrcodegen_makeNumeric:00000000 qrcodegen_makeNumeric
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:5545   .text.qrcodegen_makeAlphanumeric:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:5551   .text.qrcodegen_makeAlphanumeric:00000000 qrcodegen_makeAlphanumeric
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:5798   .text.qrcodegen_makeAlphanumeric:000000b0 $d
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:5803   .text.qrcodegen_encodeText:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:5809   .text.qrcodegen_encodeText:00000000 qrcodegen_encodeText
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:6033   .text.qrcodegen_makeEci:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:6039   .text.qrcodegen_makeEci:00000000 qrcodegen_makeEci
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:6191   .text.qrcodegen_makeEci:00000094 $d
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:6196   .text.qrcodegen_getMinFitVersion:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:6202   .text.qrcodegen_getMinFitVersion:00000000 qrcodegen_getMinFitVersion
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:6308   .text.qrcodegen_version2size:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:6314   .text.qrcodegen_version2size:00000000 qrcodegen_version2size
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:6346   .rodata.ECC_CODEWORDS_PER_BLOCK:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:6350   .rodata.ECC_CODEWORDS_PER_BLOCK:00000000 ECC_CODEWORDS_PER_BLOCK
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:6368   .rodata.NUM_ERROR_CORRECTION_BLOCKS:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:6372   .rodata.NUM_ERROR_CORRECTION_BLOCKS:00000000 NUM_ERROR_CORRECTION_BLOCKS
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:6387   .rodata.table.0:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:6391   .rodata.table.0:00000000 table.0
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:6397   .rodata.temp.1:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:6401   .rodata.temp.1:00000000 temp.1
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:6406   .rodata.temp.2:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:6410   .rodata.temp.2:00000000 temp.2
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:6415   .rodata.temp.3:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:6419   .rodata.temp.3:00000000 temp.3
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:6424   .rodata.temp.4:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s:6428   .rodata.temp.4:00000000 temp.4
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:3642   .text.applyMask:00000070 $d
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:3650   .text.applyMask:00000090 $t
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:3839   .text.applyMask:00000184 $d
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:3844   .text.drawFormatBits:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:3849   .text.drawFormatBits:00000000 drawFormatBits
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:4133   .text.drawFormatBits:0000011c $d
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:4138   .text.qrcodegen_encodeSegmentsAdvanced:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:4144   .text.qrcodegen_encodeSegmentsAdvanced:00000000 qrcodegen_encodeSegmentsAdvanced
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:4778   .text.qrcodegen_encodeBinary:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:4784   .text.qrcodegen_encodeBinary:00000000 qrcodegen_encodeBinary
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:4865   .text.qrcodegen_encodeSegments:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:4871   .text.qrcodegen_encodeSegments:00000000 qrcodegen_encodeSegments
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:4910   .text.qrcodegen_getModule:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:4916   .text.qrcodegen_getModule:00000000 qrcodegen_getModule
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:5000   .rodata.qrcodegen_isAlphanumeric.str1.4:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:5004   .text.qrcodegen_isAlphanumeric:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:5010   .text.qrcodegen_isAlphanumeric:00000000 qrcodegen_isAlphanumeric
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:5069   .text.qrcodegen_isAlphanumeric:00000020 $d
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:5074   .text.qrcodegen_isNumeric:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:5080   .text.qrcodegen_isNumeric:00000000 qrcodegen_isNumeric
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:5134   .text.qrcodegen_calcSegmentBufferSize:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:5140   .text.qrcodegen_calcSegmentBufferSize:00000000 qrcodegen_calcSegmentBufferSize
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:5195   .text.qrcodegen_makeBytes:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:5201   .text.qrcodegen_makeBytes:00000000 qrcodegen_makeBytes
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:5295   .text.qrcodegen_makeNumeric:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:5301   .text.qrcodegen_makeNumeric:00000000 qrcodegen_makeNumeric
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:5545   .text.qrcodegen_makeAlphanumeric:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:5551   .text.qrcodegen_makeAlphanumeric:00000000 qrcodegen_makeAlphanumeric
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:5798   .text.qrcodegen_makeAlphanumeric:000000b0 $d
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:5803   .text.qrcodegen_encodeText:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:5809   .text.qrcodegen_encodeText:00000000 qrcodegen_encodeText
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:6033   .text.qrcodegen_makeEci:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:6039   .text.qrcodegen_makeEci:00000000 qrcodegen_makeEci
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:6191   .text.qrcodegen_makeEci:00000094 $d
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:6196   .text.qrcodegen_getMinFitVersion:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:6202   .text.qrcodegen_getMinFitVersion:00000000 qrcodegen_getMinFitVersion
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:6308   .text.qrcodegen_version2size:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:6314   .text.qrcodegen_version2size:00000000 qrcodegen_version2size
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:6346   .rodata.ECC_CODEWORDS_PER_BLOCK:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:6350   .rodata.ECC_CODEWORDS_PER_BLOCK:00000000 ECC_CODEWORDS_PER_BLOCK
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:6368   .rodata.NUM_ERROR_CORRECTION_BLOCKS:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:6372   .rodata.NUM_ERROR_CORRECTION_BLOCKS:00000000 NUM_ERROR_CORRECTION_BLOCKS
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:6387   .rodata.table.0:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:6391   .rodata.table.0:00000000 table.0
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:6397   .rodata.temp.1:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:6401   .rodata.temp.1:00000000 temp.1
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:6406   .rodata.temp.2:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:6410   .rodata.temp.2:00000000 temp.2
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:6415   .rodata.temp.3:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:6419   .rodata.temp.3:00000000 temp.3
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:6424   .rodata.temp.4:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s:6428   .rodata.temp.4:00000000 temp.4
 
 UNDEFINED SYMBOLS
 memset
 memmove
 strchr
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrIjdTe.s 			page 165
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMTYISJ.s 			page 165
 
 
 memcpy

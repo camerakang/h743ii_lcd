@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
   29:lvgl/src/core/lv_indev.c ****  **********************/
   30:lvgl/src/core/lv_indev.c **** 
   31:lvgl/src/core/lv_indev.c **** /**********************
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 2
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 2
 
 
   32:lvgl/src/core/lv_indev.c ****  *  STATIC PROTOTYPES
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
   86:lvgl/src/core/lv_indev.c ****         /*The active object might be deleted even in the read function*/
   87:lvgl/src/core/lv_indev.c ****         indev_proc_reset_query_handler(indev_act);
   88:lvgl/src/core/lv_indev.c ****         indev_obj_act = NULL;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 3
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 3
 
 
   89:lvgl/src/core/lv_indev.c **** 
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  143:lvgl/src/core/lv_indev.c **** 
  144:lvgl/src/core/lv_indev.c **** lv_indev_type_t lv_indev_get_type(const lv_indev_t * indev)
  145:lvgl/src/core/lv_indev.c **** {
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 4
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 4
 
 
  146:lvgl/src/core/lv_indev.c ****     if(indev == NULL) return LV_INDEV_TYPE_NONE;
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  200:lvgl/src/core/lv_indev.c ****     indev->cursor = cur_obj;
  201:lvgl/src/core/lv_indev.c ****     lv_obj_set_parent(indev->cursor, lv_disp_get_layer_sys(indev->driver->disp));
  202:lvgl/src/core/lv_indev.c ****     lv_obj_set_pos(indev->cursor, indev->proc.types.pointer.act_point.x, indev->proc.types.pointer.
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 5
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 5
 
 
  203:lvgl/src/core/lv_indev.c ****     lv_obj_clear_flag(indev->cursor, LV_OBJ_FLAG_CLICKABLE);
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  257:lvgl/src/core/lv_indev.c **** 
  258:lvgl/src/core/lv_indev.c **** lv_obj_t * lv_indev_get_scroll_obj(const lv_indev_t * indev)
  259:lvgl/src/core/lv_indev.c **** {
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 6
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 6
 
 
  260:lvgl/src/core/lv_indev.c ****     if(indev == NULL) return NULL;
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  314:lvgl/src/core/lv_indev.c ****         uint32_t child_cnt = lv_obj_get_child_cnt(obj);
  315:lvgl/src/core/lv_indev.c **** 
  316:lvgl/src/core/lv_indev.c ****         /*If a child matches use it*/
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 7
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 7
 
 
  317:lvgl/src/core/lv_indev.c ****         for(i = child_cnt - 1; i >= 0; i--) {
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  371:lvgl/src/core/lv_indev.c ****     if(i->cursor != NULL &&
  372:lvgl/src/core/lv_indev.c ****        (i->proc.types.pointer.last_point.x != data->point.x || i->proc.types.pointer.last_point.y !
  373:lvgl/src/core/lv_indev.c ****         lv_obj_set_pos(i->cursor, data->point.x, data->point.y);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 8
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 8
 
 
  374:lvgl/src/core/lv_indev.c ****     }
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  428:lvgl/src/core/lv_indev.c ****     if(data->state == LV_INDEV_STATE_PRESSED && prev_state == LV_INDEV_STATE_RELEASED) {
  429:lvgl/src/core/lv_indev.c ****         LV_LOG_INFO("%" LV_PRIu32 " key is pressed", data->key);
  430:lvgl/src/core/lv_indev.c ****         i->proc.pr_timestamp = lv_tick_get();
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 9
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 9
 
 
  431:lvgl/src/core/lv_indev.c **** 
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  485:lvgl/src/core/lv_indev.c ****         }
  486:lvgl/src/core/lv_indev.c ****         /*Long press repeated time has elapsed?*/
  487:lvgl/src/core/lv_indev.c ****         else if(i->proc.long_pr_sent != 0 &&
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 10
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 10
 
 
  488:lvgl/src/core/lv_indev.c ****                 lv_tick_elaps(i->proc.longpr_rep_timestamp) > i->driver->long_press_repeat_time) {
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  542:lvgl/src/core/lv_indev.c ****  * Process a new point from LV_INDEV_TYPE_ENCODER input device
  543:lvgl/src/core/lv_indev.c ****  * @param i pointer to an input device
  544:lvgl/src/core/lv_indev.c ****  * @param data pointer to the data read from the input device
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 11
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 11
 
 
  545:lvgl/src/core/lv_indev.c ****  */
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  599:lvgl/src/core/lv_indev.c ****         }
  600:lvgl/src/core/lv_indev.c ****         else if(data->key == LV_KEY_ESC) {
  601:lvgl/src/core/lv_indev.c ****             /*Send the ESC as a normal KEY*/
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 12
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 12
 
 
  602:lvgl/src/core/lv_indev.c ****             lv_group_send_data(g, LV_KEY_ESC);
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  656:lvgl/src/core/lv_indev.c ****             }
  657:lvgl/src/core/lv_indev.c ****             else if(data->key == LV_KEY_RIGHT) {
  658:lvgl/src/core/lv_indev.c ****                 /*emulate encoder right*/
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 13
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 13
 
 
  659:lvgl/src/core/lv_indev.c ****                 data->enc_diff++;
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  713:lvgl/src/core/lv_indev.c ****                 lv_group_set_editing(g, true); /*Set edit mode*/
  714:lvgl/src/core/lv_indev.c ****             }
  715:lvgl/src/core/lv_indev.c ****         }
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 14
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 14
 
 
  716:lvgl/src/core/lv_indev.c **** 
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  770:lvgl/src/core/lv_indev.c ****     if(i->btn_points == NULL) {
  771:lvgl/src/core/lv_indev.c ****         LV_LOG_WARN("btn_points is NULL");
  772:lvgl/src/core/lv_indev.c ****         return;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 15
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 15
 
 
  773:lvgl/src/core/lv_indev.c ****     }
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  827:lvgl/src/core/lv_indev.c ****     if(indev_obj_act == NULL) {
  828:lvgl/src/core/lv_indev.c ****         indev_obj_act = lv_indev_search_obj(lv_disp_get_layer_sys(disp), &proc->types.pointer.act_p
  829:lvgl/src/core/lv_indev.c ****         if(indev_obj_act == NULL) indev_obj_act = lv_indev_search_obj(lv_disp_get_layer_top(disp),
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 16
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 16
 
 
  830:lvgl/src/core/lv_indev.c ****                                                                           &proc->types.pointer.act_
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  884:lvgl/src/core/lv_indev.c **** 
  885:lvgl/src/core/lv_indev.c ****             /*Call the ancestor's event handler about the press*/
  886:lvgl/src/core/lv_indev.c ****             lv_event_send(indev_obj_act, LV_EVENT_PRESSED, indev_act);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 17
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 17
 
 
  887:lvgl/src/core/lv_indev.c ****             if(indev_reset_check(proc)) return;
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  941:lvgl/src/core/lv_indev.c ****         }
  942:lvgl/src/core/lv_indev.c ****     }
  943:lvgl/src/core/lv_indev.c **** }
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 18
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 18
 
 
  944:lvgl/src/core/lv_indev.c **** 
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  998:lvgl/src/core/lv_indev.c **** 
  999:lvgl/src/core/lv_indev.c ****             if(angle != 0 || zoom != LV_IMG_ZOOM_NONE) {
 1000:lvgl/src/core/lv_indev.c ****                 angle = -angle;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 19
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 19
 
 
 1001:lvgl/src/core/lv_indev.c ****                 zoom = (256 * 256) / zoom;
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
   52 0012 63F30002 		bfi	r2, r3, #0, #1
   53 0016 4271     		strb	r2, [r0, #5]
 1031:lvgl/src/core/lv_indev.c ****         indev->proc.pr_timestamp                    = 0;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 20
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 20
 
 
   54              		.loc 1 1031 9 is_stmt 1 view .LVU12
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
   96 0046 00BF     		.align	2
   97              	.L3:
   98 0048 00000000 		.word	.LANCHOR0
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 21
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 21
 
 
   99              		.cfi_endproc
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
 1088:lvgl/src/core/lv_indev.c ****                 /*If the prev. object also wasn't in a group defocus it*/
 1089:lvgl/src/core/lv_indev.c ****                 if(g_prev == NULL) {
 1090:lvgl/src/core/lv_indev.c ****                     lv_event_send(proc->types.pointer.last_pressed, LV_EVENT_DEFOCUSED, indev_act);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 22
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 22
 
 
 1091:lvgl/src/core/lv_indev.c ****                     if(indev_reset_check(proc)) return;
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
 1145:lvgl/src/core/lv_indev.c **** 
 1146:lvgl/src/core/lv_indev.c ****         proc->types.pointer.gesture_sent = 1;
 1147:lvgl/src/core/lv_indev.c **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 23
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 23
 
 
 1148:lvgl/src/core/lv_indev.c ****         if(LV_ABS(proc->types.pointer.gesture_sum.x) > LV_ABS(proc->types.pointer.gesture_sum.y)) {
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  134              		.align	2
  135              	.L7:
  136 0014 00000000 		.word	.LANCHOR0
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 24
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 24
 
 
  137              		.cfi_endproc
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  182 001a FFF7FEFF 		bl	lv_obj_get_group
  183              	.LVL6:
  184 001e 0546     		mov	r5, r0
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 25
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 25
 
 
  185              	.LVL7:
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  223              		.loc 1 1096 21 is_stmt 1 view .LVU69
 1096:lvgl/src/core/lv_indev.c ****                 }
  224              		.loc 1 1096 24 is_stmt 0 view .LVU70
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 26
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 26
 
 
  225 0044 2046     		mov	r0, r4
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
 1064:lvgl/src/core/lv_indev.c ****             if(indev_reset_check(proc)) return;
  266              		.loc 1 1064 13 is_stmt 0 view .LVU84
  267 006e FFF7FEFF 		bl	lv_group_focus_obj
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 27
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 27
 
 
  268              	.LVL18:
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
 1075:lvgl/src/core/lv_indev.c ****         }
  310              		.loc 1 1075 16 is_stmt 0 view .LVU97
  311 00a4 2046     		mov	r0, r4
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 28
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 28
 
 
  312 00a6 FFF7FEFF 		bl	indev_reset_check
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
 1091:lvgl/src/core/lv_indev.c ****                 }
  355              		.loc 1 1091 24 is_stmt 0 view .LVU109
  356 00da 2046     		mov	r0, r4
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 29
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 29
 
 
  357 00dc FFF7FEFF 		bl	indev_reset_check
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
 1121:lvgl/src/core/lv_indev.c ****     if(proc->types.pointer.gesture_sent) return;
  405              		.loc 1 1121 7 view .LVU118
  406 0002 03B1     		cbz	r3, .L41
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 30
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 30
 
 
  407 0004 7047     		bx	lr
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  448 002c 0028     		cmp	r0, #0
  449 002e F3D1     		bne	.L30
  450              	.L29:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 31
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 31
 
 
 1131:lvgl/src/core/lv_indev.c **** 
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  490 0066 11FA83F3 		uxtah	r3, r1, r3
  491 006a 1BB2     		sxth	r3, r3
  492 006c AB87     		strh	r3, [r5, #60]	@ movhi
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 32
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 32
 
 
 1141:lvgl/src/core/lv_indev.c **** 
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
 1149:lvgl/src/core/lv_indev.c ****                 proc->types.pointer.gesture_dir = LV_DIR_RIGHT;
  533              		.loc 1 1149 13 is_stmt 1 view .LVU161
 1149:lvgl/src/core/lv_indev.c ****                 proc->types.pointer.gesture_dir = LV_DIR_RIGHT;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 33
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 33
 
 
  534              		.loc 1 1149 15 is_stmt 0 view .LVU162
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  576 00f8 85F84030 		strb	r3, [r5, #64]
  577 00fc E5E7     		b	.L35
  578              	.L36:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 34
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 34
 
 
 1158:lvgl/src/core/lv_indev.c ****         }
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  961:lvgl/src/core/lv_indev.c ****     lv_obj_t * scroll_obj = proc->types.pointer.scroll_obj;
  627              		.loc 1 961 40 is_stmt 0 view .LVU183
  628 0010 686A     		ldr	r0, [r5, #36]
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 35
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 35
 
 
  961:lvgl/src/core/lv_indev.c ****     lv_obj_t * scroll_obj = proc->types.pointer.scroll_obj;
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  984:lvgl/src/core/lv_indev.c ****         proc->longpr_rep_timestamp  = 0;
  666              		.loc 1 984 37 is_stmt 0 view .LVU201
  667 0036 6B64     		str	r3, [r5, #68]
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 36
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 36
 
 
  985:lvgl/src/core/lv_indev.c **** 
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  953:lvgl/src/core/lv_indev.c **** 
  706              		.loc 1 953 9 is_stmt 1 view .LVU218
  953:lvgl/src/core/lv_indev.c **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 37
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 37
 
 
  707              		.loc 1 953 12 is_stmt 0 view .LVU219
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  746 008a 1868     		ldr	r0, [r3]
  747 008c FFF7FEFF 		bl	lv_event_send
  748              	.LVL57:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 38
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 38
 
 
  976:lvgl/src/core/lv_indev.c ****             }
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  791              		.loc 1 993 18 is_stmt 1 view .LVU246
  792 00c4 8CB1     		cbz	r4, .L57
  994:lvgl/src/core/lv_indev.c ****                 zoom *= (lv_obj_get_style_transform_zoom(parent, 0) / 256);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 39
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 39
 
 
  793              		.loc 1 994 17 view .LVU247
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
   50:lvgl/src/core/lv_obj_style_gen.h **** {
   51:lvgl/src/core/lv_obj_style_gen.h ****     lv_style_value_t v = lv_obj_get_style_prop(obj, part, LV_STYLE_ALIGN);
   52:lvgl/src/core/lv_obj_style_gen.h ****     return (lv_align_t)v.num;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 40
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 40
 
 
   53:lvgl/src/core/lv_obj_style_gen.h **** }
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  814              		.loc 1 994 23 view .LVU254
  815 00d4 36B2     		sxth	r6, r6
  816              	.LVL68:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 41
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 41
 
 
  995:lvgl/src/core/lv_indev.c ****                 parent = lv_obj_get_parent(parent);
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  857 00f8 FFF7FEFF 		bl	_lv_indev_scroll_throw_handler
  858              	.LVL72:
 1013:lvgl/src/core/lv_indev.c ****     }
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 42
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 42
 
 
  859              		.loc 1 1013 9 view .LVU269
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  903              	.LVL80:
  904 0134 DEE7     		b	.L47
  905              	.L60:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 43
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 43
 
 
  906 0136 00BF     		.align	2
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  952              		.loc 1 400 41 is_stmt 0 view .LVU289
  953 0014 6379     		ldrb	r3, [r4, #5]	@ zero_extendqisi2
  954 0016 6FF3C303 		bfc	r3, #3, #1
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 44
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 44
 
 
  955 001a 6371     		strb	r3, [r4, #5]
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  991 003a 8021     		movs	r1, #128
  992 003c FFF7FEFF 		bl	lv_obj_has_state
  993              	.LVL85:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 45
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 45
 
 
  994 0040 0746     		mov	r7, r0
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  1030 005a 13B9     		cbnz	r3, .L67
  517:lvgl/src/core/lv_indev.c ****         LV_LOG_INFO("%" LV_PRIu32 " key is released", data->key);
  1031              		.loc 1 517 60 discriminator 2 view .LVU326
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 46
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 46
 
 
  1032 005c 012A     		cmp	r2, #1
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  439:lvgl/src/core/lv_indev.c ****             lv_group_set_editing(g, false); /*Editing is not used by KEYPAD is be sure it is disabl
  1072              		.loc 1 439 14 is_stmt 1 view .LVU341
  439:lvgl/src/core/lv_indev.c ****             lv_group_set_editing(g, false); /*Editing is not used by KEYPAD is be sure it is disabl
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 47
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 47
 
 
  1073              		.loc 1 439 16 is_stmt 0 view .LVU342
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  1113 00b4 201D     		adds	r0, r4, #4
  1114 00b6 FFF7FEFF 		bl	indev_reset_check
  1115              	.LVL98:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 48
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 48
 
 
  436:lvgl/src/core/lv_indev.c ****         }
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  1157 00ec 6C4B     		ldr	r3, .L94+4
  1158 00ee 1A68     		ldr	r2, [r3]
  1159 00f0 0121     		movs	r1, #1
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 49
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 49
 
 
  1160 00f2 6A4B     		ldr	r3, .L94
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  460:lvgl/src/core/lv_indev.c ****             }
  1203              		.loc 1 460 19 view .LVU381
  1204 012c 0028     		cmp	r0, #0
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 50
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 50
 
 
  1205 012e 98D0     		beq	.L67
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  1244              		.loc 1 490 13 is_stmt 1 view .LVU396
  490:lvgl/src/core/lv_indev.c **** 
  1245              		.loc 1 490 44 is_stmt 0 view .LVU397
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 51
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 51
 
 
  1246 015a FFF7FEFF 		bl	lv_tick_get
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  473:lvgl/src/core/lv_indev.c ****             if(indev_reset_check(&i->proc)) return;
  1286              		.loc 1 473 13 view .LVU412
  1287 0188 444B     		ldr	r3, .L94
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 52
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 52
 
 
  1288 018a 1868     		ldr	r0, [r3]
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  1327              		.loc 1 481 46 view .LVU427
  1328 01be E064     		str	r0, [r4, #76]
  482:lvgl/src/core/lv_indev.c ****                 if(indev_reset_check(&i->proc)) return;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 53
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 53
 
 
  1329              		.loc 1 482 17 is_stmt 1 view .LVU428
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  501:lvgl/src/core/lv_indev.c ****             }
  1374              		.loc 1 501 17 view .LVU438
  501:lvgl/src/core/lv_indev.c ****             }
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 54
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 54
 
 
  1375              		.loc 1 501 20 is_stmt 0 view .LVU439
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  535:lvgl/src/core/lv_indev.c ****         i->proc.long_pr_sent = 0;
  1416              		.loc 1 535 9 is_stmt 1 view .LVU453
  535:lvgl/src/core/lv_indev.c ****         i->proc.long_pr_sent = 0;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 55
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 55
 
 
  1417              		.loc 1 535 30 is_stmt 0 view .LVU454
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  1458 0268 0D4B     		ldr	r3, .L94+4
  1459 026a 1A68     		ldr	r2, [r3]
  1460 026c 0421     		movs	r1, #4
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 56
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 56
 
 
  1461 026e 0B4B     		ldr	r3, .L94
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  1509              		.cfi_startproc
  1510              		@ args = 0, pretend = 0, frame = 0
  1511              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 57
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 57
 
 
  547:lvgl/src/core/lv_indev.c ****     if(data->state == LV_INDEV_STATE_PRESSED && i->proc.wait_until_release) return;
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  1551              		.loc 1 554 41 is_stmt 0 view .LVU490
  1552 0028 2372     		strb	r3, [r4, #8]
  1553              	.L99:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 58
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 58
 
 
  559:lvgl/src/core/lv_indev.c ****     i->proc.types.keypad.last_state = data->state;
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  570:lvgl/src/core/lv_indev.c ****         data->enc_diff = 0;
  1589              		.loc 1 570 12 is_stmt 0 view .LVU510
  1590 0044 AB7B     		ldrb	r3, [r5, #14]	@ zero_extendqisi2
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 59
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 59
 
 
  570:lvgl/src/core/lv_indev.c ****         data->enc_diff = 0;
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  720:lvgl/src/core/lv_indev.c **** 
  1629              		.loc 1 720 5 is_stmt 1 view .LVU527
  720:lvgl/src/core/lv_indev.c **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 60
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 60
 
 
  1630              		.loc 1 720 19 is_stmt 0 view .LVU528
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  1669 0092 0A29     		cmp	r1, #10
  1670 0094 0ED0     		beq	.L153
  592:lvgl/src/core/lv_indev.c ****             /*emulate encoder left*/
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 61
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 61
 
 
  1671              		.loc 1 592 14 is_stmt 1 view .LVU544
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  1711              		.loc 1 587 13 is_stmt 1 discriminator 6 view .LVU558
  587:lvgl/src/core/lv_indev.c ****                 lv_event_send(indev_obj_act, LV_EVENT_PRESSED, indev_act);
  1712              		.loc 1 587 16 is_stmt 0 discriminator 6 view .LVU559
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 62
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 62
 
 
  1713 00c2 3046     		mov	r0, r6
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  1757              		.loc 1 594 13 is_stmt 1 view .LVU569
  594:lvgl/src/core/lv_indev.c ****         }
  1758              		.loc 1 594 17 is_stmt 0 view .LVU570
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 63
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 63
 
 
  1759 00fc B5F90C30 		ldrsh	r3, [r5, #12]
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  606:lvgl/src/core/lv_indev.c ****         }
  1801              		.loc 1 606 15 view .LVU583
  1802 0136 0028     		cmp	r0, #0
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 64
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 64
 
 
  1803 0138 97D0     		beq	.L105
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  1841              		.loc 1 649 20 is_stmt 0 view .LVU599
  1842 0164 6968     		ldr	r1, [r5, #4]
  649:lvgl/src/core/lv_indev.c ****                 lv_event_send(indev_obj_act, LV_EVENT_LONG_PRESSED_REPEAT, indev_act);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 65
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 65
 
 
  1843              		.loc 1 649 15 view .LVU600
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  620:lvgl/src/core/lv_indev.c **** 
  1882              		.loc 1 620 42 view .LVU616
  1883 0196 E064     		str	r0, [r4, #76]
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 66
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 66
 
 
  622:lvgl/src/core/lv_indev.c ****                 bool editable_or_scrollable = lv_obj_is_editable(indev_obj_act) ||
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  630:lvgl/src/core/lv_indev.c ****                         lv_group_set_editing(g, lv_group_get_editing(g) ? false : true); /*Toggle e
  1923              		.loc 1 630 25 view .LVU632
  631:lvgl/src/core/lv_indev.c ****                         lv_obj_clear_state(indev_obj_act, LV_STATE_PRESSED);    /*Remove the presse
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 67
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 67
 
 
  1924              		.loc 1 631 25 view .LVU633
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  1969              		.loc 1 638 21 is_stmt 1 view .LVU642
  638:lvgl/src/core/lv_indev.c ****                 }
  1970              		.loc 1 638 24 is_stmt 0 view .LVU643
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 68
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 68
 
 
  1971 0200 201D     		adds	r0, r4, #4
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  2013 0238 201D     		adds	r0, r4, #4
  2014 023a FFF7FEFF 		bl	indev_reset_check
  2015              	.LVL192:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 69
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 69
 
 
  663:lvgl/src/core/lv_indev.c ****             }
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  678:lvgl/src/core/lv_indev.c ****                 lv_event_send(indev_obj_act, LV_EVENT_RELEASED, indev_act);
  2055              		.loc 1 678 15 is_stmt 0 discriminator 6 view .LVU671
  2056 0262 002B     		cmp	r3, #0
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 70
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 70
 
 
  2057 0264 3AD1     		bne	.L119
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  2098 029c 044B     		ldr	r3, .L168
  2099 029e 1868     		ldr	r0, [r3]
  2100 02a0 FFF7FEFF 		bl	lv_event_send
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 71
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 71
 
 
  2101              	.LVL202:
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  2146              		.loc 1 690 21 is_stmt 0 view .LVU693
  2147 02dc 3046     		mov	r0, r6
  2148 02de FFF7FEFF 		bl	lv_group_get_editing
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 72
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 72
 
 
  2149              	.LVL209:
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  2191 031c 1868     		ldr	r0, [r3]
  2192 031e FFF7FEFF 		bl	lv_event_send
  2193              	.LVL214:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 73
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 73
 
 
  697:lvgl/src/core/lv_indev.c **** 
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  2236 0360 344B     		ldr	r3, .L170
  2237 0362 1868     		ldr	r0, [r3]
  2238 0364 FFF7FEFF 		bl	lv_obj_clear_state
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 74
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 74
 
 
  2239              	.LVL221:
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  728:lvgl/src/core/lv_indev.c ****                 for(s = 0; s < -data->enc_diff; s++) {
  2276              		.loc 1 728 15 view .LVU735
  2277 038a 002B     		cmp	r3, #0
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 75
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 75
 
 
  2278 038c 14DB     		blt	.L166
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  729:lvgl/src/core/lv_indev.c ****                     lv_group_send_data(g, LV_KEY_LEFT);
  2318              		.loc 1 729 28 is_stmt 1 discriminator 1 view .LVU750
  729:lvgl/src/core/lv_indev.c ****                     lv_group_send_data(g, LV_KEY_LEFT);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 76
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 76
 
 
  2319              		.loc 1 729 37 is_stmt 0 discriminator 1 view .LVU751
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  745:lvgl/src/core/lv_indev.c ****                 for(s = 0; s < -data->enc_diff; s++) {
  2357              		.loc 1 745 15 view .LVU768
  2358 03e2 002B     		cmp	r3, #0
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 77
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 77
 
 
  2359 03e4 13DB     		blt	.L167
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  2398              		.loc 1 746 28 is_stmt 1 discriminator 1 view .LVU783
  746:lvgl/src/core/lv_indev.c ****                     lv_group_focus_prev(g);
  2399              		.loc 1 746 37 is_stmt 0 discriminator 1 view .LVU784
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 78
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 78
 
 
  2400 0410 B5F90C30 		ldrsh	r3, [r5, #12]
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  2446              		@ frame_needed = 0, uses_anonymous_args = 0
  124:lvgl/src/core/lv_indev.c ****     uint8_t enable = en ? 0 : 1;
  2447              		.loc 1 124 1 is_stmt 0 view .LVU795
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 79
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 79
 
 
  2448 0000 10B5     		push	{r4, lr}
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  2487              		.loc 1 134 13 is_stmt 1 view .LVU810
  134:lvgl/src/core/lv_indev.c ****         }
  2488              		.loc 1 134 17 is_stmt 0 view .LVU811
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 80
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 80
 
 
  2489 0022 FFF7FEFF 		bl	lv_indev_get_next
@@ -4798,7 +4798,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  2541              		@ link register save eliminated.
  146:lvgl/src/core/lv_indev.c **** 
  2542              		.loc 1 146 5 view .LVU818
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 81
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 81
 
 
  146:lvgl/src/core/lv_indev.c **** 
@@ -4858,7 +4858,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  2587              		.loc 1 154 9 is_stmt 1 view .LVU830
  154:lvgl/src/core/lv_indev.c ****         if(indev_act == indev) indev_obj_act = NULL;
  2588              		.loc 1 154 33 is_stmt 0 view .LVU831
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 82
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 82
 
 
  2589 0008 4279     		ldrb	r2, [r0, #5]	@ zero_extendqisi2
@@ -4918,7 +4918,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  2629 002e 14B1     		cbz	r4, .L188
  157:lvgl/src/core/lv_indev.c ****                 indev->proc.types.pointer.last_pressed = NULL;
  2630              		.loc 1 157 56 discriminator 1 view .LVU846
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 83
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 83
 
 
  2631 0030 5A6B     		ldr	r2, [r3, #52]
@@ -4978,7 +4978,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  2670              	.L185:
  2671              	.LBB20:
  169:lvgl/src/core/lv_indev.c ****         while(i) {
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 84
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 84
 
 
  2672              		.loc 1 169 9 is_stmt 1 view .LVU862
@@ -5038,7 +5038,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  2710 0078 F2D8     		bhi	.L194
  173:lvgl/src/core/lv_indev.c ****                     i->proc.types.pointer.last_pressed = NULL;
  2711              		.loc 1 173 17 is_stmt 1 view .LVU879
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 85
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 85
 
 
  173:lvgl/src/core/lv_indev.c ****                     i->proc.types.pointer.last_pressed = NULL;
@@ -5098,7 +5098,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  2750              		.loc 1 185 9 is_stmt 1 view .LVU895
  185:lvgl/src/core/lv_indev.c ****     }
  2751              		.loc 1 185 23 is_stmt 0 view .LVU896
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 86
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 86
 
 
  2752 009e 034B     		ldr	r3, .L205+4
@@ -5158,7 +5158,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  2798              		.loc 1 193 40 is_stmt 0 view .LVU906
  2799 0012 FFF7FEFF 		bl	lv_tick_get
  2800              	.LVL266:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 87
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 87
 
 
  193:lvgl/src/core/lv_indev.c **** }
@@ -5218,7 +5218,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  2846 000e 0D46     		mov	r5, r1
  200:lvgl/src/core/lv_indev.c ****     lv_obj_set_parent(indev->cursor, lv_disp_get_layer_sys(indev->driver->disp));
  2847              		.loc 1 200 5 is_stmt 1 view .LVU918
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 88
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 88
 
 
  200:lvgl/src/core/lv_indev.c ****     lv_obj_set_parent(indev->cursor, lv_disp_get_layer_sys(indev->driver->disp));
@@ -5278,7 +5278,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  2894              		.cfi_startproc
  2895              		@ args = 0, pretend = 0, frame = 0
  2896              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 89
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 89
 
 
  2897              		@ link register save eliminated.
@@ -5338,7 +5338,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  219:lvgl/src/core/lv_indev.c **** 
  2941              		.loc 1 219 1 view .LVU941
  2942 0008 7047     		bx	lr
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 90
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 90
 
 
  2943              	.L217:
@@ -5398,7 +5398,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  2985              		.loc 1 230 18 is_stmt 0 view .LVU955
  2986 0014 4B80     		strh	r3, [r1, #2]	@ movhi
  2987 0016 7047     		bx	lr
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 91
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 91
 
 
  2988              	.L222:
@@ -5458,7 +5458,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  240:lvgl/src/core/lv_indev.c **** }
  3030              		.loc 1 240 37 is_stmt 0 view .LVU970
  3031 0000 90F84400 		ldrb	r0, [r0, #68]	@ zero_extendqisi2
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 92
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 92
 
 
  3032              	.LVL280:
@@ -5518,7 +5518,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  3078              		.section	.text.lv_indev_get_scroll_dir,"ax",%progbits
  3079              		.align	1
  3080              		.global	lv_indev_get_scroll_dir
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 93
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 93
 
 
  3081              		.syntax unified
@@ -5578,7 +5578,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  3123 001c 0020     		movs	r0, #0
  3124              	.LVL290:
  256:lvgl/src/core/lv_indev.c **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 94
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 94
 
 
  3125              		.loc 1 256 1 view .LVU995
@@ -5638,7 +5638,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  3169              		.loc 1 261 108 view .LVU1007
  3170 0014 0020     		movs	r0, #0
  3171              	.LVL294:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 95
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 95
 
 
  263:lvgl/src/core/lv_indev.c **** 
@@ -5698,7 +5698,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  3214 0014 B0F91820 		ldrsh	r2, [r0, #24]
  273:lvgl/src/core/lv_indev.c ****         point->y = indev->proc.types.pointer.vect.y;
  3215              		.loc 1 273 18 view .LVU1022
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 96
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 96
 
 
  3216 0018 0A80     		strh	r2, [r1]	@ movhi
@@ -5758,7 +5758,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  3264              	lv_indev_get_obj_act:
  3265              	.LFB183:
  285:lvgl/src/core/lv_indev.c ****     return indev_obj_act;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 97
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 97
 
 
  3266              		.loc 1 285 1 is_stmt 1 view -0
@@ -5818,7 +5818,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  3314              		.section	.text.lv_indev_search_obj,"ax",%progbits
  3315              		.align	1
  3316              		.global	lv_indev_search_obj
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 98
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 98
 
 
  3317              		.syntax unified
@@ -5878,7 +5878,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  3361              		.loc 1 309 5 view .LVU1053
  309:lvgl/src/core/lv_indev.c **** 
  3362              		.loc 1 309 24 is_stmt 0 view .LVU1054
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 99
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 99
 
 
  3363 0020 01A9     		add	r1, sp, #4
@@ -5938,7 +5938,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  318:lvgl/src/core/lv_indev.c ****             found_p = lv_indev_search_obj(child, &p_trans);
  3404              		.loc 1 318 35 is_stmt 0 view .LVU1068
  3405 0050 AB68     		ldr	r3, [r5, #8]
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 100
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 100
 
 
  318:lvgl/src/core/lv_indev.c ****             found_p = lv_indev_search_obj(child, &p_trans);
@@ -5998,7 +5998,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  304:lvgl/src/core/lv_indev.c **** 
  3447              		.loc 1 304 57 view .LVU1082
  3448 0070 0023     		movs	r3, #0
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 101
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 101
 
 
  3449 0072 FAE7     		b	.L246
@@ -6058,7 +6058,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  3493 000c 13F0080F 		tst	r3, #8
  3494 0010 40F08980 		bne	.L255
  823:lvgl/src/core/lv_indev.c ****     bool new_obj_searched = false;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 102
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 102
 
 
  3495              		.loc 1 823 5 is_stmt 1 view .LVU1095
@@ -6118,7 +6118,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  3532 003a B4F90630 		ldrsh	r3, [r4, #6]
  857:lvgl/src/core/lv_indev.c **** 
  3533              		.loc 1 857 42 view .LVU1113
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 103
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 103
 
 
  3534 003e E381     		strh	r3, [r4, #14]	@ movhi
@@ -6178,7 +6178,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  3572 0062 FFF7FEFF 		bl	lv_tick_get
  3573              	.LVL325:
  873:lvgl/src/core/lv_indev.c ****             proc->long_pr_sent                 = 0;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 104
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 104
 
 
  3574              		.loc 1 873 48 view .LVU1130
@@ -6238,7 +6238,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  3610              		.loc 1 882 48 is_stmt 0 view .LVU1148
  3611 009c A382     		strh	r3, [r4, #20]	@ movhi
  883:lvgl/src/core/lv_indev.c **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 105
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 105
 
 
  3612              		.loc 1 883 13 is_stmt 1 view .LVU1149
@@ -6298,7 +6298,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  3652              		.loc 1 899 5 is_stmt 1 view .LVU1163
  899:lvgl/src/core/lv_indev.c ****     proc->types.pointer.vect.y = proc->types.pointer.act_point.y - proc->types.pointer.last_point.y
  3653              		.loc 1 899 63 is_stmt 0 view .LVU1164
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 106
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 106
 
 
  3654 00d2 A288     		ldrh	r2, [r4, #4]
@@ -6358,7 +6358,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  905:lvgl/src/core/lv_indev.c **** 
  3692              		.loc 1 905 5 is_stmt 1 view .LVU1181
  905:lvgl/src/core/lv_indev.c **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 107
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 107
 
 
  3693              		.loc 1 905 47 is_stmt 0 view .LVU1182
@@ -6418,7 +6418,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  3733 012a FFF7FEFF 		bl	lv_disp_get_layer_sys
  3734              	.LVL334:
  3735 012e 261D     		adds	r6, r4, #4
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 108
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 108
 
 
  3736 0130 3146     		mov	r1, r6
@@ -6478,7 +6478,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  851:lvgl/src/core/lv_indev.c ****     }
  3775              		.loc 1 851 11 view .LVU1212
  3776 015c 0028     		cmp	r0, #0
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 109
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 109
 
 
  3777 015e 3FF464AF 		beq	.L260
@@ -6538,7 +6538,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  3821 01a0 FFF7FEFF 		bl	lv_indev_search_obj
  3822              	.LVL346:
  838:lvgl/src/core/lv_indev.c ****         if(indev_obj_act == NULL) indev_obj_act = lv_indev_search_obj(lv_disp_get_layer_top(disp),
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 110
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 110
 
 
  3823              		.loc 1 838 23 view .LVU1223
@@ -6598,7 +6598,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  3865 01d6 0132     		adds	r2, r2, #1
  3866 01d8 89E7     		b	.L264
  3867              	.L271:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 111
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 111
 
 
  903:lvgl/src/core/lv_indev.c **** 
@@ -6658,7 +6658,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  3907 0206 8ED1     		bne	.L255
  934:lvgl/src/core/lv_indev.c ****             /*Call the ancestor's event handler about the long press repeat if enough time elapsed*
  3908              		.loc 1 934 73 discriminator 1 view .LVU1251
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 112
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 112
 
 
  3909 0208 6378     		ldrb	r3, [r4, #1]	@ zero_extendqisi2
@@ -6718,7 +6718,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  3949              		.loc 1 919 73 discriminator 1 view .LVU1265
  3950 0240 6378     		ldrb	r3, [r4, #1]	@ zero_extendqisi2
  919:lvgl/src/core/lv_indev.c ****             /*Call the ancestor's event handler about the long press if enough time elapsed*/
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 113
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 113
 
 
  3951              		.loc 1 919 51 discriminator 1 view .LVU1266
@@ -6778,7 +6778,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  3991              		.loc 1 929 44 view .LVU1280
  3992 027c A064     		str	r0, [r4, #72]
  3993 027e C0E7     		b	.L266
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 114
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 114
 
 
  3994              	.L278:
@@ -6838,7 +6838,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  4039              		.loc 1 344 44 view .LVU1291
  4040 0014 E082     		strh	r0, [r4, #22]	@ movhi
  346:lvgl/src/core/lv_indev.c ****         data->point.x = disp->driver->hor_res - data->point.x - 1;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 115
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 115
 
 
  4041              		.loc 1 346 5 is_stmt 1 view .LVU1292
@@ -6898,7 +6898,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  4078              		.loc 1 348 23 view .LVU1309
  4079 003e 6B80     		strh	r3, [r5, #2]	@ movhi
  4080              	.L280:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 116
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 116
 
 
  350:lvgl/src/core/lv_indev.c ****         lv_coord_t tmp = data->point.y;
@@ -6958,7 +6958,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  4118              	.LBE24:
  357:lvgl/src/core/lv_indev.c ****         LV_LOG_WARN("X is %d which is smaller than zero", (int)data->point.x);
  4119              		.loc 1 357 5 is_stmt 1 view .LVU1327
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 117
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 117
 
 
  358:lvgl/src/core/lv_indev.c ****     }
@@ -7018,7 +7018,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  372:lvgl/src/core/lv_indev.c ****         lv_obj_set_pos(i->cursor, data->point.x, data->point.y);
  4152              		.loc 1 372 61 discriminator 1 view .LVU1350
  4153 007a 2269     		ldr	r2, [r4, #16]
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 118
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 118
 
 
  4154 007c 2B68     		ldr	r3, [r5]
@@ -7078,7 +7078,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  4190              		.loc 1 388 1 view .LVU1368
  4191 00a6 38BD     		pop	{r3, r4, r5, pc}
  4192              	.LVL373:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 119
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 119
 
 
  4193              	.L286:
@@ -7138,7 +7138,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  4240 000c 8A68     		ldr	r2, [r1, #8]
  775:lvgl/src/core/lv_indev.c ****     lv_coord_t y = i->btn_points[data->btn_id].y;
  4241              		.loc 1 775 33 view .LVU1378
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 120
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 120
 
 
  4242 000e 03EB8201 		add	r1, r3, r2, lsl #2
@@ -7198,7 +7198,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  802:lvgl/src/core/lv_indev.c ****     else indev_proc_release(&i->proc);
  4278              		.loc 1 802 5 is_stmt 1 view .LVU1397
  802:lvgl/src/core/lv_indev.c ****     else indev_proc_release(&i->proc);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 121
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 121
 
 
  4279              		.loc 1 802 12 is_stmt 0 view .LVU1398
@@ -7258,7 +7258,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  4317              		.loc 1 791 44 discriminator 1 view .LVU1414
  4318 005c B0F91230 		ldrsh	r3, [r0, #18]
  790:lvgl/src/core/lv_indev.c ****            i->proc.types.pointer.last_point.y != y) {
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 122
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 122
 
 
  4319              		.loc 1 790 52 discriminator 1 view .LVU1415
@@ -7318,7 +7318,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
   70:lvgl/src/core/lv_indev.c **** 
  4367              		.loc 1 70 22 is_stmt 0 view .LVU1424
  4368 0000 C068     		ldr	r0, [r0, #12]
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 123
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 123
 
 
  4369              	.LVL390:
@@ -7378,7 +7378,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  4408 0028 CBB1     		cbz	r3, .L308
  4409              	.L300:
  121:lvgl/src/core/lv_indev.c **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 124
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 124
 
 
  4410              		.loc 1 121 1 view .LVU1440
@@ -7438,7 +7438,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  4451 0054 1D4B     		ldr	r3, .L320
  4452 0056 1868     		ldr	r0, [r3]
  4453 0058 FFF7FEFF 		bl	indev_proc_reset_query_handler
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 125
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 125
 
 
  4454              	.LVL396:
@@ -7498,7 +7498,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
   96:lvgl/src/core/lv_indev.c ****             indev_act->driver->disp->last_activity_time = lv_tick_get();
  4492              		.loc 1 96 14 is_stmt 1 view .LVU1470
   96:lvgl/src/core/lv_indev.c ****             indev_act->driver->disp->last_activity_time = lv_tick_get();
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 126
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 126
 
 
  4493              		.loc 1 96 26 is_stmt 0 view .LVU1471
@@ -7558,7 +7558,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  4533 00b2 CFE7     		b	.L305
  4534              	.L319:
  107:lvgl/src/core/lv_indev.c ****         }
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 127
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 127
 
 
  4535              		.loc 1 107 13 view .LVU1486
@@ -7618,7 +7618,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  4588              		.file 7 "lvgl/src/core/../misc/../font/lv_font.h"
  4589              		.file 8 "lvgl/src/core/../misc/lv_types.h"
  4590              		.file 9 "lvgl/src/core/../misc/lv_color.h"
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 128
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 128
 
 
  4591              		.file 10 "lvgl/src/core/../misc/lv_txt.h"
@@ -7648,90 +7648,90 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 1
  4615              		.file 34 "lvgl/src/core/../hal/../misc/../hal/lv_hal_tick.h"
  4616              		.file 35 "lvgl/src/core/lv_disp.h"
  4617              		.file 36 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\core\\lv_obj_pos.h"
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 129
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 129
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 lv_indev.c
-C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s:19     .text.indev_proc_reset_query_handler:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s:24     .text.indev_proc_reset_query_handler:00000000 indev_proc_reset_query_handler
-C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s:98     .text.indev_proc_reset_query_handler:00000048 $d
-C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s:103    .text.indev_reset_check:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s:108    .text.indev_reset_check:00000000 indev_reset_check
-C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s:136    .text.indev_reset_check:00000014 $d
-C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s:141    .text.indev_click_focus:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s:146    .text.indev_click_focus:00000000 indev_click_focus
-C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s:384    .text.indev_click_focus:00000100 $d
-C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s:390    .text.indev_gesture:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s:395    .text.indev_gesture:00000000 indev_gesture
-C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s:589    .text.indev_gesture:00000110 $d
-C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s:594    .text.indev_proc_release:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s:599    .text.indev_proc_release:00000000 indev_proc_release
-C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s:908    .text.indev_proc_release:00000138 $d
-C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s:915    .text.indev_keypad_proc:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s:920    .text.indev_keypad_proc:00000000 indev_keypad_proc
-C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s:1494   .text.indev_keypad_proc:0000029c $d
-C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s:1500   .text.indev_encoder_proc:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s:1505   .text.indev_encoder_proc:00000000 indev_encoder_proc
-C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s:2114   .text.indev_encoder_proc:000002b0 $d
-C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s:2119   .text.indev_encoder_proc:000002b8 $t
-C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s:2427   .text.indev_encoder_proc:00000434 $d
-C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s:2434   .text.lv_indev_enable:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s:2440   .text.lv_indev_enable:00000000 lv_indev_enable
-C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s:2502   .text.lv_indev_get_act:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s:2508   .text.lv_indev_get_act:00000000 lv_indev_get_act
-C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s:2523   .text.lv_indev_get_act:00000008 $d
-C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s:2528   .text.lv_indev_get_type:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s:2534   .text.lv_indev_get_type:00000000 lv_indev_get_type
-C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s:2564   .text.lv_indev_reset:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s:2570   .text.lv_indev_reset:00000000 lv_indev_reset
-C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s:2761   .text.lv_indev_reset:000000a8 $d
-C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s:2767   .text.lv_indev_reset_long_press:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s:2773   .text.lv_indev_reset_long_press:00000000 lv_indev_reset_long_press
-C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s:2810   .text.lv_indev_set_cursor:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s:2816   .text.lv_indev_set_cursor:00000000 lv_indev_set_cursor
-C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s:2884   .text.lv_indev_set_group:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s:2890   .text.lv_indev_set_group:00000000 lv_indev_set_group
-C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s:2918   .text.lv_indev_set_button_points:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s:2924   .text.lv_indev_set_button_points:00000000 lv_indev_set_button_points
-C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s:2953   .text.lv_indev_get_point:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s:2959   .text.lv_indev_get_point:00000000 lv_indev_get_point
-C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s:3015   .text.lv_indev_get_gesture_dir:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s:3021   .text.lv_indev_get_gesture_dir:00000000 lv_indev_get_gesture_dir
-C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s:3040   .text.lv_indev_get_key:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s:3046   .text.lv_indev_get_key:00000000 lv_indev_get_key
-C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s:3079   .text.lv_indev_get_scroll_dir:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s:3085   .text.lv_indev_get_scroll_dir:00000000 lv_indev_get_scroll_dir
-C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s:3131   .text.lv_indev_get_scroll_obj:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s:3137   .text.lv_indev_get_scroll_obj:00000000 lv_indev_get_scroll_obj
-C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s:3178   .text.lv_indev_get_vect:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s:3184   .text.lv_indev_get_vect:00000000 lv_indev_get_vect
-C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s:3229   .text.lv_indev_wait_release:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s:3235   .text.lv_indev_wait_release:00000000 lv_indev_wait_release
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 130
+C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s:19     .text.indev_proc_reset_query_handler:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s:24     .text.indev_proc_reset_query_handler:00000000 indev_proc_reset_query_handler
+C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s:98     .text.indev_proc_reset_query_handler:00000048 $d
+C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s:103    .text.indev_reset_check:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s:108    .text.indev_reset_check:00000000 indev_reset_check
+C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s:136    .text.indev_reset_check:00000014 $d
+C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s:141    .text.indev_click_focus:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s:146    .text.indev_click_focus:00000000 indev_click_focus
+C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s:384    .text.indev_click_focus:00000100 $d
+C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s:390    .text.indev_gesture:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s:395    .text.indev_gesture:00000000 indev_gesture
+C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s:589    .text.indev_gesture:00000110 $d
+C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s:594    .text.indev_proc_release:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s:599    .text.indev_proc_release:00000000 indev_proc_release
+C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s:908    .text.indev_proc_release:00000138 $d
+C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s:915    .text.indev_keypad_proc:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s:920    .text.indev_keypad_proc:00000000 indev_keypad_proc
+C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s:1494   .text.indev_keypad_proc:0000029c $d
+C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s:1500   .text.indev_encoder_proc:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s:1505   .text.indev_encoder_proc:00000000 indev_encoder_proc
+C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s:2114   .text.indev_encoder_proc:000002b0 $d
+C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s:2119   .text.indev_encoder_proc:000002b8 $t
+C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s:2427   .text.indev_encoder_proc:00000434 $d
+C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s:2434   .text.lv_indev_enable:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s:2440   .text.lv_indev_enable:00000000 lv_indev_enable
+C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s:2502   .text.lv_indev_get_act:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s:2508   .text.lv_indev_get_act:00000000 lv_indev_get_act
+C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s:2523   .text.lv_indev_get_act:00000008 $d
+C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s:2528   .text.lv_indev_get_type:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s:2534   .text.lv_indev_get_type:00000000 lv_indev_get_type
+C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s:2564   .text.lv_indev_reset:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s:2570   .text.lv_indev_reset:00000000 lv_indev_reset
+C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s:2761   .text.lv_indev_reset:000000a8 $d
+C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s:2767   .text.lv_indev_reset_long_press:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s:2773   .text.lv_indev_reset_long_press:00000000 lv_indev_reset_long_press
+C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s:2810   .text.lv_indev_set_cursor:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s:2816   .text.lv_indev_set_cursor:00000000 lv_indev_set_cursor
+C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s:2884   .text.lv_indev_set_group:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s:2890   .text.lv_indev_set_group:00000000 lv_indev_set_group
+C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s:2918   .text.lv_indev_set_button_points:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s:2924   .text.lv_indev_set_button_points:00000000 lv_indev_set_button_points
+C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s:2953   .text.lv_indev_get_point:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s:2959   .text.lv_indev_get_point:00000000 lv_indev_get_point
+C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s:3015   .text.lv_indev_get_gesture_dir:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s:3021   .text.lv_indev_get_gesture_dir:00000000 lv_indev_get_gesture_dir
+C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s:3040   .text.lv_indev_get_key:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s:3046   .text.lv_indev_get_key:00000000 lv_indev_get_key
+C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s:3079   .text.lv_indev_get_scroll_dir:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s:3085   .text.lv_indev_get_scroll_dir:00000000 lv_indev_get_scroll_dir
+C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s:3131   .text.lv_indev_get_scroll_obj:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s:3137   .text.lv_indev_get_scroll_obj:00000000 lv_indev_get_scroll_obj
+C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s:3178   .text.lv_indev_get_vect:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s:3184   .text.lv_indev_get_vect:00000000 lv_indev_get_vect
+C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s:3229   .text.lv_indev_wait_release:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s:3235   .text.lv_indev_wait_release:00000000 lv_indev_wait_release
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 130
 
 
-C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s:3258   .text.lv_indev_get_obj_act:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s:3264   .text.lv_indev_get_obj_act:00000000 lv_indev_get_obj_act
-C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s:3279   .text.lv_indev_get_obj_act:00000008 $d
-C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s:3284   .text.lv_indev_get_read_timer:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s:3290   .text.lv_indev_get_read_timer:00000000 lv_indev_get_read_timer
-C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s:3315   .text.lv_indev_search_obj:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s:3321   .text.lv_indev_search_obj:00000000 lv_indev_search_obj
-C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s:3459   .text.indev_proc_press:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s:3464   .text.indev_proc_press:00000000 indev_proc_press
-C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s:3997   .text.indev_proc_press:00000280 $d
-C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s:4003   .text.indev_pointer_proc:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s:4008   .text.indev_pointer_proc:00000000 indev_pointer_proc
-C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s:4210   .text.indev_button_proc:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s:4215   .text.indev_button_proc:00000000 indev_button_proc
-C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s:4351   .text.lv_indev_read_timer_cb:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s:4357   .text.lv_indev_read_timer_cb:00000000 lv_indev_read_timer_cb
-C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s:4563   .text.lv_indev_read_timer_cb:000000cc $d
-C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s:4569   .bss.indev_act:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s:4573   .bss.indev_act:00000000 indev_act
-C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s:4576   .bss.indev_obj_act:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s:4580   .bss.indev_obj_act:00000000 indev_obj_act
+C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s:3258   .text.lv_indev_get_obj_act:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s:3264   .text.lv_indev_get_obj_act:00000000 lv_indev_get_obj_act
+C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s:3279   .text.lv_indev_get_obj_act:00000008 $d
+C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s:3284   .text.lv_indev_get_read_timer:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s:3290   .text.lv_indev_get_read_timer:00000000 lv_indev_get_read_timer
+C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s:3315   .text.lv_indev_search_obj:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s:3321   .text.lv_indev_search_obj:00000000 lv_indev_search_obj
+C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s:3459   .text.indev_proc_press:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s:3464   .text.indev_proc_press:00000000 indev_proc_press
+C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s:3997   .text.indev_proc_press:00000280 $d
+C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s:4003   .text.indev_pointer_proc:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s:4008   .text.indev_pointer_proc:00000000 indev_pointer_proc
+C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s:4210   .text.indev_button_proc:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s:4215   .text.indev_button_proc:00000000 indev_button_proc
+C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s:4351   .text.lv_indev_read_timer_cb:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s:4357   .text.lv_indev_read_timer_cb:00000000 lv_indev_read_timer_cb
+C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s:4563   .text.lv_indev_read_timer_cb:000000cc $d
+C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s:4569   .bss.indev_act:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s:4573   .bss.indev_act:00000000 indev_act
+C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s:4576   .bss.indev_obj_act:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s:4580   .bss.indev_obj_act:00000000 indev_obj_act
 
 UNDEFINED SYMBOLS
 lv_obj_has_flag
@@ -7768,7 +7768,7 @@ lv_disp_get_layer_top
 lv_disp_get_scr_act
 _lv_indev_scroll_handler
 lv_disp_get_hor_res
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbiM07.s 			page 131
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrOx18j.s 			page 131
 
 
 lv_disp_get_ver_res

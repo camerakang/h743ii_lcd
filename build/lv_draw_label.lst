@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 1
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 1
   29:lvgl/src/draw/lv_draw_label.c ****     CMD_STATE_IN,
   30:lvgl/src/draw/lv_draw_label.c **** };
   31:lvgl/src/draw/lv_draw_label.c **** typedef uint8_t cmd_state_t;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 2
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s 			page 2
 
 
   32:lvgl/src/draw/lv_draw_label.c **** 
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 1
   86:lvgl/src/draw/lv_draw_label.c ****     if(draw_ctx->draw_letter == NULL) {
   87:lvgl/src/draw/lv_draw_label.c ****         LV_LOG_WARN("draw->draw_letter == NULL (there is no function to draw letters)");
   88:lvgl/src/draw/lv_draw_label.c ****         return;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 3
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s 			page 3
 
 
   89:lvgl/src/draw/lv_draw_label.c ****     }
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 1
  143:lvgl/src/draw/lv_draw_label.c ****             hint->line_start = -1;
  144:lvgl/src/draw/lv_draw_label.c ****         }
  145:lvgl/src/draw/lv_draw_label.c ****         last_line_start = hint->line_start;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 4
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s 			page 4
 
 
  146:lvgl/src/draw/lv_draw_label.c ****     }
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 1
  200:lvgl/src/draw/lv_draw_label.c ****     }
  201:lvgl/src/draw/lv_draw_label.c **** 
  202:lvgl/src/draw/lv_draw_label.c ****     cmd_state_t cmd_state = CMD_STATE_WAIT;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 5
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s 			page 5
 
 
  203:lvgl/src/draw/lv_draw_label.c ****     uint32_t i;
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 1
  257:lvgl/src/draw/lv_draw_label.c ****                     }
  258:lvgl/src/draw/lv_draw_label.c ****                 }
  259:lvgl/src/draw/lv_draw_label.c **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 6
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s 			page 6
 
 
  260:lvgl/src/draw/lv_draw_label.c ****                 /*Skip the color parameter and wait the space after it*/
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 1
  314:lvgl/src/draw/lv_draw_label.c ****             p2.x = pos.x;
  315:lvgl/src/draw/lv_draw_label.c ****             p2.y = p1.y;
  316:lvgl/src/draw/lv_draw_label.c ****             line_dsc.color = color;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 7
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s 			page 7
 
 
  317:lvgl/src/draw/lv_draw_label.c ****             lv_draw_line(draw_ctx, &line_dsc, &p1, &p2);
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 1
  371:lvgl/src/draw/lv_draw_label.c ****  *   STATIC FUNCTIONS
  372:lvgl/src/draw/lv_draw_label.c ****  **********************/
  373:lvgl/src/draw/lv_draw_label.c **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 8
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s 			page 8
 
 
  374:lvgl/src/draw/lv_draw_label.c **** /**
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 1
   66 001e 05       		.byte	(.L9-.L6)/2
   67 001f 07       		.byte	(.L8-.L6)/2
   68 0020 09       		.byte	(.L7-.L6)/2
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 9
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s 			page 9
 
 
   69 0021 0B       		.byte	(.L5-.L6)/2
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 1
  406:lvgl/src/draw/lv_draw_label.c ****                 break;
  102              		.loc 1 406 24 is_stmt 0 view .LVU27
  103 0032 0F20     		movs	r0, #15
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 10
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s 			page 10
 
 
  104              		.loc 1 407 17 view .LVU28
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 1
  147 0006 FFF7FEFF 		bl	lv_memset_00
  148              	.LVL12:
   58:lvgl/src/draw/lv_draw_label.c ****     dsc->color = lv_color_black();
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 11
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s 			page 11
 
 
  149              		.loc 1 58 5 view .LVU39
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 1
   45:lvgl/src/draw/../misc/lv_color.h ****     LV_OPA_20     = 51,
   46:lvgl/src/draw/../misc/lv_color.h ****     LV_OPA_30     = 76,
   47:lvgl/src/draw/../misc/lv_color.h ****     LV_OPA_40     = 102,
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 12
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s 			page 12
 
 
   48:lvgl/src/draw/../misc/lv_color.h ****     LV_OPA_50     = 127,
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 1
  102:lvgl/src/draw/../misc/lv_color.h ****  * to set/get values of the color channels
  103:lvgl/src/draw/../misc/lv_color.h ****  *------------------------------------------*/
  104:lvgl/src/draw/../misc/lv_color.h **** # define LV_COLOR_SET_R1(c, v) (c).ch.red = (uint8_t)((v) & 0x1)
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 13
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s 			page 13
 
 
  105:lvgl/src/draw/../misc/lv_color.h **** # define LV_COLOR_SET_G1(c, v) (c).ch.green = (uint8_t)((v) & 0x1)
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 1
  159:lvgl/src/draw/../misc/lv_color.h **** # define LV_COLOR_SET_A32(c, v) (c).ch.alpha = (uint8_t)((v) & 0xFF)
  160:lvgl/src/draw/../misc/lv_color.h **** 
  161:lvgl/src/draw/../misc/lv_color.h **** # define LV_COLOR_GET_R32(c) (c).ch.red
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 14
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s 			page 14
 
 
  162:lvgl/src/draw/../misc/lv_color.h **** # define LV_COLOR_GET_G32(c) (c).ch.green
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 1
  216:lvgl/src/draw/../misc/lv_color.h ****         uint16_t red : 5;
  217:lvgl/src/draw/../misc/lv_color.h ****         uint16_t blue : 5;
  218:lvgl/src/draw/../misc/lv_color.h ****         uint16_t green_l : 3;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 15
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s 			page 15
 
 
  219:lvgl/src/draw/../misc/lv_color.h **** #endif
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 1
  273:lvgl/src/draw/../misc/lv_color.h ****     LV_PALETTE_DEEP_ORANGE,
  274:lvgl/src/draw/../misc/lv_color.h ****     LV_PALETTE_BROWN,
  275:lvgl/src/draw/../misc/lv_color.h ****     LV_PALETTE_BLUE_GREY,
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 16
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s 			page 16
 
 
  276:lvgl/src/draw/../misc/lv_color.h ****     LV_PALETTE_GREY,
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 1
  330:lvgl/src/draw/../misc/lv_color.h ****         return 0;
  331:lvgl/src/draw/../misc/lv_color.h ****     else
  332:lvgl/src/draw/../misc/lv_color.h ****         return 0xFF;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 17
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s 			page 17
 
 
  333:lvgl/src/draw/../misc/lv_color.h **** #elif LV_COLOR_DEPTH == 8
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 1
  387:lvgl/src/draw/../misc/lv_color.h ****     return ret.full;
  388:lvgl/src/draw/../misc/lv_color.h **** #elif LV_COLOR_DEPTH == 16
  389:lvgl/src/draw/../misc/lv_color.h ****     /**
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 18
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s 			page 18
 
 
  390:lvgl/src/draw/../misc/lv_color.h ****      * The floating point math for conversion is:
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 1
  444:lvgl/src/draw/../misc/lv_color.h ****     c1.full = c1.full << 8 | c1.full >> 8;
  445:lvgl/src/draw/../misc/lv_color.h ****     c2.full = c2.full << 8 | c2.full >> 8;
  446:lvgl/src/draw/../misc/lv_color.h **** #endif
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 19
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s 			page 19
 
 
  447:lvgl/src/draw/../misc/lv_color.h ****     /*Source: https://stackoverflow.com/a/50012418/1999969*/
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 1
  501:lvgl/src/draw/../misc/lv_color.h ****     lv_color_t ret;
  502:lvgl/src/draw/../misc/lv_color.h **** #if LV_COLOR_DEPTH != 1
  503:lvgl/src/draw/../misc/lv_color.h ****     /*LV_COLOR_DEPTH == 8 or 32*/
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 20
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s 			page 20
 
 
  504:lvgl/src/draw/../misc/lv_color.h ****     LV_COLOR_SET_R(ret, LV_UDIV255(premult_c1[0] + LV_COLOR_GET_R(c2) * mix + LV_COLOR_MIX_ROUND_OF
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 1
  558:lvgl/src/draw/../misc/lv_color.h **** 
  559:lvgl/src/draw/../misc/lv_color.h ****         if(fg_opa != fg_opa_save || bg_opa != bg_opa_save || fg_color.full != fg_color_save.full ||
  560:lvgl/src/draw/../misc/lv_color.h ****            bg_color.full != bg_color_save.full) {
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 21
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s 			page 21
 
 
  561:lvgl/src/draw/../misc/lv_color.h ****             fg_opa_save        = fg_opa;
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 1
  615:lvgl/src/draw/../misc/lv_color.h ****                     b = ((c & 0xFF) >> 3)
  616:lvgl/src/draw/../misc/lv_color.h ****                     rgb565 = r | g | b
  617:lvgl/src/draw/../misc/lv_color.h ****         That's 3 mask, 3 bitshifts and 2 or operations */
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 22
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s 			page 22
 
 
  618:lvgl/src/draw/../misc/lv_color.h ****     r.full = (uint16_t)(((c & 0xF80000) >> 8) | ((c & 0xFC00) >> 5) | ((c & 0xFF) >> 3));
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 1
  672:lvgl/src/draw/../misc/lv_color.h **** 
  673:lvgl/src/draw/../misc/lv_color.h **** /**
  674:lvgl/src/draw/../misc/lv_color.h ****  * Convert a color to HSV
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 23
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s 			page 23
 
 
  675:lvgl/src/draw/../misc/lv_color.h ****  * @param color color
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 1
  179 0022 E360     		str	r3, [r4, #12]
   60:lvgl/src/draw/lv_draw_label.c ****     dsc->sel_start = LV_DRAW_LABEL_NO_TXT_SEL;
  180              		.loc 1 60 5 is_stmt 1 view .LVU49
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 24
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s 			page 24
 
 
   60:lvgl/src/draw/lv_draw_label.c ****     dsc->sel_start = LV_DRAW_LABEL_NO_TXT_SEL;
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 1
  221              	.LVL17:
  222 004a 6061     		str	r0, [r4, #20]
   65:lvgl/src/draw/lv_draw_label.c **** }
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 25
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s 			page 25
 
 
  223              		.loc 1 65 5 is_stmt 1 view .LVU65
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 1
  271              		.syntax unified
  272              		.thumb
  273              		.thumb_func
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 26
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s 			page 26
 
 
  275              	lv_draw_label:
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 1
  318              		.loc 1 86 7 view .LVU85
  319 0022 83B1     		cbz	r3, .L18
   91:lvgl/src/draw/lv_draw_label.c **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 27
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s 			page 27
 
 
  320              		.loc 1 91 5 is_stmt 1 view .LVU86
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 1
  361 0050 7146     		mov	r1, lr
  362 0052 32A8     		add	r0, sp, #200
  363              	.LVL27:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 28
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s 			page 28
 
 
  101:lvgl/src/draw/lv_draw_label.c ****     if(!clip_ok) return;
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 1
   31:lvgl/src/draw/../misc/lv_bidi.h ****  *      TYPEDEFS
   32:lvgl/src/draw/../misc/lv_bidi.h ****  **********************/
   33:lvgl/src/draw/../misc/lv_bidi.h **** enum {
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 29
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s 			page 29
 
 
   34:lvgl/src/draw/../misc/lv_bidi.h ****     LV_BASE_DIR_LTR      = 0x00,
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 1
   88:lvgl/src/draw/../misc/lv_bidi.h ****  * @param logical_pos the logical character position which visual position should be get
   89:lvgl/src/draw/../misc/lv_bidi.h ****  * @param is_rtl tell the char at `logical_pos` is RTL or LTR context
   90:lvgl/src/draw/../misc/lv_bidi.h ****  * @return the visual character position
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 30
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s 			page 30
 
 
   91:lvgl/src/draw/../misc/lv_bidi.h ****  */
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 1
  393              	.LVL31:
  394              	.L20:
  395              		.loc 3 132 46 view .LVU114
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 31
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s 			page 31
 
 
  396              	.LBE55:
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 1
   38:lvgl/src/draw/../misc/../font/../misc/lv_area.h ****     lv_coord_t x;
   39:lvgl/src/draw/../misc/../font/../misc/lv_area.h ****     lv_coord_t y;
   40:lvgl/src/draw/../misc/../font/../misc/lv_area.h **** } lv_point_t;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 32
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s 			page 32
 
 
   41:lvgl/src/draw/../misc/../font/../misc/lv_area.h **** 
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 1
   95:lvgl/src/draw/../misc/../font/../misc/lv_area.h **** /**
   96:lvgl/src/draw/../misc/../font/../misc/lv_area.h ****  * Initialize an area
   97:lvgl/src/draw/../misc/../font/../misc/lv_area.h ****  * @param area_p pointer to an area
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 33
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s 			page 33
 
 
   98:lvgl/src/draw/../misc/../font/../misc/lv_area.h ****  * @param x1 left coordinate of the area
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 1
    2:lvgl/src/draw/../misc/../font/lv_font.h ****  * @file lv_font.h
    3:lvgl/src/draw/../misc/../font/lv_font.h ****  *
    4:lvgl/src/draw/../misc/../font/lv_font.h ****  */
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 34
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s 			page 34
 
 
    5:lvgl/src/draw/../misc/../font/lv_font.h **** 
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 1
   59:lvgl/src/draw/../misc/../font/lv_font.h **** };
   60:lvgl/src/draw/../misc/../font/lv_font.h **** 
   61:lvgl/src/draw/../misc/../font/lv_font.h **** typedef uint8_t lv_font_subpx_t;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 35
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s 			page 35
 
 
   62:lvgl/src/draw/../misc/../font/lv_font.h **** 
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 1
  116:lvgl/src/draw/../misc/../font/lv_font.h ****  */
  117:lvgl/src/draw/../misc/../font/lv_font.h **** uint16_t lv_font_get_glyph_width(const lv_font_t * font, uint32_t letter, uint32_t letter_next);
  118:lvgl/src/draw/../misc/../font/lv_font.h **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 36
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s 			page 36
 
 
  119:lvgl/src/draw/../misc/../font/lv_font.h **** /**
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 1
  466              		.loc 1 131 5 view .LVU144
  132:lvgl/src/draw/lv_draw_label.c ****     y_ofs = dsc->ofs_y;
  467              		.loc 1 132 5 view .LVU145
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 37
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s 			page 37
 
 
  132:lvgl/src/draw/lv_draw_label.c ****     y_ofs = dsc->ofs_y;
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 1
  116:lvgl/src/draw/lv_draw_label.c ****                         dsc->flag);
  507              		.loc 1 116 9 view .LVU161
  508 00d0 0293     		str	r3, [sp, #8]
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 38
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s 			page 38
 
 
  509              	.LVL42:
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 1
  550 0108 4FF0FF31 		mov	r1, #-1
  551 010c 2160     		str	r1, [r4]
  552              	.LVL48:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 39
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s 			page 39
 
 
  553              	.L24:
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 1
  593 013c 0023     		movs	r3, #0
  594 013e 0093     		str	r3, [sp]
  595 0140 1346     		mov	r3, r2
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 40
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s 			page 40
 
 
  596 0142 B6F91A20 		ldrsh	r2, [r6, #26]
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 1
  637              		.loc 1 157 17 view .LVU201
  638 0176 2B44     		add	r3, r3, r5
  157:lvgl/src/draw/lv_draw_label.c ****         /*Go to next line*/
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 41
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s 			page 41
 
 
  639              		.loc 1 157 46 view .LVU202
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 1
  680 01ba 002B     		cmp	r3, #0
  681 01bc D3DA     		bge	.L27
  165:lvgl/src/draw/lv_draw_label.c ****             hint->y          = pos.y - coords->y1;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 42
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s 			page 42
 
 
  682              		.loc 1 165 13 is_stmt 1 view .LVU216
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 1
  720 01e8 1546     		mov	r5, r2
  721              	.LVL68:
  186:lvgl/src/draw/lv_draw_label.c ****     if(sel_start > sel_end) {
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 43
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s 			page 43
 
 
  722              		.loc 1 186 5 is_stmt 1 view .LVU233
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 1
  760              		.loc 2 596 5 view .LVU250
  596:lvgl/src/draw/../misc/lv_color.h **** }
  761              		.loc 2 596 12 is_stmt 0 view .LVU251
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 44
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s 			page 44
 
 
  762 0200 0023     		movs	r3, #0
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 1
  804 022a FFF7FEFF 		bl	lv_draw_rect_dsc_init
  805              	.LVL76:
  211:lvgl/src/draw/lv_draw_label.c **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 45
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s 			page 45
 
 
  806              		.loc 1 211 5 view .LVU265
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 1
  848              		.loc 4 125 31 is_stmt 0 view .LVU279
  849 0262 0B9A     		ldr	r2, [sp, #44]
  850 0264 9388     		ldrh	r3, [r2, #4]
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 46
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s 			page 46
 
 
  851              		.loc 4 125 44 view .LVU280
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 1
  897              		.loc 4 125 5 view .LVU293
  898              		.loc 4 125 31 is_stmt 0 view .LVU294
  899 029e 0B9A     		ldr	r2, [sp, #44]
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 47
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s 			page 47
 
 
  900 02a0 9388     		ldrh	r3, [r2, #4]
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 1
  198:lvgl/src/draw/lv_draw_label.c ****         line_dsc.blend_mode = dsc->blend_mode;
  943              		.loc 1 198 27 is_stmt 0 discriminator 4 view .LVU311
  944 02d2 96F82030 		ldrb	r3, [r6, #32]	@ zero_extendqisi2
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 48
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s 			page 48
 
 
  198:lvgl/src/draw/lv_draw_label.c ****         line_dsc.blend_mode = dsc->blend_mode;
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 1
  985              		.loc 1 255 35 view .LVU325
  986 0312 66E0     		b	.L36
  987              	.LVL92:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 49
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s 			page 49
 
 
  988              	.L76:
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 1
  1026              	.L77:
  1027              	.LBB75:
  265:lvgl/src/draw/lv_draw_label.c ****                             lv_memcpy_small(buf, &bidi_txt[par_start], LABEL_RECOLOR_PAR_LENGTH);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 50
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s 			page 50
 
 
  1028              		.loc 1 265 29 view .LVU342
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 1
   44:lvgl/src/draw/../misc/lv_mem.h **** } lv_mem_monitor_t;
   45:lvgl/src/draw/../misc/lv_mem.h **** 
   46:lvgl/src/draw/../misc/lv_mem.h **** typedef struct {
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 51
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s 			page 51
 
 
   47:lvgl/src/draw/../misc/lv_mem.h ****     void * p;
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 1
  101:lvgl/src/draw/../misc/lv_mem.h ****  */
  102:lvgl/src/draw/../misc/lv_mem.h **** void lv_mem_monitor(lv_mem_monitor_t * mon_p);
  103:lvgl/src/draw/../misc/lv_mem.h **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 52
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s 			page 52
 
 
  104:lvgl/src/draw/../misc/lv_mem.h **** /**
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 1
  158:lvgl/src/draw/../misc/lv_mem.h **** /**
  159:lvgl/src/draw/../misc/lv_mem.h ****  * Wrapper for the standard memset with fixed 0x00 value
  160:lvgl/src/draw/../misc/lv_mem.h ****  * @param dst pointer to the destination buffer
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 53
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s 			page 53
 
 
  161:lvgl/src/draw/../misc/lv_mem.h ****  * @param len number of byte to set
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 1
  1051              		.loc 6 199 15 is_stmt 0 view .LVU352
  1052 0340 11F8010B 		ldrb	r0, [r1], #1	@ zero_extendqisi2
  1053              	.LVL101:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 54
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s 			page 54
 
 
  1054              		.loc 6 199 13 view .LVU353
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 1
  1091              		.loc 1 270 40 is_stmt 0 view .LVU370
  1092 0366 9DF85E00 		ldrb	r0, [sp, #94]	@ zero_extendqisi2
  1093 036a FFF7FEFF 		bl	hex_char_to_num
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 55
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s 			page 55
 
 
  1094              	.LVL108:
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 1
  596:lvgl/src/draw/../misc/lv_color.h **** }
  1134              		.loc 2 596 12 is_stmt 0 view .LVU385
  1135 0398 139A     		ldr	r2, [sp, #76]
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 56
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s 			page 56
 
 
  1136 039a 63F30702 		bfi	r2, r3, #0, #8
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 1
  1178 03cc FFF7FEFF 		bl	lv_draw_letter
  1179              	.LVL125:
  304:lvgl/src/draw/lv_draw_label.c ****                 pos.x += letter_w + dsc->letter_space;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 57
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s 			page 57
 
 
  1180              		.loc 1 304 13 view .LVU398
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 1
  1219 03fc 0024     		moveq	r4, #0
  1220 03fe 3FF479AF 		beq	.L65
  236:lvgl/src/draw/lv_draw_label.c **** #endif
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 58
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s 			page 58
 
 
  1221              		.loc 1 236 17 is_stmt 1 view .LVU414
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 1
  1261              		.loc 1 283 19 is_stmt 0 view .LVU428
  1262 0434 D6F80C90 		ldr	r9, [r6, #12]
  1263              	.LVL133:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 59
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s 			page 59
 
 
  285:lvgl/src/draw/lv_draw_label.c **** 
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 1
  293:lvgl/src/draw/lv_draw_label.c ****                     sel_coords.x2 = pos.x + letter_w + dsc->letter_space - 1;
  1304              		.loc 1 293 40 is_stmt 0 view .LVU443
  1305 046c BDF9C620 		ldrsh	r2, [sp, #198]
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 60
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s 			page 60
 
 
  293:lvgl/src/draw/lv_draw_label.c ****                     sel_coords.x2 = pos.x + letter_w + dsc->letter_space - 1;
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 1
  297:lvgl/src/draw/lv_draw_label.c ****                 }
  1344              		.loc 1 297 27 view .LVU460
  1345              	.LBE80:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 61
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s 			page 61
 
 
  1346              	.LBE81:
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 1
  341:lvgl/src/draw/lv_draw_label.c ****             line_width =
  1387              		.loc 1 341 9 is_stmt 1 view .LVU474
  341:lvgl/src/draw/lv_draw_label.c ****             line_width =
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 62
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s 			page 62
 
 
  1388              		.loc 1 341 11 is_stmt 0 view .LVU475
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 1
  1428              		.loc 1 215 10 view .LVU489
  1429 051e 002B     		cmp	r3, #0
  1430 0520 3FF491AD 		beq	.L18
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 63
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s 			page 63
 
 
  1431              	.LBB88:
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 1
  1467              		.loc 1 313 26 view .LVU507
  1468 0548 002A     		cmp	r2, #0
  1469 054a 1ADB     		blt	.L86
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 64
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s 			page 64
 
 
  1470              	.L52:
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 1
  1510 0588 E7E7     		b	.L53
  1511              	.L83:
  313:lvgl/src/draw/lv_draw_label.c ****             p2.x = pos.x;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 65
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s 			page 65
 
 
  1512              		.loc 1 313 58 view .LVU522
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 1
  1549 05b6 ADF85C20 		strh	r2, [sp, #92]	@ movhi
  326:lvgl/src/draw/lv_draw_label.c ****             line_dsc.color = color;
  1550              		.loc 1 326 13 is_stmt 1 view .LVU540
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 66
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s 			page 66
 
 
  326:lvgl/src/draw/lv_draw_label.c ****             line_dsc.color = color;
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 1
  1596              	.LVL150:
  1597              		.loc 4 125 12 view .LVU556
  1598              	.LBE85:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 67
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s 			page 67
 
 
  1599              	.LBE84:
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 1
  1646              	.LBE86:
  352:lvgl/src/draw/lv_draw_label.c ****         }
  1647              		.loc 1 352 48 view .LVU571
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 68
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s 			page 68
 
 
  1648 062a 1B1A     		subs	r3, r3, r0
@@ -4051,23 +4051,23 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 1
  1675              		.file 18 "lvgl/src/draw/lv_draw_arc.h"
  1676              		.file 19 "lvgl/src/draw/lv_draw_layer.h"
  1677              		.file 20 "lvgl/src/draw/lv_draw.h"
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s 			page 69
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s 			page 69
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 lv_draw_label.c
-C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s:19     .text.hex_char_to_num:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s:24     .text.hex_char_to_num:00000000 hex_char_to_num
-C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s:64     .text.hex_char_to_num:0000001c $d
-C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s:70     .text.hex_char_to_num:00000022 $t
-C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s:126    .text.lv_draw_label_dsc_init:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s:132    .text.lv_draw_label_dsc_init:00000000 lv_draw_label_dsc_init
-C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s:234    .text.lv_draw_label_dsc_init:00000054 $d
-C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s:239    .text.lv_draw_letter:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s:245    .text.lv_draw_letter:00000000 lv_draw_letter
-C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s:269    .text.lv_draw_label:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s:275    .text.lv_draw_label:00000000 lv_draw_label
-C:\Users\OSD\AppData\Local\Temp\ccHFJrsF.s:1657   .text.lv_draw_label:00000638 $d
+C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s:19     .text.hex_char_to_num:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s:24     .text.hex_char_to_num:00000000 hex_char_to_num
+C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s:64     .text.hex_char_to_num:0000001c $d
+C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s:70     .text.hex_char_to_num:00000022 $t
+C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s:126    .text.lv_draw_label_dsc_init:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s:132    .text.lv_draw_label_dsc_init:00000000 lv_draw_label_dsc_init
+C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s:234    .text.lv_draw_label_dsc_init:00000054 $d
+C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s:239    .text.lv_draw_letter:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s:245    .text.lv_draw_letter:00000000 lv_draw_letter
+C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s:269    .text.lv_draw_label:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s:275    .text.lv_draw_label:00000000 lv_draw_label
+C:\Users\OSD\AppData\Local\Temp\cctiJjkE.s:1657   .text.lv_draw_label:00000638 $d
 
 UNDEFINED SYMBOLS
 lv_memset_00

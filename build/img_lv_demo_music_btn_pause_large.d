@@ -226,7 +226,8 @@ build/img_lv_demo_music_btn_pause_large.o: \
  d:\kzc\stm32\h743ii_lcd\lvgl\src\lvgl.h \
  d:\kzc\stm32\h743ii_lcd\lvgl\src/extra/widgets/span/lv_span.h \
  d:\kzc\stm32\h743ii_lcd\lvgl\src\lvgl.h \
- lvgl/demos/music/assets/../../music/lv_demo_music.h
+ lvgl/demos/music/assets/../../widgets/lv_demo_widgets.h \
+ d:\kzc\stm32\h743ii_lcd\lvgl\demos\lv_demos.h
 lvgl/demos/music/assets/../lv_demo_music.h:
 lvgl/demos/music/assets/../../lv_demos.h:
 d:\kzc\stm32\h743ii_lcd\lvgl\lvgl.h:
@@ -454,4 +455,5 @@ d:\kzc\stm32\h743ii_lcd\lvgl\src/extra/widgets/imgbtn/lv_imgbtn.h:
 d:\kzc\stm32\h743ii_lcd\lvgl\src\lvgl.h:
 d:\kzc\stm32\h743ii_lcd\lvgl\src/extra/widgets/span/lv_span.h:
 d:\kzc\stm32\h743ii_lcd\lvgl\src\lvgl.h:
-lvgl/demos/music/assets/../../music/lv_demo_music.h:
+lvgl/demos/music/assets/../../widgets/lv_demo_widgets.h:
+d:\kzc\stm32\h743ii_lcd\lvgl\demos\lv_demos.h:
