@@ -1,0 +1,651 @@
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccdCVLOl.s 			page 1
+
+
+   1              		.cpu cortex-m7
+   2              		.arch armv7e-m
+   3              		.fpu fpv5-d16
+   4              		.eabi_attribute 28, 1
+   5              		.eabi_attribute 20, 1
+   6              		.eabi_attribute 21, 1
+   7              		.eabi_attribute 23, 3
+   8              		.eabi_attribute 24, 1
+   9              		.eabi_attribute 25, 1
+  10              		.eabi_attribute 26, 1
+  11              		.eabi_attribute 30, 1
+  12              		.eabi_attribute 34, 1
+  13              		.eabi_attribute 18, 4
+  14              		.file	"lv_example_style_14.c"
+  15              		.text
+  16              	.Ltext0:
+  17              		.cfi_sections	.debug_frame
+  18              		.section	.text.new_theme_init_and_set,"ax",%progbits
+  19              		.align	1
+  20              		.syntax unified
+  21              		.thumb
+  22              		.thumb_func
+  24              	new_theme_init_and_set:
+  25              	.LFB205:
+  26              		.file 1 "lvgl/examples/styles/lv_example_style_14.c"
+   1:lvgl/examples/styles/lv_example_style_14.c **** #include "../lv_examples.h"
+   2:lvgl/examples/styles/lv_example_style_14.c **** #if LV_BUILD_EXAMPLES && LV_USE_IMG
+   3:lvgl/examples/styles/lv_example_style_14.c **** 
+   4:lvgl/examples/styles/lv_example_style_14.c **** static lv_style_t style_btn;
+   5:lvgl/examples/styles/lv_example_style_14.c **** 
+   6:lvgl/examples/styles/lv_example_style_14.c **** /*Will be called when the styles of the base theme are already added
+   7:lvgl/examples/styles/lv_example_style_14.c ****   to add new styles*/
+   8:lvgl/examples/styles/lv_example_style_14.c **** static void new_theme_apply_cb(lv_theme_t * th, lv_obj_t * obj)
+   9:lvgl/examples/styles/lv_example_style_14.c **** {
+  10:lvgl/examples/styles/lv_example_style_14.c ****     LV_UNUSED(th);
+  11:lvgl/examples/styles/lv_example_style_14.c **** 
+  12:lvgl/examples/styles/lv_example_style_14.c ****     if(lv_obj_check_type(obj, &lv_btn_class)) {
+  13:lvgl/examples/styles/lv_example_style_14.c ****         lv_obj_add_style(obj, &style_btn, 0);
+  14:lvgl/examples/styles/lv_example_style_14.c ****     }
+  15:lvgl/examples/styles/lv_example_style_14.c **** }
+  16:lvgl/examples/styles/lv_example_style_14.c **** 
+  17:lvgl/examples/styles/lv_example_style_14.c **** static void new_theme_init_and_set(void)
+  18:lvgl/examples/styles/lv_example_style_14.c **** {
+  27              		.loc 1 18 1 view -0
+  28              		.cfi_startproc
+  29              		@ args = 0, pretend = 0, frame = 0
+  30              		@ frame_needed = 0, uses_anonymous_args = 0
+  31 0000 38B5     		push	{r3, r4, r5, lr}
+  32              		.cfi_def_cfa_offset 16
+  33              		.cfi_offset 3, -16
+  34              		.cfi_offset 4, -12
+  35              		.cfi_offset 5, -8
+  36              		.cfi_offset 14, -4
+  19:lvgl/examples/styles/lv_example_style_14.c ****     /*Initialize the styles*/
+  20:lvgl/examples/styles/lv_example_style_14.c ****     lv_style_init(&style_btn);
+  37              		.loc 1 20 5 view .LVU1
+  38 0002 1B4C     		ldr	r4, .L3
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccdCVLOl.s 			page 2
+
+
+  39 0004 2046     		mov	r0, r4
+  40 0006 FFF7FEFF 		bl	lv_style_init
+  41              	.LVL0:
+  21:lvgl/examples/styles/lv_example_style_14.c ****     lv_style_set_bg_color(&style_btn, lv_palette_main(LV_PALETTE_GREEN));
+  42              		.loc 1 21 5 view .LVU2
+  43 000a 0920     		movs	r0, #9
+  44 000c FFF7FEFF 		bl	lv_palette_main
+  45              	.LVL1:
+  46 0010 0146     		mov	r1, r0
+  47 0012 2046     		mov	r0, r4
+  48 0014 FFF7FEFF 		bl	lv_style_set_bg_color
+  49              	.LVL2:
+  22:lvgl/examples/styles/lv_example_style_14.c ****     lv_style_set_border_color(&style_btn, lv_palette_darken(LV_PALETTE_GREEN, 3));
+  50              		.loc 1 22 5 view .LVU3
+  51 0018 0321     		movs	r1, #3
+  52 001a 0920     		movs	r0, #9
+  53 001c FFF7FEFF 		bl	lv_palette_darken
+  54              	.LVL3:
+  55 0020 0146     		mov	r1, r0
+  56 0022 2046     		mov	r0, r4
+  57 0024 FFF7FEFF 		bl	lv_style_set_border_color
+  58              	.LVL4:
+  23:lvgl/examples/styles/lv_example_style_14.c ****     lv_style_set_border_width(&style_btn, 3);
+  59              		.loc 1 23 5 view .LVU4
+  60 0028 0321     		movs	r1, #3
+  61 002a 2046     		mov	r0, r4
+  62 002c FFF7FEFF 		bl	lv_style_set_border_width
+  63              	.LVL5:
+  24:lvgl/examples/styles/lv_example_style_14.c **** 
+  25:lvgl/examples/styles/lv_example_style_14.c ****     /*Initialize the new theme from the current theme*/
+  26:lvgl/examples/styles/lv_example_style_14.c ****     lv_theme_t * th_act = lv_disp_get_theme(NULL);
+  64              		.loc 1 26 5 view .LVU5
+  65              		.loc 1 26 27 is_stmt 0 view .LVU6
+  66 0030 0020     		movs	r0, #0
+  67 0032 FFF7FEFF 		bl	lv_disp_get_theme
+  68              	.LVL6:
+  69 0036 0546     		mov	r5, r0
+  70              	.LVL7:
+  27:lvgl/examples/styles/lv_example_style_14.c ****     static lv_theme_t th_new;
+  71              		.loc 1 27 5 is_stmt 1 view .LVU7
+  28:lvgl/examples/styles/lv_example_style_14.c ****     th_new = *th_act;
+  72              		.loc 1 28 5 view .LVU8
+  73              		.loc 1 28 12 is_stmt 0 view .LVU9
+  74 0038 0E4C     		ldr	r4, .L3+4
+  75 003a A446     		mov	ip, r4
+  76 003c 8646     		mov	lr, r0
+  77 003e BEE80F00 		ldmia	lr!, {r0, r1, r2, r3}
+  78              	.LVL8:
+  79              		.loc 1 28 12 view .LVU10
+  80 0042 ACE80F00 		stmia	ip!, {r0, r1, r2, r3}
+  81 0046 BEE80F00 		ldmia	lr!, {r0, r1, r2, r3}
+  82 004a ACE80F00 		stmia	ip!, {r0, r1, r2, r3}
+  83 004e 9EE80300 		ldm	lr, {r0, r1}
+  84 0052 8CE80300 		stm	ip, {r0, r1}
+  29:lvgl/examples/styles/lv_example_style_14.c **** 
+  30:lvgl/examples/styles/lv_example_style_14.c ****     /*Set the parent theme and the style apply callback for the new theme*/
+  31:lvgl/examples/styles/lv_example_style_14.c ****     lv_theme_set_parent(&th_new, th_act);
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccdCVLOl.s 			page 3
+
+
+  85              		.loc 1 31 5 is_stmt 1 view .LVU11
+  86 0056 2946     		mov	r1, r5
+  87 0058 2046     		mov	r0, r4
+  88 005a FFF7FEFF 		bl	lv_theme_set_parent
+  89              	.LVL9:
+  32:lvgl/examples/styles/lv_example_style_14.c ****     lv_theme_set_apply_cb(&th_new, new_theme_apply_cb);
+  90              		.loc 1 32 5 view .LVU12
+  91 005e 0649     		ldr	r1, .L3+8
+  92 0060 2046     		mov	r0, r4
+  93 0062 FFF7FEFF 		bl	lv_theme_set_apply_cb
+  94              	.LVL10:
+  33:lvgl/examples/styles/lv_example_style_14.c **** 
+  34:lvgl/examples/styles/lv_example_style_14.c ****     /*Assign the new theme to the current display*/
+  35:lvgl/examples/styles/lv_example_style_14.c ****     lv_disp_set_theme(NULL, &th_new);
+  95              		.loc 1 35 5 view .LVU13
+  96 0066 2146     		mov	r1, r4
+  97 0068 0020     		movs	r0, #0
+  98 006a FFF7FEFF 		bl	lv_disp_set_theme
+  99              	.LVL11:
+  36:lvgl/examples/styles/lv_example_style_14.c **** }
+ 100              		.loc 1 36 1 is_stmt 0 view .LVU14
+ 101 006e 38BD     		pop	{r3, r4, r5, pc}
+ 102              	.LVL12:
+ 103              	.L4:
+ 104              		.loc 1 36 1 view .LVU15
+ 105              		.align	2
+ 106              	.L3:
+ 107 0070 00000000 		.word	.LANCHOR0
+ 108 0074 00000000 		.word	.LANCHOR1
+ 109 0078 00000000 		.word	new_theme_apply_cb
+ 110              		.cfi_endproc
+ 111              	.LFE205:
+ 113              		.section	.text.new_theme_apply_cb,"ax",%progbits
+ 114              		.align	1
+ 115              		.syntax unified
+ 116              		.thumb
+ 117              		.thumb_func
+ 119              	new_theme_apply_cb:
+ 120              	.LVL13:
+ 121              	.LFB204:
+   9:lvgl/examples/styles/lv_example_style_14.c ****     LV_UNUSED(th);
+ 122              		.loc 1 9 1 is_stmt 1 view -0
+ 123              		.cfi_startproc
+ 124              		@ args = 0, pretend = 0, frame = 0
+ 125              		@ frame_needed = 0, uses_anonymous_args = 0
+   9:lvgl/examples/styles/lv_example_style_14.c ****     LV_UNUSED(th);
+ 126              		.loc 1 9 1 is_stmt 0 view .LVU17
+ 127 0000 10B5     		push	{r4, lr}
+ 128              		.cfi_def_cfa_offset 8
+ 129              		.cfi_offset 4, -8
+ 130              		.cfi_offset 14, -4
+ 131 0002 0C46     		mov	r4, r1
+  10:lvgl/examples/styles/lv_example_style_14.c **** 
+ 132              		.loc 1 10 5 is_stmt 1 view .LVU18
+  12:lvgl/examples/styles/lv_example_style_14.c ****         lv_obj_add_style(obj, &style_btn, 0);
+ 133              		.loc 1 12 5 view .LVU19
+  12:lvgl/examples/styles/lv_example_style_14.c ****         lv_obj_add_style(obj, &style_btn, 0);
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccdCVLOl.s 			page 4
+
+
+ 134              		.loc 1 12 8 is_stmt 0 view .LVU20
+ 135 0004 0549     		ldr	r1, .L9
+ 136              	.LVL14:
+  12:lvgl/examples/styles/lv_example_style_14.c ****         lv_obj_add_style(obj, &style_btn, 0);
+ 137              		.loc 1 12 8 view .LVU21
+ 138 0006 2046     		mov	r0, r4
+ 139              	.LVL15:
+  12:lvgl/examples/styles/lv_example_style_14.c ****         lv_obj_add_style(obj, &style_btn, 0);
+ 140              		.loc 1 12 8 view .LVU22
+ 141 0008 FFF7FEFF 		bl	lv_obj_check_type
+ 142              	.LVL16:
+  12:lvgl/examples/styles/lv_example_style_14.c ****         lv_obj_add_style(obj, &style_btn, 0);
+ 143              		.loc 1 12 7 view .LVU23
+ 144 000c 00B9     		cbnz	r0, .L8
+ 145              	.L5:
+  15:lvgl/examples/styles/lv_example_style_14.c **** 
+ 146              		.loc 1 15 1 view .LVU24
+ 147 000e 10BD     		pop	{r4, pc}
+ 148              	.LVL17:
+ 149              	.L8:
+  13:lvgl/examples/styles/lv_example_style_14.c ****     }
+ 150              		.loc 1 13 9 is_stmt 1 view .LVU25
+ 151 0010 0022     		movs	r2, #0
+ 152 0012 0349     		ldr	r1, .L9+4
+ 153 0014 2046     		mov	r0, r4
+ 154 0016 FFF7FEFF 		bl	lv_obj_add_style
+ 155              	.LVL18:
+  15:lvgl/examples/styles/lv_example_style_14.c **** 
+ 156              		.loc 1 15 1 is_stmt 0 view .LVU26
+ 157 001a F8E7     		b	.L5
+ 158              	.L10:
+ 159              		.align	2
+ 160              	.L9:
+ 161 001c 00000000 		.word	lv_btn_class
+ 162 0020 00000000 		.word	.LANCHOR0
+ 163              		.cfi_endproc
+ 164              	.LFE204:
+ 166              		.section	.rodata.lv_example_style_14.str1.4,"aMS",%progbits,1
+ 167              		.align	2
+ 168              	.LC0:
+ 169 0000 4F726967 		.ascii	"Original theme\000"
+ 169      696E616C 
+ 169      20746865 
+ 169      6D6500
+ 170 000f 00       		.align	2
+ 171              	.LC1:
+ 172 0010 4E657720 		.ascii	"New theme\000"
+ 172      7468656D 
+ 172      6500
+ 173              		.section	.text.lv_example_style_14,"ax",%progbits
+ 174              		.align	1
+ 175              		.global	lv_example_style_14
+ 176              		.syntax unified
+ 177              		.thumb
+ 178              		.thumb_func
+ 180              	lv_example_style_14:
+ 181              	.LFB206:
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccdCVLOl.s 			page 5
+
+
+  37:lvgl/examples/styles/lv_example_style_14.c **** 
+  38:lvgl/examples/styles/lv_example_style_14.c **** /**
+  39:lvgl/examples/styles/lv_example_style_14.c ****  * Extending the current theme
+  40:lvgl/examples/styles/lv_example_style_14.c ****  */
+  41:lvgl/examples/styles/lv_example_style_14.c **** void lv_example_style_14(void)
+  42:lvgl/examples/styles/lv_example_style_14.c **** {
+ 182              		.loc 1 42 1 is_stmt 1 view -0
+ 183              		.cfi_startproc
+ 184              		@ args = 0, pretend = 0, frame = 0
+ 185              		@ frame_needed = 0, uses_anonymous_args = 0
+ 186 0000 10B5     		push	{r4, lr}
+ 187              		.cfi_def_cfa_offset 8
+ 188              		.cfi_offset 4, -8
+ 189              		.cfi_offset 14, -4
+  43:lvgl/examples/styles/lv_example_style_14.c ****     lv_obj_t * btn;
+ 190              		.loc 1 43 5 view .LVU28
+  44:lvgl/examples/styles/lv_example_style_14.c ****     lv_obj_t * label;
+ 191              		.loc 1 44 5 view .LVU29
+  45:lvgl/examples/styles/lv_example_style_14.c **** 
+  46:lvgl/examples/styles/lv_example_style_14.c ****     btn = lv_btn_create(lv_scr_act());
+ 192              		.loc 1 46 5 view .LVU30
+ 193              	.LBB6:
+ 194              	.LBI6:
+ 195              		.file 2 "lvgl/examples/styles/../../src/core/lv_disp.h"
+   1:lvgl/examples/styles/../../src/core/lv_disp.h **** /**
+   2:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @file lv_disp.h
+   3:lvgl/examples/styles/../../src/core/lv_disp.h ****  *
+   4:lvgl/examples/styles/../../src/core/lv_disp.h ****  */
+   5:lvgl/examples/styles/../../src/core/lv_disp.h **** 
+   6:lvgl/examples/styles/../../src/core/lv_disp.h **** #ifndef LV_DISP_H
+   7:lvgl/examples/styles/../../src/core/lv_disp.h **** #define LV_DISP_H
+   8:lvgl/examples/styles/../../src/core/lv_disp.h **** 
+   9:lvgl/examples/styles/../../src/core/lv_disp.h **** #ifdef __cplusplus
+  10:lvgl/examples/styles/../../src/core/lv_disp.h **** extern "C" {
+  11:lvgl/examples/styles/../../src/core/lv_disp.h **** #endif
+  12:lvgl/examples/styles/../../src/core/lv_disp.h **** 
+  13:lvgl/examples/styles/../../src/core/lv_disp.h **** /*********************
+  14:lvgl/examples/styles/../../src/core/lv_disp.h ****  *      INCLUDES
+  15:lvgl/examples/styles/../../src/core/lv_disp.h ****  *********************/
+  16:lvgl/examples/styles/../../src/core/lv_disp.h **** #include "../hal/lv_hal.h"
+  17:lvgl/examples/styles/../../src/core/lv_disp.h **** #include "lv_obj.h"
+  18:lvgl/examples/styles/../../src/core/lv_disp.h **** #include "lv_theme.h"
+  19:lvgl/examples/styles/../../src/core/lv_disp.h **** 
+  20:lvgl/examples/styles/../../src/core/lv_disp.h **** /*********************
+  21:lvgl/examples/styles/../../src/core/lv_disp.h ****  *      DEFINES
+  22:lvgl/examples/styles/../../src/core/lv_disp.h ****  *********************/
+  23:lvgl/examples/styles/../../src/core/lv_disp.h **** 
+  24:lvgl/examples/styles/../../src/core/lv_disp.h **** /**********************
+  25:lvgl/examples/styles/../../src/core/lv_disp.h ****  *      TYPEDEFS
+  26:lvgl/examples/styles/../../src/core/lv_disp.h ****  **********************/
+  27:lvgl/examples/styles/../../src/core/lv_disp.h **** 
+  28:lvgl/examples/styles/../../src/core/lv_disp.h **** typedef enum {
+  29:lvgl/examples/styles/../../src/core/lv_disp.h ****     LV_SCR_LOAD_ANIM_NONE,
+  30:lvgl/examples/styles/../../src/core/lv_disp.h ****     LV_SCR_LOAD_ANIM_OVER_LEFT,
+  31:lvgl/examples/styles/../../src/core/lv_disp.h ****     LV_SCR_LOAD_ANIM_OVER_RIGHT,
+  32:lvgl/examples/styles/../../src/core/lv_disp.h ****     LV_SCR_LOAD_ANIM_OVER_TOP,
+  33:lvgl/examples/styles/../../src/core/lv_disp.h ****     LV_SCR_LOAD_ANIM_OVER_BOTTOM,
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccdCVLOl.s 			page 6
+
+
+  34:lvgl/examples/styles/../../src/core/lv_disp.h ****     LV_SCR_LOAD_ANIM_MOVE_LEFT,
+  35:lvgl/examples/styles/../../src/core/lv_disp.h ****     LV_SCR_LOAD_ANIM_MOVE_RIGHT,
+  36:lvgl/examples/styles/../../src/core/lv_disp.h ****     LV_SCR_LOAD_ANIM_MOVE_TOP,
+  37:lvgl/examples/styles/../../src/core/lv_disp.h ****     LV_SCR_LOAD_ANIM_MOVE_BOTTOM,
+  38:lvgl/examples/styles/../../src/core/lv_disp.h ****     LV_SCR_LOAD_ANIM_FADE_IN,
+  39:lvgl/examples/styles/../../src/core/lv_disp.h ****     LV_SCR_LOAD_ANIM_FADE_ON = LV_SCR_LOAD_ANIM_FADE_IN, /*For backward compatibility*/
+  40:lvgl/examples/styles/../../src/core/lv_disp.h ****     LV_SCR_LOAD_ANIM_FADE_OUT,
+  41:lvgl/examples/styles/../../src/core/lv_disp.h ****     LV_SCR_LOAD_ANIM_OUT_LEFT,
+  42:lvgl/examples/styles/../../src/core/lv_disp.h ****     LV_SCR_LOAD_ANIM_OUT_RIGHT,
+  43:lvgl/examples/styles/../../src/core/lv_disp.h ****     LV_SCR_LOAD_ANIM_OUT_TOP,
+  44:lvgl/examples/styles/../../src/core/lv_disp.h ****     LV_SCR_LOAD_ANIM_OUT_BOTTOM,
+  45:lvgl/examples/styles/../../src/core/lv_disp.h **** } lv_scr_load_anim_t;
+  46:lvgl/examples/styles/../../src/core/lv_disp.h **** 
+  47:lvgl/examples/styles/../../src/core/lv_disp.h **** /**********************
+  48:lvgl/examples/styles/../../src/core/lv_disp.h ****  * GLOBAL PROTOTYPES
+  49:lvgl/examples/styles/../../src/core/lv_disp.h ****  **********************/
+  50:lvgl/examples/styles/../../src/core/lv_disp.h **** 
+  51:lvgl/examples/styles/../../src/core/lv_disp.h **** /**
+  52:lvgl/examples/styles/../../src/core/lv_disp.h ****  * Return with a pointer to the active screen
+  53:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @param disp pointer to display which active screen should be get. (NULL to use the default
+  54:lvgl/examples/styles/../../src/core/lv_disp.h ****  * screen)
+  55:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @return pointer to the active screen object (loaded by 'lv_scr_load()')
+  56:lvgl/examples/styles/../../src/core/lv_disp.h ****  */
+  57:lvgl/examples/styles/../../src/core/lv_disp.h **** lv_obj_t * lv_disp_get_scr_act(lv_disp_t * disp);
+  58:lvgl/examples/styles/../../src/core/lv_disp.h **** 
+  59:lvgl/examples/styles/../../src/core/lv_disp.h **** /**
+  60:lvgl/examples/styles/../../src/core/lv_disp.h ****  * Return with a pointer to the previous screen. Only used during screen transitions.
+  61:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @param disp pointer to display which previous screen should be get. (NULL to use the default
+  62:lvgl/examples/styles/../../src/core/lv_disp.h ****  * screen)
+  63:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @return pointer to the previous screen object or NULL if not used now
+  64:lvgl/examples/styles/../../src/core/lv_disp.h ****  */
+  65:lvgl/examples/styles/../../src/core/lv_disp.h **** lv_obj_t * lv_disp_get_scr_prev(lv_disp_t * disp);
+  66:lvgl/examples/styles/../../src/core/lv_disp.h **** 
+  67:lvgl/examples/styles/../../src/core/lv_disp.h **** /**
+  68:lvgl/examples/styles/../../src/core/lv_disp.h ****  * Make a screen active
+  69:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @param scr pointer to a screen
+  70:lvgl/examples/styles/../../src/core/lv_disp.h ****  */
+  71:lvgl/examples/styles/../../src/core/lv_disp.h **** void lv_disp_load_scr(lv_obj_t * scr);
+  72:lvgl/examples/styles/../../src/core/lv_disp.h **** 
+  73:lvgl/examples/styles/../../src/core/lv_disp.h **** /**
+  74:lvgl/examples/styles/../../src/core/lv_disp.h ****  * Return with the top layer. (Same on every screen and it is above the normal screen layer)
+  75:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @param disp pointer to display which top layer should be get. (NULL to use the default screen)
+  76:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @return pointer to the top layer object (transparent screen sized lv_obj)
+  77:lvgl/examples/styles/../../src/core/lv_disp.h ****  */
+  78:lvgl/examples/styles/../../src/core/lv_disp.h **** lv_obj_t * lv_disp_get_layer_top(lv_disp_t * disp);
+  79:lvgl/examples/styles/../../src/core/lv_disp.h **** 
+  80:lvgl/examples/styles/../../src/core/lv_disp.h **** /**
+  81:lvgl/examples/styles/../../src/core/lv_disp.h ****  * Return with the sys. layer. (Same on every screen and it is above the normal screen and the top
+  82:lvgl/examples/styles/../../src/core/lv_disp.h ****  * layer)
+  83:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @param disp pointer to display which sys. layer should be retrieved. (NULL to use the default sc
+  84:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @return pointer to the sys layer object (transparent screen sized lv_obj)
+  85:lvgl/examples/styles/../../src/core/lv_disp.h ****  */
+  86:lvgl/examples/styles/../../src/core/lv_disp.h **** lv_obj_t * lv_disp_get_layer_sys(lv_disp_t * disp);
+  87:lvgl/examples/styles/../../src/core/lv_disp.h **** 
+  88:lvgl/examples/styles/../../src/core/lv_disp.h **** /**
+  89:lvgl/examples/styles/../../src/core/lv_disp.h ****  * Set the theme of a display
+  90:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @param disp pointer to a display
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccdCVLOl.s 			page 7
+
+
+  91:lvgl/examples/styles/../../src/core/lv_disp.h ****  */
+  92:lvgl/examples/styles/../../src/core/lv_disp.h **** void lv_disp_set_theme(lv_disp_t * disp, lv_theme_t * th);
+  93:lvgl/examples/styles/../../src/core/lv_disp.h **** 
+  94:lvgl/examples/styles/../../src/core/lv_disp.h **** /**
+  95:lvgl/examples/styles/../../src/core/lv_disp.h ****  * Get the theme of a display
+  96:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @param disp pointer to a display
+  97:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @return the display's theme (can be NULL)
+  98:lvgl/examples/styles/../../src/core/lv_disp.h ****  */
+  99:lvgl/examples/styles/../../src/core/lv_disp.h **** lv_theme_t * lv_disp_get_theme(lv_disp_t * disp);
+ 100:lvgl/examples/styles/../../src/core/lv_disp.h **** 
+ 101:lvgl/examples/styles/../../src/core/lv_disp.h **** /**
+ 102:lvgl/examples/styles/../../src/core/lv_disp.h ****  * Set the background color of a display
+ 103:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @param disp pointer to a display
+ 104:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @param color color of the background
+ 105:lvgl/examples/styles/../../src/core/lv_disp.h ****  */
+ 106:lvgl/examples/styles/../../src/core/lv_disp.h **** void lv_disp_set_bg_color(lv_disp_t * disp, lv_color_t color);
+ 107:lvgl/examples/styles/../../src/core/lv_disp.h **** 
+ 108:lvgl/examples/styles/../../src/core/lv_disp.h **** /**
+ 109:lvgl/examples/styles/../../src/core/lv_disp.h ****  * Set the background image of a display
+ 110:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @param disp pointer to a display
+ 111:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @param img_src path to file or pointer to an `lv_img_dsc_t` variable
+ 112:lvgl/examples/styles/../../src/core/lv_disp.h ****  */
+ 113:lvgl/examples/styles/../../src/core/lv_disp.h **** void lv_disp_set_bg_image(lv_disp_t * disp, const void  * img_src);
+ 114:lvgl/examples/styles/../../src/core/lv_disp.h **** 
+ 115:lvgl/examples/styles/../../src/core/lv_disp.h **** /**
+ 116:lvgl/examples/styles/../../src/core/lv_disp.h ****  * Set opacity of the background
+ 117:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @param disp pointer to a display
+ 118:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @param opa opacity (0..255)
+ 119:lvgl/examples/styles/../../src/core/lv_disp.h ****  */
+ 120:lvgl/examples/styles/../../src/core/lv_disp.h **** void lv_disp_set_bg_opa(lv_disp_t * disp, lv_opa_t opa);
+ 121:lvgl/examples/styles/../../src/core/lv_disp.h **** 
+ 122:lvgl/examples/styles/../../src/core/lv_disp.h **** /**
+ 123:lvgl/examples/styles/../../src/core/lv_disp.h ****  * Switch screen with animation
+ 124:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @param scr pointer to the new screen to load
+ 125:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @param anim_type type of the animation from `lv_scr_load_anim_t`, e.g. `LV_SCR_LOAD_ANIM_MOVE_LE
+ 126:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @param time time of the animation
+ 127:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @param delay delay before the transition
+ 128:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @param auto_del true: automatically delete the old screen
+ 129:lvgl/examples/styles/../../src/core/lv_disp.h ****  */
+ 130:lvgl/examples/styles/../../src/core/lv_disp.h **** void lv_scr_load_anim(lv_obj_t * scr, lv_scr_load_anim_t anim_type, uint32_t time, uint32_t delay, 
+ 131:lvgl/examples/styles/../../src/core/lv_disp.h **** 
+ 132:lvgl/examples/styles/../../src/core/lv_disp.h **** /**
+ 133:lvgl/examples/styles/../../src/core/lv_disp.h ****  * Get elapsed time since last user activity on a display (e.g. click)
+ 134:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @param disp pointer to a display (NULL to get the overall smallest inactivity)
+ 135:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @return elapsed ticks (milliseconds) since the last activity
+ 136:lvgl/examples/styles/../../src/core/lv_disp.h ****  */
+ 137:lvgl/examples/styles/../../src/core/lv_disp.h **** uint32_t lv_disp_get_inactive_time(const lv_disp_t * disp);
+ 138:lvgl/examples/styles/../../src/core/lv_disp.h **** 
+ 139:lvgl/examples/styles/../../src/core/lv_disp.h **** /**
+ 140:lvgl/examples/styles/../../src/core/lv_disp.h ****  * Manually trigger an activity on a display
+ 141:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @param disp pointer to a display (NULL to use the default display)
+ 142:lvgl/examples/styles/../../src/core/lv_disp.h ****  */
+ 143:lvgl/examples/styles/../../src/core/lv_disp.h **** void lv_disp_trig_activity(lv_disp_t * disp);
+ 144:lvgl/examples/styles/../../src/core/lv_disp.h **** 
+ 145:lvgl/examples/styles/../../src/core/lv_disp.h **** /**
+ 146:lvgl/examples/styles/../../src/core/lv_disp.h ****  * Clean any CPU cache that is related to the display.
+ 147:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @param disp pointer to a display (NULL to use the default display)
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccdCVLOl.s 			page 8
+
+
+ 148:lvgl/examples/styles/../../src/core/lv_disp.h ****  */
+ 149:lvgl/examples/styles/../../src/core/lv_disp.h **** void lv_disp_clean_dcache(lv_disp_t * disp);
+ 150:lvgl/examples/styles/../../src/core/lv_disp.h **** 
+ 151:lvgl/examples/styles/../../src/core/lv_disp.h **** /**
+ 152:lvgl/examples/styles/../../src/core/lv_disp.h ****  * Temporarily enable and disable the invalidation of the display.
+ 153:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @param disp pointer to a display (NULL to use the default display)
+ 154:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @param en true: enable invalidation; false: invalidation
+ 155:lvgl/examples/styles/../../src/core/lv_disp.h ****  */
+ 156:lvgl/examples/styles/../../src/core/lv_disp.h **** void lv_disp_enable_invalidation(lv_disp_t * disp, bool en);
+ 157:lvgl/examples/styles/../../src/core/lv_disp.h **** 
+ 158:lvgl/examples/styles/../../src/core/lv_disp.h **** /**
+ 159:lvgl/examples/styles/../../src/core/lv_disp.h ****  * Get display invalidation is enabled.
+ 160:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @param disp pointer to a display (NULL to use the default display)
+ 161:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @return return true if invalidation is enabled
+ 162:lvgl/examples/styles/../../src/core/lv_disp.h ****  */
+ 163:lvgl/examples/styles/../../src/core/lv_disp.h **** bool lv_disp_is_invalidation_enabled(lv_disp_t * disp);
+ 164:lvgl/examples/styles/../../src/core/lv_disp.h **** 
+ 165:lvgl/examples/styles/../../src/core/lv_disp.h **** /**
+ 166:lvgl/examples/styles/../../src/core/lv_disp.h ****  * Get a pointer to the screen refresher timer to
+ 167:lvgl/examples/styles/../../src/core/lv_disp.h ****  * modify its parameters with `lv_timer_...` functions.
+ 168:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @param disp pointer to a display
+ 169:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @return pointer to the display refresher timer. (NULL on error)
+ 170:lvgl/examples/styles/../../src/core/lv_disp.h ****  */
+ 171:lvgl/examples/styles/../../src/core/lv_disp.h **** lv_timer_t * _lv_disp_get_refr_timer(lv_disp_t * disp);
+ 172:lvgl/examples/styles/../../src/core/lv_disp.h **** 
+ 173:lvgl/examples/styles/../../src/core/lv_disp.h **** /*------------------------------------------------
+ 174:lvgl/examples/styles/../../src/core/lv_disp.h ****  * To improve backward compatibility
+ 175:lvgl/examples/styles/../../src/core/lv_disp.h ****  * Recommended only if you have one display
+ 176:lvgl/examples/styles/../../src/core/lv_disp.h ****  *------------------------------------------------*/
+ 177:lvgl/examples/styles/../../src/core/lv_disp.h **** 
+ 178:lvgl/examples/styles/../../src/core/lv_disp.h **** /**
+ 179:lvgl/examples/styles/../../src/core/lv_disp.h ****  * Get the active screen of the default display
+ 180:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @return pointer to the active screen
+ 181:lvgl/examples/styles/../../src/core/lv_disp.h ****  */
+ 182:lvgl/examples/styles/../../src/core/lv_disp.h **** static inline lv_obj_t * lv_scr_act(void)
+ 196              		.loc 2 182 26 view .LVU31
+ 197              	.LBB7:
+ 183:lvgl/examples/styles/../../src/core/lv_disp.h **** {
+ 184:lvgl/examples/styles/../../src/core/lv_disp.h ****     return lv_disp_get_scr_act(lv_disp_get_default());
+ 198              		.loc 2 184 5 view .LVU32
+ 199              		.loc 2 184 12 is_stmt 0 view .LVU33
+ 200 0002 FFF7FEFF 		bl	lv_disp_get_default
+ 201              	.LVL19:
+ 202 0006 FFF7FEFF 		bl	lv_disp_get_scr_act
+ 203              	.LVL20:
+ 204              	.LBE7:
+ 205              	.LBE6:
+ 206              		.loc 1 46 11 view .LVU34
+ 207 000a FFF7FEFF 		bl	lv_btn_create
+ 208              	.LVL21:
+ 209 000e 0446     		mov	r4, r0
+ 210              	.LVL22:
+  47:lvgl/examples/styles/lv_example_style_14.c ****     lv_obj_align(btn, LV_ALIGN_TOP_MID, 0, 20);
+ 211              		.loc 1 47 5 is_stmt 1 view .LVU35
+ 212 0010 1423     		movs	r3, #20
+ 213 0012 0022     		movs	r2, #0
+ 214 0014 0221     		movs	r1, #2
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccdCVLOl.s 			page 9
+
+
+ 215 0016 FFF7FEFF 		bl	lv_obj_align
+ 216              	.LVL23:
+  48:lvgl/examples/styles/lv_example_style_14.c **** 
+  49:lvgl/examples/styles/lv_example_style_14.c ****     label = lv_label_create(btn);
+ 217              		.loc 1 49 5 view .LVU36
+ 218              		.loc 1 49 13 is_stmt 0 view .LVU37
+ 219 001a 2046     		mov	r0, r4
+ 220 001c FFF7FEFF 		bl	lv_label_create
+ 221              	.LVL24:
+  50:lvgl/examples/styles/lv_example_style_14.c ****     lv_label_set_text(label, "Original theme");
+ 222              		.loc 1 50 5 is_stmt 1 view .LVU38
+ 223 0020 0C49     		ldr	r1, .L13
+ 224 0022 FFF7FEFF 		bl	lv_label_set_text
+ 225              	.LVL25:
+  51:lvgl/examples/styles/lv_example_style_14.c **** 
+  52:lvgl/examples/styles/lv_example_style_14.c ****     new_theme_init_and_set();
+ 226              		.loc 1 52 5 view .LVU39
+ 227 0026 FFF7FEFF 		bl	new_theme_init_and_set
+ 228              	.LVL26:
+  53:lvgl/examples/styles/lv_example_style_14.c **** 
+  54:lvgl/examples/styles/lv_example_style_14.c ****     btn = lv_btn_create(lv_scr_act());
+ 229              		.loc 1 54 5 view .LVU40
+ 230              	.LBB8:
+ 231              	.LBI8:
+ 182:lvgl/examples/styles/../../src/core/lv_disp.h **** {
+ 232              		.loc 2 182 26 view .LVU41
+ 233              	.LBB9:
+ 234              		.loc 2 184 5 view .LVU42
+ 235              		.loc 2 184 12 is_stmt 0 view .LVU43
+ 236 002a FFF7FEFF 		bl	lv_disp_get_default
+ 237              	.LVL27:
+ 238 002e FFF7FEFF 		bl	lv_disp_get_scr_act
+ 239              	.LVL28:
+ 240              	.LBE9:
+ 241              	.LBE8:
+ 242              		.loc 1 54 11 view .LVU44
+ 243 0032 FFF7FEFF 		bl	lv_btn_create
+ 244              	.LVL29:
+ 245 0036 0446     		mov	r4, r0
+ 246              	.LVL30:
+  55:lvgl/examples/styles/lv_example_style_14.c ****     lv_obj_align(btn, LV_ALIGN_BOTTOM_MID, 0, -20);
+ 247              		.loc 1 55 5 is_stmt 1 view .LVU45
+ 248 0038 6FF01303 		mvn	r3, #19
+ 249 003c 0022     		movs	r2, #0
+ 250 003e 0521     		movs	r1, #5
+ 251 0040 FFF7FEFF 		bl	lv_obj_align
+ 252              	.LVL31:
+  56:lvgl/examples/styles/lv_example_style_14.c **** 
+  57:lvgl/examples/styles/lv_example_style_14.c ****     label = lv_label_create(btn);
+ 253              		.loc 1 57 5 view .LVU46
+ 254              		.loc 1 57 13 is_stmt 0 view .LVU47
+ 255 0044 2046     		mov	r0, r4
+ 256 0046 FFF7FEFF 		bl	lv_label_create
+ 257              	.LVL32:
+  58:lvgl/examples/styles/lv_example_style_14.c ****     lv_label_set_text(label, "New theme");
+ 258              		.loc 1 58 5 is_stmt 1 view .LVU48
+ 259 004a 0349     		ldr	r1, .L13+4
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccdCVLOl.s 			page 10
+
+
+ 260 004c FFF7FEFF 		bl	lv_label_set_text
+ 261              	.LVL33:
+  59:lvgl/examples/styles/lv_example_style_14.c **** }
+ 262              		.loc 1 59 1 is_stmt 0 view .LVU49
+ 263 0050 10BD     		pop	{r4, pc}
+ 264              	.LVL34:
+ 265              	.L14:
+ 266              		.loc 1 59 1 view .LVU50
+ 267 0052 00BF     		.align	2
+ 268              	.L13:
+ 269 0054 00000000 		.word	.LC0
+ 270 0058 10000000 		.word	.LC1
+ 271              		.cfi_endproc
+ 272              	.LFE206:
+ 274              		.section	.bss.style_btn,"aw",%nobits
+ 275              		.align	2
+ 276              		.set	.LANCHOR0,. + 0
+ 279              	style_btn:
+ 280 0000 00000000 		.space	8
+ 280      00000000 
+ 281              		.section	.bss.th_new.0,"aw",%nobits
+ 282              		.align	2
+ 283              		.set	.LANCHOR1,. + 0
+ 286              	th_new.0:
+ 287 0000 00000000 		.space	40
+ 287      00000000 
+ 287      00000000 
+ 287      00000000 
+ 287      00000000 
+ 288              		.text
+ 289              	.Letext0:
+ 290              		.file 3 "c:\\tools\\gcc-arm-none-eabi\\arm-none-eabi\\include\\machine\\_default_types.h"
+ 291              		.file 4 "c:\\tools\\gcc-arm-none-eabi\\arm-none-eabi\\include\\sys\\_stdint.h"
+ 292              		.file 5 "lvgl/examples/styles/../../src/misc/lv_types.h"
+ 293              		.file 6 "lvgl/examples/styles/../../src/misc/lv_timer.h"
+ 294              		.file 7 "c:\\tools\\gcc-arm-none-eabi\\lib\\gcc\\arm-none-eabi\\10.3.1\\include\\stddef.h"
+ 295              		.file 8 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\misc\\lv_area.h"
+ 296              		.file 9 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\font\\lv_font.h"
+ 297              		.file 10 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\misc\\lv_color.h"
+ 298              		.file 11 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\misc\\lv_txt.h"
+ 299              		.file 12 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\misc\\lv_bidi.h"
+ 300              		.file 13 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\misc\\lv_style.h"
+ 301              		.file 14 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\draw\\lv_img_buf.h"
+ 302              		.file 15 "lvgl/examples/styles/../../src/core/lv_obj.h"
+ 303              		.file 16 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\draw\\lv_draw_rect.h"
+ 304              		.file 17 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\draw\\lv_draw_label.h"
+ 305              		.file 18 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\draw\\lv_draw_img.h"
+ 306              		.file 19 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\draw\\lv_draw_line.h"
+ 307              		.file 20 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\draw\\lv_draw_arc.h"
+ 308              		.file 21 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\draw\\lv_draw_layer.h"
+ 309              		.file 22 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\draw\\lv_draw.h"
+ 310              		.file 23 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\misc\\lv_ll.h"
+ 311              		.file 24 "lvgl/examples/styles/../../src/hal/lv_hal_disp.h"
+ 312              		.file 25 "lvgl/examples/styles/../../src/core/lv_theme.h"
+ 313              		.file 26 "lvgl/examples/styles/../../src/core/lv_group.h"
+ 314              		.file 27 "lvgl/examples/styles/../../src/core/lv_obj_scroll.h"
+ 315              		.file 28 "lvgl/examples/styles/../../src/core/lv_obj_style.h"
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccdCVLOl.s 			page 11
+
+
+ 316              		.file 29 "lvgl/examples/styles/../../src/core/lv_obj_class.h"
+ 317              		.file 30 "lvgl/examples/styles/../../src/core/lv_event.h"
+ 318              		.file 31 "lvgl/examples/styles/../../src/widgets/lv_bar.h"
+ 319              		.file 32 "lvgl/examples/styles/../../src/extra/widgets/imgbtn/lv_imgbtn.h"
+ 320              		.file 33 "lvgl/examples/styles/../../src/widgets/lv_btn.h"
+ 321              		.file 34 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\core\\lv_obj_pos.h"
+ 322              		.file 35 "lvgl/examples/styles/../../src/widgets/lv_label.h"
+ 323              		.file 36 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\misc\\lv_style_gen.h"
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccdCVLOl.s 			page 12
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 lv_example_style_14.c
+C:\Users\OSD\AppData\Local\Temp\ccdCVLOl.s:19     .text.new_theme_init_and_set:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccdCVLOl.s:24     .text.new_theme_init_and_set:00000000 new_theme_init_and_set
+C:\Users\OSD\AppData\Local\Temp\ccdCVLOl.s:107    .text.new_theme_init_and_set:00000070 $d
+C:\Users\OSD\AppData\Local\Temp\ccdCVLOl.s:119    .text.new_theme_apply_cb:00000000 new_theme_apply_cb
+C:\Users\OSD\AppData\Local\Temp\ccdCVLOl.s:114    .text.new_theme_apply_cb:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccdCVLOl.s:161    .text.new_theme_apply_cb:0000001c $d
+C:\Users\OSD\AppData\Local\Temp\ccdCVLOl.s:167    .rodata.lv_example_style_14.str1.4:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccdCVLOl.s:174    .text.lv_example_style_14:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccdCVLOl.s:180    .text.lv_example_style_14:00000000 lv_example_style_14
+C:\Users\OSD\AppData\Local\Temp\ccdCVLOl.s:269    .text.lv_example_style_14:00000054 $d
+C:\Users\OSD\AppData\Local\Temp\ccdCVLOl.s:275    .bss.style_btn:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccdCVLOl.s:279    .bss.style_btn:00000000 style_btn
+C:\Users\OSD\AppData\Local\Temp\ccdCVLOl.s:282    .bss.th_new.0:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccdCVLOl.s:286    .bss.th_new.0:00000000 th_new.0
+
+UNDEFINED SYMBOLS
+lv_style_init
+lv_palette_main
+lv_style_set_bg_color
+lv_palette_darken
+lv_style_set_border_color
+lv_style_set_border_width
+lv_disp_get_theme
+lv_theme_set_parent
+lv_theme_set_apply_cb
+lv_disp_set_theme
+lv_obj_check_type
+lv_obj_add_style
+lv_btn_class
+lv_disp_get_default
+lv_disp_get_scr_act
+lv_btn_create
+lv_obj_align
+lv_label_create
+lv_label_set_text

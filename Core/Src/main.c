@@ -27,7 +27,10 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "lvgl.h"
+// #include "lv_port_disp_template.h"
+// #include "lv_port_indev_template.h"
+// #include "lv_demo_music.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -105,92 +108,21 @@ int main(void)
   MX_DMA2D_Init();
   MX_LTDC_Init();
   /* USER CODE BEGIN 2 */
+  lv_init();            //	LVGL初始化
+  lv_port_disp_init();  //	LVGL显示接口初始化
+  // lv_port_indev_init(); // LVGL触摸接口初始化
 
+  lv_demo_widgets(); // 运行官方例程 lv_demo_benchmark ，进行基准性能测试
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-    LCD_SetBackColor(DARK_GREY);
-    // HAL_Delay(1000);
-    // LCD_ClearRect(240, 0, 480, 640);
-    LCD_Clear();
-    HAL_Delay(2000);
-    LCD_SetBackColor(LCD_GREEN);
-    // LCD_ClearRect(0, 0, 240, 640);
-    LCD_Clear();
-    HAL_Delay(2000);
-    // LCD_Test_Image();
-    //     HAL_Delay(1000);
-    // LCD_SetBackColor(LCD_BLACK);
-    // LCD_Clear();
-    // HAL_Delay(1000);
-    // LCD_SetBackColor(LCD_BLUE);
-    // LCD_Clear();
-    // HAL_Delay(1000);
-    // LCD_SetBackColor(LCD_GREEN);
-    // LCD_Clear();
-    // HAL_Delay(1000);
-    // LCD_SetBackColor(LCD_RED);
-    // LCD_Clear();
-    // HAL_Delay(1000);
-    // LCD_SetBackColor(LCD_CYAN);
-    // LCD_Clear();
-    // HAL_Delay(1000);
-    // LCD_SetBackColor(LCD_MAGENTA);
-    // LCD_Clear();
-    // HAL_Delay(1000);
-    // LCD_SetBackColor(LCD_YELLOW);
-    // LCD_Clear();
-    // HAL_Delay(1000);
-    // LCD_SetBackColor(LCD_GREY);
-    // LCD_Clear();
-    // HAL_Delay(1000);
-    // LCD_SetBackColor(LIGHT_BLUE);
-    // LCD_Clear();
-    // HAL_Delay(1000);
-    // LCD_SetBackColor(LIGHT_GREEN);
-    // LCD_Clear();
-    // HAL_Delay(1000);
-    // LCD_SetBackColor(LIGHT_RED);
-    // LCD_Clear();
-    // HAL_Delay(1000);
-    // LCD_SetBackColor(LIGHT_CYAN);
-    // LCD_Clear();
-    // HAL_Delay(1000);
-    // LCD_SetBackColor(LIGHT_MAGENTA);
-    // LCD_Clear();
-    // HAL_Delay(1000);
-    // LCD_SetBackColor(LIGHT_YELLOW);
-    // LCD_Clear();
-    // HAL_Delay(1000);
-
-    // LCD_SetBackColor(LIGHT_GREY);
-    // LCD_Clear();
-    // HAL_Delay(1000);
-    // LCD_SetBackColor(DARK_BLUE);
-    // LCD_Clear();
-    // HAL_Delay(1000);
-    // LCD_SetBackColor(DARK_GREEN);
-    // LCD_Clear();
-    // HAL_Delay(1000);
-    // LCD_SetBackColor(DARK_RED);
-    // LCD_Clear();
-    // HAL_Delay(1000);
-    // LCD_SetBackColor(DARK_CYAN);
-    // LCD_Clear();
-    // HAL_Delay(1000);
-    // LCD_SetBackColor(DARK_MAGENTA);
-    // LCD_Clear();
-    // HAL_Delay(1000);
-    // LCD_SetBackColor(DARK_YELLOW);
-    // LCD_Clear();
-    // HAL_Delay(1000);
-    // LCD_SetBackColor(DARK_GREY);
-    // LCD_Clear();
-    // HAL_Delay(1000);
-
+		lv_task_handler();	// LVGL进程		
+		// Touch_Scan();			// 触摸扫描，扫描频率不能低于10ms
+		HAL_Delay(20);		
+		// LED1_Toggle;			// LED闪烁
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

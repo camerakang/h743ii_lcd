@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s 			page 1
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccXaHlxK.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s 			page 1
   47              		.loc 1 9 5 view .LVU4
   10:Core/Src/KD024VGFPD094.c **** 
   11:Core/Src/KD024VGFPD094.c ****     HAL_GPIO_WritePin(CSB_GPIO_Port, CSB_Pin, GPIO_PIN_RESET);   // 使能CSB
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s 			page 2
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccXaHlxK.s 			page 2
 
 
   48              		.loc 1 11 5 view .LVU5
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s 			page 1
   23:Core/Src/KD024VGFPD094.c ****         else
   24:Core/Src/KD024VGFPD094.c ****             HAL_GPIO_WritePin(SDI_GPIO_Port, SDI_Pin, GPIO_PIN_RESET);
   25:Core/Src/KD024VGFPD094.c **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s 			page 3
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccXaHlxK.s 			page 3
 
 
   26:Core/Src/KD024VGFPD094.c ****         HAL_GPIO_WritePin(SCLB_GPIO_Port, SCLB_Pin, GPIO_PIN_SET); // 上升沿发送数据
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s 			page 1
   24:Core/Src/KD024VGFPD094.c **** 
  133              		.loc 1 24 13 is_stmt 1 view .LVU28
  134 0070 0022     		movs	r2, #0
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s 			page 4
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccXaHlxK.s 			page 4
 
 
  135 0072 8021     		movs	r1, #128
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s 			page 1
  166              	.LVL22:
   32:Core/Src/KD024VGFPD094.c ****     {
  167              		.loc 1 32 26 discriminator 2 view .LVU39
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s 			page 5
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccXaHlxK.s 			page 5
 
 
  168 0090 E4B2     		uxtb	r4, r4
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s 			page 1
  209              		.loc 1 53 18 view .LVU51
  210 00ca 26EA0306 		bic	r6, r6, r3
  211              	.LVL28:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s 			page 6
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccXaHlxK.s 			page 6
 
 
  212              		.loc 1 53 18 view .LVU52
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s 			page 1
  253              		.cfi_offset 4, -12
  254              		.cfi_offset 5, -8
  255              		.cfi_offset 14, -4
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s 			page 7
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccXaHlxK.s 			page 7
 
 
  256 0002 0446     		mov	r4, r0
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s 			page 1
  296 0038 FFF7FEFF 		bl	HAL_GPIO_WritePin
  297              	.LVL38:
  298              	.L20:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s 			page 8
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccXaHlxK.s 			page 8
 
 
   83:Core/Src/KD024VGFPD094.c **** 
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s 			page 1
  340 006c E6E7     		b	.L20
  341              	.L23:
   87:Core/Src/KD024VGFPD094.c ****     }
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s 			page 9
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccXaHlxK.s 			page 9
 
 
   88:Core/Src/KD024VGFPD094.c **** 
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s 			page 1
  388              		.loc 1 97 5 is_stmt 0 view .LVU90
  389 000c FFF7FEFF 		bl	HAL_GPIO_WritePin
  390              	.LVL50:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s 			page 10
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccXaHlxK.s 			page 10
 
 
   98:Core/Src/KD024VGFPD094.c ****     HAL_GPIO_WritePin(SCLB_GPIO_Port, SCLB_Pin, GPIO_PIN_RESET); // 开始时钟为低
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s 			page 1
  429              		.loc 1 113 9 discriminator 2 view .LVU99
  430              		.loc 1 113 11 is_stmt 0 discriminator 2 view .LVU100
  431 0046 6400     		lsls	r4, r4, #1
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s 			page 11
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccXaHlxK.s 			page 11
 
 
  432              	.LVL57:
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s 			page 1
  473 0078 38BD     		pop	{r3, r4, r5, pc}
  474              	.LVL64:
  475              	.L34:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s 			page 12
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccXaHlxK.s 			page 12
 
 
  476              		.loc 1 117 1 view .LVU113
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s 			page 1
  519              		.loc 1 127 5 view .LVU118
  520 001a 0122     		movs	r2, #1
  521 001c 1146     		mov	r1, r2
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s 			page 13
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccXaHlxK.s 			page 13
 
 
  522 001e 2046     		mov	r0, r4
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s 			page 1
  563 005c FFF7FEFF 		bl	write_command
  564              	.LVL78:
  141:Core/Src/KD024VGFPD094.c ****     write_data(0x77);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s 			page 14
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccXaHlxK.s 			page 14
 
 
  565              		.loc 1 141 5 view .LVU129
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s 			page 1
  607 009e FFF7FEFF 		bl	write_data
  608              	.LVL89:
  154:Core/Src/KD024VGFPD094.c **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s 			page 15
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccXaHlxK.s 			page 15
 
 
  155:Core/Src/KD024VGFPD094.c ****     write_command(0xC2); // Inversion set
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s 			page 1
  650 00de 1020     		movs	r0, #16
  651 00e0 FFF7FEFF 		bl	write_data
  652              	.LVL100:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s 			page 16
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccXaHlxK.s 			page 16
 
 
  168:Core/Src/KD024VGFPD094.c ****     write_data(0x07);
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s 			page 1
  696              	.LVL111:
  179:Core/Src/KD024VGFPD094.c **** 
  180:Core/Src/KD024VGFPD094.c ****     write_command(0xB1); // Negative Voltage Gamma Control
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s 			page 17
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccXaHlxK.s 			page 17
 
 
  697              		.loc 1 180 5 view .LVU162
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s 			page 1
  191:Core/Src/KD024VGFPD094.c ****     write_data(0x05);
  741              		.loc 1 191 5 view .LVU173
  742 0168 0520     		movs	r0, #5
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s 			page 18
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccXaHlxK.s 			page 18
 
 
  743 016a FFF7FEFF 		bl	write_data
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s 			page 1
  785              		.loc 1 203 5 view .LVU184
  786 01aa 1120     		movs	r0, #17
  787 01ac FFF7FEFF 		bl	write_data
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s 			page 19
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccXaHlxK.s 			page 19
 
 
  788              	.LVL134:
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s 			page 1
  827 01e8 FFF7FEFF 		bl	write_data
  828              	.LVL144:
  219:Core/Src/KD024VGFPD094.c **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s 			page 20
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccXaHlxK.s 			page 20
 
 
  220:Core/Src/KD024VGFPD094.c ****     write_command(0xB7); // Power Control 1
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s 			page 1
  234:Core/Src/KD024VGFPD094.c **** 
  235:Core/Src/KD024VGFPD094.c ****     write_command(0xD0); // Source EQ2 Setting
  869              		.loc 1 235 5 view .LVU205
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s 			page 21
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccXaHlxK.s 			page 21
 
 
  870 0228 D020     		movs	r0, #208
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s 			page 1
  911 0266 FFF7FEFF 		bl	write_data
  912              	.LVL165:
  249:Core/Src/KD024VGFPD094.c ****     write_data(0xB0);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s 			page 22
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccXaHlxK.s 			page 22
 
 
  913              		.loc 1 249 5 view .LVU216
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s 			page 1
  956              	.LVL176:
  261:Core/Src/KD024VGFPD094.c ****     write_data(0x44);
  957              		.loc 1 261 5 view .LVU227
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s 			page 23
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccXaHlxK.s 			page 23
 
 
  958 02ac 4420     		movs	r0, #68
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s 			page 1
  273:Core/Src/KD024VGFPD094.c ****     write_data(0x00);
  1001              		.loc 1 273 5 view .LVU238
  1002 02ee 0020     		movs	r0, #0
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s 			page 24
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccXaHlxK.s 			page 24
 
 
  1003 02f0 FFF7FEFF 		bl	write_data
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s 			page 1
  286:Core/Src/KD024VGFPD094.c ****     write_data(0xA0);
  1045              		.loc 1 286 5 view .LVU249
  1046 0330 A020     		movs	r0, #160
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s 			page 25
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccXaHlxK.s 			page 25
 
 
  1047 0332 FFF7FEFF 		bl	write_data
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s 			page 1
  1090 0372 B020     		movs	r0, #176
  1091 0374 FFF7FEFF 		bl	write_data
  1092              	.LVL210:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s 			page 26
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccXaHlxK.s 			page 26
 
 
  298:Core/Src/KD024VGFPD094.c ****     write_data(0xA0);
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s 			page 1
  1133              		.loc 1 311 5 view .LVU271
  1134 03b4 0D20     		movs	r0, #13
  1135 03b6 FFF7FEFF 		bl	write_data
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s 			page 27
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccXaHlxK.s 			page 27
 
 
  1136              	.LVL221:
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s 			page 1
  1179 03f8 FFF7FEFF 		bl	write_data
  1180              	.LVL232:
  323:Core/Src/KD024VGFPD094.c ****     write_data(0x0B);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s 			page 28
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccXaHlxK.s 			page 28
 
 
  1181              		.loc 1 323 5 view .LVU283
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s 			page 1
  1224 0438 0020     		movs	r0, #0
  1225 043a FFF7FEFF 		bl	write_data
  1226              	.LVL242:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s 			page 29
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccXaHlxK.s 			page 29
 
 
  335:Core/Src/KD024VGFPD094.c ****     write_data(0xE4);
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s 			page 1
  1269 047c FFF7FEFF 		bl	write_data
  1270              	.LVL253:
  347:Core/Src/KD024VGFPD094.c ****     write_data(0x45);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s 			page 30
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccXaHlxK.s 			page 30
 
 
  1271              		.loc 1 347 5 view .LVU304
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s 			page 1
  358:Core/Src/KD024VGFPD094.c **** 
  359:Core/Src/KD024VGFPD094.c ****     write_command(0xEF);
  1315              		.loc 1 359 5 view .LVU315
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s 			page 31
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccXaHlxK.s 			page 31
 
 
  1316 04c2 EF20     		movs	r0, #239
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s 			page 1
  371:Core/Src/KD024VGFPD094.c ****     write_data(0x00);
  1359              		.loc 1 371 5 view .LVU326
  1360 0504 0020     		movs	r0, #0
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s 			page 32
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccXaHlxK.s 			page 32
 
 
  1361 0506 FFF7FEFF 		bl	write_data
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s 			page 1
  384:Core/Src/KD024VGFPD094.c **** 
  385:Core/Src/KD024VGFPD094.c ****     write_command(0x11);
  1403              		.loc 1 385 5 view .LVU337
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s 			page 33
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccXaHlxK.s 			page 33
 
 
  1404 0546 1120     		movs	r0, #17
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s 			page 1
  1446              	.LVL297:
  398:Core/Src/KD024VGFPD094.c ****     HAL_Delay(10);
  1447              		.loc 1 398 5 view .LVU348
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s 			page 34
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccXaHlxK.s 			page 34
 
 
  1448 0588 0A20     		movs	r0, #10
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s 			page 1
  1489 05c6 FFF7FEFF 		bl	write_command
  1490              	.LVL308:
  412:Core/Src/KD024VGFPD094.c ****     write_data(0x70); // 24BIT
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s 			page 35
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccXaHlxK.s 			page 35
 
 
  1491              		.loc 1 412 5 view .LVU359
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s 			page 1
  423:Core/Src/KD024VGFPD094.c ****     HAL_Delay(10);
  1537              		.loc 1 423 5 view .LVU366
  1538 0008 0A20     		movs	r0, #10
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s 			page 36
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccXaHlxK.s 			page 36
 
 
  1539 000a FFF7FEFF 		bl	HAL_Delay
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s 			page 1
  1585              		.align	1
  1586              		.global	SSD_SEND
  1587              		.syntax unified
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s 			page 37
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccXaHlxK.s 			page 37
 
 
  1588              		.thumb
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s 			page 1
  445:Core/Src/KD024VGFPD094.c ****     {
  446:Core/Src/KD024VGFPD094.c ****         // 获取下一个参数并发送
  447:Core/Src/KD024VGFPD094.c ****         data = va_arg(args, int); // Note: va_arg第二个参数是你要获取的类型
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s 			page 38
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccXaHlxK.s 			page 38
 
 
  1633              		.loc 1 447 9 is_stmt 1 view .LVU384
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s 			page 1
  1673              		.cfi_def_cfa_offset 16
  1674              	.LVL326:
  1675              		.loc 1 457 1 view .LVU395
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s 			page 39
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccXaHlxK.s 			page 39
 
 
  1676 004a 04B0     		add	sp, sp, #16
@@ -2305,33 +2305,33 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s 			page 1
  1698              		.file 8 "c:\\tools\\gcc-arm-none-eabi\\arm-none-eabi\\include\\stdio.h"
  1699              		.file 9 "Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h"
  1700              		.file 10 "<built-in>"
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s 			page 40
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccXaHlxK.s 			page 40
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 KD024VGFPD094.c
-C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s:19     .text.read_data:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s:25     .text.read_data:00000000 read_data
-C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s:231    .text.read_data:000000e0 $d
-C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s:236    .text.write_command:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s:242    .text.write_command:00000000 write_command
-C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s:355    .text.write_command:0000007c $d
-C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s:360    .text.write_data:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s:366    .text.write_data:00000000 write_data
-C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s:479    .text.write_data:0000007c $d
-C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s:484    .rodata.KD024VGFPD094_init.str1.4:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s:488    .text.KD024VGFPD094_init:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s:494    .text.KD024VGFPD094_init:00000000 KD024VGFPD094_init
-C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s:1187   .text.KD024VGFPD094_init:00000400 $d
-C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s:1189   .text.KD024VGFPD094_init:00000404 $t
-C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s:1512   .text.KD024VGFPD094_init:000005e4 $d
-C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s:1517   .text.EnterSleep:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s:1523   .text.EnterSleep:00000000 EnterSleep
-C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s:1551   .text.ExitSleep:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s:1557   .text.ExitSleep:00000000 ExitSleep
-C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s:1585   .text.SSD_SEND:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s:1591   .text.SSD_SEND:00000000 SSD_SEND
-C:\Users\OSD\AppData\Local\Temp\ccni5c0a.s:1686   .text.SSD_SEND:00000050 $d
+C:\Users\OSD\AppData\Local\Temp\ccXaHlxK.s:19     .text.read_data:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccXaHlxK.s:25     .text.read_data:00000000 read_data
+C:\Users\OSD\AppData\Local\Temp\ccXaHlxK.s:231    .text.read_data:000000e0 $d
+C:\Users\OSD\AppData\Local\Temp\ccXaHlxK.s:236    .text.write_command:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccXaHlxK.s:242    .text.write_command:00000000 write_command
+C:\Users\OSD\AppData\Local\Temp\ccXaHlxK.s:355    .text.write_command:0000007c $d
+C:\Users\OSD\AppData\Local\Temp\ccXaHlxK.s:360    .text.write_data:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccXaHlxK.s:366    .text.write_data:00000000 write_data
+C:\Users\OSD\AppData\Local\Temp\ccXaHlxK.s:479    .text.write_data:0000007c $d
+C:\Users\OSD\AppData\Local\Temp\ccXaHlxK.s:484    .rodata.KD024VGFPD094_init.str1.4:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccXaHlxK.s:488    .text.KD024VGFPD094_init:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccXaHlxK.s:494    .text.KD024VGFPD094_init:00000000 KD024VGFPD094_init
+C:\Users\OSD\AppData\Local\Temp\ccXaHlxK.s:1187   .text.KD024VGFPD094_init:00000400 $d
+C:\Users\OSD\AppData\Local\Temp\ccXaHlxK.s:1189   .text.KD024VGFPD094_init:00000404 $t
+C:\Users\OSD\AppData\Local\Temp\ccXaHlxK.s:1512   .text.KD024VGFPD094_init:000005e4 $d
+C:\Users\OSD\AppData\Local\Temp\ccXaHlxK.s:1517   .text.EnterSleep:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccXaHlxK.s:1523   .text.EnterSleep:00000000 EnterSleep
+C:\Users\OSD\AppData\Local\Temp\ccXaHlxK.s:1551   .text.ExitSleep:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccXaHlxK.s:1557   .text.ExitSleep:00000000 ExitSleep
+C:\Users\OSD\AppData\Local\Temp\ccXaHlxK.s:1585   .text.SSD_SEND:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccXaHlxK.s:1591   .text.SSD_SEND:00000000 SSD_SEND
+C:\Users\OSD\AppData\Local\Temp\ccXaHlxK.s:1686   .text.SSD_SEND:00000050 $d
 
 UNDEFINED SYMBOLS
 HAL_GPIO_WritePin

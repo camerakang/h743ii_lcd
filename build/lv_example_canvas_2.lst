@@ -1,0 +1,1142 @@
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc5OhCDw.s 			page 1
+
+
+   1              		.cpu cortex-m7
+   2              		.arch armv7e-m
+   3              		.fpu fpv5-d16
+   4              		.eabi_attribute 28, 1
+   5              		.eabi_attribute 20, 1
+   6              		.eabi_attribute 21, 1
+   7              		.eabi_attribute 23, 3
+   8              		.eabi_attribute 24, 1
+   9              		.eabi_attribute 25, 1
+  10              		.eabi_attribute 26, 1
+  11              		.eabi_attribute 30, 1
+  12              		.eabi_attribute 34, 1
+  13              		.eabi_attribute 18, 4
+  14              		.file	"lv_example_canvas_2.c"
+  15              		.text
+  16              	.Ltext0:
+  17              		.cfi_sections	.debug_frame
+  18              		.section	.text.lv_example_canvas_2,"ax",%progbits
+  19              		.align	1
+  20              		.global	lv_example_canvas_2
+  21              		.syntax unified
+  22              		.thumb
+  23              		.thumb_func
+  25              	lv_example_canvas_2:
+  26              	.LFB204:
+  27              		.file 1 "lvgl/examples/widgets/canvas/lv_example_canvas_2.c"
+   1:lvgl/examples/widgets/canvas/lv_example_canvas_2.c **** #include "../../lv_examples.h"
+   2:lvgl/examples/widgets/canvas/lv_example_canvas_2.c **** #if LV_USE_CANVAS && LV_BUILD_EXAMPLES
+   3:lvgl/examples/widgets/canvas/lv_example_canvas_2.c **** 
+   4:lvgl/examples/widgets/canvas/lv_example_canvas_2.c **** #define CANVAS_WIDTH  50
+   5:lvgl/examples/widgets/canvas/lv_example_canvas_2.c **** #define CANVAS_HEIGHT  50
+   6:lvgl/examples/widgets/canvas/lv_example_canvas_2.c **** 
+   7:lvgl/examples/widgets/canvas/lv_example_canvas_2.c **** /**
+   8:lvgl/examples/widgets/canvas/lv_example_canvas_2.c ****  * Create a transparent canvas with Chroma keying and indexed color format (palette).
+   9:lvgl/examples/widgets/canvas/lv_example_canvas_2.c ****  */
+  10:lvgl/examples/widgets/canvas/lv_example_canvas_2.c **** void lv_example_canvas_2(void)
+  11:lvgl/examples/widgets/canvas/lv_example_canvas_2.c **** {
+  28              		.loc 1 11 1 view -0
+  29              		.cfi_startproc
+  30              		@ args = 0, pretend = 0, frame = 0
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+  32 0000 F0B5     		push	{r4, r5, r6, r7, lr}
+  33              		.cfi_def_cfa_offset 20
+  34              		.cfi_offset 4, -20
+  35              		.cfi_offset 5, -16
+  36              		.cfi_offset 6, -12
+  37              		.cfi_offset 7, -8
+  38              		.cfi_offset 14, -4
+  39 0002 83B0     		sub	sp, sp, #12
+  40              		.cfi_def_cfa_offset 32
+  12:lvgl/examples/widgets/canvas/lv_example_canvas_2.c ****     /*Create a button to better see the transparency*/
+  13:lvgl/examples/widgets/canvas/lv_example_canvas_2.c ****     lv_btn_create(lv_scr_act());
+  41              		.loc 1 13 5 view .LVU1
+  42              	.LBB10:
+  43              	.LBI10:
+  44              		.file 2 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/core/lv_disp.h"
+   1:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc5OhCDw.s 			page 2
+
+
+   2:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @file lv_disp.h
+   3:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  *
+   4:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+   5:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+   6:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** #ifndef LV_DISP_H
+   7:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** #define LV_DISP_H
+   8:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+   9:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** #ifdef __cplusplus
+  10:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** extern "C" {
+  11:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** #endif
+  12:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+  13:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /*********************
+  14:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  *      INCLUDES
+  15:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  *********************/
+  16:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** #include "../hal/lv_hal.h"
+  17:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** #include "lv_obj.h"
+  18:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** #include "lv_theme.h"
+  19:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+  20:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /*********************
+  21:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  *      DEFINES
+  22:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  *********************/
+  23:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+  24:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**********************
+  25:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  *      TYPEDEFS
+  26:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  **********************/
+  27:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+  28:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** typedef enum {
+  29:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_NONE,
+  30:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_OVER_LEFT,
+  31:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_OVER_RIGHT,
+  32:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_OVER_TOP,
+  33:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_OVER_BOTTOM,
+  34:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_MOVE_LEFT,
+  35:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_MOVE_RIGHT,
+  36:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_MOVE_TOP,
+  37:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_MOVE_BOTTOM,
+  38:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_FADE_IN,
+  39:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_FADE_ON = LV_SCR_LOAD_ANIM_FADE_IN, /*For backward compatibility*/
+  40:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_FADE_OUT,
+  41:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_OUT_LEFT,
+  42:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_OUT_RIGHT,
+  43:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_OUT_TOP,
+  44:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_OUT_BOTTOM,
+  45:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** } lv_scr_load_anim_t;
+  46:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+  47:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**********************
+  48:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * GLOBAL PROTOTYPES
+  49:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  **********************/
+  50:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+  51:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+  52:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Return with a pointer to the active screen
+  53:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to display which active screen should be get. (NULL to use the default
+  54:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * screen)
+  55:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @return pointer to the active screen object (loaded by 'lv_scr_load()')
+  56:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+  57:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** lv_obj_t * lv_disp_get_scr_act(lv_disp_t * disp);
+  58:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc5OhCDw.s 			page 3
+
+
+  59:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+  60:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Return with a pointer to the previous screen. Only used during screen transitions.
+  61:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to display which previous screen should be get. (NULL to use the default
+  62:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * screen)
+  63:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @return pointer to the previous screen object or NULL if not used now
+  64:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+  65:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** lv_obj_t * lv_disp_get_scr_prev(lv_disp_t * disp);
+  66:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+  67:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+  68:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Make a screen active
+  69:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param scr pointer to a screen
+  70:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+  71:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** void lv_disp_load_scr(lv_obj_t * scr);
+  72:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+  73:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+  74:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Return with the top layer. (Same on every screen and it is above the normal screen layer)
+  75:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to display which top layer should be get. (NULL to use the default screen)
+  76:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @return pointer to the top layer object (transparent screen sized lv_obj)
+  77:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+  78:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** lv_obj_t * lv_disp_get_layer_top(lv_disp_t * disp);
+  79:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+  80:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+  81:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Return with the sys. layer. (Same on every screen and it is above the normal screen and the top
+  82:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * layer)
+  83:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to display which sys. layer should be retrieved. (NULL to use the default sc
+  84:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @return pointer to the sys layer object (transparent screen sized lv_obj)
+  85:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+  86:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** lv_obj_t * lv_disp_get_layer_sys(lv_disp_t * disp);
+  87:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+  88:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+  89:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Set the theme of a display
+  90:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to a display
+  91:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+  92:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** void lv_disp_set_theme(lv_disp_t * disp, lv_theme_t * th);
+  93:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+  94:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+  95:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Get the theme of a display
+  96:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to a display
+  97:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @return the display's theme (can be NULL)
+  98:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+  99:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** lv_theme_t * lv_disp_get_theme(lv_disp_t * disp);
+ 100:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+ 101:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+ 102:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Set the background color of a display
+ 103:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to a display
+ 104:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param color color of the background
+ 105:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+ 106:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** void lv_disp_set_bg_color(lv_disp_t * disp, lv_color_t color);
+ 107:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+ 108:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+ 109:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Set the background image of a display
+ 110:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to a display
+ 111:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param img_src path to file or pointer to an `lv_img_dsc_t` variable
+ 112:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+ 113:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** void lv_disp_set_bg_image(lv_disp_t * disp, const void  * img_src);
+ 114:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+ 115:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc5OhCDw.s 			page 4
+
+
+ 116:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Set opacity of the background
+ 117:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to a display
+ 118:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param opa opacity (0..255)
+ 119:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+ 120:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** void lv_disp_set_bg_opa(lv_disp_t * disp, lv_opa_t opa);
+ 121:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+ 122:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+ 123:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Switch screen with animation
+ 124:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param scr pointer to the new screen to load
+ 125:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param anim_type type of the animation from `lv_scr_load_anim_t`, e.g. `LV_SCR_LOAD_ANIM_MOVE_LE
+ 126:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param time time of the animation
+ 127:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param delay delay before the transition
+ 128:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param auto_del true: automatically delete the old screen
+ 129:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+ 130:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** void lv_scr_load_anim(lv_obj_t * scr, lv_scr_load_anim_t anim_type, uint32_t time, uint32_t delay, 
+ 131:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+ 132:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+ 133:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Get elapsed time since last user activity on a display (e.g. click)
+ 134:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to a display (NULL to get the overall smallest inactivity)
+ 135:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @return elapsed ticks (milliseconds) since the last activity
+ 136:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+ 137:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** uint32_t lv_disp_get_inactive_time(const lv_disp_t * disp);
+ 138:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+ 139:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+ 140:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Manually trigger an activity on a display
+ 141:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to a display (NULL to use the default display)
+ 142:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+ 143:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** void lv_disp_trig_activity(lv_disp_t * disp);
+ 144:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+ 145:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+ 146:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Clean any CPU cache that is related to the display.
+ 147:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to a display (NULL to use the default display)
+ 148:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+ 149:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** void lv_disp_clean_dcache(lv_disp_t * disp);
+ 150:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+ 151:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+ 152:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Temporarily enable and disable the invalidation of the display.
+ 153:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to a display (NULL to use the default display)
+ 154:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param en true: enable invalidation; false: invalidation
+ 155:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+ 156:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** void lv_disp_enable_invalidation(lv_disp_t * disp, bool en);
+ 157:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+ 158:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+ 159:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Get display invalidation is enabled.
+ 160:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to a display (NULL to use the default display)
+ 161:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @return return true if invalidation is enabled
+ 162:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+ 163:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** bool lv_disp_is_invalidation_enabled(lv_disp_t * disp);
+ 164:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+ 165:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+ 166:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Get a pointer to the screen refresher timer to
+ 167:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * modify its parameters with `lv_timer_...` functions.
+ 168:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to a display
+ 169:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @return pointer to the display refresher timer. (NULL on error)
+ 170:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+ 171:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** lv_timer_t * _lv_disp_get_refr_timer(lv_disp_t * disp);
+ 172:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc5OhCDw.s 			page 5
+
+
+ 173:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /*------------------------------------------------
+ 174:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * To improve backward compatibility
+ 175:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Recommended only if you have one display
+ 176:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  *------------------------------------------------*/
+ 177:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+ 178:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+ 179:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Get the active screen of the default display
+ 180:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @return pointer to the active screen
+ 181:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+ 182:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** static inline lv_obj_t * lv_scr_act(void)
+  45              		.loc 2 182 26 view .LVU2
+  46              	.LBB11:
+ 183:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** {
+ 184:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     return lv_disp_get_scr_act(lv_disp_get_default());
+  47              		.loc 2 184 5 view .LVU3
+  48              		.loc 2 184 12 is_stmt 0 view .LVU4
+  49 0004 FFF7FEFF 		bl	lv_disp_get_default
+  50              	.LVL0:
+  51 0008 FFF7FEFF 		bl	lv_disp_get_scr_act
+  52              	.LVL1:
+  53              	.LBE11:
+  54              	.LBE10:
+  55              		.loc 1 13 5 view .LVU5
+  56 000c FFF7FEFF 		bl	lv_btn_create
+  57              	.LVL2:
+  14:lvgl/examples/widgets/canvas/lv_example_canvas_2.c **** 
+  15:lvgl/examples/widgets/canvas/lv_example_canvas_2.c ****     /*Create a buffer for the canvas*/
+  16:lvgl/examples/widgets/canvas/lv_example_canvas_2.c ****     static lv_color_t cbuf[LV_CANVAS_BUF_SIZE_INDEXED_1BIT(CANVAS_WIDTH, CANVAS_HEIGHT)];
+  58              		.loc 1 16 5 is_stmt 1 view .LVU6
+  17:lvgl/examples/widgets/canvas/lv_example_canvas_2.c **** 
+  18:lvgl/examples/widgets/canvas/lv_example_canvas_2.c ****     /*Create a canvas and initialize its palette*/
+  19:lvgl/examples/widgets/canvas/lv_example_canvas_2.c ****     lv_obj_t * canvas = lv_canvas_create(lv_scr_act());
+  59              		.loc 1 19 5 view .LVU7
+  60              	.LBB12:
+  61              	.LBI12:
+ 182:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** {
+  62              		.loc 2 182 26 view .LVU8
+  63              	.LBB13:
+  64              		.loc 2 184 5 view .LVU9
+  65              		.loc 2 184 12 is_stmt 0 view .LVU10
+  66 0010 FFF7FEFF 		bl	lv_disp_get_default
+  67              	.LVL3:
+  68 0014 FFF7FEFF 		bl	lv_disp_get_scr_act
+  69              	.LVL4:
+  70              	.LBE13:
+  71              	.LBE12:
+  72              		.loc 1 19 25 view .LVU11
+  73 0018 FFF7FEFF 		bl	lv_canvas_create
+  74              	.LVL5:
+  75 001c 0646     		mov	r6, r0
+  76              	.LVL6:
+  20:lvgl/examples/widgets/canvas/lv_example_canvas_2.c ****     lv_canvas_set_buffer(canvas, cbuf, CANVAS_WIDTH, CANVAS_HEIGHT, LV_IMG_CF_INDEXED_1BIT);
+  77              		.loc 1 20 5 is_stmt 1 view .LVU12
+  78 001e 0723     		movs	r3, #7
+  79 0020 0093     		str	r3, [sp]
+  80 0022 3223     		movs	r3, #50
+  81 0024 1A46     		mov	r2, r3
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc5OhCDw.s 			page 6
+
+
+  82 0026 1449     		ldr	r1, .L8
+  83 0028 FFF7FEFF 		bl	lv_canvas_set_buffer
+  84              	.LVL7:
+  21:lvgl/examples/widgets/canvas/lv_example_canvas_2.c ****     lv_canvas_set_palette(canvas, 0, LV_COLOR_CHROMA_KEY);
+  85              		.loc 1 21 5 view .LVU13
+  86              	.LBB14:
+  87              	.LBI14:
+  88              		.file 3 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\misc\\lv_color.h"
+   1:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** /**
+   2:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****  * @file lv_color.h
+   3:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****  *
+   4:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****  */
+   5:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
+   6:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #ifndef LV_COLOR_H
+   7:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #define LV_COLOR_H
+   8:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
+   9:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #ifdef __cplusplus
+  10:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** extern "C" {
+  11:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #endif
+  12:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
+  13:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** /*********************
+  14:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****  *      INCLUDES
+  15:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****  *********************/
+  16:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #include "../lv_conf_internal.h"
+  17:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #include "lv_assert.h"
+  18:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #include "lv_math.h"
+  19:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #include "lv_types.h"
+  20:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
+  21:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** /*Error checking*/
+  22:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #if LV_COLOR_DEPTH == 24
+  23:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #error "LV_COLOR_DEPTH 24 is deprecated. Use LV_COLOR_DEPTH 32 instead (lv_conf.h)"
+  24:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #endif
+  25:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
+  26:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #if LV_COLOR_DEPTH != 16 && LV_COLOR_16_SWAP != 0
+  27:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #error "LV_COLOR_16_SWAP requires LV_COLOR_DEPTH == 16. Set it in lv_conf.h"
+  28:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #endif
+  29:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
+  30:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #include <stdint.h>
+  31:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
+  32:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** /*********************
+  33:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****  *      DEFINES
+  34:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****  *********************/
+  35:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** LV_EXPORT_CONST_INT(LV_COLOR_DEPTH);
+  36:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** LV_EXPORT_CONST_INT(LV_COLOR_16_SWAP);
+  37:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
+  38:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** /**
+  39:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****  * Opacity percentages.
+  40:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****  */
+  41:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** enum {
+  42:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     LV_OPA_TRANSP = 0,
+  43:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     LV_OPA_0      = 0,
+  44:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     LV_OPA_10     = 25,
+  45:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     LV_OPA_20     = 51,
+  46:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     LV_OPA_30     = 76,
+  47:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     LV_OPA_40     = 102,
+  48:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     LV_OPA_50     = 127,
+  49:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     LV_OPA_60     = 153,
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc5OhCDw.s 			page 7
+
+
+  50:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     LV_OPA_70     = 178,
+  51:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     LV_OPA_80     = 204,
+  52:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     LV_OPA_90     = 229,
+  53:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     LV_OPA_100    = 255,
+  54:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     LV_OPA_COVER  = 255,
+  55:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** };
+  56:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
+  57:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #define LV_OPA_MIN 2    /*Opacities below this will be transparent*/
+  58:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #define LV_OPA_MAX 253  /*Opacities above this will fully cover*/
+  59:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
+  60:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #if LV_COLOR_DEPTH == 1
+  61:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #define LV_COLOR_SIZE 8
+  62:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #elif LV_COLOR_DEPTH == 8
+  63:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #define LV_COLOR_SIZE 8
+  64:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #elif LV_COLOR_DEPTH == 16
+  65:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #define LV_COLOR_SIZE 16
+  66:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #elif LV_COLOR_DEPTH == 32
+  67:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #define LV_COLOR_SIZE 32
+  68:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #else
+  69:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #error "Invalid LV_COLOR_DEPTH in lv_conf.h! Set it to 1, 8, 16 or 32!"
+  70:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #endif
+  71:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
+  72:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #if defined(__cplusplus) && !defined(_LV_COLOR_HAS_MODERN_CPP)
+  73:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** /**
+  74:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** * MSVC compiler's definition of the __cplusplus indicating 199711L regardless to C++ standard versi
+  75:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** * see https://devblogs.microsoft.com/cppblog/msvc-now-correctly-reports-cplusplus
+  76:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** * so we use _MSC_VER macro instead of __cplusplus
+  77:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** */
+  78:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #ifdef _MSC_VER
+  79:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #if _MSC_VER >= 1900 /*Visual Studio 2015*/
+  80:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #define _LV_COLOR_HAS_MODERN_CPP 1
+  81:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #endif
+  82:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #else
+  83:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #if __cplusplus >= 201103L
+  84:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #define _LV_COLOR_HAS_MODERN_CPP 1
+  85:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #endif
+  86:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #endif
+  87:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #endif /*__cplusplus*/
+  88:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
+  89:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #ifndef _LV_COLOR_HAS_MODERN_CPP
+  90:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #define _LV_COLOR_HAS_MODERN_CPP 0
+  91:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #endif
+  92:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
+  93:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #if _LV_COLOR_HAS_MODERN_CPP
+  94:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** /*Fix msvc compiler error C4576 inside C++ code*/
+  95:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #define _LV_COLOR_MAKE_TYPE_HELPER lv_color_t
+  96:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #else
+  97:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #define _LV_COLOR_MAKE_TYPE_HELPER (lv_color_t)
+  98:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #endif
+  99:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
+ 100:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** /*---------------------------------------
+ 101:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****  * Macros for all existing color depths
+ 102:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****  * to set/get values of the color channels
+ 103:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****  *------------------------------------------*/
+ 104:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** # define LV_COLOR_SET_R1(c, v) (c).ch.red = (uint8_t)((v) & 0x1)
+ 105:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** # define LV_COLOR_SET_G1(c, v) (c).ch.green = (uint8_t)((v) & 0x1)
+ 106:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** # define LV_COLOR_SET_B1(c, v) (c).ch.blue = (uint8_t)((v) & 0x1)
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc5OhCDw.s 			page 8
+
+
+ 107:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** # define LV_COLOR_SET_A1(c, v) do {} while(0)
+ 108:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
+ 109:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** # define LV_COLOR_GET_R1(c) (c).ch.red
+ 110:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** # define LV_COLOR_GET_G1(c) (c).ch.green
+ 111:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** # define LV_COLOR_GET_B1(c) (c).ch.blue
+ 112:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** # define LV_COLOR_GET_A1(c) 0xFF
+ 113:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
+ 114:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** # define _LV_COLOR_ZERO_INITIALIZER1 {0x00}
+ 115:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** # define LV_COLOR_MAKE1(r8, g8, b8)  {(uint8_t)((b8 >> 7) | (g8 >> 7) | (r8 >> 7))}
+ 116:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
+ 117:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** # define LV_COLOR_SET_R8(c, v) (c).ch.red = (uint8_t)((v) & 0x7U)
+ 118:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** # define LV_COLOR_SET_G8(c, v) (c).ch.green = (uint8_t)((v) & 0x7U)
+ 119:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** # define LV_COLOR_SET_B8(c, v) (c).ch.blue = (uint8_t)((v) & 0x3U)
+ 120:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** # define LV_COLOR_SET_A8(c, v) do {} while(0)
+ 121:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
+ 122:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** # define LV_COLOR_GET_R8(c) (c).ch.red
+ 123:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** # define LV_COLOR_GET_G8(c) (c).ch.green
+ 124:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** # define LV_COLOR_GET_B8(c) (c).ch.blue
+ 125:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** # define LV_COLOR_GET_A8(c) 0xFF
+ 126:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
+ 127:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** # define _LV_COLOR_ZERO_INITIALIZER8 {{0x00, 0x00, 0x00}}
+ 128:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** # define LV_COLOR_MAKE8(r8, g8, b8) {{(uint8_t)((b8 >> 6) & 0x3U), (uint8_t)((g8 >> 5) & 0x7U), (ui
+ 129:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
+ 130:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** # define LV_COLOR_SET_R16(c, v) (c).ch.red = (uint8_t)((v) & 0x1FU)
+ 131:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #if LV_COLOR_16_SWAP == 0
+ 132:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** # define LV_COLOR_SET_G16(c, v) (c).ch.green = (uint8_t)((v) & 0x3FU)
+ 133:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #else
+ 134:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** # define LV_COLOR_SET_G16(c, v) {(c).ch.green_h = (uint8_t)(((v) >> 3) & 0x7); (c).ch.green_l = (ui
+ 135:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #endif
+ 136:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** # define LV_COLOR_SET_B16(c, v) (c).ch.blue = (uint8_t)((v) & 0x1FU)
+ 137:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** # define LV_COLOR_SET_A16(c, v) do {} while(0)
+ 138:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
+ 139:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** # define LV_COLOR_GET_R16(c) (c).ch.red
+ 140:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #if LV_COLOR_16_SWAP == 0
+ 141:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** # define LV_COLOR_GET_G16(c) (c).ch.green
+ 142:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #else
+ 143:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** # define LV_COLOR_GET_G16(c) (((c).ch.green_h << 3) + (c).ch.green_l)
+ 144:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #endif
+ 145:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** # define LV_COLOR_GET_B16(c) (c).ch.blue
+ 146:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** # define LV_COLOR_GET_A16(c) 0xFF
+ 147:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
+ 148:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #if LV_COLOR_16_SWAP == 0
+ 149:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** # define _LV_COLOR_ZERO_INITIALIZER16  {{0x00, 0x00, 0x00}}
+ 150:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** # define LV_COLOR_MAKE16(r8, g8, b8) {{(uint8_t)((b8 >> 3) & 0x1FU), (uint8_t)((g8 >> 2) & 0x3FU), 
+ 151:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #else
+ 152:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** # define _LV_COLOR_ZERO_INITIALIZER16 {{0x00, 0x00, 0x00, 0x00}}
+ 153:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** # define LV_COLOR_MAKE16(r8, g8, b8) {{(uint8_t)((g8 >> 5) & 0x7U), (uint8_t)((r8 >> 3) & 0x1FU), (
+ 154:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #endif
+ 155:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
+ 156:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** # define LV_COLOR_SET_R32(c, v) (c).ch.red = (uint8_t)((v) & 0xFF)
+ 157:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** # define LV_COLOR_SET_G32(c, v) (c).ch.green = (uint8_t)((v) & 0xFF)
+ 158:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** # define LV_COLOR_SET_B32(c, v) (c).ch.blue = (uint8_t)((v) & 0xFF)
+ 159:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** # define LV_COLOR_SET_A32(c, v) (c).ch.alpha = (uint8_t)((v) & 0xFF)
+ 160:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
+ 161:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** # define LV_COLOR_GET_R32(c) (c).ch.red
+ 162:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** # define LV_COLOR_GET_G32(c) (c).ch.green
+ 163:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** # define LV_COLOR_GET_B32(c) (c).ch.blue
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc5OhCDw.s 			page 9
+
+
+ 164:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** # define LV_COLOR_GET_A32(c) (c).ch.alpha
+ 165:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
+ 166:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** # define _LV_COLOR_ZERO_INITIALIZER32  {{0x00, 0x00, 0x00, 0x00}}
+ 167:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** # define LV_COLOR_MAKE32(r8, g8, b8) {{b8, g8, r8, 0xff}} /*Fix 0xff alpha*/
+ 168:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
+ 169:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** /*---------------------------------------
+ 170:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****  * Macros for the current color depth
+ 171:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****  * to set/get values of the color channels
+ 172:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****  *------------------------------------------*/
+ 173:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #define LV_COLOR_SET_R(c, v) LV_CONCAT(LV_COLOR_SET_R, LV_COLOR_DEPTH)(c, v)
+ 174:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #define LV_COLOR_SET_G(c, v) LV_CONCAT(LV_COLOR_SET_G, LV_COLOR_DEPTH)(c, v)
+ 175:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #define LV_COLOR_SET_B(c, v) LV_CONCAT(LV_COLOR_SET_B, LV_COLOR_DEPTH)(c, v)
+ 176:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #define LV_COLOR_SET_A(c, v) LV_CONCAT(LV_COLOR_SET_A, LV_COLOR_DEPTH)(c, v)
+ 177:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
+ 178:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #define LV_COLOR_GET_R(c) LV_CONCAT(LV_COLOR_GET_R, LV_COLOR_DEPTH)(c)
+ 179:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #define LV_COLOR_GET_G(c) LV_CONCAT(LV_COLOR_GET_G, LV_COLOR_DEPTH)(c)
+ 180:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #define LV_COLOR_GET_B(c) LV_CONCAT(LV_COLOR_GET_B, LV_COLOR_DEPTH)(c)
+ 181:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #define LV_COLOR_GET_A(c) LV_CONCAT(LV_COLOR_GET_A, LV_COLOR_DEPTH)(c)
+ 182:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
+ 183:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #define _LV_COLOR_ZERO_INITIALIZER LV_CONCAT(_LV_COLOR_ZERO_INITIALIZER, LV_COLOR_DEPTH)
+ 184:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #define LV_COLOR_MAKE(r8, g8, b8) LV_CONCAT(LV_COLOR_MAKE, LV_COLOR_DEPTH)(r8, g8, b8)
+ 185:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
+ 186:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** /**********************
+ 187:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****  *      TYPEDEFS
+ 188:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****  **********************/
+ 189:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
+ 190:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** typedef union {
+ 191:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     uint8_t full; /*must be declared first to set all bits of byte via initializer list*/
+ 192:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     union {
+ 193:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****         uint8_t blue : 1;
+ 194:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****         uint8_t green : 1;
+ 195:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****         uint8_t red : 1;
+ 196:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     } ch;
+ 197:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** } lv_color1_t;
+ 198:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
+ 199:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** typedef union {
+ 200:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     struct {
+ 201:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****         uint8_t blue : 2;
+ 202:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****         uint8_t green : 3;
+ 203:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****         uint8_t red : 3;
+ 204:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     } ch;
+ 205:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     uint8_t full;
+ 206:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** } lv_color8_t;
+ 207:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
+ 208:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** typedef union {
+ 209:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     struct {
+ 210:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #if LV_COLOR_16_SWAP == 0
+ 211:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****         uint16_t blue : 5;
+ 212:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****         uint16_t green : 6;
+ 213:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****         uint16_t red : 5;
+ 214:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #else
+ 215:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****         uint16_t green_h : 3;
+ 216:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****         uint16_t red : 5;
+ 217:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****         uint16_t blue : 5;
+ 218:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****         uint16_t green_l : 3;
+ 219:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #endif
+ 220:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     } ch;
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc5OhCDw.s 			page 10
+
+
+ 221:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     uint16_t full;
+ 222:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** } lv_color16_t;
+ 223:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
+ 224:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** typedef union {
+ 225:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     struct {
+ 226:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****         uint8_t blue;
+ 227:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****         uint8_t green;
+ 228:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****         uint8_t red;
+ 229:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****         uint8_t alpha;
+ 230:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     } ch;
+ 231:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     uint32_t full;
+ 232:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** } lv_color32_t;
+ 233:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
+ 234:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** typedef LV_CONCAT3(uint, LV_COLOR_SIZE, _t) lv_color_int_t;
+ 235:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** typedef LV_CONCAT3(lv_color, LV_COLOR_DEPTH, _t) lv_color_t;
+ 236:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
+ 237:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** typedef struct {
+ 238:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     uint16_t h;
+ 239:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     uint8_t s;
+ 240:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     uint8_t v;
+ 241:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** } lv_color_hsv_t;
+ 242:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
+ 243:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** //! @cond Doxygen_Suppress
+ 244:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** /*No idea where the guard is required but else throws warnings in the docs*/
+ 245:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** typedef uint8_t lv_opa_t;
+ 246:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** //! @endcond
+ 247:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
+ 248:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** struct _lv_color_filter_dsc_t;
+ 249:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
+ 250:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** typedef lv_color_t (*lv_color_filter_cb_t)(const struct _lv_color_filter_dsc_t *, lv_color_t, lv_op
+ 251:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
+ 252:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** typedef struct _lv_color_filter_dsc_t {
+ 253:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     lv_color_filter_cb_t filter_cb;
+ 254:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     void * user_data;
+ 255:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** } lv_color_filter_dsc_t;
+ 256:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
+ 257:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** typedef enum {
+ 258:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     LV_PALETTE_RED,
+ 259:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     LV_PALETTE_PINK,
+ 260:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     LV_PALETTE_PURPLE,
+ 261:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     LV_PALETTE_DEEP_PURPLE,
+ 262:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     LV_PALETTE_INDIGO,
+ 263:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     LV_PALETTE_BLUE,
+ 264:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     LV_PALETTE_LIGHT_BLUE,
+ 265:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     LV_PALETTE_CYAN,
+ 266:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     LV_PALETTE_TEAL,
+ 267:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     LV_PALETTE_GREEN,
+ 268:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     LV_PALETTE_LIGHT_GREEN,
+ 269:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     LV_PALETTE_LIME,
+ 270:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     LV_PALETTE_YELLOW,
+ 271:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     LV_PALETTE_AMBER,
+ 272:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     LV_PALETTE_ORANGE,
+ 273:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     LV_PALETTE_DEEP_ORANGE,
+ 274:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     LV_PALETTE_BROWN,
+ 275:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     LV_PALETTE_BLUE_GREY,
+ 276:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     LV_PALETTE_GREY,
+ 277:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     _LV_PALETTE_LAST,
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc5OhCDw.s 			page 11
+
+
+ 278:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     LV_PALETTE_NONE = 0xff,
+ 279:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** } lv_palette_t;
+ 280:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
+ 281:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** /**********************
+ 282:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****  * GLOBAL PROTOTYPES
+ 283:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****  **********************/
+ 284:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
+ 285:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** /*In color conversations:
+ 286:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****  * - When converting to bigger color type the LSB weight of 1 LSB is calculated
+ 287:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****  *   E.g. 16 bit Red has 5 bits
+ 288:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****  *         8 bit Red has 3 bits
+ 289:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****  *        ----------------------
+ 290:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****  *        8 bit red LSB = (2^5 - 1) / (2^3 - 1) = 31 / 7 = 4
+ 291:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****  *
+ 292:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****  * - When calculating to smaller color type simply shift out the LSBs
+ 293:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****  *   E.g.  8 bit Red has 3 bits
+ 294:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****  *        16 bit Red has 5 bits
+ 295:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****  *        ----------------------
+ 296:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****  *         Shift right with 5 - 3 = 2
+ 297:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****  */
+ 298:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** static inline uint8_t lv_color_to1(lv_color_t color)
+ 299:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** {
+ 300:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #if LV_COLOR_DEPTH == 1
+ 301:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     return color.full;
+ 302:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #elif LV_COLOR_DEPTH == 8
+ 303:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     if((LV_COLOR_GET_R(color) & 0x4) || (LV_COLOR_GET_G(color) & 0x4) || (LV_COLOR_GET_B(color) & 0
+ 304:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****         return 1;
+ 305:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     }
+ 306:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     else {
+ 307:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****         return 0;
+ 308:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     }
+ 309:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #elif LV_COLOR_DEPTH == 16
+ 310:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     if((LV_COLOR_GET_R(color) & 0x10) || (LV_COLOR_GET_G(color) & 0x20) || (LV_COLOR_GET_B(color) &
+ 311:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****         return 1;
+ 312:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     }
+ 313:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     else {
+ 314:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****         return 0;
+ 315:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     }
+ 316:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #elif LV_COLOR_DEPTH == 32
+ 317:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     if((LV_COLOR_GET_R(color) & 0x80) || (LV_COLOR_GET_G(color) & 0x80) || (LV_COLOR_GET_B(color) &
+ 318:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****         return 1;
+ 319:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     }
+ 320:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     else {
+ 321:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****         return 0;
+ 322:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     }
+ 323:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #endif
+ 324:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** }
+ 325:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
+ 326:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** static inline uint8_t lv_color_to8(lv_color_t color)
+ 327:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** {
+ 328:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #if LV_COLOR_DEPTH == 1
+ 329:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     if(color.full == 0)
+ 330:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****         return 0;
+ 331:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     else
+ 332:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****         return 0xFF;
+ 333:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #elif LV_COLOR_DEPTH == 8
+ 334:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     return color.full;
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc5OhCDw.s 			page 12
+
+
+ 335:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #elif LV_COLOR_DEPTH == 16
+ 336:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     lv_color8_t ret;
+ 337:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     LV_COLOR_SET_R8(ret, LV_COLOR_GET_R(color) >> 2); /*5 - 3  = 2*/
+ 338:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     LV_COLOR_SET_G8(ret, LV_COLOR_GET_G(color) >> 3); /*6 - 3  = 3*/
+ 339:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     LV_COLOR_SET_B8(ret, LV_COLOR_GET_B(color) >> 3); /*5 - 2  = 3*/
+ 340:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     return ret.full;
+ 341:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #elif LV_COLOR_DEPTH == 32
+ 342:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     lv_color8_t ret;
+ 343:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     LV_COLOR_SET_R8(ret, LV_COLOR_GET_R(color) >> 5); /*8 - 3  = 5*/
+ 344:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     LV_COLOR_SET_G8(ret, LV_COLOR_GET_G(color) >> 5); /*8 - 3  = 5*/
+ 345:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     LV_COLOR_SET_B8(ret, LV_COLOR_GET_B(color) >> 6); /*8 - 2  = 6*/
+ 346:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     return ret.full;
+ 347:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #endif
+ 348:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** }
+ 349:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
+ 350:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** static inline uint16_t lv_color_to16(lv_color_t color)
+ 351:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** {
+ 352:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #if LV_COLOR_DEPTH == 1
+ 353:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     if(color.full == 0)
+ 354:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****         return 0;
+ 355:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     else
+ 356:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****         return 0xFFFF;
+ 357:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #elif LV_COLOR_DEPTH == 8
+ 358:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     lv_color16_t ret;
+ 359:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     LV_COLOR_SET_R16(ret, LV_COLOR_GET_R(color) * 4);  /*(2^5 - 1)/(2^3 - 1) = 31/7 = 4*/
+ 360:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     LV_COLOR_SET_G16(ret, LV_COLOR_GET_G(color) * 9);  /*(2^6 - 1)/(2^3 - 1) = 63/7 = 9*/
+ 361:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     LV_COLOR_SET_B16(ret, LV_COLOR_GET_B(color) * 10); /*(2^5 - 1)/(2^2 - 1) = 31/3 = 10*/
+ 362:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     return ret.full;
+ 363:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #elif LV_COLOR_DEPTH == 16
+ 364:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     return color.full;
+ 365:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #elif LV_COLOR_DEPTH == 32
+ 366:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     lv_color16_t ret;
+ 367:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     LV_COLOR_SET_R16(ret, LV_COLOR_GET_R(color) >> 3); /*8 - 5  = 3*/
+ 368:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     LV_COLOR_SET_G16(ret, LV_COLOR_GET_G(color) >> 2); /*8 - 6  = 2*/
+ 369:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     LV_COLOR_SET_B16(ret, LV_COLOR_GET_B(color) >> 3); /*8 - 5  = 3*/
+ 370:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     return ret.full;
+ 371:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #endif
+ 372:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** }
+ 373:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
+ 374:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** static inline uint32_t lv_color_to32(lv_color_t color)
+ 375:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** {
+ 376:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #if LV_COLOR_DEPTH == 1
+ 377:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     if(color.full == 0)
+ 378:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****         return 0xFF000000;
+ 379:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     else
+ 380:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****         return 0xFFFFFFFF;
+ 381:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #elif LV_COLOR_DEPTH == 8
+ 382:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     lv_color32_t ret;
+ 383:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     LV_COLOR_SET_R32(ret, LV_COLOR_GET_R(color) * 36); /*(2^8 - 1)/(2^3 - 1) = 255/7 = 36*/
+ 384:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     LV_COLOR_SET_G32(ret, LV_COLOR_GET_G(color) * 36); /*(2^8 - 1)/(2^3 - 1) = 255/7 = 36*/
+ 385:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     LV_COLOR_SET_B32(ret, LV_COLOR_GET_B(color) * 85); /*(2^8 - 1)/(2^2 - 1) = 255/3 = 85*/
+ 386:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     LV_COLOR_SET_A32(ret, 0xFF);
+ 387:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     return ret.full;
+ 388:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #elif LV_COLOR_DEPTH == 16
+ 389:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     /**
+ 390:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****      * The floating point math for conversion is:
+ 391:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****      *  valueto = valuefrom * ( (2^bitsto - 1) / (float)(2^bitsfrom - 1) )
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc5OhCDw.s 			page 13
+
+
+ 392:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****      * The faster integer math for conversion is:
+ 393:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****      *  valueto = ( valuefrom * multiplier + adder ) >> divisor
+ 394:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****      *   multiplier = FLOOR( ( (2^bitsto - 1) << divisor ) / (float)(2^bitsfrom - 1) )
+ 395:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****      *
+ 396:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****      * Find the first divisor where ( adder >> divisor ) <= 0
+ 397:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****      *
+ 398:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****      * 5-bit to 8-bit: ( 31 * multiplier + adder ) >> divisor = 255
+ 399:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****      * divisor  multiplier  adder  min (0)  max (31)
+ 400:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****      *       0           8      7        7       255
+ 401:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****      *       1          16     14        7       255
+ 402:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****      *       2          32     28        7       255
+ 403:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****      *       3          65     25        3       255
+ 404:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****      *       4         131     19        1       255
+ 405:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****      *       5         263      7        0       255
+ 406:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****      *
+ 407:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****      * 6-bit to 8-bit: 255 = ( 63 * multiplier + adder ) >> divisor
+ 408:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****      * divisor  multiplier  adder  min (0)  max (63)
+ 409:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****      *       0           4      3        3       255
+ 410:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****      *       1           8      6        3       255
+ 411:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****      *       2          16     12        3       255
+ 412:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****      *       3          32     24        3       255
+ 413:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****      *       4          64     48        3       255
+ 414:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****      *       5         129     33        1       255
+ 415:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****      *       6         259      3        0       255
+ 416:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****      */
+ 417:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
+ 418:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     lv_color32_t ret;
+ 419:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     LV_COLOR_SET_R32(ret, (LV_COLOR_GET_R(color) * 263 + 7) >> 5);
+ 420:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     LV_COLOR_SET_G32(ret, (LV_COLOR_GET_G(color) * 259 + 3) >> 6);
+ 421:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     LV_COLOR_SET_B32(ret, (LV_COLOR_GET_B(color) * 263 + 7) >> 5);
+ 422:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     LV_COLOR_SET_A32(ret, 0xFF);
+ 423:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     return ret.full;
+ 424:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #elif LV_COLOR_DEPTH == 32
+ 425:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     return color.full;
+ 426:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #endif
+ 427:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** }
+ 428:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
+ 429:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** //! @cond Doxygen_Suppress
+ 430:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
+ 431:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** /**
+ 432:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****  * Mix two colors with a given ratio.
+ 433:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****  * @param c1 the first color to mix (usually the foreground)
+ 434:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****  * @param c2 the second color to mix (usually the background)
+ 435:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****  * @param mix The ratio of the colors. 0: full `c2`, 255: full `c1`, 127: half `c1` and half`c2`
+ 436:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****  * @return the mixed color
+ 437:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****  */
+ 438:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** static inline lv_color_t LV_ATTRIBUTE_FAST_MEM lv_color_mix(lv_color_t c1, lv_color_t c2, uint8_t m
+ 439:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** {
+ 440:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     lv_color_t ret;
+ 441:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
+ 442:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #if LV_COLOR_DEPTH == 16 && LV_COLOR_MIX_ROUND_OFS == 0
+ 443:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #if LV_COLOR_16_SWAP == 1
+ 444:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     c1.full = c1.full << 8 | c1.full >> 8;
+ 445:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     c2.full = c2.full << 8 | c2.full >> 8;
+ 446:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #endif
+ 447:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     /*Source: https://stackoverflow.com/a/50012418/1999969*/
+ 448:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     mix = (uint32_t)((uint32_t)mix + 4) >> 3;
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc5OhCDw.s 			page 14
+
+
+ 449:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     uint32_t bg = (uint32_t)((uint32_t)c2.full | ((uint32_t)c2.full << 16)) &
+ 450:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****                   0x7E0F81F; /*0b00000111111000001111100000011111*/
+ 451:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     uint32_t fg = (uint32_t)((uint32_t)c1.full | ((uint32_t)c1.full << 16)) & 0x7E0F81F;
+ 452:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     uint32_t result = ((((fg - bg) * mix) >> 5) + bg) & 0x7E0F81F;
+ 453:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     ret.full = (uint16_t)((result >> 16) | result);
+ 454:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #if LV_COLOR_16_SWAP == 1
+ 455:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     ret.full = ret.full << 8 | ret.full >> 8;
+ 456:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #endif
+ 457:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #elif LV_COLOR_DEPTH != 1
+ 458:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     /*LV_COLOR_DEPTH == 8, 16 or 32*/
+ 459:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     LV_COLOR_SET_R(ret, LV_UDIV255((uint16_t)LV_COLOR_GET_R(c1) * mix + LV_COLOR_GET_R(c2) *
+ 460:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****                                    (255 - mix) + LV_COLOR_MIX_ROUND_OFS));
+ 461:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     LV_COLOR_SET_G(ret, LV_UDIV255((uint16_t)LV_COLOR_GET_G(c1) * mix + LV_COLOR_GET_G(c2) *
+ 462:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****                                    (255 - mix) + LV_COLOR_MIX_ROUND_OFS));
+ 463:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     LV_COLOR_SET_B(ret, LV_UDIV255((uint16_t)LV_COLOR_GET_B(c1) * mix + LV_COLOR_GET_B(c2) *
+ 464:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****                                    (255 - mix) + LV_COLOR_MIX_ROUND_OFS));
+ 465:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     LV_COLOR_SET_A(ret, 0xFF);
+ 466:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #else
+ 467:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     /*LV_COLOR_DEPTH == 1*/
+ 468:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     ret.full = mix > LV_OPA_50 ? c1.full : c2.full;
+ 469:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #endif
+ 470:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
+ 471:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     return ret;
+ 472:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** }
+ 473:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
+ 474:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** static inline void LV_ATTRIBUTE_FAST_MEM lv_color_premult(lv_color_t c, uint8_t mix, uint16_t * out
+ 475:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** {
+ 476:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #if LV_COLOR_DEPTH != 1
+ 477:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     out[0] = (uint16_t)LV_COLOR_GET_R(c) * mix;
+ 478:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     out[1] = (uint16_t)LV_COLOR_GET_G(c) * mix;
+ 479:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     out[2] = (uint16_t)LV_COLOR_GET_B(c) * mix;
+ 480:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #else
+ 481:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     (void) mix;
+ 482:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     /*Pre-multiplication can't be used with 1 bpp*/
+ 483:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     out[0] = LV_COLOR_GET_R(c);
+ 484:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     out[1] = LV_COLOR_GET_G(c);
+ 485:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     out[2] = LV_COLOR_GET_B(c);
+ 486:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #endif
+ 487:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
+ 488:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** }
+ 489:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
+ 490:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** /**
+ 491:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****  * Mix two colors with a given ratio. It runs faster then `lv_color_mix` but requires some pre comp
+ 492:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****  * @param premult_c1 The first color. Should be preprocessed with `lv_color_premult(c1)`
+ 493:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****  * @param c2 The second color. As it is no pre computation required on it
+ 494:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****  * @param mix The ratio of the colors. 0: full `c1`, 255: full `c2`, 127: half `c1` and half `c2`.
+ 495:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****  *            Should be modified like mix = `255 - mix`
+ 496:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****  * @return the mixed color
+ 497:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****  * @note 255 won't give clearly `c1`.
+ 498:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****  */
+ 499:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** static inline lv_color_t LV_ATTRIBUTE_FAST_MEM lv_color_mix_premult(uint16_t * premult_c1, lv_color
+ 500:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** {
+ 501:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     lv_color_t ret;
+ 502:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #if LV_COLOR_DEPTH != 1
+ 503:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     /*LV_COLOR_DEPTH == 8 or 32*/
+ 504:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     LV_COLOR_SET_R(ret, LV_UDIV255(premult_c1[0] + LV_COLOR_GET_R(c2) * mix + LV_COLOR_MIX_ROUND_OF
+ 505:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     LV_COLOR_SET_G(ret, LV_UDIV255(premult_c1[1] + LV_COLOR_GET_G(c2) * mix + LV_COLOR_MIX_ROUND_OF
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc5OhCDw.s 			page 15
+
+
+ 506:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     LV_COLOR_SET_B(ret, LV_UDIV255(premult_c1[2] + LV_COLOR_GET_B(c2) * mix + LV_COLOR_MIX_ROUND_OF
+ 507:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     LV_COLOR_SET_A(ret, 0xFF);
+ 508:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #else
+ 509:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     /*LV_COLOR_DEPTH == 1*/
+ 510:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     /*Restore color1*/
+ 511:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     lv_color_t c1;
+ 512:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     LV_COLOR_SET_R(c1, premult_c1[0]);
+ 513:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     LV_COLOR_SET_G(c1, premult_c1[1]);
+ 514:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     LV_COLOR_SET_B(c1, premult_c1[2]);
+ 515:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     ret.full = mix > LV_OPA_50 ? c2.full : c1.full;
+ 516:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #endif
+ 517:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
+ 518:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     return ret;
+ 519:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** }
+ 520:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
+ 521:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** /**
+ 522:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****  * Mix two colors. Both color can have alpha value.
+ 523:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****  * @param bg_color background color
+ 524:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****  * @param bg_opa alpha of the background color
+ 525:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****  * @param fg_color foreground color
+ 526:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****  * @param fg_opa alpha of the foreground color
+ 527:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****  * @param res_color the result color
+ 528:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****  * @param res_opa the result opacity
+ 529:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****  */
+ 530:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** static inline void LV_ATTRIBUTE_FAST_MEM lv_color_mix_with_alpha(lv_color_t bg_color, lv_opa_t bg_o
+ 531:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****                                                                  lv_color_t fg_color, lv_opa_t fg_o
+ 532:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****                                                                  lv_color_t * res_color, lv_opa_t *
+ 533:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** {
+ 534:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     /*Pick the foreground if it's fully opaque or the Background is fully transparent*/
+ 535:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     if(fg_opa >= LV_OPA_MAX || bg_opa <= LV_OPA_MIN) {
+ 536:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****         res_color->full = fg_color.full;
+ 537:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****         *res_opa = fg_opa;
+ 538:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     }
+ 539:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     /*Transparent foreground: use the Background*/
+ 540:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     else if(fg_opa <= LV_OPA_MIN) {
+ 541:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****         res_color->full = bg_color.full;
+ 542:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****         *res_opa = bg_opa;
+ 543:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     }
+ 544:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     /*Opaque background: use simple mix*/
+ 545:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     else if(bg_opa >= LV_OPA_MAX) {
+ 546:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****         *res_color = lv_color_mix(fg_color, bg_color, fg_opa);
+ 547:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****         *res_opa = LV_OPA_COVER;
+ 548:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     }
+ 549:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     /*Both colors have alpha. Expensive calculation need to be applied*/
+ 550:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     else {
+ 551:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****         /*Save the parameters and the result. If they will be asked again don't compute again*/
+ 552:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****         static lv_opa_t fg_opa_save     = 0;
+ 553:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****         static lv_opa_t bg_opa_save     = 0;
+ 554:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****         static lv_color_t fg_color_save = _LV_COLOR_ZERO_INITIALIZER;
+ 555:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****         static lv_color_t bg_color_save = _LV_COLOR_ZERO_INITIALIZER;
+ 556:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****         static lv_color_t res_color_saved = _LV_COLOR_ZERO_INITIALIZER;
+ 557:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****         static lv_opa_t res_opa_saved = 0;
+ 558:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
+ 559:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****         if(fg_opa != fg_opa_save || bg_opa != bg_opa_save || fg_color.full != fg_color_save.full ||
+ 560:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****            bg_color.full != bg_color_save.full) {
+ 561:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****             fg_opa_save        = fg_opa;
+ 562:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****             bg_opa_save        = bg_opa;
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc5OhCDw.s 			page 16
+
+
+ 563:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****             fg_color_save.full = fg_color.full;
+ 564:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****             bg_color_save.full = bg_color.full;
+ 565:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****             /*Info:
+ 566:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****              * https://en.wikipedia.org/wiki/Alpha_compositing#Analytical_derivation_of_the_over_op
+ 567:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****             res_opa_saved = 255 - ((uint16_t)((uint16_t)(255 - fg_opa) * (255 - bg_opa)) >> 8);
+ 568:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****             LV_ASSERT(res_opa_saved != 0);
+ 569:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****             lv_opa_t ratio = (uint16_t)((uint16_t)fg_opa * 255) / res_opa_saved;
+ 570:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****             res_color_saved = lv_color_mix(fg_color, bg_color, ratio);
+ 571:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
+ 572:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****         }
+ 573:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
+ 574:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****         res_color->full = res_color_saved.full;
+ 575:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****         *res_opa = res_opa_saved;
+ 576:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     }
+ 577:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** }
+ 578:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
+ 579:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** //! @endcond
+ 580:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
+ 581:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** /**
+ 582:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****  * Get the brightness of a color
+ 583:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****  * @param color a color
+ 584:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****  * @return the brightness [0..255]
+ 585:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****  */
+ 586:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** static inline uint8_t lv_color_brightness(lv_color_t color)
+ 587:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** {
+ 588:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     lv_color32_t c32;
+ 589:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     c32.full        = lv_color_to32(color);
+ 590:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     uint16_t bright = (uint16_t)(3u * LV_COLOR_GET_R32(c32) + LV_COLOR_GET_B32(c32) + 4u * LV_COLOR
+ 591:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     return (uint8_t)(bright >> 3);
+ 592:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** }
+ 593:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
+ 594:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** static inline lv_color_t lv_color_make(uint8_t r, uint8_t g, uint8_t b)
+ 595:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** {
+ 596:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     return _LV_COLOR_MAKE_TYPE_HELPER LV_COLOR_MAKE(r, g, b);
+ 597:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** }
+ 598:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
+ 599:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** static inline lv_color_t lv_color_hex(uint32_t c)
+  89              		.loc 3 599 26 view .LVU14
+  90              	.LBB15:
+ 600:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** {
+ 601:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #if LV_COLOR_DEPTH == 16
+ 602:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     lv_color_t r;
+ 603:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #if LV_COLOR_16_SWAP == 0
+ 604:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     /* Convert a 4 bytes per pixel in format ARGB32 to R5G6B5 format
+ 605:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****         naive way (by calling lv_color_make with components):
+ 606:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****                     r = ((c & 0xFF0000) >> 19)
+ 607:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****                     g = ((c & 0xFF00) >> 10)
+ 608:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****                     b = ((c & 0xFF) >> 3)
+ 609:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****                     rgb565 = (r << 11) | (g << 5) | b
+ 610:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****         That's 3 mask, 5 bitshift and 2 or operations
+ 611:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
+ 612:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****         A bit better:
+ 613:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****                     r = ((c & 0xF80000) >> 8)
+ 614:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****                     g = ((c & 0xFC00) >> 5)
+ 615:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****                     b = ((c & 0xFF) >> 3)
+ 616:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****                     rgb565 = r | g | b
+ 617:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****         That's 3 mask, 3 bitshifts and 2 or operations */
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc5OhCDw.s 			page 17
+
+
+ 618:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     r.full = (uint16_t)(((c & 0xF80000) >> 8) | ((c & 0xFC00) >> 5) | ((c & 0xFF) >> 3));
+ 619:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #else
+ 620:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     /* We want: rrrr rrrr GGGg gggg bbbb bbbb => gggb bbbb rrrr rGGG */
+ 621:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     r.full = (uint16_t)(((c & 0xF80000) >> 16) | ((c & 0xFC00) >> 13) | ((c & 0x1C00) << 3) | ((c &
+ 622:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #endif
+ 623:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     return r;
+ 624:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #elif LV_COLOR_DEPTH == 32
+ 625:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     lv_color_t r;
+  91              		.loc 3 625 5 view .LVU15
+ 626:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     r.full = c | 0xFF000000;
+  92              		.loc 3 626 5 view .LVU16
+ 627:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     return r;
+  93              		.loc 3 627 5 view .LVU17
+  94              		.loc 3 627 5 is_stmt 0 view .LVU18
+  95              	.LBE15:
+  96              	.LBE14:
+  97              		.loc 1 21 5 view .LVU19
+  98 002c 4FF0FF22 		mov	r2, #-16711936
+  99 0030 0021     		movs	r1, #0
+ 100 0032 3046     		mov	r0, r6
+ 101 0034 FFF7FEFF 		bl	lv_canvas_set_palette
+ 102              	.LVL8:
+  22:lvgl/examples/widgets/canvas/lv_example_canvas_2.c ****     lv_canvas_set_palette(canvas, 1, lv_palette_main(LV_PALETTE_RED));
+ 103              		.loc 1 22 5 is_stmt 1 view .LVU20
+ 104 0038 0020     		movs	r0, #0
+ 105 003a FFF7FEFF 		bl	lv_palette_main
+ 106              	.LVL9:
+ 107 003e 0246     		mov	r2, r0
+ 108 0040 0121     		movs	r1, #1
+ 109 0042 3046     		mov	r0, r6
+ 110 0044 FFF7FEFF 		bl	lv_canvas_set_palette
+ 111              	.LVL10:
+  23:lvgl/examples/widgets/canvas/lv_example_canvas_2.c **** 
+  24:lvgl/examples/widgets/canvas/lv_example_canvas_2.c ****     /*Create colors with the indices of the palette*/
+  25:lvgl/examples/widgets/canvas/lv_example_canvas_2.c ****     lv_color_t c0;
+ 112              		.loc 1 25 5 view .LVU21
+  26:lvgl/examples/widgets/canvas/lv_example_canvas_2.c ****     lv_color_t c1;
+ 113              		.loc 1 26 5 view .LVU22
+  27:lvgl/examples/widgets/canvas/lv_example_canvas_2.c **** 
+  28:lvgl/examples/widgets/canvas/lv_example_canvas_2.c ****     c0.full = 0;
+ 114              		.loc 1 28 5 view .LVU23
+ 115              		.loc 1 28 13 is_stmt 0 view .LVU24
+ 116 0048 0027     		movs	r7, #0
+ 117              	.LVL11:
+  29:lvgl/examples/widgets/canvas/lv_example_canvas_2.c ****     c1.full = 1;
+ 118              		.loc 1 29 5 is_stmt 1 view .LVU25
+  30:lvgl/examples/widgets/canvas/lv_example_canvas_2.c **** 
+  31:lvgl/examples/widgets/canvas/lv_example_canvas_2.c ****     /*Red background (There is no dedicated alpha channel in indexed images so LV_OPA_COVER is igno
+  32:lvgl/examples/widgets/canvas/lv_example_canvas_2.c ****     lv_canvas_fill_bg(canvas, c1, LV_OPA_COVER);
+ 119              		.loc 1 32 5 view .LVU26
+ 120 004a FF22     		movs	r2, #255
+ 121 004c 0121     		movs	r1, #1
+ 122 004e 3046     		mov	r0, r6
+ 123 0050 FFF7FEFF 		bl	lv_canvas_fill_bg
+ 124              	.LVL12:
+  33:lvgl/examples/widgets/canvas/lv_example_canvas_2.c **** 
+  34:lvgl/examples/widgets/canvas/lv_example_canvas_2.c ****     /*Create hole on the canvas*/
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc5OhCDw.s 			page 18
+
+
+  35:lvgl/examples/widgets/canvas/lv_example_canvas_2.c ****     uint32_t x;
+ 125              		.loc 1 35 5 view .LVU27
+  36:lvgl/examples/widgets/canvas/lv_example_canvas_2.c ****     uint32_t y;
+ 126              		.loc 1 36 5 view .LVU28
+  37:lvgl/examples/widgets/canvas/lv_example_canvas_2.c ****     for(y = 10; y < 30; y++) {
+ 127              		.loc 1 37 5 view .LVU29
+ 128              		.loc 1 37 11 is_stmt 0 view .LVU30
+ 129 0054 0A25     		movs	r5, #10
+ 130              		.loc 1 37 5 view .LVU31
+ 131 0056 09E0     		b	.L2
+ 132              	.LVL13:
+ 133              	.L3:
+  38:lvgl/examples/widgets/canvas/lv_example_canvas_2.c ****         for(x = 5; x < 20; x++) {
+  39:lvgl/examples/widgets/canvas/lv_example_canvas_2.c ****             lv_canvas_set_px_color(canvas, x, y, c0);
+ 134              		.loc 1 39 13 is_stmt 1 discriminator 3 view .LVU32
+ 135 0058 3B46     		mov	r3, r7
+ 136 005a 2AB2     		sxth	r2, r5
+ 137 005c 21B2     		sxth	r1, r4
+ 138 005e 3046     		mov	r0, r6
+ 139 0060 FFF7FEFF 		bl	lv_canvas_set_px_color
+ 140              	.LVL14:
+  38:lvgl/examples/widgets/canvas/lv_example_canvas_2.c ****         for(x = 5; x < 20; x++) {
+ 141              		.loc 1 38 28 discriminator 3 view .LVU33
+  38:lvgl/examples/widgets/canvas/lv_example_canvas_2.c ****         for(x = 5; x < 20; x++) {
+ 142              		.loc 1 38 29 is_stmt 0 discriminator 3 view .LVU34
+ 143 0064 0134     		adds	r4, r4, #1
+ 144              	.LVL15:
+ 145              	.L4:
+  38:lvgl/examples/widgets/canvas/lv_example_canvas_2.c ****         for(x = 5; x < 20; x++) {
+ 146              		.loc 1 38 20 is_stmt 1 discriminator 1 view .LVU35
+  38:lvgl/examples/widgets/canvas/lv_example_canvas_2.c ****         for(x = 5; x < 20; x++) {
+ 147              		.loc 1 38 9 is_stmt 0 discriminator 1 view .LVU36
+ 148 0066 132C     		cmp	r4, #19
+ 149 0068 F6D9     		bls	.L3
+  37:lvgl/examples/widgets/canvas/lv_example_canvas_2.c ****     for(y = 10; y < 30; y++) {
+ 150              		.loc 1 37 25 is_stmt 1 discriminator 2 view .LVU37
+  37:lvgl/examples/widgets/canvas/lv_example_canvas_2.c ****     for(y = 10; y < 30; y++) {
+ 151              		.loc 1 37 26 is_stmt 0 discriminator 2 view .LVU38
+ 152 006a 0135     		adds	r5, r5, #1
+ 153              	.LVL16:
+ 154              	.L2:
+  37:lvgl/examples/widgets/canvas/lv_example_canvas_2.c ****     for(y = 10; y < 30; y++) {
+ 155              		.loc 1 37 17 is_stmt 1 discriminator 1 view .LVU39
+  37:lvgl/examples/widgets/canvas/lv_example_canvas_2.c ****     for(y = 10; y < 30; y++) {
+ 156              		.loc 1 37 5 is_stmt 0 discriminator 1 view .LVU40
+ 157 006c 1D2D     		cmp	r5, #29
+ 158 006e 01D8     		bhi	.L7
+  38:lvgl/examples/widgets/canvas/lv_example_canvas_2.c ****         for(x = 5; x < 20; x++) {
+ 159              		.loc 1 38 15 view .LVU41
+ 160 0070 0524     		movs	r4, #5
+ 161 0072 F8E7     		b	.L4
+ 162              	.L7:
+  40:lvgl/examples/widgets/canvas/lv_example_canvas_2.c ****         }
+  41:lvgl/examples/widgets/canvas/lv_example_canvas_2.c ****     }
+  42:lvgl/examples/widgets/canvas/lv_example_canvas_2.c **** 
+  43:lvgl/examples/widgets/canvas/lv_example_canvas_2.c **** }
+ 163              		.loc 1 43 1 view .LVU42
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc5OhCDw.s 			page 19
+
+
+ 164 0074 03B0     		add	sp, sp, #12
+ 165              		.cfi_def_cfa_offset 20
+ 166              		@ sp needed
+ 167 0076 F0BD     		pop	{r4, r5, r6, r7, pc}
+ 168              	.LVL17:
+ 169              	.L9:
+ 170              		.loc 1 43 1 view .LVU43
+ 171              		.align	2
+ 172              	.L8:
+ 173 0078 00000000 		.word	.LANCHOR0
+ 174              		.cfi_endproc
+ 175              	.LFE204:
+ 177              		.section	.bss.cbuf.0,"aw",%nobits
+ 178              		.align	2
+ 179              		.set	.LANCHOR0,. + 0
+ 182              	cbuf.0:
+ 183 0000 00000000 		.space	1432
+ 183      00000000 
+ 183      00000000 
+ 183      00000000 
+ 183      00000000 
+ 184              		.text
+ 185              	.Letext0:
+ 186              		.file 4 "c:\\tools\\gcc-arm-none-eabi\\arm-none-eabi\\include\\machine\\_default_types.h"
+ 187              		.file 5 "c:\\tools\\gcc-arm-none-eabi\\arm-none-eabi\\include\\sys\\_stdint.h"
+ 188              		.file 6 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\misc\\lv_area.h"
+ 189              		.file 7 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\misc\\lv_style.h"
+ 190              		.file 8 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\draw\\lv_img_buf.h"
+ 191              		.file 9 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/core/lv_obj.h"
+ 192              		.file 10 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\misc\\lv_ll.h"
+ 193              		.file 11 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/core/lv_group.h"
+ 194              		.file 12 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/core/lv_obj_scroll.h"
+ 195              		.file 13 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/core/lv_obj_style.h"
+ 196              		.file 14 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/core/lv_obj_class.h"
+ 197              		.file 15 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/core/lv_event.h"
+ 198              		.file 16 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/hal/lv_hal_disp.h"
+ 199              		.file 17 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/widgets/lv_btn.h"
+ 200              		.file 18 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/widgets/lv_canvas.h"
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc5OhCDw.s 			page 20
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 lv_example_canvas_2.c
+C:\Users\OSD\AppData\Local\Temp\cc5OhCDw.s:19     .text.lv_example_canvas_2:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\cc5OhCDw.s:25     .text.lv_example_canvas_2:00000000 lv_example_canvas_2
+C:\Users\OSD\AppData\Local\Temp\cc5OhCDw.s:173    .text.lv_example_canvas_2:00000078 $d
+C:\Users\OSD\AppData\Local\Temp\cc5OhCDw.s:178    .bss.cbuf.0:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\cc5OhCDw.s:182    .bss.cbuf.0:00000000 cbuf.0
+
+UNDEFINED SYMBOLS
+lv_disp_get_default
+lv_disp_get_scr_act
+lv_btn_create
+lv_canvas_create
+lv_canvas_set_buffer
+lv_canvas_set_palette
+lv_palette_main
+lv_canvas_fill_bg
+lv_canvas_set_px_color

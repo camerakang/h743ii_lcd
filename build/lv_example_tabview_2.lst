@@ -1,0 +1,595 @@
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHmgb5e.s 			page 1
+
+
+   1              		.cpu cortex-m7
+   2              		.arch armv7e-m
+   3              		.fpu fpv5-d16
+   4              		.eabi_attribute 28, 1
+   5              		.eabi_attribute 20, 1
+   6              		.eabi_attribute 21, 1
+   7              		.eabi_attribute 23, 3
+   8              		.eabi_attribute 24, 1
+   9              		.eabi_attribute 25, 1
+  10              		.eabi_attribute 26, 1
+  11              		.eabi_attribute 30, 1
+  12              		.eabi_attribute 34, 1
+  13              		.eabi_attribute 18, 4
+  14              		.file	"lv_example_tabview_2.c"
+  15              		.text
+  16              	.Ltext0:
+  17              		.cfi_sections	.debug_frame
+  18              		.section	.rodata.lv_example_tabview_2.str1.4,"aMS",%progbits,1
+  19              		.align	2
+  20              	.LC0:
+  21 0000 54616220 		.ascii	"Tab 1\000"
+  21      3100
+  22 0006 0000     		.align	2
+  23              	.LC1:
+  24 0008 54616220 		.ascii	"Tab 2\000"
+  24      3200
+  25 000e 0000     		.align	2
+  26              	.LC2:
+  27 0010 54616220 		.ascii	"Tab 3\000"
+  27      3300
+  28 0016 0000     		.align	2
+  29              	.LC3:
+  30 0018 54616220 		.ascii	"Tab 4\000"
+  30      3400
+  31 001e 0000     		.align	2
+  32              	.LC4:
+  33 0020 54616220 		.ascii	"Tab 5\000"
+  33      3500
+  34 0026 0000     		.align	2
+  35              	.LC5:
+  36 0028 46697273 		.ascii	"First tab\000"
+  36      74207461 
+  36      6200
+  37 0032 0000     		.align	2
+  38              	.LC6:
+  39 0034 5365636F 		.ascii	"Second tab\000"
+  39      6E642074 
+  39      616200
+  40 003f 00       		.align	2
+  41              	.LC7:
+  42 0040 54686972 		.ascii	"Third tab\000"
+  42      64207461 
+  42      6200
+  43 004a 0000     		.align	2
+  44              	.LC8:
+  45 004c 466F7274 		.ascii	"Forth tab\000"
+  45      68207461 
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHmgb5e.s 			page 2
+
+
+  45      6200
+  46 0056 0000     		.align	2
+  47              	.LC9:
+  48 0058 46696674 		.ascii	"Fifth tab\000"
+  48      68207461 
+  48      6200
+  49              		.section	.text.lv_example_tabview_2,"ax",%progbits
+  50              		.align	1
+  51              		.global	lv_example_tabview_2
+  52              		.syntax unified
+  53              		.thumb
+  54              		.thumb_func
+  56              	lv_example_tabview_2:
+  57              	.LFB204:
+  58              		.file 1 "lvgl/examples/widgets/tabview/lv_example_tabview_2.c"
+   1:lvgl/examples/widgets/tabview/lv_example_tabview_2.c **** #include "../../lv_examples.h"
+   2:lvgl/examples/widgets/tabview/lv_example_tabview_2.c **** #if LV_USE_TABVIEW && LV_BUILD_EXAMPLES
+   3:lvgl/examples/widgets/tabview/lv_example_tabview_2.c **** 
+   4:lvgl/examples/widgets/tabview/lv_example_tabview_2.c **** void lv_example_tabview_2(void)
+   5:lvgl/examples/widgets/tabview/lv_example_tabview_2.c **** {
+  59              		.loc 1 5 1 view -0
+  60              		.cfi_startproc
+  61              		@ args = 0, pretend = 0, frame = 0
+  62              		@ frame_needed = 0, uses_anonymous_args = 0
+  63 0000 2DE9F843 		push	{r3, r4, r5, r6, r7, r8, r9, lr}
+  64              		.cfi_def_cfa_offset 32
+  65              		.cfi_offset 3, -32
+  66              		.cfi_offset 4, -28
+  67              		.cfi_offset 5, -24
+  68              		.cfi_offset 6, -20
+  69              		.cfi_offset 7, -16
+  70              		.cfi_offset 8, -12
+  71              		.cfi_offset 9, -8
+  72              		.cfi_offset 14, -4
+   6:lvgl/examples/widgets/tabview/lv_example_tabview_2.c ****     /*Create a Tab view object*/
+   7:lvgl/examples/widgets/tabview/lv_example_tabview_2.c ****     lv_obj_t * tabview;
+  73              		.loc 1 7 5 view .LVU1
+   8:lvgl/examples/widgets/tabview/lv_example_tabview_2.c ****     tabview = lv_tabview_create(lv_scr_act(), LV_DIR_LEFT, 80);
+  74              		.loc 1 8 5 view .LVU2
+  75              	.LBB4:
+  76              	.LBI4:
+  77              		.file 2 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/core/lv_disp.h"
+   1:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+   2:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @file lv_disp.h
+   3:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  *
+   4:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+   5:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+   6:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** #ifndef LV_DISP_H
+   7:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** #define LV_DISP_H
+   8:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+   9:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** #ifdef __cplusplus
+  10:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** extern "C" {
+  11:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** #endif
+  12:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+  13:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /*********************
+  14:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  *      INCLUDES
+  15:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  *********************/
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHmgb5e.s 			page 3
+
+
+  16:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** #include "../hal/lv_hal.h"
+  17:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** #include "lv_obj.h"
+  18:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** #include "lv_theme.h"
+  19:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+  20:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /*********************
+  21:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  *      DEFINES
+  22:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  *********************/
+  23:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+  24:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**********************
+  25:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  *      TYPEDEFS
+  26:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  **********************/
+  27:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+  28:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** typedef enum {
+  29:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_NONE,
+  30:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_OVER_LEFT,
+  31:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_OVER_RIGHT,
+  32:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_OVER_TOP,
+  33:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_OVER_BOTTOM,
+  34:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_MOVE_LEFT,
+  35:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_MOVE_RIGHT,
+  36:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_MOVE_TOP,
+  37:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_MOVE_BOTTOM,
+  38:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_FADE_IN,
+  39:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_FADE_ON = LV_SCR_LOAD_ANIM_FADE_IN, /*For backward compatibility*/
+  40:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_FADE_OUT,
+  41:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_OUT_LEFT,
+  42:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_OUT_RIGHT,
+  43:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_OUT_TOP,
+  44:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_OUT_BOTTOM,
+  45:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** } lv_scr_load_anim_t;
+  46:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+  47:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**********************
+  48:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * GLOBAL PROTOTYPES
+  49:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  **********************/
+  50:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+  51:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+  52:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Return with a pointer to the active screen
+  53:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to display which active screen should be get. (NULL to use the default
+  54:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * screen)
+  55:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @return pointer to the active screen object (loaded by 'lv_scr_load()')
+  56:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+  57:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** lv_obj_t * lv_disp_get_scr_act(lv_disp_t * disp);
+  58:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+  59:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+  60:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Return with a pointer to the previous screen. Only used during screen transitions.
+  61:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to display which previous screen should be get. (NULL to use the default
+  62:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * screen)
+  63:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @return pointer to the previous screen object or NULL if not used now
+  64:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+  65:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** lv_obj_t * lv_disp_get_scr_prev(lv_disp_t * disp);
+  66:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+  67:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+  68:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Make a screen active
+  69:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param scr pointer to a screen
+  70:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+  71:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** void lv_disp_load_scr(lv_obj_t * scr);
+  72:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHmgb5e.s 			page 4
+
+
+  73:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+  74:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Return with the top layer. (Same on every screen and it is above the normal screen layer)
+  75:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to display which top layer should be get. (NULL to use the default screen)
+  76:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @return pointer to the top layer object (transparent screen sized lv_obj)
+  77:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+  78:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** lv_obj_t * lv_disp_get_layer_top(lv_disp_t * disp);
+  79:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+  80:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+  81:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Return with the sys. layer. (Same on every screen and it is above the normal screen and the top
+  82:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * layer)
+  83:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to display which sys. layer should be retrieved. (NULL to use the default sc
+  84:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @return pointer to the sys layer object (transparent screen sized lv_obj)
+  85:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+  86:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** lv_obj_t * lv_disp_get_layer_sys(lv_disp_t * disp);
+  87:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+  88:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+  89:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Set the theme of a display
+  90:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to a display
+  91:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+  92:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** void lv_disp_set_theme(lv_disp_t * disp, lv_theme_t * th);
+  93:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+  94:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+  95:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Get the theme of a display
+  96:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to a display
+  97:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @return the display's theme (can be NULL)
+  98:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+  99:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** lv_theme_t * lv_disp_get_theme(lv_disp_t * disp);
+ 100:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+ 101:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+ 102:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Set the background color of a display
+ 103:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to a display
+ 104:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param color color of the background
+ 105:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+ 106:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** void lv_disp_set_bg_color(lv_disp_t * disp, lv_color_t color);
+ 107:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+ 108:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+ 109:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Set the background image of a display
+ 110:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to a display
+ 111:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param img_src path to file or pointer to an `lv_img_dsc_t` variable
+ 112:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+ 113:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** void lv_disp_set_bg_image(lv_disp_t * disp, const void  * img_src);
+ 114:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+ 115:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+ 116:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Set opacity of the background
+ 117:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to a display
+ 118:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param opa opacity (0..255)
+ 119:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+ 120:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** void lv_disp_set_bg_opa(lv_disp_t * disp, lv_opa_t opa);
+ 121:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+ 122:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+ 123:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Switch screen with animation
+ 124:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param scr pointer to the new screen to load
+ 125:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param anim_type type of the animation from `lv_scr_load_anim_t`, e.g. `LV_SCR_LOAD_ANIM_MOVE_LE
+ 126:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param time time of the animation
+ 127:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param delay delay before the transition
+ 128:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param auto_del true: automatically delete the old screen
+ 129:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHmgb5e.s 			page 5
+
+
+ 130:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** void lv_scr_load_anim(lv_obj_t * scr, lv_scr_load_anim_t anim_type, uint32_t time, uint32_t delay, 
+ 131:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+ 132:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+ 133:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Get elapsed time since last user activity on a display (e.g. click)
+ 134:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to a display (NULL to get the overall smallest inactivity)
+ 135:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @return elapsed ticks (milliseconds) since the last activity
+ 136:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+ 137:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** uint32_t lv_disp_get_inactive_time(const lv_disp_t * disp);
+ 138:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+ 139:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+ 140:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Manually trigger an activity on a display
+ 141:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to a display (NULL to use the default display)
+ 142:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+ 143:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** void lv_disp_trig_activity(lv_disp_t * disp);
+ 144:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+ 145:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+ 146:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Clean any CPU cache that is related to the display.
+ 147:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to a display (NULL to use the default display)
+ 148:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+ 149:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** void lv_disp_clean_dcache(lv_disp_t * disp);
+ 150:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+ 151:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+ 152:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Temporarily enable and disable the invalidation of the display.
+ 153:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to a display (NULL to use the default display)
+ 154:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param en true: enable invalidation; false: invalidation
+ 155:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+ 156:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** void lv_disp_enable_invalidation(lv_disp_t * disp, bool en);
+ 157:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+ 158:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+ 159:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Get display invalidation is enabled.
+ 160:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to a display (NULL to use the default display)
+ 161:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @return return true if invalidation is enabled
+ 162:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+ 163:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** bool lv_disp_is_invalidation_enabled(lv_disp_t * disp);
+ 164:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+ 165:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+ 166:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Get a pointer to the screen refresher timer to
+ 167:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * modify its parameters with `lv_timer_...` functions.
+ 168:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to a display
+ 169:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @return pointer to the display refresher timer. (NULL on error)
+ 170:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+ 171:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** lv_timer_t * _lv_disp_get_refr_timer(lv_disp_t * disp);
+ 172:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+ 173:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /*------------------------------------------------
+ 174:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * To improve backward compatibility
+ 175:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Recommended only if you have one display
+ 176:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  *------------------------------------------------*/
+ 177:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+ 178:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+ 179:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Get the active screen of the default display
+ 180:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @return pointer to the active screen
+ 181:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+ 182:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** static inline lv_obj_t * lv_scr_act(void)
+  78              		.loc 2 182 26 view .LVU3
+  79              	.LBB5:
+ 183:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** {
+ 184:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     return lv_disp_get_scr_act(lv_disp_get_default());
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHmgb5e.s 			page 6
+
+
+  80              		.loc 2 184 5 view .LVU4
+  81              		.loc 2 184 12 is_stmt 0 view .LVU5
+  82 0004 FFF7FEFF 		bl	lv_disp_get_default
+  83              	.LVL0:
+  84 0008 FFF7FEFF 		bl	lv_disp_get_scr_act
+  85              	.LVL1:
+  86              	.LBE5:
+  87              	.LBE4:
+  88              		.loc 1 8 15 view .LVU6
+  89 000c 5022     		movs	r2, #80
+  90 000e 0121     		movs	r1, #1
+  91 0010 FFF7FEFF 		bl	lv_tabview_create
+  92              	.LVL2:
+  93 0014 0446     		mov	r4, r0
+  94              	.LVL3:
+   9:lvgl/examples/widgets/tabview/lv_example_tabview_2.c **** 
+  10:lvgl/examples/widgets/tabview/lv_example_tabview_2.c ****     lv_obj_set_style_bg_color(tabview, lv_palette_lighten(LV_PALETTE_RED, 2), 0);
+  95              		.loc 1 10 5 is_stmt 1 view .LVU7
+  96 0016 0221     		movs	r1, #2
+  97 0018 0020     		movs	r0, #0
+  98              	.LVL4:
+  99              		.loc 1 10 5 is_stmt 0 view .LVU8
+ 100 001a FFF7FEFF 		bl	lv_palette_lighten
+ 101              	.LVL5:
+ 102 001e 0146     		mov	r1, r0
+ 103 0020 0022     		movs	r2, #0
+ 104 0022 2046     		mov	r0, r4
+ 105 0024 FFF7FEFF 		bl	lv_obj_set_style_bg_color
+ 106              	.LVL6:
+  11:lvgl/examples/widgets/tabview/lv_example_tabview_2.c **** 
+  12:lvgl/examples/widgets/tabview/lv_example_tabview_2.c ****     lv_obj_t * tab_btns = lv_tabview_get_tab_btns(tabview);
+ 107              		.loc 1 12 5 is_stmt 1 view .LVU9
+ 108              		.loc 1 12 27 is_stmt 0 view .LVU10
+ 109 0028 2046     		mov	r0, r4
+ 110 002a FFF7FEFF 		bl	lv_tabview_get_tab_btns
+ 111              	.LVL7:
+ 112 002e 0546     		mov	r5, r0
+ 113              	.LVL8:
+  13:lvgl/examples/widgets/tabview/lv_example_tabview_2.c ****     lv_obj_set_style_bg_color(tab_btns, lv_palette_darken(LV_PALETTE_GREY, 3), 0);
+ 114              		.loc 1 13 5 is_stmt 1 view .LVU11
+ 115 0030 0321     		movs	r1, #3
+ 116 0032 1220     		movs	r0, #18
+ 117              	.LVL9:
+ 118              		.loc 1 13 5 is_stmt 0 view .LVU12
+ 119 0034 FFF7FEFF 		bl	lv_palette_darken
+ 120              	.LVL10:
+ 121 0038 0146     		mov	r1, r0
+ 122 003a 0022     		movs	r2, #0
+ 123 003c 2846     		mov	r0, r5
+ 124 003e FFF7FEFF 		bl	lv_obj_set_style_bg_color
+ 125              	.LVL11:
+  14:lvgl/examples/widgets/tabview/lv_example_tabview_2.c ****     lv_obj_set_style_text_color(tab_btns, lv_palette_lighten(LV_PALETTE_GREY, 5), 0);
+ 126              		.loc 1 14 5 is_stmt 1 view .LVU13
+ 127 0042 0521     		movs	r1, #5
+ 128 0044 1220     		movs	r0, #18
+ 129 0046 FFF7FEFF 		bl	lv_palette_lighten
+ 130              	.LVL12:
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHmgb5e.s 			page 7
+
+
+ 131 004a 0146     		mov	r1, r0
+ 132 004c 0022     		movs	r2, #0
+ 133 004e 2846     		mov	r0, r5
+ 134 0050 FFF7FEFF 		bl	lv_obj_set_style_text_color
+ 135              	.LVL13:
+  15:lvgl/examples/widgets/tabview/lv_example_tabview_2.c ****     lv_obj_set_style_border_side(tab_btns, LV_BORDER_SIDE_RIGHT, LV_PART_ITEMS | LV_STATE_CHECKED);
+ 136              		.loc 1 15 5 view .LVU14
+ 137 0054 284A     		ldr	r2, .L3
+ 138 0056 0821     		movs	r1, #8
+ 139 0058 2846     		mov	r0, r5
+ 140 005a FFF7FEFF 		bl	lv_obj_set_style_border_side
+ 141              	.LVL14:
+  16:lvgl/examples/widgets/tabview/lv_example_tabview_2.c **** 
+  17:lvgl/examples/widgets/tabview/lv_example_tabview_2.c ****     /*Add 3 tabs (the tabs are page (lv_page) and can be scrolled*/
+  18:lvgl/examples/widgets/tabview/lv_example_tabview_2.c ****     lv_obj_t * tab1 = lv_tabview_add_tab(tabview, "Tab 1");
+ 142              		.loc 1 18 5 view .LVU15
+ 143              		.loc 1 18 23 is_stmt 0 view .LVU16
+ 144 005e 2749     		ldr	r1, .L3+4
+ 145 0060 2046     		mov	r0, r4
+ 146 0062 FFF7FEFF 		bl	lv_tabview_add_tab
+ 147              	.LVL15:
+ 148 0066 8146     		mov	r9, r0
+ 149              	.LVL16:
+  19:lvgl/examples/widgets/tabview/lv_example_tabview_2.c ****     lv_obj_t * tab2 = lv_tabview_add_tab(tabview, "Tab 2");
+ 150              		.loc 1 19 5 is_stmt 1 view .LVU17
+ 151              		.loc 1 19 23 is_stmt 0 view .LVU18
+ 152 0068 2549     		ldr	r1, .L3+8
+ 153 006a 2046     		mov	r0, r4
+ 154              	.LVL17:
+ 155              		.loc 1 19 23 view .LVU19
+ 156 006c FFF7FEFF 		bl	lv_tabview_add_tab
+ 157              	.LVL18:
+ 158 0070 0546     		mov	r5, r0
+ 159              	.LVL19:
+  20:lvgl/examples/widgets/tabview/lv_example_tabview_2.c ****     lv_obj_t * tab3 = lv_tabview_add_tab(tabview, "Tab 3");
+ 160              		.loc 1 20 5 is_stmt 1 view .LVU20
+ 161              		.loc 1 20 23 is_stmt 0 view .LVU21
+ 162 0072 2449     		ldr	r1, .L3+12
+ 163 0074 2046     		mov	r0, r4
+ 164              	.LVL20:
+ 165              		.loc 1 20 23 view .LVU22
+ 166 0076 FFF7FEFF 		bl	lv_tabview_add_tab
+ 167              	.LVL21:
+ 168 007a 8046     		mov	r8, r0
+ 169              	.LVL22:
+  21:lvgl/examples/widgets/tabview/lv_example_tabview_2.c ****     lv_obj_t * tab4 = lv_tabview_add_tab(tabview, "Tab 4");
+ 170              		.loc 1 21 5 is_stmt 1 view .LVU23
+ 171              		.loc 1 21 23 is_stmt 0 view .LVU24
+ 172 007c 2249     		ldr	r1, .L3+16
+ 173 007e 2046     		mov	r0, r4
+ 174              	.LVL23:
+ 175              		.loc 1 21 23 view .LVU25
+ 176 0080 FFF7FEFF 		bl	lv_tabview_add_tab
+ 177              	.LVL24:
+ 178 0084 0746     		mov	r7, r0
+ 179              	.LVL25:
+  22:lvgl/examples/widgets/tabview/lv_example_tabview_2.c ****     lv_obj_t * tab5 = lv_tabview_add_tab(tabview, "Tab 5");
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHmgb5e.s 			page 8
+
+
+ 180              		.loc 1 22 5 is_stmt 1 view .LVU26
+ 181              		.loc 1 22 23 is_stmt 0 view .LVU27
+ 182 0086 2149     		ldr	r1, .L3+20
+ 183 0088 2046     		mov	r0, r4
+ 184              	.LVL26:
+ 185              		.loc 1 22 23 view .LVU28
+ 186 008a FFF7FEFF 		bl	lv_tabview_add_tab
+ 187              	.LVL27:
+ 188 008e 0646     		mov	r6, r0
+ 189              	.LVL28:
+  23:lvgl/examples/widgets/tabview/lv_example_tabview_2.c **** 
+  24:lvgl/examples/widgets/tabview/lv_example_tabview_2.c ****     lv_obj_set_style_bg_color(tab2, lv_palette_lighten(LV_PALETTE_AMBER, 3), 0);
+ 190              		.loc 1 24 5 is_stmt 1 view .LVU29
+ 191 0090 0321     		movs	r1, #3
+ 192 0092 0D20     		movs	r0, #13
+ 193              	.LVL29:
+ 194              		.loc 1 24 5 is_stmt 0 view .LVU30
+ 195 0094 FFF7FEFF 		bl	lv_palette_lighten
+ 196              	.LVL30:
+ 197 0098 0146     		mov	r1, r0
+ 198 009a 0022     		movs	r2, #0
+ 199 009c 2846     		mov	r0, r5
+ 200 009e FFF7FEFF 		bl	lv_obj_set_style_bg_color
+ 201              	.LVL31:
+  25:lvgl/examples/widgets/tabview/lv_example_tabview_2.c ****     lv_obj_set_style_bg_opa(tab2, LV_OPA_COVER, 0);
+ 202              		.loc 1 25 5 is_stmt 1 view .LVU31
+ 203 00a2 0022     		movs	r2, #0
+ 204 00a4 FF21     		movs	r1, #255
+ 205 00a6 2846     		mov	r0, r5
+ 206 00a8 FFF7FEFF 		bl	lv_obj_set_style_bg_opa
+ 207              	.LVL32:
+  26:lvgl/examples/widgets/tabview/lv_example_tabview_2.c **** 
+  27:lvgl/examples/widgets/tabview/lv_example_tabview_2.c ****     /*Add content to the tabs*/
+  28:lvgl/examples/widgets/tabview/lv_example_tabview_2.c ****     lv_obj_t * label = lv_label_create(tab1);
+ 208              		.loc 1 28 5 view .LVU32
+ 209              		.loc 1 28 24 is_stmt 0 view .LVU33
+ 210 00ac 4846     		mov	r0, r9
+ 211 00ae FFF7FEFF 		bl	lv_label_create
+ 212              	.LVL33:
+  29:lvgl/examples/widgets/tabview/lv_example_tabview_2.c ****     lv_label_set_text(label, "First tab");
+ 213              		.loc 1 29 5 is_stmt 1 view .LVU34
+ 214 00b2 1749     		ldr	r1, .L3+24
+ 215 00b4 FFF7FEFF 		bl	lv_label_set_text
+ 216              	.LVL34:
+  30:lvgl/examples/widgets/tabview/lv_example_tabview_2.c **** 
+  31:lvgl/examples/widgets/tabview/lv_example_tabview_2.c ****     label = lv_label_create(tab2);
+ 217              		.loc 1 31 5 view .LVU35
+ 218              		.loc 1 31 13 is_stmt 0 view .LVU36
+ 219 00b8 2846     		mov	r0, r5
+ 220 00ba FFF7FEFF 		bl	lv_label_create
+ 221              	.LVL35:
+  32:lvgl/examples/widgets/tabview/lv_example_tabview_2.c ****     lv_label_set_text(label, "Second tab");
+ 222              		.loc 1 32 5 is_stmt 1 view .LVU37
+ 223 00be 1549     		ldr	r1, .L3+28
+ 224 00c0 FFF7FEFF 		bl	lv_label_set_text
+ 225              	.LVL36:
+  33:lvgl/examples/widgets/tabview/lv_example_tabview_2.c **** 
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHmgb5e.s 			page 9
+
+
+  34:lvgl/examples/widgets/tabview/lv_example_tabview_2.c ****     label = lv_label_create(tab3);
+ 226              		.loc 1 34 5 view .LVU38
+ 227              		.loc 1 34 13 is_stmt 0 view .LVU39
+ 228 00c4 4046     		mov	r0, r8
+ 229 00c6 FFF7FEFF 		bl	lv_label_create
+ 230              	.LVL37:
+  35:lvgl/examples/widgets/tabview/lv_example_tabview_2.c ****     lv_label_set_text(label, "Third tab");
+ 231              		.loc 1 35 5 is_stmt 1 view .LVU40
+ 232 00ca 1349     		ldr	r1, .L3+32
+ 233 00cc FFF7FEFF 		bl	lv_label_set_text
+ 234              	.LVL38:
+  36:lvgl/examples/widgets/tabview/lv_example_tabview_2.c **** 
+  37:lvgl/examples/widgets/tabview/lv_example_tabview_2.c ****     label = lv_label_create(tab4);
+ 235              		.loc 1 37 5 view .LVU41
+ 236              		.loc 1 37 13 is_stmt 0 view .LVU42
+ 237 00d0 3846     		mov	r0, r7
+ 238 00d2 FFF7FEFF 		bl	lv_label_create
+ 239              	.LVL39:
+  38:lvgl/examples/widgets/tabview/lv_example_tabview_2.c ****     lv_label_set_text(label, "Forth tab");
+ 240              		.loc 1 38 5 is_stmt 1 view .LVU43
+ 241 00d6 1149     		ldr	r1, .L3+36
+ 242 00d8 FFF7FEFF 		bl	lv_label_set_text
+ 243              	.LVL40:
+  39:lvgl/examples/widgets/tabview/lv_example_tabview_2.c **** 
+  40:lvgl/examples/widgets/tabview/lv_example_tabview_2.c ****     label = lv_label_create(tab5);
+ 244              		.loc 1 40 5 view .LVU44
+ 245              		.loc 1 40 13 is_stmt 0 view .LVU45
+ 246 00dc 3046     		mov	r0, r6
+ 247 00de FFF7FEFF 		bl	lv_label_create
+ 248              	.LVL41:
+  41:lvgl/examples/widgets/tabview/lv_example_tabview_2.c ****     lv_label_set_text(label, "Fifth tab");
+ 249              		.loc 1 41 5 is_stmt 1 view .LVU46
+ 250 00e2 0F49     		ldr	r1, .L3+40
+ 251 00e4 FFF7FEFF 		bl	lv_label_set_text
+ 252              	.LVL42:
+  42:lvgl/examples/widgets/tabview/lv_example_tabview_2.c **** 
+  43:lvgl/examples/widgets/tabview/lv_example_tabview_2.c ****     lv_obj_clear_flag(lv_tabview_get_content(tabview), LV_OBJ_FLAG_SCROLLABLE);
+ 253              		.loc 1 43 5 view .LVU47
+ 254 00e8 2046     		mov	r0, r4
+ 255 00ea FFF7FEFF 		bl	lv_tabview_get_content
+ 256              	.LVL43:
+ 257 00ee 1021     		movs	r1, #16
+ 258 00f0 FFF7FEFF 		bl	lv_obj_clear_flag
+ 259              	.LVL44:
+  44:lvgl/examples/widgets/tabview/lv_example_tabview_2.c **** }
+ 260              		.loc 1 44 1 is_stmt 0 view .LVU48
+ 261 00f4 BDE8F883 		pop	{r3, r4, r5, r6, r7, r8, r9, pc}
+ 262              	.LVL45:
+ 263              	.L4:
+ 264              		.loc 1 44 1 view .LVU49
+ 265              		.align	2
+ 266              	.L3:
+ 267 00f8 01000500 		.word	327681
+ 268 00fc 00000000 		.word	.LC0
+ 269 0100 08000000 		.word	.LC1
+ 270 0104 10000000 		.word	.LC2
+ 271 0108 18000000 		.word	.LC3
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHmgb5e.s 			page 10
+
+
+ 272 010c 20000000 		.word	.LC4
+ 273 0110 28000000 		.word	.LC5
+ 274 0114 34000000 		.word	.LC6
+ 275 0118 40000000 		.word	.LC7
+ 276 011c 4C000000 		.word	.LC8
+ 277 0120 58000000 		.word	.LC9
+ 278              		.cfi_endproc
+ 279              	.LFE204:
+ 281              		.text
+ 282              	.Letext0:
+ 283              		.file 3 "c:\\tools\\gcc-arm-none-eabi\\arm-none-eabi\\include\\machine\\_default_types.h"
+ 284              		.file 4 "c:\\tools\\gcc-arm-none-eabi\\arm-none-eabi\\include\\sys\\_stdint.h"
+ 285              		.file 5 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\misc\\lv_area.h"
+ 286              		.file 6 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\misc\\lv_color.h"
+ 287              		.file 7 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\misc\\lv_style.h"
+ 288              		.file 8 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/core/lv_obj.h"
+ 289              		.file 9 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\misc\\lv_ll.h"
+ 290              		.file 10 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/core/lv_group.h"
+ 291              		.file 11 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/core/lv_obj_scroll.h"
+ 292              		.file 12 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/core/lv_obj_style.h"
+ 293              		.file 13 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/core/lv_obj_class.h"
+ 294              		.file 14 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/core/lv_event.h"
+ 295              		.file 15 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/hal/lv_hal_disp.h"
+ 296              		.file 16 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/extra/widgets/tabview/lv_tabview.h"
+ 297              		.file 17 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/core/lv_obj_style_gen.h"
+ 298              		.file 18 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/widgets/lv_label.h"
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHmgb5e.s 			page 11
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 lv_example_tabview_2.c
+C:\Users\OSD\AppData\Local\Temp\ccHmgb5e.s:19     .rodata.lv_example_tabview_2.str1.4:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccHmgb5e.s:50     .text.lv_example_tabview_2:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccHmgb5e.s:56     .text.lv_example_tabview_2:00000000 lv_example_tabview_2
+C:\Users\OSD\AppData\Local\Temp\ccHmgb5e.s:267    .text.lv_example_tabview_2:000000f8 $d
+
+UNDEFINED SYMBOLS
+lv_disp_get_default
+lv_disp_get_scr_act
+lv_tabview_create
+lv_palette_lighten
+lv_obj_set_style_bg_color
+lv_tabview_get_tab_btns
+lv_palette_darken
+lv_obj_set_style_text_color
+lv_obj_set_style_border_side
+lv_tabview_add_tab
+lv_obj_set_style_bg_opa
+lv_label_create
+lv_label_set_text
+lv_tabview_get_content
+lv_obj_clear_flag

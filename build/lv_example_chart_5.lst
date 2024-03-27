@@ -1,0 +1,2191 @@
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccjU6M2X.s 			page 1
+
+
+   1              		.cpu cortex-m7
+   2              		.arch armv7e-m
+   3              		.fpu fpv5-d16
+   4              		.eabi_attribute 28, 1
+   5              		.eabi_attribute 20, 1
+   6              		.eabi_attribute 21, 1
+   7              		.eabi_attribute 23, 3
+   8              		.eabi_attribute 24, 1
+   9              		.eabi_attribute 25, 1
+  10              		.eabi_attribute 26, 1
+  11              		.eabi_attribute 30, 1
+  12              		.eabi_attribute 34, 1
+  13              		.eabi_attribute 18, 4
+  14              		.file	"lv_example_chart_5.c"
+  15              		.text
+  16              	.Ltext0:
+  17              		.cfi_sections	.debug_frame
+  18              		.section	.text.slider_y_event_cb,"ax",%progbits
+  19              		.align	1
+  20              		.syntax unified
+  21              		.thumb
+  22              		.thumb_func
+  24              	slider_y_event_cb:
+  25              	.LVL0:
+  26              	.LFB205:
+  27              		.file 1 "lvgl/examples/widgets/chart/lv_example_chart_5.c"
+   1:lvgl/examples/widgets/chart/lv_example_chart_5.c **** #include "../../lv_examples.h"
+   2:lvgl/examples/widgets/chart/lv_example_chart_5.c **** #if LV_USE_CHART && LV_USE_SLIDER && LV_BUILD_EXAMPLES
+   3:lvgl/examples/widgets/chart/lv_example_chart_5.c **** 
+   4:lvgl/examples/widgets/chart/lv_example_chart_5.c **** static lv_obj_t * chart;
+   5:lvgl/examples/widgets/chart/lv_example_chart_5.c **** /* Source: https://github.com/ankur219/ECG-Arrhythmia-classification/blob/642230149583adfae1e4bd26c
+   6:lvgl/examples/widgets/chart/lv_example_chart_5.c **** static const lv_coord_t ecg_sample[] = {
+   7:lvgl/examples/widgets/chart/lv_example_chart_5.c ****     -2, 2, 0, -15, -39, -63, -71, -68, -67, -69, -84, -95, -104, -107, -108, -107, -107, -107, -107
+   8:lvgl/examples/widgets/chart/lv_example_chart_5.c ****     -112, -100, -89, -83, -71, -64, -58, -58, -62, -62, -58, -51, -46, -39, -27, -10, 4, 7, 1, -3, 
+   9:lvgl/examples/widgets/chart/lv_example_chart_5.c ****     13, 7, 12, 15, 18, 21, 13, 6, 9, 8, 17, 19, 13, 11, 11, 11, 23, 30, 37, 34, 25, 14, 15, 19, 28,
+  10:lvgl/examples/widgets/chart/lv_example_chart_5.c ****     39, 37, 37, 34, 30, 32, 22, 29, 31, 33, 37, 23, 13, 7, 2, 4, -2, 2, 11, 22, 33, 19, -1, -27, -5
+  11:lvgl/examples/widgets/chart/lv_example_chart_5.c ****     -49, -18, 35, 113, 230, 369, 525, 651, 722, 730, 667, 563, 454, 357, 305, 288, 274, 255, 212, 1
+  12:lvgl/examples/widgets/chart/lv_example_chart_5.c ****     -13, -53, -78, -91, -101, -113, -124, -131, -131, -131, -129, -128, -129, -125, -123, -123, -12
+  13:lvgl/examples/widgets/chart/lv_example_chart_5.c ****     -159, -166, -183, -205, -227, -243, -248, -246, -254, -280, -327, -381, -429, -473, -517, -556,
+  14:lvgl/examples/widgets/chart/lv_example_chart_5.c ****     -620, -614, -604, -591, -574, -540, -497, -441, -389, -358, -336, -313, -284, -222, -167, -114,
+  15:lvgl/examples/widgets/chart/lv_example_chart_5.c ****     38, 52, 58, 56, 56, 57, 68, 77, 86, 86, 80, 69, 67, 70, 82, 85, 89, 90, 89, 89, 88, 91, 96, 97,
+  16:lvgl/examples/widgets/chart/lv_example_chart_5.c ****     96, 105, 106, 110, 102, 100, 96, 98, 97, 101, 98, 99, 100, 107, 113, 119, 115, 110, 96, 85, 73,
+  17:lvgl/examples/widgets/chart/lv_example_chart_5.c ****     78, 75, 85, 100, 114, 113, 105, 96, 84, 74, 66, 60, 75, 85, 89, 83, 67, 61, 67, 73, 79, 74, 63,
+  18:lvgl/examples/widgets/chart/lv_example_chart_5.c ****     48, 45, 46, 55, 62, 55, 49, 43, 50, 59, 63, 57, 40, 31, 23, 25, 27, 31, 35, 34, 30, 36, 34, 42,
+  19:lvgl/examples/widgets/chart/lv_example_chart_5.c ****     47, 32, 30, 32, 52, 67, 73, 71, 63, 54, 53, 45, 41, 28, 13, 3, 1, 4, 4, -8, -23, -32, -31, -19,
+  20:lvgl/examples/widgets/chart/lv_example_chart_5.c ****     24, 27, 29, 25, 22, 26, 32, 42, 51, 56, 60, 57, 55, 53, 53, 54, 59, 54, 49, 26, -3, -11, -20, -
+  21:lvgl/examples/widgets/chart/lv_example_chart_5.c ****     -212, -123, 8, 103, 142, 147, 120, 105, 98, 93, 81, 61, 40, 26, 28, 30, 30, 27, 19, 17, 21, 20,
+  22:lvgl/examples/widgets/chart/lv_example_chart_5.c ****     35, 20, 7, 1, 10, 18, 27, 22, 6, -4, -2, 3, 6, -2, -13, -14, -10, -2, 3, 2, -1, -5, -10, -19, -
+  23:lvgl/examples/widgets/chart/lv_example_chart_5.c ****     -68, -77, -86, -101, -110, -117, -115, -104, -92, -84, -85, -84, -73, -65, -52, -50, -45, -35, 
+  24:lvgl/examples/widgets/chart/lv_example_chart_5.c ****     26, 28, 28, 30, 28, 25, 28, 33, 42, 42, 36, 23, 9, 0, 1, -4, 1, -4, -4, 1, 5, 9, 9, -3, -1, -18
+  25:lvgl/examples/widgets/chart/lv_example_chart_5.c ****     -272, -340, -408, -446, -537, -643, -777, -894, -920, -853, -697, -461, -251, -60, 58, 103, 129
+  26:lvgl/examples/widgets/chart/lv_example_chart_5.c ****     178, 185, 190, 193, 200, 208, 215, 225, 224, 232, 234, 240, 240, 236, 229, 226, 224, 232, 233, 
+  27:lvgl/examples/widgets/chart/lv_example_chart_5.c ****     223, 231, 226, 223, 219, 218, 223, 223, 223, 233, 245, 268, 286, 296, 295, 283, 271, 263, 252, 
+  28:lvgl/examples/widgets/chart/lv_example_chart_5.c ****     186, 171, 152, 133, 117, 114, 110, 107, 96, 80, 63, 48, 40, 38, 34, 28, 15, 2, -7, -11, -14, -1
+  29:lvgl/examples/widgets/chart/lv_example_chart_5.c ****     -58, -63, -61, -52, -50, -48, -61, -59, -58, -54, -47, -52, -62, -61, -64, -54, -52, -59, -69, 
+  30:lvgl/examples/widgets/chart/lv_example_chart_5.c ****     -74, -78, -81, -80, -73, -65, -57, -53, -51, -47, -35, -27, -22, -22, -24, -21, -17, -13, -10, 
+  31:lvgl/examples/widgets/chart/lv_example_chart_5.c ****     -12, -2, 7, -1, -12, -16, -13, -2, 2, -4, -5, -2, 9, 19, 19, 14, 11, 13, 19, 21, 20, 18, 19, 19
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccjU6M2X.s 			page 2
+
+
+  32:lvgl/examples/widgets/chart/lv_example_chart_5.c ****     9, 3, -5, -9, -5, -3, -2, -3, -3, 2, 8, 9, 9, 5, 6, 8, 8, 7, 4, 3, 4, 5, 3, 5, 5, 13, 13, 12, 1
+  33:lvgl/examples/widgets/chart/lv_example_chart_5.c ****     14, 7, 10, 15, 16, 11, 12, 10, 13, 9, -2, -4, -2, 7, 16, 16, 17, 16, 7, -1, -16, -18, -16, -9, 
+  34:lvgl/examples/widgets/chart/lv_example_chart_5.c ****     -3, -4, -10, -19, -20, -16, -9, -9, -23, -40, -48, -43, -33, -19, -21, -26, -31, -33, -19, 0, 1
+  35:lvgl/examples/widgets/chart/lv_example_chart_5.c ****     -63, -67, -59, -52, -51, -50, -49, -42, -26, -21, -15, -20, -23, -22, -19, -12, -8, 5, 18, 27, 
+  36:lvgl/examples/widgets/chart/lv_example_chart_5.c ****     23, 17, 14, 17, 21, 25, 2, -45, -121, -196, -226, -200, -118, -9, 73, 126, 131, 114, 87, 60, 42
+  37:lvgl/examples/widgets/chart/lv_example_chart_5.c ****     25, 12, 9, 7, 3, 2, -8, -11, 2, 23, 38, 41, 23, 9, 10, 13, 16, 8, -8, -17, -23, -26, -25, -21, 
+  38:lvgl/examples/widgets/chart/lv_example_chart_5.c ****     -19, -22, -29, -40, -48, -48, -54, -55, -66, -82, -85, -90, -92, -98, -114, -119, -124, -129, -
+  39:lvgl/examples/widgets/chart/lv_example_chart_5.c ****     -124, -99, -85, -72, -65, -65, -65, -66, -63, -64, -64, -58, -46, -26, -9, 2, 2, 4, 0, 1, 4, 3,
+  40:lvgl/examples/widgets/chart/lv_example_chart_5.c ****     0, 10, 18, 20, 6, 2, -9, -7, -3, -3, -2, -7, -12, -5, 5, 24, 36, 31, 25, 6, 3, 7, 12, 17, 11, 0
+  41:lvgl/examples/widgets/chart/lv_example_chart_5.c ****     -6, -2, -2, -6, -2, 2, 14, 24, 22, 15, 8, 4, 6, 7, 12, 16, 25, 20, 7, -16, -41, -60, -67, -65, 
+  42:lvgl/examples/widgets/chart/lv_example_chart_5.c ****     84, 175, 302, 455, 603, 707, 743, 714, 625, 519, 414, 337, 300, 281, 263, 239, 197, 163, 136, 1
+  43:lvgl/examples/widgets/chart/lv_example_chart_5.c ****     -66, -74, -79, -92, -107, -117, -127, -129, -135, -139, -141, -155, -159, -167, -171, -169, -17
+  44:lvgl/examples/widgets/chart/lv_example_chart_5.c ****     -202, -223, -235, -243, -237, -240, -256, -298, -345, -393, -432, -475, -518, -565, -596, -619,
+  45:lvgl/examples/widgets/chart/lv_example_chart_5.c ****     -599, -583, -559, -524, -477, -425, -383, -357, -331, -301, -252, -198, -143, -96, -57, -29, -8
+  46:lvgl/examples/widgets/chart/lv_example_chart_5.c ****     70, 74, 76, 79, 82, 79, 75, 62,
+  47:lvgl/examples/widgets/chart/lv_example_chart_5.c **** };
+  48:lvgl/examples/widgets/chart/lv_example_chart_5.c **** 
+  49:lvgl/examples/widgets/chart/lv_example_chart_5.c **** static void slider_x_event_cb(lv_event_t * e)
+  50:lvgl/examples/widgets/chart/lv_example_chart_5.c **** {
+  51:lvgl/examples/widgets/chart/lv_example_chart_5.c ****     lv_obj_t * obj = lv_event_get_target(e);
+  52:lvgl/examples/widgets/chart/lv_example_chart_5.c ****     int32_t v = lv_slider_get_value(obj);
+  53:lvgl/examples/widgets/chart/lv_example_chart_5.c ****     lv_chart_set_zoom_x(chart, v);
+  54:lvgl/examples/widgets/chart/lv_example_chart_5.c **** }
+  55:lvgl/examples/widgets/chart/lv_example_chart_5.c **** 
+  56:lvgl/examples/widgets/chart/lv_example_chart_5.c **** static void slider_y_event_cb(lv_event_t * e)
+  57:lvgl/examples/widgets/chart/lv_example_chart_5.c **** {
+  28              		.loc 1 57 1 view -0
+  29              		.cfi_startproc
+  30              		@ args = 0, pretend = 0, frame = 0
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+  32              		.loc 1 57 1 is_stmt 0 view .LVU1
+  33 0000 08B5     		push	{r3, lr}
+  34              		.cfi_def_cfa_offset 8
+  35              		.cfi_offset 3, -8
+  36              		.cfi_offset 14, -4
+  58:lvgl/examples/widgets/chart/lv_example_chart_5.c ****     lv_obj_t * obj = lv_event_get_target(e);
+  37              		.loc 1 58 5 is_stmt 1 view .LVU2
+  38              		.loc 1 58 22 is_stmt 0 view .LVU3
+  39 0002 FFF7FEFF 		bl	lv_event_get_target
+  40              	.LVL1:
+  59:lvgl/examples/widgets/chart/lv_example_chart_5.c ****     int32_t v = lv_slider_get_value(obj);
+  41              		.loc 1 59 5 is_stmt 1 view .LVU4
+  42              	.LBB10:
+  43              	.LBI10:
+  44              		.file 2 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/widgets/lv_slider.h"
+   1:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** /**
+   2:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h ****  * @file lv_slider.h
+   3:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h ****  *
+   4:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h ****  */
+   5:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** 
+   6:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** #ifndef LV_SLIDER_H
+   7:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** #define LV_SLIDER_H
+   8:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** 
+   9:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** #ifdef __cplusplus
+  10:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** extern "C" {
+  11:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** #endif
+  12:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** 
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccjU6M2X.s 			page 3
+
+
+  13:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** /*********************
+  14:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h ****  *      INCLUDES
+  15:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h ****  *********************/
+  16:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** #include "../lv_conf_internal.h"
+  17:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** 
+  18:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** #if LV_USE_SLIDER != 0
+  19:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** 
+  20:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** /*Testing of dependencies*/
+  21:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** #if LV_USE_BAR == 0
+  22:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** #error "lv_slider: lv_bar is required. Enable it in lv_conf.h (LV_USE_BAR 1)"
+  23:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** #endif
+  24:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** 
+  25:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** #include "../core/lv_obj.h"
+  26:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** #include "lv_bar.h"
+  27:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** 
+  28:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** /*********************
+  29:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h ****  *      DEFINES
+  30:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h ****  *********************/
+  31:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** 
+  32:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** /**********************
+  33:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h ****  *      TYPEDEFS
+  34:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h ****  **********************/
+  35:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** 
+  36:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** enum {
+  37:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h ****     LV_SLIDER_MODE_NORMAL = LV_BAR_MODE_NORMAL,
+  38:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h ****     LV_SLIDER_MODE_SYMMETRICAL = LV_BAR_MODE_SYMMETRICAL,
+  39:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h ****     LV_SLIDER_MODE_RANGE = LV_BAR_MODE_RANGE
+  40:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** };
+  41:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** typedef uint8_t lv_slider_mode_t;
+  42:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** 
+  43:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** typedef struct {
+  44:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h ****     lv_bar_t bar;       /*Add the ancestor's type first*/
+  45:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h ****     lv_area_t left_knob_area;
+  46:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h ****     lv_area_t right_knob_area;
+  47:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h ****     int32_t * value_to_set; /*Which bar value to set*/
+  48:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h ****     uint8_t dragging : 1;       /*1: the slider is being dragged*/
+  49:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h ****     uint8_t left_knob_focus : 1; /*1: with encoder now the right knob can be adjusted*/
+  50:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** } lv_slider_t;
+  51:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** 
+  52:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** extern const lv_obj_class_t lv_slider_class;
+  53:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** 
+  54:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** /**
+  55:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h ****  * `type` field in `lv_obj_draw_part_dsc_t` if `class_p = lv_slider_class`
+  56:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h ****  * Used in `LV_EVENT_DRAW_PART_BEGIN` and `LV_EVENT_DRAW_PART_END`
+  57:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h ****  */
+  58:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** typedef enum {
+  59:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h ****     LV_SLIDER_DRAW_PART_KNOB,           /**< The main (right) knob's rectangle*/
+  60:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h ****     LV_SLIDER_DRAW_PART_KNOB_LEFT,      /**< The left knob's rectangle*/
+  61:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** } lv_slider_draw_part_type_t;
+  62:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** 
+  63:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** /**********************
+  64:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h ****  * GLOBAL PROTOTYPES
+  65:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h ****  **********************/
+  66:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** 
+  67:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** /**
+  68:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h ****  * Create a slider object
+  69:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h ****  * @param parent    pointer to an object, it will be the parent of the new slider.
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccjU6M2X.s 			page 4
+
+
+  70:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h ****  * @return          pointer to the created slider
+  71:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h ****  */
+  72:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** lv_obj_t * lv_slider_create(lv_obj_t * parent);
+  73:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** 
+  74:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** /*=====================
+  75:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h ****  * Setter functions
+  76:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h ****  *====================*/
+  77:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** 
+  78:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** /**
+  79:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h ****  * Set a new value on the slider
+  80:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h ****  * @param obj       pointer to a slider object
+  81:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h ****  * @param value     the new value
+  82:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h ****  * @param anim      LV_ANIM_ON: set the value with an animation; LV_ANIM_OFF: change the value imme
+  83:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h ****  */
+  84:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** static inline void lv_slider_set_value(lv_obj_t * obj, int32_t value, lv_anim_enable_t anim)
+  85:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** {
+  86:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h ****     lv_bar_set_value(obj, value, anim);
+  87:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** }
+  88:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** 
+  89:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** /**
+  90:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h ****  * Set a new value for the left knob of a slider
+  91:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h ****  * @param obj       pointer to a slider object
+  92:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h ****  * @param value     new value
+  93:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h ****  * @param anim      LV_ANIM_ON: set the value with an animation; LV_ANIM_OFF: change the value imme
+  94:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h ****  */
+  95:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** static inline void lv_slider_set_left_value(lv_obj_t * obj, int32_t value, lv_anim_enable_t anim)
+  96:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** {
+  97:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h ****     lv_bar_set_start_value(obj, value, anim);
+  98:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** }
+  99:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** 
+ 100:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** /**
+ 101:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h ****  * Set minimum and the maximum values of a bar
+ 102:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h ****  * @param obj       pointer to the slider object
+ 103:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h ****  * @param min       minimum value
+ 104:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h ****  * @param max       maximum value
+ 105:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h ****  */
+ 106:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** static inline void lv_slider_set_range(lv_obj_t * obj, int32_t min, int32_t max)
+ 107:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** {
+ 108:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h ****     lv_bar_set_range(obj, min, max);
+ 109:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** }
+ 110:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** 
+ 111:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** /**
+ 112:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h ****  * Set the mode of slider.
+ 113:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h ****  * @param obj       pointer to a slider object
+ 114:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h ****  * @param mode      the mode of the slider. See ::lv_slider_mode_t
+ 115:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h ****  */
+ 116:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** static inline void lv_slider_set_mode(lv_obj_t * obj, lv_slider_mode_t mode)
+ 117:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** {
+ 118:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h ****     lv_bar_set_mode(obj, (lv_bar_mode_t)mode);
+ 119:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** }
+ 120:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** 
+ 121:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** /*=====================
+ 122:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h ****  * Getter functions
+ 123:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h ****  *====================*/
+ 124:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** 
+ 125:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** /**
+ 126:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h ****  * Get the value of the main knob of a slider
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccjU6M2X.s 			page 5
+
+
+ 127:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h ****  * @param obj       pointer to a slider object
+ 128:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h ****  * @return          the value of the main knob of the slider
+ 129:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h ****  */
+ 130:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** static inline int32_t lv_slider_get_value(const lv_obj_t * obj)
+  45              		.loc 2 130 23 view .LVU5
+  46              	.LBB11:
+ 131:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** {
+ 132:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h ****     return lv_bar_get_value(obj);
+  47              		.loc 2 132 5 view .LVU6
+  48              		.loc 2 132 12 is_stmt 0 view .LVU7
+  49 0006 FFF7FEFF 		bl	lv_bar_get_value
+  50              	.LVL2:
+  51              		.loc 2 132 12 view .LVU8
+  52              	.LBE11:
+  53              	.LBE10:
+  60:lvgl/examples/widgets/chart/lv_example_chart_5.c ****     lv_chart_set_zoom_y(chart, v);
+  54              		.loc 1 60 5 is_stmt 1 view .LVU9
+  55 000a 81B2     		uxth	r1, r0
+  56 000c 024B     		ldr	r3, .L3
+  57 000e 1868     		ldr	r0, [r3]
+  58              	.LVL3:
+  59              		.loc 1 60 5 is_stmt 0 view .LVU10
+  60 0010 FFF7FEFF 		bl	lv_chart_set_zoom_y
+  61              	.LVL4:
+  61:lvgl/examples/widgets/chart/lv_example_chart_5.c **** }
+  62              		.loc 1 61 1 view .LVU11
+  63 0014 08BD     		pop	{r3, pc}
+  64              	.L4:
+  65 0016 00BF     		.align	2
+  66              	.L3:
+  67 0018 00000000 		.word	.LANCHOR0
+  68              		.cfi_endproc
+  69              	.LFE205:
+  71              		.section	.text.slider_x_event_cb,"ax",%progbits
+  72              		.align	1
+  73              		.syntax unified
+  74              		.thumb
+  75              		.thumb_func
+  77              	slider_x_event_cb:
+  78              	.LVL5:
+  79              	.LFB204:
+  50:lvgl/examples/widgets/chart/lv_example_chart_5.c ****     lv_obj_t * obj = lv_event_get_target(e);
+  80              		.loc 1 50 1 is_stmt 1 view -0
+  81              		.cfi_startproc
+  82              		@ args = 0, pretend = 0, frame = 0
+  83              		@ frame_needed = 0, uses_anonymous_args = 0
+  50:lvgl/examples/widgets/chart/lv_example_chart_5.c ****     lv_obj_t * obj = lv_event_get_target(e);
+  84              		.loc 1 50 1 is_stmt 0 view .LVU13
+  85 0000 08B5     		push	{r3, lr}
+  86              		.cfi_def_cfa_offset 8
+  87              		.cfi_offset 3, -8
+  88              		.cfi_offset 14, -4
+  51:lvgl/examples/widgets/chart/lv_example_chart_5.c ****     int32_t v = lv_slider_get_value(obj);
+  89              		.loc 1 51 5 is_stmt 1 view .LVU14
+  51:lvgl/examples/widgets/chart/lv_example_chart_5.c ****     int32_t v = lv_slider_get_value(obj);
+  90              		.loc 1 51 22 is_stmt 0 view .LVU15
+  91 0002 FFF7FEFF 		bl	lv_event_get_target
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccjU6M2X.s 			page 6
+
+
+  92              	.LVL6:
+  52:lvgl/examples/widgets/chart/lv_example_chart_5.c ****     lv_chart_set_zoom_x(chart, v);
+  93              		.loc 1 52 5 is_stmt 1 view .LVU16
+  94              	.LBB12:
+  95              	.LBI12:
+ 130:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** {
+  96              		.loc 2 130 23 view .LVU17
+  97              	.LBB13:
+  98              		.loc 2 132 5 view .LVU18
+  99              		.loc 2 132 12 is_stmt 0 view .LVU19
+ 100 0006 FFF7FEFF 		bl	lv_bar_get_value
+ 101              	.LVL7:
+ 102              		.loc 2 132 12 view .LVU20
+ 103              	.LBE13:
+ 104              	.LBE12:
+  53:lvgl/examples/widgets/chart/lv_example_chart_5.c **** }
+ 105              		.loc 1 53 5 is_stmt 1 view .LVU21
+ 106 000a 81B2     		uxth	r1, r0
+ 107 000c 024B     		ldr	r3, .L7
+ 108 000e 1868     		ldr	r0, [r3]
+ 109              	.LVL8:
+  53:lvgl/examples/widgets/chart/lv_example_chart_5.c **** }
+ 110              		.loc 1 53 5 is_stmt 0 view .LVU22
+ 111 0010 FFF7FEFF 		bl	lv_chart_set_zoom_x
+ 112              	.LVL9:
+  54:lvgl/examples/widgets/chart/lv_example_chart_5.c **** 
+ 113              		.loc 1 54 1 view .LVU23
+ 114 0014 08BD     		pop	{r3, pc}
+ 115              	.L8:
+ 116 0016 00BF     		.align	2
+ 117              	.L7:
+ 118 0018 00000000 		.word	.LANCHOR0
+ 119              		.cfi_endproc
+ 120              	.LFE204:
+ 122              		.section	.text.lv_example_chart_5,"ax",%progbits
+ 123              		.align	1
+ 124              		.global	lv_example_chart_5
+ 125              		.syntax unified
+ 126              		.thumb
+ 127              		.thumb_func
+ 129              	lv_example_chart_5:
+ 130              	.LFB206:
+  62:lvgl/examples/widgets/chart/lv_example_chart_5.c **** 
+  63:lvgl/examples/widgets/chart/lv_example_chart_5.c **** /**
+  64:lvgl/examples/widgets/chart/lv_example_chart_5.c ****  * Display 1000 data points with zooming and scrolling.
+  65:lvgl/examples/widgets/chart/lv_example_chart_5.c ****  * See how the chart changes drawing mode (draw only vertical lines) when
+  66:lvgl/examples/widgets/chart/lv_example_chart_5.c ****  * the points get too crowded.
+  67:lvgl/examples/widgets/chart/lv_example_chart_5.c ****  */
+  68:lvgl/examples/widgets/chart/lv_example_chart_5.c **** void lv_example_chart_5(void)
+  69:lvgl/examples/widgets/chart/lv_example_chart_5.c **** {
+ 131              		.loc 1 69 1 is_stmt 1 view -0
+ 132              		.cfi_startproc
+ 133              		@ args = 0, pretend = 0, frame = 0
+ 134              		@ frame_needed = 0, uses_anonymous_args = 0
+ 135 0000 70B5     		push	{r4, r5, r6, lr}
+ 136              		.cfi_def_cfa_offset 16
+ 137              		.cfi_offset 4, -16
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccjU6M2X.s 			page 7
+
+
+ 138              		.cfi_offset 5, -12
+ 139              		.cfi_offset 6, -8
+ 140              		.cfi_offset 14, -4
+ 141 0002 82B0     		sub	sp, sp, #8
+ 142              		.cfi_def_cfa_offset 24
+  70:lvgl/examples/widgets/chart/lv_example_chart_5.c ****     /*Create a chart*/
+  71:lvgl/examples/widgets/chart/lv_example_chart_5.c ****     chart = lv_chart_create(lv_scr_act());
+ 143              		.loc 1 71 5 view .LVU25
+ 144              	.LBB26:
+ 145              	.LBI26:
+ 146              		.file 3 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/core/lv_disp.h"
+   1:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+   2:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @file lv_disp.h
+   3:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  *
+   4:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+   5:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+   6:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** #ifndef LV_DISP_H
+   7:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** #define LV_DISP_H
+   8:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+   9:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** #ifdef __cplusplus
+  10:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** extern "C" {
+  11:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** #endif
+  12:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+  13:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /*********************
+  14:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  *      INCLUDES
+  15:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  *********************/
+  16:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** #include "../hal/lv_hal.h"
+  17:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** #include "lv_obj.h"
+  18:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** #include "lv_theme.h"
+  19:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+  20:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /*********************
+  21:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  *      DEFINES
+  22:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  *********************/
+  23:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+  24:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**********************
+  25:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  *      TYPEDEFS
+  26:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  **********************/
+  27:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+  28:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** typedef enum {
+  29:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_NONE,
+  30:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_OVER_LEFT,
+  31:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_OVER_RIGHT,
+  32:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_OVER_TOP,
+  33:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_OVER_BOTTOM,
+  34:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_MOVE_LEFT,
+  35:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_MOVE_RIGHT,
+  36:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_MOVE_TOP,
+  37:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_MOVE_BOTTOM,
+  38:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_FADE_IN,
+  39:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_FADE_ON = LV_SCR_LOAD_ANIM_FADE_IN, /*For backward compatibility*/
+  40:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_FADE_OUT,
+  41:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_OUT_LEFT,
+  42:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_OUT_RIGHT,
+  43:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_OUT_TOP,
+  44:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_OUT_BOTTOM,
+  45:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** } lv_scr_load_anim_t;
+  46:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccjU6M2X.s 			page 8
+
+
+  47:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**********************
+  48:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * GLOBAL PROTOTYPES
+  49:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  **********************/
+  50:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+  51:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+  52:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Return with a pointer to the active screen
+  53:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to display which active screen should be get. (NULL to use the default
+  54:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * screen)
+  55:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @return pointer to the active screen object (loaded by 'lv_scr_load()')
+  56:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+  57:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** lv_obj_t * lv_disp_get_scr_act(lv_disp_t * disp);
+  58:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+  59:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+  60:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Return with a pointer to the previous screen. Only used during screen transitions.
+  61:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to display which previous screen should be get. (NULL to use the default
+  62:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * screen)
+  63:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @return pointer to the previous screen object or NULL if not used now
+  64:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+  65:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** lv_obj_t * lv_disp_get_scr_prev(lv_disp_t * disp);
+  66:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+  67:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+  68:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Make a screen active
+  69:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param scr pointer to a screen
+  70:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+  71:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** void lv_disp_load_scr(lv_obj_t * scr);
+  72:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+  73:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+  74:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Return with the top layer. (Same on every screen and it is above the normal screen layer)
+  75:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to display which top layer should be get. (NULL to use the default screen)
+  76:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @return pointer to the top layer object (transparent screen sized lv_obj)
+  77:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+  78:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** lv_obj_t * lv_disp_get_layer_top(lv_disp_t * disp);
+  79:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+  80:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+  81:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Return with the sys. layer. (Same on every screen and it is above the normal screen and the top
+  82:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * layer)
+  83:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to display which sys. layer should be retrieved. (NULL to use the default sc
+  84:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @return pointer to the sys layer object (transparent screen sized lv_obj)
+  85:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+  86:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** lv_obj_t * lv_disp_get_layer_sys(lv_disp_t * disp);
+  87:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+  88:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+  89:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Set the theme of a display
+  90:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to a display
+  91:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+  92:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** void lv_disp_set_theme(lv_disp_t * disp, lv_theme_t * th);
+  93:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+  94:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+  95:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Get the theme of a display
+  96:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to a display
+  97:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @return the display's theme (can be NULL)
+  98:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+  99:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** lv_theme_t * lv_disp_get_theme(lv_disp_t * disp);
+ 100:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+ 101:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+ 102:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Set the background color of a display
+ 103:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to a display
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccjU6M2X.s 			page 9
+
+
+ 104:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param color color of the background
+ 105:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+ 106:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** void lv_disp_set_bg_color(lv_disp_t * disp, lv_color_t color);
+ 107:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+ 108:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+ 109:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Set the background image of a display
+ 110:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to a display
+ 111:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param img_src path to file or pointer to an `lv_img_dsc_t` variable
+ 112:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+ 113:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** void lv_disp_set_bg_image(lv_disp_t * disp, const void  * img_src);
+ 114:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+ 115:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+ 116:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Set opacity of the background
+ 117:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to a display
+ 118:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param opa opacity (0..255)
+ 119:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+ 120:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** void lv_disp_set_bg_opa(lv_disp_t * disp, lv_opa_t opa);
+ 121:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+ 122:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+ 123:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Switch screen with animation
+ 124:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param scr pointer to the new screen to load
+ 125:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param anim_type type of the animation from `lv_scr_load_anim_t`, e.g. `LV_SCR_LOAD_ANIM_MOVE_LE
+ 126:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param time time of the animation
+ 127:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param delay delay before the transition
+ 128:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param auto_del true: automatically delete the old screen
+ 129:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+ 130:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** void lv_scr_load_anim(lv_obj_t * scr, lv_scr_load_anim_t anim_type, uint32_t time, uint32_t delay, 
+ 131:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+ 132:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+ 133:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Get elapsed time since last user activity on a display (e.g. click)
+ 134:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to a display (NULL to get the overall smallest inactivity)
+ 135:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @return elapsed ticks (milliseconds) since the last activity
+ 136:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+ 137:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** uint32_t lv_disp_get_inactive_time(const lv_disp_t * disp);
+ 138:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+ 139:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+ 140:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Manually trigger an activity on a display
+ 141:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to a display (NULL to use the default display)
+ 142:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+ 143:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** void lv_disp_trig_activity(lv_disp_t * disp);
+ 144:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+ 145:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+ 146:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Clean any CPU cache that is related to the display.
+ 147:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to a display (NULL to use the default display)
+ 148:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+ 149:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** void lv_disp_clean_dcache(lv_disp_t * disp);
+ 150:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+ 151:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+ 152:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Temporarily enable and disable the invalidation of the display.
+ 153:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to a display (NULL to use the default display)
+ 154:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param en true: enable invalidation; false: invalidation
+ 155:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+ 156:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** void lv_disp_enable_invalidation(lv_disp_t * disp, bool en);
+ 157:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+ 158:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+ 159:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Get display invalidation is enabled.
+ 160:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to a display (NULL to use the default display)
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccjU6M2X.s 			page 10
+
+
+ 161:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @return return true if invalidation is enabled
+ 162:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+ 163:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** bool lv_disp_is_invalidation_enabled(lv_disp_t * disp);
+ 164:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+ 165:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+ 166:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Get a pointer to the screen refresher timer to
+ 167:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * modify its parameters with `lv_timer_...` functions.
+ 168:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to a display
+ 169:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @return pointer to the display refresher timer. (NULL on error)
+ 170:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+ 171:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** lv_timer_t * _lv_disp_get_refr_timer(lv_disp_t * disp);
+ 172:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+ 173:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /*------------------------------------------------
+ 174:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * To improve backward compatibility
+ 175:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Recommended only if you have one display
+ 176:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  *------------------------------------------------*/
+ 177:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+ 178:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+ 179:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Get the active screen of the default display
+ 180:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @return pointer to the active screen
+ 181:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+ 182:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** static inline lv_obj_t * lv_scr_act(void)
+ 147              		.loc 3 182 26 view .LVU26
+ 148              	.LBB27:
+ 183:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** {
+ 184:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     return lv_disp_get_scr_act(lv_disp_get_default());
+ 149              		.loc 3 184 5 view .LVU27
+ 150              		.loc 3 184 12 is_stmt 0 view .LVU28
+ 151 0004 FFF7FEFF 		bl	lv_disp_get_default
+ 152              	.LVL10:
+ 153 0008 FFF7FEFF 		bl	lv_disp_get_scr_act
+ 154              	.LVL11:
+ 155              	.LBE27:
+ 156              	.LBE26:
+ 157              		.loc 1 71 13 view .LVU29
+ 158 000c FFF7FEFF 		bl	lv_chart_create
+ 159              	.LVL12:
+ 160              		.loc 1 71 11 view .LVU30
+ 161 0010 3B4C     		ldr	r4, .L11
+ 162 0012 2060     		str	r0, [r4]
+  72:lvgl/examples/widgets/chart/lv_example_chart_5.c ****     lv_obj_set_size(chart, 200, 150);
+ 163              		.loc 1 72 5 is_stmt 1 view .LVU31
+ 164 0014 9622     		movs	r2, #150
+ 165 0016 C821     		movs	r1, #200
+ 166 0018 FFF7FEFF 		bl	lv_obj_set_size
+ 167              	.LVL13:
+  73:lvgl/examples/widgets/chart/lv_example_chart_5.c ****     lv_obj_align(chart, LV_ALIGN_CENTER, -30, -30);
+ 168              		.loc 1 73 5 view .LVU32
+ 169 001c 6FF01D03 		mvn	r3, #29
+ 170 0020 1A46     		mov	r2, r3
+ 171 0022 0921     		movs	r1, #9
+ 172 0024 2068     		ldr	r0, [r4]
+ 173 0026 FFF7FEFF 		bl	lv_obj_align
+ 174              	.LVL14:
+  74:lvgl/examples/widgets/chart/lv_example_chart_5.c ****     lv_chart_set_range(chart, LV_CHART_AXIS_PRIMARY_Y, -1000, 1000);
+ 175              		.loc 1 74 5 view .LVU33
+ 176 002a 4FF47A73 		mov	r3, #1000
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccjU6M2X.s 			page 11
+
+
+ 177 002e 354A     		ldr	r2, .L11+4
+ 178 0030 0021     		movs	r1, #0
+ 179 0032 2068     		ldr	r0, [r4]
+ 180 0034 FFF7FEFF 		bl	lv_chart_set_range
+ 181              	.LVL15:
+  75:lvgl/examples/widgets/chart/lv_example_chart_5.c **** 
+  76:lvgl/examples/widgets/chart/lv_example_chart_5.c ****     /*Do not display points on the data*/
+  77:lvgl/examples/widgets/chart/lv_example_chart_5.c ****     lv_obj_set_style_size(chart, 0, LV_PART_INDICATOR);
+ 182              		.loc 1 77 5 view .LVU34
+ 183 0038 2568     		ldr	r5, [r4]
+ 184              	.LVL16:
+ 185              	.LBB28:
+ 186              	.LBI28:
+ 187              		.file 4 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/core/lv_obj_style.h"
+   1:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** /**
+   2:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  * @file lv_obj_style.h
+   3:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  *
+   4:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  */
+   5:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** 
+   6:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** #ifndef LV_OBJ_STYLE_H
+   7:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** #define LV_OBJ_STYLE_H
+   8:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** 
+   9:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** #ifdef __cplusplus
+  10:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** extern "C" {
+  11:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** #endif
+  12:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** 
+  13:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** /*********************
+  14:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  *      INCLUDES
+  15:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  *********************/
+  16:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** #include <stdint.h>
+  17:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** #include <stdbool.h>
+  18:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** #include "../misc/lv_bidi.h"
+  19:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** 
+  20:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** /*********************
+  21:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  *      DEFINES
+  22:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  *********************/
+  23:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** 
+  24:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** /**********************
+  25:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  *      TYPEDEFS
+  26:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  **********************/
+  27:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** /*Can't include lv_obj.h because it includes this header file*/
+  28:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** struct _lv_obj_t;
+  29:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** 
+  30:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** typedef enum {
+  31:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****     _LV_STYLE_STATE_CMP_SAME,           /*The style properties in the 2 states are identical*/
+  32:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****     _LV_STYLE_STATE_CMP_DIFF_REDRAW,    /*The differences can be shown with a simple redraw*/
+  33:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****     _LV_STYLE_STATE_CMP_DIFF_DRAW_PAD,  /*The differences can be shown with a simple redraw*/
+  34:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****     _LV_STYLE_STATE_CMP_DIFF_LAYOUT,    /*The differences can be shown with a simple redraw*/
+  35:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** } _lv_style_state_cmp_t;
+  36:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** 
+  37:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** typedef uint32_t lv_style_selector_t;
+  38:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** 
+  39:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** typedef struct {
+  40:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****     lv_style_t * style;
+  41:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****     uint32_t selector : 24;
+  42:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****     uint32_t is_local : 1;
+  43:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****     uint32_t is_trans : 1;
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccjU6M2X.s 			page 12
+
+
+  44:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** } _lv_obj_style_t;
+  45:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** 
+  46:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** typedef struct {
+  47:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****     uint16_t time;
+  48:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****     uint16_t delay;
+  49:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****     lv_style_selector_t selector;
+  50:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****     lv_style_prop_t prop;
+  51:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****     lv_anim_path_cb_t path_cb;
+  52:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** #if LV_USE_USER_DATA
+  53:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****     void * user_data;
+  54:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** #endif
+  55:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** } _lv_obj_style_transition_dsc_t;
+  56:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** 
+  57:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** /**********************
+  58:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  * GLOBAL PROTOTYPES
+  59:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  **********************/
+  60:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** 
+  61:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** /**
+  62:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  * Initialize the object related style manager module.
+  63:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  * Called by LVGL in `lv_init()`
+  64:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  */
+  65:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** void _lv_obj_style_init(void);
+  66:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** 
+  67:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** /**
+  68:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  * Add a style to an object.
+  69:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  * @param obj       pointer to an object
+  70:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  * @param style     pointer to a style to add
+  71:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  * @param selector  OR-ed value of parts and state to which the style should be added
+  72:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  * @example         lv_obj_add_style(btn, &style_btn, 0); //Default button style
+  73:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  * @example         lv_obj_add_style(btn, &btn_red, LV_STATE_PRESSED); //Overwrite only some colors
+  74:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  */
+  75:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** void lv_obj_add_style(struct _lv_obj_t * obj, lv_style_t * style, lv_style_selector_t selector);
+  76:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** 
+  77:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** /**
+  78:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  * Add a style to an object.
+  79:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  * @param obj       pointer to an object
+  80:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  * @param style     pointer to a style to remove. Can be NULL to check only the selector
+  81:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  * @param selector  OR-ed values of states and a part to remove only styles with matching selectors
+  82:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  * @example lv_obj_remove_style(obj, &style, LV_PART_ANY | LV_STATE_ANY); //Remove a specific style
+  83:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  * @example lv_obj_remove_style(obj, NULL, LV_PART_MAIN | LV_STATE_ANY); //Remove all styles from t
+  84:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  * @example lv_obj_remove_style(obj, NULL, LV_PART_ANY | LV_STATE_ANY); //Remove all styles
+  85:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  */
+  86:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** void lv_obj_remove_style(struct _lv_obj_t * obj, lv_style_t * style, lv_style_selector_t selector);
+  87:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** 
+  88:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** /**
+  89:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  * Remove all styles from an object
+  90:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  * @param obj       pointer to an object
+  91:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  */
+  92:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** static inline void lv_obj_remove_style_all(struct _lv_obj_t * obj)
+  93:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** {
+  94:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****     lv_obj_remove_style(obj, NULL, (lv_style_selector_t)LV_PART_ANY | (lv_style_selector_t)LV_STATE
+  95:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** }
+  96:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** 
+  97:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** /**
+  98:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  * Notify all object if a style is modified
+  99:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  * @param style     pointer to a style. Only the objects with this style will be notified
+ 100:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  *                  (NULL to notify all objects)
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccjU6M2X.s 			page 13
+
+
+ 101:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  */
+ 102:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** void lv_obj_report_style_change(lv_style_t * style);
+ 103:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** 
+ 104:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** /**
+ 105:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  * Notify an object and its children about its style is modified.
+ 106:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  * @param obj       pointer to an object
+ 107:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  * @param part      the part whose style was changed. E.g. `LV_PART_ANY`, `LV_PART_MAIN`
+ 108:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  * @param prop      `LV_STYLE_PROP_ANY` or an `LV_STYLE_...` property.
+ 109:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  *                  It is used to optimize what needs to be refreshed.
+ 110:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  *                  `LV_STYLE_PROP_INV` to perform only a style cache update
+ 111:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  */
+ 112:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** void lv_obj_refresh_style(struct _lv_obj_t * obj, lv_part_t part, lv_style_prop_t prop);
+ 113:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** 
+ 114:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** /**
+ 115:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  * Enable or disable automatic style refreshing when a new style is added/removed to/from an object
+ 116:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  * or any other style change happens.
+ 117:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  * @param en        true: enable refreshing; false: disable refreshing
+ 118:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  */
+ 119:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** void lv_obj_enable_style_refresh(bool en);
+ 120:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** 
+ 121:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** /**
+ 122:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  * Get the value of a style property. The current state of the object will be considered.
+ 123:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  * Inherited properties will be inherited.
+ 124:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  * If a property is not set a default value will be returned.
+ 125:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  * @param obj       pointer to an object
+ 126:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  * @param part      a part from which the property should be get
+ 127:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  * @param prop      the property to get
+ 128:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  * @return          the value of the property.
+ 129:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  *                  Should be read from the correct field of the `lv_style_value_t` according to th
+ 130:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  */
+ 131:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** lv_style_value_t lv_obj_get_style_prop(const struct _lv_obj_t * obj, lv_part_t part, lv_style_prop_
+ 132:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** 
+ 133:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** /**
+ 134:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  * Set local style property on an object's part and state.
+ 135:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  * @param obj       pointer to an object
+ 136:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  * @param prop      the property
+ 137:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  * @param value     value of the property. The correct element should be set according to the type 
+ 138:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  * @param selector  OR-ed value of parts and state for which the style should be set
+ 139:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  */
+ 140:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** void lv_obj_set_local_style_prop(struct _lv_obj_t * obj, lv_style_prop_t prop, lv_style_value_t val
+ 141:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****                                  lv_style_selector_t selector);
+ 142:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** 
+ 143:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** void lv_obj_set_local_style_prop_meta(struct _lv_obj_t * obj, lv_style_prop_t prop, uint16_t meta,
+ 144:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****                                       lv_style_selector_t selector);
+ 145:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** 
+ 146:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** lv_style_res_t lv_obj_get_local_style_prop(struct _lv_obj_t * obj, lv_style_prop_t prop, lv_style_v
+ 147:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****                                            lv_style_selector_t selector);
+ 148:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** 
+ 149:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** /**
+ 150:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  * Remove a local style property from a part of an object with a given state.
+ 151:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  * @param obj       pointer to an object
+ 152:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  * @param prop      a style property to remove.
+ 153:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  * @param selector  OR-ed value of parts and state for which the style should be removed
+ 154:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  * @return true     the property was found and removed; false: the property was not found
+ 155:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  */
+ 156:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** bool lv_obj_remove_local_style_prop(struct _lv_obj_t * obj, lv_style_prop_t prop, lv_style_selector
+ 157:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** 
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccjU6M2X.s 			page 14
+
+
+ 158:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** /**
+ 159:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  * Used internally for color filtering
+ 160:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  */
+ 161:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** lv_style_value_t _lv_obj_style_apply_color_filter(const struct _lv_obj_t * obj, uint32_t part, lv_s
+ 162:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** 
+ 163:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** /**
+ 164:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  * Used internally to create a style transition
+ 165:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  * @param obj
+ 166:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  * @param part
+ 167:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  * @param prev_state
+ 168:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  * @param new_state
+ 169:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  * @param tr
+ 170:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  */
+ 171:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** void _lv_obj_style_create_transition(struct _lv_obj_t * obj, lv_part_t part, lv_state_t prev_state,
+ 172:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****                                      lv_state_t new_state, const _lv_obj_style_transition_dsc_t * t
+ 173:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** 
+ 174:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** /**
+ 175:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  * Used internally to compare the appearance of an object in 2 states
+ 176:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  * @param obj
+ 177:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  * @param state1
+ 178:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  * @param state2
+ 179:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  * @return
+ 180:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  */
+ 181:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** _lv_style_state_cmp_t _lv_obj_style_state_compare(struct _lv_obj_t * obj, lv_state_t state1, lv_sta
+ 182:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** 
+ 183:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** /**
+ 184:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  * Fade in an an object and all its children.
+ 185:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  * @param obj       the object to fade in
+ 186:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  * @param time      time of fade
+ 187:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  * @param delay     delay to start the animation
+ 188:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  */
+ 189:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** void lv_obj_fade_in(struct _lv_obj_t * obj, uint32_t time, uint32_t delay);
+ 190:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** 
+ 191:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** /**
+ 192:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  * Fade out an an object and all its children.
+ 193:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  * @param obj       the object to fade out
+ 194:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  * @param time      time of fade
+ 195:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  * @param delay     delay to start the animation
+ 196:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  */
+ 197:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** void lv_obj_fade_out(struct _lv_obj_t * obj, uint32_t time, uint32_t delay);
+ 198:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** 
+ 199:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** lv_state_t lv_obj_style_get_selector_state(lv_style_selector_t selector);
+ 200:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** 
+ 201:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** lv_part_t lv_obj_style_get_selector_part(lv_style_selector_t selector);
+ 202:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** 
+ 203:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** #include "lv_obj_style_gen.h"
+ 204:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** 
+ 205:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** static inline void lv_obj_set_style_pad_all(struct _lv_obj_t * obj, lv_coord_t value, lv_style_sele
+ 206:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** {
+ 207:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****     lv_obj_set_style_pad_left(obj, value, selector);
+ 208:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****     lv_obj_set_style_pad_right(obj, value, selector);
+ 209:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****     lv_obj_set_style_pad_top(obj, value, selector);
+ 210:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****     lv_obj_set_style_pad_bottom(obj, value, selector);
+ 211:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** }
+ 212:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** 
+ 213:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** static inline void lv_obj_set_style_pad_hor(struct _lv_obj_t * obj, lv_coord_t value, lv_style_sele
+ 214:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** {
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccjU6M2X.s 			page 15
+
+
+ 215:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****     lv_obj_set_style_pad_left(obj, value, selector);
+ 216:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****     lv_obj_set_style_pad_right(obj, value, selector);
+ 217:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** }
+ 218:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** 
+ 219:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** static inline void lv_obj_set_style_pad_ver(struct _lv_obj_t * obj, lv_coord_t value, lv_style_sele
+ 220:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** {
+ 221:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****     lv_obj_set_style_pad_top(obj, value, selector);
+ 222:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****     lv_obj_set_style_pad_bottom(obj, value, selector);
+ 223:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** }
+ 224:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** 
+ 225:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** static inline void lv_obj_set_style_pad_gap(struct _lv_obj_t * obj, lv_coord_t value, lv_style_sele
+ 226:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** {
+ 227:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****     lv_obj_set_style_pad_row(obj, value, selector);
+ 228:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****     lv_obj_set_style_pad_column(obj, value, selector);
+ 229:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** }
+ 230:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** 
+ 231:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** static inline void lv_obj_set_style_size(struct _lv_obj_t * obj, lv_coord_t value, lv_style_selecto
+ 188              		.loc 4 231 20 view .LVU35
+ 189              	.LBB29:
+ 232:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** {
+ 233:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****     lv_obj_set_style_width(obj, value, selector);
+ 190              		.loc 4 233 5 view .LVU36
+ 191 003a 4FF40032 		mov	r2, #131072
+ 192 003e 0021     		movs	r1, #0
+ 193 0040 2846     		mov	r0, r5
+ 194 0042 FFF7FEFF 		bl	lv_obj_set_style_width
+ 195              	.LVL17:
+ 234:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****     lv_obj_set_style_height(obj, value, selector);
+ 196              		.loc 4 234 5 view .LVU37
+ 197 0046 4FF40032 		mov	r2, #131072
+ 198 004a 0021     		movs	r1, #0
+ 199 004c 2846     		mov	r0, r5
+ 200 004e FFF7FEFF 		bl	lv_obj_set_style_height
+ 201              	.LVL18:
+ 202              		.loc 4 234 5 is_stmt 0 view .LVU38
+ 203              	.LBE29:
+ 204              	.LBE28:
+  78:lvgl/examples/widgets/chart/lv_example_chart_5.c **** 
+  79:lvgl/examples/widgets/chart/lv_example_chart_5.c ****     lv_chart_series_t * ser = lv_chart_add_series(chart, lv_palette_main(LV_PALETTE_RED), LV_CHART_
+ 205              		.loc 1 79 5 is_stmt 1 view .LVU39
+ 206              		.loc 1 79 31 is_stmt 0 view .LVU40
+ 207 0052 2568     		ldr	r5, [r4]
+ 208 0054 0020     		movs	r0, #0
+ 209 0056 FFF7FEFF 		bl	lv_palette_main
+ 210              	.LVL19:
+ 211 005a 0146     		mov	r1, r0
+ 212 005c 0022     		movs	r2, #0
+ 213 005e 2846     		mov	r0, r5
+ 214 0060 FFF7FEFF 		bl	lv_chart_add_series
+ 215              	.LVL20:
+ 216 0064 0546     		mov	r5, r0
+ 217              	.LVL21:
+  80:lvgl/examples/widgets/chart/lv_example_chart_5.c **** 
+  81:lvgl/examples/widgets/chart/lv_example_chart_5.c ****     uint32_t pcnt = sizeof(ecg_sample) / sizeof(ecg_sample[0]);
+ 218              		.loc 1 81 5 is_stmt 1 view .LVU41
+  82:lvgl/examples/widgets/chart/lv_example_chart_5.c ****     lv_chart_set_point_count(chart, pcnt);
+ 219              		.loc 1 82 5 view .LVU42
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccjU6M2X.s 			page 16
+
+
+ 220 0066 40F2E931 		movw	r1, #1001
+ 221 006a 2068     		ldr	r0, [r4]
+ 222              	.LVL22:
+ 223              		.loc 1 82 5 is_stmt 0 view .LVU43
+ 224 006c FFF7FEFF 		bl	lv_chart_set_point_count
+ 225              	.LVL23:
+  83:lvgl/examples/widgets/chart/lv_example_chart_5.c ****     lv_chart_set_ext_y_array(chart, ser, (lv_coord_t *)ecg_sample);
+ 226              		.loc 1 83 5 is_stmt 1 view .LVU44
+ 227 0070 254A     		ldr	r2, .L11+8
+ 228 0072 2946     		mov	r1, r5
+ 229 0074 2068     		ldr	r0, [r4]
+ 230 0076 FFF7FEFF 		bl	lv_chart_set_ext_y_array
+ 231              	.LVL24:
+  84:lvgl/examples/widgets/chart/lv_example_chart_5.c **** 
+  85:lvgl/examples/widgets/chart/lv_example_chart_5.c ****     lv_obj_t * slider;
+ 232              		.loc 1 85 5 view .LVU45
+  86:lvgl/examples/widgets/chart/lv_example_chart_5.c ****     slider = lv_slider_create(lv_scr_act());
+ 233              		.loc 1 86 5 view .LVU46
+ 234              	.LBB30:
+ 235              	.LBI30:
+ 182:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** {
+ 236              		.loc 3 182 26 view .LVU47
+ 237              	.LBB31:
+ 238              		.loc 3 184 5 view .LVU48
+ 239              		.loc 3 184 12 is_stmt 0 view .LVU49
+ 240 007a FFF7FEFF 		bl	lv_disp_get_default
+ 241              	.LVL25:
+ 242 007e FFF7FEFF 		bl	lv_disp_get_scr_act
+ 243              	.LVL26:
+ 244              	.LBE31:
+ 245              	.LBE30:
+ 246              		.loc 1 86 14 view .LVU50
+ 247 0082 FFF7FEFF 		bl	lv_slider_create
+ 248              	.LVL27:
+ 249 0086 0546     		mov	r5, r0
+ 250              	.LVL28:
+  87:lvgl/examples/widgets/chart/lv_example_chart_5.c ****     lv_slider_set_range(slider, LV_IMG_ZOOM_NONE, LV_IMG_ZOOM_NONE * 10);
+ 251              		.loc 1 87 5 is_stmt 1 view .LVU51
+ 252              	.LBB32:
+ 253              	.LBI32:
+ 106:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** {
+ 254              		.loc 2 106 20 view .LVU52
+ 255              	.LBB33:
+ 108:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** }
+ 256              		.loc 2 108 5 view .LVU53
+ 257 0088 4FF42062 		mov	r2, #2560
+ 258 008c 4FF48071 		mov	r1, #256
+ 259 0090 FFF7FEFF 		bl	lv_bar_set_range
+ 260              	.LVL29:
+ 108:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** }
+ 261              		.loc 2 108 5 is_stmt 0 view .LVU54
+ 262              	.LBE33:
+ 263              	.LBE32:
+  88:lvgl/examples/widgets/chart/lv_example_chart_5.c ****     lv_obj_add_event_cb(slider, slider_x_event_cb, LV_EVENT_VALUE_CHANGED, NULL);
+ 264              		.loc 1 88 5 is_stmt 1 view .LVU55
+ 265 0094 0023     		movs	r3, #0
+ 266 0096 1C22     		movs	r2, #28
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccjU6M2X.s 			page 17
+
+
+ 267 0098 1C49     		ldr	r1, .L11+12
+ 268 009a 2846     		mov	r0, r5
+ 269 009c FFF7FEFF 		bl	lv_obj_add_event_cb
+ 270              	.LVL30:
+  89:lvgl/examples/widgets/chart/lv_example_chart_5.c ****     lv_obj_set_size(slider, 200, 10);
+ 271              		.loc 1 89 5 view .LVU56
+ 272 00a0 0A22     		movs	r2, #10
+ 273 00a2 C821     		movs	r1, #200
+ 274 00a4 2846     		mov	r0, r5
+ 275 00a6 FFF7FEFF 		bl	lv_obj_set_size
+ 276              	.LVL31:
+  90:lvgl/examples/widgets/chart/lv_example_chart_5.c ****     lv_obj_align_to(slider, chart, LV_ALIGN_OUT_BOTTOM_MID, 0, 20);
+ 277              		.loc 1 90 5 view .LVU57
+ 278 00aa 1426     		movs	r6, #20
+ 279 00ac 0096     		str	r6, [sp]
+ 280 00ae 0023     		movs	r3, #0
+ 281 00b0 0E22     		movs	r2, #14
+ 282 00b2 2168     		ldr	r1, [r4]
+ 283 00b4 2846     		mov	r0, r5
+ 284 00b6 FFF7FEFF 		bl	lv_obj_align_to
+ 285              	.LVL32:
+  91:lvgl/examples/widgets/chart/lv_example_chart_5.c **** 
+  92:lvgl/examples/widgets/chart/lv_example_chart_5.c ****     slider = lv_slider_create(lv_scr_act());
+ 286              		.loc 1 92 5 view .LVU58
+ 287              	.LBB34:
+ 288              	.LBI34:
+ 182:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** {
+ 289              		.loc 3 182 26 view .LVU59
+ 290              	.LBB35:
+ 291              		.loc 3 184 5 view .LVU60
+ 292              		.loc 3 184 12 is_stmt 0 view .LVU61
+ 293 00ba FFF7FEFF 		bl	lv_disp_get_default
+ 294              	.LVL33:
+ 295 00be FFF7FEFF 		bl	lv_disp_get_scr_act
+ 296              	.LVL34:
+ 297              	.LBE35:
+ 298              	.LBE34:
+ 299              		.loc 1 92 14 view .LVU62
+ 300 00c2 FFF7FEFF 		bl	lv_slider_create
+ 301              	.LVL35:
+ 302 00c6 0546     		mov	r5, r0
+ 303              	.LVL36:
+  93:lvgl/examples/widgets/chart/lv_example_chart_5.c ****     lv_slider_set_range(slider, LV_IMG_ZOOM_NONE, LV_IMG_ZOOM_NONE * 10);
+ 304              		.loc 1 93 5 is_stmt 1 view .LVU63
+ 305              	.LBB36:
+ 306              	.LBI36:
+ 106:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** {
+ 307              		.loc 2 106 20 view .LVU64
+ 308              	.LBB37:
+ 108:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** }
+ 309              		.loc 2 108 5 view .LVU65
+ 310 00c8 4FF42062 		mov	r2, #2560
+ 311 00cc 4FF48071 		mov	r1, #256
+ 312 00d0 FFF7FEFF 		bl	lv_bar_set_range
+ 313              	.LVL37:
+ 108:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** }
+ 314              		.loc 2 108 5 is_stmt 0 view .LVU66
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccjU6M2X.s 			page 18
+
+
+ 315              	.LBE37:
+ 316              	.LBE36:
+  94:lvgl/examples/widgets/chart/lv_example_chart_5.c ****     lv_obj_add_event_cb(slider, slider_y_event_cb, LV_EVENT_VALUE_CHANGED, NULL);
+ 317              		.loc 1 94 5 is_stmt 1 view .LVU67
+ 318 00d4 0023     		movs	r3, #0
+ 319 00d6 1C22     		movs	r2, #28
+ 320 00d8 0D49     		ldr	r1, .L11+16
+ 321 00da 2846     		mov	r0, r5
+ 322 00dc FFF7FEFF 		bl	lv_obj_add_event_cb
+ 323              	.LVL38:
+  95:lvgl/examples/widgets/chart/lv_example_chart_5.c ****     lv_obj_set_size(slider, 10, 150);
+ 324              		.loc 1 95 5 view .LVU68
+ 325 00e0 9622     		movs	r2, #150
+ 326 00e2 0A21     		movs	r1, #10
+ 327 00e4 2846     		mov	r0, r5
+ 328 00e6 FFF7FEFF 		bl	lv_obj_set_size
+ 329              	.LVL39:
+  96:lvgl/examples/widgets/chart/lv_example_chart_5.c ****     lv_obj_align_to(slider, chart, LV_ALIGN_OUT_RIGHT_MID, 20, 0);
+ 330              		.loc 1 96 5 view .LVU69
+ 331 00ea 0023     		movs	r3, #0
+ 332 00ec 0093     		str	r3, [sp]
+ 333 00ee 3346     		mov	r3, r6
+ 334 00f0 3246     		mov	r2, r6
+ 335 00f2 2168     		ldr	r1, [r4]
+ 336 00f4 2846     		mov	r0, r5
+ 337 00f6 FFF7FEFF 		bl	lv_obj_align_to
+ 338              	.LVL40:
+  97:lvgl/examples/widgets/chart/lv_example_chart_5.c **** }
+ 339              		.loc 1 97 1 is_stmt 0 view .LVU70
+ 340 00fa 02B0     		add	sp, sp, #8
+ 341              		.cfi_def_cfa_offset 16
+ 342              		@ sp needed
+ 343 00fc 70BD     		pop	{r4, r5, r6, pc}
+ 344              	.LVL41:
+ 345              	.L12:
+ 346              		.loc 1 97 1 view .LVU71
+ 347 00fe 00BF     		.align	2
+ 348              	.L11:
+ 349 0100 00000000 		.word	.LANCHOR0
+ 350 0104 18FCFFFF 		.word	-1000
+ 351 0108 00000000 		.word	.LANCHOR1
+ 352 010c 00000000 		.word	slider_x_event_cb
+ 353 0110 00000000 		.word	slider_y_event_cb
+ 354              		.cfi_endproc
+ 355              	.LFE206:
+ 357              		.section	.bss.chart,"aw",%nobits
+ 358              		.align	2
+ 359              		.set	.LANCHOR0,. + 0
+ 362              	chart:
+ 363 0000 00000000 		.space	4
+ 364              		.section	.rodata.ecg_sample,"a"
+ 365              		.align	2
+ 366              		.set	.LANCHOR1,. + 0
+ 369              	ecg_sample:
+ 370 0000 FEFF     		.short	-2
+ 371 0002 0200     		.short	2
+ 372 0004 0000     		.short	0
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccjU6M2X.s 			page 19
+
+
+ 373 0006 F1FF     		.short	-15
+ 374 0008 D9FF     		.short	-39
+ 375 000a C1FF     		.short	-63
+ 376 000c B9FF     		.short	-71
+ 377 000e BCFF     		.short	-68
+ 378 0010 BDFF     		.short	-67
+ 379 0012 BBFF     		.short	-69
+ 380 0014 ACFF     		.short	-84
+ 381 0016 A1FF     		.short	-95
+ 382 0018 98FF     		.short	-104
+ 383 001a 95FF     		.short	-107
+ 384 001c 94FF     		.short	-108
+ 385 001e 95FF     		.short	-107
+ 386 0020 95FF     		.short	-107
+ 387 0022 95FF     		.short	-107
+ 388 0024 95FF     		.short	-107
+ 389 0026 8EFF     		.short	-114
+ 390 0028 8AFF     		.short	-118
+ 391 002a 8BFF     		.short	-117
+ 392 002c 90FF     		.short	-112
+ 393 002e 9CFF     		.short	-100
+ 394 0030 A7FF     		.short	-89
+ 395 0032 ADFF     		.short	-83
+ 396 0034 B9FF     		.short	-71
+ 397 0036 C0FF     		.short	-64
+ 398 0038 C6FF     		.short	-58
+ 399 003a C6FF     		.short	-58
+ 400 003c C2FF     		.short	-62
+ 401 003e C2FF     		.short	-62
+ 402 0040 C6FF     		.short	-58
+ 403 0042 CDFF     		.short	-51
+ 404 0044 D2FF     		.short	-46
+ 405 0046 D9FF     		.short	-39
+ 406 0048 E5FF     		.short	-27
+ 407 004a F6FF     		.short	-10
+ 408 004c 0400     		.short	4
+ 409 004e 0700     		.short	7
+ 410 0050 0100     		.short	1
+ 411 0052 FDFF     		.short	-3
+ 412 0054 0000     		.short	0
+ 413 0056 0E00     		.short	14
+ 414 0058 1800     		.short	24
+ 415 005a 1E00     		.short	30
+ 416 005c 1900     		.short	25
+ 417 005e 1300     		.short	19
+ 418 0060 0D00     		.short	13
+ 419 0062 0700     		.short	7
+ 420 0064 0C00     		.short	12
+ 421 0066 0F00     		.short	15
+ 422 0068 1200     		.short	18
+ 423 006a 1500     		.short	21
+ 424 006c 0D00     		.short	13
+ 425 006e 0600     		.short	6
+ 426 0070 0900     		.short	9
+ 427 0072 0800     		.short	8
+ 428 0074 1100     		.short	17
+ 429 0076 1300     		.short	19
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccjU6M2X.s 			page 20
+
+
+ 430 0078 0D00     		.short	13
+ 431 007a 0B00     		.short	11
+ 432 007c 0B00     		.short	11
+ 433 007e 0B00     		.short	11
+ 434 0080 1700     		.short	23
+ 435 0082 1E00     		.short	30
+ 436 0084 2500     		.short	37
+ 437 0086 2200     		.short	34
+ 438 0088 1900     		.short	25
+ 439 008a 0E00     		.short	14
+ 440 008c 0F00     		.short	15
+ 441 008e 1300     		.short	19
+ 442 0090 1C00     		.short	28
+ 443 0092 1F00     		.short	31
+ 444 0094 1A00     		.short	26
+ 445 0096 1700     		.short	23
+ 446 0098 1900     		.short	25
+ 447 009a 1F00     		.short	31
+ 448 009c 2700     		.short	39
+ 449 009e 2500     		.short	37
+ 450 00a0 2500     		.short	37
+ 451 00a2 2200     		.short	34
+ 452 00a4 1E00     		.short	30
+ 453 00a6 2000     		.short	32
+ 454 00a8 1600     		.short	22
+ 455 00aa 1D00     		.short	29
+ 456 00ac 1F00     		.short	31
+ 457 00ae 2100     		.short	33
+ 458 00b0 2500     		.short	37
+ 459 00b2 1700     		.short	23
+ 460 00b4 0D00     		.short	13
+ 461 00b6 0700     		.short	7
+ 462 00b8 0200     		.short	2
+ 463 00ba 0400     		.short	4
+ 464 00bc FEFF     		.short	-2
+ 465 00be 0200     		.short	2
+ 466 00c0 0B00     		.short	11
+ 467 00c2 1600     		.short	22
+ 468 00c4 2100     		.short	33
+ 469 00c6 1300     		.short	19
+ 470 00c8 FFFF     		.short	-1
+ 471 00ca E5FF     		.short	-27
+ 472 00cc C9FF     		.short	-55
+ 473 00ce BDFF     		.short	-67
+ 474 00d0 B8FF     		.short	-72
+ 475 00d2 B9FF     		.short	-71
+ 476 00d4 C1FF     		.short	-63
+ 477 00d6 CFFF     		.short	-49
+ 478 00d8 EEFF     		.short	-18
+ 479 00da 2300     		.short	35
+ 480 00dc 7100     		.short	113
+ 481 00de E600     		.short	230
+ 482 00e0 7101     		.short	369
+ 483 00e2 0D02     		.short	525
+ 484 00e4 8B02     		.short	651
+ 485 00e6 D202     		.short	722
+ 486 00e8 DA02     		.short	730
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccjU6M2X.s 			page 21
+
+
+ 487 00ea 9B02     		.short	667
+ 488 00ec 3302     		.short	563
+ 489 00ee C601     		.short	454
+ 490 00f0 6501     		.short	357
+ 491 00f2 3101     		.short	305
+ 492 00f4 2001     		.short	288
+ 493 00f6 1201     		.short	274
+ 494 00f8 FF00     		.short	255
+ 495 00fa D400     		.short	212
+ 496 00fc AD00     		.short	173
+ 497 00fe 8F00     		.short	143
+ 498 0100 7500     		.short	117
+ 499 0102 5200     		.short	82
+ 500 0104 2700     		.short	39
+ 501 0106 F3FF     		.short	-13
+ 502 0108 CBFF     		.short	-53
+ 503 010a B2FF     		.short	-78
+ 504 010c A5FF     		.short	-91
+ 505 010e 9BFF     		.short	-101
+ 506 0110 8FFF     		.short	-113
+ 507 0112 84FF     		.short	-124
+ 508 0114 7DFF     		.short	-131
+ 509 0116 7DFF     		.short	-131
+ 510 0118 7DFF     		.short	-131
+ 511 011a 7FFF     		.short	-129
+ 512 011c 80FF     		.short	-128
+ 513 011e 7FFF     		.short	-129
+ 514 0120 83FF     		.short	-125
+ 515 0122 85FF     		.short	-123
+ 516 0124 85FF     		.short	-123
+ 517 0126 7FFF     		.short	-129
+ 518 0128 75FF     		.short	-139
+ 519 012a 6CFF     		.short	-148
+ 520 012c 67FF     		.short	-153
+ 521 012e 61FF     		.short	-159
+ 522 0130 5AFF     		.short	-166
+ 523 0132 49FF     		.short	-183
+ 524 0134 33FF     		.short	-205
+ 525 0136 1DFF     		.short	-227
+ 526 0138 0DFF     		.short	-243
+ 527 013a 08FF     		.short	-248
+ 528 013c 0AFF     		.short	-246
+ 529 013e 02FF     		.short	-254
+ 530 0140 E8FE     		.short	-280
+ 531 0142 B9FE     		.short	-327
+ 532 0144 83FE     		.short	-381
+ 533 0146 53FE     		.short	-429
+ 534 0148 27FE     		.short	-473
+ 535 014a FBFD     		.short	-517
+ 536 014c D4FD     		.short	-556
+ 537 014e B0FD     		.short	-592
+ 538 0150 9CFD     		.short	-612
+ 539 0152 94FD     		.short	-620
+ 540 0154 94FD     		.short	-620
+ 541 0156 9AFD     		.short	-614
+ 542 0158 A4FD     		.short	-604
+ 543 015a B1FD     		.short	-591
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccjU6M2X.s 			page 22
+
+
+ 544 015c C2FD     		.short	-574
+ 545 015e E4FD     		.short	-540
+ 546 0160 0FFE     		.short	-497
+ 547 0162 47FE     		.short	-441
+ 548 0164 7BFE     		.short	-389
+ 549 0166 9AFE     		.short	-358
+ 550 0168 B0FE     		.short	-336
+ 551 016a C7FE     		.short	-313
+ 552 016c E4FE     		.short	-284
+ 553 016e 22FF     		.short	-222
+ 554 0170 59FF     		.short	-167
+ 555 0172 8EFF     		.short	-114
+ 556 0174 BAFF     		.short	-70
+ 557 0176 D1FF     		.short	-47
+ 558 0178 E4FF     		.short	-28
+ 559 017a FCFF     		.short	-4
+ 560 017c 0C00     		.short	12
+ 561 017e 2600     		.short	38
+ 562 0180 3400     		.short	52
+ 563 0182 3A00     		.short	58
+ 564 0184 3800     		.short	56
+ 565 0186 3800     		.short	56
+ 566 0188 3900     		.short	57
+ 567 018a 4400     		.short	68
+ 568 018c 4D00     		.short	77
+ 569 018e 5600     		.short	86
+ 570 0190 5600     		.short	86
+ 571 0192 5000     		.short	80
+ 572 0194 4500     		.short	69
+ 573 0196 4300     		.short	67
+ 574 0198 4600     		.short	70
+ 575 019a 5200     		.short	82
+ 576 019c 5500     		.short	85
+ 577 019e 5900     		.short	89
+ 578 01a0 5A00     		.short	90
+ 579 01a2 5900     		.short	89
+ 580 01a4 5900     		.short	89
+ 581 01a6 5800     		.short	88
+ 582 01a8 5B00     		.short	91
+ 583 01aa 6000     		.short	96
+ 584 01ac 6100     		.short	97
+ 585 01ae 5B00     		.short	91
+ 586 01b0 5300     		.short	83
+ 587 01b2 4E00     		.short	78
+ 588 01b4 5200     		.short	82
+ 589 01b6 5800     		.short	88
+ 590 01b8 5F00     		.short	95
+ 591 01ba 6000     		.short	96
+ 592 01bc 6900     		.short	105
+ 593 01be 6A00     		.short	106
+ 594 01c0 6E00     		.short	110
+ 595 01c2 6600     		.short	102
+ 596 01c4 6400     		.short	100
+ 597 01c6 6000     		.short	96
+ 598 01c8 6200     		.short	98
+ 599 01ca 6100     		.short	97
+ 600 01cc 6500     		.short	101
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccjU6M2X.s 			page 23
+
+
+ 601 01ce 6200     		.short	98
+ 602 01d0 6300     		.short	99
+ 603 01d2 6400     		.short	100
+ 604 01d4 6B00     		.short	107
+ 605 01d6 7100     		.short	113
+ 606 01d8 7700     		.short	119
+ 607 01da 7300     		.short	115
+ 608 01dc 6E00     		.short	110
+ 609 01de 6000     		.short	96
+ 610 01e0 5500     		.short	85
+ 611 01e2 4900     		.short	73
+ 612 01e4 4000     		.short	64
+ 613 01e6 4500     		.short	69
+ 614 01e8 4C00     		.short	76
+ 615 01ea 4F00     		.short	79
+ 616 01ec 4E00     		.short	78
+ 617 01ee 4B00     		.short	75
+ 618 01f0 5500     		.short	85
+ 619 01f2 6400     		.short	100
+ 620 01f4 7200     		.short	114
+ 621 01f6 7100     		.short	113
+ 622 01f8 6900     		.short	105
+ 623 01fa 6000     		.short	96
+ 624 01fc 5400     		.short	84
+ 625 01fe 4A00     		.short	74
+ 626 0200 4200     		.short	66
+ 627 0202 3C00     		.short	60
+ 628 0204 4B00     		.short	75
+ 629 0206 5500     		.short	85
+ 630 0208 5900     		.short	89
+ 631 020a 5300     		.short	83
+ 632 020c 4300     		.short	67
+ 633 020e 3D00     		.short	61
+ 634 0210 4300     		.short	67
+ 635 0212 4900     		.short	73
+ 636 0214 4F00     		.short	79
+ 637 0216 4A00     		.short	74
+ 638 0218 3F00     		.short	63
+ 639 021a 3900     		.short	57
+ 640 021c 3800     		.short	56
+ 641 021e 3A00     		.short	58
+ 642 0220 3D00     		.short	61
+ 643 0222 3700     		.short	55
+ 644 0224 3000     		.short	48
+ 645 0226 2D00     		.short	45
+ 646 0228 2E00     		.short	46
+ 647 022a 3700     		.short	55
+ 648 022c 3E00     		.short	62
+ 649 022e 3700     		.short	55
+ 650 0230 3100     		.short	49
+ 651 0232 2B00     		.short	43
+ 652 0234 3200     		.short	50
+ 653 0236 3B00     		.short	59
+ 654 0238 3F00     		.short	63
+ 655 023a 3900     		.short	57
+ 656 023c 2800     		.short	40
+ 657 023e 1F00     		.short	31
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccjU6M2X.s 			page 24
+
+
+ 658 0240 1700     		.short	23
+ 659 0242 1900     		.short	25
+ 660 0244 1B00     		.short	27
+ 661 0246 1F00     		.short	31
+ 662 0248 2300     		.short	35
+ 663 024a 2200     		.short	34
+ 664 024c 1E00     		.short	30
+ 665 024e 2400     		.short	36
+ 666 0250 2200     		.short	34
+ 667 0252 2A00     		.short	42
+ 668 0254 2600     		.short	38
+ 669 0256 2400     		.short	36
+ 670 0258 2800     		.short	40
+ 671 025a 2E00     		.short	46
+ 672 025c 3200     		.short	50
+ 673 025e 2F00     		.short	47
+ 674 0260 2000     		.short	32
+ 675 0262 1E00     		.short	30
+ 676 0264 2000     		.short	32
+ 677 0266 3400     		.short	52
+ 678 0268 4300     		.short	67
+ 679 026a 4900     		.short	73
+ 680 026c 4700     		.short	71
+ 681 026e 3F00     		.short	63
+ 682 0270 3600     		.short	54
+ 683 0272 3500     		.short	53
+ 684 0274 2D00     		.short	45
+ 685 0276 2900     		.short	41
+ 686 0278 1C00     		.short	28
+ 687 027a 0D00     		.short	13
+ 688 027c 0300     		.short	3
+ 689 027e 0100     		.short	1
+ 690 0280 0400     		.short	4
+ 691 0282 0400     		.short	4
+ 692 0284 F8FF     		.short	-8
+ 693 0286 E9FF     		.short	-23
+ 694 0288 E0FF     		.short	-32
+ 695 028a E1FF     		.short	-31
+ 696 028c EDFF     		.short	-19
+ 697 028e FBFF     		.short	-5
+ 698 0290 0300     		.short	3
+ 699 0292 0900     		.short	9
+ 700 0294 0D00     		.short	13
+ 701 0296 1300     		.short	19
+ 702 0298 1800     		.short	24
+ 703 029a 1B00     		.short	27
+ 704 029c 1D00     		.short	29
+ 705 029e 1900     		.short	25
+ 706 02a0 1600     		.short	22
+ 707 02a2 1A00     		.short	26
+ 708 02a4 2000     		.short	32
+ 709 02a6 2A00     		.short	42
+ 710 02a8 3300     		.short	51
+ 711 02aa 3800     		.short	56
+ 712 02ac 3C00     		.short	60
+ 713 02ae 3900     		.short	57
+ 714 02b0 3700     		.short	55
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccjU6M2X.s 			page 25
+
+
+ 715 02b2 3500     		.short	53
+ 716 02b4 3500     		.short	53
+ 717 02b6 3600     		.short	54
+ 718 02b8 3B00     		.short	59
+ 719 02ba 3600     		.short	54
+ 720 02bc 3100     		.short	49
+ 721 02be 1A00     		.short	26
+ 722 02c0 FDFF     		.short	-3
+ 723 02c2 F5FF     		.short	-11
+ 724 02c4 ECFF     		.short	-20
+ 725 02c6 D1FF     		.short	-47
+ 726 02c8 9CFF     		.short	-100
+ 727 02ca 3EFF     		.short	-194
+ 728 02cc 14FF     		.short	-236
+ 729 02ce 2CFF     		.short	-212
+ 730 02d0 85FF     		.short	-123
+ 731 02d2 0800     		.short	8
+ 732 02d4 6700     		.short	103
+ 733 02d6 8E00     		.short	142
+ 734 02d8 9300     		.short	147
+ 735 02da 7800     		.short	120
+ 736 02dc 6900     		.short	105
+ 737 02de 6200     		.short	98
+ 738 02e0 5D00     		.short	93
+ 739 02e2 5100     		.short	81
+ 740 02e4 3D00     		.short	61
+ 741 02e6 2800     		.short	40
+ 742 02e8 1A00     		.short	26
+ 743 02ea 1C00     		.short	28
+ 744 02ec 1E00     		.short	30
+ 745 02ee 1E00     		.short	30
+ 746 02f0 1B00     		.short	27
+ 747 02f2 1300     		.short	19
+ 748 02f4 1100     		.short	17
+ 749 02f6 1500     		.short	21
+ 750 02f8 1400     		.short	20
+ 751 02fa 1300     		.short	19
+ 752 02fc 1300     		.short	19
+ 753 02fe 1600     		.short	22
+ 754 0300 2400     		.short	36
+ 755 0302 2800     		.short	40
+ 756 0304 2300     		.short	35
+ 757 0306 1400     		.short	20
+ 758 0308 0700     		.short	7
+ 759 030a 0100     		.short	1
+ 760 030c 0A00     		.short	10
+ 761 030e 1200     		.short	18
+ 762 0310 1B00     		.short	27
+ 763 0312 1600     		.short	22
+ 764 0314 0600     		.short	6
+ 765 0316 FCFF     		.short	-4
+ 766 0318 FEFF     		.short	-2
+ 767 031a 0300     		.short	3
+ 768 031c 0600     		.short	6
+ 769 031e FEFF     		.short	-2
+ 770 0320 F3FF     		.short	-13
+ 771 0322 F2FF     		.short	-14
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccjU6M2X.s 			page 26
+
+
+ 772 0324 F6FF     		.short	-10
+ 773 0326 FEFF     		.short	-2
+ 774 0328 0300     		.short	3
+ 775 032a 0200     		.short	2
+ 776 032c FFFF     		.short	-1
+ 777 032e FBFF     		.short	-5
+ 778 0330 F6FF     		.short	-10
+ 779 0332 EDFF     		.short	-19
+ 780 0334 E0FF     		.short	-32
+ 781 0336 D6FF     		.short	-42
+ 782 0338 C9FF     		.short	-55
+ 783 033a C4FF     		.short	-60
+ 784 033c BCFF     		.short	-68
+ 785 033e B3FF     		.short	-77
+ 786 0340 AAFF     		.short	-86
+ 787 0342 9BFF     		.short	-101
+ 788 0344 92FF     		.short	-110
+ 789 0346 8BFF     		.short	-117
+ 790 0348 8DFF     		.short	-115
+ 791 034a 98FF     		.short	-104
+ 792 034c A4FF     		.short	-92
+ 793 034e ACFF     		.short	-84
+ 794 0350 ABFF     		.short	-85
+ 795 0352 ACFF     		.short	-84
+ 796 0354 B7FF     		.short	-73
+ 797 0356 BFFF     		.short	-65
+ 798 0358 CCFF     		.short	-52
+ 799 035a CEFF     		.short	-50
+ 800 035c D3FF     		.short	-45
+ 801 035e DDFF     		.short	-35
+ 802 0360 ECFF     		.short	-20
+ 803 0362 FDFF     		.short	-3
+ 804 0364 0C00     		.short	12
+ 805 0366 1400     		.short	20
+ 806 0368 1900     		.short	25
+ 807 036a 1A00     		.short	26
+ 808 036c 1C00     		.short	28
+ 809 036e 1C00     		.short	28
+ 810 0370 1E00     		.short	30
+ 811 0372 1C00     		.short	28
+ 812 0374 1900     		.short	25
+ 813 0376 1C00     		.short	28
+ 814 0378 2100     		.short	33
+ 815 037a 2A00     		.short	42
+ 816 037c 2A00     		.short	42
+ 817 037e 2400     		.short	36
+ 818 0380 1700     		.short	23
+ 819 0382 0900     		.short	9
+ 820 0384 0000     		.short	0
+ 821 0386 0100     		.short	1
+ 822 0388 FCFF     		.short	-4
+ 823 038a 0100     		.short	1
+ 824 038c FCFF     		.short	-4
+ 825 038e FCFF     		.short	-4
+ 826 0390 0100     		.short	1
+ 827 0392 0500     		.short	5
+ 828 0394 0900     		.short	9
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccjU6M2X.s 			page 27
+
+
+ 829 0396 0900     		.short	9
+ 830 0398 FDFF     		.short	-3
+ 831 039a FFFF     		.short	-1
+ 832 039c EEFF     		.short	-18
+ 833 039e CEFF     		.short	-50
+ 834 03a0 94FF     		.short	-108
+ 835 03a2 42FF     		.short	-190
+ 836 03a4 F0FE     		.short	-272
+ 837 03a6 ACFE     		.short	-340
+ 838 03a8 68FE     		.short	-408
+ 839 03aa 42FE     		.short	-446
+ 840 03ac E7FD     		.short	-537
+ 841 03ae 7DFD     		.short	-643
+ 842 03b0 F7FC     		.short	-777
+ 843 03b2 82FC     		.short	-894
+ 844 03b4 68FC     		.short	-920
+ 845 03b6 ABFC     		.short	-853
+ 846 03b8 47FD     		.short	-697
+ 847 03ba 33FE     		.short	-461
+ 848 03bc 05FF     		.short	-251
+ 849 03be C4FF     		.short	-60
+ 850 03c0 3A00     		.short	58
+ 851 03c2 6700     		.short	103
+ 852 03c4 8100     		.short	129
+ 853 03c6 8B00     		.short	139
+ 854 03c8 9B00     		.short	155
+ 855 03ca AA00     		.short	170
+ 856 03cc AD00     		.short	173
+ 857 03ce B200     		.short	178
+ 858 03d0 B900     		.short	185
+ 859 03d2 BE00     		.short	190
+ 860 03d4 C100     		.short	193
+ 861 03d6 C800     		.short	200
+ 862 03d8 D000     		.short	208
+ 863 03da D700     		.short	215
+ 864 03dc E100     		.short	225
+ 865 03de E000     		.short	224
+ 866 03e0 E800     		.short	232
+ 867 03e2 EA00     		.short	234
+ 868 03e4 F000     		.short	240
+ 869 03e6 F000     		.short	240
+ 870 03e8 EC00     		.short	236
+ 871 03ea E500     		.short	229
+ 872 03ec E200     		.short	226
+ 873 03ee E000     		.short	224
+ 874 03f0 E800     		.short	232
+ 875 03f2 E900     		.short	233
+ 876 03f4 E800     		.short	232
+ 877 03f6 E000     		.short	224
+ 878 03f8 DB00     		.short	219
+ 879 03fa DB00     		.short	219
+ 880 03fc DF00     		.short	223
+ 881 03fe E700     		.short	231
+ 882 0400 E200     		.short	226
+ 883 0402 DF00     		.short	223
+ 884 0404 DB00     		.short	219
+ 885 0406 DA00     		.short	218
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccjU6M2X.s 			page 28
+
+
+ 886 0408 DF00     		.short	223
+ 887 040a DF00     		.short	223
+ 888 040c DF00     		.short	223
+ 889 040e E900     		.short	233
+ 890 0410 F500     		.short	245
+ 891 0412 0C01     		.short	268
+ 892 0414 1E01     		.short	286
+ 893 0416 2801     		.short	296
+ 894 0418 2701     		.short	295
+ 895 041a 1B01     		.short	283
+ 896 041c 0F01     		.short	271
+ 897 041e 0701     		.short	263
+ 898 0420 FC00     		.short	252
+ 899 0422 F300     		.short	243
+ 900 0424 E200     		.short	226
+ 901 0426 D200     		.short	210
+ 902 0428 C500     		.short	197
+ 903 042a BA00     		.short	186
+ 904 042c AB00     		.short	171
+ 905 042e 9800     		.short	152
+ 906 0430 8500     		.short	133
+ 907 0432 7500     		.short	117
+ 908 0434 7200     		.short	114
+ 909 0436 6E00     		.short	110
+ 910 0438 6B00     		.short	107
+ 911 043a 6000     		.short	96
+ 912 043c 5000     		.short	80
+ 913 043e 3F00     		.short	63
+ 914 0440 3000     		.short	48
+ 915 0442 2800     		.short	40
+ 916 0444 2600     		.short	38
+ 917 0446 2200     		.short	34
+ 918 0448 1C00     		.short	28
+ 919 044a 0F00     		.short	15
+ 920 044c 0200     		.short	2
+ 921 044e F9FF     		.short	-7
+ 922 0450 F5FF     		.short	-11
+ 923 0452 F2FF     		.short	-14
+ 924 0454 EEFF     		.short	-18
+ 925 0456 E3FF     		.short	-29
+ 926 0458 DBFF     		.short	-37
+ 927 045a D4FF     		.short	-44
+ 928 045c CEFF     		.short	-50
+ 929 045e C6FF     		.short	-58
+ 930 0460 C1FF     		.short	-63
+ 931 0462 C3FF     		.short	-61
+ 932 0464 CCFF     		.short	-52
+ 933 0466 CEFF     		.short	-50
+ 934 0468 D0FF     		.short	-48
+ 935 046a C3FF     		.short	-61
+ 936 046c C5FF     		.short	-59
+ 937 046e C6FF     		.short	-58
+ 938 0470 CAFF     		.short	-54
+ 939 0472 D1FF     		.short	-47
+ 940 0474 CCFF     		.short	-52
+ 941 0476 C2FF     		.short	-62
+ 942 0478 C3FF     		.short	-61
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccjU6M2X.s 			page 29
+
+
+ 943 047a C0FF     		.short	-64
+ 944 047c CAFF     		.short	-54
+ 945 047e CCFF     		.short	-52
+ 946 0480 C5FF     		.short	-59
+ 947 0482 BBFF     		.short	-69
+ 948 0484 B4FF     		.short	-76
+ 949 0486 B4FF     		.short	-76
+ 950 0488 BBFF     		.short	-69
+ 951 048a BDFF     		.short	-67
+ 952 048c B6FF     		.short	-74
+ 953 048e B2FF     		.short	-78
+ 954 0490 AFFF     		.short	-81
+ 955 0492 B0FF     		.short	-80
+ 956 0494 B7FF     		.short	-73
+ 957 0496 BFFF     		.short	-65
+ 958 0498 C7FF     		.short	-57
+ 959 049a CBFF     		.short	-53
+ 960 049c CDFF     		.short	-51
+ 961 049e D1FF     		.short	-47
+ 962 04a0 DDFF     		.short	-35
+ 963 04a2 E5FF     		.short	-27
+ 964 04a4 EAFF     		.short	-22
+ 965 04a6 EAFF     		.short	-22
+ 966 04a8 E8FF     		.short	-24
+ 967 04aa EBFF     		.short	-21
+ 968 04ac EFFF     		.short	-17
+ 969 04ae F3FF     		.short	-13
+ 970 04b0 F6FF     		.short	-10
+ 971 04b2 F5FF     		.short	-11
+ 972 04b4 F3FF     		.short	-13
+ 973 04b6 ECFF     		.short	-20
+ 974 04b8 ECFF     		.short	-20
+ 975 04ba F4FF     		.short	-12
+ 976 04bc FEFF     		.short	-2
+ 977 04be 0700     		.short	7
+ 978 04c0 FFFF     		.short	-1
+ 979 04c2 F4FF     		.short	-12
+ 980 04c4 F0FF     		.short	-16
+ 981 04c6 F3FF     		.short	-13
+ 982 04c8 FEFF     		.short	-2
+ 983 04ca 0200     		.short	2
+ 984 04cc FCFF     		.short	-4
+ 985 04ce FBFF     		.short	-5
+ 986 04d0 FEFF     		.short	-2
+ 987 04d2 0900     		.short	9
+ 988 04d4 1300     		.short	19
+ 989 04d6 1300     		.short	19
+ 990 04d8 0E00     		.short	14
+ 991 04da 0B00     		.short	11
+ 992 04dc 0D00     		.short	13
+ 993 04de 1300     		.short	19
+ 994 04e0 1500     		.short	21
+ 995 04e2 1400     		.short	20
+ 996 04e4 1200     		.short	18
+ 997 04e6 1300     		.short	19
+ 998 04e8 1300     		.short	19
+ 999 04ea 1300     		.short	19
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccjU6M2X.s 			page 30
+
+
+ 1000 04ec 1000     		.short	16
+ 1001 04ee 0F00     		.short	15
+ 1002 04f0 0D00     		.short	13
+ 1003 04f2 0E00     		.short	14
+ 1004 04f4 0900     		.short	9
+ 1005 04f6 0300     		.short	3
+ 1006 04f8 FBFF     		.short	-5
+ 1007 04fa F7FF     		.short	-9
+ 1008 04fc FBFF     		.short	-5
+ 1009 04fe FDFF     		.short	-3
+ 1010 0500 FEFF     		.short	-2
+ 1011 0502 FDFF     		.short	-3
+ 1012 0504 FDFF     		.short	-3
+ 1013 0506 0200     		.short	2
+ 1014 0508 0800     		.short	8
+ 1015 050a 0900     		.short	9
+ 1016 050c 0900     		.short	9
+ 1017 050e 0500     		.short	5
+ 1018 0510 0600     		.short	6
+ 1019 0512 0800     		.short	8
+ 1020 0514 0800     		.short	8
+ 1021 0516 0700     		.short	7
+ 1022 0518 0400     		.short	4
+ 1023 051a 0300     		.short	3
+ 1024 051c 0400     		.short	4
+ 1025 051e 0500     		.short	5
+ 1026 0520 0300     		.short	3
+ 1027 0522 0500     		.short	5
+ 1028 0524 0500     		.short	5
+ 1029 0526 0D00     		.short	13
+ 1030 0528 0D00     		.short	13
+ 1031 052a 0C00     		.short	12
+ 1032 052c 0A00     		.short	10
+ 1033 052e 0A00     		.short	10
+ 1034 0530 0F00     		.short	15
+ 1035 0532 1600     		.short	22
+ 1036 0534 1100     		.short	17
+ 1037 0536 0E00     		.short	14
+ 1038 0538 0700     		.short	7
+ 1039 053a 0A00     		.short	10
+ 1040 053c 0F00     		.short	15
+ 1041 053e 1000     		.short	16
+ 1042 0540 0B00     		.short	11
+ 1043 0542 0C00     		.short	12
+ 1044 0544 0A00     		.short	10
+ 1045 0546 0D00     		.short	13
+ 1046 0548 0900     		.short	9
+ 1047 054a FEFF     		.short	-2
+ 1048 054c FCFF     		.short	-4
+ 1049 054e FEFF     		.short	-2
+ 1050 0550 0700     		.short	7
+ 1051 0552 1000     		.short	16
+ 1052 0554 1000     		.short	16
+ 1053 0556 1100     		.short	17
+ 1054 0558 1000     		.short	16
+ 1055 055a 0700     		.short	7
+ 1056 055c FFFF     		.short	-1
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccjU6M2X.s 			page 31
+
+
+ 1057 055e F0FF     		.short	-16
+ 1058 0560 EEFF     		.short	-18
+ 1059 0562 F0FF     		.short	-16
+ 1060 0564 F7FF     		.short	-9
+ 1061 0566 FCFF     		.short	-4
+ 1062 0568 FBFF     		.short	-5
+ 1063 056a F6FF     		.short	-10
+ 1064 056c F7FF     		.short	-9
+ 1065 056e F8FF     		.short	-8
+ 1066 0570 FDFF     		.short	-3
+ 1067 0572 FCFF     		.short	-4
+ 1068 0574 F6FF     		.short	-10
+ 1069 0576 EDFF     		.short	-19
+ 1070 0578 ECFF     		.short	-20
+ 1071 057a F0FF     		.short	-16
+ 1072 057c F7FF     		.short	-9
+ 1073 057e F7FF     		.short	-9
+ 1074 0580 E9FF     		.short	-23
+ 1075 0582 D8FF     		.short	-40
+ 1076 0584 D0FF     		.short	-48
+ 1077 0586 D5FF     		.short	-43
+ 1078 0588 DFFF     		.short	-33
+ 1079 058a EDFF     		.short	-19
+ 1080 058c EBFF     		.short	-21
+ 1081 058e E6FF     		.short	-26
+ 1082 0590 E1FF     		.short	-31
+ 1083 0592 DFFF     		.short	-33
+ 1084 0594 EDFF     		.short	-19
+ 1085 0596 0000     		.short	0
+ 1086 0598 1100     		.short	17
+ 1087 059a 1800     		.short	24
+ 1088 059c 0900     		.short	9
+ 1089 059e EFFF     		.short	-17
+ 1090 05a0 D1FF     		.short	-47
+ 1091 05a2 C1FF     		.short	-63
+ 1092 05a4 BDFF     		.short	-67
+ 1093 05a6 C5FF     		.short	-59
+ 1094 05a8 CCFF     		.short	-52
+ 1095 05aa CDFF     		.short	-51
+ 1096 05ac CEFF     		.short	-50
+ 1097 05ae CFFF     		.short	-49
+ 1098 05b0 D6FF     		.short	-42
+ 1099 05b2 E6FF     		.short	-26
+ 1100 05b4 EBFF     		.short	-21
+ 1101 05b6 F1FF     		.short	-15
+ 1102 05b8 ECFF     		.short	-20
+ 1103 05ba E9FF     		.short	-23
+ 1104 05bc EAFF     		.short	-22
+ 1105 05be EDFF     		.short	-19
+ 1106 05c0 F4FF     		.short	-12
+ 1107 05c2 F8FF     		.short	-8
+ 1108 05c4 0500     		.short	5
+ 1109 05c6 1200     		.short	18
+ 1110 05c8 1B00     		.short	27
+ 1111 05ca 2000     		.short	32
+ 1112 05cc 1A00     		.short	26
+ 1113 05ce 1900     		.short	25
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccjU6M2X.s 			page 32
+
+
+ 1114 05d0 1A00     		.short	26
+ 1115 05d2 1600     		.short	22
+ 1116 05d4 1700     		.short	23
+ 1117 05d6 1100     		.short	17
+ 1118 05d8 0E00     		.short	14
+ 1119 05da 1100     		.short	17
+ 1120 05dc 1500     		.short	21
+ 1121 05de 1900     		.short	25
+ 1122 05e0 0200     		.short	2
+ 1123 05e2 D3FF     		.short	-45
+ 1124 05e4 87FF     		.short	-121
+ 1125 05e6 3CFF     		.short	-196
+ 1126 05e8 1EFF     		.short	-226
+ 1127 05ea 38FF     		.short	-200
+ 1128 05ec 8AFF     		.short	-118
+ 1129 05ee F7FF     		.short	-9
+ 1130 05f0 4900     		.short	73
+ 1131 05f2 7E00     		.short	126
+ 1132 05f4 8300     		.short	131
+ 1133 05f6 7200     		.short	114
+ 1134 05f8 5700     		.short	87
+ 1135 05fa 3C00     		.short	60
+ 1136 05fc 2A00     		.short	42
+ 1137 05fe 1D00     		.short	29
+ 1138 0600 1A00     		.short	26
+ 1139 0602 2200     		.short	34
+ 1140 0604 2300     		.short	35
+ 1141 0606 2200     		.short	34
+ 1142 0608 1900     		.short	25
+ 1143 060a 0C00     		.short	12
+ 1144 060c 0900     		.short	9
+ 1145 060e 0700     		.short	7
+ 1146 0610 0300     		.short	3
+ 1147 0612 0200     		.short	2
+ 1148 0614 F8FF     		.short	-8
+ 1149 0616 F5FF     		.short	-11
+ 1150 0618 0200     		.short	2
+ 1151 061a 1700     		.short	23
+ 1152 061c 2600     		.short	38
+ 1153 061e 2900     		.short	41
+ 1154 0620 1700     		.short	23
+ 1155 0622 0900     		.short	9
+ 1156 0624 0A00     		.short	10
+ 1157 0626 0D00     		.short	13
+ 1158 0628 1000     		.short	16
+ 1159 062a 0800     		.short	8
+ 1160 062c F8FF     		.short	-8
+ 1161 062e EFFF     		.short	-17
+ 1162 0630 E9FF     		.short	-23
+ 1163 0632 E6FF     		.short	-26
+ 1164 0634 E7FF     		.short	-25
+ 1165 0636 EBFF     		.short	-21
+ 1166 0638 F1FF     		.short	-15
+ 1167 063a F6FF     		.short	-10
+ 1168 063c F3FF     		.short	-13
+ 1169 063e F3FF     		.short	-13
+ 1170 0640 EDFF     		.short	-19
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccjU6M2X.s 			page 33
+
+
+ 1171 0642 EAFF     		.short	-22
+ 1172 0644 E3FF     		.short	-29
+ 1173 0646 D8FF     		.short	-40
+ 1174 0648 D0FF     		.short	-48
+ 1175 064a D0FF     		.short	-48
+ 1176 064c CAFF     		.short	-54
+ 1177 064e C9FF     		.short	-55
+ 1178 0650 BEFF     		.short	-66
+ 1179 0652 AEFF     		.short	-82
+ 1180 0654 ABFF     		.short	-85
+ 1181 0656 A6FF     		.short	-90
+ 1182 0658 A4FF     		.short	-92
+ 1183 065a 9EFF     		.short	-98
+ 1184 065c 8EFF     		.short	-114
+ 1185 065e 89FF     		.short	-119
+ 1186 0660 84FF     		.short	-124
+ 1187 0662 7FFF     		.short	-129
+ 1188 0664 7CFF     		.short	-132
+ 1189 0666 6EFF     		.short	-146
+ 1190 0668 6EFF     		.short	-146
+ 1191 066a 76FF     		.short	-138
+ 1192 066c 84FF     		.short	-124
+ 1193 066e 9DFF     		.short	-99
+ 1194 0670 ABFF     		.short	-85
+ 1195 0672 B8FF     		.short	-72
+ 1196 0674 BFFF     		.short	-65
+ 1197 0676 BFFF     		.short	-65
+ 1198 0678 BFFF     		.short	-65
+ 1199 067a BEFF     		.short	-66
+ 1200 067c C1FF     		.short	-63
+ 1201 067e C0FF     		.short	-64
+ 1202 0680 C0FF     		.short	-64
+ 1203 0682 C6FF     		.short	-58
+ 1204 0684 D2FF     		.short	-46
+ 1205 0686 E6FF     		.short	-26
+ 1206 0688 F7FF     		.short	-9
+ 1207 068a 0200     		.short	2
+ 1208 068c 0200     		.short	2
+ 1209 068e 0400     		.short	4
+ 1210 0690 0000     		.short	0
+ 1211 0692 0100     		.short	1
+ 1212 0694 0400     		.short	4
+ 1213 0696 0300     		.short	3
+ 1214 0698 0A00     		.short	10
+ 1215 069a 0B00     		.short	11
+ 1216 069c 0A00     		.short	10
+ 1217 069e 0200     		.short	2
+ 1218 06a0 FCFF     		.short	-4
+ 1219 06a2 0000     		.short	0
+ 1220 06a4 0A00     		.short	10
+ 1221 06a6 1200     		.short	18
+ 1222 06a8 1400     		.short	20
+ 1223 06aa 0600     		.short	6
+ 1224 06ac 0200     		.short	2
+ 1225 06ae F7FF     		.short	-9
+ 1226 06b0 F9FF     		.short	-7
+ 1227 06b2 FDFF     		.short	-3
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccjU6M2X.s 			page 34
+
+
+ 1228 06b4 FDFF     		.short	-3
+ 1229 06b6 FEFF     		.short	-2
+ 1230 06b8 F9FF     		.short	-7
+ 1231 06ba F4FF     		.short	-12
+ 1232 06bc FBFF     		.short	-5
+ 1233 06be 0500     		.short	5
+ 1234 06c0 1800     		.short	24
+ 1235 06c2 2400     		.short	36
+ 1236 06c4 1F00     		.short	31
+ 1237 06c6 1900     		.short	25
+ 1238 06c8 0600     		.short	6
+ 1239 06ca 0300     		.short	3
+ 1240 06cc 0700     		.short	7
+ 1241 06ce 0C00     		.short	12
+ 1242 06d0 1100     		.short	17
+ 1243 06d2 0B00     		.short	11
+ 1244 06d4 0000     		.short	0
+ 1245 06d6 FAFF     		.short	-6
+ 1246 06d8 F7FF     		.short	-9
+ 1247 06da F8FF     		.short	-8
+ 1248 06dc F9FF     		.short	-7
+ 1249 06de FBFF     		.short	-5
+ 1250 06e0 FAFF     		.short	-6
+ 1251 06e2 FEFF     		.short	-2
+ 1252 06e4 FEFF     		.short	-2
+ 1253 06e6 FAFF     		.short	-6
+ 1254 06e8 FEFF     		.short	-2
+ 1255 06ea 0200     		.short	2
+ 1256 06ec 0E00     		.short	14
+ 1257 06ee 1800     		.short	24
+ 1258 06f0 1600     		.short	22
+ 1259 06f2 0F00     		.short	15
+ 1260 06f4 0800     		.short	8
+ 1261 06f6 0400     		.short	4
+ 1262 06f8 0600     		.short	6
+ 1263 06fa 0700     		.short	7
+ 1264 06fc 0C00     		.short	12
+ 1265 06fe 1000     		.short	16
+ 1266 0700 1900     		.short	25
+ 1267 0702 1400     		.short	20
+ 1268 0704 0700     		.short	7
+ 1269 0706 F0FF     		.short	-16
+ 1270 0708 D7FF     		.short	-41
+ 1271 070a C4FF     		.short	-60
+ 1272 070c BDFF     		.short	-67
+ 1273 070e BFFF     		.short	-65
+ 1274 0710 CAFF     		.short	-54
+ 1275 0712 DDFF     		.short	-35
+ 1276 0714 F5FF     		.short	-11
+ 1277 0716 1E00     		.short	30
+ 1278 0718 5400     		.short	84
+ 1279 071a AF00     		.short	175
+ 1280 071c 2E01     		.short	302
+ 1281 071e C701     		.short	455
+ 1282 0720 5B02     		.short	603
+ 1283 0722 C302     		.short	707
+ 1284 0724 E702     		.short	743
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccjU6M2X.s 			page 35
+
+
+ 1285 0726 CA02     		.short	714
+ 1286 0728 7102     		.short	625
+ 1287 072a 0702     		.short	519
+ 1288 072c 9E01     		.short	414
+ 1289 072e 5101     		.short	337
+ 1290 0730 2C01     		.short	300
+ 1291 0732 1901     		.short	281
+ 1292 0734 0701     		.short	263
+ 1293 0736 EF00     		.short	239
+ 1294 0738 C500     		.short	197
+ 1295 073a A300     		.short	163
+ 1296 073c 8800     		.short	136
+ 1297 073e 6D00     		.short	109
+ 1298 0740 4D00     		.short	77
+ 1299 0742 2200     		.short	34
+ 1300 0744 EEFF     		.short	-18
+ 1301 0746 CEFF     		.short	-50
+ 1302 0748 BEFF     		.short	-66
+ 1303 074a B6FF     		.short	-74
+ 1304 074c B1FF     		.short	-79
+ 1305 074e A4FF     		.short	-92
+ 1306 0750 95FF     		.short	-107
+ 1307 0752 8BFF     		.short	-117
+ 1308 0754 81FF     		.short	-127
+ 1309 0756 7FFF     		.short	-129
+ 1310 0758 79FF     		.short	-135
+ 1311 075a 75FF     		.short	-139
+ 1312 075c 73FF     		.short	-141
+ 1313 075e 65FF     		.short	-155
+ 1314 0760 61FF     		.short	-159
+ 1315 0762 59FF     		.short	-167
+ 1316 0764 55FF     		.short	-171
+ 1317 0766 57FF     		.short	-169
+ 1318 0768 52FF     		.short	-174
+ 1319 076a 51FF     		.short	-175
+ 1320 076c 4EFF     		.short	-178
+ 1321 076e 41FF     		.short	-191
+ 1322 0770 36FF     		.short	-202
+ 1323 0772 21FF     		.short	-223
+ 1324 0774 15FF     		.short	-235
+ 1325 0776 0DFF     		.short	-243
+ 1326 0778 13FF     		.short	-237
+ 1327 077a 10FF     		.short	-240
+ 1328 077c 00FF     		.short	-256
+ 1329 077e D6FE     		.short	-298
+ 1330 0780 A7FE     		.short	-345
+ 1331 0782 77FE     		.short	-393
+ 1332 0784 50FE     		.short	-432
+ 1333 0786 25FE     		.short	-475
+ 1334 0788 FAFD     		.short	-518
+ 1335 078a CBFD     		.short	-565
+ 1336 078c ACFD     		.short	-596
+ 1337 078e 95FD     		.short	-619
+ 1338 0790 91FD     		.short	-623
+ 1339 0792 91FD     		.short	-623
+ 1340 0794 9AFD     		.short	-614
+ 1341 0796 A9FD     		.short	-599
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccjU6M2X.s 			page 36
+
+
+ 1342 0798 B9FD     		.short	-583
+ 1343 079a D1FD     		.short	-559
+ 1344 079c F4FD     		.short	-524
+ 1345 079e 23FE     		.short	-477
+ 1346 07a0 57FE     		.short	-425
+ 1347 07a2 81FE     		.short	-383
+ 1348 07a4 9BFE     		.short	-357
+ 1349 07a6 B5FE     		.short	-331
+ 1350 07a8 D3FE     		.short	-301
+ 1351 07aa 04FF     		.short	-252
+ 1352 07ac 3AFF     		.short	-198
+ 1353 07ae 71FF     		.short	-143
+ 1354 07b0 A0FF     		.short	-96
+ 1355 07b2 C7FF     		.short	-57
+ 1356 07b4 E3FF     		.short	-29
+ 1357 07b6 F8FF     		.short	-8
+ 1358 07b8 0A00     		.short	10
+ 1359 07ba 1F00     		.short	31
+ 1360 07bc 2D00     		.short	45
+ 1361 07be 3C00     		.short	60
+ 1362 07c0 4100     		.short	65
+ 1363 07c2 4600     		.short	70
+ 1364 07c4 4A00     		.short	74
+ 1365 07c6 4C00     		.short	76
+ 1366 07c8 4F00     		.short	79
+ 1367 07ca 5200     		.short	82
+ 1368 07cc 4F00     		.short	79
+ 1369 07ce 4B00     		.short	75
+ 1370 07d0 3E00     		.short	62
+ 1371              		.text
+ 1372              	.Letext0:
+ 1373              		.file 5 "c:\\tools\\gcc-arm-none-eabi\\arm-none-eabi\\include\\machine\\_default_types.h"
+ 1374              		.file 6 "c:\\tools\\gcc-arm-none-eabi\\arm-none-eabi\\include\\sys\\_stdint.h"
+ 1375              		.file 7 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\misc\\lv_area.h"
+ 1376              		.file 8 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\misc\\lv_color.h"
+ 1377              		.file 9 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\misc\\lv_style.h"
+ 1378              		.file 10 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/core/lv_obj.h"
+ 1379              		.file 11 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\misc\\lv_ll.h"
+ 1380              		.file 12 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/core/lv_group.h"
+ 1381              		.file 13 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/core/lv_obj_scroll.h"
+ 1382              		.file 14 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/core/lv_obj_class.h"
+ 1383              		.file 15 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/core/lv_event.h"
+ 1384              		.file 16 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/widgets/lv_bar.h"
+ 1385              		.file 17 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/extra/widgets/chart/lv_chart.h"
+ 1386              		.file 18 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/extra/widgets/imgbtn/lv_imgbtn.h"
+ 1387              		.file 19 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/hal/lv_hal_disp.h"
+ 1388              		.file 20 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/core/lv_obj_style_gen.h"
+ 1389              		.file 21 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\core\\lv_obj_pos.h"
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccjU6M2X.s 			page 37
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 lv_example_chart_5.c
+C:\Users\OSD\AppData\Local\Temp\ccjU6M2X.s:19     .text.slider_y_event_cb:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccjU6M2X.s:24     .text.slider_y_event_cb:00000000 slider_y_event_cb
+C:\Users\OSD\AppData\Local\Temp\ccjU6M2X.s:67     .text.slider_y_event_cb:00000018 $d
+C:\Users\OSD\AppData\Local\Temp\ccjU6M2X.s:72     .text.slider_x_event_cb:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccjU6M2X.s:77     .text.slider_x_event_cb:00000000 slider_x_event_cb
+C:\Users\OSD\AppData\Local\Temp\ccjU6M2X.s:118    .text.slider_x_event_cb:00000018 $d
+C:\Users\OSD\AppData\Local\Temp\ccjU6M2X.s:123    .text.lv_example_chart_5:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccjU6M2X.s:129    .text.lv_example_chart_5:00000000 lv_example_chart_5
+C:\Users\OSD\AppData\Local\Temp\ccjU6M2X.s:349    .text.lv_example_chart_5:00000100 $d
+C:\Users\OSD\AppData\Local\Temp\ccjU6M2X.s:358    .bss.chart:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccjU6M2X.s:362    .bss.chart:00000000 chart
+C:\Users\OSD\AppData\Local\Temp\ccjU6M2X.s:365    .rodata.ecg_sample:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccjU6M2X.s:369    .rodata.ecg_sample:00000000 ecg_sample
+
+UNDEFINED SYMBOLS
+lv_event_get_target
+lv_bar_get_value
+lv_chart_set_zoom_y
+lv_chart_set_zoom_x
+lv_disp_get_default
+lv_disp_get_scr_act
+lv_chart_create
+lv_obj_set_size
+lv_obj_align
+lv_chart_set_range
+lv_obj_set_style_width
+lv_obj_set_style_height
+lv_palette_main
+lv_chart_add_series
+lv_chart_set_point_count
+lv_chart_set_ext_y_array
+lv_slider_create
+lv_bar_set_range
+lv_obj_add_event_cb
+lv_obj_align_to

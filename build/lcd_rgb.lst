@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
   28:Core/Src/lcd_rgb.c **** 
   29:Core/Src/lcd_rgb.c **** #include "lcd_rgb.h"
   30:Core/Src/lcd_rgb.c **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 2
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 2
 
 
   31:Core/Src/lcd_rgb.c **** static pFONT *LCD_Fonts;		// 英文字体
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
   34              		.loc 1 79 2 view .LVU1
   35              		.loc 1 79 21 is_stmt 0 view .LVU2
   36 0000 044B     		ldr	r3, .L2
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 3
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 3
 
 
   37 0002 4FF04042 		mov	r2, #-1073741824
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
  104:Core/Src/lcd_rgb.c **** {
   69              		.loc 1 104 1 is_stmt 1 view -0
   70              		.cfi_startproc
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 4
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 4
 
 
   71              		@ args = 0, pretend = 0, frame = 0
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
   93 0012 1860     		str	r0, [r3]
  137:Core/Src/lcd_rgb.c **** }
   94              		.loc 1 137 1 view .LVU21
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 5
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 5
 
 
   95 0014 7047     		bx	lr
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
  133              	.L8:
  134              	.LVL8:
  121:Core/Src/lcd_rgb.c **** 		Green_Value = (uint16_t)((Color&0x0000F800)>>6);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 6
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 6
 
 
  135              		.loc 1 121 3 is_stmt 1 view .LVU38
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
  174              	.LVL15:
  130:Core/Src/lcd_rgb.c **** 		Green_Value = (uint16_t)((Color&0x0000F000)>>8);
  175              		.loc 1 130 3 is_stmt 1 view .LVU54
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 7
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 7
 
 
  130:Core/Src/lcd_rgb.c **** 		Green_Value = (uint16_t)((Color&0x0000F000)>>8);
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
  220              	.LVL21:
  221              	.LFB149:
  138:Core/Src/lcd_rgb.c **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 8
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 8
 
 
  139:Core/Src/lcd_rgb.c **** /**************************************************************************************************
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
  176:Core/Src/lcd_rgb.c **** 		LCD.BackColor 	= (uint16_t)(Alpha_Value | Red_Value | Green_Value | Blue_Value);	
  177:Core/Src/lcd_rgb.c **** 	}
  178:Core/Src/lcd_rgb.c **** 	else if( LCD.ColorMode == LTDC_PIXEL_FORMAT_ARGB4444 )	//将32位色转换为ARGB4444颜色
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 9
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 9
 
 
  239              		.loc 1 178 7 is_stmt 1 view .LVU74
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
  164:Core/Src/lcd_rgb.c **** 	}
  270              		.loc 1 164 19 view .LVU89
  271 002c 0343     		orrs	r3, r3, r0
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 10
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 10
 
 
  164:Core/Src/lcd_rgb.c **** 	}
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
  310              	.LVL33:
  176:Core/Src/lcd_rgb.c **** 	}
  311              		.loc 1 176 20 view .LVU106
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 11
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 11
 
 
  312 0054 0343     		orrs	r3, r3, r0
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
  185:Core/Src/lcd_rgb.c **** 	}		
  351              		.loc 1 185 20 view .LVU122
  352 0080 0343     		orrs	r3, r3, r0
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 12
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 12
 
 
  185:Core/Src/lcd_rgb.c **** 	}		
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
  391              	.LFE150:
  393              		.section	.text.LCD_DisplayDirection,"ax",%progbits
  394              		.align	1
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 13
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 13
 
 
  395              		.global	LCD_DisplayDirection
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
  231:Core/Src/lcd_rgb.c **** *	说    明:	先用 LCD_SetBackColor() 设置要清除的背景色，再调用该函数清屏即�
  232:Core/Src/lcd_rgb.c **** *
  233:Core/Src/lcd_rgb.c **** ***************************************************************************************************
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 14
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 14
 
 
  234:Core/Src/lcd_rgb.c **** 
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
  249:Core/Src/lcd_rgb.c **** 用户也可以使用 寄存器重载中断 进行判断，不过为了保证例程的简洁以及�
  250:Core/Src/lcd_rgb.c **** 	
  251:Core/Src/lcd_rgb.c **** 如果不做判断，DMA2D刷屏速度如下
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 15
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 15
 
 
  252:Core/Src/lcd_rgb.c **** 	
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
  508              		.align	1
  509              		.global	LCD_ClearRect
  510              		.syntax unified
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 16
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 16
 
 
  511              		.thumb
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
  290:Core/Src/lcd_rgb.c **** 	DMA2D->OCOLR	=	LCD.BackColor ;					//	颜色
  544              		.loc 1 290 2 is_stmt 1 view .LVU172
  545              		.loc 1 290 20 is_stmt 0 view .LVU173
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 17
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 17
 
 
  546 0018 6E68     		ldr	r6, [r5, #4]
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
  585 0042 114A     		ldr	r2, .L44
  586              	.LVL47:
  587              		.loc 1 305 14 view .LVU193
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 18
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 18
 
 
  588 0044 1368     		ldr	r3, [r2]
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
  629              		.loc 1 301 86 view .LVU208
  630 0072 C4EB0414 		rsb	r4, r4, r4, lsl #4
  301:Core/Src/lcd_rgb.c **** 		DMA2D->NLR		=	(width)|(height<<16);	//	设定长度和宽度		
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 19
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 19
 
 
  631              		.loc 1 301 97 view .LVU209
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
  664              		@ args = 0, pretend = 0, frame = 0
  665              		@ frame_needed = 0, uses_anonymous_args = 0
  666              		@ link register save eliminated.
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 20
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 20
 
 
  667              		.loc 1 327 1 is_stmt 0 view .LVU216
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
  351:Core/Src/lcd_rgb.c **** 		else if(LCD.Direction == Direction_V)	//垂直方向
  352:Core/Src/lcd_rgb.c **** 		{
  353:Core/Src/lcd_rgb.c **** 			*(__IO uint16_t*)( LCD.LayerMemoryAdd + 3*((LCD_Height - x - 1)*LCD_Width + y) ) = color ; 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 21
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 21
 
 
  354:Core/Src/lcd_rgb.c **** 			*(__IO uint8_t*)( LCD.LayerMemoryAdd + 3*((LCD_Height - x - 1)*LCD_Width + y) +2) = color>>16 ; 
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
  727              	.LVL56:
  728              	.L47:
  344:Core/Src/lcd_rgb.c **** 	{		
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 22
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 22
 
 
  729              		.loc 1 344 7 is_stmt 1 view .LVU237
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
  767              		.loc 1 348 52 view .LVU253
  768 0066 C1EB0111 		rsb	r1, r1, r1, lsl #4
  769              	.LVL61:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 23
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 23
 
 
  348:Core/Src/lcd_rgb.c **** 			*(__IO uint8_t*)( LCD.LayerMemoryAdd + 3*(x + y*LCD_Width) + 2 ) = color>>16 ; 	
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
  808              		.loc 1 353 45 view .LVU269
  809 009a 01EB4101 		add	r1, r1, r1, lsl #1
  353:Core/Src/lcd_rgb.c **** 			*(__IO uint8_t*)( LCD.LayerMemoryAdd + 3*((LCD_Height - x - 1)*LCD_Width + y) +2) = color>>16 ; 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 24
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 24
 
 
  810              		.loc 1 353 85 view .LVU270
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
  850              		.align	2
  851              	.L55:
  852 00cc 00000000 		.word	.LANCHOR0
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 25
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 25
 
 
  853              		.cfi_endproc
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
  885              		.loc 1 394 6 view .LVU294
  886 000a 43B9     		cbnz	r3, .L59
  395:Core/Src/lcd_rgb.c **** 		{
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 26
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 26
 
 
  396:Core/Src/lcd_rgb.c **** 			color = *(__IO uint32_t*)( LCD.LayerMemoryAdd + 4*(x + y*LCD_Width) ); 	
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
  429:Core/Src/lcd_rgb.c **** 	return color;
  430:Core/Src/lcd_rgb.c **** }  
  908              		.loc 1 430 1 view .LVU303
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 27
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 27
 
 
  909 0022 7047     		bx	lr
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
  947              		.loc 1 422 57 view .LVU319
  948 004e 02EB4110 		add	r0, r2, r1, lsl #5
  422:Core/Src/lcd_rgb.c **** 		}
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 28
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 28
 
 
  949              		.loc 1 422 12 view .LVU320
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
  988 007c 0020     		movs	r0, #0
  989 007e 7047     		bx	lr
  990              	.L68:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 29
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 29
 
 
  413:Core/Src/lcd_rgb.c **** 		}	
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
  1028              		.loc 1 426 71 view .LVU352
  1029 00aa 40F27F23 		movw	r3, #639
  1030 00ae 9B1A     		subs	r3, r3, r2
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 30
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 30
 
 
  426:Core/Src/lcd_rgb.c **** 		}	
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
  1064 0000 2DE9F047 		push	{r4, r5, r6, r7, r8, r9, r10, lr}
  1065              		.cfi_def_cfa_offset 32
  1066              		.cfi_offset 4, -32
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 31
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 31
 
 
  1067              		.cfi_offset 5, -28
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
  468:Core/Src/lcd_rgb.c **** 			}
  469:Core/Src/lcd_rgb.c **** 			disChar >>= 1;
  1102              		.loc 1 469 4 view .LVU369
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 32
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 32
 
 
  1103              		.loc 1 469 12 is_stmt 0 view .LVU370
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
  1146 0052 E7E7     		b	.L76
  1147              	.L82:
  473:Core/Src/lcd_rgb.c **** 			{													//进入下一行的绘制
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 33
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 33
 
 
  474:Core/Src/lcd_rgb.c **** 				Xaddress = x;
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
  459:Core/Src/lcd_rgb.c **** 		{ 
  1187              		.loc 1 459 15 is_stmt 0 view .LVU403
  1188 0074 0025     		movs	r5, #0
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 34
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 34
 
 
  459:Core/Src/lcd_rgb.c **** 		{ 
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
  1221              		.cfi_def_cfa_offset 16
  1222              		.cfi_offset 4, -16
  1223              		.cfi_offset 5, -12
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 35
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 35
 
 
  1224              		.cfi_offset 6, -8
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
  1268              		.loc 1 506 1 view .LVU422
  1269              		.align	2
  1270              	.L91:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 36
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 36
 
 
  1271 002c 00000000 		.word	.LANCHOR1
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
  1307 0014 0F       		.byte	(.L99-.L96)/2
  1308 0015 1E       		.byte	(.L93-.L96)/2
  1309 0016 1E       		.byte	(.L93-.L96)/2
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 37
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 37
 
 
  1310 0017 1E       		.byte	(.L93-.L96)/2
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
  1359              		.loc 1 531 3 is_stmt 0 view .LVU444
  1360 0044 7047     		bx	lr
  1361              	.L95:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 38
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 38
 
 
  532:Core/Src/lcd_rgb.c **** 		case 32:	LCD_Fonts = &Font32;	break;	// 设置ASCII字符的字体为 3216		
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
  1395              		.cfi_startproc
  1396              		@ args = 0, pretend = 0, frame = 0
  1397              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 39
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 39
 
 
  1398              		.loc 1 554 1 is_stmt 0 view .LVU450
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
  1434              		.loc 1 570 5 view .LVU462
  1435 0016 8B42     		cmp	r3, r1
  1436 0018 0FD9     		bls	.L105
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 40
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 40
 
 
  1437              	.LVL124:
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
  1473 003c 4FF00009 		mov	r9, #0
  1474              		.loc 1 574 2 view .LVU479
  1475 0040 24E0     		b	.L107
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 41
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 41
 
 
  1476              	.LVL126:
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
  578:Core/Src/lcd_rgb.c **** 		{ 
  1511              		.loc 1 578 40 discriminator 2 view .LVU492
  1512 0064 ADB2     		uxth	r5, r5
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 42
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 42
 
 
  1513              	.LVL132:
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
  574:Core/Src/lcd_rgb.c **** 	{	
  1554              		.loc 1 574 17 is_stmt 1 discriminator 1 view .LVU507
  574:Core/Src/lcd_rgb.c **** 	{	
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 43
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 43
 
 
  1555              		.loc 1 574 35 is_stmt 0 discriminator 1 view .LVU508
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
  1598              	.LFB160:
  601:Core/Src/lcd_rgb.c **** 
  602:Core/Src/lcd_rgb.c **** /**************************************************************************************************
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 44
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 44
 
 
  603:Core/Src/lcd_rgb.c **** *	函 数 名:	LCD_DisplayText
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
  1629 0018 0544     		add	r5, r5, r0
  1630              	.LVL146:
  1631              		.loc 1 626 5 view .LVU527
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 45
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 45
 
 
  1632 001a ADB2     		uxth	r5, r5
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
  636:Core/Src/lcd_rgb.c **** }
  1672              		.loc 1 636 1 view .LVU543
  1673 0040 70BD     		pop	{r4, r5, r6, pc}
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 46
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 46
 
 
  1674              	.LVL153:
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
  1713              		.align	2
  1714              	.LC0:
  1715 0000 25302E2A 		.ascii	"%0.*d\000"
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 47
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 47
 
 
  1715      6400
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
  1748              		.loc 1 676 2 is_stmt 1 view .LVU552
  677:Core/Src/lcd_rgb.c **** 
  678:Core/Src/lcd_rgb.c **** 	if( LCD.ShowNum_Mode == Fill_Zero)	// 多余位补0
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 48
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 48
 
 
  1749              		.loc 1 678 2 view .LVU553
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
  684:Core/Src/lcd_rgb.c **** 	}
  1790              		.loc 1 684 3 view .LVU564
  1791 0030 FFF7FEFF 		bl	sprintf
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 49
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 49
 
 
  1792              	.LVL166:
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
  714:Core/Src/lcd_rgb.c **** 
  715:Core/Src/lcd_rgb.c **** void  LCD_DisplayDecimals( uint16_t x, uint16_t y, double decimals, uint8_t len, uint8_t decs) 
  716:Core/Src/lcd_rgb.c **** {  
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 50
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 50
 
 
  1821              		.loc 1 716 1 is_stmt 1 view -0
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
  1862              		.cfi_def_cfa_offset 12
  1863              		@ sp needed
  1864 0026 30BD     		pop	{r4, r5, pc}
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 51
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 51
 
 
  1865              	.LVL172:
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
  1899              		@ args = 4, pretend = 0, frame = 8
  1900              		@ frame_needed = 0, uses_anonymous_args = 0
  1901              		.loc 1 748 1 is_stmt 0 view .LVU581
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 52
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 52
 
 
  1902 0000 2DE9F04F 		push	{r4, r5, r6, r7, r8, r9, r10, fp, lr}
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
  1936              		.loc 1 767 6 is_stmt 1 view .LVU590
  1937 001a 244B     		ldr	r3, .L161
  1938 001c 5A68     		ldr	r2, [r3, #4]
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 53
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 53
 
 
  1939 001e 3946     		mov	r1, r7
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
  1980 0046 3946     		mov	r1, r7
  1981 0048 2046     		mov	r0, r4
  1982 004a FFF7FEFF 		bl	LCD_DrawPoint
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 54
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 54
 
 
  1983              	.LVL185:
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
  755:Core/Src/lcd_rgb.c **** 		{
  2022              		.loc 1 755 3 discriminator 1 view .LVU622
  2023 007a B4EEE77A 		vcmpe.f32	s14, s15
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 55
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 55
 
 
  2024 007e F1EE10FA 		vmrs	APSR_nzcv, FPSCR
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
  2064              	.LVL198:
  2065              	.L162:
  2066              		.loc 1 782 1 view .LVU636
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 56
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 56
 
 
  2067              		.align	2
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
  2101              		.loc 1 804 2 is_stmt 1 view .LVU639
  2102              	.LVL200:
  805:Core/Src/lcd_rgb.c **** 	yinc1 = 0, yinc2 = 0, den = 0, num = 0, numadd = 0, numpixels = 0, 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 57
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 57
 
 
  806:Core/Src/lcd_rgb.c **** 	curpixel = 0;
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
  823:Core/Src/lcd_rgb.c **** 
  824:Core/Src/lcd_rgb.c **** 	if (y2 >= y1)                 /* The y-values are increasing */
  2140              		.loc 1 824 2 is_stmt 1 view .LVU654
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 58
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 58
 
 
  2141              		.loc 1 824 5 is_stmt 0 view .LVU655
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
  2176              	.LVL211:
  837:Core/Src/lcd_rgb.c **** 	 yinc2 = 0;                  /* Don't change the y for every iteration */
  2177              		.loc 1 837 9 view .LVU670
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 59
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 59
 
 
  2178 0056 0193     		str	r3, [sp, #4]
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
  2212              		.loc 1 849 3 view .LVU682
  849:Core/Src/lcd_rgb.c **** 	 numadd = deltax;
  2213              		.loc 1 849 7 is_stmt 0 view .LVU683
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 60
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 60
 
 
  2214 0074 D846     		mov	r8, fp
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
  861:Core/Src/lcd_rgb.c **** 		y += yinc1;               /* Change the y as appropriate */
  862:Core/Src/lcd_rgb.c **** 	 }
  863:Core/Src/lcd_rgb.c **** 	 x += xinc2;                 /* Change the x as appropriate */
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 61
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 61
 
 
  2250              		.loc 1 863 3 is_stmt 1 discriminator 2 view .LVU695
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
  2294              	.LVL234:
  857:Core/Src/lcd_rgb.c **** 	 {
  2295              		.loc 1 857 3 is_stmt 1 view .LVU710
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 62
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 62
 
 
  857:Core/Src/lcd_rgb.c **** 	 {
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
  2340              		.syntax unified
  2341              		.thumb
  2342              		.thumb_func
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 63
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 63
 
 
  2344              	LCD_DrawRect:
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
  2378 001a 2A46     		mov	r2, r5
  2379 001c 2146     		mov	r1, r4
  2380 001e 3846     		mov	r0, r7
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 64
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 64
 
 
  2381 0020 FFF7FEFF 		bl	LCD_DrawLine
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
  2415              		@ frame_needed = 0, uses_anonymous_args = 0
  2416              		.loc 1 908 1 is_stmt 0 view .LVU733
  2417 0000 2DE9F04F 		push	{r4, r5, r6, r7, r8, r9, r10, fp, lr}
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 65
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 65
 
 
  2418              		.cfi_def_cfa_offset 36
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
  2458              	.LVL254:
  2459              		.loc 1 922 31 discriminator 1 view .LVU744
  2460 0020 7E00     		lsls	r6, r7, #1
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 66
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 66
 
 
  2461              	.LVL255:
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
  2508              		.loc 1 915 3 view .LVU753
  2509 0078 D9F80020 		ldr	r2, [r9]
  2510 007c 2146     		mov	r1, r4
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 67
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 67
 
 
  2511 007e 4046     		mov	r0, r8
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
  2550              	.L191:
  925:Core/Src/lcd_rgb.c ****     
  926:Core/Src/lcd_rgb.c **** }
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 68
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 68
 
 
  2551              		.loc 1 926 1 view .LVU769
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
  2589              		.cfi_offset 11, -8
  2590              		.cfi_offset 14, -4
  2591 0004 2DED028B 		vpush.64	{d8}
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 69
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 69
 
 
  2592              		.cfi_def_cfa_offset 44
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
  952:Core/Src/lcd_rgb.c ****   { 
  953:Core/Src/lcd_rgb.c ****     do {
  954:Core/Src/lcd_rgb.c ****       K = (float)(rad1/rad2);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 70
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 70
 
 
  955:Core/Src/lcd_rgb.c **** 		 
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
  2671 0068 F8EEE76A 		vcvt.f32.s32	s13, s15
  2672 006c C6EE877A 		vdiv.f32	s15, s13, s14
  956:Core/Src/lcd_rgb.c **** 		LCD_DrawPoint(x+Xadd,y+(uint16_t)(Yadd/K),LCD.Color);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 71
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 71
 
 
  2673              		.loc 1 956 26 view .LVU800
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
  2718 00c2 0132     		adds	r2, r2, #1
  2719 00c4 0092     		str	r2, [sp]
  2720              	.LVL287:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 72
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 72
 
 
  963:Core/Src/lcd_rgb.c ****         if (-Xadd == Yadd && e2 <= Xadd) e2 = 0;
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
  2760 00e6 5B46     		mov	r3, fp
  2761              	.LVL295:
  2762              	.L200:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 73
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 73
 
 
  974:Core/Src/lcd_rgb.c ****     do { 
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
  977:Core/Src/lcd_rgb.c **** 		LCD_DrawPoint(x+(uint16_t)(Xadd/K),y+Yadd,LCD.Color);
  2796              		.loc 1 977 19 view .LVU839
  2797 0110 FCEEE77A 		vcvt.u32.f32	s15, s15
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 74
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 74
 
 
  2798 0114 17EE902A 		vmov	r2, s15	@ int
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
  2844              		.loc 1 984 9 is_stmt 1 view .LVU847
  984:Core/Src/lcd_rgb.c ****         if (-Yadd == Xadd && e2 <= Yadd) e2 = 0;
  2845              		.loc 1 984 24 is_stmt 0 view .LVU848
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 75
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 75
 
 
  2846 0176 0136     		adds	r6, r6, #1
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
  2888              	.L211:
  2889              		.loc 1 991 1 view .LVU861
  2890              		.align	2
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 76
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 76
 
 
  2891              	.L210:
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
 1012:Core/Src/lcd_rgb.c **** 	DMA2D->OPFCCR	=	LCD.ColorMode;						//	设置颜色格式
  2927              		.loc 1 1012 2 is_stmt 1 view .LVU868
  2928              		.loc 1 1012 21 is_stmt 0 view .LVU869
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 77
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 77
 
 
  2929 0012 1E4D     		ldr	r5, .L217+4
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
 1024:Core/Src/lcd_rgb.c **** 		DMA2D->OMAR		=	LCD.LayerMemoryAdd + LCD.BytesPerPixel*((LCD_Height - x - 1 - width)*LCD_Width + y
 1025:Core/Src/lcd_rgb.c **** 		DMA2D->NLR		=	(width)|(height<<16);	//	设定长度和宽度		
 1026:Core/Src/lcd_rgb.c **** 	}		
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 78
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 78
 
 
 1027:Core/Src/lcd_rgb.c **** 
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
  3013              		.loc 1 1024 74 view .LVU905
  3014 006a 40F27F24 		movw	r4, #639
  3015 006e 241A     		subs	r4, r4, r0
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 79
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 79
 
 
 1024:Core/Src/lcd_rgb.c **** 		DMA2D->NLR		=	(width)|(height<<16);	//	设定长度和宽度		
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
 1046:Core/Src/lcd_rgb.c **** ***************************************************************************************************
 1047:Core/Src/lcd_rgb.c **** 
 1048:Core/Src/lcd_rgb.c **** void LCD_FillCircle(uint16_t x, uint16_t y, uint16_t r)
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 80
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 80
 
 
 1049:Core/Src/lcd_rgb.c **** {
@@ -4798,7 +4798,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
 1062:Core/Src/lcd_rgb.c ****     { 
 1063:Core/Src/lcd_rgb.c **** 		LCD_DrawLine(x - CurX, y - CurY,x - CurX,y - CurY + 2*CurY);
  3091              		.loc 1 1063 3 is_stmt 1 view .LVU927
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 81
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 81
 
 
  3092 0018 AFB2     		uxth	r7, r5
@@ -4858,7 +4858,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
 1071:Core/Src/lcd_rgb.c ****     }
 1072:Core/Src/lcd_rgb.c ****     if (D < 0)
 1073:Core/Src/lcd_rgb.c ****     { 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 82
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 82
 
 
 1074:Core/Src/lcd_rgb.c ****       D += (CurX << 2) + 6;
@@ -4918,7 +4918,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
  3176              		.loc 1 1074 9 is_stmt 0 view .LVU947
  3177 00a4 04EB8504 		add	r4, r4, r5, lsl #2
  3178              	.LVL330:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 83
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 83
 
 
 1074:Core/Src/lcd_rgb.c ****     }
@@ -4974,95 +4974,95 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 1
  3226              		.file 4 "Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h743xx.h"
  3227              		.file 5 "Core/Inc/lcd_fonts.h"
  3228              		.file 6 "c:\\tools\\gcc-arm-none-eabi\\arm-none-eabi\\include\\stdio.h"
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 84
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 84
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 lcd_rgb.c
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:19     .text.LCD_SetLayer:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:25     .text.LCD_SetLayer:00000000 LCD_SetLayer
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:55     .text.LCD_SetLayer:00000014 $d
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:60     .text.LCD_SetColor:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:66     .text.LCD_SetColor:00000000 LCD_SetColor
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:207    .text.LCD_SetColor:00000088 $d
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:213    .text.LCD_SetBackColor:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:219    .text.LCD_SetBackColor:00000000 LCD_SetBackColor
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:360    .text.LCD_SetBackColor:00000088 $d
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:366    .text.LCD_SetFont:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:372    .text.LCD_SetFont:00000000 LCD_SetFont
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:389    .text.LCD_SetFont:00000008 $d
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:394    .text.LCD_DisplayDirection:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:400    .text.LCD_DisplayDirection:00000000 LCD_DisplayDirection
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:417    .text.LCD_DisplayDirection:00000008 $d
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:422    .text.LCD_Clear:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:428    .text.LCD_Clear:00000000 LCD_Clear
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:500    .text.LCD_Clear:00000044 $d
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:508    .text.LCD_ClearRect:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:514    .text.LCD_ClearRect:00000000 LCD_ClearRect
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:647    .text.LCD_ClearRect:00000088 $d
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:653    .text.LCD_DrawPoint:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:659    .text.LCD_DrawPoint:00000000 LCD_DrawPoint
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:852    .text.LCD_DrawPoint:000000cc $d
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:857    .text.LCD_ReadPoint:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:863    .text.LCD_ReadPoint:00000000 LCD_ReadPoint
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:1045   .text.LCD_ReadPoint:000000c0 $d
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:1050   .text.LCD_DisplayChar:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:1056   .text.LCD_DisplayChar:00000000 LCD_DisplayChar
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:1200   .text.LCD_DisplayChar:0000007c $d
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:1206   .text.LCD_DisplayString:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:1212   .text.LCD_DisplayString:00000000 LCD_DisplayString
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:1271   .text.LCD_DisplayString:0000002c $d
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:1276   .text.LCD_SetTextFont:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:1282   .text.LCD_SetTextFont:00000000 LCD_SetTextFont
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:1303   .text.LCD_SetTextFont:00000010 $d
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:1374   .text.LCD_SetTextFont:00000050 $d
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:1385   .text.LCD_DisplayChinese:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:1391   .text.LCD_DisplayChinese:00000000 LCD_DisplayChinese
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:1584   .text.LCD_DisplayChinese:000000a8 $d
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:1590   .text.LCD_DisplayText:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:1596   .text.LCD_DisplayText:00000000 LCD_DisplayText
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:1679   .text.LCD_DisplayText:00000044 $d
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:1685   .text.LCD_ShowNumMode:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:1691   .text.LCD_ShowNumMode:00000000 LCD_ShowNumMode
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:1708   .text.LCD_ShowNumMode:00000008 $d
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:1713   .rodata.LCD_DisplayNumber.str1.4:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:1720   .text.LCD_DisplayNumber:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:1726   .text.LCD_DisplayNumber:00000000 LCD_DisplayNumber
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:1798   .text.LCD_DisplayNumber:00000038 $d
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:1805   .rodata.LCD_DisplayDecimals.str1.4:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:1812   .text.LCD_DisplayDecimals:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:1818   .text.LCD_DisplayDecimals:00000000 LCD_DisplayDecimals
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:1881   .text.LCD_DisplayDecimals:00000038 $d
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:1888   .text.LCD_DrawImage:00000000 $t
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s 			page 85
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:19     .text.LCD_SetLayer:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:25     .text.LCD_SetLayer:00000000 LCD_SetLayer
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:55     .text.LCD_SetLayer:00000014 $d
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:60     .text.LCD_SetColor:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:66     .text.LCD_SetColor:00000000 LCD_SetColor
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:207    .text.LCD_SetColor:00000088 $d
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:213    .text.LCD_SetBackColor:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:219    .text.LCD_SetBackColor:00000000 LCD_SetBackColor
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:360    .text.LCD_SetBackColor:00000088 $d
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:366    .text.LCD_SetFont:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:372    .text.LCD_SetFont:00000000 LCD_SetFont
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:389    .text.LCD_SetFont:00000008 $d
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:394    .text.LCD_DisplayDirection:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:400    .text.LCD_DisplayDirection:00000000 LCD_DisplayDirection
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:417    .text.LCD_DisplayDirection:00000008 $d
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:422    .text.LCD_Clear:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:428    .text.LCD_Clear:00000000 LCD_Clear
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:500    .text.LCD_Clear:00000044 $d
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:508    .text.LCD_ClearRect:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:514    .text.LCD_ClearRect:00000000 LCD_ClearRect
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:647    .text.LCD_ClearRect:00000088 $d
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:653    .text.LCD_DrawPoint:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:659    .text.LCD_DrawPoint:00000000 LCD_DrawPoint
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:852    .text.LCD_DrawPoint:000000cc $d
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:857    .text.LCD_ReadPoint:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:863    .text.LCD_ReadPoint:00000000 LCD_ReadPoint
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:1045   .text.LCD_ReadPoint:000000c0 $d
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:1050   .text.LCD_DisplayChar:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:1056   .text.LCD_DisplayChar:00000000 LCD_DisplayChar
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:1200   .text.LCD_DisplayChar:0000007c $d
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:1206   .text.LCD_DisplayString:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:1212   .text.LCD_DisplayString:00000000 LCD_DisplayString
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:1271   .text.LCD_DisplayString:0000002c $d
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:1276   .text.LCD_SetTextFont:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:1282   .text.LCD_SetTextFont:00000000 LCD_SetTextFont
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:1303   .text.LCD_SetTextFont:00000010 $d
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:1374   .text.LCD_SetTextFont:00000050 $d
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:1385   .text.LCD_DisplayChinese:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:1391   .text.LCD_DisplayChinese:00000000 LCD_DisplayChinese
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:1584   .text.LCD_DisplayChinese:000000a8 $d
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:1590   .text.LCD_DisplayText:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:1596   .text.LCD_DisplayText:00000000 LCD_DisplayText
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:1679   .text.LCD_DisplayText:00000044 $d
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:1685   .text.LCD_ShowNumMode:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:1691   .text.LCD_ShowNumMode:00000000 LCD_ShowNumMode
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:1708   .text.LCD_ShowNumMode:00000008 $d
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:1713   .rodata.LCD_DisplayNumber.str1.4:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:1720   .text.LCD_DisplayNumber:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:1726   .text.LCD_DisplayNumber:00000000 LCD_DisplayNumber
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:1798   .text.LCD_DisplayNumber:00000038 $d
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:1805   .rodata.LCD_DisplayDecimals.str1.4:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:1812   .text.LCD_DisplayDecimals:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:1818   .text.LCD_DisplayDecimals:00000000 LCD_DisplayDecimals
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:1881   .text.LCD_DisplayDecimals:00000038 $d
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:1888   .text.LCD_DrawImage:00000000 $t
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s 			page 85
 
 
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:1894   .text.LCD_DrawImage:00000000 LCD_DrawImage
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:2069   .text.LCD_DrawImage:000000ac $d
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:2074   .text.LCD_DrawLine:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:2080   .text.LCD_DrawLine:00000000 LCD_DrawLine
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:2333   .text.LCD_DrawLine:000000ec $d
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:2338   .text.LCD_DrawRect:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:2344   .text.LCD_DrawRect:00000000 LCD_DrawRect
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:2403   .text.LCD_DrawCircle:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:2409   .text.LCD_DrawCircle:00000000 LCD_DrawCircle
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:2561   .text.LCD_DrawCircle:000000ac $d
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:2566   .text.LCD_DrawEllipse:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:2572   .text.LCD_DrawEllipse:00000000 LCD_DrawEllipse
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:2892   .text.LCD_DrawEllipse:0000019c $d
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:2897   .text.LCD_FillRect:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:2903   .text.LCD_FillRect:00000000 LCD_FillRect
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:3036   .text.LCD_FillRect:00000088 $d
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:3042   .text.LCD_FillCircle:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:3048   .text.LCD_FillCircle:00000000 LCD_FillCircle
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:3206   .bss.LCD:00000000 LCD
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:3202   .bss.LCD:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:3209   .bss.LCD_CHFonts:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:3213   .bss.LCD_CHFonts:00000000 LCD_CHFonts
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:3216   .bss.LCD_Fonts:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:3220   .bss.LCD_Fonts:00000000 LCD_Fonts
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:1324   .text.LCD_SetTextFont:00000025 $d
-C:\Users\OSD\AppData\Local\Temp\ccFcR5ER.s:1324   .text.LCD_SetTextFont:00000026 $t
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:1894   .text.LCD_DrawImage:00000000 LCD_DrawImage
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:2069   .text.LCD_DrawImage:000000ac $d
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:2074   .text.LCD_DrawLine:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:2080   .text.LCD_DrawLine:00000000 LCD_DrawLine
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:2333   .text.LCD_DrawLine:000000ec $d
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:2338   .text.LCD_DrawRect:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:2344   .text.LCD_DrawRect:00000000 LCD_DrawRect
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:2403   .text.LCD_DrawCircle:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:2409   .text.LCD_DrawCircle:00000000 LCD_DrawCircle
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:2561   .text.LCD_DrawCircle:000000ac $d
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:2566   .text.LCD_DrawEllipse:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:2572   .text.LCD_DrawEllipse:00000000 LCD_DrawEllipse
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:2892   .text.LCD_DrawEllipse:0000019c $d
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:2897   .text.LCD_FillRect:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:2903   .text.LCD_FillRect:00000000 LCD_FillRect
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:3036   .text.LCD_FillRect:00000088 $d
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:3042   .text.LCD_FillCircle:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:3048   .text.LCD_FillCircle:00000000 LCD_FillCircle
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:3206   .bss.LCD:00000000 LCD
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:3202   .bss.LCD:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:3209   .bss.LCD_CHFonts:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:3213   .bss.LCD_CHFonts:00000000 LCD_CHFonts
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:3216   .bss.LCD_Fonts:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:3220   .bss.LCD_Fonts:00000000 LCD_Fonts
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:1324   .text.LCD_SetTextFont:00000025 $d
+C:\Users\OSD\AppData\Local\Temp\ccLCy4Ug.s:1324   .text.LCD_SetTextFont:00000026 $t
 
 UNDEFINED SYMBOLS
 Font12

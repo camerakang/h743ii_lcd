@@ -1,0 +1,644 @@
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmtCkxb.s 			page 1
+
+
+   1              		.cpu cortex-m7
+   2              		.arch armv7e-m
+   3              		.fpu fpv5-d16
+   4              		.eabi_attribute 28, 1
+   5              		.eabi_attribute 20, 1
+   6              		.eabi_attribute 21, 1
+   7              		.eabi_attribute 23, 3
+   8              		.eabi_attribute 24, 1
+   9              		.eabi_attribute 25, 1
+  10              		.eabi_attribute 26, 1
+  11              		.eabi_attribute 30, 1
+  12              		.eabi_attribute 34, 1
+  13              		.eabi_attribute 18, 4
+  14              		.file	"lv_example_textarea_1.c"
+  15              		.text
+  16              	.Ltext0:
+  17              		.cfi_sections	.debug_frame
+  18              		.section	.text.textarea_event_handler,"ax",%progbits
+  19              		.align	1
+  20              		.syntax unified
+  21              		.thumb
+  22              		.thumb_func
+  24              	textarea_event_handler:
+  25              	.LVL0:
+  26              	.LFB204:
+  27              		.file 1 "lvgl/examples/widgets/textarea/lv_example_textarea_1.c"
+   1:lvgl/examples/widgets/textarea/lv_example_textarea_1.c **** #include "../../lv_examples.h"
+   2:lvgl/examples/widgets/textarea/lv_example_textarea_1.c **** #if LV_USE_TEXTAREA && LV_BUILD_EXAMPLES
+   3:lvgl/examples/widgets/textarea/lv_example_textarea_1.c **** 
+   4:lvgl/examples/widgets/textarea/lv_example_textarea_1.c **** static void textarea_event_handler(lv_event_t * e)
+   5:lvgl/examples/widgets/textarea/lv_example_textarea_1.c **** {
+  28              		.loc 1 5 1 view -0
+  29              		.cfi_startproc
+  30              		@ args = 0, pretend = 0, frame = 0
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+  32              		.loc 1 5 1 is_stmt 0 view .LVU1
+  33 0000 08B5     		push	{r3, lr}
+  34              		.cfi_def_cfa_offset 8
+  35              		.cfi_offset 3, -8
+  36              		.cfi_offset 14, -4
+   6:lvgl/examples/widgets/textarea/lv_example_textarea_1.c ****     lv_obj_t * ta = lv_event_get_target(e);
+  37              		.loc 1 6 5 is_stmt 1 view .LVU2
+  38              		.loc 1 6 21 is_stmt 0 view .LVU3
+  39 0002 FFF7FEFF 		bl	lv_event_get_target
+  40              	.LVL1:
+   7:lvgl/examples/widgets/textarea/lv_example_textarea_1.c ****     LV_LOG_USER("Enter was pressed. The current text is: %s", lv_textarea_get_text(ta));
+  41              		.loc 1 7 5 is_stmt 1 view .LVU4
+  42              		.loc 1 7 5 view .LVU5
+  43              		.loc 1 7 5 view .LVU6
+   8:lvgl/examples/widgets/textarea/lv_example_textarea_1.c **** }
+  44              		.loc 1 8 1 is_stmt 0 view .LVU7
+  45 0006 08BD     		pop	{r3, pc}
+  46              		.cfi_endproc
+  47              	.LFE204:
+  49              		.section	.rodata.btnm_event_handler.str1.4,"aMS",%progbits,1
+  50              		.align	2
+  51              	.LC0:
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmtCkxb.s 			page 2
+
+
+  52 0000 EF959A00 		.ascii	"\357\225\232\000"
+  53              		.align	2
+  54              	.LC1:
+  55 0004 EFA2A200 		.ascii	"\357\242\242\000"
+  56              		.section	.text.btnm_event_handler,"ax",%progbits
+  57              		.align	1
+  58              		.syntax unified
+  59              		.thumb
+  60              		.thumb_func
+  62              	btnm_event_handler:
+  63              	.LVL2:
+  64              	.LFB205:
+   9:lvgl/examples/widgets/textarea/lv_example_textarea_1.c **** 
+  10:lvgl/examples/widgets/textarea/lv_example_textarea_1.c **** static void btnm_event_handler(lv_event_t * e)
+  11:lvgl/examples/widgets/textarea/lv_example_textarea_1.c **** {
+  65              		.loc 1 11 1 is_stmt 1 view -0
+  66              		.cfi_startproc
+  67              		@ args = 0, pretend = 0, frame = 0
+  68              		@ frame_needed = 0, uses_anonymous_args = 0
+  69              		.loc 1 11 1 is_stmt 0 view .LVU9
+  70 0000 38B5     		push	{r3, r4, r5, lr}
+  71              		.cfi_def_cfa_offset 16
+  72              		.cfi_offset 3, -16
+  73              		.cfi_offset 4, -12
+  74              		.cfi_offset 5, -8
+  75              		.cfi_offset 14, -4
+  76 0002 0546     		mov	r5, r0
+  12:lvgl/examples/widgets/textarea/lv_example_textarea_1.c ****     lv_obj_t * obj = lv_event_get_target(e);
+  77              		.loc 1 12 5 is_stmt 1 view .LVU10
+  78              		.loc 1 12 22 is_stmt 0 view .LVU11
+  79 0004 FFF7FEFF 		bl	lv_event_get_target
+  80              	.LVL3:
+  81              		.loc 1 12 22 view .LVU12
+  82 0008 0446     		mov	r4, r0
+  83              	.LVL4:
+  13:lvgl/examples/widgets/textarea/lv_example_textarea_1.c ****     lv_obj_t * ta = lv_event_get_user_data(e);
+  84              		.loc 1 13 5 is_stmt 1 view .LVU13
+  85              		.loc 1 13 21 is_stmt 0 view .LVU14
+  86 000a 2846     		mov	r0, r5
+  87              	.LVL5:
+  88              		.loc 1 13 21 view .LVU15
+  89 000c FFF7FEFF 		bl	lv_event_get_user_data
+  90              	.LVL6:
+  91 0010 0546     		mov	r5, r0
+  92              	.LVL7:
+  14:lvgl/examples/widgets/textarea/lv_example_textarea_1.c ****     const char * txt = lv_btnmatrix_get_btn_text(obj, lv_btnmatrix_get_selected_btn(obj));
+  93              		.loc 1 14 5 is_stmt 1 view .LVU16
+  94              		.loc 1 14 24 is_stmt 0 view .LVU17
+  95 0012 2046     		mov	r0, r4
+  96              	.LVL8:
+  97              		.loc 1 14 24 view .LVU18
+  98 0014 FFF7FEFF 		bl	lv_btnmatrix_get_selected_btn
+  99              	.LVL9:
+ 100 0018 0146     		mov	r1, r0
+ 101 001a 2046     		mov	r0, r4
+ 102 001c FFF7FEFF 		bl	lv_btnmatrix_get_btn_text
+ 103              	.LVL10:
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmtCkxb.s 			page 3
+
+
+ 104 0020 0446     		mov	r4, r0
+ 105              	.LVL11:
+  15:lvgl/examples/widgets/textarea/lv_example_textarea_1.c **** 
+  16:lvgl/examples/widgets/textarea/lv_example_textarea_1.c ****     if(strcmp(txt, LV_SYMBOL_BACKSPACE) == 0) lv_textarea_del_char(ta);
+ 106              		.loc 1 16 5 is_stmt 1 view .LVU19
+ 107              		.loc 1 16 8 is_stmt 0 view .LVU20
+ 108 0022 0C49     		ldr	r1, .L9
+ 109 0024 FFF7FEFF 		bl	strcmp
+ 110              	.LVL12:
+ 111              		.loc 1 16 7 view .LVU21
+ 112 0028 50B1     		cbz	r0, .L8
+  17:lvgl/examples/widgets/textarea/lv_example_textarea_1.c ****     else if(strcmp(txt, LV_SYMBOL_NEW_LINE) == 0) lv_event_send(ta, LV_EVENT_READY, NULL);
+ 113              		.loc 1 17 10 is_stmt 1 view .LVU22
+ 114              		.loc 1 17 13 is_stmt 0 view .LVU23
+ 115 002a 0B49     		ldr	r1, .L9+4
+ 116 002c 2046     		mov	r0, r4
+ 117 002e FFF7FEFF 		bl	strcmp
+ 118              	.LVL13:
+ 119              		.loc 1 17 12 view .LVU24
+ 120 0032 48B9     		cbnz	r0, .L6
+ 121              		.loc 1 17 51 is_stmt 1 discriminator 1 view .LVU25
+ 122 0034 0022     		movs	r2, #0
+ 123 0036 1F21     		movs	r1, #31
+ 124 0038 2846     		mov	r0, r5
+ 125 003a FFF7FEFF 		bl	lv_event_send
+ 126              	.LVL14:
+ 127              	.L3:
+  18:lvgl/examples/widgets/textarea/lv_example_textarea_1.c ****     else lv_textarea_add_text(ta, txt);
+  19:lvgl/examples/widgets/textarea/lv_example_textarea_1.c **** 
+  20:lvgl/examples/widgets/textarea/lv_example_textarea_1.c **** }
+ 128              		.loc 1 20 1 is_stmt 0 view .LVU26
+ 129 003e 38BD     		pop	{r3, r4, r5, pc}
+ 130              	.LVL15:
+ 131              	.L8:
+  16:lvgl/examples/widgets/textarea/lv_example_textarea_1.c ****     else if(strcmp(txt, LV_SYMBOL_NEW_LINE) == 0) lv_event_send(ta, LV_EVENT_READY, NULL);
+ 132              		.loc 1 16 47 is_stmt 1 discriminator 1 view .LVU27
+ 133 0040 2846     		mov	r0, r5
+ 134 0042 FFF7FEFF 		bl	lv_textarea_del_char
+ 135              	.LVL16:
+ 136 0046 FAE7     		b	.L3
+ 137              	.L6:
+  18:lvgl/examples/widgets/textarea/lv_example_textarea_1.c ****     else lv_textarea_add_text(ta, txt);
+ 138              		.loc 1 18 10 view .LVU28
+ 139 0048 2146     		mov	r1, r4
+ 140 004a 2846     		mov	r0, r5
+ 141 004c FFF7FEFF 		bl	lv_textarea_add_text
+ 142              	.LVL17:
+ 143              		.loc 1 20 1 is_stmt 0 view .LVU29
+ 144 0050 F5E7     		b	.L3
+ 145              	.L10:
+ 146 0052 00BF     		.align	2
+ 147              	.L9:
+ 148 0054 00000000 		.word	.LC0
+ 149 0058 04000000 		.word	.LC1
+ 150              		.cfi_endproc
+ 151              	.LFE205:
+ 153              		.section	.text.lv_example_textarea_1,"ax",%progbits
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmtCkxb.s 			page 4
+
+
+ 154              		.align	1
+ 155              		.global	lv_example_textarea_1
+ 156              		.syntax unified
+ 157              		.thumb
+ 158              		.thumb_func
+ 160              	lv_example_textarea_1:
+ 161              	.LFB206:
+  21:lvgl/examples/widgets/textarea/lv_example_textarea_1.c **** 
+  22:lvgl/examples/widgets/textarea/lv_example_textarea_1.c **** void lv_example_textarea_1(void)
+  23:lvgl/examples/widgets/textarea/lv_example_textarea_1.c **** {
+ 162              		.loc 1 23 1 is_stmt 1 view -0
+ 163              		.cfi_startproc
+ 164              		@ args = 0, pretend = 0, frame = 0
+ 165              		@ frame_needed = 0, uses_anonymous_args = 0
+ 166 0000 38B5     		push	{r3, r4, r5, lr}
+ 167              		.cfi_def_cfa_offset 16
+ 168              		.cfi_offset 3, -16
+ 169              		.cfi_offset 4, -12
+ 170              		.cfi_offset 5, -8
+ 171              		.cfi_offset 14, -4
+  24:lvgl/examples/widgets/textarea/lv_example_textarea_1.c ****     lv_obj_t * ta = lv_textarea_create(lv_scr_act());
+ 172              		.loc 1 24 5 view .LVU31
+ 173              	.LBB6:
+ 174              	.LBI6:
+ 175              		.file 2 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/core/lv_disp.h"
+   1:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+   2:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @file lv_disp.h
+   3:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  *
+   4:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+   5:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+   6:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** #ifndef LV_DISP_H
+   7:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** #define LV_DISP_H
+   8:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+   9:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** #ifdef __cplusplus
+  10:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** extern "C" {
+  11:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** #endif
+  12:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+  13:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /*********************
+  14:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  *      INCLUDES
+  15:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  *********************/
+  16:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** #include "../hal/lv_hal.h"
+  17:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** #include "lv_obj.h"
+  18:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** #include "lv_theme.h"
+  19:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+  20:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /*********************
+  21:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  *      DEFINES
+  22:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  *********************/
+  23:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+  24:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**********************
+  25:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  *      TYPEDEFS
+  26:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  **********************/
+  27:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+  28:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** typedef enum {
+  29:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_NONE,
+  30:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_OVER_LEFT,
+  31:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_OVER_RIGHT,
+  32:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_OVER_TOP,
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmtCkxb.s 			page 5
+
+
+  33:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_OVER_BOTTOM,
+  34:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_MOVE_LEFT,
+  35:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_MOVE_RIGHT,
+  36:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_MOVE_TOP,
+  37:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_MOVE_BOTTOM,
+  38:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_FADE_IN,
+  39:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_FADE_ON = LV_SCR_LOAD_ANIM_FADE_IN, /*For backward compatibility*/
+  40:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_FADE_OUT,
+  41:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_OUT_LEFT,
+  42:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_OUT_RIGHT,
+  43:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_OUT_TOP,
+  44:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_OUT_BOTTOM,
+  45:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** } lv_scr_load_anim_t;
+  46:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+  47:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**********************
+  48:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * GLOBAL PROTOTYPES
+  49:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  **********************/
+  50:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+  51:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+  52:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Return with a pointer to the active screen
+  53:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to display which active screen should be get. (NULL to use the default
+  54:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * screen)
+  55:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @return pointer to the active screen object (loaded by 'lv_scr_load()')
+  56:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+  57:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** lv_obj_t * lv_disp_get_scr_act(lv_disp_t * disp);
+  58:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+  59:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+  60:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Return with a pointer to the previous screen. Only used during screen transitions.
+  61:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to display which previous screen should be get. (NULL to use the default
+  62:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * screen)
+  63:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @return pointer to the previous screen object or NULL if not used now
+  64:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+  65:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** lv_obj_t * lv_disp_get_scr_prev(lv_disp_t * disp);
+  66:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+  67:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+  68:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Make a screen active
+  69:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param scr pointer to a screen
+  70:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+  71:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** void lv_disp_load_scr(lv_obj_t * scr);
+  72:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+  73:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+  74:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Return with the top layer. (Same on every screen and it is above the normal screen layer)
+  75:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to display which top layer should be get. (NULL to use the default screen)
+  76:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @return pointer to the top layer object (transparent screen sized lv_obj)
+  77:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+  78:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** lv_obj_t * lv_disp_get_layer_top(lv_disp_t * disp);
+  79:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+  80:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+  81:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Return with the sys. layer. (Same on every screen and it is above the normal screen and the top
+  82:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * layer)
+  83:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to display which sys. layer should be retrieved. (NULL to use the default sc
+  84:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @return pointer to the sys layer object (transparent screen sized lv_obj)
+  85:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+  86:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** lv_obj_t * lv_disp_get_layer_sys(lv_disp_t * disp);
+  87:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+  88:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+  89:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Set the theme of a display
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmtCkxb.s 			page 6
+
+
+  90:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to a display
+  91:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+  92:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** void lv_disp_set_theme(lv_disp_t * disp, lv_theme_t * th);
+  93:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+  94:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+  95:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Get the theme of a display
+  96:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to a display
+  97:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @return the display's theme (can be NULL)
+  98:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+  99:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** lv_theme_t * lv_disp_get_theme(lv_disp_t * disp);
+ 100:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+ 101:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+ 102:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Set the background color of a display
+ 103:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to a display
+ 104:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param color color of the background
+ 105:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+ 106:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** void lv_disp_set_bg_color(lv_disp_t * disp, lv_color_t color);
+ 107:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+ 108:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+ 109:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Set the background image of a display
+ 110:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to a display
+ 111:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param img_src path to file or pointer to an `lv_img_dsc_t` variable
+ 112:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+ 113:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** void lv_disp_set_bg_image(lv_disp_t * disp, const void  * img_src);
+ 114:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+ 115:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+ 116:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Set opacity of the background
+ 117:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to a display
+ 118:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param opa opacity (0..255)
+ 119:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+ 120:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** void lv_disp_set_bg_opa(lv_disp_t * disp, lv_opa_t opa);
+ 121:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+ 122:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+ 123:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Switch screen with animation
+ 124:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param scr pointer to the new screen to load
+ 125:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param anim_type type of the animation from `lv_scr_load_anim_t`, e.g. `LV_SCR_LOAD_ANIM_MOVE_LE
+ 126:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param time time of the animation
+ 127:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param delay delay before the transition
+ 128:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param auto_del true: automatically delete the old screen
+ 129:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+ 130:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** void lv_scr_load_anim(lv_obj_t * scr, lv_scr_load_anim_t anim_type, uint32_t time, uint32_t delay, 
+ 131:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+ 132:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+ 133:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Get elapsed time since last user activity on a display (e.g. click)
+ 134:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to a display (NULL to get the overall smallest inactivity)
+ 135:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @return elapsed ticks (milliseconds) since the last activity
+ 136:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+ 137:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** uint32_t lv_disp_get_inactive_time(const lv_disp_t * disp);
+ 138:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+ 139:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+ 140:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Manually trigger an activity on a display
+ 141:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to a display (NULL to use the default display)
+ 142:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+ 143:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** void lv_disp_trig_activity(lv_disp_t * disp);
+ 144:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+ 145:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+ 146:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Clean any CPU cache that is related to the display.
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmtCkxb.s 			page 7
+
+
+ 147:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to a display (NULL to use the default display)
+ 148:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+ 149:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** void lv_disp_clean_dcache(lv_disp_t * disp);
+ 150:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+ 151:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+ 152:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Temporarily enable and disable the invalidation of the display.
+ 153:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to a display (NULL to use the default display)
+ 154:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param en true: enable invalidation; false: invalidation
+ 155:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+ 156:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** void lv_disp_enable_invalidation(lv_disp_t * disp, bool en);
+ 157:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+ 158:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+ 159:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Get display invalidation is enabled.
+ 160:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to a display (NULL to use the default display)
+ 161:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @return return true if invalidation is enabled
+ 162:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+ 163:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** bool lv_disp_is_invalidation_enabled(lv_disp_t * disp);
+ 164:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+ 165:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+ 166:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Get a pointer to the screen refresher timer to
+ 167:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * modify its parameters with `lv_timer_...` functions.
+ 168:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to a display
+ 169:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @return pointer to the display refresher timer. (NULL on error)
+ 170:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+ 171:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** lv_timer_t * _lv_disp_get_refr_timer(lv_disp_t * disp);
+ 172:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+ 173:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /*------------------------------------------------
+ 174:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * To improve backward compatibility
+ 175:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Recommended only if you have one display
+ 176:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  *------------------------------------------------*/
+ 177:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+ 178:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+ 179:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Get the active screen of the default display
+ 180:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @return pointer to the active screen
+ 181:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+ 182:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** static inline lv_obj_t * lv_scr_act(void)
+ 176              		.loc 2 182 26 view .LVU32
+ 177              	.LBB7:
+ 183:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** {
+ 184:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     return lv_disp_get_scr_act(lv_disp_get_default());
+ 178              		.loc 2 184 5 view .LVU33
+ 179              		.loc 2 184 12 is_stmt 0 view .LVU34
+ 180 0002 FFF7FEFF 		bl	lv_disp_get_default
+ 181              	.LVL18:
+ 182 0006 FFF7FEFF 		bl	lv_disp_get_scr_act
+ 183              	.LVL19:
+ 184              	.LBE7:
+ 185              	.LBE6:
+ 186              		.loc 1 24 21 view .LVU35
+ 187 000a FFF7FEFF 		bl	lv_textarea_create
+ 188              	.LVL20:
+ 189 000e 0446     		mov	r4, r0
+ 190              	.LVL21:
+  25:lvgl/examples/widgets/textarea/lv_example_textarea_1.c ****     lv_textarea_set_one_line(ta, true);
+ 191              		.loc 1 25 5 is_stmt 1 view .LVU36
+ 192 0010 0121     		movs	r1, #1
+ 193 0012 FFF7FEFF 		bl	lv_textarea_set_one_line
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmtCkxb.s 			page 8
+
+
+ 194              	.LVL22:
+  26:lvgl/examples/widgets/textarea/lv_example_textarea_1.c ****     lv_obj_align(ta, LV_ALIGN_TOP_MID, 0, 10);
+ 195              		.loc 1 26 5 view .LVU37
+ 196 0016 0A23     		movs	r3, #10
+ 197 0018 0022     		movs	r2, #0
+ 198 001a 0221     		movs	r1, #2
+ 199 001c 2046     		mov	r0, r4
+ 200 001e FFF7FEFF 		bl	lv_obj_align
+ 201              	.LVL23:
+  27:lvgl/examples/widgets/textarea/lv_example_textarea_1.c ****     lv_obj_add_event_cb(ta, textarea_event_handler, LV_EVENT_READY, ta);
+ 202              		.loc 1 27 5 view .LVU38
+ 203 0022 2346     		mov	r3, r4
+ 204 0024 1F22     		movs	r2, #31
+ 205 0026 1449     		ldr	r1, .L13
+ 206 0028 2046     		mov	r0, r4
+ 207 002a FFF7FEFF 		bl	lv_obj_add_event_cb
+ 208              	.LVL24:
+  28:lvgl/examples/widgets/textarea/lv_example_textarea_1.c ****     lv_obj_add_state(ta, LV_STATE_FOCUSED); /*To be sure the cursor is visible*/
+ 209              		.loc 1 28 5 view .LVU39
+ 210 002e 0221     		movs	r1, #2
+ 211 0030 2046     		mov	r0, r4
+ 212 0032 FFF7FEFF 		bl	lv_obj_add_state
+ 213              	.LVL25:
+  29:lvgl/examples/widgets/textarea/lv_example_textarea_1.c **** 
+  30:lvgl/examples/widgets/textarea/lv_example_textarea_1.c ****     static const char * btnm_map[] = {"1", "2", "3", "\n",
+ 214              		.loc 1 30 5 view .LVU40
+  31:lvgl/examples/widgets/textarea/lv_example_textarea_1.c ****                                       "4", "5", "6", "\n",
+  32:lvgl/examples/widgets/textarea/lv_example_textarea_1.c ****                                       "7", "8", "9", "\n",
+  33:lvgl/examples/widgets/textarea/lv_example_textarea_1.c ****                                       LV_SYMBOL_BACKSPACE, "0", LV_SYMBOL_NEW_LINE, ""
+  34:lvgl/examples/widgets/textarea/lv_example_textarea_1.c ****                                      };
+  35:lvgl/examples/widgets/textarea/lv_example_textarea_1.c **** 
+  36:lvgl/examples/widgets/textarea/lv_example_textarea_1.c ****     lv_obj_t * btnm = lv_btnmatrix_create(lv_scr_act());
+ 215              		.loc 1 36 5 view .LVU41
+ 216              	.LBB8:
+ 217              	.LBI8:
+ 182:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** {
+ 218              		.loc 2 182 26 view .LVU42
+ 219              	.LBB9:
+ 220              		.loc 2 184 5 view .LVU43
+ 221              		.loc 2 184 12 is_stmt 0 view .LVU44
+ 222 0036 FFF7FEFF 		bl	lv_disp_get_default
+ 223              	.LVL26:
+ 224 003a FFF7FEFF 		bl	lv_disp_get_scr_act
+ 225              	.LVL27:
+ 226              	.LBE9:
+ 227              	.LBE8:
+ 228              		.loc 1 36 23 view .LVU45
+ 229 003e FFF7FEFF 		bl	lv_btnmatrix_create
+ 230              	.LVL28:
+ 231 0042 0546     		mov	r5, r0
+ 232              	.LVL29:
+  37:lvgl/examples/widgets/textarea/lv_example_textarea_1.c ****     lv_obj_set_size(btnm, 200, 150);
+ 233              		.loc 1 37 5 is_stmt 1 view .LVU46
+ 234 0044 9622     		movs	r2, #150
+ 235 0046 C821     		movs	r1, #200
+ 236 0048 FFF7FEFF 		bl	lv_obj_set_size
+ 237              	.LVL30:
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmtCkxb.s 			page 9
+
+
+  38:lvgl/examples/widgets/textarea/lv_example_textarea_1.c ****     lv_obj_align(btnm, LV_ALIGN_BOTTOM_MID, 0, -10);
+ 238              		.loc 1 38 5 view .LVU47
+ 239 004c 6FF00903 		mvn	r3, #9
+ 240 0050 0022     		movs	r2, #0
+ 241 0052 0521     		movs	r1, #5
+ 242 0054 2846     		mov	r0, r5
+ 243 0056 FFF7FEFF 		bl	lv_obj_align
+ 244              	.LVL31:
+  39:lvgl/examples/widgets/textarea/lv_example_textarea_1.c ****     lv_obj_add_event_cb(btnm, btnm_event_handler, LV_EVENT_VALUE_CHANGED, ta);
+ 245              		.loc 1 39 5 view .LVU48
+ 246 005a 2346     		mov	r3, r4
+ 247 005c 1C22     		movs	r2, #28
+ 248 005e 0749     		ldr	r1, .L13+4
+ 249 0060 2846     		mov	r0, r5
+ 250 0062 FFF7FEFF 		bl	lv_obj_add_event_cb
+ 251              	.LVL32:
+  40:lvgl/examples/widgets/textarea/lv_example_textarea_1.c ****     lv_obj_clear_flag(btnm, LV_OBJ_FLAG_CLICK_FOCUSABLE); /*To keep the text area focused on button
+ 252              		.loc 1 40 5 view .LVU49
+ 253 0066 0421     		movs	r1, #4
+ 254 0068 2846     		mov	r0, r5
+ 255 006a FFF7FEFF 		bl	lv_obj_clear_flag
+ 256              	.LVL33:
+  41:lvgl/examples/widgets/textarea/lv_example_textarea_1.c ****     lv_btnmatrix_set_map(btnm, btnm_map);
+ 257              		.loc 1 41 5 view .LVU50
+ 258 006e 0449     		ldr	r1, .L13+8
+ 259 0070 2846     		mov	r0, r5
+ 260 0072 FFF7FEFF 		bl	lv_btnmatrix_set_map
+ 261              	.LVL34:
+  42:lvgl/examples/widgets/textarea/lv_example_textarea_1.c **** }
+ 262              		.loc 1 42 1 is_stmt 0 view .LVU51
+ 263 0076 38BD     		pop	{r3, r4, r5, pc}
+ 264              	.LVL35:
+ 265              	.L14:
+ 266              		.loc 1 42 1 view .LVU52
+ 267              		.align	2
+ 268              	.L13:
+ 269 0078 00000000 		.word	textarea_event_handler
+ 270 007c 00000000 		.word	btnm_event_handler
+ 271 0080 00000000 		.word	.LANCHOR0
+ 272              		.cfi_endproc
+ 273              	.LFE206:
+ 275              		.section	.rodata.str1.4,"aMS",%progbits,1
+ 276              		.align	2
+ 277              	.LC2:
+ 278 0000 3100     		.ascii	"1\000"
+ 279 0002 0000     		.align	2
+ 280              	.LC3:
+ 281 0004 3200     		.ascii	"2\000"
+ 282 0006 0000     		.align	2
+ 283              	.LC4:
+ 284 0008 3300     		.ascii	"3\000"
+ 285 000a 0000     		.align	2
+ 286              	.LC5:
+ 287 000c 0A00     		.ascii	"\012\000"
+ 288 000e 0000     		.align	2
+ 289              	.LC6:
+ 290 0010 3400     		.ascii	"4\000"
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmtCkxb.s 			page 10
+
+
+ 291 0012 0000     		.align	2
+ 292              	.LC7:
+ 293 0014 3500     		.ascii	"5\000"
+ 294 0016 0000     		.align	2
+ 295              	.LC8:
+ 296 0018 3600     		.ascii	"6\000"
+ 297 001a 0000     		.align	2
+ 298              	.LC9:
+ 299 001c 3700     		.ascii	"7\000"
+ 300 001e 0000     		.align	2
+ 301              	.LC10:
+ 302 0020 3800     		.ascii	"8\000"
+ 303 0022 0000     		.align	2
+ 304              	.LC11:
+ 305 0024 3900     		.ascii	"9\000"
+ 306 0026 0000     		.align	2
+ 307              	.LC12:
+ 308 0028 3000     		.ascii	"0\000"
+ 309 002a 0000     		.align	2
+ 310              	.LC13:
+ 311 002c 00       		.ascii	"\000"
+ 312              		.section	.data.btnm_map.0,"aw"
+ 313              		.align	2
+ 314              		.set	.LANCHOR0,. + 0
+ 317              	btnm_map.0:
+ 318 0000 00000000 		.word	.LC2
+ 319 0004 04000000 		.word	.LC3
+ 320 0008 08000000 		.word	.LC4
+ 321 000c 0C000000 		.word	.LC5
+ 322 0010 10000000 		.word	.LC6
+ 323 0014 14000000 		.word	.LC7
+ 324 0018 18000000 		.word	.LC8
+ 325 001c 0C000000 		.word	.LC5
+ 326 0020 1C000000 		.word	.LC9
+ 327 0024 20000000 		.word	.LC10
+ 328 0028 24000000 		.word	.LC11
+ 329 002c 0C000000 		.word	.LC5
+ 330 0030 00000000 		.word	.LC0
+ 331 0034 28000000 		.word	.LC12
+ 332 0038 04000000 		.word	.LC1
+ 333 003c 2C000000 		.word	.LC13
+ 334              		.text
+ 335              	.Letext0:
+ 336              		.file 3 "c:\\tools\\gcc-arm-none-eabi\\arm-none-eabi\\include\\machine\\_default_types.h"
+ 337              		.file 4 "c:\\tools\\gcc-arm-none-eabi\\arm-none-eabi\\include\\sys\\_stdint.h"
+ 338              		.file 5 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\misc\\lv_area.h"
+ 339              		.file 6 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\misc\\lv_color.h"
+ 340              		.file 7 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\misc\\lv_style.h"
+ 341              		.file 8 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/core/lv_obj.h"
+ 342              		.file 9 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\misc\\lv_ll.h"
+ 343              		.file 10 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/core/lv_group.h"
+ 344              		.file 11 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/core/lv_obj_scroll.h"
+ 345              		.file 12 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/core/lv_obj_style.h"
+ 346              		.file 13 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/core/lv_obj_class.h"
+ 347              		.file 14 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/core/lv_event.h"
+ 348              		.file 15 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/hal/lv_hal_disp.h"
+ 349              		.file 16 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/widgets/lv_textarea.h"
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmtCkxb.s 			page 11
+
+
+ 350              		.file 17 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\core\\lv_obj_pos.h"
+ 351              		.file 18 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/widgets/lv_btnmatrix.h"
+ 352              		.file 19 "c:\\tools\\gcc-arm-none-eabi\\arm-none-eabi\\include\\string.h"
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccmtCkxb.s 			page 12
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 lv_example_textarea_1.c
+C:\Users\OSD\AppData\Local\Temp\ccmtCkxb.s:19     .text.textarea_event_handler:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccmtCkxb.s:24     .text.textarea_event_handler:00000000 textarea_event_handler
+C:\Users\OSD\AppData\Local\Temp\ccmtCkxb.s:50     .rodata.btnm_event_handler.str1.4:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccmtCkxb.s:57     .text.btnm_event_handler:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccmtCkxb.s:62     .text.btnm_event_handler:00000000 btnm_event_handler
+C:\Users\OSD\AppData\Local\Temp\ccmtCkxb.s:148    .text.btnm_event_handler:00000054 $d
+C:\Users\OSD\AppData\Local\Temp\ccmtCkxb.s:154    .text.lv_example_textarea_1:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccmtCkxb.s:160    .text.lv_example_textarea_1:00000000 lv_example_textarea_1
+C:\Users\OSD\AppData\Local\Temp\ccmtCkxb.s:269    .text.lv_example_textarea_1:00000078 $d
+C:\Users\OSD\AppData\Local\Temp\ccmtCkxb.s:276    .rodata.str1.4:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccmtCkxb.s:313    .data.btnm_map.0:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccmtCkxb.s:317    .data.btnm_map.0:00000000 btnm_map.0
+
+UNDEFINED SYMBOLS
+lv_event_get_target
+lv_event_get_user_data
+lv_btnmatrix_get_selected_btn
+lv_btnmatrix_get_btn_text
+strcmp
+lv_event_send
+lv_textarea_del_char
+lv_textarea_add_text
+lv_disp_get_default
+lv_disp_get_scr_act
+lv_textarea_create
+lv_textarea_set_one_line
+lv_obj_align
+lv_obj_add_event_cb
+lv_obj_add_state
+lv_btnmatrix_create
+lv_obj_set_size
+lv_obj_clear_flag
+lv_btnmatrix_set_map

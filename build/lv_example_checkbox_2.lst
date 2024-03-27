@@ -1,0 +1,1110 @@
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cceNFVAi.s 			page 1
+
+
+   1              		.cpu cortex-m7
+   2              		.arch armv7e-m
+   3              		.fpu fpv5-d16
+   4              		.eabi_attribute 28, 1
+   5              		.eabi_attribute 20, 1
+   6              		.eabi_attribute 21, 1
+   7              		.eabi_attribute 23, 3
+   8              		.eabi_attribute 24, 1
+   9              		.eabi_attribute 25, 1
+  10              		.eabi_attribute 26, 1
+  11              		.eabi_attribute 30, 1
+  12              		.eabi_attribute 34, 1
+  13              		.eabi_attribute 18, 4
+  14              		.file	"lv_example_checkbox_2.c"
+  15              		.text
+  16              	.Ltext0:
+  17              		.cfi_sections	.debug_frame
+  18              		.section	.text.radio_event_handler,"ax",%progbits
+  19              		.align	1
+  20              		.syntax unified
+  21              		.thumb
+  22              		.thumb_func
+  24              	radio_event_handler:
+  25              	.LVL0:
+  26              	.LFB204:
+  27              		.file 1 "lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c"
+   1:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c **** #include "../../lv_examples.h"
+   2:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c **** #if LV_USE_CHECKBOX && LV_BUILD_EXAMPLES
+   3:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c **** 
+   4:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c **** static lv_style_t style_radio;
+   5:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c **** static lv_style_t style_radio_chk;
+   6:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c **** static uint32_t active_index_1 = 0;
+   7:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c **** static uint32_t active_index_2 = 0;
+   8:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c **** 
+   9:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c **** static void radio_event_handler(lv_event_t * e)
+  10:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c **** {
+  28              		.loc 1 10 1 view -0
+  29              		.cfi_startproc
+  30              		@ args = 0, pretend = 0, frame = 0
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+  32              		.loc 1 10 1 is_stmt 0 view .LVU1
+  33 0000 70B5     		push	{r4, r5, r6, lr}
+  34              		.cfi_def_cfa_offset 16
+  35              		.cfi_offset 4, -16
+  36              		.cfi_offset 5, -12
+  37              		.cfi_offset 6, -8
+  38              		.cfi_offset 14, -4
+  39 0002 0446     		mov	r4, r0
+  11:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c ****     uint32_t * active_id = lv_event_get_user_data(e);
+  40              		.loc 1 11 5 is_stmt 1 view .LVU2
+  41              		.loc 1 11 28 is_stmt 0 view .LVU3
+  42 0004 FFF7FEFF 		bl	lv_event_get_user_data
+  43              	.LVL1:
+  44              		.loc 1 11 28 view .LVU4
+  45 0008 0646     		mov	r6, r0
+  46              	.LVL2:
+  12:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c ****     lv_obj_t * cont = lv_event_get_current_target(e);
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cceNFVAi.s 			page 2
+
+
+  47              		.loc 1 12 5 is_stmt 1 view .LVU5
+  48              		.loc 1 12 23 is_stmt 0 view .LVU6
+  49 000a 2046     		mov	r0, r4
+  50              	.LVL3:
+  51              		.loc 1 12 23 view .LVU7
+  52 000c FFF7FEFF 		bl	lv_event_get_current_target
+  53              	.LVL4:
+  54 0010 0546     		mov	r5, r0
+  55              	.LVL5:
+  13:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c ****     lv_obj_t * act_cb = lv_event_get_target(e);
+  56              		.loc 1 13 5 is_stmt 1 view .LVU8
+  57              		.loc 1 13 25 is_stmt 0 view .LVU9
+  58 0012 2046     		mov	r0, r4
+  59              	.LVL6:
+  60              		.loc 1 13 25 view .LVU10
+  61 0014 FFF7FEFF 		bl	lv_event_get_target
+  62              	.LVL7:
+  63 0018 0446     		mov	r4, r0
+  64              	.LVL8:
+  14:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c ****     lv_obj_t * old_cb = lv_obj_get_child(cont, *active_id);
+  65              		.loc 1 14 5 is_stmt 1 view .LVU11
+  66              		.loc 1 14 25 is_stmt 0 view .LVU12
+  67 001a 3168     		ldr	r1, [r6]
+  68 001c 2846     		mov	r0, r5
+  69              	.LVL9:
+  70              		.loc 1 14 25 view .LVU13
+  71 001e FFF7FEFF 		bl	lv_obj_get_child
+  72              	.LVL10:
+  15:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c **** 
+  16:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c ****     /*Do nothing if the container was clicked*/
+  17:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c ****     if(act_cb == cont) return;
+  73              		.loc 1 17 5 is_stmt 1 view .LVU14
+  74              		.loc 1 17 7 is_stmt 0 view .LVU15
+  75 0022 A542     		cmp	r5, r4
+  76 0024 0AD0     		beq	.L1
+  18:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c **** 
+  19:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c ****     lv_obj_clear_state(old_cb, LV_STATE_CHECKED);   /*Uncheck the previous radio button*/
+  77              		.loc 1 19 5 is_stmt 1 view .LVU16
+  78 0026 0121     		movs	r1, #1
+  79 0028 FFF7FEFF 		bl	lv_obj_clear_state
+  80              	.LVL11:
+  20:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c ****     lv_obj_add_state(act_cb, LV_STATE_CHECKED);     /*Uncheck the current radio button*/
+  81              		.loc 1 20 5 view .LVU17
+  82 002c 0121     		movs	r1, #1
+  83 002e 2046     		mov	r0, r4
+  84 0030 FFF7FEFF 		bl	lv_obj_add_state
+  85              	.LVL12:
+  21:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c **** 
+  22:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c ****     *active_id = lv_obj_get_index(act_cb);
+  86              		.loc 1 22 5 view .LVU18
+  87              		.loc 1 22 18 is_stmt 0 view .LVU19
+  88 0034 2046     		mov	r0, r4
+  89 0036 FFF7FEFF 		bl	lv_obj_get_index
+  90              	.LVL13:
+  91              		.loc 1 22 16 view .LVU20
+  92 003a 3060     		str	r0, [r6]
+  23:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c **** 
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cceNFVAi.s 			page 3
+
+
+  24:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c ****     LV_LOG_USER("Selected radio buttons: %d, %d", (int)active_index_1, (int)active_index_2);
+  93              		.loc 1 24 5 is_stmt 1 view .LVU21
+  94              		.loc 1 24 5 view .LVU22
+  95              		.loc 1 24 5 view .LVU23
+  96              	.L1:
+  25:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c **** }
+  97              		.loc 1 25 1 is_stmt 0 view .LVU24
+  98 003c 70BD     		pop	{r4, r5, r6, pc}
+  99              		.loc 1 25 1 view .LVU25
+ 100              		.cfi_endproc
+ 101              	.LFE204:
+ 103              		.section	.text.radiobutton_create,"ax",%progbits
+ 104              		.align	1
+ 105              		.syntax unified
+ 106              		.thumb
+ 107              		.thumb_func
+ 109              	radiobutton_create:
+ 110              	.LVL14:
+ 111              	.LFB205:
+  26:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c **** 
+  27:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c **** static void radiobutton_create(lv_obj_t * parent, const char * txt)
+  28:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c **** {
+ 112              		.loc 1 28 1 is_stmt 1 view -0
+ 113              		.cfi_startproc
+ 114              		@ args = 0, pretend = 0, frame = 0
+ 115              		@ frame_needed = 0, uses_anonymous_args = 0
+ 116              		.loc 1 28 1 is_stmt 0 view .LVU27
+ 117 0000 38B5     		push	{r3, r4, r5, lr}
+ 118              		.cfi_def_cfa_offset 16
+ 119              		.cfi_offset 3, -16
+ 120              		.cfi_offset 4, -12
+ 121              		.cfi_offset 5, -8
+ 122              		.cfi_offset 14, -4
+ 123 0002 0D46     		mov	r5, r1
+  29:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c ****     lv_obj_t * obj = lv_checkbox_create(parent);
+ 124              		.loc 1 29 5 is_stmt 1 view .LVU28
+ 125              		.loc 1 29 22 is_stmt 0 view .LVU29
+ 126 0004 FFF7FEFF 		bl	lv_checkbox_create
+ 127              	.LVL15:
+ 128              		.loc 1 29 22 view .LVU30
+ 129 0008 0446     		mov	r4, r0
+ 130              	.LVL16:
+  30:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c ****     lv_checkbox_set_text(obj, txt);
+ 131              		.loc 1 30 5 is_stmt 1 view .LVU31
+ 132 000a 2946     		mov	r1, r5
+ 133 000c FFF7FEFF 		bl	lv_checkbox_set_text
+ 134              	.LVL17:
+  31:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c ****     lv_obj_add_flag(obj, LV_OBJ_FLAG_EVENT_BUBBLE);
+ 135              		.loc 1 31 5 view .LVU32
+ 136 0010 4FF48041 		mov	r1, #16384
+ 137 0014 2046     		mov	r0, r4
+ 138 0016 FFF7FEFF 		bl	lv_obj_add_flag
+ 139              	.LVL18:
+  32:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c ****     lv_obj_add_style(obj, &style_radio, LV_PART_INDICATOR);
+ 140              		.loc 1 32 5 view .LVU33
+ 141 001a 4FF40032 		mov	r2, #131072
+ 142 001e 0549     		ldr	r1, .L6
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cceNFVAi.s 			page 4
+
+
+ 143 0020 2046     		mov	r0, r4
+ 144 0022 FFF7FEFF 		bl	lv_obj_add_style
+ 145              	.LVL19:
+  33:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c ****     lv_obj_add_style(obj, &style_radio_chk, LV_PART_INDICATOR | LV_STATE_CHECKED);
+ 146              		.loc 1 33 5 view .LVU34
+ 147 0026 044A     		ldr	r2, .L6+4
+ 148 0028 0449     		ldr	r1, .L6+8
+ 149 002a 2046     		mov	r0, r4
+ 150 002c FFF7FEFF 		bl	lv_obj_add_style
+ 151              	.LVL20:
+  34:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c **** }
+ 152              		.loc 1 34 1 is_stmt 0 view .LVU35
+ 153 0030 38BD     		pop	{r3, r4, r5, pc}
+ 154              	.LVL21:
+ 155              	.L7:
+ 156              		.loc 1 34 1 view .LVU36
+ 157 0032 00BF     		.align	2
+ 158              	.L6:
+ 159 0034 00000000 		.word	.LANCHOR0
+ 160 0038 01000200 		.word	131073
+ 161 003c 00000000 		.word	.LANCHOR1
+ 162              		.cfi_endproc
+ 163              	.LFE205:
+ 165              		.section	.rodata.lv_example_checkbox_2.str1.4,"aMS",%progbits,1
+ 166              		.align	2
+ 167              	.LC0:
+ 168 0000 41202564 		.ascii	"A %d\000"
+ 168      00
+ 169 0005 000000   		.align	2
+ 170              	.LC1:
+ 171 0008 42202564 		.ascii	"B %d\000"
+ 171      00
+ 172              		.section	.text.lv_example_checkbox_2,"ax",%progbits
+ 173              		.align	1
+ 174              		.global	lv_example_checkbox_2
+ 175              		.syntax unified
+ 176              		.thumb
+ 177              		.thumb_func
+ 179              	lv_example_checkbox_2:
+ 180              	.LFB206:
+  35:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c **** 
+  36:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c **** /**
+  37:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c ****  * Checkboxes as radio buttons
+  38:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c ****  */
+  39:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c **** void lv_example_checkbox_2(void)
+  40:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c **** {
+ 181              		.loc 1 40 1 is_stmt 1 view -0
+ 182              		.cfi_startproc
+ 183              		@ args = 0, pretend = 0, frame = 32
+ 184              		@ frame_needed = 0, uses_anonymous_args = 0
+ 185 0000 30B5     		push	{r4, r5, lr}
+ 186              		.cfi_def_cfa_offset 12
+ 187              		.cfi_offset 4, -12
+ 188              		.cfi_offset 5, -8
+ 189              		.cfi_offset 14, -4
+ 190 0002 89B0     		sub	sp, sp, #36
+ 191              		.cfi_def_cfa_offset 48
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cceNFVAi.s 			page 5
+
+
+  41:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c ****     /* The idea is to enable `LV_OBJ_FLAG_EVENT_BUBBLE` on checkboxes and process the
+  42:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c ****      * `LV_EVENT_CLICKED` on the container.
+  43:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c ****      * A variable is passed as event user data where the index of the active
+  44:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c ****      * radiobutton is saved */
+  45:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c **** 
+  46:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c ****     lv_style_init(&style_radio);
+ 192              		.loc 1 46 5 view .LVU38
+ 193 0004 394C     		ldr	r4, .L14
+ 194 0006 2046     		mov	r0, r4
+ 195 0008 FFF7FEFF 		bl	lv_style_init
+ 196              	.LVL22:
+  47:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c ****     lv_style_set_radius(&style_radio, LV_RADIUS_CIRCLE);
+ 197              		.loc 1 47 5 view .LVU39
+ 198 000c 47F6FF71 		movw	r1, #32767
+ 199 0010 2046     		mov	r0, r4
+ 200 0012 FFF7FEFF 		bl	lv_style_set_radius
+ 201              	.LVL23:
+  48:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c **** 
+  49:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c ****     lv_style_init(&style_radio_chk);
+ 202              		.loc 1 49 5 view .LVU40
+ 203 0016 364C     		ldr	r4, .L14+4
+ 204 0018 2046     		mov	r0, r4
+ 205 001a FFF7FEFF 		bl	lv_style_init
+ 206              	.LVL24:
+  50:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c ****     lv_style_set_bg_img_src(&style_radio_chk, NULL);
+ 207              		.loc 1 50 5 view .LVU41
+ 208 001e 0021     		movs	r1, #0
+ 209 0020 2046     		mov	r0, r4
+ 210 0022 FFF7FEFF 		bl	lv_style_set_bg_img_src
+ 211              	.LVL25:
+  51:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c **** 
+  52:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c ****     uint32_t i;
+ 212              		.loc 1 52 5 view .LVU42
+  53:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c ****     char buf[32];
+ 213              		.loc 1 53 5 view .LVU43
+  54:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c **** 
+  55:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c ****     lv_obj_t * cont1 = lv_obj_create(lv_scr_act());
+ 214              		.loc 1 55 5 view .LVU44
+ 215              	.LBB16:
+ 216              	.LBI16:
+ 217              		.file 2 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/core/lv_disp.h"
+   1:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+   2:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @file lv_disp.h
+   3:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  *
+   4:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+   5:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+   6:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** #ifndef LV_DISP_H
+   7:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** #define LV_DISP_H
+   8:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+   9:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** #ifdef __cplusplus
+  10:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** extern "C" {
+  11:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** #endif
+  12:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+  13:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /*********************
+  14:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  *      INCLUDES
+  15:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  *********************/
+  16:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** #include "../hal/lv_hal.h"
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cceNFVAi.s 			page 6
+
+
+  17:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** #include "lv_obj.h"
+  18:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** #include "lv_theme.h"
+  19:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+  20:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /*********************
+  21:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  *      DEFINES
+  22:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  *********************/
+  23:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+  24:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**********************
+  25:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  *      TYPEDEFS
+  26:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  **********************/
+  27:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+  28:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** typedef enum {
+  29:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_NONE,
+  30:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_OVER_LEFT,
+  31:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_OVER_RIGHT,
+  32:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_OVER_TOP,
+  33:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_OVER_BOTTOM,
+  34:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_MOVE_LEFT,
+  35:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_MOVE_RIGHT,
+  36:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_MOVE_TOP,
+  37:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_MOVE_BOTTOM,
+  38:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_FADE_IN,
+  39:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_FADE_ON = LV_SCR_LOAD_ANIM_FADE_IN, /*For backward compatibility*/
+  40:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_FADE_OUT,
+  41:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_OUT_LEFT,
+  42:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_OUT_RIGHT,
+  43:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_OUT_TOP,
+  44:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_OUT_BOTTOM,
+  45:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** } lv_scr_load_anim_t;
+  46:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+  47:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**********************
+  48:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * GLOBAL PROTOTYPES
+  49:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  **********************/
+  50:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+  51:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+  52:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Return with a pointer to the active screen
+  53:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to display which active screen should be get. (NULL to use the default
+  54:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * screen)
+  55:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @return pointer to the active screen object (loaded by 'lv_scr_load()')
+  56:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+  57:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** lv_obj_t * lv_disp_get_scr_act(lv_disp_t * disp);
+  58:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+  59:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+  60:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Return with a pointer to the previous screen. Only used during screen transitions.
+  61:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to display which previous screen should be get. (NULL to use the default
+  62:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * screen)
+  63:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @return pointer to the previous screen object or NULL if not used now
+  64:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+  65:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** lv_obj_t * lv_disp_get_scr_prev(lv_disp_t * disp);
+  66:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+  67:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+  68:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Make a screen active
+  69:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param scr pointer to a screen
+  70:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+  71:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** void lv_disp_load_scr(lv_obj_t * scr);
+  72:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+  73:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cceNFVAi.s 			page 7
+
+
+  74:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Return with the top layer. (Same on every screen and it is above the normal screen layer)
+  75:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to display which top layer should be get. (NULL to use the default screen)
+  76:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @return pointer to the top layer object (transparent screen sized lv_obj)
+  77:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+  78:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** lv_obj_t * lv_disp_get_layer_top(lv_disp_t * disp);
+  79:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+  80:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+  81:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Return with the sys. layer. (Same on every screen and it is above the normal screen and the top
+  82:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * layer)
+  83:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to display which sys. layer should be retrieved. (NULL to use the default sc
+  84:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @return pointer to the sys layer object (transparent screen sized lv_obj)
+  85:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+  86:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** lv_obj_t * lv_disp_get_layer_sys(lv_disp_t * disp);
+  87:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+  88:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+  89:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Set the theme of a display
+  90:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to a display
+  91:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+  92:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** void lv_disp_set_theme(lv_disp_t * disp, lv_theme_t * th);
+  93:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+  94:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+  95:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Get the theme of a display
+  96:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to a display
+  97:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @return the display's theme (can be NULL)
+  98:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+  99:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** lv_theme_t * lv_disp_get_theme(lv_disp_t * disp);
+ 100:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+ 101:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+ 102:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Set the background color of a display
+ 103:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to a display
+ 104:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param color color of the background
+ 105:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+ 106:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** void lv_disp_set_bg_color(lv_disp_t * disp, lv_color_t color);
+ 107:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+ 108:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+ 109:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Set the background image of a display
+ 110:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to a display
+ 111:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param img_src path to file or pointer to an `lv_img_dsc_t` variable
+ 112:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+ 113:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** void lv_disp_set_bg_image(lv_disp_t * disp, const void  * img_src);
+ 114:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+ 115:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+ 116:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Set opacity of the background
+ 117:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to a display
+ 118:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param opa opacity (0..255)
+ 119:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+ 120:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** void lv_disp_set_bg_opa(lv_disp_t * disp, lv_opa_t opa);
+ 121:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+ 122:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+ 123:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Switch screen with animation
+ 124:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param scr pointer to the new screen to load
+ 125:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param anim_type type of the animation from `lv_scr_load_anim_t`, e.g. `LV_SCR_LOAD_ANIM_MOVE_LE
+ 126:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param time time of the animation
+ 127:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param delay delay before the transition
+ 128:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param auto_del true: automatically delete the old screen
+ 129:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+ 130:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** void lv_scr_load_anim(lv_obj_t * scr, lv_scr_load_anim_t anim_type, uint32_t time, uint32_t delay, 
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cceNFVAi.s 			page 8
+
+
+ 131:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+ 132:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+ 133:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Get elapsed time since last user activity on a display (e.g. click)
+ 134:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to a display (NULL to get the overall smallest inactivity)
+ 135:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @return elapsed ticks (milliseconds) since the last activity
+ 136:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+ 137:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** uint32_t lv_disp_get_inactive_time(const lv_disp_t * disp);
+ 138:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+ 139:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+ 140:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Manually trigger an activity on a display
+ 141:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to a display (NULL to use the default display)
+ 142:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+ 143:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** void lv_disp_trig_activity(lv_disp_t * disp);
+ 144:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+ 145:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+ 146:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Clean any CPU cache that is related to the display.
+ 147:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to a display (NULL to use the default display)
+ 148:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+ 149:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** void lv_disp_clean_dcache(lv_disp_t * disp);
+ 150:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+ 151:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+ 152:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Temporarily enable and disable the invalidation of the display.
+ 153:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to a display (NULL to use the default display)
+ 154:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param en true: enable invalidation; false: invalidation
+ 155:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+ 156:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** void lv_disp_enable_invalidation(lv_disp_t * disp, bool en);
+ 157:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+ 158:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+ 159:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Get display invalidation is enabled.
+ 160:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to a display (NULL to use the default display)
+ 161:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @return return true if invalidation is enabled
+ 162:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+ 163:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** bool lv_disp_is_invalidation_enabled(lv_disp_t * disp);
+ 164:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+ 165:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+ 166:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Get a pointer to the screen refresher timer to
+ 167:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * modify its parameters with `lv_timer_...` functions.
+ 168:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to a display
+ 169:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @return pointer to the display refresher timer. (NULL on error)
+ 170:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+ 171:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** lv_timer_t * _lv_disp_get_refr_timer(lv_disp_t * disp);
+ 172:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+ 173:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /*------------------------------------------------
+ 174:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * To improve backward compatibility
+ 175:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Recommended only if you have one display
+ 176:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  *------------------------------------------------*/
+ 177:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+ 178:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+ 179:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Get the active screen of the default display
+ 180:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @return pointer to the active screen
+ 181:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+ 182:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** static inline lv_obj_t * lv_scr_act(void)
+ 218              		.loc 2 182 26 view .LVU45
+ 219              	.LBB17:
+ 183:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** {
+ 184:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     return lv_disp_get_scr_act(lv_disp_get_default());
+ 220              		.loc 2 184 5 view .LVU46
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cceNFVAi.s 			page 9
+
+
+ 221              		.loc 2 184 12 is_stmt 0 view .LVU47
+ 222 0026 FFF7FEFF 		bl	lv_disp_get_default
+ 223              	.LVL26:
+ 224 002a FFF7FEFF 		bl	lv_disp_get_scr_act
+ 225              	.LVL27:
+ 226              	.LBE17:
+ 227              	.LBE16:
+ 228              		.loc 1 55 24 view .LVU48
+ 229 002e FFF7FEFF 		bl	lv_obj_create
+ 230              	.LVL28:
+ 231 0032 0546     		mov	r5, r0
+ 232              	.LVL29:
+  56:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c ****     lv_obj_set_flex_flow(cont1, LV_FLEX_FLOW_COLUMN);
+ 233              		.loc 1 56 5 is_stmt 1 view .LVU49
+ 234 0034 0121     		movs	r1, #1
+ 235 0036 FFF7FEFF 		bl	lv_obj_set_flex_flow
+ 236              	.LVL30:
+  57:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c ****     lv_obj_set_size(cont1, lv_pct(40), lv_pct(80));
+ 237              		.loc 1 57 5 view .LVU50
+ 238              		.file 3 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\misc\\lv_area.h"
+   1:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** /**
+   2:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * @file lv_area.h
+   3:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  *
+   4:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  */
+   5:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** 
+   6:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** #ifndef LV_AREA_H
+   7:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** #define LV_AREA_H
+   8:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** 
+   9:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** #ifdef __cplusplus
+  10:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** extern "C" {
+  11:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** #endif
+  12:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** 
+  13:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** /*********************
+  14:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  *      INCLUDES
+  15:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  *********************/
+  16:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** #include "../lv_conf_internal.h"
+  17:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** #include <stdbool.h>
+  18:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** #include <stdint.h>
+  19:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** 
+  20:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** /*********************
+  21:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  *      DEFINES
+  22:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  *********************/
+  23:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** 
+  24:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** #if LV_USE_LARGE_COORD
+  25:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** typedef int32_t lv_coord_t;
+  26:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** #else
+  27:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** typedef int16_t lv_coord_t;
+  28:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** #endif
+  29:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** 
+  30:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** /**********************
+  31:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  *      TYPEDEFS
+  32:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  **********************/
+  33:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** 
+  34:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** /**
+  35:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * Represents a point on the screen.
+  36:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  */
+  37:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** typedef struct {
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cceNFVAi.s 			page 10
+
+
+  38:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****     lv_coord_t x;
+  39:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****     lv_coord_t y;
+  40:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** } lv_point_t;
+  41:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** 
+  42:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** /** Represents an area of the screen.*/
+  43:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** typedef struct {
+  44:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****     lv_coord_t x1;
+  45:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****     lv_coord_t y1;
+  46:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****     lv_coord_t x2;
+  47:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****     lv_coord_t y2;
+  48:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** } lv_area_t;
+  49:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** 
+  50:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** /** Alignments*/
+  51:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** enum {
+  52:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****     LV_ALIGN_DEFAULT = 0,
+  53:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****     LV_ALIGN_TOP_LEFT,
+  54:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****     LV_ALIGN_TOP_MID,
+  55:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****     LV_ALIGN_TOP_RIGHT,
+  56:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****     LV_ALIGN_BOTTOM_LEFT,
+  57:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****     LV_ALIGN_BOTTOM_MID,
+  58:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****     LV_ALIGN_BOTTOM_RIGHT,
+  59:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****     LV_ALIGN_LEFT_MID,
+  60:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****     LV_ALIGN_RIGHT_MID,
+  61:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****     LV_ALIGN_CENTER,
+  62:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** 
+  63:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****     LV_ALIGN_OUT_TOP_LEFT,
+  64:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****     LV_ALIGN_OUT_TOP_MID,
+  65:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****     LV_ALIGN_OUT_TOP_RIGHT,
+  66:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****     LV_ALIGN_OUT_BOTTOM_LEFT,
+  67:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****     LV_ALIGN_OUT_BOTTOM_MID,
+  68:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****     LV_ALIGN_OUT_BOTTOM_RIGHT,
+  69:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****     LV_ALIGN_OUT_LEFT_TOP,
+  70:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****     LV_ALIGN_OUT_LEFT_MID,
+  71:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****     LV_ALIGN_OUT_LEFT_BOTTOM,
+  72:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****     LV_ALIGN_OUT_RIGHT_TOP,
+  73:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****     LV_ALIGN_OUT_RIGHT_MID,
+  74:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****     LV_ALIGN_OUT_RIGHT_BOTTOM,
+  75:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** };
+  76:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** typedef uint8_t lv_align_t;
+  77:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** 
+  78:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** enum {
+  79:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****     LV_DIR_NONE     = 0x00,
+  80:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****     LV_DIR_LEFT     = (1 << 0),
+  81:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****     LV_DIR_RIGHT    = (1 << 1),
+  82:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****     LV_DIR_TOP      = (1 << 2),
+  83:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****     LV_DIR_BOTTOM   = (1 << 3),
+  84:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****     LV_DIR_HOR      = LV_DIR_LEFT | LV_DIR_RIGHT,
+  85:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****     LV_DIR_VER      = LV_DIR_TOP | LV_DIR_BOTTOM,
+  86:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****     LV_DIR_ALL      = LV_DIR_HOR | LV_DIR_VER,
+  87:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** };
+  88:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** 
+  89:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** typedef uint8_t lv_dir_t;
+  90:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** 
+  91:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** /**********************
+  92:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * GLOBAL PROTOTYPES
+  93:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  **********************/
+  94:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** 
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cceNFVAi.s 			page 11
+
+
+  95:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** /**
+  96:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * Initialize an area
+  97:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * @param area_p pointer to an area
+  98:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * @param x1 left coordinate of the area
+  99:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * @param y1 top coordinate of the area
+ 100:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * @param x2 right coordinate of the area
+ 101:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * @param y2 bottom coordinate of the area
+ 102:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  */
+ 103:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** void lv_area_set(lv_area_t * area_p, lv_coord_t x1, lv_coord_t y1, lv_coord_t x2, lv_coord_t y2);
+ 104:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** 
+ 105:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** /**
+ 106:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * Copy an area
+ 107:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * @param dest pointer to the destination area
+ 108:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * @param src pointer to the source area
+ 109:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  */
+ 110:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** inline static void lv_area_copy(lv_area_t * dest, const lv_area_t * src)
+ 111:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** {
+ 112:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****     dest->x1 = src->x1;
+ 113:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****     dest->y1 = src->y1;
+ 114:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****     dest->x2 = src->x2;
+ 115:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****     dest->y2 = src->y2;
+ 116:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** }
+ 117:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** 
+ 118:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** /**
+ 119:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * Get the width of an area
+ 120:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * @param area_p pointer to an area
+ 121:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * @return the width of the area (if x1 == x2 -> width = 1)
+ 122:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  */
+ 123:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** static inline lv_coord_t lv_area_get_width(const lv_area_t * area_p)
+ 124:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** {
+ 125:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****     return (lv_coord_t)(area_p->x2 - area_p->x1 + 1);
+ 126:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** }
+ 127:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** 
+ 128:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** /**
+ 129:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * Get the height of an area
+ 130:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * @param area_p pointer to an area
+ 131:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * @return the height of the area (if y1 == y2 -> height = 1)
+ 132:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  */
+ 133:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** static inline lv_coord_t lv_area_get_height(const lv_area_t * area_p)
+ 134:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** {
+ 135:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****     return (lv_coord_t)(area_p->y2 - area_p->y1 + 1);
+ 136:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** }
+ 137:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** 
+ 138:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** /**
+ 139:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * Set the width of an area
+ 140:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * @param area_p pointer to an area
+ 141:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * @param w the new width of the area (w == 1 makes x1 == x2)
+ 142:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  */
+ 143:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** void lv_area_set_width(lv_area_t * area_p, lv_coord_t w);
+ 144:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** 
+ 145:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** /**
+ 146:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * Set the height of an area
+ 147:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * @param area_p pointer to an area
+ 148:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * @param h the new height of the area (h == 1 makes y1 == y2)
+ 149:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  */
+ 150:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** void lv_area_set_height(lv_area_t * area_p, lv_coord_t h);
+ 151:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** 
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cceNFVAi.s 			page 12
+
+
+ 152:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** /**
+ 153:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * Set the position of an area (width and height will be kept)
+ 154:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * @param area_p pointer to an area
+ 155:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * @param x the new x coordinate of the area
+ 156:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * @param y the new y coordinate of the area
+ 157:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  */
+ 158:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** void _lv_area_set_pos(lv_area_t * area_p, lv_coord_t x, lv_coord_t y);
+ 159:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** 
+ 160:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** /**
+ 161:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * Return with area of an area (x * y)
+ 162:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * @param area_p pointer to an area
+ 163:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * @return size of area
+ 164:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  */
+ 165:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** uint32_t lv_area_get_size(const lv_area_t * area_p);
+ 166:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** 
+ 167:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** void lv_area_increase(lv_area_t * area, lv_coord_t w_extra, lv_coord_t h_extra);
+ 168:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** 
+ 169:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** void lv_area_move(lv_area_t * area, lv_coord_t x_ofs, lv_coord_t y_ofs);
+ 170:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** 
+ 171:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** /**
+ 172:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * Get the common parts of two areas
+ 173:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * @param res_p pointer to an area, the result will be stored her
+ 174:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * @param a1_p pointer to the first area
+ 175:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * @param a2_p pointer to the second area
+ 176:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * @return false: the two area has NO common parts, res_p is invalid
+ 177:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  */
+ 178:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** bool _lv_area_intersect(lv_area_t * res_p, const lv_area_t * a1_p, const lv_area_t * a2_p);
+ 179:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** 
+ 180:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** /**
+ 181:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * Get resulting sub areas after removing the common parts of two areas from the first area
+ 182:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * @param res_p pointer to an array of areas with a count of 4, the resulting areas will be stored 
+ 183:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * @param a1_p pointer to the first area
+ 184:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * @param a2_p pointer to the second area
+ 185:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * @return number of results (max 4) or -1 if no intersect
+ 186:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  */
+ 187:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** int8_t _lv_area_diff(lv_area_t * res_p, const lv_area_t * a1_p, const lv_area_t * a2_p);
+ 188:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** 
+ 189:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** /**
+ 190:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * Join two areas into a third which involves the other two
+ 191:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * @param res_p pointer to an area, the result will be stored here
+ 192:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * @param a1_p pointer to the first area
+ 193:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * @param a2_p pointer to the second area
+ 194:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  */
+ 195:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** void _lv_area_join(lv_area_t * a_res_p, const lv_area_t * a1_p, const lv_area_t * a2_p);
+ 196:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** 
+ 197:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** /**
+ 198:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * Check if a point is on an area
+ 199:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * @param a_p pointer to an area
+ 200:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * @param p_p pointer to a point
+ 201:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * @param radius radius of area (e.g. for rounded rectangle)
+ 202:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * @return false:the point is out of the area
+ 203:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  */
+ 204:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** bool _lv_area_is_point_on(const lv_area_t * a_p, const lv_point_t * p_p, lv_coord_t radius);
+ 205:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** 
+ 206:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** /**
+ 207:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * Check if two area has common parts
+ 208:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * @param a1_p pointer to an area.
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cceNFVAi.s 			page 13
+
+
+ 209:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * @param a2_p pointer to an other area
+ 210:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * @return false: a1_p and a2_p has no common parts
+ 211:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  */
+ 212:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** bool _lv_area_is_on(const lv_area_t * a1_p, const lv_area_t * a2_p);
+ 213:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** 
+ 214:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** /**
+ 215:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * Check if an area is fully on an other
+ 216:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * @param ain_p pointer to an area which could be in 'aholder_p'
+ 217:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * @param aholder_p pointer to an area which could involve 'ain_p'
+ 218:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * @param radius radius of `aholder_p` (e.g. for rounded rectangle)
+ 219:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * @return true: `ain_p` is fully inside `aholder_p`
+ 220:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  */
+ 221:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** bool _lv_area_is_in(const lv_area_t * ain_p, const lv_area_t * aholder_p, lv_coord_t radius);
+ 222:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** 
+ 223:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** /**
+ 224:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * Check if an area is fully out of an other
+ 225:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * @param aout_p pointer to an area which could be in 'aholder_p'
+ 226:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * @param aholder_p pointer to an area which could involve 'ain_p'
+ 227:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * @param radius radius of `aholder_p` (e.g. for rounded rectangle)
+ 228:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * @return true: `aout_p` is fully outside `aholder_p`
+ 229:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  */
+ 230:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** bool _lv_area_is_out(const lv_area_t * aout_p, const lv_area_t * aholder_p, lv_coord_t radius);
+ 231:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** 
+ 232:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** /**
+ 233:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * Check if 2 area is the same
+ 234:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * @param a pointer to an area
+ 235:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * @param b pointer to another area
+ 236:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  */
+ 237:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** bool _lv_area_is_equal(const lv_area_t * a, const lv_area_t * b);
+ 238:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** 
+ 239:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** /**
+ 240:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * Align an area to an other
+ 241:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * @param base an are where the other will be aligned
+ 242:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * @param to_align the area to align
+ 243:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * @param align `LV_ALIGN_...`
+ 244:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  */
+ 245:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** void lv_area_align(const lv_area_t * base, lv_area_t * to_align, lv_align_t align, lv_coord_t ofs_x
+ 246:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** 
+ 247:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** void lv_point_transform(lv_point_t * p, int32_t angle, int32_t zoom, const lv_point_t * pivot);
+ 248:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** 
+ 249:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** /**********************
+ 250:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  *      MACROS
+ 251:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  **********************/
+ 252:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** 
+ 253:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** #if LV_USE_LARGE_COORD
+ 254:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** #define _LV_COORD_TYPE_SHIFT    (29U)
+ 255:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** #else
+ 256:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** #define _LV_COORD_TYPE_SHIFT    (13U)
+ 257:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** #endif
+ 258:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** 
+ 259:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** #define _LV_COORD_TYPE_MASK     (3 << _LV_COORD_TYPE_SHIFT)
+ 260:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** #define _LV_COORD_TYPE(x)       ((x) & _LV_COORD_TYPE_MASK)  /*Extract type specifiers*/
+ 261:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** #define _LV_COORD_PLAIN(x)      ((x) & ~_LV_COORD_TYPE_MASK) /*Remove type specifiers*/
+ 262:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** 
+ 263:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** #define _LV_COORD_TYPE_PX       (0 << _LV_COORD_TYPE_SHIFT)
+ 264:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** #define _LV_COORD_TYPE_SPEC     (1 << _LV_COORD_TYPE_SHIFT)
+ 265:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** #define _LV_COORD_TYPE_PX_NEG   (3 << _LV_COORD_TYPE_SHIFT)
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cceNFVAi.s 			page 14
+
+
+ 266:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** 
+ 267:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** #define LV_COORD_IS_PX(x)       (_LV_COORD_TYPE(x) == _LV_COORD_TYPE_PX || \
+ 268:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****                                  _LV_COORD_TYPE(x) == _LV_COORD_TYPE_PX_NEG ? true : false)
+ 269:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** #define LV_COORD_IS_SPEC(x)     (_LV_COORD_TYPE(x) == _LV_COORD_TYPE_SPEC ? true : false)
+ 270:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** 
+ 271:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** #define LV_COORD_SET_SPEC(x)    ((x) | _LV_COORD_TYPE_SPEC)
+ 272:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** 
+ 273:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** /*Special coordinates*/
+ 274:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** #define LV_PCT(x)               (x < 0 ? LV_COORD_SET_SPEC(1000 - (x)) : LV_COORD_SET_SPEC(x))
+ 275:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** #define LV_COORD_IS_PCT(x)      ((LV_COORD_IS_SPEC(x) && _LV_COORD_PLAIN(x) <= 2000) ? true : false
+ 276:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** #define LV_COORD_GET_PCT(x)     (_LV_COORD_PLAIN(x) > 1000 ? 1000 - _LV_COORD_PLAIN(x) : _LV_COORD_
+ 277:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** #define LV_SIZE_CONTENT         LV_COORD_SET_SPEC(2001)
+ 278:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** 
+ 279:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** LV_EXPORT_CONST_INT(LV_SIZE_CONTENT);
+ 280:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** 
+ 281:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** /*Max coordinate value*/
+ 282:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** #define LV_COORD_MAX            ((1 << _LV_COORD_TYPE_SHIFT) - 1)
+ 283:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** #define LV_COORD_MIN            (-LV_COORD_MAX)
+ 284:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** 
+ 285:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** LV_EXPORT_CONST_INT(LV_COORD_MAX);
+ 286:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** LV_EXPORT_CONST_INT(LV_COORD_MIN);
+ 287:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** 
+ 288:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** /**
+ 289:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * Convert a percentage value to `lv_coord_t`.
+ 290:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * Percentage values are stored in special range
+ 291:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * @param x the percentage (0..1000)
+ 292:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * @return a coordinate that stores the percentage
+ 293:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  */
+ 294:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** static inline lv_coord_t lv_pct(lv_coord_t x)
+ 295:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** {
+ 296:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****     return LV_PCT(x);
+ 239              		.loc 3 296 5 view .LVU51
+ 240              		.loc 3 296 5 view .LVU52
+ 241              		.loc 1 57 5 is_stmt 0 view .LVU53
+ 242 003a 42F25002 		movw	r2, #8272
+ 243 003e 42F22801 		movw	r1, #8232
+ 244 0042 2846     		mov	r0, r5
+ 245 0044 FFF7FEFF 		bl	lv_obj_set_size
+ 246              	.LVL31:
+  58:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c ****     lv_obj_add_event_cb(cont1, radio_event_handler, LV_EVENT_CLICKED, &active_index_1);
+ 247              		.loc 1 58 5 is_stmt 1 view .LVU54
+ 248 0048 2A4B     		ldr	r3, .L14+8
+ 249 004a 0722     		movs	r2, #7
+ 250 004c 2A49     		ldr	r1, .L14+12
+ 251 004e 2846     		mov	r0, r5
+ 252 0050 FFF7FEFF 		bl	lv_obj_add_event_cb
+ 253              	.LVL32:
+  59:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c **** 
+  60:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c ****     for(i = 0; i < 5; i++) {
+ 254              		.loc 1 60 5 view .LVU55
+ 255              		.loc 1 60 11 is_stmt 0 view .LVU56
+ 256 0054 0023     		movs	r3, #0
+ 257              		.loc 1 60 5 view .LVU57
+ 258 0056 0BE0     		b	.L9
+ 259              	.LVL33:
+ 260              	.L10:
+  61:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c ****         lv_snprintf(buf, sizeof(buf), "A %d", (int)i + 1);
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cceNFVAi.s 			page 15
+
+
+ 261              		.loc 1 61 9 is_stmt 1 discriminator 3 view .LVU58
+ 262 0058 5C1C     		adds	r4, r3, #1
+ 263 005a 2346     		mov	r3, r4
+ 264              	.LVL34:
+ 265              		.loc 1 61 9 is_stmt 0 discriminator 3 view .LVU59
+ 266 005c 274A     		ldr	r2, .L14+16
+ 267 005e 2021     		movs	r1, #32
+ 268 0060 6846     		mov	r0, sp
+ 269 0062 FFF7FEFF 		bl	lv_snprintf
+ 270              	.LVL35:
+  62:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c ****         radiobutton_create(cont1, buf);
+ 271              		.loc 1 62 9 is_stmt 1 discriminator 3 view .LVU60
+ 272 0066 6946     		mov	r1, sp
+ 273 0068 2846     		mov	r0, r5
+ 274 006a FFF7FEFF 		bl	radiobutton_create
+ 275              	.LVL36:
+  60:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c ****         lv_snprintf(buf, sizeof(buf), "A %d", (int)i + 1);
+ 276              		.loc 1 60 23 discriminator 3 view .LVU61
+  60:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c ****         lv_snprintf(buf, sizeof(buf), "A %d", (int)i + 1);
+ 277              		.loc 1 60 24 is_stmt 0 discriminator 3 view .LVU62
+ 278 006e 2346     		mov	r3, r4
+ 279              	.LVL37:
+ 280              	.L9:
+  60:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c ****         lv_snprintf(buf, sizeof(buf), "A %d", (int)i + 1);
+ 281              		.loc 1 60 16 is_stmt 1 discriminator 1 view .LVU63
+  60:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c ****         lv_snprintf(buf, sizeof(buf), "A %d", (int)i + 1);
+ 282              		.loc 1 60 5 is_stmt 0 discriminator 1 view .LVU64
+ 283 0070 042B     		cmp	r3, #4
+ 284 0072 F1D9     		bls	.L10
+  63:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c **** 
+  64:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c ****     }
+  65:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c ****     /*Make the first checkbox checked*/
+  66:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c ****     lv_obj_add_state(lv_obj_get_child(cont1, 0), LV_STATE_CHECKED);
+ 285              		.loc 1 66 5 is_stmt 1 view .LVU65
+ 286              		.loc 1 66 22 is_stmt 0 view .LVU66
+ 287 0074 0021     		movs	r1, #0
+ 288 0076 2846     		mov	r0, r5
+ 289 0078 FFF7FEFF 		bl	lv_obj_get_child
+ 290              	.LVL38:
+ 291              		.loc 1 66 5 view .LVU67
+ 292 007c 0121     		movs	r1, #1
+ 293 007e FFF7FEFF 		bl	lv_obj_add_state
+ 294              	.LVL39:
+  67:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c **** 
+  68:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c ****     lv_obj_t * cont2 = lv_obj_create(lv_scr_act());
+ 295              		.loc 1 68 5 is_stmt 1 view .LVU68
+ 296              	.LBB18:
+ 297              	.LBI18:
+ 182:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** {
+ 298              		.loc 2 182 26 view .LVU69
+ 299              	.LBB19:
+ 300              		.loc 2 184 5 view .LVU70
+ 301              		.loc 2 184 12 is_stmt 0 view .LVU71
+ 302 0082 FFF7FEFF 		bl	lv_disp_get_default
+ 303              	.LVL40:
+ 304 0086 FFF7FEFF 		bl	lv_disp_get_scr_act
+ 305              	.LVL41:
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cceNFVAi.s 			page 16
+
+
+ 306              	.LBE19:
+ 307              	.LBE18:
+ 308              		.loc 1 68 24 view .LVU72
+ 309 008a FFF7FEFF 		bl	lv_obj_create
+ 310              	.LVL42:
+ 311 008e 0546     		mov	r5, r0
+ 312              	.LVL43:
+  69:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c ****     lv_obj_set_flex_flow(cont2, LV_FLEX_FLOW_COLUMN);
+ 313              		.loc 1 69 5 is_stmt 1 view .LVU73
+ 314 0090 0121     		movs	r1, #1
+ 315 0092 FFF7FEFF 		bl	lv_obj_set_flex_flow
+ 316              	.LVL44:
+  70:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c ****     lv_obj_set_size(cont2, lv_pct(40), lv_pct(80));
+ 317              		.loc 1 70 5 view .LVU74
+ 318              		.loc 3 296 5 view .LVU75
+ 319              		.loc 3 296 5 view .LVU76
+ 320              		.loc 1 70 5 is_stmt 0 view .LVU77
+ 321 0096 42F25002 		movw	r2, #8272
+ 322 009a 42F22801 		movw	r1, #8232
+ 323 009e 2846     		mov	r0, r5
+ 324 00a0 FFF7FEFF 		bl	lv_obj_set_size
+ 325              	.LVL45:
+  71:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c ****     lv_obj_set_x(cont2, lv_pct(50));
+ 326              		.loc 1 71 5 is_stmt 1 view .LVU78
+ 327              		.loc 3 296 5 view .LVU79
+ 328              		.loc 1 71 5 is_stmt 0 view .LVU80
+ 329 00a4 42F23201 		movw	r1, #8242
+ 330 00a8 2846     		mov	r0, r5
+ 331 00aa FFF7FEFF 		bl	lv_obj_set_x
+ 332              	.LVL46:
+  72:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c ****     lv_obj_add_event_cb(cont2, radio_event_handler, LV_EVENT_CLICKED, &active_index_2);
+ 333              		.loc 1 72 5 is_stmt 1 view .LVU81
+ 334 00ae 144B     		ldr	r3, .L14+20
+ 335 00b0 0722     		movs	r2, #7
+ 336 00b2 1149     		ldr	r1, .L14+12
+ 337 00b4 2846     		mov	r0, r5
+ 338 00b6 FFF7FEFF 		bl	lv_obj_add_event_cb
+ 339              	.LVL47:
+  73:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c **** 
+  74:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c ****     for(i = 0; i < 3; i++) {
+ 340              		.loc 1 74 5 view .LVU82
+ 341              		.loc 1 74 11 is_stmt 0 view .LVU83
+ 342 00ba 0023     		movs	r3, #0
+ 343              		.loc 1 74 5 view .LVU84
+ 344 00bc 0BE0     		b	.L11
+ 345              	.LVL48:
+ 346              	.L12:
+  75:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c ****         lv_snprintf(buf, sizeof(buf), "B %d", (int)i + 1);
+ 347              		.loc 1 75 9 is_stmt 1 discriminator 3 view .LVU85
+ 348 00be 5C1C     		adds	r4, r3, #1
+ 349 00c0 2346     		mov	r3, r4
+ 350              	.LVL49:
+ 351              		.loc 1 75 9 is_stmt 0 discriminator 3 view .LVU86
+ 352 00c2 104A     		ldr	r2, .L14+24
+ 353 00c4 2021     		movs	r1, #32
+ 354 00c6 6846     		mov	r0, sp
+ 355 00c8 FFF7FEFF 		bl	lv_snprintf
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cceNFVAi.s 			page 17
+
+
+ 356              	.LVL50:
+  76:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c ****         radiobutton_create(cont2, buf);
+ 357              		.loc 1 76 9 is_stmt 1 discriminator 3 view .LVU87
+ 358 00cc 6946     		mov	r1, sp
+ 359 00ce 2846     		mov	r0, r5
+ 360 00d0 FFF7FEFF 		bl	radiobutton_create
+ 361              	.LVL51:
+  74:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c ****         lv_snprintf(buf, sizeof(buf), "B %d", (int)i + 1);
+ 362              		.loc 1 74 23 discriminator 3 view .LVU88
+  74:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c ****         lv_snprintf(buf, sizeof(buf), "B %d", (int)i + 1);
+ 363              		.loc 1 74 24 is_stmt 0 discriminator 3 view .LVU89
+ 364 00d4 2346     		mov	r3, r4
+ 365              	.LVL52:
+ 366              	.L11:
+  74:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c ****         lv_snprintf(buf, sizeof(buf), "B %d", (int)i + 1);
+ 367              		.loc 1 74 16 is_stmt 1 discriminator 1 view .LVU90
+  74:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c ****         lv_snprintf(buf, sizeof(buf), "B %d", (int)i + 1);
+ 368              		.loc 1 74 5 is_stmt 0 discriminator 1 view .LVU91
+ 369 00d6 022B     		cmp	r3, #2
+ 370 00d8 F1D9     		bls	.L12
+  77:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c ****     }
+  78:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c **** 
+  79:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c ****     /*Make the first checkbox checked*/
+  80:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c ****     lv_obj_add_state(lv_obj_get_child(cont2, 0), LV_STATE_CHECKED);
+ 371              		.loc 1 80 5 is_stmt 1 view .LVU92
+ 372              		.loc 1 80 22 is_stmt 0 view .LVU93
+ 373 00da 0021     		movs	r1, #0
+ 374 00dc 2846     		mov	r0, r5
+ 375 00de FFF7FEFF 		bl	lv_obj_get_child
+ 376              	.LVL53:
+ 377              		.loc 1 80 5 view .LVU94
+ 378 00e2 0121     		movs	r1, #1
+ 379 00e4 FFF7FEFF 		bl	lv_obj_add_state
+ 380              	.LVL54:
+  81:lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c **** }
+ 381              		.loc 1 81 1 view .LVU95
+ 382 00e8 09B0     		add	sp, sp, #36
+ 383              		.cfi_def_cfa_offset 12
+ 384              		@ sp needed
+ 385 00ea 30BD     		pop	{r4, r5, pc}
+ 386              	.LVL55:
+ 387              	.L15:
+ 388              		.loc 1 81 1 view .LVU96
+ 389              		.align	2
+ 390              	.L14:
+ 391 00ec 00000000 		.word	.LANCHOR0
+ 392 00f0 00000000 		.word	.LANCHOR1
+ 393 00f4 00000000 		.word	.LANCHOR2
+ 394 00f8 00000000 		.word	radio_event_handler
+ 395 00fc 00000000 		.word	.LC0
+ 396 0100 00000000 		.word	.LANCHOR3
+ 397 0104 08000000 		.word	.LC1
+ 398              		.cfi_endproc
+ 399              	.LFE206:
+ 401              		.section	.bss.active_index_1,"aw",%nobits
+ 402              		.align	2
+ 403              		.set	.LANCHOR2,. + 0
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cceNFVAi.s 			page 18
+
+
+ 406              	active_index_1:
+ 407 0000 00000000 		.space	4
+ 408              		.section	.bss.active_index_2,"aw",%nobits
+ 409              		.align	2
+ 410              		.set	.LANCHOR3,. + 0
+ 413              	active_index_2:
+ 414 0000 00000000 		.space	4
+ 415              		.section	.bss.style_radio,"aw",%nobits
+ 416              		.align	2
+ 417              		.set	.LANCHOR0,. + 0
+ 420              	style_radio:
+ 421 0000 00000000 		.space	8
+ 421      00000000 
+ 422              		.section	.bss.style_radio_chk,"aw",%nobits
+ 423              		.align	2
+ 424              		.set	.LANCHOR1,. + 0
+ 427              	style_radio_chk:
+ 428 0000 00000000 		.space	8
+ 428      00000000 
+ 429              		.text
+ 430              	.Letext0:
+ 431              		.file 4 "c:\\tools\\gcc-arm-none-eabi\\arm-none-eabi\\include\\machine\\_default_types.h"
+ 432              		.file 5 "c:\\tools\\gcc-arm-none-eabi\\arm-none-eabi\\include\\sys\\_stdint.h"
+ 433              		.file 6 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\misc\\lv_color.h"
+ 434              		.file 7 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\misc\\lv_style.h"
+ 435              		.file 8 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/core/lv_obj.h"
+ 436              		.file 9 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\misc\\lv_ll.h"
+ 437              		.file 10 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/core/lv_group.h"
+ 438              		.file 11 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/core/lv_obj_scroll.h"
+ 439              		.file 12 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/core/lv_obj_style.h"
+ 440              		.file 13 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/core/lv_obj_class.h"
+ 441              		.file 14 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/core/lv_event.h"
+ 442              		.file 15 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/widgets/lv_bar.h"
+ 443              		.file 16 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/extra/layouts/flex/lv_flex.h"
+ 444              		.file 17 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/extra/widgets/imgbtn/lv_imgbtn.h"
+ 445              		.file 18 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/hal/lv_hal_disp.h"
+ 446              		.file 19 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\misc\\lv_style_gen.h"
+ 447              		.file 20 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\core\\lv_obj_pos.h"
+ 448              		.file 21 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/misc/lv_printf.h"
+ 449              		.file 22 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/core/lv_obj_tree.h"
+ 450              		.file 23 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/widgets/lv_checkbox.h"
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cceNFVAi.s 			page 19
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 lv_example_checkbox_2.c
+C:\Users\OSD\AppData\Local\Temp\cceNFVAi.s:19     .text.radio_event_handler:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\cceNFVAi.s:24     .text.radio_event_handler:00000000 radio_event_handler
+C:\Users\OSD\AppData\Local\Temp\cceNFVAi.s:104    .text.radiobutton_create:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\cceNFVAi.s:109    .text.radiobutton_create:00000000 radiobutton_create
+C:\Users\OSD\AppData\Local\Temp\cceNFVAi.s:159    .text.radiobutton_create:00000034 $d
+C:\Users\OSD\AppData\Local\Temp\cceNFVAi.s:166    .rodata.lv_example_checkbox_2.str1.4:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\cceNFVAi.s:173    .text.lv_example_checkbox_2:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\cceNFVAi.s:179    .text.lv_example_checkbox_2:00000000 lv_example_checkbox_2
+C:\Users\OSD\AppData\Local\Temp\cceNFVAi.s:391    .text.lv_example_checkbox_2:000000ec $d
+C:\Users\OSD\AppData\Local\Temp\cceNFVAi.s:402    .bss.active_index_1:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\cceNFVAi.s:406    .bss.active_index_1:00000000 active_index_1
+C:\Users\OSD\AppData\Local\Temp\cceNFVAi.s:409    .bss.active_index_2:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\cceNFVAi.s:413    .bss.active_index_2:00000000 active_index_2
+C:\Users\OSD\AppData\Local\Temp\cceNFVAi.s:416    .bss.style_radio:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\cceNFVAi.s:420    .bss.style_radio:00000000 style_radio
+C:\Users\OSD\AppData\Local\Temp\cceNFVAi.s:423    .bss.style_radio_chk:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\cceNFVAi.s:427    .bss.style_radio_chk:00000000 style_radio_chk
+
+UNDEFINED SYMBOLS
+lv_event_get_user_data
+lv_event_get_current_target
+lv_event_get_target
+lv_obj_get_child
+lv_obj_clear_state
+lv_obj_add_state
+lv_obj_get_index
+lv_checkbox_create
+lv_checkbox_set_text
+lv_obj_add_flag
+lv_obj_add_style
+lv_style_init
+lv_style_set_radius
+lv_style_set_bg_img_src
+lv_disp_get_default
+lv_disp_get_scr_act
+lv_obj_create
+lv_obj_set_flex_flow
+lv_obj_set_size
+lv_obj_add_event_cb
+lv_snprintf
+lv_obj_set_x

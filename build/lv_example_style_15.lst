@@ -1,0 +1,782 @@
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccpGJWVp.s 			page 1
+
+
+   1              		.cpu cortex-m7
+   2              		.arch armv7e-m
+   3              		.fpu fpv5-d16
+   4              		.eabi_attribute 28, 1
+   5              		.eabi_attribute 20, 1
+   6              		.eabi_attribute 21, 1
+   7              		.eabi_attribute 23, 3
+   8              		.eabi_attribute 24, 1
+   9              		.eabi_attribute 25, 1
+  10              		.eabi_attribute 26, 1
+  11              		.eabi_attribute 30, 1
+  12              		.eabi_attribute 34, 1
+  13              		.eabi_attribute 18, 4
+  14              		.file	"lv_example_style_15.c"
+  15              		.text
+  16              	.Ltext0:
+  17              		.cfi_sections	.debug_frame
+  18              		.section	.rodata.lv_example_style_15.str1.4,"aMS",%progbits,1
+  19              		.align	2
+  20              	.LC0:
+  21 0000 4E6F726D 		.ascii	"Normal\000"
+  21      616C00
+  22 0007 00       		.align	2
+  23              	.LC1:
+  24 0008 4F70613A 		.ascii	"Opa:50%\000"
+  24      35302500 
+  25              		.align	2
+  26              	.LC2:
+  27 0010 5472616E 		.ascii	"Transf.\000"
+  27      73662E00 
+  28              		.section	.text.lv_example_style_15,"ax",%progbits
+  29              		.align	1
+  30              		.global	lv_example_style_15
+  31              		.syntax unified
+  32              		.thumb
+  33              		.thumb_func
+  35              	lv_example_style_15:
+  36              	.LFB204:
+  37              		.file 1 "lvgl/examples/styles/lv_example_style_15.c"
+   1:lvgl/examples/styles/lv_example_style_15.c **** #include "../lv_examples.h"
+   2:lvgl/examples/styles/lv_example_style_15.c **** #if LV_BUILD_EXAMPLES && LV_USE_BTN && LV_USE_LABEL
+   3:lvgl/examples/styles/lv_example_style_15.c **** 
+   4:lvgl/examples/styles/lv_example_style_15.c **** /**
+   5:lvgl/examples/styles/lv_example_style_15.c ****  * Opacity and Transformations
+   6:lvgl/examples/styles/lv_example_style_15.c ****  */
+   7:lvgl/examples/styles/lv_example_style_15.c **** void lv_example_style_15(void)
+   8:lvgl/examples/styles/lv_example_style_15.c **** {
+  38              		.loc 1 8 1 view -0
+  39              		.cfi_startproc
+  40              		@ args = 0, pretend = 0, frame = 0
+  41              		@ frame_needed = 0, uses_anonymous_args = 0
+  42 0000 10B5     		push	{r4, lr}
+  43              		.cfi_def_cfa_offset 8
+  44              		.cfi_offset 4, -8
+  45              		.cfi_offset 14, -4
+   9:lvgl/examples/styles/lv_example_style_15.c ****     lv_obj_t * btn;
+  46              		.loc 1 9 5 view .LVU1
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccpGJWVp.s 			page 2
+
+
+  10:lvgl/examples/styles/lv_example_style_15.c ****     lv_obj_t * label;
+  47              		.loc 1 10 5 view .LVU2
+  11:lvgl/examples/styles/lv_example_style_15.c **** 
+  12:lvgl/examples/styles/lv_example_style_15.c ****     /*Normal button*/
+  13:lvgl/examples/styles/lv_example_style_15.c ****     btn = lv_btn_create(lv_scr_act());
+  48              		.loc 1 13 5 view .LVU3
+  49              	.LBB20:
+  50              	.LBI20:
+  51              		.file 2 "lvgl/examples/styles/../../src/core/lv_disp.h"
+   1:lvgl/examples/styles/../../src/core/lv_disp.h **** /**
+   2:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @file lv_disp.h
+   3:lvgl/examples/styles/../../src/core/lv_disp.h ****  *
+   4:lvgl/examples/styles/../../src/core/lv_disp.h ****  */
+   5:lvgl/examples/styles/../../src/core/lv_disp.h **** 
+   6:lvgl/examples/styles/../../src/core/lv_disp.h **** #ifndef LV_DISP_H
+   7:lvgl/examples/styles/../../src/core/lv_disp.h **** #define LV_DISP_H
+   8:lvgl/examples/styles/../../src/core/lv_disp.h **** 
+   9:lvgl/examples/styles/../../src/core/lv_disp.h **** #ifdef __cplusplus
+  10:lvgl/examples/styles/../../src/core/lv_disp.h **** extern "C" {
+  11:lvgl/examples/styles/../../src/core/lv_disp.h **** #endif
+  12:lvgl/examples/styles/../../src/core/lv_disp.h **** 
+  13:lvgl/examples/styles/../../src/core/lv_disp.h **** /*********************
+  14:lvgl/examples/styles/../../src/core/lv_disp.h ****  *      INCLUDES
+  15:lvgl/examples/styles/../../src/core/lv_disp.h ****  *********************/
+  16:lvgl/examples/styles/../../src/core/lv_disp.h **** #include "../hal/lv_hal.h"
+  17:lvgl/examples/styles/../../src/core/lv_disp.h **** #include "lv_obj.h"
+  18:lvgl/examples/styles/../../src/core/lv_disp.h **** #include "lv_theme.h"
+  19:lvgl/examples/styles/../../src/core/lv_disp.h **** 
+  20:lvgl/examples/styles/../../src/core/lv_disp.h **** /*********************
+  21:lvgl/examples/styles/../../src/core/lv_disp.h ****  *      DEFINES
+  22:lvgl/examples/styles/../../src/core/lv_disp.h ****  *********************/
+  23:lvgl/examples/styles/../../src/core/lv_disp.h **** 
+  24:lvgl/examples/styles/../../src/core/lv_disp.h **** /**********************
+  25:lvgl/examples/styles/../../src/core/lv_disp.h ****  *      TYPEDEFS
+  26:lvgl/examples/styles/../../src/core/lv_disp.h ****  **********************/
+  27:lvgl/examples/styles/../../src/core/lv_disp.h **** 
+  28:lvgl/examples/styles/../../src/core/lv_disp.h **** typedef enum {
+  29:lvgl/examples/styles/../../src/core/lv_disp.h ****     LV_SCR_LOAD_ANIM_NONE,
+  30:lvgl/examples/styles/../../src/core/lv_disp.h ****     LV_SCR_LOAD_ANIM_OVER_LEFT,
+  31:lvgl/examples/styles/../../src/core/lv_disp.h ****     LV_SCR_LOAD_ANIM_OVER_RIGHT,
+  32:lvgl/examples/styles/../../src/core/lv_disp.h ****     LV_SCR_LOAD_ANIM_OVER_TOP,
+  33:lvgl/examples/styles/../../src/core/lv_disp.h ****     LV_SCR_LOAD_ANIM_OVER_BOTTOM,
+  34:lvgl/examples/styles/../../src/core/lv_disp.h ****     LV_SCR_LOAD_ANIM_MOVE_LEFT,
+  35:lvgl/examples/styles/../../src/core/lv_disp.h ****     LV_SCR_LOAD_ANIM_MOVE_RIGHT,
+  36:lvgl/examples/styles/../../src/core/lv_disp.h ****     LV_SCR_LOAD_ANIM_MOVE_TOP,
+  37:lvgl/examples/styles/../../src/core/lv_disp.h ****     LV_SCR_LOAD_ANIM_MOVE_BOTTOM,
+  38:lvgl/examples/styles/../../src/core/lv_disp.h ****     LV_SCR_LOAD_ANIM_FADE_IN,
+  39:lvgl/examples/styles/../../src/core/lv_disp.h ****     LV_SCR_LOAD_ANIM_FADE_ON = LV_SCR_LOAD_ANIM_FADE_IN, /*For backward compatibility*/
+  40:lvgl/examples/styles/../../src/core/lv_disp.h ****     LV_SCR_LOAD_ANIM_FADE_OUT,
+  41:lvgl/examples/styles/../../src/core/lv_disp.h ****     LV_SCR_LOAD_ANIM_OUT_LEFT,
+  42:lvgl/examples/styles/../../src/core/lv_disp.h ****     LV_SCR_LOAD_ANIM_OUT_RIGHT,
+  43:lvgl/examples/styles/../../src/core/lv_disp.h ****     LV_SCR_LOAD_ANIM_OUT_TOP,
+  44:lvgl/examples/styles/../../src/core/lv_disp.h ****     LV_SCR_LOAD_ANIM_OUT_BOTTOM,
+  45:lvgl/examples/styles/../../src/core/lv_disp.h **** } lv_scr_load_anim_t;
+  46:lvgl/examples/styles/../../src/core/lv_disp.h **** 
+  47:lvgl/examples/styles/../../src/core/lv_disp.h **** /**********************
+  48:lvgl/examples/styles/../../src/core/lv_disp.h ****  * GLOBAL PROTOTYPES
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccpGJWVp.s 			page 3
+
+
+  49:lvgl/examples/styles/../../src/core/lv_disp.h ****  **********************/
+  50:lvgl/examples/styles/../../src/core/lv_disp.h **** 
+  51:lvgl/examples/styles/../../src/core/lv_disp.h **** /**
+  52:lvgl/examples/styles/../../src/core/lv_disp.h ****  * Return with a pointer to the active screen
+  53:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @param disp pointer to display which active screen should be get. (NULL to use the default
+  54:lvgl/examples/styles/../../src/core/lv_disp.h ****  * screen)
+  55:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @return pointer to the active screen object (loaded by 'lv_scr_load()')
+  56:lvgl/examples/styles/../../src/core/lv_disp.h ****  */
+  57:lvgl/examples/styles/../../src/core/lv_disp.h **** lv_obj_t * lv_disp_get_scr_act(lv_disp_t * disp);
+  58:lvgl/examples/styles/../../src/core/lv_disp.h **** 
+  59:lvgl/examples/styles/../../src/core/lv_disp.h **** /**
+  60:lvgl/examples/styles/../../src/core/lv_disp.h ****  * Return with a pointer to the previous screen. Only used during screen transitions.
+  61:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @param disp pointer to display which previous screen should be get. (NULL to use the default
+  62:lvgl/examples/styles/../../src/core/lv_disp.h ****  * screen)
+  63:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @return pointer to the previous screen object or NULL if not used now
+  64:lvgl/examples/styles/../../src/core/lv_disp.h ****  */
+  65:lvgl/examples/styles/../../src/core/lv_disp.h **** lv_obj_t * lv_disp_get_scr_prev(lv_disp_t * disp);
+  66:lvgl/examples/styles/../../src/core/lv_disp.h **** 
+  67:lvgl/examples/styles/../../src/core/lv_disp.h **** /**
+  68:lvgl/examples/styles/../../src/core/lv_disp.h ****  * Make a screen active
+  69:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @param scr pointer to a screen
+  70:lvgl/examples/styles/../../src/core/lv_disp.h ****  */
+  71:lvgl/examples/styles/../../src/core/lv_disp.h **** void lv_disp_load_scr(lv_obj_t * scr);
+  72:lvgl/examples/styles/../../src/core/lv_disp.h **** 
+  73:lvgl/examples/styles/../../src/core/lv_disp.h **** /**
+  74:lvgl/examples/styles/../../src/core/lv_disp.h ****  * Return with the top layer. (Same on every screen and it is above the normal screen layer)
+  75:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @param disp pointer to display which top layer should be get. (NULL to use the default screen)
+  76:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @return pointer to the top layer object (transparent screen sized lv_obj)
+  77:lvgl/examples/styles/../../src/core/lv_disp.h ****  */
+  78:lvgl/examples/styles/../../src/core/lv_disp.h **** lv_obj_t * lv_disp_get_layer_top(lv_disp_t * disp);
+  79:lvgl/examples/styles/../../src/core/lv_disp.h **** 
+  80:lvgl/examples/styles/../../src/core/lv_disp.h **** /**
+  81:lvgl/examples/styles/../../src/core/lv_disp.h ****  * Return with the sys. layer. (Same on every screen and it is above the normal screen and the top
+  82:lvgl/examples/styles/../../src/core/lv_disp.h ****  * layer)
+  83:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @param disp pointer to display which sys. layer should be retrieved. (NULL to use the default sc
+  84:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @return pointer to the sys layer object (transparent screen sized lv_obj)
+  85:lvgl/examples/styles/../../src/core/lv_disp.h ****  */
+  86:lvgl/examples/styles/../../src/core/lv_disp.h **** lv_obj_t * lv_disp_get_layer_sys(lv_disp_t * disp);
+  87:lvgl/examples/styles/../../src/core/lv_disp.h **** 
+  88:lvgl/examples/styles/../../src/core/lv_disp.h **** /**
+  89:lvgl/examples/styles/../../src/core/lv_disp.h ****  * Set the theme of a display
+  90:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @param disp pointer to a display
+  91:lvgl/examples/styles/../../src/core/lv_disp.h ****  */
+  92:lvgl/examples/styles/../../src/core/lv_disp.h **** void lv_disp_set_theme(lv_disp_t * disp, lv_theme_t * th);
+  93:lvgl/examples/styles/../../src/core/lv_disp.h **** 
+  94:lvgl/examples/styles/../../src/core/lv_disp.h **** /**
+  95:lvgl/examples/styles/../../src/core/lv_disp.h ****  * Get the theme of a display
+  96:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @param disp pointer to a display
+  97:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @return the display's theme (can be NULL)
+  98:lvgl/examples/styles/../../src/core/lv_disp.h ****  */
+  99:lvgl/examples/styles/../../src/core/lv_disp.h **** lv_theme_t * lv_disp_get_theme(lv_disp_t * disp);
+ 100:lvgl/examples/styles/../../src/core/lv_disp.h **** 
+ 101:lvgl/examples/styles/../../src/core/lv_disp.h **** /**
+ 102:lvgl/examples/styles/../../src/core/lv_disp.h ****  * Set the background color of a display
+ 103:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @param disp pointer to a display
+ 104:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @param color color of the background
+ 105:lvgl/examples/styles/../../src/core/lv_disp.h ****  */
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccpGJWVp.s 			page 4
+
+
+ 106:lvgl/examples/styles/../../src/core/lv_disp.h **** void lv_disp_set_bg_color(lv_disp_t * disp, lv_color_t color);
+ 107:lvgl/examples/styles/../../src/core/lv_disp.h **** 
+ 108:lvgl/examples/styles/../../src/core/lv_disp.h **** /**
+ 109:lvgl/examples/styles/../../src/core/lv_disp.h ****  * Set the background image of a display
+ 110:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @param disp pointer to a display
+ 111:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @param img_src path to file or pointer to an `lv_img_dsc_t` variable
+ 112:lvgl/examples/styles/../../src/core/lv_disp.h ****  */
+ 113:lvgl/examples/styles/../../src/core/lv_disp.h **** void lv_disp_set_bg_image(lv_disp_t * disp, const void  * img_src);
+ 114:lvgl/examples/styles/../../src/core/lv_disp.h **** 
+ 115:lvgl/examples/styles/../../src/core/lv_disp.h **** /**
+ 116:lvgl/examples/styles/../../src/core/lv_disp.h ****  * Set opacity of the background
+ 117:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @param disp pointer to a display
+ 118:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @param opa opacity (0..255)
+ 119:lvgl/examples/styles/../../src/core/lv_disp.h ****  */
+ 120:lvgl/examples/styles/../../src/core/lv_disp.h **** void lv_disp_set_bg_opa(lv_disp_t * disp, lv_opa_t opa);
+ 121:lvgl/examples/styles/../../src/core/lv_disp.h **** 
+ 122:lvgl/examples/styles/../../src/core/lv_disp.h **** /**
+ 123:lvgl/examples/styles/../../src/core/lv_disp.h ****  * Switch screen with animation
+ 124:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @param scr pointer to the new screen to load
+ 125:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @param anim_type type of the animation from `lv_scr_load_anim_t`, e.g. `LV_SCR_LOAD_ANIM_MOVE_LE
+ 126:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @param time time of the animation
+ 127:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @param delay delay before the transition
+ 128:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @param auto_del true: automatically delete the old screen
+ 129:lvgl/examples/styles/../../src/core/lv_disp.h ****  */
+ 130:lvgl/examples/styles/../../src/core/lv_disp.h **** void lv_scr_load_anim(lv_obj_t * scr, lv_scr_load_anim_t anim_type, uint32_t time, uint32_t delay, 
+ 131:lvgl/examples/styles/../../src/core/lv_disp.h **** 
+ 132:lvgl/examples/styles/../../src/core/lv_disp.h **** /**
+ 133:lvgl/examples/styles/../../src/core/lv_disp.h ****  * Get elapsed time since last user activity on a display (e.g. click)
+ 134:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @param disp pointer to a display (NULL to get the overall smallest inactivity)
+ 135:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @return elapsed ticks (milliseconds) since the last activity
+ 136:lvgl/examples/styles/../../src/core/lv_disp.h ****  */
+ 137:lvgl/examples/styles/../../src/core/lv_disp.h **** uint32_t lv_disp_get_inactive_time(const lv_disp_t * disp);
+ 138:lvgl/examples/styles/../../src/core/lv_disp.h **** 
+ 139:lvgl/examples/styles/../../src/core/lv_disp.h **** /**
+ 140:lvgl/examples/styles/../../src/core/lv_disp.h ****  * Manually trigger an activity on a display
+ 141:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @param disp pointer to a display (NULL to use the default display)
+ 142:lvgl/examples/styles/../../src/core/lv_disp.h ****  */
+ 143:lvgl/examples/styles/../../src/core/lv_disp.h **** void lv_disp_trig_activity(lv_disp_t * disp);
+ 144:lvgl/examples/styles/../../src/core/lv_disp.h **** 
+ 145:lvgl/examples/styles/../../src/core/lv_disp.h **** /**
+ 146:lvgl/examples/styles/../../src/core/lv_disp.h ****  * Clean any CPU cache that is related to the display.
+ 147:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @param disp pointer to a display (NULL to use the default display)
+ 148:lvgl/examples/styles/../../src/core/lv_disp.h ****  */
+ 149:lvgl/examples/styles/../../src/core/lv_disp.h **** void lv_disp_clean_dcache(lv_disp_t * disp);
+ 150:lvgl/examples/styles/../../src/core/lv_disp.h **** 
+ 151:lvgl/examples/styles/../../src/core/lv_disp.h **** /**
+ 152:lvgl/examples/styles/../../src/core/lv_disp.h ****  * Temporarily enable and disable the invalidation of the display.
+ 153:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @param disp pointer to a display (NULL to use the default display)
+ 154:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @param en true: enable invalidation; false: invalidation
+ 155:lvgl/examples/styles/../../src/core/lv_disp.h ****  */
+ 156:lvgl/examples/styles/../../src/core/lv_disp.h **** void lv_disp_enable_invalidation(lv_disp_t * disp, bool en);
+ 157:lvgl/examples/styles/../../src/core/lv_disp.h **** 
+ 158:lvgl/examples/styles/../../src/core/lv_disp.h **** /**
+ 159:lvgl/examples/styles/../../src/core/lv_disp.h ****  * Get display invalidation is enabled.
+ 160:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @param disp pointer to a display (NULL to use the default display)
+ 161:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @return return true if invalidation is enabled
+ 162:lvgl/examples/styles/../../src/core/lv_disp.h ****  */
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccpGJWVp.s 			page 5
+
+
+ 163:lvgl/examples/styles/../../src/core/lv_disp.h **** bool lv_disp_is_invalidation_enabled(lv_disp_t * disp);
+ 164:lvgl/examples/styles/../../src/core/lv_disp.h **** 
+ 165:lvgl/examples/styles/../../src/core/lv_disp.h **** /**
+ 166:lvgl/examples/styles/../../src/core/lv_disp.h ****  * Get a pointer to the screen refresher timer to
+ 167:lvgl/examples/styles/../../src/core/lv_disp.h ****  * modify its parameters with `lv_timer_...` functions.
+ 168:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @param disp pointer to a display
+ 169:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @return pointer to the display refresher timer. (NULL on error)
+ 170:lvgl/examples/styles/../../src/core/lv_disp.h ****  */
+ 171:lvgl/examples/styles/../../src/core/lv_disp.h **** lv_timer_t * _lv_disp_get_refr_timer(lv_disp_t * disp);
+ 172:lvgl/examples/styles/../../src/core/lv_disp.h **** 
+ 173:lvgl/examples/styles/../../src/core/lv_disp.h **** /*------------------------------------------------
+ 174:lvgl/examples/styles/../../src/core/lv_disp.h ****  * To improve backward compatibility
+ 175:lvgl/examples/styles/../../src/core/lv_disp.h ****  * Recommended only if you have one display
+ 176:lvgl/examples/styles/../../src/core/lv_disp.h ****  *------------------------------------------------*/
+ 177:lvgl/examples/styles/../../src/core/lv_disp.h **** 
+ 178:lvgl/examples/styles/../../src/core/lv_disp.h **** /**
+ 179:lvgl/examples/styles/../../src/core/lv_disp.h ****  * Get the active screen of the default display
+ 180:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @return pointer to the active screen
+ 181:lvgl/examples/styles/../../src/core/lv_disp.h ****  */
+ 182:lvgl/examples/styles/../../src/core/lv_disp.h **** static inline lv_obj_t * lv_scr_act(void)
+  52              		.loc 2 182 26 view .LVU4
+  53              	.LBB21:
+ 183:lvgl/examples/styles/../../src/core/lv_disp.h **** {
+ 184:lvgl/examples/styles/../../src/core/lv_disp.h ****     return lv_disp_get_scr_act(lv_disp_get_default());
+  54              		.loc 2 184 5 view .LVU5
+  55              		.loc 2 184 12 is_stmt 0 view .LVU6
+  56 0002 FFF7FEFF 		bl	lv_disp_get_default
+  57              	.LVL0:
+  58 0006 FFF7FEFF 		bl	lv_disp_get_scr_act
+  59              	.LVL1:
+  60              	.LBE21:
+  61              	.LBE20:
+  62              		.loc 1 13 11 view .LVU7
+  63 000a FFF7FEFF 		bl	lv_btn_create
+  64              	.LVL2:
+  65 000e 0446     		mov	r4, r0
+  66              	.LVL3:
+  14:lvgl/examples/styles/lv_example_style_15.c ****     lv_obj_set_size(btn, 100, 40);
+  67              		.loc 1 14 5 is_stmt 1 view .LVU8
+  68 0010 2822     		movs	r2, #40
+  69 0012 6421     		movs	r1, #100
+  70 0014 FFF7FEFF 		bl	lv_obj_set_size
+  71              	.LVL4:
+  15:lvgl/examples/styles/lv_example_style_15.c ****     lv_obj_align(btn, LV_ALIGN_CENTER, 0, -70);
+  72              		.loc 1 15 5 view .LVU9
+  73 0018 6FF04503 		mvn	r3, #69
+  74 001c 0022     		movs	r2, #0
+  75 001e 0921     		movs	r1, #9
+  76 0020 2046     		mov	r0, r4
+  77 0022 FFF7FEFF 		bl	lv_obj_align
+  78              	.LVL5:
+  16:lvgl/examples/styles/lv_example_style_15.c **** 
+  17:lvgl/examples/styles/lv_example_style_15.c ****     label = lv_label_create(btn);
+  79              		.loc 1 17 5 view .LVU10
+  80              		.loc 1 17 13 is_stmt 0 view .LVU11
+  81 0026 2046     		mov	r0, r4
+  82 0028 FFF7FEFF 		bl	lv_label_create
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccpGJWVp.s 			page 6
+
+
+  83              	.LVL6:
+  84 002c 0446     		mov	r4, r0
+  85              	.LVL7:
+  18:lvgl/examples/styles/lv_example_style_15.c ****     lv_label_set_text(label, "Normal");
+  86              		.loc 1 18 5 is_stmt 1 view .LVU12
+  87 002e 3249     		ldr	r1, .L3
+  88 0030 FFF7FEFF 		bl	lv_label_set_text
+  89              	.LVL8:
+  19:lvgl/examples/styles/lv_example_style_15.c ****     lv_obj_center(label);
+  90              		.loc 1 19 5 view .LVU13
+  91              	.LBB22:
+  92              	.LBI22:
+  93              		.file 3 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\core\\lv_obj_pos.h"
+   1:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** /**
+   2:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @file lv_obj_pos.h
+   3:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  *
+   4:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  */
+   5:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** 
+   6:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** #ifndef LV_OBJ_POS_H
+   7:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** #define LV_OBJ_POS_H
+   8:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** 
+   9:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** #ifdef __cplusplus
+  10:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** extern "C" {
+  11:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** #endif
+  12:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** 
+  13:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** /*********************
+  14:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  *      INCLUDES
+  15:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  *********************/
+  16:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** #include "../misc/lv_area.h"
+  17:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** 
+  18:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** /*********************
+  19:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  *      DEFINES
+  20:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  *********************/
+  21:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** 
+  22:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** /**********************
+  23:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  *      TYPEDEFS
+  24:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  **********************/
+  25:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** struct _lv_obj_t;
+  26:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** 
+  27:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** typedef void (*lv_layout_update_cb_t)(struct _lv_obj_t *, void * user_data);
+  28:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** typedef struct {
+  29:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****     lv_layout_update_cb_t cb;
+  30:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****     void * user_data;
+  31:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** } lv_layout_dsc_t;
+  32:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** 
+  33:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** /**********************
+  34:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * GLOBAL PROTOTYPES
+  35:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  **********************/
+  36:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** 
+  37:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** /**
+  38:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * Set the position of an object relative to the set alignment.
+  39:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @param obj       pointer to an object
+  40:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @param x         new x coordinate
+  41:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @param y         new y coordinate
+  42:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @note            With default alignment it's the distance from the top left corner
+  43:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @note            E.g. LV_ALIGN_CENTER alignment it's the offset from the center of the parent
+  44:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @note            The position is interpreted on the content area of the parent
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccpGJWVp.s 			page 7
+
+
+  45:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @note            The values can be set in pixel or in percentage of parent size with `lv_pct(v)`
+  46:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  */
+  47:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** void lv_obj_set_pos(struct _lv_obj_t * obj, lv_coord_t x, lv_coord_t y);
+  48:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** 
+  49:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** /**
+  50:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * Set the x coordinate of an object
+  51:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @param obj       pointer to an object
+  52:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @param x         new x coordinate
+  53:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @note            With default alignment it's the distance from the top left corner
+  54:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @note            E.g. LV_ALIGN_CENTER alignment it's the offset from the center of the parent
+  55:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @note            The position is interpreted on the content area of the parent
+  56:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @note            The values can be set in pixel or in percentage of parent size with `lv_pct(v)`
+  57:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  */
+  58:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** void lv_obj_set_x(struct _lv_obj_t * obj, lv_coord_t x);
+  59:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** 
+  60:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** /**
+  61:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * Set the y coordinate of an object
+  62:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @param obj       pointer to an object
+  63:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @param y         new y coordinate
+  64:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @note            With default alignment it's the distance from the top left corner
+  65:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @note            E.g. LV_ALIGN_CENTER alignment it's the offset from the center of the parent
+  66:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @note            The position is interpreted on the content area of the parent
+  67:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @note            The values can be set in pixel or in percentage of parent size with `lv_pct(v)`
+  68:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  */
+  69:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** void lv_obj_set_y(struct _lv_obj_t * obj, lv_coord_t y);
+  70:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** 
+  71:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** /**
+  72:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * Set the size of an object.
+  73:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @param obj       pointer to an object
+  74:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @param w         the new width
+  75:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @param h         the new height
+  76:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @note            possible values are:
+  77:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  *                  pixel               simple set the size accordingly
+  78:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  *                  LV_SIZE_CONTENT     set the size to involve all children in the given direction
+  79:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  *                  LV_SIZE_PCT(x)     to set size in percentage of the parent's content area size 
+  80:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  *                                      x should be in [0..1000]% range
+  81:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  */
+  82:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** void lv_obj_set_size(struct _lv_obj_t * obj, lv_coord_t w, lv_coord_t h);
+  83:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** 
+  84:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** /**
+  85:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * Recalculate the size of the object
+  86:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @param obj       pointer to an object
+  87:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @return          true: the size has been changed
+  88:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  */
+  89:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** bool lv_obj_refr_size(struct _lv_obj_t * obj);
+  90:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** 
+  91:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** /**
+  92:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * Set the width of an object
+  93:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @param obj       pointer to an object
+  94:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @param w         the new width
+  95:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @note            possible values are:
+  96:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  *                  pixel               simple set the size accordingly
+  97:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  *                  LV_SIZE_CONTENT     set the size to involve all children in the given direction
+  98:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  *                  lv_pct(x)           to set size in percentage of the parent's content area size
+  99:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  *                                      x should be in [0..1000]% range
+ 100:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  */
+ 101:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** void lv_obj_set_width(struct _lv_obj_t * obj, lv_coord_t w);
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccpGJWVp.s 			page 8
+
+
+ 102:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** 
+ 103:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** /**
+ 104:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * Set the height of an object
+ 105:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @param obj       pointer to an object
+ 106:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @param h         the new height
+ 107:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @note            possible values are:
+ 108:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  *                  pixel               simple set the size accordingly
+ 109:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  *                  LV_SIZE_CONTENT     set the size to involve all children in the given direction
+ 110:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  *                  lv_pct(x)           to set size in percentage of the parent's content area size
+ 111:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  *                                      x should be in [0..1000]% range
+ 112:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  */
+ 113:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** void lv_obj_set_height(struct _lv_obj_t * obj, lv_coord_t h);
+ 114:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** 
+ 115:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** /**
+ 116:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * Set the width reduced by the left and right padding and the border width.
+ 117:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @param obj       pointer to an object
+ 118:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @param w         the width without paddings in pixels
+ 119:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  */
+ 120:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** void lv_obj_set_content_width(struct _lv_obj_t * obj, lv_coord_t w);
+ 121:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** 
+ 122:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** /**
+ 123:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * Set the height reduced by the top and bottom padding and the border width.
+ 124:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @param obj       pointer to an object
+ 125:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @param h         the height without paddings in pixels
+ 126:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  */
+ 127:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** void lv_obj_set_content_height(struct _lv_obj_t * obj, lv_coord_t h);
+ 128:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** 
+ 129:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** /**
+ 130:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * Set a layout for an object
+ 131:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @param obj       pointer to an object
+ 132:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @param layout    pointer to a layout descriptor to set
+ 133:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  */
+ 134:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** void lv_obj_set_layout(struct _lv_obj_t * obj, uint32_t layout);
+ 135:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** 
+ 136:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** /**
+ 137:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * Test whether the and object is positioned by a layout or not
+ 138:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @param obj       pointer to an object to test
+ 139:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @return true:    positioned by a layout; false: not positioned by a layout
+ 140:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  */
+ 141:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** bool lv_obj_is_layout_positioned(const struct _lv_obj_t * obj);
+ 142:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** 
+ 143:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** /**
+ 144:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * Mark the object for layout update.
+ 145:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @param obj      pointer to an object whose children needs to be updated
+ 146:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  */
+ 147:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** void lv_obj_mark_layout_as_dirty(struct _lv_obj_t * obj);
+ 148:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** 
+ 149:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** /**
+ 150:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * Update the layout of an object.
+ 151:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @param obj      pointer to an object whose children needs to be updated
+ 152:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  */
+ 153:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** void lv_obj_update_layout(const struct _lv_obj_t * obj);
+ 154:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** 
+ 155:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** /**
+ 156:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * Register a new layout
+ 157:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @param cb        the layout update callback
+ 158:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @param user_data custom data that will be passed to `cb`
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccpGJWVp.s 			page 9
+
+
+ 159:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @return          the ID of the new layout
+ 160:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  */
+ 161:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** uint32_t lv_layout_register(lv_layout_update_cb_t cb, void * user_data);
+ 162:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** 
+ 163:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** /**
+ 164:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * Change the alignment of an object.
+ 165:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @param obj       pointer to an object to align
+ 166:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @param align     type of alignment (see 'lv_align_t' enum) `LV_ALIGN_OUT_...` can't be used.
+ 167:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  */
+ 168:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** void lv_obj_set_align(struct _lv_obj_t * obj, lv_align_t align);
+ 169:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** 
+ 170:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** /**
+ 171:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * Change the alignment of an object and set new coordinates.
+ 172:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * Equivalent to:
+ 173:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * lv_obj_set_align(obj, align);
+ 174:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * lv_obj_set_pos(obj, x_ofs, y_ofs);
+ 175:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @param obj       pointer to an object to align
+ 176:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @param align     type of alignment (see 'lv_align_t' enum) `LV_ALIGN_OUT_...` can't be used.
+ 177:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @param x_ofs     x coordinate offset after alignment
+ 178:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @param y_ofs     y coordinate offset after alignment
+ 179:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  */
+ 180:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** void lv_obj_align(struct _lv_obj_t * obj, lv_align_t align, lv_coord_t x_ofs, lv_coord_t y_ofs);
+ 181:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** 
+ 182:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** /**
+ 183:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * Align an object to an other object.
+ 184:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @param obj       pointer to an object to align
+ 185:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @param base      pointer to an other object (if NULL `obj`s parent is used). 'obj' will be align
+ 186:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @param align     type of alignment (see 'lv_align_t' enum)
+ 187:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @param x_ofs     x coordinate offset after alignment
+ 188:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @param y_ofs     y coordinate offset after alignment
+ 189:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @note            if the position or size of `base` changes `obj` needs to be aligned manually ag
+ 190:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  */
+ 191:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** void lv_obj_align_to(struct _lv_obj_t * obj, const struct _lv_obj_t * base, lv_align_t align, lv_co
+ 192:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****                      lv_coord_t y_ofs);
+ 193:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** 
+ 194:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** /**
+ 195:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * Align an object to the center on its parent.
+ 196:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @param obj       pointer to an object to align
+ 197:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @note            if the parent size changes `obj` needs to be aligned manually again
+ 198:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  */
+ 199:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** static inline void lv_obj_center(struct _lv_obj_t * obj)
+  94              		.loc 3 199 20 view .LVU14
+  95              	.LBB23:
+ 200:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** {
+ 201:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****     lv_obj_align(obj, LV_ALIGN_CENTER, 0, 0);
+  96              		.loc 3 201 5 view .LVU15
+  97 0034 0023     		movs	r3, #0
+  98 0036 1A46     		mov	r2, r3
+  99 0038 0921     		movs	r1, #9
+ 100 003a 2046     		mov	r0, r4
+ 101 003c FFF7FEFF 		bl	lv_obj_align
+ 102              	.LVL9:
+ 103              		.loc 3 201 5 is_stmt 0 view .LVU16
+ 104              	.LBE23:
+ 105              	.LBE22:
+  20:lvgl/examples/styles/lv_example_style_15.c **** 
+  21:lvgl/examples/styles/lv_example_style_15.c ****     /*Set opacity
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccpGJWVp.s 			page 10
+
+
+  22:lvgl/examples/styles/lv_example_style_15.c ****      *The button and the label is rendered to a layer first and that layer is blended*/
+  23:lvgl/examples/styles/lv_example_style_15.c ****     btn = lv_btn_create(lv_scr_act());
+ 106              		.loc 1 23 5 is_stmt 1 view .LVU17
+ 107              	.LBB24:
+ 108              	.LBI24:
+ 182:lvgl/examples/styles/../../src/core/lv_disp.h **** {
+ 109              		.loc 2 182 26 view .LVU18
+ 110              	.LBB25:
+ 111              		.loc 2 184 5 view .LVU19
+ 112              		.loc 2 184 12 is_stmt 0 view .LVU20
+ 113 0040 FFF7FEFF 		bl	lv_disp_get_default
+ 114              	.LVL10:
+ 115 0044 FFF7FEFF 		bl	lv_disp_get_scr_act
+ 116              	.LVL11:
+ 117              	.LBE25:
+ 118              	.LBE24:
+ 119              		.loc 1 23 11 view .LVU21
+ 120 0048 FFF7FEFF 		bl	lv_btn_create
+ 121              	.LVL12:
+ 122 004c 0446     		mov	r4, r0
+ 123              	.LVL13:
+  24:lvgl/examples/styles/lv_example_style_15.c ****     lv_obj_set_size(btn, 100, 40);
+ 124              		.loc 1 24 5 is_stmt 1 view .LVU22
+ 125 004e 2822     		movs	r2, #40
+ 126 0050 6421     		movs	r1, #100
+ 127 0052 FFF7FEFF 		bl	lv_obj_set_size
+ 128              	.LVL14:
+  25:lvgl/examples/styles/lv_example_style_15.c ****     lv_obj_set_style_opa(btn, LV_OPA_50, 0);
+ 129              		.loc 1 25 5 view .LVU23
+ 130 0056 0022     		movs	r2, #0
+ 131 0058 7F21     		movs	r1, #127
+ 132 005a 2046     		mov	r0, r4
+ 133 005c FFF7FEFF 		bl	lv_obj_set_style_opa
+ 134              	.LVL15:
+  26:lvgl/examples/styles/lv_example_style_15.c ****     lv_obj_align(btn, LV_ALIGN_CENTER, 0, 0);
+ 135              		.loc 1 26 5 view .LVU24
+ 136 0060 0023     		movs	r3, #0
+ 137 0062 1A46     		mov	r2, r3
+ 138 0064 0921     		movs	r1, #9
+ 139 0066 2046     		mov	r0, r4
+ 140 0068 FFF7FEFF 		bl	lv_obj_align
+ 141              	.LVL16:
+  27:lvgl/examples/styles/lv_example_style_15.c **** 
+  28:lvgl/examples/styles/lv_example_style_15.c ****     label = lv_label_create(btn);
+ 142              		.loc 1 28 5 view .LVU25
+ 143              		.loc 1 28 13 is_stmt 0 view .LVU26
+ 144 006c 2046     		mov	r0, r4
+ 145 006e FFF7FEFF 		bl	lv_label_create
+ 146              	.LVL17:
+ 147 0072 0446     		mov	r4, r0
+ 148              	.LVL18:
+  29:lvgl/examples/styles/lv_example_style_15.c ****     lv_label_set_text(label, "Opa:50%");
+ 149              		.loc 1 29 5 is_stmt 1 view .LVU27
+ 150 0074 2149     		ldr	r1, .L3+4
+ 151 0076 FFF7FEFF 		bl	lv_label_set_text
+ 152              	.LVL19:
+  30:lvgl/examples/styles/lv_example_style_15.c ****     lv_obj_center(label);
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccpGJWVp.s 			page 11
+
+
+ 153              		.loc 1 30 5 view .LVU28
+ 154              	.LBB26:
+ 155              	.LBI26:
+ 199:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** {
+ 156              		.loc 3 199 20 view .LVU29
+ 157              	.LBB27:
+ 158              		.loc 3 201 5 view .LVU30
+ 159 007a 0023     		movs	r3, #0
+ 160 007c 1A46     		mov	r2, r3
+ 161 007e 0921     		movs	r1, #9
+ 162 0080 2046     		mov	r0, r4
+ 163 0082 FFF7FEFF 		bl	lv_obj_align
+ 164              	.LVL20:
+ 165              		.loc 3 201 5 is_stmt 0 view .LVU31
+ 166              	.LBE27:
+ 167              	.LBE26:
+  31:lvgl/examples/styles/lv_example_style_15.c **** 
+  32:lvgl/examples/styles/lv_example_style_15.c ****     /*Set transformations
+  33:lvgl/examples/styles/lv_example_style_15.c ****      *The button and the label is rendered to a layer first and that layer is transformed*/
+  34:lvgl/examples/styles/lv_example_style_15.c ****     btn = lv_btn_create(lv_scr_act());
+ 168              		.loc 1 34 5 is_stmt 1 view .LVU32
+ 169              	.LBB28:
+ 170              	.LBI28:
+ 182:lvgl/examples/styles/../../src/core/lv_disp.h **** {
+ 171              		.loc 2 182 26 view .LVU33
+ 172              	.LBB29:
+ 173              		.loc 2 184 5 view .LVU34
+ 174              		.loc 2 184 12 is_stmt 0 view .LVU35
+ 175 0086 FFF7FEFF 		bl	lv_disp_get_default
+ 176              	.LVL21:
+ 177 008a FFF7FEFF 		bl	lv_disp_get_scr_act
+ 178              	.LVL22:
+ 179              	.LBE29:
+ 180              	.LBE28:
+ 181              		.loc 1 34 11 view .LVU36
+ 182 008e FFF7FEFF 		bl	lv_btn_create
+ 183              	.LVL23:
+ 184 0092 0446     		mov	r4, r0
+ 185              	.LVL24:
+  35:lvgl/examples/styles/lv_example_style_15.c ****     lv_obj_set_size(btn, 100, 40);
+ 186              		.loc 1 35 5 is_stmt 1 view .LVU37
+ 187 0094 2822     		movs	r2, #40
+ 188 0096 6421     		movs	r1, #100
+ 189 0098 FFF7FEFF 		bl	lv_obj_set_size
+ 190              	.LVL25:
+  36:lvgl/examples/styles/lv_example_style_15.c ****     lv_obj_set_style_transform_angle(btn, 150, 0);        /*15 deg*/
+ 191              		.loc 1 36 5 view .LVU38
+ 192 009c 0022     		movs	r2, #0
+ 193 009e 9621     		movs	r1, #150
+ 194 00a0 2046     		mov	r0, r4
+ 195 00a2 FFF7FEFF 		bl	lv_obj_set_style_transform_angle
+ 196              	.LVL26:
+  37:lvgl/examples/styles/lv_example_style_15.c ****     lv_obj_set_style_transform_zoom(btn, 256 + 64, 0);   /*1.25x*/
+ 197              		.loc 1 37 5 view .LVU39
+ 198 00a6 0022     		movs	r2, #0
+ 199 00a8 4FF4A071 		mov	r1, #320
+ 200 00ac 2046     		mov	r0, r4
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccpGJWVp.s 			page 12
+
+
+ 201 00ae FFF7FEFF 		bl	lv_obj_set_style_transform_zoom
+ 202              	.LVL27:
+  38:lvgl/examples/styles/lv_example_style_15.c ****     lv_obj_set_style_transform_pivot_x(btn, 50, 0);
+ 203              		.loc 1 38 5 view .LVU40
+ 204 00b2 0022     		movs	r2, #0
+ 205 00b4 3221     		movs	r1, #50
+ 206 00b6 2046     		mov	r0, r4
+ 207 00b8 FFF7FEFF 		bl	lv_obj_set_style_transform_pivot_x
+ 208              	.LVL28:
+  39:lvgl/examples/styles/lv_example_style_15.c ****     lv_obj_set_style_transform_pivot_y(btn, 20, 0);
+ 209              		.loc 1 39 5 view .LVU41
+ 210 00bc 0022     		movs	r2, #0
+ 211 00be 1421     		movs	r1, #20
+ 212 00c0 2046     		mov	r0, r4
+ 213 00c2 FFF7FEFF 		bl	lv_obj_set_style_transform_pivot_y
+ 214              	.LVL29:
+  40:lvgl/examples/styles/lv_example_style_15.c ****     lv_obj_set_style_opa(btn, LV_OPA_50, 0);
+ 215              		.loc 1 40 5 view .LVU42
+ 216 00c6 0022     		movs	r2, #0
+ 217 00c8 7F21     		movs	r1, #127
+ 218 00ca 2046     		mov	r0, r4
+ 219 00cc FFF7FEFF 		bl	lv_obj_set_style_opa
+ 220              	.LVL30:
+  41:lvgl/examples/styles/lv_example_style_15.c ****     lv_obj_align(btn, LV_ALIGN_CENTER, 0, 70);
+ 221              		.loc 1 41 5 view .LVU43
+ 222 00d0 4623     		movs	r3, #70
+ 223 00d2 0022     		movs	r2, #0
+ 224 00d4 0921     		movs	r1, #9
+ 225 00d6 2046     		mov	r0, r4
+ 226 00d8 FFF7FEFF 		bl	lv_obj_align
+ 227              	.LVL31:
+  42:lvgl/examples/styles/lv_example_style_15.c **** 
+  43:lvgl/examples/styles/lv_example_style_15.c ****     label = lv_label_create(btn);
+ 228              		.loc 1 43 5 view .LVU44
+ 229              		.loc 1 43 13 is_stmt 0 view .LVU45
+ 230 00dc 2046     		mov	r0, r4
+ 231 00de FFF7FEFF 		bl	lv_label_create
+ 232              	.LVL32:
+ 233 00e2 0446     		mov	r4, r0
+ 234              	.LVL33:
+  44:lvgl/examples/styles/lv_example_style_15.c ****     lv_label_set_text(label, "Transf.");
+ 235              		.loc 1 44 5 is_stmt 1 view .LVU46
+ 236 00e4 0649     		ldr	r1, .L3+8
+ 237 00e6 FFF7FEFF 		bl	lv_label_set_text
+ 238              	.LVL34:
+  45:lvgl/examples/styles/lv_example_style_15.c ****     lv_obj_center(label);
+ 239              		.loc 1 45 5 view .LVU47
+ 240              	.LBB30:
+ 241              	.LBI30:
+ 199:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** {
+ 242              		.loc 3 199 20 view .LVU48
+ 243              	.LBB31:
+ 244              		.loc 3 201 5 view .LVU49
+ 245 00ea 0023     		movs	r3, #0
+ 246 00ec 1A46     		mov	r2, r3
+ 247 00ee 0921     		movs	r1, #9
+ 248 00f0 2046     		mov	r0, r4
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccpGJWVp.s 			page 13
+
+
+ 249 00f2 FFF7FEFF 		bl	lv_obj_align
+ 250              	.LVL35:
+ 251              		.loc 3 201 5 is_stmt 0 view .LVU50
+ 252              	.LBE31:
+ 253              	.LBE30:
+  46:lvgl/examples/styles/lv_example_style_15.c **** }
+ 254              		.loc 1 46 1 view .LVU51
+ 255 00f6 10BD     		pop	{r4, pc}
+ 256              	.LVL36:
+ 257              	.L4:
+ 258              		.loc 1 46 1 view .LVU52
+ 259              		.align	2
+ 260              	.L3:
+ 261 00f8 00000000 		.word	.LC0
+ 262 00fc 08000000 		.word	.LC1
+ 263 0100 10000000 		.word	.LC2
+ 264              		.cfi_endproc
+ 265              	.LFE204:
+ 267              		.text
+ 268              	.Letext0:
+ 269              		.file 4 "c:\\tools\\gcc-arm-none-eabi\\arm-none-eabi\\include\\machine\\_default_types.h"
+ 270              		.file 5 "c:\\tools\\gcc-arm-none-eabi\\arm-none-eabi\\include\\sys\\_stdint.h"
+ 271              		.file 6 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\misc\\lv_area.h"
+ 272              		.file 7 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\misc\\lv_color.h"
+ 273              		.file 8 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\misc\\lv_style.h"
+ 274              		.file 9 "lvgl/examples/styles/../../src/core/lv_obj.h"
+ 275              		.file 10 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\misc\\lv_ll.h"
+ 276              		.file 11 "lvgl/examples/styles/../../src/core/lv_group.h"
+ 277              		.file 12 "lvgl/examples/styles/../../src/core/lv_obj_scroll.h"
+ 278              		.file 13 "lvgl/examples/styles/../../src/core/lv_obj_style.h"
+ 279              		.file 14 "lvgl/examples/styles/../../src/core/lv_obj_class.h"
+ 280              		.file 15 "lvgl/examples/styles/../../src/core/lv_event.h"
+ 281              		.file 16 "lvgl/examples/styles/../../src/hal/lv_hal_disp.h"
+ 282              		.file 17 "lvgl/examples/styles/../../src/widgets/lv_btn.h"
+ 283              		.file 18 "lvgl/examples/styles/../../src/widgets/lv_label.h"
+ 284              		.file 19 "lvgl/examples/styles/../../src/core/lv_obj_style_gen.h"
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccpGJWVp.s 			page 14
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 lv_example_style_15.c
+C:\Users\OSD\AppData\Local\Temp\ccpGJWVp.s:19     .rodata.lv_example_style_15.str1.4:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccpGJWVp.s:29     .text.lv_example_style_15:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccpGJWVp.s:35     .text.lv_example_style_15:00000000 lv_example_style_15
+C:\Users\OSD\AppData\Local\Temp\ccpGJWVp.s:261    .text.lv_example_style_15:000000f8 $d
+
+UNDEFINED SYMBOLS
+lv_disp_get_default
+lv_disp_get_scr_act
+lv_btn_create
+lv_obj_set_size
+lv_obj_align
+lv_label_create
+lv_label_set_text
+lv_obj_set_style_opa
+lv_obj_set_style_transform_angle
+lv_obj_set_style_transform_zoom
+lv_obj_set_style_transform_pivot_x
+lv_obj_set_style_transform_pivot_y

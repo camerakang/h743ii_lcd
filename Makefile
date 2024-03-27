@@ -10,6 +10,12 @@
 #   2015-07-22 - first version
 # ------------------------------------------------
 
+LVGL_DIR_NAME ?= lvgl     #The name of the lvgl folder (change this if you have renamed it)
+LVGL_DIR ?= $(CURDIR)  #The path where the lvgl folder is
+include $(LVGL_DIR)/$(LVGL_DIR_NAME)/lvgl.mk
+#打印LVGL_DIR_NAME和LVGL_DIR
+	
+
 ######################################
 # target
 ######################################
@@ -130,8 +136,8 @@ C_INCLUDES =  \
 -IDrivers/STM32H7xx_HAL_Driver/Inc \
 -IDrivers/STM32H7xx_HAL_Driver/Inc/Legacy \
 -IDrivers/CMSIS/Device/ST/STM32H7xx/Include \
--IDrivers/CMSIS/Include
-
+-IDrivers/CMSIS/Include \
+-Ilvgl
 
 # compile gcc flags
 ASFLAGS = $(MCU) $(AS_DEFS) $(AS_INCLUDES) $(OPT) -Wall -fdata-sections -ffunction-sections

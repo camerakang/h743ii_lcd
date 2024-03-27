@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
   28:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****        (+) PWR_SMPS_1V8_SUPPLIES_LDO
   29:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****        (+) PWR_SMPS_2V5_SUPPLIES_LDO
   30:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****        (+) PWR_SMPS_1V8_SUPPLIES_EXT_AND_LDO
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 2
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 2
 
 
   31:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****        (+) PWR_SMPS_2V5_SUPPLIES_EXT_AND_LDO
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
   85:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****        selected power domain. This API is used only for dual core devices.
   86:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c **** 
   87:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****    (#) Call HAL_PWREx_HoldCore() and HAL_PWREx_ReleaseCore() functions to hold
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 3
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 3
 
 
   88:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****        and release the selected CPU and and their domain peripherals when
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
  142:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****              (++) 2V1
  143:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****              (++) 2V5
  144:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****              (++) 2V8
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 4
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 4
 
 
  145:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c **** 
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
  199:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****                                     EXTI_IMR2_IM57 | EXTI_IMR2_IM58 |\
  200:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****                                     EXTI_IMR2_IM59 | EXTI_IMR2_IM60)
  201:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c **** #else
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 5
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 5
 
 
  202:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c **** #define PWR_EXTI_WAKEUP_PINS_MASK  (EXTI_IMR2_IM55 | EXTI_IMR2_IM56 |\
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
  256:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****             is in normal Run mode, write accesses to RAMs are allowed and VOS
  257:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****             can be changed.
  258:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 6
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 6
 
 
  259:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c **** @endverbatim
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
  313:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c **** HAL_StatusTypeDef HAL_PWREx_ConfigSupply (uint32_t SupplySource)
  314:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c **** {
   29              		.loc 1 314 1 view -0
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 7
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 7
 
 
   30              		.cfi_startproc
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
  335:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****       /* Supply configuration update locked, but new supply configuration
  336:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****          matches with old supply configuration : nothing to do
  337:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****       */
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 8
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 8
 
 
  338:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****       return HAL_OK;
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
  356:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c **** 
  357:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c **** #if defined (SMPS)
  358:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****   /* When the SMPS supplies external circuits verify that SDEXTRDY flag is set */
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 9
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 9
 
 
  359:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****   if ((SupplySource == PWR_SMPS_1V8_SUPPLIES_EXT_AND_LDO) ||
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
  383:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****   * @retval The supply configuration.
  384:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****   */
  385:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c **** uint32_t HAL_PWREx_GetSupplyConfig (void)
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 10
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 10
 
 
  386:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c **** {
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
  413:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c **** HAL_StatusTypeDef HAL_PWREx_ControlVoltageScaling (uint32_t VoltageScaling)
  414:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c **** {
  159              		.loc 1 414 1 is_stmt 1 view -0
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 11
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 11
 
 
  160              		.cfi_startproc
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
  437:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****       MODIFY_REG (PWR->D3CR, PWR_D3CR_VOS, PWR_REGULATOR_VOLTAGE_SCALE1);
  438:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c **** 
  439:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****       /* Get tick */
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 12
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 12
 
 
  440:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****       tickstart = HAL_GetTick ();
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
  445:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****         {
  220              		.loc 1 445 9 is_stmt 1 view .LVU57
  445:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****         {
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 13
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 13
 
 
  221              		.loc 1 445 14 is_stmt 0 view .LVU58
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
  477:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****             return HAL_ERROR;
  478:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****           }
  479:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****         }
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 14
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 14
 
 
  480:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****       }
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
  285              		.loc 1 500 14 view .LVU79
  286 008c 0120     		movs	r0, #1
  287 008e 1AE0     		b	.L18
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 15
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 15
 
 
  288              	.LVL21:
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
  477:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****           }
  327              		.loc 1 477 20 view .LVU95
  328 00c0 0120     		movs	r0, #1
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 16
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 16
 
 
  329 00c2 00E0     		b	.L18
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
  368              		.loc 1 515 14 is_stmt 0 view .LVU102
  369 0000 024B     		ldr	r3, .L41
  370 0002 5868     		ldr	r0, [r3, #4]
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 17
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 17
 
 
  516:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c **** }
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
  398 0000 034A     		ldr	r2, .L44
  399 0002 1368     		ldr	r3, [r2]
  400 0004 23F44043 		bic	r3, r3, #49152
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 18
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 18
 
 
  401 0008 0343     		orrs	r3, r3, r0
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
  445              		.align	1
  446              		.global	HAL_PWREx_EnterSTOPMode
  447              		.syntax unified
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 19
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 19
 
 
  448              		.thumb
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
  607:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c **** 
  608:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****    *** DSTOP mode ***
  609:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****    ==================
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 20
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 20
 
 
  610:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****     [..]
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
  664:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c **** 
  665:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****    *** Keep D3/SRD in RUN mode ***
  666:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****    ===============================
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 21
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 21
 
 
  667:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****     [..]
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
  721:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****   *         the HSI after receiving the frame if it is not a wakeup frame. In
  722:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****   *         this case the HSI clock is propagated only to the peripheral
  723:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****   *         requesting it.
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 22
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 22
 
 
  724:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****   * @note   When exiting STOP mode by issuing an interrupt or a wakeup event,
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
  778:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c **** /**
  779:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****   * @brief Enter a Domain to DSTOP mode.
  780:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****   * @note   This API gives flexibility to manage independently each domain STOP
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 23
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 23
 
 
  781:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****   *         mode. For dual core lines, this API should be executed with the
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
  823:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****   /* Select the regulator state in Stop mode */
  824:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****   MODIFY_REG (PWR->CR1, PWR_CR1_LPDS, Regulator);
  466              		.loc 1 824 3 view .LVU119
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 24
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 24
 
 
  467 0002 174C     		ldr	r4, .L58
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
    8:Drivers/CMSIS/Include/cmsis_gcc.h ****  * Copyright (c) 2009-2019 Arm Limited. All rights reserved.
    9:Drivers/CMSIS/Include/cmsis_gcc.h ****  *
   10:Drivers/CMSIS/Include/cmsis_gcc.h ****  * SPDX-License-Identifier: Apache-2.0
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 25
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 25
 
 
   11:Drivers/CMSIS/Include/cmsis_gcc.h ****  *
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
   65:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __PACKED_STRUCT                        struct __attribute__((packed, aligned(1)))
   66:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
   67:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __PACKED_UNION
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 26
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 26
 
 
   68:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __PACKED_UNION                         union __attribute__((packed, aligned(1)))
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
  122:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef __PROGRAM_START
  123:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  124:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 27
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 27
 
 
  125:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Initializes data and bss sections
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
  179:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
  180:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  181:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef __VECTOR_TABLE_ATTRIBUTE
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 28
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 28
 
 
  182:Drivers/CMSIS/Include/cmsis_gcc.h **** #define __VECTOR_TABLE_ATTRIBUTE  __attribute((used, section(".vectors")))
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
  236:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  237:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MRS %0, control_ns" : "=r" (result) );
  238:Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 29
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 29
 
 
  239:Drivers/CMSIS/Include/cmsis_gcc.h **** }
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
  293:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  294:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  295:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 30
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 30
 
 
  296:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Get xPSR Register
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
  350:Drivers/CMSIS/Include/cmsis_gcc.h **** #if (defined (__ARM_FEATURE_CMSE ) && (__ARM_FEATURE_CMSE == 3))
  351:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
  352:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Set Process Stack Pointer (non-secure)
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 31
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 31
 
 
  353:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Assigns the given value to the non-secure Process Stack Pointer (PSP) when in secure sta
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
  407:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Assigns the given value to the non-secure Main Stack Pointer (MSP) when in secure state.
  408:Drivers/CMSIS/Include/cmsis_gcc.h ****   \param [in]    topOfMainStack  Main Stack Pointer value to set
  409:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 32
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 32
 
 
  410:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE void __TZ_set_MSP_NS(uint32_t topOfMainStack)
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
  464:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE uint32_t __TZ_get_PRIMASK_NS(void)
  465:Drivers/CMSIS/Include/cmsis_gcc.h **** {
  466:Drivers/CMSIS/Include/cmsis_gcc.h ****   uint32_t result;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 33
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 33
 
 
  467:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
  521:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  522:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  523:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 34
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 34
 
 
  524:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Get Base Priority
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
  578:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Set Base Priority with condition
  579:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Assigns the given value to the Base Priority register only if BASEPRI masking is disable
  580:Drivers/CMSIS/Include/cmsis_gcc.h ****            or the new value increases the BASEPRI priority level.
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 35
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 35
 
 
  581:Drivers/CMSIS/Include/cmsis_gcc.h ****   \param [in]    basePri  Base Priority value to set
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
  635:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
  636:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE void __TZ_set_FAULTMASK_NS(uint32_t faultMask)
  637:Drivers/CMSIS/Include/cmsis_gcc.h **** {
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 36
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 36
 
 
  638:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MSR faultmask_ns, %0" : : "r" (faultMask) : "memory");
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
  692:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
  693:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  694:Drivers/CMSIS/Include/cmsis_gcc.h **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 37
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 37
 
 
  695:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
  749:Drivers/CMSIS/Include/cmsis_gcc.h ****     (!defined (__ARM_FEATURE_CMSE) || (__ARM_FEATURE_CMSE < 3)))
  750:Drivers/CMSIS/Include/cmsis_gcc.h ****   // without main extensions, the non-secure MSPLIM is RAZ/WI
  751:Drivers/CMSIS/Include/cmsis_gcc.h ****   return 0U;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 38
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 38
 
 
  752:Drivers/CMSIS/Include/cmsis_gcc.h **** #else
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
  806:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Set Main Stack Pointer Limit (non-secure)
  807:Drivers/CMSIS/Include/cmsis_gcc.h ****   Devices without ARMv8-M Main Extensions (i.e. Cortex-M23) lack the non-secure
  808:Drivers/CMSIS/Include/cmsis_gcc.h ****   Stack Pointer Limit register hence the write is silently ignored.
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 39
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 39
 
 
  809:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
  863:Drivers/CMSIS/Include/cmsis_gcc.h **** #if __has_builtin(__builtin_arm_set_fpscr)
  864:Drivers/CMSIS/Include/cmsis_gcc.h **** // Re-enable using built-in when GCC has been fixed
  865:Drivers/CMSIS/Include/cmsis_gcc.h **** // || (__GNUC__ > 7) || (__GNUC__ == 7 && __GNUC_MINOR__ >= 2)
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 40
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 40
 
 
  866:Drivers/CMSIS/Include/cmsis_gcc.h ****   /* see https://gcc.gnu.org/ml/gcc-patches/2017-04/msg00443.html */
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
  920:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
  921:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Send Event
  922:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Send Event is a hint instruction. It causes an event to be signaled to the CPU.
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 41
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 41
 
 
  923:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
  852:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****     if (STOPEntry == PWR_STOPENTRY_WFI)
  515              		.loc 1 852 5 view .LVU131
  516              		.loc 1 852 8 is_stmt 0 view .LVU132
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 42
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 42
 
 
  517 002a 0129     		cmp	r1, #1
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
  891:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****     if (STOPEntry == PWR_STOPENTRY_WFI)
  892:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****     {
  893:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****       /* Request Wait For Interrupt */
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 43
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 43
 
 
  894:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****       __WFI ();
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
  550              	.L50:
  867:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****   {
  551              		.loc 1 867 8 view .LVU137
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 44
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 44
 
 
  867:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****   {
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
  592              		.cfi_startproc
  593              		@ args = 0, pretend = 0, frame = 0
  594              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 45
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 45
 
 
  595              		@ link register save eliminated.
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
  974:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****   * @note   The system D3/SRD domain enters Standby mode only when the D1 and D2
  975:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****   *         domain are in DStandby.
  976:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****   * @note   Before entering DSTANDBY mode it is recommended to call
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 46
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 46
 
 
  977:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****   *         SCB_CleanDCache function in order to clean the D-Cache and guarantee
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
  633 000c 0B4A     		ldr	r2, .L66+4
  634 000e 1369     		ldr	r3, [r2, #16]
  635 0010 43F00403 		orr	r3, r3, #4
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 47
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 47
 
 
  636 0014 1361     		str	r3, [r2, #16]
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
 1056:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****   }
 1057:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c **** #endif /* defined (PWR_CPUCR_PDDS_D2) */
 1058:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****   else
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 48
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 48
 
 
 1059:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****   {
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
 1082:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c **** {
  682              		.loc 1 1082 1 view -0
  683              		.cfi_startproc
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 49
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 49
 
 
  684              		@ args = 0, pretend = 0, frame = 0
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
 1111:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****   }
 1112:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****   /* D2 CPU flags */
 1113:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****   else if (DomainFlags == PWR_D2_DOMAIN_FLAGS)
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 50
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 50
 
 
 1114:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****   {
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
 1168:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****   }
 1169:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c **** 
 1170:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****   return status;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 51
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 51
 
 
 1171:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c **** }
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
  721 0008 1360     		str	r3, [r2]
 1216:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c **** }
  722              		.loc 1 1216 1 is_stmt 0 view .LVU165
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 52
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 52
 
 
  723 000a 7047     		bx	lr
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
  767              	.LVL39:
  768              	.LFB156:
 1231:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 53
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 53
 
 
 1232:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c **** #if defined (PWR_CR1_SRDRAMSO)
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
 1286:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****   /* Disable memory block shut-off */
 1287:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****   CLEAR_BIT (PWR->CR1, MemoryBlock);
 1288:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c **** }
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 54
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 54
 
 
 1289:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c **** #endif /* defined (PWR_CR1_SRDRAMSO) */
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
  951:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Data Memory Barrier
  952:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Ensures the apparent order of the explicit memory operations before
  953:Drivers/CMSIS/Include/cmsis_gcc.h ****            and after the instruction, without ensuring their completion.
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 55
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 55
 
 
  954:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
 1008:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("revsh %0, %1" : __CMSIS_GCC_OUT_REG (result) : __CMSIS_GCC_USE_REG (value) );
 1009:Drivers/CMSIS/Include/cmsis_gcc.h ****   return result;
 1010:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 56
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 56
 
 
 1011:Drivers/CMSIS/Include/cmsis_gcc.h **** }
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
 1056:Drivers/CMSIS/Include/cmsis_gcc.h **** #else
 1057:Drivers/CMSIS/Include/cmsis_gcc.h ****   uint32_t s = (4U /*sizeof(v)*/ * 8U) - 1U; /* extra shift needed at end */
 1058:Drivers/CMSIS/Include/cmsis_gcc.h **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 57
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 57
 
 
 1059:Drivers/CMSIS/Include/cmsis_gcc.h ****   result = value;                      /* r will be reversed bits of v; first get LSB of v */
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
  821              		.loc 2 1093 10 view .LVU190
  822              	.LBE29:
  823              	.LBE28:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 58
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 58
 
 
  824              		.loc 1 1314 81 view .LVU191
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
  868 002c 0832     		adds	r2, r2, #8
  869 002e 5200     		lsls	r2, r2, #1
  870              		.loc 1 1315 144 view .LVU208
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 59
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 59
 
 
  871 0030 02F01E02 		and	r2, r2, #30
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
  913 0048 4FF48071 		mov	r1, #256
  914 004c 01FA0CF1 		lsl	r1, r1, ip
 1317:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****               (PWR_WKUPEPR_WKUPP1 << (POSITION_VAL(sPinParams->WakeUpPin) & 0x1FU)) | \
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 60
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 60
 
 
  915              		.loc 1 1317 37 view .LVU225
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
  959              	.LVL53:
 1320:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c **** 
 1321:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****   /* Enable and Specify the Wake-Up pin polarity and the pull configuration
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 61
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 61
 
 
 1322:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****      for the event detection (rising or falling edge) */
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
  1003 009a C7E7     		b	.L79
  1004              	.LVL60:
  1005              	.L84:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 62
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 62
 
 
 1091:Drivers/CMSIS/Include/cmsis_gcc.h ****   }
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
 1342:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****   * @retval None
 1343:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****   */
 1344:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c **** void HAL_PWREx_DisableWakeUpPin (uint32_t WakeUpPin)
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 63
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 63
 
 
 1345:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c **** {
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
  1075              		.loc 1 1370 1 is_stmt 1 view -0
  1076              		.cfi_startproc
  1077              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 64
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 64
 
 
  1078              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
  1109              		@ args = 0, pretend = 0, frame = 0
  1110              		@ frame_needed = 0, uses_anonymous_args = 0
  1111              		@ link register save eliminated.
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 65
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 65
 
 
 1396:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****   /* Check the parameter */
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
 1411:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c **** /**
 1412:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****   * @brief This function handles the PWR WAKEUP PIN interrupt request.
 1413:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****   * @note   This API should be called under the WAKEUP_PIN_IRQHandler().
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 66
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 66
 
 
 1414:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****   * @retval None.
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
 1468:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****     /* PWR WKUP6 interrupt user callback */
 1469:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****     HAL_PWREx_WKUP6_Callback ();
 1470:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****   }
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 67
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 67
 
 
 1471:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c **** }
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
  1186              		.thumb_func
  1188              	HAL_PWREx_WKUP3_Callback:
  1189              	.LFB163:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 68
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 68
 
 
 1494:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c **** 
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
  1223              		.thumb
  1224              		.thumb_func
  1226              	HAL_PWREx_WKUP5_Callback:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 69
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 69
 
 
  1227              	.LFB165:
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
  1260              		.syntax unified
  1261              		.thumb
  1262              		.thumb_func
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 70
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 70
 
 
  1264              	HAL_PWREx_WAKEUP_PIN_IRQHandler:
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
  1303              		.loc 1 1454 12 is_stmt 0 view .LVU300
  1304 002a 1A4B     		ldr	r3, .L118
  1305 002c 5B6A     		ldr	r3, [r3, #36]
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 71
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 71
 
 
 1454:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****   {
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
  1350              	.L117:
 1448:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c **** 
  1351              		.loc 1 1448 5 view .LVU311
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 72
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 72
 
 
  1352 0074 074A     		ldr	r2, .L118
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
 1559:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****           content is retained even in Standby or VBAT mode when the low power
 1560:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****           backup regulator is enabled. It can be considered as an internal
 1561:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****           EEPROM when VBAT is always present. You can use the
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 73
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 73
 
 
 1562:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****           HAL_PWREx_EnableBkUpReg() function to enable the low power backup
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
 1616:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c **** 
 1617:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c **** @endverbatim
 1618:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****   * @{
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 74
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 74
 
 
 1619:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****   */
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
  1421 0020 001B     		subs	r0, r0, r4
  1422              		.loc 1 1638 8 view .LVU328
  1423 0022 B0F57A7F 		cmp	r0, #1000
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 75
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 75
 
 
  1424 0026 F4D9     		bls	.L121
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
  1462 0002 0B4A     		ldr	r2, .L136
  1463 0004 9368     		ldr	r3, [r2, #8]
  1464 0006 23F00103 		bic	r3, r3, #1
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 76
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 76
 
 
  1465 000a 9360     		str	r3, [r2, #8]
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
  1504 0030 00480258 		.word	1476544512
  1505              		.cfi_endproc
  1506              	.LFE168:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 77
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 77
 
 
  1508              		.section	.text.HAL_PWREx_EnableUSBReg,"ax",%progbits
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
 1689:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****   {
 1690:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****     if ((HAL_GetTick() - tickstart ) > PWR_FLAG_SETTING_DELAY)
  1546              		.loc 1 1690 5 is_stmt 1 view .LVU359
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 78
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 78
 
 
  1547              		.loc 1 1690 10 is_stmt 0 view .LVU360
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
  1589              		.cfi_offset 14, -4
 1705:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****   uint32_t tickstart;
  1590              		.loc 1 1705 3 view .LVU368
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 79
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 79
 
 
 1706:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c **** 
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
  1627              		.loc 1 1723 1 view .LVU382
  1628 002e 10BD     		pop	{r4, pc}
  1629              	.LVL92:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 80
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 80
 
 
  1630              	.L155:
@@ -4798,7 +4798,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
 1737:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****   * @retval None.
 1738:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****   */
 1739:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c **** void HAL_PWREx_DisableUSBVoltageDetector (void)
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 81
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 81
 
 
 1740:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c **** {
@@ -4858,7 +4858,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
 1761:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****   MODIFY_REG (PWR->CR3, PWR_CR3_VBRS, ResistorValue);
  1710              		.loc 1 1761 3 view .LVU392
  1711 0000 054A     		ldr	r2, .L163
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 82
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 82
 
 
  1712 0002 D368     		ldr	r3, [r2, #12]
@@ -4918,7 +4918,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
  1754              		.cfi_endproc
  1755              	.LFE174:
  1757              		.section	.text.HAL_PWREx_EnableMonitoring,"ax",%progbits
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 83
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 83
 
 
  1758              		.align	1
@@ -4978,7 +4978,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
 1823:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****           two threshold levels: VBAThigh and VBATlow. VBATH flag and VBATL flags
 1824:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****           in the PWR control register 2 (PWR_CR2), indicate if VBAT is higher or
 1825:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****           lower than the threshold.
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 84
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 84
 
 
 1826:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****       (+) The temperature can be monitored by comparing it with two threshold
@@ -5038,7 +5038,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
  1780              	.L169:
  1781 000c 00480258 		.word	1476544512
  1782              		.cfi_endproc
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 85
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 85
 
 
  1783              	.LFE175:
@@ -5098,7 +5098,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
  1823              		.cfi_startproc
  1824              		@ args = 0, pretend = 0, frame = 0
  1825              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 86
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 86
 
 
  1826              		@ link register save eliminated.
@@ -5158,7 +5158,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
  1858              		.align	1
  1859              		.global	HAL_PWREx_GetVBATLevel
  1860              		.syntax unified
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 87
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 87
 
 
  1861              		.thumb
@@ -5218,7 +5218,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
  1889              	.LVL97:
 1934:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****   }
 1935:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 88
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 88
 
 
 1936:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****   return VBATLevel;
@@ -5278,7 +5278,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
 1971:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****   *         the different Cortex-Mx through PWR_Exported_Macro provided by this
 1972:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****   *         driver. All combination are allowed: wake up only Cortex-M7, wake up
 1973:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****   *         only Cortex-M4 and wake up Cortex-M7 and Cortex-M4.
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 89
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 89
 
 
 1974:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****   * @retval None.
@@ -5338,7 +5338,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
  1942              		.loc 1 1996 3 view .LVU436
  1943              		.loc 1 1996 18 is_stmt 0 view .LVU437
  1944 003a 4368     		ldr	r3, [r0, #4]
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 90
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 90
 
 
  1945              		.loc 1 1996 6 view .LVU438
@@ -5398,7 +5398,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
  1980 007e 4368     		ldr	r3, [r0, #4]
  1981              		.loc 1 2015 6 view .LVU450
  1982 0080 13F0020F 		tst	r3, #2
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 91
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 91
 
 
  1983 0084 05D0     		beq	.L184
@@ -5458,7 +5458,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
  2025              	.LFE180:
  2027              		.section	.text.HAL_PWREx_DisableAVD,"ax",%progbits
  2028              		.align	1
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 92
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 92
 
 
  2029              		.global	HAL_PWREx_DisableAVD
@@ -5518,7 +5518,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
 2052:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****     if (HAL_GetCurrentCPUID () == CM7_CPUID)
 2053:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c **** #endif /* defined (DUAL_CORE) */
 2054:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****     {
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 93
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 93
 
 
 2055:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****       /* Check PWR D1/CD EXTI flag */
@@ -5578,7 +5578,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
 2109:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****       }
 2110:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****     }
 2111:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c **** #endif /* defined (DUAL_CORE) */
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 94
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 94
 
 
 2112:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****   }
@@ -5638,7 +5638,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
  2101 0010 D3F88830 		ldr	r3, [r3, #136]
 2056:Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c ****       {
  2102              		.loc 1 2056 10 view .LVU467
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 95
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 95
 
 
  2103 0014 13F4803F 		tst	r3, #65536
@@ -5698,7 +5698,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
  2145              		.align	2
  2146              	.L204:
  2147 0060 00480258 		.word	1476544512
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 96
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 96
 
 
  2148              		.cfi_endproc
@@ -5713,127 +5713,127 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 1
  2158              		.file 8 "Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr_ex.h"
  2159              		.file 9 "Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr.h"
  2160              		.file 10 "Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h"
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 97
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 97
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 stm32h7xx_hal_pwr_ex.c
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:19     .text.HAL_PWREx_ConfigSupply:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:25     .text.HAL_PWREx_ConfigSupply:00000000 HAL_PWREx_ConfigSupply
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:117    .text.HAL_PWREx_ConfigSupply:00000050 $d
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:122    .text.HAL_PWREx_GetSupplyConfig:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:128    .text.HAL_PWREx_GetSupplyConfig:00000000 HAL_PWREx_GetSupplyConfig
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:145    .text.HAL_PWREx_GetSupplyConfig:0000000c $d
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:150    .text.HAL_PWREx_ControlVoltageScaling:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:156    .text.HAL_PWREx_ControlVoltageScaling:00000000 HAL_PWREx_ControlVoltageScaling
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:348    .text.HAL_PWREx_ControlVoltageScaling:000000cc $d
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:354    .text.HAL_PWREx_GetVoltageRange:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:360    .text.HAL_PWREx_GetVoltageRange:00000000 HAL_PWREx_GetVoltageRange
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:377    .text.HAL_PWREx_GetVoltageRange:0000000c $d
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:382    .text.HAL_PWREx_ControlStopModeVoltageScaling:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:388    .text.HAL_PWREx_ControlStopModeVoltageScaling:00000000 HAL_PWREx_ControlStopModeVoltageScaling
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:412    .text.HAL_PWREx_ControlStopModeVoltageScaling:00000010 $d
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:417    .text.HAL_PWREx_GetStopModeVoltageRange:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:423    .text.HAL_PWREx_GetStopModeVoltageRange:00000000 HAL_PWREx_GetStopModeVoltageRange
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:440    .text.HAL_PWREx_GetStopModeVoltageRange:0000000c $d
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:445    .text.HAL_PWREx_EnterSTOPMode:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:451    .text.HAL_PWREx_EnterSTOPMode:00000000 HAL_PWREx_EnterSTOPMode
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:577    .text.HAL_PWREx_EnterSTOPMode:00000060 $d
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:583    .text.HAL_PWREx_ClearPendingEvent:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:589    .text.HAL_PWREx_ClearPendingEvent:00000000 HAL_PWREx_ClearPendingEvent
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:609    .text.HAL_PWREx_EnterSTANDBYMode:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:615    .text.HAL_PWREx_EnterSTANDBYMode:00000000 HAL_PWREx_EnterSTANDBYMode
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:667    .text.HAL_PWREx_EnterSTANDBYMode:00000038 $d
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:673    .text.HAL_PWREx_ConfigD3Domain:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:679    .text.HAL_PWREx_ConfigD3Domain:00000000 HAL_PWREx_ConfigD3Domain
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:699    .text.HAL_PWREx_ConfigD3Domain:00000010 $d
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:704    .text.HAL_PWREx_EnableFlashPowerDown:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:710    .text.HAL_PWREx_EnableFlashPowerDown:00000000 HAL_PWREx_EnableFlashPowerDown
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:727    .text.HAL_PWREx_EnableFlashPowerDown:0000000c $d
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:732    .text.HAL_PWREx_DisableFlashPowerDown:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:738    .text.HAL_PWREx_DisableFlashPowerDown:00000000 HAL_PWREx_DisableFlashPowerDown
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:755    .text.HAL_PWREx_DisableFlashPowerDown:0000000c $d
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:760    .text.HAL_PWREx_EnableWakeUpPin:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:766    .text.HAL_PWREx_EnableWakeUpPin:00000000 HAL_PWREx_EnableWakeUpPin
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:1029   .text.HAL_PWREx_EnableWakeUpPin:000000a4 $d
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:1036   .text.HAL_PWREx_DisableWakeUpPin:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:1042   .text.HAL_PWREx_DisableWakeUpPin:00000000 HAL_PWREx_DisableWakeUpPin
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:1061   .text.HAL_PWREx_DisableWakeUpPin:0000000c $d
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:1066   .text.HAL_PWREx_GetWakeupFlag:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:1072   .text.HAL_PWREx_GetWakeupFlag:00000000 HAL_PWREx_GetWakeupFlag
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:1093   .text.HAL_PWREx_GetWakeupFlag:00000008 $d
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:1098   .text.HAL_PWREx_ClearWakeupFlag:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:1104   .text.HAL_PWREx_ClearWakeupFlag:00000000 HAL_PWREx_ClearWakeupFlag
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:1139   .text.HAL_PWREx_ClearWakeupFlag:00000018 $d
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:1144   .text.HAL_PWREx_WKUP1_Callback:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:1150   .text.HAL_PWREx_WKUP1_Callback:00000000 HAL_PWREx_WKUP1_Callback
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:1163   .text.HAL_PWREx_WKUP2_Callback:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:1169   .text.HAL_PWREx_WKUP2_Callback:00000000 HAL_PWREx_WKUP2_Callback
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:1182   .text.HAL_PWREx_WKUP3_Callback:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:1188   .text.HAL_PWREx_WKUP3_Callback:00000000 HAL_PWREx_WKUP3_Callback
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:1201   .text.HAL_PWREx_WKUP4_Callback:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:1207   .text.HAL_PWREx_WKUP4_Callback:00000000 HAL_PWREx_WKUP4_Callback
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 98
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:19     .text.HAL_PWREx_ConfigSupply:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:25     .text.HAL_PWREx_ConfigSupply:00000000 HAL_PWREx_ConfigSupply
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:117    .text.HAL_PWREx_ConfigSupply:00000050 $d
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:122    .text.HAL_PWREx_GetSupplyConfig:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:128    .text.HAL_PWREx_GetSupplyConfig:00000000 HAL_PWREx_GetSupplyConfig
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:145    .text.HAL_PWREx_GetSupplyConfig:0000000c $d
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:150    .text.HAL_PWREx_ControlVoltageScaling:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:156    .text.HAL_PWREx_ControlVoltageScaling:00000000 HAL_PWREx_ControlVoltageScaling
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:348    .text.HAL_PWREx_ControlVoltageScaling:000000cc $d
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:354    .text.HAL_PWREx_GetVoltageRange:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:360    .text.HAL_PWREx_GetVoltageRange:00000000 HAL_PWREx_GetVoltageRange
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:377    .text.HAL_PWREx_GetVoltageRange:0000000c $d
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:382    .text.HAL_PWREx_ControlStopModeVoltageScaling:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:388    .text.HAL_PWREx_ControlStopModeVoltageScaling:00000000 HAL_PWREx_ControlStopModeVoltageScaling
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:412    .text.HAL_PWREx_ControlStopModeVoltageScaling:00000010 $d
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:417    .text.HAL_PWREx_GetStopModeVoltageRange:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:423    .text.HAL_PWREx_GetStopModeVoltageRange:00000000 HAL_PWREx_GetStopModeVoltageRange
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:440    .text.HAL_PWREx_GetStopModeVoltageRange:0000000c $d
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:445    .text.HAL_PWREx_EnterSTOPMode:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:451    .text.HAL_PWREx_EnterSTOPMode:00000000 HAL_PWREx_EnterSTOPMode
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:577    .text.HAL_PWREx_EnterSTOPMode:00000060 $d
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:583    .text.HAL_PWREx_ClearPendingEvent:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:589    .text.HAL_PWREx_ClearPendingEvent:00000000 HAL_PWREx_ClearPendingEvent
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:609    .text.HAL_PWREx_EnterSTANDBYMode:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:615    .text.HAL_PWREx_EnterSTANDBYMode:00000000 HAL_PWREx_EnterSTANDBYMode
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:667    .text.HAL_PWREx_EnterSTANDBYMode:00000038 $d
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:673    .text.HAL_PWREx_ConfigD3Domain:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:679    .text.HAL_PWREx_ConfigD3Domain:00000000 HAL_PWREx_ConfigD3Domain
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:699    .text.HAL_PWREx_ConfigD3Domain:00000010 $d
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:704    .text.HAL_PWREx_EnableFlashPowerDown:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:710    .text.HAL_PWREx_EnableFlashPowerDown:00000000 HAL_PWREx_EnableFlashPowerDown
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:727    .text.HAL_PWREx_EnableFlashPowerDown:0000000c $d
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:732    .text.HAL_PWREx_DisableFlashPowerDown:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:738    .text.HAL_PWREx_DisableFlashPowerDown:00000000 HAL_PWREx_DisableFlashPowerDown
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:755    .text.HAL_PWREx_DisableFlashPowerDown:0000000c $d
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:760    .text.HAL_PWREx_EnableWakeUpPin:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:766    .text.HAL_PWREx_EnableWakeUpPin:00000000 HAL_PWREx_EnableWakeUpPin
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:1029   .text.HAL_PWREx_EnableWakeUpPin:000000a4 $d
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:1036   .text.HAL_PWREx_DisableWakeUpPin:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:1042   .text.HAL_PWREx_DisableWakeUpPin:00000000 HAL_PWREx_DisableWakeUpPin
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:1061   .text.HAL_PWREx_DisableWakeUpPin:0000000c $d
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:1066   .text.HAL_PWREx_GetWakeupFlag:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:1072   .text.HAL_PWREx_GetWakeupFlag:00000000 HAL_PWREx_GetWakeupFlag
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:1093   .text.HAL_PWREx_GetWakeupFlag:00000008 $d
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:1098   .text.HAL_PWREx_ClearWakeupFlag:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:1104   .text.HAL_PWREx_ClearWakeupFlag:00000000 HAL_PWREx_ClearWakeupFlag
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:1139   .text.HAL_PWREx_ClearWakeupFlag:00000018 $d
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:1144   .text.HAL_PWREx_WKUP1_Callback:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:1150   .text.HAL_PWREx_WKUP1_Callback:00000000 HAL_PWREx_WKUP1_Callback
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:1163   .text.HAL_PWREx_WKUP2_Callback:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:1169   .text.HAL_PWREx_WKUP2_Callback:00000000 HAL_PWREx_WKUP2_Callback
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:1182   .text.HAL_PWREx_WKUP3_Callback:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:1188   .text.HAL_PWREx_WKUP3_Callback:00000000 HAL_PWREx_WKUP3_Callback
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:1201   .text.HAL_PWREx_WKUP4_Callback:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:1207   .text.HAL_PWREx_WKUP4_Callback:00000000 HAL_PWREx_WKUP4_Callback
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 98
 
 
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:1220   .text.HAL_PWREx_WKUP5_Callback:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:1226   .text.HAL_PWREx_WKUP5_Callback:00000000 HAL_PWREx_WKUP5_Callback
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:1239   .text.HAL_PWREx_WKUP6_Callback:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:1245   .text.HAL_PWREx_WKUP6_Callback:00000000 HAL_PWREx_WKUP6_Callback
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:1258   .text.HAL_PWREx_WAKEUP_PIN_IRQHandler:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:1264   .text.HAL_PWREx_WAKEUP_PIN_IRQHandler:00000000 HAL_PWREx_WAKEUP_PIN_IRQHandler
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:1374   .text.HAL_PWREx_WAKEUP_PIN_IRQHandler:00000094 $d
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:1379   .text.HAL_PWREx_EnableBkUpReg:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:1385   .text.HAL_PWREx_EnableBkUpReg:00000000 HAL_PWREx_EnableBkUpReg
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:1439   .text.HAL_PWREx_EnableBkUpReg:00000030 $d
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:1444   .text.HAL_PWREx_DisableBkUpReg:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:1450   .text.HAL_PWREx_DisableBkUpReg:00000000 HAL_PWREx_DisableBkUpReg
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:1504   .text.HAL_PWREx_DisableBkUpReg:00000030 $d
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:1509   .text.HAL_PWREx_EnableUSBReg:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:1515   .text.HAL_PWREx_EnableUSBReg:00000000 HAL_PWREx_EnableUSBReg
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:1569   .text.HAL_PWREx_EnableUSBReg:00000030 $d
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:1574   .text.HAL_PWREx_DisableUSBReg:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:1580   .text.HAL_PWREx_DisableUSBReg:00000000 HAL_PWREx_DisableUSBReg
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:1634   .text.HAL_PWREx_DisableUSBReg:00000030 $d
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:1639   .text.HAL_PWREx_EnableUSBVoltageDetector:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:1645   .text.HAL_PWREx_EnableUSBVoltageDetector:00000000 HAL_PWREx_EnableUSBVoltageDetector
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:1662   .text.HAL_PWREx_EnableUSBVoltageDetector:0000000c $d
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:1667   .text.HAL_PWREx_DisableUSBVoltageDetector:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:1673   .text.HAL_PWREx_DisableUSBVoltageDetector:00000000 HAL_PWREx_DisableUSBVoltageDetector
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:1690   .text.HAL_PWREx_DisableUSBVoltageDetector:0000000c $d
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:1695   .text.HAL_PWREx_EnableBatteryCharging:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:1701   .text.HAL_PWREx_EnableBatteryCharging:00000000 HAL_PWREx_EnableBatteryCharging
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:1725   .text.HAL_PWREx_EnableBatteryCharging:00000018 $d
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:1730   .text.HAL_PWREx_DisableBatteryCharging:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:1736   .text.HAL_PWREx_DisableBatteryCharging:00000000 HAL_PWREx_DisableBatteryCharging
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:1753   .text.HAL_PWREx_DisableBatteryCharging:0000000c $d
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:1758   .text.HAL_PWREx_EnableMonitoring:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:1764   .text.HAL_PWREx_EnableMonitoring:00000000 HAL_PWREx_EnableMonitoring
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:1781   .text.HAL_PWREx_EnableMonitoring:0000000c $d
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:1786   .text.HAL_PWREx_DisableMonitoring:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:1792   .text.HAL_PWREx_DisableMonitoring:00000000 HAL_PWREx_DisableMonitoring
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:1809   .text.HAL_PWREx_DisableMonitoring:0000000c $d
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:1814   .text.HAL_PWREx_GetTemperatureLevel:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:1820   .text.HAL_PWREx_GetTemperatureLevel:00000000 HAL_PWREx_GetTemperatureLevel
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:1853   .text.HAL_PWREx_GetTemperatureLevel:00000018 $d
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:1858   .text.HAL_PWREx_GetVBATLevel:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:1864   .text.HAL_PWREx_GetVBATLevel:00000000 HAL_PWREx_GetVBATLevel
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:1897   .text.HAL_PWREx_GetVBATLevel:00000018 $d
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:1902   .text.HAL_PWREx_ConfigAVD:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:1908   .text.HAL_PWREx_ConfigAVD:00000000 HAL_PWREx_ConfigAVD
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:1995   .text.HAL_PWREx_ConfigAVD:00000094 $d
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:2000   .text.HAL_PWREx_EnableAVD:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:2006   .text.HAL_PWREx_EnableAVD:00000000 HAL_PWREx_EnableAVD
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:2023   .text.HAL_PWREx_EnableAVD:0000000c $d
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:2028   .text.HAL_PWREx_DisableAVD:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:2034   .text.HAL_PWREx_DisableAVD:00000000 HAL_PWREx_DisableAVD
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:2051   .text.HAL_PWREx_DisableAVD:0000000c $d
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:2056   .text.HAL_PWREx_AVDCallback:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:2062   .text.HAL_PWREx_AVDCallback:00000000 HAL_PWREx_AVDCallback
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:2075   .text.HAL_PWREx_PVD_AVD_IRQHandler:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:2081   .text.HAL_PWREx_PVD_AVD_IRQHandler:00000000 HAL_PWREx_PVD_AVD_IRQHandler
-C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s:2147   .text.HAL_PWREx_PVD_AVD_IRQHandler:00000060 $d
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0fllk.s 			page 99
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:1220   .text.HAL_PWREx_WKUP5_Callback:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:1226   .text.HAL_PWREx_WKUP5_Callback:00000000 HAL_PWREx_WKUP5_Callback
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:1239   .text.HAL_PWREx_WKUP6_Callback:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:1245   .text.HAL_PWREx_WKUP6_Callback:00000000 HAL_PWREx_WKUP6_Callback
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:1258   .text.HAL_PWREx_WAKEUP_PIN_IRQHandler:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:1264   .text.HAL_PWREx_WAKEUP_PIN_IRQHandler:00000000 HAL_PWREx_WAKEUP_PIN_IRQHandler
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:1374   .text.HAL_PWREx_WAKEUP_PIN_IRQHandler:00000094 $d
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:1379   .text.HAL_PWREx_EnableBkUpReg:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:1385   .text.HAL_PWREx_EnableBkUpReg:00000000 HAL_PWREx_EnableBkUpReg
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:1439   .text.HAL_PWREx_EnableBkUpReg:00000030 $d
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:1444   .text.HAL_PWREx_DisableBkUpReg:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:1450   .text.HAL_PWREx_DisableBkUpReg:00000000 HAL_PWREx_DisableBkUpReg
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:1504   .text.HAL_PWREx_DisableBkUpReg:00000030 $d
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:1509   .text.HAL_PWREx_EnableUSBReg:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:1515   .text.HAL_PWREx_EnableUSBReg:00000000 HAL_PWREx_EnableUSBReg
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:1569   .text.HAL_PWREx_EnableUSBReg:00000030 $d
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:1574   .text.HAL_PWREx_DisableUSBReg:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:1580   .text.HAL_PWREx_DisableUSBReg:00000000 HAL_PWREx_DisableUSBReg
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:1634   .text.HAL_PWREx_DisableUSBReg:00000030 $d
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:1639   .text.HAL_PWREx_EnableUSBVoltageDetector:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:1645   .text.HAL_PWREx_EnableUSBVoltageDetector:00000000 HAL_PWREx_EnableUSBVoltageDetector
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:1662   .text.HAL_PWREx_EnableUSBVoltageDetector:0000000c $d
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:1667   .text.HAL_PWREx_DisableUSBVoltageDetector:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:1673   .text.HAL_PWREx_DisableUSBVoltageDetector:00000000 HAL_PWREx_DisableUSBVoltageDetector
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:1690   .text.HAL_PWREx_DisableUSBVoltageDetector:0000000c $d
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:1695   .text.HAL_PWREx_EnableBatteryCharging:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:1701   .text.HAL_PWREx_EnableBatteryCharging:00000000 HAL_PWREx_EnableBatteryCharging
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:1725   .text.HAL_PWREx_EnableBatteryCharging:00000018 $d
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:1730   .text.HAL_PWREx_DisableBatteryCharging:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:1736   .text.HAL_PWREx_DisableBatteryCharging:00000000 HAL_PWREx_DisableBatteryCharging
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:1753   .text.HAL_PWREx_DisableBatteryCharging:0000000c $d
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:1758   .text.HAL_PWREx_EnableMonitoring:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:1764   .text.HAL_PWREx_EnableMonitoring:00000000 HAL_PWREx_EnableMonitoring
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:1781   .text.HAL_PWREx_EnableMonitoring:0000000c $d
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:1786   .text.HAL_PWREx_DisableMonitoring:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:1792   .text.HAL_PWREx_DisableMonitoring:00000000 HAL_PWREx_DisableMonitoring
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:1809   .text.HAL_PWREx_DisableMonitoring:0000000c $d
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:1814   .text.HAL_PWREx_GetTemperatureLevel:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:1820   .text.HAL_PWREx_GetTemperatureLevel:00000000 HAL_PWREx_GetTemperatureLevel
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:1853   .text.HAL_PWREx_GetTemperatureLevel:00000018 $d
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:1858   .text.HAL_PWREx_GetVBATLevel:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:1864   .text.HAL_PWREx_GetVBATLevel:00000000 HAL_PWREx_GetVBATLevel
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:1897   .text.HAL_PWREx_GetVBATLevel:00000018 $d
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:1902   .text.HAL_PWREx_ConfigAVD:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:1908   .text.HAL_PWREx_ConfigAVD:00000000 HAL_PWREx_ConfigAVD
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:1995   .text.HAL_PWREx_ConfigAVD:00000094 $d
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:2000   .text.HAL_PWREx_EnableAVD:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:2006   .text.HAL_PWREx_EnableAVD:00000000 HAL_PWREx_EnableAVD
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:2023   .text.HAL_PWREx_EnableAVD:0000000c $d
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:2028   .text.HAL_PWREx_DisableAVD:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:2034   .text.HAL_PWREx_DisableAVD:00000000 HAL_PWREx_DisableAVD
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:2051   .text.HAL_PWREx_DisableAVD:0000000c $d
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:2056   .text.HAL_PWREx_AVDCallback:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:2062   .text.HAL_PWREx_AVDCallback:00000000 HAL_PWREx_AVDCallback
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:2075   .text.HAL_PWREx_PVD_AVD_IRQHandler:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:2081   .text.HAL_PWREx_PVD_AVD_IRQHandler:00000000 HAL_PWREx_PVD_AVD_IRQHandler
+C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s:2147   .text.HAL_PWREx_PVD_AVD_IRQHandler:00000060 $d
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQfx9kn.s 			page 99
 
 
 

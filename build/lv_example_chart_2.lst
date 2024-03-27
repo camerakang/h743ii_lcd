@@ -1,0 +1,1465 @@
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccpLyDPI.s 			page 1
+
+
+   1              		.cpu cortex-m7
+   2              		.arch armv7e-m
+   3              		.fpu fpv5-d16
+   4              		.eabi_attribute 28, 1
+   5              		.eabi_attribute 20, 1
+   6              		.eabi_attribute 21, 1
+   7              		.eabi_attribute 23, 3
+   8              		.eabi_attribute 24, 1
+   9              		.eabi_attribute 25, 1
+  10              		.eabi_attribute 26, 1
+  11              		.eabi_attribute 30, 1
+  12              		.eabi_attribute 34, 1
+  13              		.eabi_attribute 18, 4
+  14              		.file	"lv_example_chart_2.c"
+  15              		.text
+  16              	.Ltext0:
+  17              		.cfi_sections	.debug_frame
+  18              		.section	.text.add_data,"ax",%progbits
+  19              		.align	1
+  20              		.syntax unified
+  21              		.thumb
+  22              		.thumb_func
+  24              	add_data:
+  25              	.LVL0:
+  26              	.LFB205:
+  27              		.file 1 "lvgl/examples/widgets/chart/lv_example_chart_2.c"
+   1:lvgl/examples/widgets/chart/lv_example_chart_2.c **** #include "../../lv_examples.h"
+   2:lvgl/examples/widgets/chart/lv_example_chart_2.c **** #if LV_USE_CHART && LV_DRAW_COMPLEX && LV_BUILD_EXAMPLES
+   3:lvgl/examples/widgets/chart/lv_example_chart_2.c **** 
+   4:lvgl/examples/widgets/chart/lv_example_chart_2.c **** static lv_obj_t * chart1;
+   5:lvgl/examples/widgets/chart/lv_example_chart_2.c **** static lv_chart_series_t * ser1;
+   6:lvgl/examples/widgets/chart/lv_example_chart_2.c **** static lv_chart_series_t * ser2;
+   7:lvgl/examples/widgets/chart/lv_example_chart_2.c **** 
+   8:lvgl/examples/widgets/chart/lv_example_chart_2.c **** static void draw_event_cb(lv_event_t * e)
+   9:lvgl/examples/widgets/chart/lv_example_chart_2.c **** {
+  10:lvgl/examples/widgets/chart/lv_example_chart_2.c ****     lv_obj_t * obj = lv_event_get_target(e);
+  11:lvgl/examples/widgets/chart/lv_example_chart_2.c **** 
+  12:lvgl/examples/widgets/chart/lv_example_chart_2.c ****     /*Add the faded area before the lines are drawn*/
+  13:lvgl/examples/widgets/chart/lv_example_chart_2.c ****     lv_obj_draw_part_dsc_t * dsc = lv_event_get_draw_part_dsc(e);
+  14:lvgl/examples/widgets/chart/lv_example_chart_2.c ****     if(dsc->part == LV_PART_ITEMS) {
+  15:lvgl/examples/widgets/chart/lv_example_chart_2.c ****         if(!dsc->p1 || !dsc->p2) return;
+  16:lvgl/examples/widgets/chart/lv_example_chart_2.c **** 
+  17:lvgl/examples/widgets/chart/lv_example_chart_2.c ****         /*Add a line mask that keeps the area below the line*/
+  18:lvgl/examples/widgets/chart/lv_example_chart_2.c ****         lv_draw_mask_line_param_t line_mask_param;
+  19:lvgl/examples/widgets/chart/lv_example_chart_2.c ****         lv_draw_mask_line_points_init(&line_mask_param, dsc->p1->x, dsc->p1->y, dsc->p2->x, dsc->p2
+  20:lvgl/examples/widgets/chart/lv_example_chart_2.c ****                                       LV_DRAW_MASK_LINE_SIDE_BOTTOM);
+  21:lvgl/examples/widgets/chart/lv_example_chart_2.c ****         int16_t line_mask_id = lv_draw_mask_add(&line_mask_param, NULL);
+  22:lvgl/examples/widgets/chart/lv_example_chart_2.c **** 
+  23:lvgl/examples/widgets/chart/lv_example_chart_2.c ****         /*Add a fade effect: transparent bottom covering top*/
+  24:lvgl/examples/widgets/chart/lv_example_chart_2.c ****         lv_coord_t h = lv_obj_get_height(obj);
+  25:lvgl/examples/widgets/chart/lv_example_chart_2.c ****         lv_draw_mask_fade_param_t fade_mask_param;
+  26:lvgl/examples/widgets/chart/lv_example_chart_2.c ****         lv_draw_mask_fade_init(&fade_mask_param, &obj->coords, LV_OPA_COVER, obj->coords.y1 + h / 8
+  27:lvgl/examples/widgets/chart/lv_example_chart_2.c ****                                obj->coords.y2);
+  28:lvgl/examples/widgets/chart/lv_example_chart_2.c ****         int16_t fade_mask_id = lv_draw_mask_add(&fade_mask_param, NULL);
+  29:lvgl/examples/widgets/chart/lv_example_chart_2.c **** 
+  30:lvgl/examples/widgets/chart/lv_example_chart_2.c ****         /*Draw a rectangle that will be affected by the mask*/
+  31:lvgl/examples/widgets/chart/lv_example_chart_2.c ****         lv_draw_rect_dsc_t draw_rect_dsc;
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccpLyDPI.s 			page 2
+
+
+  32:lvgl/examples/widgets/chart/lv_example_chart_2.c ****         lv_draw_rect_dsc_init(&draw_rect_dsc);
+  33:lvgl/examples/widgets/chart/lv_example_chart_2.c ****         draw_rect_dsc.bg_opa = LV_OPA_20;
+  34:lvgl/examples/widgets/chart/lv_example_chart_2.c ****         draw_rect_dsc.bg_color = dsc->line_dsc->color;
+  35:lvgl/examples/widgets/chart/lv_example_chart_2.c **** 
+  36:lvgl/examples/widgets/chart/lv_example_chart_2.c ****         lv_area_t a;
+  37:lvgl/examples/widgets/chart/lv_example_chart_2.c ****         a.x1 = dsc->p1->x;
+  38:lvgl/examples/widgets/chart/lv_example_chart_2.c ****         a.x2 = dsc->p2->x - 1;
+  39:lvgl/examples/widgets/chart/lv_example_chart_2.c ****         a.y1 = LV_MIN(dsc->p1->y, dsc->p2->y);
+  40:lvgl/examples/widgets/chart/lv_example_chart_2.c ****         a.y2 = obj->coords.y2;
+  41:lvgl/examples/widgets/chart/lv_example_chart_2.c ****         lv_draw_rect(dsc->draw_ctx, &draw_rect_dsc, &a);
+  42:lvgl/examples/widgets/chart/lv_example_chart_2.c **** 
+  43:lvgl/examples/widgets/chart/lv_example_chart_2.c ****         /*Remove the masks*/
+  44:lvgl/examples/widgets/chart/lv_example_chart_2.c ****         lv_draw_mask_free_param(&line_mask_param);
+  45:lvgl/examples/widgets/chart/lv_example_chart_2.c ****         lv_draw_mask_free_param(&fade_mask_param);
+  46:lvgl/examples/widgets/chart/lv_example_chart_2.c ****         lv_draw_mask_remove_id(line_mask_id);
+  47:lvgl/examples/widgets/chart/lv_example_chart_2.c ****         lv_draw_mask_remove_id(fade_mask_id);
+  48:lvgl/examples/widgets/chart/lv_example_chart_2.c ****     }
+  49:lvgl/examples/widgets/chart/lv_example_chart_2.c ****     /*Hook the division lines too*/
+  50:lvgl/examples/widgets/chart/lv_example_chart_2.c ****     else if(dsc->part == LV_PART_MAIN) {
+  51:lvgl/examples/widgets/chart/lv_example_chart_2.c ****         if(dsc->line_dsc == NULL || dsc->p1 == NULL || dsc->p2 == NULL) return;
+  52:lvgl/examples/widgets/chart/lv_example_chart_2.c **** 
+  53:lvgl/examples/widgets/chart/lv_example_chart_2.c ****         /*Vertical line*/
+  54:lvgl/examples/widgets/chart/lv_example_chart_2.c ****         if(dsc->p1->x == dsc->p2->x) {
+  55:lvgl/examples/widgets/chart/lv_example_chart_2.c ****             dsc->line_dsc->color  = lv_palette_lighten(LV_PALETTE_GREY, 1);
+  56:lvgl/examples/widgets/chart/lv_example_chart_2.c ****             if(dsc->id == 3) {
+  57:lvgl/examples/widgets/chart/lv_example_chart_2.c ****                 dsc->line_dsc->width  = 2;
+  58:lvgl/examples/widgets/chart/lv_example_chart_2.c ****                 dsc->line_dsc->dash_gap  = 0;
+  59:lvgl/examples/widgets/chart/lv_example_chart_2.c ****                 dsc->line_dsc->dash_width  = 0;
+  60:lvgl/examples/widgets/chart/lv_example_chart_2.c ****             }
+  61:lvgl/examples/widgets/chart/lv_example_chart_2.c ****             else {
+  62:lvgl/examples/widgets/chart/lv_example_chart_2.c ****                 dsc->line_dsc->width = 1;
+  63:lvgl/examples/widgets/chart/lv_example_chart_2.c ****                 dsc->line_dsc->dash_gap  = 6;
+  64:lvgl/examples/widgets/chart/lv_example_chart_2.c ****                 dsc->line_dsc->dash_width  = 6;
+  65:lvgl/examples/widgets/chart/lv_example_chart_2.c ****             }
+  66:lvgl/examples/widgets/chart/lv_example_chart_2.c ****         }
+  67:lvgl/examples/widgets/chart/lv_example_chart_2.c ****         /*Horizontal line*/
+  68:lvgl/examples/widgets/chart/lv_example_chart_2.c ****         else {
+  69:lvgl/examples/widgets/chart/lv_example_chart_2.c ****             if(dsc->id == 2) {
+  70:lvgl/examples/widgets/chart/lv_example_chart_2.c ****                 dsc->line_dsc->width  = 2;
+  71:lvgl/examples/widgets/chart/lv_example_chart_2.c ****                 dsc->line_dsc->dash_gap  = 0;
+  72:lvgl/examples/widgets/chart/lv_example_chart_2.c ****                 dsc->line_dsc->dash_width  = 0;
+  73:lvgl/examples/widgets/chart/lv_example_chart_2.c ****             }
+  74:lvgl/examples/widgets/chart/lv_example_chart_2.c ****             else {
+  75:lvgl/examples/widgets/chart/lv_example_chart_2.c ****                 dsc->line_dsc->width = 2;
+  76:lvgl/examples/widgets/chart/lv_example_chart_2.c ****                 dsc->line_dsc->dash_gap  = 6;
+  77:lvgl/examples/widgets/chart/lv_example_chart_2.c ****                 dsc->line_dsc->dash_width  = 6;
+  78:lvgl/examples/widgets/chart/lv_example_chart_2.c ****             }
+  79:lvgl/examples/widgets/chart/lv_example_chart_2.c **** 
+  80:lvgl/examples/widgets/chart/lv_example_chart_2.c ****             if(dsc->id == 1  || dsc->id == 3) {
+  81:lvgl/examples/widgets/chart/lv_example_chart_2.c ****                 dsc->line_dsc->color  = lv_palette_main(LV_PALETTE_GREEN);
+  82:lvgl/examples/widgets/chart/lv_example_chart_2.c ****             }
+  83:lvgl/examples/widgets/chart/lv_example_chart_2.c ****             else {
+  84:lvgl/examples/widgets/chart/lv_example_chart_2.c ****                 dsc->line_dsc->color  = lv_palette_lighten(LV_PALETTE_GREY, 1);
+  85:lvgl/examples/widgets/chart/lv_example_chart_2.c ****             }
+  86:lvgl/examples/widgets/chart/lv_example_chart_2.c ****         }
+  87:lvgl/examples/widgets/chart/lv_example_chart_2.c ****     }
+  88:lvgl/examples/widgets/chart/lv_example_chart_2.c **** }
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccpLyDPI.s 			page 3
+
+
+  89:lvgl/examples/widgets/chart/lv_example_chart_2.c **** 
+  90:lvgl/examples/widgets/chart/lv_example_chart_2.c **** static void add_data(lv_timer_t * timer)
+  91:lvgl/examples/widgets/chart/lv_example_chart_2.c **** {
+  28              		.loc 1 91 1 view -0
+  29              		.cfi_startproc
+  30              		@ args = 0, pretend = 0, frame = 0
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+  32              		.loc 1 91 1 is_stmt 0 view .LVU1
+  33 0000 38B5     		push	{r3, r4, r5, lr}
+  34              		.cfi_def_cfa_offset 16
+  35              		.cfi_offset 3, -16
+  36              		.cfi_offset 4, -12
+  37              		.cfi_offset 5, -8
+  38              		.cfi_offset 14, -4
+  92:lvgl/examples/widgets/chart/lv_example_chart_2.c ****     LV_UNUSED(timer);
+  39              		.loc 1 92 5 is_stmt 1 view .LVU2
+  93:lvgl/examples/widgets/chart/lv_example_chart_2.c ****     static uint32_t cnt = 0;
+  40              		.loc 1 93 5 view .LVU3
+  94:lvgl/examples/widgets/chart/lv_example_chart_2.c ****     lv_chart_set_next_value(chart1, ser1, lv_rand(20, 90));
+  41              		.loc 1 94 5 view .LVU4
+  42 0002 124B     		ldr	r3, .L5
+  43 0004 1C68     		ldr	r4, [r3]
+  44 0006 124B     		ldr	r3, .L5+4
+  45 0008 1D68     		ldr	r5, [r3]
+  46              		.loc 1 94 43 is_stmt 0 view .LVU5
+  47 000a 5A21     		movs	r1, #90
+  48 000c 1420     		movs	r0, #20
+  49              	.LVL1:
+  50              		.loc 1 94 43 view .LVU6
+  51 000e FFF7FEFF 		bl	lv_rand
+  52              	.LVL2:
+  53              		.loc 1 94 5 view .LVU7
+  54 0012 02B2     		sxth	r2, r0
+  55 0014 2946     		mov	r1, r5
+  56 0016 2046     		mov	r0, r4
+  57 0018 FFF7FEFF 		bl	lv_chart_set_next_value
+  58              	.LVL3:
+  95:lvgl/examples/widgets/chart/lv_example_chart_2.c **** 
+  96:lvgl/examples/widgets/chart/lv_example_chart_2.c ****     if(cnt % 4 == 0) lv_chart_set_next_value(chart1, ser2, lv_rand(40, 60));
+  59              		.loc 1 96 5 is_stmt 1 view .LVU8
+  60              		.loc 1 96 12 is_stmt 0 view .LVU9
+  61 001c 0D4B     		ldr	r3, .L5+8
+  62 001e 1B68     		ldr	r3, [r3]
+  63              		.loc 1 96 7 view .LVU10
+  64 0020 13F0030F 		tst	r3, #3
+  65 0024 04D0     		beq	.L4
+  66              	.L2:
+  97:lvgl/examples/widgets/chart/lv_example_chart_2.c **** 
+  98:lvgl/examples/widgets/chart/lv_example_chart_2.c ****     cnt++;
+  67              		.loc 1 98 5 is_stmt 1 view .LVU11
+  68              		.loc 1 98 8 is_stmt 0 view .LVU12
+  69 0026 0B4A     		ldr	r2, .L5+8
+  70 0028 1368     		ldr	r3, [r2]
+  71 002a 0133     		adds	r3, r3, #1
+  72 002c 1360     		str	r3, [r2]
+  99:lvgl/examples/widgets/chart/lv_example_chart_2.c **** }
+  73              		.loc 1 99 1 view .LVU13
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccpLyDPI.s 			page 4
+
+
+  74 002e 38BD     		pop	{r3, r4, r5, pc}
+  75              	.L4:
+  96:lvgl/examples/widgets/chart/lv_example_chart_2.c **** 
+  76              		.loc 1 96 22 is_stmt 1 discriminator 1 view .LVU14
+  77 0030 064B     		ldr	r3, .L5
+  78 0032 1C68     		ldr	r4, [r3]
+  79 0034 084B     		ldr	r3, .L5+12
+  80 0036 1D68     		ldr	r5, [r3]
+  96:lvgl/examples/widgets/chart/lv_example_chart_2.c **** 
+  81              		.loc 1 96 60 is_stmt 0 discriminator 1 view .LVU15
+  82 0038 3C21     		movs	r1, #60
+  83 003a 2820     		movs	r0, #40
+  84 003c FFF7FEFF 		bl	lv_rand
+  85              	.LVL4:
+  96:lvgl/examples/widgets/chart/lv_example_chart_2.c **** 
+  86              		.loc 1 96 22 discriminator 1 view .LVU16
+  87 0040 02B2     		sxth	r2, r0
+  88 0042 2946     		mov	r1, r5
+  89 0044 2046     		mov	r0, r4
+  90 0046 FFF7FEFF 		bl	lv_chart_set_next_value
+  91              	.LVL5:
+  92 004a ECE7     		b	.L2
+  93              	.L6:
+  94              		.align	2
+  95              	.L5:
+  96 004c 00000000 		.word	.LANCHOR0
+  97 0050 00000000 		.word	.LANCHOR1
+  98 0054 00000000 		.word	.LANCHOR2
+  99 0058 00000000 		.word	.LANCHOR3
+ 100              		.cfi_endproc
+ 101              	.LFE205:
+ 103              		.section	.text.draw_event_cb,"ax",%progbits
+ 104              		.align	1
+ 105              		.syntax unified
+ 106              		.thumb
+ 107              		.thumb_func
+ 109              	draw_event_cb:
+ 110              	.LVL6:
+ 111              	.LFB204:
+   9:lvgl/examples/widgets/chart/lv_example_chart_2.c ****     lv_obj_t * obj = lv_event_get_target(e);
+ 112              		.loc 1 9 1 is_stmt 1 view -0
+ 113              		.cfi_startproc
+ 114              		@ args = 0, pretend = 0, frame = 160
+ 115              		@ frame_needed = 0, uses_anonymous_args = 0
+   9:lvgl/examples/widgets/chart/lv_example_chart_2.c ****     lv_obj_t * obj = lv_event_get_target(e);
+ 116              		.loc 1 9 1 is_stmt 0 view .LVU18
+ 117 0000 F0B5     		push	{r4, r5, r6, r7, lr}
+ 118              		.cfi_def_cfa_offset 20
+ 119              		.cfi_offset 4, -20
+ 120              		.cfi_offset 5, -16
+ 121              		.cfi_offset 6, -12
+ 122              		.cfi_offset 7, -8
+ 123              		.cfi_offset 14, -4
+ 124 0002 ABB0     		sub	sp, sp, #172
+ 125              		.cfi_def_cfa_offset 192
+ 126 0004 0446     		mov	r4, r0
+  10:lvgl/examples/widgets/chart/lv_example_chart_2.c **** 
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccpLyDPI.s 			page 5
+
+
+ 127              		.loc 1 10 5 is_stmt 1 view .LVU19
+  10:lvgl/examples/widgets/chart/lv_example_chart_2.c **** 
+ 128              		.loc 1 10 22 is_stmt 0 view .LVU20
+ 129 0006 FFF7FEFF 		bl	lv_event_get_target
+ 130              	.LVL7:
+  10:lvgl/examples/widgets/chart/lv_example_chart_2.c **** 
+ 131              		.loc 1 10 22 view .LVU21
+ 132 000a 0546     		mov	r5, r0
+ 133              	.LVL8:
+  13:lvgl/examples/widgets/chart/lv_example_chart_2.c ****     if(dsc->part == LV_PART_ITEMS) {
+ 134              		.loc 1 13 5 is_stmt 1 view .LVU22
+  13:lvgl/examples/widgets/chart/lv_example_chart_2.c ****     if(dsc->part == LV_PART_ITEMS) {
+ 135              		.loc 1 13 36 is_stmt 0 view .LVU23
+ 136 000c 2046     		mov	r0, r4
+ 137              	.LVL9:
+  13:lvgl/examples/widgets/chart/lv_example_chart_2.c ****     if(dsc->part == LV_PART_ITEMS) {
+ 138              		.loc 1 13 36 view .LVU24
+ 139 000e FFF7FEFF 		bl	lv_event_get_draw_part_dsc
+ 140              	.LVL10:
+ 141 0012 0446     		mov	r4, r0
+ 142              	.LVL11:
+  14:lvgl/examples/widgets/chart/lv_example_chart_2.c ****         if(!dsc->p1 || !dsc->p2) return;
+ 143              		.loc 1 14 5 is_stmt 1 view .LVU25
+  14:lvgl/examples/widgets/chart/lv_example_chart_2.c ****         if(!dsc->p1 || !dsc->p2) return;
+ 144              		.loc 1 14 11 is_stmt 0 view .LVU26
+ 145 0014 436B     		ldr	r3, [r0, #52]
+  14:lvgl/examples/widgets/chart/lv_example_chart_2.c ****         if(!dsc->p1 || !dsc->p2) return;
+ 146              		.loc 1 14 7 view .LVU27
+ 147 0016 B3F5A02F 		cmp	r3, #327680
+ 148 001a 2BD0     		beq	.L19
+  50:lvgl/examples/widgets/chart/lv_example_chart_2.c ****         if(dsc->line_dsc == NULL || dsc->p1 == NULL || dsc->p2 == NULL) return;
+ 149              		.loc 1 50 10 is_stmt 1 view .LVU28
+  50:lvgl/examples/widgets/chart/lv_example_chart_2.c ****         if(dsc->line_dsc == NULL || dsc->p1 == NULL || dsc->p2 == NULL) return;
+ 150              		.loc 1 50 12 is_stmt 0 view .LVU29
+ 151 001c 002B     		cmp	r3, #0
+ 152 001e 40F08D80 		bne	.L7
+  51:lvgl/examples/widgets/chart/lv_example_chart_2.c **** 
+ 153              		.loc 1 51 9 is_stmt 1 view .LVU30
+  51:lvgl/examples/widgets/chart/lv_example_chart_2.c **** 
+ 154              		.loc 1 51 15 is_stmt 0 view .LVU31
+ 155 0022 8569     		ldr	r5, [r0, #24]
+ 156              	.LVL12:
+  51:lvgl/examples/widgets/chart/lv_example_chart_2.c **** 
+ 157              		.loc 1 51 11 view .LVU32
+ 158 0024 002D     		cmp	r5, #0
+ 159 0026 00F08980 		beq	.L7
+  51:lvgl/examples/widgets/chart/lv_example_chart_2.c **** 
+ 160              		.loc 1 51 40 discriminator 2 view .LVU33
+ 161 002a 436A     		ldr	r3, [r0, #36]
+  51:lvgl/examples/widgets/chart/lv_example_chart_2.c **** 
+ 162              		.loc 1 51 34 discriminator 2 view .LVU34
+ 163 002c 002B     		cmp	r3, #0
+ 164 002e 00F08580 		beq	.L7
+  51:lvgl/examples/widgets/chart/lv_example_chart_2.c **** 
+ 165              		.loc 1 51 59 discriminator 4 view .LVU35
+ 166 0032 826A     		ldr	r2, [r0, #40]
+  51:lvgl/examples/widgets/chart/lv_example_chart_2.c **** 
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccpLyDPI.s 			page 6
+
+
+ 167              		.loc 1 51 53 discriminator 4 view .LVU36
+ 168 0034 002A     		cmp	r2, #0
+ 169 0036 00F08180 		beq	.L7
+  54:lvgl/examples/widgets/chart/lv_example_chart_2.c ****             dsc->line_dsc->color  = lv_palette_lighten(LV_PALETTE_GREY, 1);
+ 170              		.loc 1 54 9 is_stmt 1 view .LVU37
+  54:lvgl/examples/widgets/chart/lv_example_chart_2.c ****             dsc->line_dsc->color  = lv_palette_lighten(LV_PALETTE_GREY, 1);
+ 171              		.loc 1 54 19 is_stmt 0 view .LVU38
+ 172 003a B3F90010 		ldrsh	r1, [r3]
+  54:lvgl/examples/widgets/chart/lv_example_chart_2.c ****             dsc->line_dsc->color  = lv_palette_lighten(LV_PALETTE_GREY, 1);
+ 173              		.loc 1 54 33 view .LVU39
+ 174 003e B2F90030 		ldrsh	r3, [r2]
+  54:lvgl/examples/widgets/chart/lv_example_chart_2.c ****             dsc->line_dsc->color  = lv_palette_lighten(LV_PALETTE_GREY, 1);
+ 175              		.loc 1 54 11 view .LVU40
+ 176 0042 9942     		cmp	r1, r3
+ 177 0044 7ED0     		beq	.L20
+  69:lvgl/examples/widgets/chart/lv_example_chart_2.c ****                 dsc->line_dsc->width  = 2;
+ 178              		.loc 1 69 13 is_stmt 1 view .LVU41
+  69:lvgl/examples/widgets/chart/lv_example_chart_2.c ****                 dsc->line_dsc->width  = 2;
+ 179              		.loc 1 69 19 is_stmt 0 view .LVU42
+ 180 0046 836B     		ldr	r3, [r0, #56]
+  69:lvgl/examples/widgets/chart/lv_example_chart_2.c ****                 dsc->line_dsc->width  = 2;
+ 181              		.loc 1 69 15 view .LVU43
+ 182 0048 022B     		cmp	r3, #2
+ 183 004a 00F09580 		beq	.L21
+  75:lvgl/examples/widgets/chart/lv_example_chart_2.c ****                 dsc->line_dsc->dash_gap  = 6;
+ 184              		.loc 1 75 17 is_stmt 1 view .LVU44
+  75:lvgl/examples/widgets/chart/lv_example_chart_2.c ****                 dsc->line_dsc->dash_gap  = 6;
+ 185              		.loc 1 75 38 is_stmt 0 view .LVU45
+ 186 004e 0223     		movs	r3, #2
+ 187 0050 AB80     		strh	r3, [r5, #4]	@ movhi
+  76:lvgl/examples/widgets/chart/lv_example_chart_2.c ****                 dsc->line_dsc->dash_width  = 6;
+ 188              		.loc 1 76 17 is_stmt 1 view .LVU46
+  76:lvgl/examples/widgets/chart/lv_example_chart_2.c ****                 dsc->line_dsc->dash_width  = 6;
+ 189              		.loc 1 76 20 is_stmt 0 view .LVU47
+ 190 0052 8269     		ldr	r2, [r0, #24]
+  76:lvgl/examples/widgets/chart/lv_example_chart_2.c ****                 dsc->line_dsc->dash_width  = 6;
+ 191              		.loc 1 76 42 view .LVU48
+ 192 0054 0623     		movs	r3, #6
+ 193 0056 1381     		strh	r3, [r2, #8]	@ movhi
+  77:lvgl/examples/widgets/chart/lv_example_chart_2.c ****             }
+ 194              		.loc 1 77 17 is_stmt 1 view .LVU49
+  77:lvgl/examples/widgets/chart/lv_example_chart_2.c ****             }
+ 195              		.loc 1 77 20 is_stmt 0 view .LVU50
+ 196 0058 8269     		ldr	r2, [r0, #24]
+  77:lvgl/examples/widgets/chart/lv_example_chart_2.c ****             }
+ 197              		.loc 1 77 44 view .LVU51
+ 198 005a D380     		strh	r3, [r2, #6]	@ movhi
+ 199              	.L16:
+  80:lvgl/examples/widgets/chart/lv_example_chart_2.c ****                 dsc->line_dsc->color  = lv_palette_main(LV_PALETTE_GREEN);
+ 200              		.loc 1 80 13 is_stmt 1 view .LVU52
+  80:lvgl/examples/widgets/chart/lv_example_chart_2.c ****                 dsc->line_dsc->color  = lv_palette_main(LV_PALETTE_GREEN);
+ 201              		.loc 1 80 19 is_stmt 0 view .LVU53
+ 202 005c A36B     		ldr	r3, [r4, #56]
+  80:lvgl/examples/widgets/chart/lv_example_chart_2.c ****                 dsc->line_dsc->color  = lv_palette_main(LV_PALETTE_GREEN);
+ 203              		.loc 1 80 15 view .LVU54
+ 204 005e 032B     		cmp	r3, #3
+ 205 0060 18BF     		it	ne
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccpLyDPI.s 			page 7
+
+
+ 206 0062 012B     		cmpne	r3, #1
+ 207 0064 40F08F80 		bne	.L17
+  81:lvgl/examples/widgets/chart/lv_example_chart_2.c ****             }
+ 208              		.loc 1 81 17 is_stmt 1 view .LVU55
+  81:lvgl/examples/widgets/chart/lv_example_chart_2.c ****             }
+ 209              		.loc 1 81 20 is_stmt 0 view .LVU56
+ 210 0068 A469     		ldr	r4, [r4, #24]
+  81:lvgl/examples/widgets/chart/lv_example_chart_2.c ****             }
+ 211              		.loc 1 81 41 view .LVU57
+ 212 006a 0920     		movs	r0, #9
+ 213              	.LVL13:
+  81:lvgl/examples/widgets/chart/lv_example_chart_2.c ****             }
+ 214              		.loc 1 81 41 view .LVU58
+ 215 006c FFF7FEFF 		bl	lv_palette_main
+ 216              	.LVL14:
+ 217 0070 2060     		str	r0, [r4]
+ 218 0072 63E0     		b	.L7
+ 219              	.LVL15:
+ 220              	.L19:
+ 221              	.LBB4:
+  15:lvgl/examples/widgets/chart/lv_example_chart_2.c **** 
+ 222              		.loc 1 15 9 is_stmt 1 view .LVU59
+  15:lvgl/examples/widgets/chart/lv_example_chart_2.c **** 
+ 223              		.loc 1 15 16 is_stmt 0 view .LVU60
+ 224 0074 416A     		ldr	r1, [r0, #36]
+  15:lvgl/examples/widgets/chart/lv_example_chart_2.c **** 
+ 225              		.loc 1 15 11 view .LVU61
+ 226 0076 0029     		cmp	r1, #0
+ 227 0078 60D0     		beq	.L7
+  15:lvgl/examples/widgets/chart/lv_example_chart_2.c **** 
+ 228              		.loc 1 15 28 discriminator 2 view .LVU62
+ 229 007a 806A     		ldr	r0, [r0, #40]
+ 230              	.LVL16:
+  15:lvgl/examples/widgets/chart/lv_example_chart_2.c **** 
+ 231              		.loc 1 15 21 discriminator 2 view .LVU63
+ 232 007c 0028     		cmp	r0, #0
+ 233 007e 5DD0     		beq	.L7
+  18:lvgl/examples/widgets/chart/lv_example_chart_2.c ****         lv_draw_mask_line_points_init(&line_mask_param, dsc->p1->x, dsc->p1->y, dsc->p2->x, dsc->p2
+ 234              		.loc 1 18 9 is_stmt 1 view .LVU64
+  19:lvgl/examples/widgets/chart/lv_example_chart_2.c ****                                       LV_DRAW_MASK_LINE_SIDE_BOTTOM);
+ 235              		.loc 1 19 9 view .LVU65
+ 236 0080 B0F90030 		ldrsh	r3, [r0]
+ 237 0084 B1F90220 		ldrsh	r2, [r1, #2]
+ 238 0088 B1F90010 		ldrsh	r1, [r1]
+ 239 008c 0326     		movs	r6, #3
+ 240 008e 0196     		str	r6, [sp, #4]
+ 241 0090 B0F90200 		ldrsh	r0, [r0, #2]
+ 242 0094 0090     		str	r0, [sp]
+ 243 0096 0BA8     		add	r0, sp, #44
+ 244 0098 FFF7FEFF 		bl	lv_draw_mask_line_points_init
+ 245              	.LVL17:
+  21:lvgl/examples/widgets/chart/lv_example_chart_2.c **** 
+ 246              		.loc 1 21 9 view .LVU66
+  21:lvgl/examples/widgets/chart/lv_example_chart_2.c **** 
+ 247              		.loc 1 21 32 is_stmt 0 view .LVU67
+ 248 009c 0021     		movs	r1, #0
+ 249 009e 0BA8     		add	r0, sp, #44
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccpLyDPI.s 			page 8
+
+
+ 250 00a0 FFF7FEFF 		bl	lv_draw_mask_add
+ 251              	.LVL18:
+ 252 00a4 0746     		mov	r7, r0
+ 253              	.LVL19:
+  24:lvgl/examples/widgets/chart/lv_example_chart_2.c ****         lv_draw_mask_fade_param_t fade_mask_param;
+ 254              		.loc 1 24 9 is_stmt 1 view .LVU68
+  24:lvgl/examples/widgets/chart/lv_example_chart_2.c ****         lv_draw_mask_fade_param_t fade_mask_param;
+ 255              		.loc 1 24 24 is_stmt 0 view .LVU69
+ 256 00a6 2846     		mov	r0, r5
+ 257 00a8 FFF7FEFF 		bl	lv_obj_get_height
+ 258              	.LVL20:
+  25:lvgl/examples/widgets/chart/lv_example_chart_2.c ****         lv_draw_mask_fade_init(&fade_mask_param, &obj->coords, LV_OPA_COVER, obj->coords.y1 + h / 8
+ 259              		.loc 1 25 9 is_stmt 1 view .LVU70
+  26:lvgl/examples/widgets/chart/lv_example_chart_2.c ****                                obj->coords.y2);
+ 260              		.loc 1 26 9 view .LVU71
+  26:lvgl/examples/widgets/chart/lv_example_chart_2.c ****                                obj->coords.y2);
+ 261              		.loc 1 26 50 is_stmt 0 view .LVU72
+ 262 00ac 05F11401 		add	r1, r5, #20
+  26:lvgl/examples/widgets/chart/lv_example_chart_2.c ****                                obj->coords.y2);
+ 263              		.loc 1 26 89 view .LVU73
+ 264 00b0 EB8A     		ldrh	r3, [r5, #22]
+  26:lvgl/examples/widgets/chart/lv_example_chart_2.c ****                                obj->coords.y2);
+ 265              		.loc 1 26 93 view .LVU74
+ 266 00b2 0246     		mov	r2, r0
+ 267 00b4 0028     		cmp	r0, #0
+ 268 00b6 43DB     		blt	.L22
+ 269              	.L12:
+ 270 00b8 03EBE203 		add	r3, r3, r2, asr #3
+  26:lvgl/examples/widgets/chart/lv_example_chart_2.c ****                                obj->coords.y2);
+ 271              		.loc 1 26 9 view .LVU75
+ 272 00bc B5F91A20 		ldrsh	r2, [r5, #26]
+ 273 00c0 0192     		str	r2, [sp, #4]
+ 274 00c2 0026     		movs	r6, #0
+ 275 00c4 0096     		str	r6, [sp]
+ 276 00c6 1BB2     		sxth	r3, r3
+ 277 00c8 FF22     		movs	r2, #255
+ 278 00ca 05A8     		add	r0, sp, #20
+ 279              	.LVL21:
+  26:lvgl/examples/widgets/chart/lv_example_chart_2.c ****                                obj->coords.y2);
+ 280              		.loc 1 26 9 view .LVU76
+ 281 00cc FFF7FEFF 		bl	lv_draw_mask_fade_init
+ 282              	.LVL22:
+  28:lvgl/examples/widgets/chart/lv_example_chart_2.c **** 
+ 283              		.loc 1 28 9 is_stmt 1 view .LVU77
+  28:lvgl/examples/widgets/chart/lv_example_chart_2.c **** 
+ 284              		.loc 1 28 32 is_stmt 0 view .LVU78
+ 285 00d0 3146     		mov	r1, r6
+ 286 00d2 05A8     		add	r0, sp, #20
+ 287 00d4 FFF7FEFF 		bl	lv_draw_mask_add
+ 288              	.LVL23:
+ 289 00d8 0646     		mov	r6, r0
+ 290              	.LVL24:
+  31:lvgl/examples/widgets/chart/lv_example_chart_2.c ****         lv_draw_rect_dsc_init(&draw_rect_dsc);
+ 291              		.loc 1 31 9 is_stmt 1 view .LVU79
+  32:lvgl/examples/widgets/chart/lv_example_chart_2.c ****         draw_rect_dsc.bg_opa = LV_OPA_20;
+ 292              		.loc 1 32 9 view .LVU80
+ 293 00da 16A8     		add	r0, sp, #88
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccpLyDPI.s 			page 9
+
+
+ 294 00dc FFF7FEFF 		bl	lv_draw_rect_dsc_init
+ 295              	.LVL25:
+  33:lvgl/examples/widgets/chart/lv_example_chart_2.c ****         draw_rect_dsc.bg_color = dsc->line_dsc->color;
+ 296              		.loc 1 33 9 view .LVU81
+  33:lvgl/examples/widgets/chart/lv_example_chart_2.c ****         draw_rect_dsc.bg_color = dsc->line_dsc->color;
+ 297              		.loc 1 33 30 is_stmt 0 view .LVU82
+ 298 00e0 3323     		movs	r3, #51
+ 299 00e2 8DF85B30 		strb	r3, [sp, #91]
+  34:lvgl/examples/widgets/chart/lv_example_chart_2.c **** 
+ 300              		.loc 1 34 9 is_stmt 1 view .LVU83
+  34:lvgl/examples/widgets/chart/lv_example_chart_2.c **** 
+ 301              		.loc 1 34 37 is_stmt 0 view .LVU84
+ 302 00e6 A369     		ldr	r3, [r4, #24]
+  34:lvgl/examples/widgets/chart/lv_example_chart_2.c **** 
+ 303              		.loc 1 34 32 view .LVU85
+ 304 00e8 1B68     		ldr	r3, [r3]
+ 305 00ea 1793     		str	r3, [sp, #92]
+  36:lvgl/examples/widgets/chart/lv_example_chart_2.c ****         a.x1 = dsc->p1->x;
+ 306              		.loc 1 36 9 is_stmt 1 view .LVU86
+  37:lvgl/examples/widgets/chart/lv_example_chart_2.c ****         a.x2 = dsc->p2->x - 1;
+ 307              		.loc 1 37 9 view .LVU87
+  37:lvgl/examples/widgets/chart/lv_example_chart_2.c ****         a.x2 = dsc->p2->x - 1;
+ 308              		.loc 1 37 19 is_stmt 0 view .LVU88
+ 309 00ec 626A     		ldr	r2, [r4, #36]
+  37:lvgl/examples/widgets/chart/lv_example_chart_2.c ****         a.x2 = dsc->p2->x - 1;
+ 310              		.loc 1 37 23 view .LVU89
+ 311 00ee B2F90030 		ldrsh	r3, [r2]
+  37:lvgl/examples/widgets/chart/lv_example_chart_2.c ****         a.x2 = dsc->p2->x - 1;
+ 312              		.loc 1 37 14 view .LVU90
+ 313 00f2 ADF80C30 		strh	r3, [sp, #12]	@ movhi
+  38:lvgl/examples/widgets/chart/lv_example_chart_2.c ****         a.y1 = LV_MIN(dsc->p1->y, dsc->p2->y);
+ 314              		.loc 1 38 9 is_stmt 1 view .LVU91
+  38:lvgl/examples/widgets/chart/lv_example_chart_2.c ****         a.y1 = LV_MIN(dsc->p1->y, dsc->p2->y);
+ 315              		.loc 1 38 19 is_stmt 0 view .LVU92
+ 316 00f6 A16A     		ldr	r1, [r4, #40]
+  38:lvgl/examples/widgets/chart/lv_example_chart_2.c ****         a.y1 = LV_MIN(dsc->p1->y, dsc->p2->y);
+ 317              		.loc 1 38 23 view .LVU93
+ 318 00f8 0B88     		ldrh	r3, [r1]
+  38:lvgl/examples/widgets/chart/lv_example_chart_2.c ****         a.y1 = LV_MIN(dsc->p1->y, dsc->p2->y);
+ 319              		.loc 1 38 27 view .LVU94
+ 320 00fa 013B     		subs	r3, r3, #1
+  38:lvgl/examples/widgets/chart/lv_example_chart_2.c ****         a.y1 = LV_MIN(dsc->p1->y, dsc->p2->y);
+ 321              		.loc 1 38 14 view .LVU95
+ 322 00fc ADF81030 		strh	r3, [sp, #16]	@ movhi
+  39:lvgl/examples/widgets/chart/lv_example_chart_2.c ****         a.y2 = obj->coords.y2;
+ 323              		.loc 1 39 9 is_stmt 1 view .LVU96
+  39:lvgl/examples/widgets/chart/lv_example_chart_2.c ****         a.y2 = obj->coords.y2;
+ 324              		.loc 1 39 16 is_stmt 0 view .LVU97
+ 325 0100 B1F90230 		ldrsh	r3, [r1, #2]
+ 326 0104 B2F90220 		ldrsh	r2, [r2, #2]
+ 327 0108 9342     		cmp	r3, r2
+ 328 010a A8BF     		it	ge
+ 329 010c 1346     		movge	r3, r2
+  39:lvgl/examples/widgets/chart/lv_example_chart_2.c ****         a.y2 = obj->coords.y2;
+ 330              		.loc 1 39 14 view .LVU98
+ 331 010e ADF80E30 		strh	r3, [sp, #14]	@ movhi
+  40:lvgl/examples/widgets/chart/lv_example_chart_2.c ****         lv_draw_rect(dsc->draw_ctx, &draw_rect_dsc, &a);
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccpLyDPI.s 			page 10
+
+
+ 332              		.loc 1 40 9 is_stmt 1 view .LVU99
+  40:lvgl/examples/widgets/chart/lv_example_chart_2.c ****         lv_draw_rect(dsc->draw_ctx, &draw_rect_dsc, &a);
+ 333              		.loc 1 40 27 is_stmt 0 view .LVU100
+ 334 0112 B5F91A30 		ldrsh	r3, [r5, #26]
+  40:lvgl/examples/widgets/chart/lv_example_chart_2.c ****         lv_draw_rect(dsc->draw_ctx, &draw_rect_dsc, &a);
+ 335              		.loc 1 40 14 view .LVU101
+ 336 0116 ADF81230 		strh	r3, [sp, #18]	@ movhi
+  41:lvgl/examples/widgets/chart/lv_example_chart_2.c **** 
+ 337              		.loc 1 41 9 is_stmt 1 view .LVU102
+ 338 011a 03AA     		add	r2, sp, #12
+ 339 011c 16A9     		add	r1, sp, #88
+ 340 011e 2068     		ldr	r0, [r4]
+ 341 0120 FFF7FEFF 		bl	lv_draw_rect
+ 342              	.LVL26:
+  44:lvgl/examples/widgets/chart/lv_example_chart_2.c ****         lv_draw_mask_free_param(&fade_mask_param);
+ 343              		.loc 1 44 9 view .LVU103
+ 344 0124 0BA8     		add	r0, sp, #44
+ 345 0126 FFF7FEFF 		bl	lv_draw_mask_free_param
+ 346              	.LVL27:
+  45:lvgl/examples/widgets/chart/lv_example_chart_2.c ****         lv_draw_mask_remove_id(line_mask_id);
+ 347              		.loc 1 45 9 view .LVU104
+ 348 012a 05A8     		add	r0, sp, #20
+ 349 012c FFF7FEFF 		bl	lv_draw_mask_free_param
+ 350              	.LVL28:
+  46:lvgl/examples/widgets/chart/lv_example_chart_2.c ****         lv_draw_mask_remove_id(fade_mask_id);
+ 351              		.loc 1 46 9 view .LVU105
+ 352 0130 3846     		mov	r0, r7
+ 353 0132 FFF7FEFF 		bl	lv_draw_mask_remove_id
+ 354              	.LVL29:
+  47:lvgl/examples/widgets/chart/lv_example_chart_2.c ****     }
+ 355              		.loc 1 47 9 view .LVU106
+ 356 0136 3046     		mov	r0, r6
+ 357 0138 FFF7FEFF 		bl	lv_draw_mask_remove_id
+ 358              	.LVL30:
+ 359              	.L7:
+  47:lvgl/examples/widgets/chart/lv_example_chart_2.c ****     }
+ 360              		.loc 1 47 9 is_stmt 0 view .LVU107
+ 361              	.LBE4:
+  88:lvgl/examples/widgets/chart/lv_example_chart_2.c **** 
+ 362              		.loc 1 88 1 view .LVU108
+ 363 013c 2BB0     		add	sp, sp, #172
+ 364              		.cfi_remember_state
+ 365              		.cfi_def_cfa_offset 20
+ 366              		@ sp needed
+ 367 013e F0BD     		pop	{r4, r5, r6, r7, pc}
+ 368              	.LVL31:
+ 369              	.L22:
+ 370              		.cfi_restore_state
+ 371              	.LBB5:
+  26:lvgl/examples/widgets/chart/lv_example_chart_2.c ****                                obj->coords.y2);
+ 372              		.loc 1 26 93 view .LVU109
+ 373 0140 C21D     		adds	r2, r0, #7
+ 374 0142 B9E7     		b	.L12
+ 375              	.LVL32:
+ 376              	.L20:
+  26:lvgl/examples/widgets/chart/lv_example_chart_2.c ****                                obj->coords.y2);
+ 377              		.loc 1 26 93 view .LVU110
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccpLyDPI.s 			page 11
+
+
+ 378              	.LBE5:
+  55:lvgl/examples/widgets/chart/lv_example_chart_2.c ****             if(dsc->id == 3) {
+ 379              		.loc 1 55 13 is_stmt 1 view .LVU111
+  55:lvgl/examples/widgets/chart/lv_example_chart_2.c ****             if(dsc->id == 3) {
+ 380              		.loc 1 55 37 is_stmt 0 view .LVU112
+ 381 0144 0121     		movs	r1, #1
+ 382 0146 1220     		movs	r0, #18
+ 383              	.LVL33:
+  55:lvgl/examples/widgets/chart/lv_example_chart_2.c ****             if(dsc->id == 3) {
+ 384              		.loc 1 55 37 view .LVU113
+ 385 0148 FFF7FEFF 		bl	lv_palette_lighten
+ 386              	.LVL34:
+ 387 014c 2860     		str	r0, [r5]
+  56:lvgl/examples/widgets/chart/lv_example_chart_2.c ****                 dsc->line_dsc->width  = 2;
+ 388              		.loc 1 56 13 is_stmt 1 view .LVU114
+  56:lvgl/examples/widgets/chart/lv_example_chart_2.c ****                 dsc->line_dsc->width  = 2;
+ 389              		.loc 1 56 19 is_stmt 0 view .LVU115
+ 390 014e A36B     		ldr	r3, [r4, #56]
+  56:lvgl/examples/widgets/chart/lv_example_chart_2.c ****                 dsc->line_dsc->width  = 2;
+ 391              		.loc 1 56 15 view .LVU116
+ 392 0150 032B     		cmp	r3, #3
+ 393 0152 08D0     		beq	.L23
+  62:lvgl/examples/widgets/chart/lv_example_chart_2.c ****                 dsc->line_dsc->dash_gap  = 6;
+ 394              		.loc 1 62 17 is_stmt 1 view .LVU117
+  62:lvgl/examples/widgets/chart/lv_example_chart_2.c ****                 dsc->line_dsc->dash_gap  = 6;
+ 395              		.loc 1 62 20 is_stmt 0 view .LVU118
+ 396 0154 A369     		ldr	r3, [r4, #24]
+  62:lvgl/examples/widgets/chart/lv_example_chart_2.c ****                 dsc->line_dsc->dash_gap  = 6;
+ 397              		.loc 1 62 38 view .LVU119
+ 398 0156 0122     		movs	r2, #1
+ 399 0158 9A80     		strh	r2, [r3, #4]	@ movhi
+  63:lvgl/examples/widgets/chart/lv_example_chart_2.c ****                 dsc->line_dsc->dash_width  = 6;
+ 400              		.loc 1 63 17 is_stmt 1 view .LVU120
+  63:lvgl/examples/widgets/chart/lv_example_chart_2.c ****                 dsc->line_dsc->dash_width  = 6;
+ 401              		.loc 1 63 20 is_stmt 0 view .LVU121
+ 402 015a A269     		ldr	r2, [r4, #24]
+  63:lvgl/examples/widgets/chart/lv_example_chart_2.c ****                 dsc->line_dsc->dash_width  = 6;
+ 403              		.loc 1 63 42 view .LVU122
+ 404 015c 0623     		movs	r3, #6
+ 405 015e 1381     		strh	r3, [r2, #8]	@ movhi
+  64:lvgl/examples/widgets/chart/lv_example_chart_2.c ****             }
+ 406              		.loc 1 64 17 is_stmt 1 view .LVU123
+  64:lvgl/examples/widgets/chart/lv_example_chart_2.c ****             }
+ 407              		.loc 1 64 20 is_stmt 0 view .LVU124
+ 408 0160 A269     		ldr	r2, [r4, #24]
+  64:lvgl/examples/widgets/chart/lv_example_chart_2.c ****             }
+ 409              		.loc 1 64 44 view .LVU125
+ 410 0162 D380     		strh	r3, [r2, #6]	@ movhi
+ 411 0164 EAE7     		b	.L7
+ 412              	.L23:
+  57:lvgl/examples/widgets/chart/lv_example_chart_2.c ****                 dsc->line_dsc->dash_gap  = 0;
+ 413              		.loc 1 57 17 is_stmt 1 view .LVU126
+  57:lvgl/examples/widgets/chart/lv_example_chart_2.c ****                 dsc->line_dsc->dash_gap  = 0;
+ 414              		.loc 1 57 20 is_stmt 0 view .LVU127
+ 415 0166 A369     		ldr	r3, [r4, #24]
+  57:lvgl/examples/widgets/chart/lv_example_chart_2.c ****                 dsc->line_dsc->dash_gap  = 0;
+ 416              		.loc 1 57 39 view .LVU128
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccpLyDPI.s 			page 12
+
+
+ 417 0168 0222     		movs	r2, #2
+ 418 016a 9A80     		strh	r2, [r3, #4]	@ movhi
+  58:lvgl/examples/widgets/chart/lv_example_chart_2.c ****                 dsc->line_dsc->dash_width  = 0;
+ 419              		.loc 1 58 17 is_stmt 1 view .LVU129
+  58:lvgl/examples/widgets/chart/lv_example_chart_2.c ****                 dsc->line_dsc->dash_width  = 0;
+ 420              		.loc 1 58 20 is_stmt 0 view .LVU130
+ 421 016c A269     		ldr	r2, [r4, #24]
+  58:lvgl/examples/widgets/chart/lv_example_chart_2.c ****                 dsc->line_dsc->dash_width  = 0;
+ 422              		.loc 1 58 42 view .LVU131
+ 423 016e 0023     		movs	r3, #0
+ 424 0170 1381     		strh	r3, [r2, #8]	@ movhi
+  59:lvgl/examples/widgets/chart/lv_example_chart_2.c ****             }
+ 425              		.loc 1 59 17 is_stmt 1 view .LVU132
+  59:lvgl/examples/widgets/chart/lv_example_chart_2.c ****             }
+ 426              		.loc 1 59 20 is_stmt 0 view .LVU133
+ 427 0172 A269     		ldr	r2, [r4, #24]
+  59:lvgl/examples/widgets/chart/lv_example_chart_2.c ****             }
+ 428              		.loc 1 59 44 view .LVU134
+ 429 0174 D380     		strh	r3, [r2, #6]	@ movhi
+ 430 0176 E1E7     		b	.L7
+ 431              	.LVL35:
+ 432              	.L21:
+  70:lvgl/examples/widgets/chart/lv_example_chart_2.c ****                 dsc->line_dsc->dash_gap  = 0;
+ 433              		.loc 1 70 17 is_stmt 1 view .LVU135
+  70:lvgl/examples/widgets/chart/lv_example_chart_2.c ****                 dsc->line_dsc->dash_gap  = 0;
+ 434              		.loc 1 70 39 is_stmt 0 view .LVU136
+ 435 0178 AB80     		strh	r3, [r5, #4]	@ movhi
+  71:lvgl/examples/widgets/chart/lv_example_chart_2.c ****                 dsc->line_dsc->dash_width  = 0;
+ 436              		.loc 1 71 17 is_stmt 1 view .LVU137
+  71:lvgl/examples/widgets/chart/lv_example_chart_2.c ****                 dsc->line_dsc->dash_width  = 0;
+ 437              		.loc 1 71 20 is_stmt 0 view .LVU138
+ 438 017a 8269     		ldr	r2, [r0, #24]
+  71:lvgl/examples/widgets/chart/lv_example_chart_2.c ****                 dsc->line_dsc->dash_width  = 0;
+ 439              		.loc 1 71 42 view .LVU139
+ 440 017c 0023     		movs	r3, #0
+ 441 017e 1381     		strh	r3, [r2, #8]	@ movhi
+  72:lvgl/examples/widgets/chart/lv_example_chart_2.c ****             }
+ 442              		.loc 1 72 17 is_stmt 1 view .LVU140
+  72:lvgl/examples/widgets/chart/lv_example_chart_2.c ****             }
+ 443              		.loc 1 72 20 is_stmt 0 view .LVU141
+ 444 0180 8269     		ldr	r2, [r0, #24]
+  72:lvgl/examples/widgets/chart/lv_example_chart_2.c ****             }
+ 445              		.loc 1 72 44 view .LVU142
+ 446 0182 D380     		strh	r3, [r2, #6]	@ movhi
+ 447 0184 6AE7     		b	.L16
+ 448              	.L17:
+  84:lvgl/examples/widgets/chart/lv_example_chart_2.c ****             }
+ 449              		.loc 1 84 17 is_stmt 1 view .LVU143
+  84:lvgl/examples/widgets/chart/lv_example_chart_2.c ****             }
+ 450              		.loc 1 84 20 is_stmt 0 view .LVU144
+ 451 0186 A469     		ldr	r4, [r4, #24]
+  84:lvgl/examples/widgets/chart/lv_example_chart_2.c ****             }
+ 452              		.loc 1 84 41 view .LVU145
+ 453 0188 0121     		movs	r1, #1
+ 454 018a 1220     		movs	r0, #18
+ 455              	.LVL36:
+  84:lvgl/examples/widgets/chart/lv_example_chart_2.c ****             }
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccpLyDPI.s 			page 13
+
+
+ 456              		.loc 1 84 41 view .LVU146
+ 457 018c FFF7FEFF 		bl	lv_palette_lighten
+ 458              	.LVL37:
+ 459 0190 2060     		str	r0, [r4]
+ 460 0192 D3E7     		b	.L7
+ 461              		.cfi_endproc
+ 462              	.LFE204:
+ 464              		.section	.text.lv_example_chart_2,"ax",%progbits
+ 465              		.align	1
+ 466              		.global	lv_example_chart_2
+ 467              		.syntax unified
+ 468              		.thumb
+ 469              		.thumb_func
+ 471              	lv_example_chart_2:
+ 472              	.LFB206:
+ 100:lvgl/examples/widgets/chart/lv_example_chart_2.c **** 
+ 101:lvgl/examples/widgets/chart/lv_example_chart_2.c **** /**
+ 102:lvgl/examples/widgets/chart/lv_example_chart_2.c ****  * Add a faded area effect to the line chart and make some division lines ticker
+ 103:lvgl/examples/widgets/chart/lv_example_chart_2.c ****  */
+ 104:lvgl/examples/widgets/chart/lv_example_chart_2.c **** void lv_example_chart_2(void)
+ 105:lvgl/examples/widgets/chart/lv_example_chart_2.c **** {
+ 473              		.loc 1 105 1 is_stmt 1 view -0
+ 474              		.cfi_startproc
+ 475              		@ args = 0, pretend = 0, frame = 0
+ 476              		@ frame_needed = 0, uses_anonymous_args = 0
+ 477 0000 F8B5     		push	{r3, r4, r5, r6, r7, lr}
+ 478              		.cfi_def_cfa_offset 24
+ 479              		.cfi_offset 3, -24
+ 480              		.cfi_offset 4, -20
+ 481              		.cfi_offset 5, -16
+ 482              		.cfi_offset 6, -12
+ 483              		.cfi_offset 7, -8
+ 484              		.cfi_offset 14, -4
+ 106:lvgl/examples/widgets/chart/lv_example_chart_2.c ****     /*Create a chart1*/
+ 107:lvgl/examples/widgets/chart/lv_example_chart_2.c ****     chart1 = lv_chart_create(lv_scr_act());
+ 485              		.loc 1 107 5 view .LVU148
+ 486              	.LBB10:
+ 487              	.LBI10:
+ 488              		.file 2 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/core/lv_disp.h"
+   1:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+   2:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @file lv_disp.h
+   3:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  *
+   4:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+   5:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+   6:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** #ifndef LV_DISP_H
+   7:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** #define LV_DISP_H
+   8:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+   9:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** #ifdef __cplusplus
+  10:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** extern "C" {
+  11:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** #endif
+  12:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+  13:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /*********************
+  14:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  *      INCLUDES
+  15:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  *********************/
+  16:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** #include "../hal/lv_hal.h"
+  17:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** #include "lv_obj.h"
+  18:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** #include "lv_theme.h"
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccpLyDPI.s 			page 14
+
+
+  19:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+  20:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /*********************
+  21:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  *      DEFINES
+  22:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  *********************/
+  23:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+  24:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**********************
+  25:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  *      TYPEDEFS
+  26:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  **********************/
+  27:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+  28:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** typedef enum {
+  29:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_NONE,
+  30:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_OVER_LEFT,
+  31:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_OVER_RIGHT,
+  32:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_OVER_TOP,
+  33:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_OVER_BOTTOM,
+  34:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_MOVE_LEFT,
+  35:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_MOVE_RIGHT,
+  36:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_MOVE_TOP,
+  37:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_MOVE_BOTTOM,
+  38:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_FADE_IN,
+  39:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_FADE_ON = LV_SCR_LOAD_ANIM_FADE_IN, /*For backward compatibility*/
+  40:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_FADE_OUT,
+  41:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_OUT_LEFT,
+  42:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_OUT_RIGHT,
+  43:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_OUT_TOP,
+  44:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_OUT_BOTTOM,
+  45:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** } lv_scr_load_anim_t;
+  46:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+  47:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**********************
+  48:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * GLOBAL PROTOTYPES
+  49:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  **********************/
+  50:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+  51:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+  52:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Return with a pointer to the active screen
+  53:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to display which active screen should be get. (NULL to use the default
+  54:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * screen)
+  55:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @return pointer to the active screen object (loaded by 'lv_scr_load()')
+  56:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+  57:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** lv_obj_t * lv_disp_get_scr_act(lv_disp_t * disp);
+  58:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+  59:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+  60:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Return with a pointer to the previous screen. Only used during screen transitions.
+  61:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to display which previous screen should be get. (NULL to use the default
+  62:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * screen)
+  63:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @return pointer to the previous screen object or NULL if not used now
+  64:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+  65:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** lv_obj_t * lv_disp_get_scr_prev(lv_disp_t * disp);
+  66:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+  67:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+  68:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Make a screen active
+  69:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param scr pointer to a screen
+  70:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+  71:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** void lv_disp_load_scr(lv_obj_t * scr);
+  72:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+  73:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+  74:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Return with the top layer. (Same on every screen and it is above the normal screen layer)
+  75:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to display which top layer should be get. (NULL to use the default screen)
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccpLyDPI.s 			page 15
+
+
+  76:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @return pointer to the top layer object (transparent screen sized lv_obj)
+  77:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+  78:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** lv_obj_t * lv_disp_get_layer_top(lv_disp_t * disp);
+  79:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+  80:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+  81:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Return with the sys. layer. (Same on every screen and it is above the normal screen and the top
+  82:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * layer)
+  83:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to display which sys. layer should be retrieved. (NULL to use the default sc
+  84:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @return pointer to the sys layer object (transparent screen sized lv_obj)
+  85:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+  86:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** lv_obj_t * lv_disp_get_layer_sys(lv_disp_t * disp);
+  87:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+  88:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+  89:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Set the theme of a display
+  90:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to a display
+  91:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+  92:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** void lv_disp_set_theme(lv_disp_t * disp, lv_theme_t * th);
+  93:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+  94:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+  95:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Get the theme of a display
+  96:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to a display
+  97:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @return the display's theme (can be NULL)
+  98:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+  99:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** lv_theme_t * lv_disp_get_theme(lv_disp_t * disp);
+ 100:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+ 101:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+ 102:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Set the background color of a display
+ 103:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to a display
+ 104:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param color color of the background
+ 105:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+ 106:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** void lv_disp_set_bg_color(lv_disp_t * disp, lv_color_t color);
+ 107:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+ 108:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+ 109:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Set the background image of a display
+ 110:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to a display
+ 111:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param img_src path to file or pointer to an `lv_img_dsc_t` variable
+ 112:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+ 113:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** void lv_disp_set_bg_image(lv_disp_t * disp, const void  * img_src);
+ 114:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+ 115:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+ 116:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Set opacity of the background
+ 117:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to a display
+ 118:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param opa opacity (0..255)
+ 119:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+ 120:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** void lv_disp_set_bg_opa(lv_disp_t * disp, lv_opa_t opa);
+ 121:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+ 122:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+ 123:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Switch screen with animation
+ 124:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param scr pointer to the new screen to load
+ 125:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param anim_type type of the animation from `lv_scr_load_anim_t`, e.g. `LV_SCR_LOAD_ANIM_MOVE_LE
+ 126:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param time time of the animation
+ 127:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param delay delay before the transition
+ 128:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param auto_del true: automatically delete the old screen
+ 129:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+ 130:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** void lv_scr_load_anim(lv_obj_t * scr, lv_scr_load_anim_t anim_type, uint32_t time, uint32_t delay, 
+ 131:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+ 132:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccpLyDPI.s 			page 16
+
+
+ 133:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Get elapsed time since last user activity on a display (e.g. click)
+ 134:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to a display (NULL to get the overall smallest inactivity)
+ 135:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @return elapsed ticks (milliseconds) since the last activity
+ 136:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+ 137:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** uint32_t lv_disp_get_inactive_time(const lv_disp_t * disp);
+ 138:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+ 139:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+ 140:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Manually trigger an activity on a display
+ 141:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to a display (NULL to use the default display)
+ 142:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+ 143:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** void lv_disp_trig_activity(lv_disp_t * disp);
+ 144:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+ 145:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+ 146:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Clean any CPU cache that is related to the display.
+ 147:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to a display (NULL to use the default display)
+ 148:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+ 149:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** void lv_disp_clean_dcache(lv_disp_t * disp);
+ 150:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+ 151:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+ 152:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Temporarily enable and disable the invalidation of the display.
+ 153:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to a display (NULL to use the default display)
+ 154:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param en true: enable invalidation; false: invalidation
+ 155:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+ 156:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** void lv_disp_enable_invalidation(lv_disp_t * disp, bool en);
+ 157:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+ 158:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+ 159:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Get display invalidation is enabled.
+ 160:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to a display (NULL to use the default display)
+ 161:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @return return true if invalidation is enabled
+ 162:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+ 163:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** bool lv_disp_is_invalidation_enabled(lv_disp_t * disp);
+ 164:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+ 165:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+ 166:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Get a pointer to the screen refresher timer to
+ 167:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * modify its parameters with `lv_timer_...` functions.
+ 168:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to a display
+ 169:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @return pointer to the display refresher timer. (NULL on error)
+ 170:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+ 171:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** lv_timer_t * _lv_disp_get_refr_timer(lv_disp_t * disp);
+ 172:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+ 173:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /*------------------------------------------------
+ 174:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * To improve backward compatibility
+ 175:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Recommended only if you have one display
+ 176:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  *------------------------------------------------*/
+ 177:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
+ 178:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
+ 179:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Get the active screen of the default display
+ 180:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @return pointer to the active screen
+ 181:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
+ 182:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** static inline lv_obj_t * lv_scr_act(void)
+ 489              		.loc 2 182 26 view .LVU149
+ 490              	.LBB11:
+ 183:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** {
+ 184:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     return lv_disp_get_scr_act(lv_disp_get_default());
+ 491              		.loc 2 184 5 view .LVU150
+ 492              		.loc 2 184 12 is_stmt 0 view .LVU151
+ 493 0002 FFF7FEFF 		bl	lv_disp_get_default
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccpLyDPI.s 			page 17
+
+
+ 494              	.LVL38:
+ 495 0006 FFF7FEFF 		bl	lv_disp_get_scr_act
+ 496              	.LVL39:
+ 497              	.LBE11:
+ 498              	.LBE10:
+ 499              		.loc 1 107 14 view .LVU152
+ 500 000a FFF7FEFF 		bl	lv_chart_create
+ 501              	.LVL40:
+ 502              		.loc 1 107 12 view .LVU153
+ 503 000e 2C4C     		ldr	r4, .L28
+ 504 0010 2060     		str	r0, [r4]
+ 108:lvgl/examples/widgets/chart/lv_example_chart_2.c ****     lv_obj_set_size(chart1, 200, 150);
+ 505              		.loc 1 108 5 is_stmt 1 view .LVU154
+ 506 0012 9622     		movs	r2, #150
+ 507 0014 C821     		movs	r1, #200
+ 508 0016 FFF7FEFF 		bl	lv_obj_set_size
+ 509              	.LVL41:
+ 109:lvgl/examples/widgets/chart/lv_example_chart_2.c ****     lv_obj_center(chart1);
+ 510              		.loc 1 109 5 view .LVU155
+ 511              	.LBB12:
+ 512              	.LBI12:
+ 513              		.file 3 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\core\\lv_obj_pos.h"
+   1:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** /**
+   2:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @file lv_obj_pos.h
+   3:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  *
+   4:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  */
+   5:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** 
+   6:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** #ifndef LV_OBJ_POS_H
+   7:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** #define LV_OBJ_POS_H
+   8:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** 
+   9:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** #ifdef __cplusplus
+  10:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** extern "C" {
+  11:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** #endif
+  12:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** 
+  13:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** /*********************
+  14:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  *      INCLUDES
+  15:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  *********************/
+  16:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** #include "../misc/lv_area.h"
+  17:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** 
+  18:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** /*********************
+  19:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  *      DEFINES
+  20:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  *********************/
+  21:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** 
+  22:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** /**********************
+  23:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  *      TYPEDEFS
+  24:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  **********************/
+  25:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** struct _lv_obj_t;
+  26:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** 
+  27:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** typedef void (*lv_layout_update_cb_t)(struct _lv_obj_t *, void * user_data);
+  28:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** typedef struct {
+  29:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****     lv_layout_update_cb_t cb;
+  30:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****     void * user_data;
+  31:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** } lv_layout_dsc_t;
+  32:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** 
+  33:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** /**********************
+  34:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * GLOBAL PROTOTYPES
+  35:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  **********************/
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccpLyDPI.s 			page 18
+
+
+  36:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** 
+  37:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** /**
+  38:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * Set the position of an object relative to the set alignment.
+  39:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @param obj       pointer to an object
+  40:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @param x         new x coordinate
+  41:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @param y         new y coordinate
+  42:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @note            With default alignment it's the distance from the top left corner
+  43:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @note            E.g. LV_ALIGN_CENTER alignment it's the offset from the center of the parent
+  44:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @note            The position is interpreted on the content area of the parent
+  45:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @note            The values can be set in pixel or in percentage of parent size with `lv_pct(v)`
+  46:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  */
+  47:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** void lv_obj_set_pos(struct _lv_obj_t * obj, lv_coord_t x, lv_coord_t y);
+  48:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** 
+  49:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** /**
+  50:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * Set the x coordinate of an object
+  51:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @param obj       pointer to an object
+  52:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @param x         new x coordinate
+  53:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @note            With default alignment it's the distance from the top left corner
+  54:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @note            E.g. LV_ALIGN_CENTER alignment it's the offset from the center of the parent
+  55:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @note            The position is interpreted on the content area of the parent
+  56:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @note            The values can be set in pixel or in percentage of parent size with `lv_pct(v)`
+  57:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  */
+  58:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** void lv_obj_set_x(struct _lv_obj_t * obj, lv_coord_t x);
+  59:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** 
+  60:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** /**
+  61:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * Set the y coordinate of an object
+  62:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @param obj       pointer to an object
+  63:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @param y         new y coordinate
+  64:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @note            With default alignment it's the distance from the top left corner
+  65:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @note            E.g. LV_ALIGN_CENTER alignment it's the offset from the center of the parent
+  66:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @note            The position is interpreted on the content area of the parent
+  67:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @note            The values can be set in pixel or in percentage of parent size with `lv_pct(v)`
+  68:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  */
+  69:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** void lv_obj_set_y(struct _lv_obj_t * obj, lv_coord_t y);
+  70:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** 
+  71:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** /**
+  72:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * Set the size of an object.
+  73:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @param obj       pointer to an object
+  74:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @param w         the new width
+  75:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @param h         the new height
+  76:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @note            possible values are:
+  77:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  *                  pixel               simple set the size accordingly
+  78:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  *                  LV_SIZE_CONTENT     set the size to involve all children in the given direction
+  79:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  *                  LV_SIZE_PCT(x)     to set size in percentage of the parent's content area size 
+  80:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  *                                      x should be in [0..1000]% range
+  81:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  */
+  82:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** void lv_obj_set_size(struct _lv_obj_t * obj, lv_coord_t w, lv_coord_t h);
+  83:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** 
+  84:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** /**
+  85:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * Recalculate the size of the object
+  86:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @param obj       pointer to an object
+  87:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @return          true: the size has been changed
+  88:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  */
+  89:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** bool lv_obj_refr_size(struct _lv_obj_t * obj);
+  90:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** 
+  91:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** /**
+  92:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * Set the width of an object
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccpLyDPI.s 			page 19
+
+
+  93:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @param obj       pointer to an object
+  94:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @param w         the new width
+  95:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @note            possible values are:
+  96:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  *                  pixel               simple set the size accordingly
+  97:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  *                  LV_SIZE_CONTENT     set the size to involve all children in the given direction
+  98:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  *                  lv_pct(x)           to set size in percentage of the parent's content area size
+  99:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  *                                      x should be in [0..1000]% range
+ 100:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  */
+ 101:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** void lv_obj_set_width(struct _lv_obj_t * obj, lv_coord_t w);
+ 102:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** 
+ 103:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** /**
+ 104:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * Set the height of an object
+ 105:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @param obj       pointer to an object
+ 106:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @param h         the new height
+ 107:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @note            possible values are:
+ 108:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  *                  pixel               simple set the size accordingly
+ 109:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  *                  LV_SIZE_CONTENT     set the size to involve all children in the given direction
+ 110:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  *                  lv_pct(x)           to set size in percentage of the parent's content area size
+ 111:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  *                                      x should be in [0..1000]% range
+ 112:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  */
+ 113:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** void lv_obj_set_height(struct _lv_obj_t * obj, lv_coord_t h);
+ 114:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** 
+ 115:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** /**
+ 116:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * Set the width reduced by the left and right padding and the border width.
+ 117:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @param obj       pointer to an object
+ 118:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @param w         the width without paddings in pixels
+ 119:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  */
+ 120:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** void lv_obj_set_content_width(struct _lv_obj_t * obj, lv_coord_t w);
+ 121:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** 
+ 122:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** /**
+ 123:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * Set the height reduced by the top and bottom padding and the border width.
+ 124:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @param obj       pointer to an object
+ 125:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @param h         the height without paddings in pixels
+ 126:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  */
+ 127:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** void lv_obj_set_content_height(struct _lv_obj_t * obj, lv_coord_t h);
+ 128:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** 
+ 129:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** /**
+ 130:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * Set a layout for an object
+ 131:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @param obj       pointer to an object
+ 132:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @param layout    pointer to a layout descriptor to set
+ 133:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  */
+ 134:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** void lv_obj_set_layout(struct _lv_obj_t * obj, uint32_t layout);
+ 135:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** 
+ 136:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** /**
+ 137:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * Test whether the and object is positioned by a layout or not
+ 138:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @param obj       pointer to an object to test
+ 139:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @return true:    positioned by a layout; false: not positioned by a layout
+ 140:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  */
+ 141:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** bool lv_obj_is_layout_positioned(const struct _lv_obj_t * obj);
+ 142:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** 
+ 143:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** /**
+ 144:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * Mark the object for layout update.
+ 145:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @param obj      pointer to an object whose children needs to be updated
+ 146:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  */
+ 147:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** void lv_obj_mark_layout_as_dirty(struct _lv_obj_t * obj);
+ 148:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** 
+ 149:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** /**
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccpLyDPI.s 			page 20
+
+
+ 150:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * Update the layout of an object.
+ 151:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @param obj      pointer to an object whose children needs to be updated
+ 152:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  */
+ 153:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** void lv_obj_update_layout(const struct _lv_obj_t * obj);
+ 154:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** 
+ 155:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** /**
+ 156:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * Register a new layout
+ 157:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @param cb        the layout update callback
+ 158:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @param user_data custom data that will be passed to `cb`
+ 159:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @return          the ID of the new layout
+ 160:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  */
+ 161:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** uint32_t lv_layout_register(lv_layout_update_cb_t cb, void * user_data);
+ 162:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** 
+ 163:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** /**
+ 164:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * Change the alignment of an object.
+ 165:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @param obj       pointer to an object to align
+ 166:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @param align     type of alignment (see 'lv_align_t' enum) `LV_ALIGN_OUT_...` can't be used.
+ 167:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  */
+ 168:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** void lv_obj_set_align(struct _lv_obj_t * obj, lv_align_t align);
+ 169:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** 
+ 170:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** /**
+ 171:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * Change the alignment of an object and set new coordinates.
+ 172:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * Equivalent to:
+ 173:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * lv_obj_set_align(obj, align);
+ 174:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * lv_obj_set_pos(obj, x_ofs, y_ofs);
+ 175:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @param obj       pointer to an object to align
+ 176:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @param align     type of alignment (see 'lv_align_t' enum) `LV_ALIGN_OUT_...` can't be used.
+ 177:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @param x_ofs     x coordinate offset after alignment
+ 178:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @param y_ofs     y coordinate offset after alignment
+ 179:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  */
+ 180:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** void lv_obj_align(struct _lv_obj_t * obj, lv_align_t align, lv_coord_t x_ofs, lv_coord_t y_ofs);
+ 181:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** 
+ 182:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** /**
+ 183:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * Align an object to an other object.
+ 184:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @param obj       pointer to an object to align
+ 185:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @param base      pointer to an other object (if NULL `obj`s parent is used). 'obj' will be align
+ 186:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @param align     type of alignment (see 'lv_align_t' enum)
+ 187:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @param x_ofs     x coordinate offset after alignment
+ 188:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @param y_ofs     y coordinate offset after alignment
+ 189:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @note            if the position or size of `base` changes `obj` needs to be aligned manually ag
+ 190:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  */
+ 191:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** void lv_obj_align_to(struct _lv_obj_t * obj, const struct _lv_obj_t * base, lv_align_t align, lv_co
+ 192:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****                      lv_coord_t y_ofs);
+ 193:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** 
+ 194:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** /**
+ 195:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * Align an object to the center on its parent.
+ 196:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @param obj       pointer to an object to align
+ 197:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @note            if the parent size changes `obj` needs to be aligned manually again
+ 198:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  */
+ 199:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** static inline void lv_obj_center(struct _lv_obj_t * obj)
+ 514              		.loc 3 199 20 view .LVU156
+ 515              	.LBB13:
+ 200:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** {
+ 201:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****     lv_obj_align(obj, LV_ALIGN_CENTER, 0, 0);
+ 516              		.loc 3 201 5 view .LVU157
+ 517 001a 0023     		movs	r3, #0
+ 518 001c 1A46     		mov	r2, r3
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccpLyDPI.s 			page 21
+
+
+ 519 001e 0921     		movs	r1, #9
+ 520 0020 2068     		ldr	r0, [r4]
+ 521 0022 FFF7FEFF 		bl	lv_obj_align
+ 522              	.LVL42:
+ 523              		.loc 3 201 5 is_stmt 0 view .LVU158
+ 524              	.LBE13:
+ 525              	.LBE12:
+ 110:lvgl/examples/widgets/chart/lv_example_chart_2.c ****     lv_chart_set_type(chart1, LV_CHART_TYPE_LINE);   /*Show lines and points too*/
+ 526              		.loc 1 110 5 is_stmt 1 view .LVU159
+ 527 0026 0121     		movs	r1, #1
+ 528 0028 2068     		ldr	r0, [r4]
+ 529 002a FFF7FEFF 		bl	lv_chart_set_type
+ 530              	.LVL43:
+ 111:lvgl/examples/widgets/chart/lv_example_chart_2.c **** 
+ 112:lvgl/examples/widgets/chart/lv_example_chart_2.c ****     lv_chart_set_div_line_count(chart1, 5, 7);
+ 531              		.loc 1 112 5 view .LVU160
+ 532 002e 0722     		movs	r2, #7
+ 533 0030 0521     		movs	r1, #5
+ 534 0032 2068     		ldr	r0, [r4]
+ 535 0034 FFF7FEFF 		bl	lv_chart_set_div_line_count
+ 536              	.LVL44:
+ 113:lvgl/examples/widgets/chart/lv_example_chart_2.c **** 
+ 114:lvgl/examples/widgets/chart/lv_example_chart_2.c ****     lv_obj_add_event_cb(chart1, draw_event_cb, LV_EVENT_DRAW_PART_BEGIN, NULL);
+ 537              		.loc 1 114 5 view .LVU161
+ 538 0038 0023     		movs	r3, #0
+ 539 003a 1A22     		movs	r2, #26
+ 540 003c 2149     		ldr	r1, .L28+4
+ 541 003e 2068     		ldr	r0, [r4]
+ 542 0040 FFF7FEFF 		bl	lv_obj_add_event_cb
+ 543              	.LVL45:
+ 115:lvgl/examples/widgets/chart/lv_example_chart_2.c ****     lv_chart_set_update_mode(chart1, LV_CHART_UPDATE_MODE_CIRCULAR);
+ 544              		.loc 1 115 5 view .LVU162
+ 545 0044 0121     		movs	r1, #1
+ 546 0046 2068     		ldr	r0, [r4]
+ 547 0048 FFF7FEFF 		bl	lv_chart_set_update_mode
+ 548              	.LVL46:
+ 116:lvgl/examples/widgets/chart/lv_example_chart_2.c **** 
+ 117:lvgl/examples/widgets/chart/lv_example_chart_2.c ****     /*Add two data series*/
+ 118:lvgl/examples/widgets/chart/lv_example_chart_2.c ****     ser1 = lv_chart_add_series(chart1, lv_palette_main(LV_PALETTE_RED), LV_CHART_AXIS_PRIMARY_Y);
+ 549              		.loc 1 118 5 view .LVU163
+ 550              		.loc 1 118 12 is_stmt 0 view .LVU164
+ 551 004c 2568     		ldr	r5, [r4]
+ 552 004e 0020     		movs	r0, #0
+ 553 0050 FFF7FEFF 		bl	lv_palette_main
+ 554              	.LVL47:
+ 555 0054 0146     		mov	r1, r0
+ 556 0056 0022     		movs	r2, #0
+ 557 0058 2846     		mov	r0, r5
+ 558 005a FFF7FEFF 		bl	lv_chart_add_series
+ 559              	.LVL48:
+ 560              		.loc 1 118 10 view .LVU165
+ 561 005e 1A4B     		ldr	r3, .L28+8
+ 562 0060 1860     		str	r0, [r3]
+ 119:lvgl/examples/widgets/chart/lv_example_chart_2.c ****     ser2 = lv_chart_add_series(chart1, lv_palette_main(LV_PALETTE_BLUE), LV_CHART_AXIS_SECONDARY_Y)
+ 563              		.loc 1 119 5 is_stmt 1 view .LVU166
+ 564              		.loc 1 119 12 is_stmt 0 view .LVU167
+ 565 0062 2468     		ldr	r4, [r4]
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccpLyDPI.s 			page 22
+
+
+ 566 0064 0520     		movs	r0, #5
+ 567 0066 FFF7FEFF 		bl	lv_palette_main
+ 568              	.LVL49:
+ 569 006a 0146     		mov	r1, r0
+ 570 006c 0122     		movs	r2, #1
+ 571 006e 2046     		mov	r0, r4
+ 572 0070 FFF7FEFF 		bl	lv_chart_add_series
+ 573              	.LVL50:
+ 574              		.loc 1 119 10 view .LVU168
+ 575 0074 154B     		ldr	r3, .L28+12
+ 576 0076 1860     		str	r0, [r3]
+ 120:lvgl/examples/widgets/chart/lv_example_chart_2.c **** 
+ 121:lvgl/examples/widgets/chart/lv_example_chart_2.c ****     uint32_t i;
+ 577              		.loc 1 121 5 is_stmt 1 view .LVU169
+ 122:lvgl/examples/widgets/chart/lv_example_chart_2.c ****     for(i = 0; i < 10; i++) {
+ 578              		.loc 1 122 5 view .LVU170
+ 579              	.LVL51:
+ 580              		.loc 1 122 11 is_stmt 0 view .LVU171
+ 581 0078 0024     		movs	r4, #0
+ 582              		.loc 1 122 5 view .LVU172
+ 583 007a 19E0     		b	.L25
+ 584              	.LVL52:
+ 585              	.L26:
+ 123:lvgl/examples/widgets/chart/lv_example_chart_2.c ****         lv_chart_set_next_value(chart1, ser1, lv_rand(20, 90));
+ 586              		.loc 1 123 9 is_stmt 1 discriminator 3 view .LVU173
+ 587 007c 104D     		ldr	r5, .L28
+ 588 007e 2E68     		ldr	r6, [r5]
+ 589 0080 114B     		ldr	r3, .L28+8
+ 590 0082 1F68     		ldr	r7, [r3]
+ 591              		.loc 1 123 47 is_stmt 0 discriminator 3 view .LVU174
+ 592 0084 5A21     		movs	r1, #90
+ 593 0086 1420     		movs	r0, #20
+ 594 0088 FFF7FEFF 		bl	lv_rand
+ 595              	.LVL53:
+ 596              		.loc 1 123 9 discriminator 3 view .LVU175
+ 597 008c 02B2     		sxth	r2, r0
+ 598 008e 3946     		mov	r1, r7
+ 599 0090 3046     		mov	r0, r6
+ 600 0092 FFF7FEFF 		bl	lv_chart_set_next_value
+ 601              	.LVL54:
+ 124:lvgl/examples/widgets/chart/lv_example_chart_2.c ****         lv_chart_set_next_value(chart1, ser2, lv_rand(30, 70));
+ 602              		.loc 1 124 9 is_stmt 1 discriminator 3 view .LVU176
+ 603 0096 2D68     		ldr	r5, [r5]
+ 604 0098 0C4B     		ldr	r3, .L28+12
+ 605 009a 1E68     		ldr	r6, [r3]
+ 606              		.loc 1 124 47 is_stmt 0 discriminator 3 view .LVU177
+ 607 009c 4621     		movs	r1, #70
+ 608 009e 1E20     		movs	r0, #30
+ 609 00a0 FFF7FEFF 		bl	lv_rand
+ 610              	.LVL55:
+ 611              		.loc 1 124 9 discriminator 3 view .LVU178
+ 612 00a4 02B2     		sxth	r2, r0
+ 613 00a6 3146     		mov	r1, r6
+ 614 00a8 2846     		mov	r0, r5
+ 615 00aa FFF7FEFF 		bl	lv_chart_set_next_value
+ 616              	.LVL56:
+ 122:lvgl/examples/widgets/chart/lv_example_chart_2.c ****     for(i = 0; i < 10; i++) {
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccpLyDPI.s 			page 23
+
+
+ 617              		.loc 1 122 24 is_stmt 1 discriminator 3 view .LVU179
+ 122:lvgl/examples/widgets/chart/lv_example_chart_2.c ****     for(i = 0; i < 10; i++) {
+ 618              		.loc 1 122 25 is_stmt 0 discriminator 3 view .LVU180
+ 619 00ae 0134     		adds	r4, r4, #1
+ 620              	.LVL57:
+ 621              	.L25:
+ 122:lvgl/examples/widgets/chart/lv_example_chart_2.c ****     for(i = 0; i < 10; i++) {
+ 622              		.loc 1 122 16 is_stmt 1 discriminator 1 view .LVU181
+ 122:lvgl/examples/widgets/chart/lv_example_chart_2.c ****     for(i = 0; i < 10; i++) {
+ 623              		.loc 1 122 5 is_stmt 0 discriminator 1 view .LVU182
+ 624 00b0 092C     		cmp	r4, #9
+ 625 00b2 E3D9     		bls	.L26
+ 125:lvgl/examples/widgets/chart/lv_example_chart_2.c ****     }
+ 126:lvgl/examples/widgets/chart/lv_example_chart_2.c **** 
+ 127:lvgl/examples/widgets/chart/lv_example_chart_2.c ****     lv_timer_create(add_data, 200, NULL);
+ 626              		.loc 1 127 5 is_stmt 1 view .LVU183
+ 627 00b4 0022     		movs	r2, #0
+ 628 00b6 C821     		movs	r1, #200
+ 629 00b8 0548     		ldr	r0, .L28+16
+ 630 00ba FFF7FEFF 		bl	lv_timer_create
+ 631              	.LVL58:
+ 128:lvgl/examples/widgets/chart/lv_example_chart_2.c **** }
+ 632              		.loc 1 128 1 is_stmt 0 view .LVU184
+ 633 00be F8BD     		pop	{r3, r4, r5, r6, r7, pc}
+ 634              	.LVL59:
+ 635              	.L29:
+ 636              		.loc 1 128 1 view .LVU185
+ 637              		.align	2
+ 638              	.L28:
+ 639 00c0 00000000 		.word	.LANCHOR0
+ 640 00c4 00000000 		.word	draw_event_cb
+ 641 00c8 00000000 		.word	.LANCHOR1
+ 642 00cc 00000000 		.word	.LANCHOR3
+ 643 00d0 00000000 		.word	add_data
+ 644              		.cfi_endproc
+ 645              	.LFE206:
+ 647              		.section	.bss.chart1,"aw",%nobits
+ 648              		.align	2
+ 649              		.set	.LANCHOR0,. + 0
+ 652              	chart1:
+ 653 0000 00000000 		.space	4
+ 654              		.section	.bss.cnt.0,"aw",%nobits
+ 655              		.align	2
+ 656              		.set	.LANCHOR2,. + 0
+ 659              	cnt.0:
+ 660 0000 00000000 		.space	4
+ 661              		.section	.bss.ser1,"aw",%nobits
+ 662              		.align	2
+ 663              		.set	.LANCHOR1,. + 0
+ 666              	ser1:
+ 667 0000 00000000 		.space	4
+ 668              		.section	.bss.ser2,"aw",%nobits
+ 669              		.align	2
+ 670              		.set	.LANCHOR3,. + 0
+ 673              	ser2:
+ 674 0000 00000000 		.space	4
+ 675              		.text
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccpLyDPI.s 			page 24
+
+
+ 676              	.Letext0:
+ 677              		.file 4 "c:\\tools\\gcc-arm-none-eabi\\arm-none-eabi\\include\\machine\\_default_types.h"
+ 678              		.file 5 "c:\\tools\\gcc-arm-none-eabi\\arm-none-eabi\\include\\sys\\_stdint.h"
+ 679              		.file 6 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/misc/lv_types.h"
+ 680              		.file 7 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/misc/lv_timer.h"
+ 681              		.file 8 "c:\\tools\\gcc-arm-none-eabi\\lib\\gcc\\arm-none-eabi\\10.3.1\\include\\stddef.h"
+ 682              		.file 9 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\misc\\lv_area.h"
+ 683              		.file 10 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\font\\lv_font.h"
+ 684              		.file 11 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\misc\\lv_color.h"
+ 685              		.file 12 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\misc\\lv_txt.h"
+ 686              		.file 13 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\misc\\lv_bidi.h"
+ 687              		.file 14 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\misc\\lv_style.h"
+ 688              		.file 15 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\draw\\lv_img_buf.h"
+ 689              		.file 16 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/core/lv_obj.h"
+ 690              		.file 17 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\draw\\lv_draw_rect.h"
+ 691              		.file 18 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\draw\\lv_draw_label.h"
+ 692              		.file 19 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\draw\\lv_draw_img.h"
+ 693              		.file 20 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\draw\\lv_draw_line.h"
+ 694              		.file 21 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\draw\\lv_draw_arc.h"
+ 695              		.file 22 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\draw\\lv_draw_mask.h"
+ 696              		.file 23 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\draw\\lv_draw_layer.h"
+ 697              		.file 24 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\draw\\lv_draw.h"
+ 698              		.file 25 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\misc\\lv_ll.h"
+ 699              		.file 26 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/core/lv_group.h"
+ 700              		.file 27 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/core/lv_obj_scroll.h"
+ 701              		.file 28 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/core/lv_obj_style.h"
+ 702              		.file 29 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/core/lv_obj_draw.h"
+ 703              		.file 30 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/core/lv_obj_class.h"
+ 704              		.file 31 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/core/lv_event.h"
+ 705              		.file 32 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/widgets/lv_bar.h"
+ 706              		.file 33 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/extra/widgets/chart/lv_chart.h"
+ 707              		.file 34 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/extra/widgets/imgbtn/lv_imgbtn.h"
+ 708              		.file 35 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/hal/lv_hal_disp.h"
+ 709              		.file 36 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/misc/lv_math.h"
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccpLyDPI.s 			page 25
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 lv_example_chart_2.c
+C:\Users\OSD\AppData\Local\Temp\ccpLyDPI.s:19     .text.add_data:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccpLyDPI.s:24     .text.add_data:00000000 add_data
+C:\Users\OSD\AppData\Local\Temp\ccpLyDPI.s:96     .text.add_data:0000004c $d
+C:\Users\OSD\AppData\Local\Temp\ccpLyDPI.s:104    .text.draw_event_cb:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccpLyDPI.s:109    .text.draw_event_cb:00000000 draw_event_cb
+C:\Users\OSD\AppData\Local\Temp\ccpLyDPI.s:465    .text.lv_example_chart_2:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccpLyDPI.s:471    .text.lv_example_chart_2:00000000 lv_example_chart_2
+C:\Users\OSD\AppData\Local\Temp\ccpLyDPI.s:639    .text.lv_example_chart_2:000000c0 $d
+C:\Users\OSD\AppData\Local\Temp\ccpLyDPI.s:648    .bss.chart1:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccpLyDPI.s:652    .bss.chart1:00000000 chart1
+C:\Users\OSD\AppData\Local\Temp\ccpLyDPI.s:655    .bss.cnt.0:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccpLyDPI.s:659    .bss.cnt.0:00000000 cnt.0
+C:\Users\OSD\AppData\Local\Temp\ccpLyDPI.s:662    .bss.ser1:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccpLyDPI.s:666    .bss.ser1:00000000 ser1
+C:\Users\OSD\AppData\Local\Temp\ccpLyDPI.s:669    .bss.ser2:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccpLyDPI.s:673    .bss.ser2:00000000 ser2
+
+UNDEFINED SYMBOLS
+lv_rand
+lv_chart_set_next_value
+lv_event_get_target
+lv_event_get_draw_part_dsc
+lv_palette_main
+lv_draw_mask_line_points_init
+lv_draw_mask_add
+lv_obj_get_height
+lv_draw_mask_fade_init
+lv_draw_rect_dsc_init
+lv_draw_rect
+lv_draw_mask_free_param
+lv_draw_mask_remove_id
+lv_palette_lighten
+lv_disp_get_default
+lv_disp_get_scr_act
+lv_chart_create
+lv_obj_set_size
+lv_obj_align
+lv_chart_set_type
+lv_chart_set_div_line_count
+lv_obj_add_event_cb
+lv_chart_set_update_mode
+lv_chart_add_series
+lv_timer_create

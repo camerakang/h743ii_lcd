@@ -1,0 +1,154 @@
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccZcSREa.s 			page 1
+
+
+   1              		.cpu cortex-m7
+   2              		.arch armv7e-m
+   3              		.fpu fpv5-d16
+   4              		.eabi_attribute 28, 1
+   5              		.eabi_attribute 20, 1
+   6              		.eabi_attribute 21, 1
+   7              		.eabi_attribute 23, 3
+   8              		.eabi_attribute 24, 1
+   9              		.eabi_attribute 25, 1
+  10              		.eabi_attribute 26, 1
+  11              		.eabi_attribute 30, 1
+  12              		.eabi_attribute 34, 1
+  13              		.eabi_attribute 18, 4
+  14              		.file	"lv_draw.c"
+  15              		.text
+  16              	.Ltext0:
+  17              		.cfi_sections	.debug_frame
+  18              		.section	.text.lv_draw_init,"ax",%progbits
+  19              		.align	1
+  20              		.global	lv_draw_init
+  21              		.syntax unified
+  22              		.thumb
+  23              		.thumb_func
+  25              	lv_draw_init:
+  26              	.LFB56:
+  27              		.file 1 "lvgl/src/draw/lv_draw.c"
+   1:lvgl/src/draw/lv_draw.c **** /**
+   2:lvgl/src/draw/lv_draw.c ****  * @file lv_draw.c
+   3:lvgl/src/draw/lv_draw.c ****  *
+   4:lvgl/src/draw/lv_draw.c ****  */
+   5:lvgl/src/draw/lv_draw.c **** 
+   6:lvgl/src/draw/lv_draw.c **** /*********************
+   7:lvgl/src/draw/lv_draw.c ****  *      INCLUDES
+   8:lvgl/src/draw/lv_draw.c ****  *********************/
+   9:lvgl/src/draw/lv_draw.c **** #include "lv_draw.h"
+  10:lvgl/src/draw/lv_draw.c **** #include "sw/lv_draw_sw.h"
+  11:lvgl/src/draw/lv_draw.c **** 
+  12:lvgl/src/draw/lv_draw.c **** /*********************
+  13:lvgl/src/draw/lv_draw.c ****  *      DEFINES
+  14:lvgl/src/draw/lv_draw.c ****  *********************/
+  15:lvgl/src/draw/lv_draw.c **** 
+  16:lvgl/src/draw/lv_draw.c **** /**********************
+  17:lvgl/src/draw/lv_draw.c ****  *      TYPEDEFS
+  18:lvgl/src/draw/lv_draw.c ****  **********************/
+  19:lvgl/src/draw/lv_draw.c **** 
+  20:lvgl/src/draw/lv_draw.c **** /**********************
+  21:lvgl/src/draw/lv_draw.c ****  *  STATIC PROTOTYPES
+  22:lvgl/src/draw/lv_draw.c ****  **********************/
+  23:lvgl/src/draw/lv_draw.c **** 
+  24:lvgl/src/draw/lv_draw.c **** /**********************
+  25:lvgl/src/draw/lv_draw.c ****  *  STATIC VARIABLES
+  26:lvgl/src/draw/lv_draw.c ****  **********************/
+  27:lvgl/src/draw/lv_draw.c **** 
+  28:lvgl/src/draw/lv_draw.c **** /**********************
+  29:lvgl/src/draw/lv_draw.c ****  *  STATIC VARIABLES
+  30:lvgl/src/draw/lv_draw.c ****  **********************/
+  31:lvgl/src/draw/lv_draw.c **** 
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccZcSREa.s 			page 2
+
+
+  32:lvgl/src/draw/lv_draw.c **** /**********************
+  33:lvgl/src/draw/lv_draw.c ****  *      MACROS
+  34:lvgl/src/draw/lv_draw.c ****  **********************/
+  35:lvgl/src/draw/lv_draw.c **** 
+  36:lvgl/src/draw/lv_draw.c **** /**********************
+  37:lvgl/src/draw/lv_draw.c ****  *   GLOBAL FUNCTIONS
+  38:lvgl/src/draw/lv_draw.c ****  **********************/
+  39:lvgl/src/draw/lv_draw.c **** 
+  40:lvgl/src/draw/lv_draw.c **** void lv_draw_init(void)
+  41:lvgl/src/draw/lv_draw.c **** {
+  28              		.loc 1 41 1 view -0
+  29              		.cfi_startproc
+  30              		@ args = 0, pretend = 0, frame = 0
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+  32              		@ link register save eliminated.
+  42:lvgl/src/draw/lv_draw.c ****     /*Nothing to init now*/
+  43:lvgl/src/draw/lv_draw.c **** }
+  33              		.loc 1 43 1 view .LVU1
+  34 0000 7047     		bx	lr
+  35              		.cfi_endproc
+  36              	.LFE56:
+  38              		.section	.text.lv_draw_wait_for_finish,"ax",%progbits
+  39              		.align	1
+  40              		.global	lv_draw_wait_for_finish
+  41              		.syntax unified
+  42              		.thumb
+  43              		.thumb_func
+  45              	lv_draw_wait_for_finish:
+  46              	.LVL0:
+  47              	.LFB57:
+  44:lvgl/src/draw/lv_draw.c **** 
+  45:lvgl/src/draw/lv_draw.c **** void lv_draw_wait_for_finish(lv_draw_ctx_t * draw_ctx)
+  46:lvgl/src/draw/lv_draw.c **** {
+  48              		.loc 1 46 1 view -0
+  49              		.cfi_startproc
+  50              		@ args = 0, pretend = 0, frame = 0
+  51              		@ frame_needed = 0, uses_anonymous_args = 0
+  52              		.loc 1 46 1 is_stmt 0 view .LVU3
+  53 0000 08B5     		push	{r3, lr}
+  54              		.cfi_def_cfa_offset 8
+  55              		.cfi_offset 3, -8
+  56              		.cfi_offset 14, -4
+  47:lvgl/src/draw/lv_draw.c ****     if(draw_ctx->wait_for_finish) draw_ctx->wait_for_finish(draw_ctx);
+  57              		.loc 1 47 5 is_stmt 1 view .LVU4
+  58              		.loc 1 47 16 is_stmt 0 view .LVU5
+  59 0002 436B     		ldr	r3, [r0, #52]
+  60              		.loc 1 47 7 view .LVU6
+  61 0004 03B1     		cbz	r3, .L2
+  62              		.loc 1 47 35 is_stmt 1 discriminator 1 view .LVU7
+  63 0006 9847     		blx	r3
+  64              	.LVL1:
+  65              	.L2:
+  48:lvgl/src/draw/lv_draw.c **** }
+  66              		.loc 1 48 1 is_stmt 0 view .LVU8
+  67 0008 08BD     		pop	{r3, pc}
+  68              		.cfi_endproc
+  69              	.LFE57:
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccZcSREa.s 			page 3
+
+
+  71              		.text
+  72              	.Letext0:
+  73              		.file 2 "c:\\tools\\gcc-arm-none-eabi\\arm-none-eabi\\include\\machine\\_default_types.h"
+  74              		.file 3 "c:\\tools\\gcc-arm-none-eabi\\arm-none-eabi\\include\\sys\\_stdint.h"
+  75              		.file 4 "c:\\tools\\gcc-arm-none-eabi\\lib\\gcc\\arm-none-eabi\\10.3.1\\include\\stddef.h"
+  76              		.file 5 "lvgl/src/draw/../misc/../font/../misc/lv_area.h"
+  77              		.file 6 "lvgl/src/draw/../misc/../font/lv_font.h"
+  78              		.file 7 "lvgl/src/draw/../misc/lv_types.h"
+  79              		.file 8 "lvgl/src/draw/../misc/lv_color.h"
+  80              		.file 9 "lvgl/src/draw/../misc/lv_txt.h"
+  81              		.file 10 "lvgl/src/draw/../misc/lv_bidi.h"
+  82              		.file 11 "lvgl/src/draw/../misc/lv_style.h"
+  83              		.file 12 "lvgl/src/draw/lv_img_buf.h"
+  84              		.file 13 "lvgl/src/draw/lv_draw_rect.h"
+  85              		.file 14 "lvgl/src/draw/lv_draw_label.h"
+  86              		.file 15 "lvgl/src/draw/lv_draw_img.h"
+  87              		.file 16 "lvgl/src/draw/lv_draw_line.h"
+  88              		.file 17 "lvgl/src/draw/lv_draw_arc.h"
+  89              		.file 18 "lvgl/src/draw/lv_draw_layer.h"
+  90              		.file 19 "lvgl/src/draw/lv_draw.h"
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccZcSREa.s 			page 4
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 lv_draw.c
+C:\Users\OSD\AppData\Local\Temp\ccZcSREa.s:19     .text.lv_draw_init:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccZcSREa.s:25     .text.lv_draw_init:00000000 lv_draw_init
+C:\Users\OSD\AppData\Local\Temp\ccZcSREa.s:39     .text.lv_draw_wait_for_finish:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccZcSREa.s:45     .text.lv_draw_wait_for_finish:00000000 lv_draw_wait_for_finish
+
+NO UNDEFINED SYMBOLS
