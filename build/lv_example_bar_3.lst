@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc8SEjXE.s 			page 1
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccqD01YU.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc8SEjXE.s 			page 1
   50              		.thumb
   51              		.thumb_func
   53              	lv_example_bar_3:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc8SEjXE.s 			page 2
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccqD01YU.s 			page 2
 
 
   54              	.LFB205:
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc8SEjXE.s 			page 1
   95 0032 2846     		mov	r0, r5
   96 0034 FFF7FEFF 		bl	lv_style_set_bg_grad_dir
   97              	.LVL8:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc8SEjXE.s 			page 3
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccqD01YU.s 			page 3
 
 
   21:lvgl/examples/widgets/bar/lv_example_bar_3.c **** 
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc8SEjXE.s 			page 1
   49:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  **********************/
   50:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
   51:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc8SEjXE.s 			page 4
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccqD01YU.s 			page 4
 
 
   52:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Return with a pointer to the active screen
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc8SEjXE.s 			page 1
  106:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** void lv_disp_set_bg_color(lv_disp_t * disp, lv_color_t color);
  107:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
  108:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc8SEjXE.s 			page 5
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccqD01YU.s 			page 5
 
 
  109:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Set the background image of a display
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc8SEjXE.s 			page 1
  163:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** bool lv_disp_is_invalidation_enabled(lv_disp_t * disp);
  164:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
  165:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc8SEjXE.s 			page 6
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccqD01YU.s 			page 6
 
 
  166:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Get a pointer to the screen refresher timer to
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc8SEjXE.s 			page 1
    3:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  *
    4:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  */
    5:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc8SEjXE.s 			page 7
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccqD01YU.s 			page 7
 
 
    6:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** #ifndef LV_OBJ_POS_H
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc8SEjXE.s 			page 1
   60:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** /**
   61:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * Set the y coordinate of an object
   62:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @param obj       pointer to an object
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc8SEjXE.s 			page 8
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccqD01YU.s 			page 8
 
 
   63:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @param y         new y coordinate
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc8SEjXE.s 			page 1
  117:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @param obj       pointer to an object
  118:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @param w         the width without paddings in pixels
  119:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  */
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc8SEjXE.s 			page 9
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccqD01YU.s 			page 9
 
 
  120:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** void lv_obj_set_content_width(struct _lv_obj_t * obj, lv_coord_t w);
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc8SEjXE.s 			page 1
  174:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * lv_obj_set_pos(obj, x_ofs, y_ofs);
  175:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @param obj       pointer to an object to align
  176:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @param align     type of alignment (see 'lv_align_t' enum) `LV_ALIGN_OUT_...` can't be used.
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc8SEjXE.s 			page 10
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccqD01YU.s 			page 10
 
 
  177:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @param x_ofs     x coordinate offset after alignment
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc8SEjXE.s 			page 1
  156              	.LBB36:
  157              	.LBI36:
  158              		.file 4 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/misc/lv_anim.h"
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc8SEjXE.s 			page 11
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccqD01YU.s 			page 11
 
 
    1:d:\kzc\stm32\h743ii_lcd\lvgl\src/misc\lv_anim.h **** /**
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc8SEjXE.s 			page 1
   55:d:\kzc\stm32\h743ii_lcd\lvgl\src/misc\lv_anim.h **** 
   56:d:\kzc\stm32\h743ii_lcd\lvgl\src/misc\lv_anim.h **** /** Same as `lv_anim_exec_xcb_t` but receives `lv_anim_t *` as the first parameter.
   57:d:\kzc\stm32\h743ii_lcd\lvgl\src/misc\lv_anim.h ****  * It's more consistent but less convenient. Might be used by binding generator functions.*/
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc8SEjXE.s 			page 12
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccqD01YU.s 			page 12
 
 
   58:d:\kzc\stm32\h743ii_lcd\lvgl\src/misc\lv_anim.h **** typedef void (*lv_anim_custom_exec_cb_t)(struct _lv_anim_t *, int32_t);
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc8SEjXE.s 			page 1
  112:d:\kzc\stm32\h743ii_lcd\lvgl\src/misc\lv_anim.h ****  * E.g.:
  113:d:\kzc\stm32\h743ii_lcd\lvgl\src/misc\lv_anim.h ****  * lv_anim_t a;
  114:d:\kzc\stm32\h743ii_lcd\lvgl\src/misc\lv_anim.h ****  * lv_anim_init(&a);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc8SEjXE.s 			page 13
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccqD01YU.s 			page 13
 
 
  115:d:\kzc\stm32\h743ii_lcd\lvgl\src/misc\lv_anim.h ****  * lv_anim_set_...(&a);
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc8SEjXE.s 			page 1
  176 007c 40F6B833 		movw	r3, #3000
  177 0080 0C93     		str	r3, [sp, #48]
  178              	.LVL19:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc8SEjXE.s 			page 14
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccqD01YU.s 			page 14
 
 
  179              		.loc 4 150 13 view .LVU34
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc8SEjXE.s 			page 1
  198:d:\kzc\stm32\h743ii_lcd\lvgl\src/misc\lv_anim.h ****     a->path_cb = path_cb;
  199:d:\kzc\stm32\h743ii_lcd\lvgl\src/misc\lv_anim.h **** }
  200:d:\kzc\stm32\h743ii_lcd\lvgl\src/misc\lv_anim.h **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc8SEjXE.s 			page 15
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccqD01YU.s 			page 15
 
 
  201:d:\kzc\stm32\h743ii_lcd\lvgl\src/misc\lv_anim.h **** /**
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc8SEjXE.s 			page 1
  190              	.LVL20:
  191              		.loc 4 249 22 view .LVU39
  192              	.LBE41:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc8SEjXE.s 			page 16
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccqD01YU.s 			page 16
 
 
  193              	.LBE40:
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc8SEjXE.s 			page 1
  253:d:\kzc\stm32\h743ii_lcd\lvgl\src/misc\lv_anim.h ****  * Make the animation to play back to when the forward direction is ready
  254:d:\kzc\stm32\h743ii_lcd\lvgl\src/misc\lv_anim.h ****  * @param a         pointer to an initialized `lv_anim_t` variable
  255:d:\kzc\stm32\h743ii_lcd\lvgl\src/misc\lv_anim.h ****  * @param delay     delay in milliseconds before starting the playback animation.
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc8SEjXE.s 			page 17
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccqD01YU.s 			page 17
 
 
  256:d:\kzc\stm32\h743ii_lcd\lvgl\src/misc\lv_anim.h ****  */
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc8SEjXE.s 			page 1
  269              		.file 7 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\misc\\lv_area.h"
  270              		.file 8 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\misc\\lv_color.h"
  271              		.file 9 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\misc\\lv_style.h"
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc8SEjXE.s 			page 18
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccqD01YU.s 			page 18
 
 
  272              		.file 10 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/core/lv_obj.h"
@@ -1031,18 +1031,18 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc8SEjXE.s 			page 1
  279              		.file 17 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/hal/lv_hal_disp.h"
  280              		.file 18 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\misc\\lv_style_gen.h"
  281              		.file 19 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/widgets/lv_bar.h"
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc8SEjXE.s 			page 19
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccqD01YU.s 			page 19
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 lv_example_bar_3.c
-C:\Users\OSD\AppData\Local\Temp\cc8SEjXE.s:19     .text.set_temp:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cc8SEjXE.s:24     .text.set_temp:00000000 set_temp
-C:\Users\OSD\AppData\Local\Temp\cc8SEjXE.s:47     .text.lv_example_bar_3:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cc8SEjXE.s:53     .text.lv_example_bar_3:00000000 lv_example_bar_3
-C:\Users\OSD\AppData\Local\Temp\cc8SEjXE.s:253    .text.lv_example_bar_3:000000a4 $d
-C:\Users\OSD\AppData\Local\Temp\cc8SEjXE.s:259    .bss.style_indic.0:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\cc8SEjXE.s:263    .bss.style_indic.0:00000000 style_indic.0
+C:\Users\OSD\AppData\Local\Temp\ccqD01YU.s:19     .text.set_temp:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccqD01YU.s:24     .text.set_temp:00000000 set_temp
+C:\Users\OSD\AppData\Local\Temp\ccqD01YU.s:47     .text.lv_example_bar_3:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccqD01YU.s:53     .text.lv_example_bar_3:00000000 lv_example_bar_3
+C:\Users\OSD\AppData\Local\Temp\ccqD01YU.s:253    .text.lv_example_bar_3:000000a4 $d
+C:\Users\OSD\AppData\Local\Temp\ccqD01YU.s:259    .bss.style_indic.0:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccqD01YU.s:263    .bss.style_indic.0:00000000 style_indic.0
 
 UNDEFINED SYMBOLS
 lv_bar_set_value

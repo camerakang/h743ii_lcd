@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 1
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 1
   25:lvgl/src/extra/widgets/spinbox/lv_spinbox.c ****  **********************/
   26:lvgl/src/extra/widgets/spinbox/lv_spinbox.c **** 
   27:lvgl/src/extra/widgets/spinbox/lv_spinbox.c **** static void lv_spinbox_constructor(const lv_obj_class_t * class_p, lv_obj_t * obj);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 2
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s 			page 2
 
 
   28:lvgl/src/extra/widgets/spinbox/lv_spinbox.c **** static void lv_spinbox_event(const lv_obj_class_t * class_p, lv_event_t * e);
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 1
   82:lvgl/src/extra/widgets/spinbox/lv_spinbox.c ****  * @param spinbox pointer to spinbox
   83:lvgl/src/extra/widgets/spinbox/lv_spinbox.c ****  * @param b true or false to enable or disable (default)
   84:lvgl/src/extra/widgets/spinbox/lv_spinbox.c ****  */
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 3
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s 			page 3
 
 
   85:lvgl/src/extra/widgets/spinbox/lv_spinbox.c **** void lv_spinbox_set_rollover(lv_obj_t * obj, bool b)
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 1
  139:lvgl/src/extra/widgets/spinbox/lv_spinbox.c ****  * @param range_max minimum value, inclusive
  140:lvgl/src/extra/widgets/spinbox/lv_spinbox.c ****  */
  141:lvgl/src/extra/widgets/spinbox/lv_spinbox.c **** void lv_spinbox_set_range(lv_obj_t * obj, int32_t range_min, int32_t range_max)
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 4
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s 			page 4
 
 
  142:lvgl/src/extra/widgets/spinbox/lv_spinbox.c **** {
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 1
  196:lvgl/src/extra/widgets/spinbox/lv_spinbox.c **** {
  197:lvgl/src/extra/widgets/spinbox/lv_spinbox.c ****     LV_ASSERT_OBJ(obj, MY_CLASS);
  198:lvgl/src/extra/widgets/spinbox/lv_spinbox.c ****     lv_spinbox_t * spinbox = (lv_spinbox_t *)obj;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 5
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s 			page 5
 
 
  199:lvgl/src/extra/widgets/spinbox/lv_spinbox.c **** 
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 1
  253:lvgl/src/extra/widgets/spinbox/lv_spinbox.c **** /**
  254:lvgl/src/extra/widgets/spinbox/lv_spinbox.c ****  * Get spinbox rollover function status
  255:lvgl/src/extra/widgets/spinbox/lv_spinbox.c ****  * @param obj pointer to spinbox
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 6
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s 			page 6
 
 
  256:lvgl/src/extra/widgets/spinbox/lv_spinbox.c ****  */
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 1
  310:lvgl/src/extra/widgets/spinbox/lv_spinbox.c ****             spinbox->value = spinbox->range_min;
  311:lvgl/src/extra/widgets/spinbox/lv_spinbox.c ****     }
  312:lvgl/src/extra/widgets/spinbox/lv_spinbox.c **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 7
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s 			page 7
 
 
  313:lvgl/src/extra/widgets/spinbox/lv_spinbox.c ****     lv_spinbox_updatevalue(obj);
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 1
  367:lvgl/src/extra/widgets/spinbox/lv_spinbox.c ****                         else {
  368:lvgl/src/extra/widgets/spinbox/lv_spinbox.c ****                             /*Restart from the MSB*/
  369:lvgl/src/extra/widgets/spinbox/lv_spinbox.c ****                             spinbox->step = lv_pow(10, spinbox->digit_count - 2);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 8
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s 			page 8
 
 
  370:lvgl/src/extra/widgets/spinbox/lv_spinbox.c ****                             lv_spinbox_step_prev(obj);
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 1
  424:lvgl/src/extra/widgets/spinbox/lv_spinbox.c ****         }
  425:lvgl/src/extra/widgets/spinbox/lv_spinbox.c ****         else if(c == LV_KEY_LEFT) {
  426:lvgl/src/extra/widgets/spinbox/lv_spinbox.c ****             if(indev_type == LV_INDEV_TYPE_ENCODER)
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 9
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s 			page 9
 
 
  427:lvgl/src/extra/widgets/spinbox/lv_spinbox.c ****                 lv_spinbox_decrement(obj);
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 1
   63 0010 002B     		cmp	r3, #0
   64 0012 23DB     		blt	.L22
  450:lvgl/src/extra/widgets/spinbox/lv_spinbox.c ****         /*Add the sign*/
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 10
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s 			page 10
 
 
  451:lvgl/src/extra/widgets/spinbox/lv_spinbox.c ****         (*buf_p) = spinbox->value >= 0 ? '+' : '-';
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 1
  102              	.L4:
  103              	.LVL8:
  467:lvgl/src/extra/widgets/spinbox/lv_spinbox.c ****         for(i = (uint16_t)strlen(digits); i >= 0; i--) {
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 11
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s 			page 11
 
 
  104              		.loc 1 467 43 is_stmt 1 discriminator 1 view .LVU25
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 1
  146              	.LVL13:
  147              	.L20:
  451:lvgl/src/extra/widgets/spinbox/lv_spinbox.c ****         buf_p++;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 12
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s 			page 12
 
 
  148              		.loc 1 451 18 view .LVU42
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 1
  188 0096 0023     		movs	r3, #0
  189              		.loc 1 479 5 discriminator 4 view .LVU58
  190 0098 02E0     		b	.L10
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 13
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s 			page 13
 
 
  191              	.LVL19:
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 1
  229              	.L15:
  490:lvgl/src/extra/widgets/spinbox/lv_spinbox.c ****             (*buf_p) = digits[i];
  230              		.loc 1 490 13 discriminator 3 view .LVU75
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 14
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s 			page 14
 
 
  231              		.loc 1 490 22 is_stmt 0 discriminator 3 view .LVU76
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 1
  268 00ee 94F87410 		ldrb	r1, [r4, #116]	@ zero_extendqisi2
  269 00f2 01F00F01 		and	r1, r1, #15
  270              	.LVL28:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 15
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s 			page 15
 
 
  501:lvgl/src/extra/widgets/spinbox/lv_spinbox.c ****     while(step >= 10) {
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 1
  314              		.loc 1 510 5 is_stmt 0 view .LVU108
  315 0118 2046     		mov	r0, r4
  316 011a FFF7FEFF 		bl	lv_textarea_set_cursor_pos
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 16
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s 			page 16
 
 
  317              	.LVL37:
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 1
  363 0006 4B66     		str	r3, [r1, #100]
  329:lvgl/src/extra/widgets/spinbox/lv_spinbox.c ****     spinbox->digit_count        = 5;
  364              		.loc 1 329 5 is_stmt 1 view .LVU120
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 17
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s 			page 17
 
 
  329:lvgl/src/extra/widgets/spinbox/lv_spinbox.c ****     spinbox->digit_count        = 5;
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 1
  337:lvgl/src/extra/widgets/spinbox/lv_spinbox.c ****     lv_textarea_set_cursor_click_pos(obj, true);
  404              		.loc 1 337 5 is_stmt 0 view .LVU136
  405 0048 FFF7FEFF 		bl	lv_textarea_set_one_line
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 18
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s 			page 18
 
 
  406              	.LVL43:
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 1
   52:lvgl/src/extra/widgets/spinbox/lv_spinbox.c ****     lv_obj_t * obj = lv_obj_class_create_obj(MY_CLASS, parent);
  452              		.loc 1 52 5 view .LVU147
   52:lvgl/src/extra/widgets/spinbox/lv_spinbox.c ****     lv_obj_t * obj = lv_obj_class_create_obj(MY_CLASS, parent);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 19
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s 			page 19
 
 
  453              		.loc 1 52 5 view .LVU148
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 1
   69:lvgl/src/extra/widgets/spinbox/lv_spinbox.c ****     lv_spinbox_t * spinbox = (lv_spinbox_t *)obj;
  499              		.loc 1 69 5 is_stmt 1 view .LVU159
   69:lvgl/src/extra/widgets/spinbox/lv_spinbox.c ****     lv_spinbox_t * spinbox = (lv_spinbox_t *)obj;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 20
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s 			page 20
 
 
  500              		.loc 1 69 5 view .LVU160
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 1
  543              		.loc 1 86 1 is_stmt 1 view -0
  544              		.cfi_startproc
  545              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 21
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s 			page 21
 
 
  546              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 1
  102:lvgl/src/extra/widgets/spinbox/lv_spinbox.c ****     lv_spinbox_t * spinbox = (lv_spinbox_t *)obj;
  590              		.loc 1 102 5 view .LVU186
  103:lvgl/src/extra/widgets/spinbox/lv_spinbox.c **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 22
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s 			page 22
 
 
  591              		.loc 1 103 5 view .LVU187
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 1
  631              	.LVL66:
  632              	.L47:
  633              	.LBB2:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 23
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s 			page 23
 
 
  110:lvgl/src/extra/widgets/spinbox/lv_spinbox.c ****         if(spinbox->range_max > max_val - 1) spinbox->range_max = max_val - 1;
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 1
  673              	.LBE2:
  674              		.cfi_endproc
  675              	.LFE207:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 24
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s 			page 24
 
 
  677              		.section	.text.lv_spinbox_set_step,"ax",%progbits
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 1
  723              		.cfi_startproc
  724              		@ args = 0, pretend = 0, frame = 0
  725              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 25
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s 			page 25
 
 
  142:lvgl/src/extra/widgets/spinbox/lv_spinbox.c ****     LV_ASSERT_OBJ(obj, MY_CLASS);
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 1
  761              	.L52:
  152:lvgl/src/extra/widgets/spinbox/lv_spinbox.c **** }
  762              		.loc 1 152 5 is_stmt 1 view .LVU247
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 26
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s 			page 26
 
 
  763 0016 FFF7FEFF 		bl	lv_spinbox_updatevalue
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 1
  808              		.loc 1 165 22 view .LVU258
  809 0010 9D42     		cmp	r5, r3
  810 0012 B8BF     		it	lt
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 27
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s 			page 27
 
 
  811 0014 1D46     		movlt	r5, r3
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 1
  168:lvgl/src/extra/widgets/spinbox/lv_spinbox.c **** 
  850              		.loc 1 168 51 is_stmt 0 discriminator 1 view .LVU274
  851 0038 2767     		str	r7, [r4, #112]
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 28
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s 			page 28
 
 
  852 003a F7E7     		b	.L56
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 1
  898              		.syntax unified
  899              		.thumb
  900              		.thumb_func
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 29
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s 			page 29
 
 
  902              	lv_spinbox_get_value:
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 1
  943              		.loc 1 213 1 is_stmt 0 view .LVU300
  944 0000 006F     		ldr	r0, [r0, #112]
  945              	.LVL92:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 30
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s 			page 30
 
 
  213:lvgl/src/extra/widgets/spinbox/lv_spinbox.c **** 
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 1
  230:lvgl/src/extra/widgets/spinbox/lv_spinbox.c ****     else
  989              		.loc 1 230 23 is_stmt 0 view .LVU314
  990 0014 0267     		str	r2, [r0, #112]
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 31
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s 			page 31
 
 
  991              	.L64:
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 1
  246:lvgl/src/extra/widgets/spinbox/lv_spinbox.c ****     int32_t new_step = spinbox->step * 10;
  1036              		.loc 1 246 5 view .LVU326
  246:lvgl/src/extra/widgets/spinbox/lv_spinbox.c ****     int32_t new_step = spinbox->step * 10;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 32
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s 			page 32
 
 
  1037              		.loc 1 246 24 is_stmt 0 view .LVU327
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 1
  258:lvgl/src/extra/widgets/spinbox/lv_spinbox.c ****     LV_ASSERT_OBJ(obj, MY_CLASS);
  1083              		.loc 1 258 1 is_stmt 1 view -0
  1084              		.cfi_startproc
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 33
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s 			page 33
 
 
  1085              		@ args = 0, pretend = 0, frame = 0
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 1
  274:lvgl/src/extra/widgets/spinbox/lv_spinbox.c ****         /*Special mode when zero crossing*/
  1127              		.loc 1 274 15 is_stmt 0 view .LVU353
  1128 0002 436E     		ldr	r3, [r0, #100]
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 34
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s 			page 34
 
 
  274:lvgl/src/extra/widgets/spinbox/lv_spinbox.c ****         /*Special mode when zero crossing*/
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 1
  1167              		.loc 1 282 12 is_stmt 0 view .LVU369
  1168 002c 90F87510 		ldrb	r1, [r0, #117]	@ zero_extendqisi2
  282:lvgl/src/extra/widgets/spinbox/lv_spinbox.c ****             spinbox->value = spinbox->range_min;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 35
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s 			page 35
 
 
  1169              		.loc 1 282 11 view .LVU370
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 1
  1213              	.LVL112:
  300:lvgl/src/extra/widgets/spinbox/lv_spinbox.c ****         /*Special mode when zero crossing*/
  1214              		.loc 1 300 5 view .LVU383
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 36
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s 			page 36
 
 
  300:lvgl/src/extra/widgets/spinbox/lv_spinbox.c ****         /*Special mode when zero crossing*/
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 1
  307:lvgl/src/extra/widgets/spinbox/lv_spinbox.c ****             spinbox->value = spinbox->range_max;
  1254              		.loc 1 307 9 is_stmt 1 view .LVU399
  307:lvgl/src/extra/widgets/spinbox/lv_spinbox.c ****             spinbox->value = spinbox->range_max;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 37
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s 			page 37
 
 
  1255              		.loc 1 307 12 is_stmt 0 view .LVU400
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 1
  1300              		.loc 1 350 5 view .LVU411
  1301              	.LVL116:
  351:lvgl/src/extra/widgets/spinbox/lv_spinbox.c ****     if(res != LV_RES_OK) return;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 38
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s 			page 38
 
 
  1302              		.loc 1 351 5 view .LVU412
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 1
  1341              		.loc 1 415 12 is_stmt 0 view .LVU427
  1342 0024 0D2E     		cmp	r6, #13
  1343 0026 F2D1     		bne	.L88
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 39
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s 			page 39
 
 
  1344              	.LBB3:
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 1
  1382              		.loc 1 435 13 is_stmt 0 view .LVU443
  1383 0056 DAE7     		b	.L88
  1384              	.LVL132:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 40
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s 			page 40
 
 
  1385              	.L109:
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 1
  1423 007a 57D0     		beq	.L115
  398:lvgl/src/extra/widgets/spinbox/lv_spinbox.c ****                 lv_textarea_set_cursor_pos(obj, 1);
  1424              		.loc 1 398 18 is_stmt 1 view .LVU460
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 41
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s 			page 41
 
 
  398:lvgl/src/extra/widgets/spinbox/lv_spinbox.c ****                 lv_textarea_set_cursor_pos(obj, 1);
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 1
  406:lvgl/src/extra/widgets/spinbox/lv_spinbox.c **** 
  1463              		.loc 1 406 22 is_stmt 0 view .LVU477
  1464 00a2 C91A     		subs	r1, r1, r3
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 42
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s 			page 42
 
 
  1465              	.LVL143:
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 1
  1503 00c4 02F00F02 		and	r2, r2, #15
  362:lvgl/src/extra/widgets/spinbox/lv_spinbox.c ****                     if(spinbox->digit_step_dir == LV_DIR_RIGHT) {
  1504              		.loc 1 362 19 view .LVU494
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 43
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s 			page 43
 
 
  1505 00c8 012A     		cmp	r2, #1
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 1
  1545              		.loc 1 374 35 view .LVU508
  1546 00fc E617     		asrs	r6, r4, #31
  1547              	.LVL153:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 44
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s 			page 44
 
 
  374:lvgl/src/extra/widgets/spinbox/lv_spinbox.c ****                             lv_spinbox_step_prev(obj);
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 1
  396:lvgl/src/extra/widgets/spinbox/lv_spinbox.c ****             }
  1592              		.loc 1 396 17 view .LVU519
  1593 0134 A6E7     		b	.L96
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 45
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s 			page 45
 
 
  1594              	.LVL163:
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 1
  1635              		.loc 1 412 13 discriminator 1 view .LVU532
  1636              	.LBE6:
  1637              	.LBE4:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 46
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s 			page 46
 
 
  1638              	.LBB7:
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 1
  1679              		.loc 1 432 13 is_stmt 1 view .LVU545
  1680 0180 2846     		mov	r0, r5
  1681 0182 FFF7FEFF 		bl	lv_spinbox_increment
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 47
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s 			page 47
 
 
  1682              	.LVL180:
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 1
  1737              		.file 27 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/core/lv_obj_scroll.h"
  1738              		.file 28 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/core/lv_obj_style.h"
  1739              		.file 29 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/core/lv_obj_class.h"
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 48
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s 			page 48
 
 
  1740              		.file 30 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/core/lv_event.h"
@@ -2831,55 +2831,55 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 1
  1747              		.file 37 "c:\\tools\\gcc-arm-none-eabi\\arm-none-eabi\\include\\string.h"
  1748              		.file 38 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/core/lv_indev.h"
  1749              		.file 39 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/misc/lv_math.h"
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 49
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s 			page 49
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 lv_spinbox.c
-C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s:19     .rodata.lv_spinbox_updatevalue.str1.4:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s:23     .text.lv_spinbox_updatevalue:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s:28     .text.lv_spinbox_updatevalue:00000000 lv_spinbox_updatevalue
-C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s:328    .text.lv_spinbox_updatevalue:00000124 $d
-C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s:334    .text.lv_spinbox_constructor:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s:339    .text.lv_spinbox_constructor:00000000 lv_spinbox_constructor
-C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s:426    .text.lv_spinbox_constructor:0000005c $d
-C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s:432    .text.lv_spinbox_create:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s:438    .text.lv_spinbox_create:00000000 lv_spinbox_create
-C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s:476    .text.lv_spinbox_create:00000014 $d
-C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s:481    .text.lv_spinbox_set_value:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s:487    .text.lv_spinbox_set_value:00000000 lv_spinbox_set_value
-C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s:534    .text.lv_spinbox_set_rollover:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s:540    .text.lv_spinbox_set_rollover:00000000 lv_spinbox_set_rollover
-C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s:565    .text.lv_spinbox_set_digit_format:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s:571    .text.lv_spinbox_set_digit_format:00000000 lv_spinbox_set_digit_format
-C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s:678    .text.lv_spinbox_set_step:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s:684    .text.lv_spinbox_set_step:00000000 lv_spinbox_set_step
-C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s:713    .text.lv_spinbox_set_range:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s:719    .text.lv_spinbox_set_range:00000000 lv_spinbox_set_range
-C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s:771    .text.lv_spinbox_set_cursor_pos:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s:777    .text.lv_spinbox_set_cursor_pos:00000000 lv_spinbox_set_cursor_pos
-C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s:857    .text.lv_spinbox_set_digit_step_direction:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s:863    .text.lv_spinbox_set_digit_step_direction:00000000 lv_spinbox_set_digit_step_direction
-C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s:896    .text.lv_spinbox_get_value:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s:902    .text.lv_spinbox_get_value:00000000 lv_spinbox_get_value
-C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s:924    .text.lv_spinbox_get_step:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s:930    .text.lv_spinbox_get_step:00000000 lv_spinbox_get_step
-C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s:952    .text.lv_spinbox_step_next:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s:958    .text.lv_spinbox_step_next:00000000 lv_spinbox_step_next
-C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s:1007   .text.lv_spinbox_step_next:00000024 $d
-C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s:1012   .text.lv_spinbox_step_prev:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s:1018   .text.lv_spinbox_step_prev:00000000 lv_spinbox_step_prev
-C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s:1074   .text.lv_spinbox_get_rollover:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s:1080   .text.lv_spinbox_get_rollover:00000000 lv_spinbox_get_rollover
-C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s:1103   .text.lv_spinbox_increment:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s:1109   .text.lv_spinbox_increment:00000000 lv_spinbox_increment
-C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s:1191   .text.lv_spinbox_decrement:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s:1197   .text.lv_spinbox_decrement:00000000 lv_spinbox_decrement
-C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s:1279   .text.lv_spinbox_event:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s:1284   .text.lv_spinbox_event:00000000 lv_spinbox_event
-C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s:1688   .text.lv_spinbox_event:00000188 $d
-C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s:1699   .rodata.lv_spinbox_class:00000000 lv_spinbox_class
-C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s:1695   .rodata.lv_spinbox_class:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s:19     .rodata.lv_spinbox_updatevalue.str1.4:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s:23     .text.lv_spinbox_updatevalue:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s:28     .text.lv_spinbox_updatevalue:00000000 lv_spinbox_updatevalue
+C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s:328    .text.lv_spinbox_updatevalue:00000124 $d
+C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s:334    .text.lv_spinbox_constructor:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s:339    .text.lv_spinbox_constructor:00000000 lv_spinbox_constructor
+C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s:426    .text.lv_spinbox_constructor:0000005c $d
+C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s:432    .text.lv_spinbox_create:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s:438    .text.lv_spinbox_create:00000000 lv_spinbox_create
+C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s:476    .text.lv_spinbox_create:00000014 $d
+C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s:481    .text.lv_spinbox_set_value:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s:487    .text.lv_spinbox_set_value:00000000 lv_spinbox_set_value
+C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s:534    .text.lv_spinbox_set_rollover:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s:540    .text.lv_spinbox_set_rollover:00000000 lv_spinbox_set_rollover
+C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s:565    .text.lv_spinbox_set_digit_format:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s:571    .text.lv_spinbox_set_digit_format:00000000 lv_spinbox_set_digit_format
+C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s:678    .text.lv_spinbox_set_step:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s:684    .text.lv_spinbox_set_step:00000000 lv_spinbox_set_step
+C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s:713    .text.lv_spinbox_set_range:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s:719    .text.lv_spinbox_set_range:00000000 lv_spinbox_set_range
+C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s:771    .text.lv_spinbox_set_cursor_pos:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s:777    .text.lv_spinbox_set_cursor_pos:00000000 lv_spinbox_set_cursor_pos
+C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s:857    .text.lv_spinbox_set_digit_step_direction:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s:863    .text.lv_spinbox_set_digit_step_direction:00000000 lv_spinbox_set_digit_step_direction
+C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s:896    .text.lv_spinbox_get_value:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s:902    .text.lv_spinbox_get_value:00000000 lv_spinbox_get_value
+C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s:924    .text.lv_spinbox_get_step:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s:930    .text.lv_spinbox_get_step:00000000 lv_spinbox_get_step
+C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s:952    .text.lv_spinbox_step_next:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s:958    .text.lv_spinbox_step_next:00000000 lv_spinbox_step_next
+C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s:1007   .text.lv_spinbox_step_next:00000024 $d
+C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s:1012   .text.lv_spinbox_step_prev:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s:1018   .text.lv_spinbox_step_prev:00000000 lv_spinbox_step_prev
+C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s:1074   .text.lv_spinbox_get_rollover:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s:1080   .text.lv_spinbox_get_rollover:00000000 lv_spinbox_get_rollover
+C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s:1103   .text.lv_spinbox_increment:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s:1109   .text.lv_spinbox_increment:00000000 lv_spinbox_increment
+C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s:1191   .text.lv_spinbox_decrement:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s:1197   .text.lv_spinbox_decrement:00000000 lv_spinbox_decrement
+C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s:1279   .text.lv_spinbox_event:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s:1284   .text.lv_spinbox_event:00000000 lv_spinbox_event
+C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s:1688   .text.lv_spinbox_event:00000188 $d
+C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s:1699   .rodata.lv_spinbox_class:00000000 lv_spinbox_class
+C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s:1695   .rodata.lv_spinbox_class:00000000 $d
 
 UNDEFINED SYMBOLS
 lv_memset_00
@@ -2891,7 +2891,7 @@ lv_textarea_set_one_line
 lv_textarea_set_cursor_click_pos
 lv_obj_class_create_obj
 lv_obj_class_init_obj
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cca8cwqB.s 			page 50
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc84ARGI.s 			page 50
 
 
 lv_pow

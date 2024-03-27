@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 1
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 1
   29:lvgl/src/core/lv_group.c **** static void lv_group_refocus(lv_group_t * g);
   30:lvgl/src/core/lv_group.c **** static lv_indev_t * get_indev(const lv_group_t * g);
   31:lvgl/src/core/lv_group.c **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 2
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s 			page 2
 
 
   32:lvgl/src/core/lv_group.c **** /**********************
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 1
   86:lvgl/src/core/lv_group.c ****     /*Remove the group from any indev devices */
   87:lvgl/src/core/lv_group.c ****     lv_indev_t * indev = lv_indev_get_next(NULL);
   88:lvgl/src/core/lv_group.c ****     while(indev) {
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 3
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s 			page 3
 
 
   89:lvgl/src/core/lv_group.c ****         if(indev->group == group) {
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 1
  143:lvgl/src/core/lv_group.c ****     LV_ASSERT_MALLOC(next);
  144:lvgl/src/core/lv_group.c ****     if(next == NULL) return;
  145:lvgl/src/core/lv_group.c ****     *next = obj;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 4
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s 			page 4
 
 
  146:lvgl/src/core/lv_group.c **** 
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 1
  200:lvgl/src/core/lv_group.c ****     if(g->obj_focus && *g->obj_focus == obj) {
  201:lvgl/src/core/lv_group.c ****         g->obj_focus = NULL;
  202:lvgl/src/core/lv_group.c ****     }
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 5
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s 			page 5
 
 
  203:lvgl/src/core/lv_group.c **** 
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 1
  257:lvgl/src/core/lv_group.c ****             if(g->obj_focus != NULL) {
  258:lvgl/src/core/lv_group.c ****                 if(g->focus_cb) g->focus_cb(g);
  259:lvgl/src/core/lv_group.c ****                 lv_res_t res = lv_event_send(*g->obj_focus, LV_EVENT_FOCUSED, get_indev(g));
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 6
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s 			page 6
 
 
  260:lvgl/src/core/lv_group.c ****                 if(res != LV_RES_OK) return;
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 1
  314:lvgl/src/core/lv_group.c ****     if(group == NULL) return;
  315:lvgl/src/core/lv_group.c ****     uint8_t en_val = edit ? 1 : 0;
  316:lvgl/src/core/lv_group.c **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 7
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s 			page 7
 
 
  317:lvgl/src/core/lv_group.c ****     if(en_val == group->editing) return; /*Do not set the same mode again*/
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 1
  371:lvgl/src/core/lv_group.c **** 
  372:lvgl/src/core/lv_group.c **** uint32_t lv_group_get_obj_count(lv_group_t * group)
  373:lvgl/src/core/lv_group.c **** {
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 8
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s 			page 8
 
 
  374:lvgl/src/core/lv_group.c ****     return _lv_ll_get_len(&group->obj_ll);
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 1
  428:lvgl/src/core/lv_group.c ****             if(obj_next == obj_sentinel) return focus_changed;
  429:lvgl/src/core/lv_group.c ****         }
  430:lvgl/src/core/lv_group.c **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 9
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s 			page 9
 
 
  431:lvgl/src/core/lv_group.c ****         can_move = true;
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 1
   34              		.cfi_def_cfa_offset 24
   35              		.cfi_offset 3, -24
   36              		.cfi_offset 4, -20
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 10
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s 			page 10
 
 
   37              		.cfi_offset 5, -16
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 1
   76 0018 FFF7FEFF 		bl	lv_indev_get_next
   77              	.LVL9:
   78 001c 0446     		mov	r4, r0
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 11
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s 			page 11
 
 
   79              	.LVL10:
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 1
  116              		.loc 1 493 7 is_stmt 0 view .LVU32
  117 0038 0FB1     		cbz	r7, .L11
  118              	.LVL14:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 12
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s 			page 12
 
 
  119              	.L1:
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 1
  159              		.align	1
  160              		.syntax unified
  161              		.thumb
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 13
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s 			page 13
 
 
  162              		.thumb_func
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 1
  204              	.LVL26:
  205              	.L15:
  405:lvgl/src/core/lv_group.c ****         if(obj_next == NULL) {
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 14
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s 			page 14
 
 
  206              		.loc 1 405 5 is_stmt 1 view .LVU57
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 1
  243              		.loc 1 434 12 is_stmt 0 view .LVU74
  244 0032 2868     		ldr	r0, [r5]
  245 0034 FFF7FEFF 		bl	lv_obj_get_state
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 15
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s 			page 15
 
 
  246              	.LVL31:
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 1
  285 0060 49D1     		bne	.L28
  286              	.L17:
  408:lvgl/src/core/lv_group.c ****                 obj_next  = begin(&group->obj_ll);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 16
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s 			page 16
 
 
  287              		.loc 1 408 17 is_stmt 1 view .LVU90
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 1
  444:lvgl/src/core/lv_group.c **** 
  326              		.loc 1 444 19 discriminator 1 view .LVU106
  327 0088 0028     		cmp	r0, #0
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 17
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s 			page 17
 
 
  328 008a C6D1     		bne	.L15
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 1
  367              		.loc 1 455 9 is_stmt 1 view .LVU121
  455:lvgl/src/core/lv_group.c ****     }
  368              		.loc 1 455 33 is_stmt 0 view .LVU122
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 18
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s 			page 18
 
 
  369 00b0 F368     		ldr	r3, [r6, #12]
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 1
  408 00d6 F368     		ldr	r3, [r6, #12]
  463:lvgl/src/core/lv_group.c **** 
  409              		.loc 1 463 5 view .LVU138
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 19
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s 			page 19
 
 
  410 00d8 1868     		ldr	r0, [r3]
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 1
  451              		.loc 1 421 45 view .LVU151
  452 0100 F6E7     		b	.L14
  453              	.LVL63:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 20
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s 			page 20
 
 
  454              	.L30:
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 1
   48:lvgl/src/core/lv_group.c **** 
  501              		.loc 1 48 1 is_stmt 0 view .LVU161
  502 000a 08BD     		pop	{r3, pc}
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 21
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s 			page 21
 
 
  503              	.L43:
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 1
  547              		.loc 1 58 5 is_stmt 1 view .LVU173
   58:lvgl/src/core/lv_group.c ****     group->focus_cb       = NULL;
  548              		.loc 1 58 27 is_stmt 0 view .LVU174
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 22
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s 			page 22
 
 
  549 0016 227F     		ldrb	r2, [r4, #28]	@ zero_extendqisi2
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 1
  585              		.loc 1 53 5 discriminator 1 view .LVU192
   53:lvgl/src/core/lv_group.c ****     if(group == NULL) return NULL;
  586              		.loc 1 53 5 discriminator 1 view .LVU193
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 23
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s 			page 23
 
 
   53:lvgl/src/core/lv_group.c ****     if(group == NULL) return NULL;
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 1
  633 0014 FFF7FEFF 		bl	lv_event_send
  634              	.LVL75:
   77:lvgl/src/core/lv_group.c ****     }
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 24
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s 			page 24
 
 
  635              		.loc 1 77 9 is_stmt 1 view .LVU204
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 1
   83:lvgl/src/core/lv_group.c ****     }
  675              		.loc 1 83 11 view .LVU219
  676 003c 002B     		cmp	r3, #0
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 25
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s 			page 25
 
 
  677 003e F4D1     		bne	.L61
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 1
   90:lvgl/src/core/lv_group.c ****         }
  717              		.loc 1 90 13 view .LVU234
  718 0064 F2E7     		b	.L56
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 26
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s 			page 26
 
 
  719              	.LVL89:
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 1
  764              		.global	lv_group_set_default
  765              		.syntax unified
  766              		.thumb
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 27
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s 			page 27
 
 
  767              		.thumb_func
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 1
  818              		.global	lv_group_remove_all_objs
  819              		.syntax unified
  820              		.thumb
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 28
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s 			page 28
 
 
  821              		.thumb_func
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 1
  223:lvgl/src/core/lv_group.c ****     }
  863              		.loc 1 223 26 is_stmt 0 view .LVU265
  864 0020 0023     		movs	r3, #0
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 29
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s 			page 29
 
 
  865 0022 E360     		str	r3, [r4, #12]
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 1
  905 0046 2046     		mov	r0, r4
  906              	.LVL105:
  232:lvgl/src/core/lv_group.c **** }
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 30
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s 			page 30
 
 
  907              		.loc 1 232 5 is_stmt 0 view .LVU280
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 1
  951 0012 0121     		movs	r1, #1
  952 0014 2046     		mov	r0, r4
  953              	.LVL109:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 31
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s 			page 31
 
 
  273:lvgl/src/core/lv_group.c ****     }
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 1
  1000 000e 1BB1     		cbz	r3, .L85
  281:lvgl/src/core/lv_group.c ****             group->edge_cb(group, false);
  1001              		.loc 1 281 9 is_stmt 1 view .LVU303
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 32
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s 			page 32
 
 
  281:lvgl/src/core/lv_group.c ****             group->edge_cb(group, false);
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 1
  1049              	.LVL118:
  384:lvgl/src/core/lv_group.c **** 
  1050              		.loc 1 384 5 is_stmt 1 view .LVU313
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 33
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s 			page 33
 
 
  384:lvgl/src/core/lv_group.c **** 
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 1
  177:lvgl/src/core/lv_group.c ****     lv_group_t * g = lv_obj_get_group(obj);
  1095              		.loc 1 177 1 is_stmt 1 view -0
  1096              		.cfi_startproc
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 34
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s 			page 34
 
 
  1097              		@ args = 0, pretend = 0, frame = 0
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 1
  1135 001a 13B1     		cbz	r3, .L99
  200:lvgl/src/core/lv_group.c ****         g->obj_focus = NULL;
  1136              		.loc 1 200 24 discriminator 1 view .LVU343
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 35
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s 			page 35
 
 
  1137 001c 1B68     		ldr	r3, [r3]
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 1
  1177 0042 13F0010F 		tst	r3, #1
  1178 0046 03D0     		beq	.L97
  185:lvgl/src/core/lv_group.c **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 36
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s 			page 36
 
 
  1179              		.loc 1 185 23 is_stmt 1 discriminator 1 view .LVU358
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 1
  1220              		.loc 1 189 13 view .LVU371
  1221 007a 0F21     		movs	r1, #15
  1222 007c 2046     		mov	r0, r4
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 37
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s 			page 37
 
 
  1223 007e FFF7FEFF 		bl	lv_event_send
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 1
  1266              		.thumb
  1267              		.thumb_func
  1269              	lv_group_add_obj:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 38
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s 			page 38
 
 
  1270              	.LVL144:
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 1
  1310 001a 0B68     		ldr	r3, [r1]
  123:lvgl/src/core/lv_group.c ****             LV_LOG_INFO("the object is already added to this group");
  1311              		.loc 1 123 11 view .LVU398
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 39
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s 			page 39
 
 
  1312 001c A342     		cmp	r3, r4
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 1
  1350              	.LVL154:
  1351              	.L112:
  135:lvgl/src/core/lv_group.c ****         }
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 40
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s 			page 40
 
 
  1352              		.loc 1 135 13 is_stmt 1 view .LVU415
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 1
  1386 0056 FFF7FEFF 		bl	_lv_ll_get_head
  1387              	.LVL157:
  149:lvgl/src/core/lv_group.c ****         lv_group_refocus(group);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 41
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s 			page 41
 
 
  1388              		.loc 1 149 7 view .LVU436
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 1
  1428              	.L117:
  1429              		.cfi_def_cfa_offset 0
  1430              		.cfi_restore 4
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 42
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s 			page 42
 
 
  1431              		.cfi_restore 5
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 1
  1479              		.thumb_func
  1481              	lv_group_set_focus_cb:
  1482              	.LVL167:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 43
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s 			page 43
 
 
  1483              	.LFB175:
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 1
  1532              		@ args = 0, pretend = 0, frame = 0
  1533              		@ frame_needed = 0, uses_anonymous_args = 0
  1534              		@ link register save eliminated.
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 44
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s 			page 44
 
 
  332:lvgl/src/core/lv_group.c **** }
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 1
  342:lvgl/src/core/lv_group.c ****     if(group->obj_focus == NULL) return NULL;
  1585              		.loc 1 342 5 view .LVU477
  342:lvgl/src/core/lv_group.c ****     if(group->obj_focus == NULL) return NULL;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 45
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s 			page 45
 
 
  1586              		.loc 1 342 7 is_stmt 0 view .LVU478
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 1
  295:lvgl/src/core/lv_group.c **** 
  1631              		.loc 1 295 7 is_stmt 0 view .LVU490
  1632 000a 68B1     		cbz	r0, .L136
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 46
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s 			page 46
 
 
  1633 000c 0446     		mov	r4, r0
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 1
  1680              	.LVL181:
  1681              	.LFB177:
  313:lvgl/src/core/lv_group.c ****     if(group == NULL) return;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 47
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s 			page 47
 
 
  1682              		.loc 1 313 1 is_stmt 1 view -0
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 1
  1721              		.loc 1 323 44 is_stmt 0 view .LVU515
  1722 0020 E368     		ldr	r3, [r4, #12]
  323:lvgl/src/core/lv_group.c ****         if(res != LV_RES_OK) return;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 48
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s 			page 48
 
 
  1723              		.loc 1 323 24 view .LVU516
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 1
  1767              		.cfi_endproc
  1768              	.LFE177:
  1770              		.section	.text.lv_group_focus_obj,"ax",%progbits
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 49
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s 			page 49
 
 
  1771              		.align	1
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 1
  1814              		.loc 1 266 1 view .LVU538
  1815 0018 F8BD     		pop	{r3, r4, r5, r6, r7, pc}
  1816              	.LVL195:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 50
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s 			page 50
 
 
  1817              	.L158:
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 1
  249:lvgl/src/core/lv_group.c ****                 lv_res_t res = lv_event_send(*g->obj_focus, LV_EVENT_DEFOCUSED, get_indev(g));
  1857              		.loc 1 249 47 discriminator 1 view .LVU553
  1858 0042 1F68     		ldr	r7, [r3]
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 51
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s 			page 51
 
 
  249:lvgl/src/core/lv_group.c ****                 lv_res_t res = lv_event_send(*g->obj_focus, LV_EVENT_DEFOCUSED, get_indev(g));
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 1
  1897              		.loc 1 258 17 view .LVU569
  258:lvgl/src/core/lv_group.c ****                 lv_res_t res = lv_event_send(*g->obj_focus, LV_EVENT_FOCUSED, get_indev(g));
  1898              		.loc 1 258 21 is_stmt 0 view .LVU570
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 52
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s 			page 52
 
 
  1899 0066 3369     		ldr	r3, [r6, #16]
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 1
  1940              		.cfi_restore 3
  1941              		.cfi_restore 4
  1942              		.cfi_restore 5
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 53
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s 			page 53
 
 
  1943              		.cfi_restore 6
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 1
  1989              		.loc 1 160 5 is_stmt 1 view .LVU593
  160:lvgl/src/core/lv_group.c ****     if(g1 == NULL) return;
  1990              		.loc 1 160 7 is_stmt 0 view .LVU594
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 54
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s 			page 54
 
 
  1991 0012 8442     		cmp	r4, r0
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 1
  2031              		.loc 1 166 9 view .LVU608
  166:lvgl/src/core/lv_group.c ****         else if((*obj_i) == obj2)(*obj_i) = obj1;
  2032              		.loc 1 166 13 is_stmt 0 view .LVU609
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 55
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s 			page 55
 
 
  2033 0032 0B68     		ldr	r3, [r1]
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 1
  2072              	.LVL232:
  171:lvgl/src/core/lv_group.c ****     else if(focused == obj2) lv_group_focus_obj(obj1);
  2073              		.loc 1 171 25 is_stmt 0 discriminator 1 view .LVU625
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 56
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s 			page 56
 
 
  2074 0058 FFF7FEFF 		bl	lv_group_focus_obj
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 1
  355:lvgl/src/core/lv_group.c ****     if(!group) return NULL;
  2124              		.loc 1 355 1 is_stmt 1 view -0
  2125              		.cfi_startproc
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 57
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s 			page 57
 
 
  2126              		@ args = 0, pretend = 0, frame = 0
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 1
  363:lvgl/src/core/lv_group.c **** }
  2170              		.loc 1 363 34 view .LVU647
  2171 0004 C0F34000 		ubfx	r0, r0, #1, #1
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 58
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s 			page 58
 
 
  2172 0008 7047     		bx	lr
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 1
  2219              		.align	1
  2220              		.global	lv_group_get_obj_count
  2221              		.syntax unified
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 59
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s 			page 59
 
 
  2222              		.thumb
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 1
  2275              		.file 22 "lvgl/src/core/../core/../hal/../draw/lv_draw_layer.h"
  2276              		.file 23 "lvgl/src/core/../core/../hal/../draw/lv_draw.h"
  2277              		.file 24 "lvgl/src/core/../core/../hal/lv_hal_disp.h"
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 60
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s 			page 60
 
 
  2278              		.file 25 "lvgl/src/core/../core/../hal/lv_hal_indev.h"
@@ -3551,79 +3551,79 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 1
  2285              		.file 32 "lvgl/src/core/../core/lv_obj_tree.h"
  2286              		.file 33 "lvgl/src/core/../misc/../core/lv_obj_pos.h"
  2287              		.file 34 "lvgl/src/core/../misc/lv_mem.h"
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 61
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s 			page 61
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 lv_group.c
-C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s:19     .text.get_indev:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s:24     .text.get_indev:00000000 get_indev
-C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s:159    .text.focus_next_core:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s:164    .text.focus_next_core:00000000 focus_next_core
-C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s:480    .text._lv_group_init:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s:486    .text._lv_group_init:00000000 _lv_group_init
-C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s:506    .text._lv_group_init:0000000c $d
-C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s:511    .text.lv_group_create:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s:517    .text.lv_group_create:00000000 lv_group_create
-C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s:592    .text.lv_group_create:00000044 $d
-C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s:597    .text.lv_group_del:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s:603    .text.lv_group_del:00000000 lv_group_del
-C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s:757    .text.lv_group_del:0000008c $d
-C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s:763    .text.lv_group_set_default:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s:769    .text.lv_group_set_default:00000000 lv_group_set_default
-C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s:786    .text.lv_group_set_default:00000008 $d
-C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s:791    .text.lv_group_get_default:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s:797    .text.lv_group_get_default:00000000 lv_group_get_default
-C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s:812    .text.lv_group_get_default:00000008 $d
-C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s:817    .text.lv_group_remove_all_objs:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s:823    .text.lv_group_remove_all_objs:00000000 lv_group_remove_all_objs
-C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s:917    .text.lv_group_focus_next:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s:923    .text.lv_group_focus_next:00000000 lv_group_focus_next
-C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s:965    .text.lv_group_focus_next:0000001c $d
-C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s:971    .text.lv_group_focus_prev:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s:977    .text.lv_group_focus_prev:00000000 lv_group_focus_prev
-C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s:1019   .text.lv_group_focus_prev:0000001c $d
-C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s:1025   .text.lv_group_refocus:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s:1030   .text.lv_group_refocus:00000000 lv_group_refocus
-C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s:1086   .text.lv_group_remove_obj:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s:1092   .text.lv_group_remove_obj:00000000 lv_group_remove_obj
-C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s:1263   .text.lv_group_add_obj:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s:1269   .text.lv_group_add_obj:00000000 lv_group_add_obj
-C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s:1440   .text.lv_group_focus_freeze:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s:1446   .text.lv_group_focus_freeze:00000000 lv_group_focus_freeze
-C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s:1475   .text.lv_group_set_focus_cb:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s:1481   .text.lv_group_set_focus_cb:00000000 lv_group_set_focus_cb
-C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s:1498   .text.lv_group_set_edge_cb:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s:1504   .text.lv_group_set_edge_cb:00000000 lv_group_set_edge_cb
-C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s:1521   .text.lv_group_set_refocus_policy:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s:1527   .text.lv_group_set_refocus_policy:00000000 lv_group_set_refocus_policy
-C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s:1546   .text.lv_group_set_wrap:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s:1552   .text.lv_group_set_wrap:00000000 lv_group_set_wrap
-C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s:1571   .text.lv_group_get_focused:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s:1577   .text.lv_group_get_focused:00000000 lv_group_get_focused
-C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s:1605   .text.lv_group_send_data:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s:1611   .text.lv_group_send_data:00000000 lv_group_send_data
-C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s:1673   .text.lv_group_set_editing:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s:1679   .text.lv_group_set_editing:00000000 lv_group_set_editing
-C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s:1771   .text.lv_group_focus_obj:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s:1777   .text.lv_group_focus_obj:00000000 lv_group_focus_obj
-C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s:1953   .text.lv_group_swap_obj:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s:1959   .text.lv_group_swap_obj:00000000 lv_group_swap_obj
-C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s:2081   .text.lv_group_get_focus_cb:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s:2087   .text.lv_group_get_focus_cb:00000000 lv_group_get_focus_cb
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s 			page 62
+C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s:19     .text.get_indev:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s:24     .text.get_indev:00000000 get_indev
+C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s:159    .text.focus_next_core:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s:164    .text.focus_next_core:00000000 focus_next_core
+C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s:480    .text._lv_group_init:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s:486    .text._lv_group_init:00000000 _lv_group_init
+C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s:506    .text._lv_group_init:0000000c $d
+C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s:511    .text.lv_group_create:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s:517    .text.lv_group_create:00000000 lv_group_create
+C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s:592    .text.lv_group_create:00000044 $d
+C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s:597    .text.lv_group_del:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s:603    .text.lv_group_del:00000000 lv_group_del
+C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s:757    .text.lv_group_del:0000008c $d
+C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s:763    .text.lv_group_set_default:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s:769    .text.lv_group_set_default:00000000 lv_group_set_default
+C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s:786    .text.lv_group_set_default:00000008 $d
+C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s:791    .text.lv_group_get_default:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s:797    .text.lv_group_get_default:00000000 lv_group_get_default
+C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s:812    .text.lv_group_get_default:00000008 $d
+C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s:817    .text.lv_group_remove_all_objs:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s:823    .text.lv_group_remove_all_objs:00000000 lv_group_remove_all_objs
+C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s:917    .text.lv_group_focus_next:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s:923    .text.lv_group_focus_next:00000000 lv_group_focus_next
+C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s:965    .text.lv_group_focus_next:0000001c $d
+C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s:971    .text.lv_group_focus_prev:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s:977    .text.lv_group_focus_prev:00000000 lv_group_focus_prev
+C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s:1019   .text.lv_group_focus_prev:0000001c $d
+C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s:1025   .text.lv_group_refocus:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s:1030   .text.lv_group_refocus:00000000 lv_group_refocus
+C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s:1086   .text.lv_group_remove_obj:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s:1092   .text.lv_group_remove_obj:00000000 lv_group_remove_obj
+C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s:1263   .text.lv_group_add_obj:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s:1269   .text.lv_group_add_obj:00000000 lv_group_add_obj
+C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s:1440   .text.lv_group_focus_freeze:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s:1446   .text.lv_group_focus_freeze:00000000 lv_group_focus_freeze
+C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s:1475   .text.lv_group_set_focus_cb:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s:1481   .text.lv_group_set_focus_cb:00000000 lv_group_set_focus_cb
+C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s:1498   .text.lv_group_set_edge_cb:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s:1504   .text.lv_group_set_edge_cb:00000000 lv_group_set_edge_cb
+C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s:1521   .text.lv_group_set_refocus_policy:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s:1527   .text.lv_group_set_refocus_policy:00000000 lv_group_set_refocus_policy
+C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s:1546   .text.lv_group_set_wrap:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s:1552   .text.lv_group_set_wrap:00000000 lv_group_set_wrap
+C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s:1571   .text.lv_group_get_focused:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s:1577   .text.lv_group_get_focused:00000000 lv_group_get_focused
+C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s:1605   .text.lv_group_send_data:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s:1611   .text.lv_group_send_data:00000000 lv_group_send_data
+C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s:1673   .text.lv_group_set_editing:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s:1679   .text.lv_group_set_editing:00000000 lv_group_set_editing
+C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s:1771   .text.lv_group_focus_obj:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s:1777   .text.lv_group_focus_obj:00000000 lv_group_focus_obj
+C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s:1953   .text.lv_group_swap_obj:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s:1959   .text.lv_group_swap_obj:00000000 lv_group_swap_obj
+C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s:2081   .text.lv_group_get_focus_cb:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s:2087   .text.lv_group_get_focus_cb:00000000 lv_group_get_focus_cb
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s 			page 62
 
 
-C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s:2115   .text.lv_group_get_edge_cb:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s:2121   .text.lv_group_get_edge_cb:00000000 lv_group_get_edge_cb
-C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s:2149   .text.lv_group_get_editing:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s:2155   .text.lv_group_get_editing:00000000 lv_group_get_editing
-C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s:2184   .text.lv_group_get_wrap:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s:2190   .text.lv_group_get_wrap:00000000 lv_group_get_wrap
-C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s:2219   .text.lv_group_get_obj_count:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s:2225   .text.lv_group_get_obj_count:00000000 lv_group_get_obj_count
-C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s:2247   .bss.default_group:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\ccQG4orU.s:2251   .bss.default_group:00000000 default_group
+C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s:2115   .text.lv_group_get_edge_cb:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s:2121   .text.lv_group_get_edge_cb:00000000 lv_group_get_edge_cb
+C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s:2149   .text.lv_group_get_editing:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s:2155   .text.lv_group_get_editing:00000000 lv_group_get_editing
+C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s:2184   .text.lv_group_get_wrap:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s:2190   .text.lv_group_get_wrap:00000000 lv_group_get_wrap
+C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s:2219   .text.lv_group_get_obj_count:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s:2225   .text.lv_group_get_obj_count:00000000 lv_group_get_obj_count
+C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s:2247   .bss.default_group:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccllLVSZ.s:2251   .bss.default_group:00000000 default_group
 
 UNDEFINED SYMBOLS
 lv_indev_get_next

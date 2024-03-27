@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccdyXrs8.s 			page 1
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuH5irf.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccdyXrs8.s 			page 1
   43              		.loc 1 10 5 view .LVU2
   44 0002 2C4C     		ldr	r4, .L3
   45 0004 2046     		mov	r0, r4
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccdyXrs8.s 			page 2
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuH5irf.s 			page 2
 
 
   46 0006 FFF7FEFF 		bl	lv_style_init
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccdyXrs8.s 			page 1
   10:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h **** extern "C" {
   11:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h **** #endif
   12:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccdyXrs8.s 			page 3
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuH5irf.s 			page 3
 
 
   13:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h **** /*********************
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccdyXrs8.s 			page 1
   67:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****         .prop1 = LV_STYLE_PROP_ANY,                                     \
   68:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****         .prop_cnt = (sizeof(prop_array) / sizeof((prop_array)[0])),     \
   69:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****     }
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccdyXrs8.s 			page 4
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuH5irf.s 			page 4
 
 
   70:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h **** #endif
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccdyXrs8.s 			page 1
  124:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****  * The direction of the gradient.
  125:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****  */
  126:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h **** enum {
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccdyXrs8.s 			page 5
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuH5irf.s 			page 5
 
 
  127:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****     LV_GRAD_DIR_NONE, /**< No gradient (the `grad_color` property is ignored)*/
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccdyXrs8.s 			page 1
  181:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****     /*Group 0*/
  182:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****     LV_STYLE_WIDTH                  = 1,
  183:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****     LV_STYLE_MIN_WIDTH              = 2,
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccdyXrs8.s 			page 6
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuH5irf.s 			page 6
 
 
  184:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****     LV_STYLE_MAX_WIDTH              = 3,
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccdyXrs8.s 			page 1
  238:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****     LV_STYLE_IMG_RECOLOR            = 71,
  239:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****     LV_STYLE_IMG_RECOLOR_OPA        = 72,
  240:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****     LV_STYLE_LINE_WIDTH             = 73,
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccdyXrs8.s 			page 7
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuH5irf.s 			page 7
 
 
  241:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****     LV_STYLE_LINE_DASH_WIDTH        = 74,
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccdyXrs8.s 			page 1
  295:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h **** /**
  296:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****  * Descriptor for style transitions
  297:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****  */
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccdyXrs8.s 			page 8
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuH5irf.s 			page 8
 
 
  298:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h **** typedef struct {
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccdyXrs8.s 			page 1
  352:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****  * Clear all properties from a style and free all allocated memories.
  353:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****  * @param style pointer to a style
  354:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****  */
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccdyXrs8.s 			page 9
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuH5irf.s 			page 9
 
 
  355:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h **** void lv_style_reset(lv_style_t * style);
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccdyXrs8.s 			page 1
  409:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****  * @return LV_RES_INV: the property wasn't found in the style (`value` is unchanged)
  410:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****  *         LV_RES_OK: the property was fond, and `value` is set accordingly
  411:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****  * @note For performance reasons there are no sanity check on `style`
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccdyXrs8.s 			page 10
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuH5irf.s 			page 10
 
 
  412:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****  */
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccdyXrs8.s 			page 1
  466:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h **** 
  467:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****     if(style->prop_cnt == 0) return LV_STYLE_RES_NOT_FOUND;
  468:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccdyXrs8.s 			page 11
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuH5irf.s 			page 11
 
 
  469:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****     if(style->prop_cnt > 1) {
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccdyXrs8.s 			page 1
  523:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h **** static inline void lv_style_set_size(lv_style_t * style, lv_coord_t value)
  524:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h **** {
  525:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****     lv_style_set_width(style, value);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccdyXrs8.s 			page 12
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuH5irf.s 			page 12
 
 
  526:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****     lv_style_set_height(style, value);
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccdyXrs8.s 			page 1
  125 007a FFF7FEFF 		bl	lv_style_set_text_line_space
  126              	.LVL15:
   22:lvgl/examples/styles/lv_example_style_8.c ****     lv_style_set_text_decor(&style, LV_TEXT_DECOR_UNDERLINE);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccdyXrs8.s 			page 13
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuH5irf.s 			page 13
 
 
  127              		.loc 1 22 5 view .LVU18
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccdyXrs8.s 			page 1
   43:lvgl/examples/styles/../../src/core/lv_disp.h ****     LV_SCR_LOAD_ANIM_OUT_TOP,
   44:lvgl/examples/styles/../../src/core/lv_disp.h ****     LV_SCR_LOAD_ANIM_OUT_BOTTOM,
   45:lvgl/examples/styles/../../src/core/lv_disp.h **** } lv_scr_load_anim_t;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccdyXrs8.s 			page 14
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuH5irf.s 			page 14
 
 
   46:lvgl/examples/styles/../../src/core/lv_disp.h **** 
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccdyXrs8.s 			page 1
  100:lvgl/examples/styles/../../src/core/lv_disp.h **** 
  101:lvgl/examples/styles/../../src/core/lv_disp.h **** /**
  102:lvgl/examples/styles/../../src/core/lv_disp.h ****  * Set the background color of a display
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccdyXrs8.s 			page 15
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuH5irf.s 			page 15
 
 
  103:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @param disp pointer to a display
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccdyXrs8.s 			page 1
  157:lvgl/examples/styles/../../src/core/lv_disp.h **** 
  158:lvgl/examples/styles/../../src/core/lv_disp.h **** /**
  159:lvgl/examples/styles/../../src/core/lv_disp.h ****  * Get display invalidation is enabled.
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccdyXrs8.s 			page 16
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuH5irf.s 			page 16
 
 
  160:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @param disp pointer to a display (NULL to use the default display)
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccdyXrs8.s 			page 1
   30:lvgl/examples/styles/lv_example_style_8.c ****     lv_obj_center(obj);
  161              		.loc 1 30 5 view .LVU26
  162              	.LBB14:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccdyXrs8.s 			page 17
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuH5irf.s 			page 17
 
 
  163              	.LBI14:
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccdyXrs8.s 			page 1
   53:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @note            With default alignment it's the distance from the top left corner
   54:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @note            E.g. LV_ALIGN_CENTER alignment it's the offset from the center of the parent
   55:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @note            The position is interpreted on the content area of the parent
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccdyXrs8.s 			page 18
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuH5irf.s 			page 18
 
 
   56:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @note            The values can be set in pixel or in percentage of parent size with `lv_pct(v)`
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccdyXrs8.s 			page 1
  110:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  *                  lv_pct(x)           to set size in percentage of the parent's content area size
  111:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  *                                      x should be in [0..1000]% range
  112:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  */
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccdyXrs8.s 			page 19
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuH5irf.s 			page 19
 
 
  113:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** void lv_obj_set_height(struct _lv_obj_t * obj, lv_coord_t h);
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccdyXrs8.s 			page 1
  167:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  */
  168:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** void lv_obj_set_align(struct _lv_obj_t * obj, lv_align_t align);
  169:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccdyXrs8.s 			page 20
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuH5irf.s 			page 20
 
 
  170:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** /**
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccdyXrs8.s 			page 1
  186              		.cfi_endproc
  187              	.LFE204:
  189              		.section	.bss.style.0,"aw",%nobits
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccdyXrs8.s 			page 21
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuH5irf.s 			page 21
 
 
  190              		.align	2
@@ -1222,17 +1222,17 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccdyXrs8.s 			page 1
  209              		.file 16 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\misc\\lv_style_gen.h"
  210              		.file 17 "lvgl/examples/styles/../../src/hal/lv_hal_disp.h"
  211              		.file 18 "lvgl/examples/styles/../../src/widgets/lv_label.h"
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccdyXrs8.s 			page 22
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuH5irf.s 			page 22
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 lv_example_style_8.c
-C:\Users\OSD\AppData\Local\Temp\ccdyXrs8.s:19     .rodata.lv_example_style_8.str1.4:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\ccdyXrs8.s:23     .text.lv_example_style_8:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccdyXrs8.s:29     .text.lv_example_style_8:00000000 lv_example_style_8
-C:\Users\OSD\AppData\Local\Temp\ccdyXrs8.s:184    .text.lv_example_style_8:000000b4 $d
-C:\Users\OSD\AppData\Local\Temp\ccdyXrs8.s:190    .bss.style.0:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\ccdyXrs8.s:194    .bss.style.0:00000000 style.0
+C:\Users\OSD\AppData\Local\Temp\ccuH5irf.s:19     .rodata.lv_example_style_8.str1.4:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccuH5irf.s:23     .text.lv_example_style_8:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccuH5irf.s:29     .text.lv_example_style_8:00000000 lv_example_style_8
+C:\Users\OSD\AppData\Local\Temp\ccuH5irf.s:184    .text.lv_example_style_8:000000b4 $d
+C:\Users\OSD\AppData\Local\Temp\ccuH5irf.s:190    .bss.style.0:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccuH5irf.s:194    .bss.style.0:00000000 style.0
 
 UNDEFINED SYMBOLS
 lv_style_init

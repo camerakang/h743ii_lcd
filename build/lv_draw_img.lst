@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 1
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccv75GHJ.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 1
   29:lvgl/src/draw/lv_draw_img.c ****                                                             const lv_draw_img_dsc_t * draw_dsc,
   30:lvgl/src/draw/lv_draw_img.c ****                                                             const lv_area_t * coords, const void * 
   31:lvgl/src/draw/lv_draw_img.c **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 2
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccv75GHJ.s 			page 2
 
 
   32:lvgl/src/draw/lv_draw_img.c **** static void show_error(lv_draw_ctx_t * draw_ctx, const lv_area_t * coords, const char * msg);
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 1
   86:lvgl/src/draw/lv_draw_img.c ****     }
   87:lvgl/src/draw/lv_draw_img.c **** }
   88:lvgl/src/draw/lv_draw_img.c **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 3
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccv75GHJ.s 			page 3
 
 
   89:lvgl/src/draw/lv_draw_img.c **** /**
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 1
  143:lvgl/src/draw/lv_draw_img.c ****     switch(cf) {
  144:lvgl/src/draw/lv_draw_img.c ****         case LV_IMG_CF_TRUE_COLOR_CHROMA_KEYED:
  145:lvgl/src/draw/lv_draw_img.c ****         case LV_IMG_CF_RAW_CHROMA_KEYED:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 4
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccv75GHJ.s 			page 4
 
 
  146:lvgl/src/draw/lv_draw_img.c ****             is_chroma_keyed = true;
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 1
  200:lvgl/src/draw/lv_draw_img.c ****     const uint8_t * u8_p = src;
  201:lvgl/src/draw/lv_draw_img.c **** 
  202:lvgl/src/draw/lv_draw_img.c ****     /*The first or fourth byte depending on platform endianess shows the type of the image source*/
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 5
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccv75GHJ.s 			page 5
 
 
  203:lvgl/src/draw/lv_draw_img.c **** #if LV_BIG_ENDIAN_SYSTEM
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 1
  257:lvgl/src/draw/lv_draw_img.c ****     if(cf == LV_IMG_CF_ALPHA_8BIT) {
  258:lvgl/src/draw/lv_draw_img.c ****         if(draw_dsc->angle || draw_dsc->zoom != LV_IMG_ZOOM_NONE) {
  259:lvgl/src/draw/lv_draw_img.c ****             /* resume normal method */
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 6
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccv75GHJ.s 			page 6
 
 
  260:lvgl/src/draw/lv_draw_img.c ****             cf = LV_IMG_CF_TRUE_COLOR_ALPHA;
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 1
  314:lvgl/src/draw/lv_draw_img.c ****         uint8_t  * buf = lv_mem_buf_get(lv_area_get_width(&mask_com) *
  315:lvgl/src/draw/lv_draw_img.c ****                                         LV_IMG_PX_SIZE_ALPHA_BYTE);  /*+1 because of the possible a
  316:lvgl/src/draw/lv_draw_img.c **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 7
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccv75GHJ.s 			page 7
 
 
  317:lvgl/src/draw/lv_draw_img.c ****         const lv_area_t * clip_area_ori = draw_ctx->clip_area;
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 1
   31              		@ frame_needed = 0, uses_anonymous_args = 0
   32              		.loc 1 367 1 is_stmt 0 view .LVU1
   33 0000 08B5     		push	{r3, lr}
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 8
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccv75GHJ.s 			page 8
 
 
   34              		.cfi_def_cfa_offset 8
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 1
   77              		.loc 1 358 5 is_stmt 1 view .LVU9
   78              	.LBB30:
   79              	.LBI30:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 9
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccv75GHJ.s 			page 9
 
 
   80              		.file 2 "lvgl/src/draw/../misc/lv_color.h"
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 1
   54:lvgl/src/draw/../misc/lv_color.h ****     LV_OPA_COVER  = 255,
   55:lvgl/src/draw/../misc/lv_color.h **** };
   56:lvgl/src/draw/../misc/lv_color.h **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 10
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccv75GHJ.s 			page 10
 
 
   57:lvgl/src/draw/../misc/lv_color.h **** #define LV_OPA_MIN 2    /*Opacities below this will be transparent*/
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 1
  111:lvgl/src/draw/../misc/lv_color.h **** # define LV_COLOR_GET_B1(c) (c).ch.blue
  112:lvgl/src/draw/../misc/lv_color.h **** # define LV_COLOR_GET_A1(c) 0xFF
  113:lvgl/src/draw/../misc/lv_color.h **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 11
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccv75GHJ.s 			page 11
 
 
  114:lvgl/src/draw/../misc/lv_color.h **** # define _LV_COLOR_ZERO_INITIALIZER1 {0x00}
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 1
  168:lvgl/src/draw/../misc/lv_color.h **** 
  169:lvgl/src/draw/../misc/lv_color.h **** /*---------------------------------------
  170:lvgl/src/draw/../misc/lv_color.h ****  * Macros for the current color depth
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 12
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccv75GHJ.s 			page 12
 
 
  171:lvgl/src/draw/../misc/lv_color.h ****  * to set/get values of the color channels
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 1
  225:lvgl/src/draw/../misc/lv_color.h ****     struct {
  226:lvgl/src/draw/../misc/lv_color.h ****         uint8_t blue;
  227:lvgl/src/draw/../misc/lv_color.h ****         uint8_t green;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 13
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccv75GHJ.s 			page 13
 
 
  228:lvgl/src/draw/../misc/lv_color.h ****         uint8_t red;
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 1
  282:lvgl/src/draw/../misc/lv_color.h ****  * GLOBAL PROTOTYPES
  283:lvgl/src/draw/../misc/lv_color.h ****  **********************/
  284:lvgl/src/draw/../misc/lv_color.h **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 14
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccv75GHJ.s 			page 14
 
 
  285:lvgl/src/draw/../misc/lv_color.h **** /*In color conversations:
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 1
  339:lvgl/src/draw/../misc/lv_color.h ****     LV_COLOR_SET_B8(ret, LV_COLOR_GET_B(color) >> 3); /*5 - 2  = 3*/
  340:lvgl/src/draw/../misc/lv_color.h ****     return ret.full;
  341:lvgl/src/draw/../misc/lv_color.h **** #elif LV_COLOR_DEPTH == 32
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 15
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccv75GHJ.s 			page 15
 
 
  342:lvgl/src/draw/../misc/lv_color.h ****     lv_color8_t ret;
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 1
  396:lvgl/src/draw/../misc/lv_color.h ****      * Find the first divisor where ( adder >> divisor ) <= 0
  397:lvgl/src/draw/../misc/lv_color.h ****      *
  398:lvgl/src/draw/../misc/lv_color.h ****      * 5-bit to 8-bit: ( 31 * multiplier + adder ) >> divisor = 255
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 16
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccv75GHJ.s 			page 16
 
 
  399:lvgl/src/draw/../misc/lv_color.h ****      * divisor  multiplier  adder  min (0)  max (31)
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 1
  453:lvgl/src/draw/../misc/lv_color.h ****     ret.full = (uint16_t)((result >> 16) | result);
  454:lvgl/src/draw/../misc/lv_color.h **** #if LV_COLOR_16_SWAP == 1
  455:lvgl/src/draw/../misc/lv_color.h ****     ret.full = ret.full << 8 | ret.full >> 8;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 17
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccv75GHJ.s 			page 17
 
 
  456:lvgl/src/draw/../misc/lv_color.h **** #endif
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 1
  510:lvgl/src/draw/../misc/lv_color.h ****     /*Restore color1*/
  511:lvgl/src/draw/../misc/lv_color.h ****     lv_color_t c1;
  512:lvgl/src/draw/../misc/lv_color.h ****     LV_COLOR_SET_R(c1, premult_c1[0]);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 18
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccv75GHJ.s 			page 18
 
 
  513:lvgl/src/draw/../misc/lv_color.h ****     LV_COLOR_SET_G(c1, premult_c1[1]);
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 1
  567:lvgl/src/draw/../misc/lv_color.h ****             res_opa_saved = 255 - ((uint16_t)((uint16_t)(255 - fg_opa) * (255 - bg_opa)) >> 8);
  568:lvgl/src/draw/../misc/lv_color.h ****             LV_ASSERT(res_opa_saved != 0);
  569:lvgl/src/draw/../misc/lv_color.h ****             lv_opa_t ratio = (uint16_t)((uint16_t)fg_opa * 255) / res_opa_saved;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 19
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccv75GHJ.s 			page 19
 
 
  570:lvgl/src/draw/../misc/lv_color.h ****             res_color_saved = lv_color_mix(fg_color, bg_color, ratio);
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 1
  624:lvgl/src/draw/../misc/lv_color.h **** #elif LV_COLOR_DEPTH == 32
  625:lvgl/src/draw/../misc/lv_color.h ****     lv_color_t r;
  626:lvgl/src/draw/../misc/lv_color.h ****     r.full = c | 0xFF000000;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 20
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccv75GHJ.s 			page 20
 
 
  627:lvgl/src/draw/../misc/lv_color.h ****     return r;
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 1
  681:lvgl/src/draw/../misc/lv_color.h ****  * Just a wrapper around LV_COLOR_CHROMA_KEY because it might be more convenient to use a function 
  682:lvgl/src/draw/../misc/lv_color.h ****  * @return LV_COLOR_CHROMA_KEY
  683:lvgl/src/draw/../misc/lv_color.h ****  */
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 21
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccv75GHJ.s 			page 21
 
 
  684:lvgl/src/draw/../misc/lv_color.h **** static inline lv_color_t lv_color_chroma_key(void)
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 1
  112 0028 0093     		str	r3, [sp]
  113 002a 3346     		mov	r3, r6
  114 002c 2A46     		mov	r2, r5
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 22
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccv75GHJ.s 			page 22
 
 
  115 002e 02A9     		add	r1, sp, #8
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 1
  594:lvgl/src/draw/../misc/lv_color.h **** {
  161              		.loc 2 594 26 view .LVU29
  162              	.LBB36:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 23
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccv75GHJ.s 			page 23
 
 
  596:lvgl/src/draw/../misc/lv_color.h **** }
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 1
  206              		.loc 1 95 1 is_stmt 1 view -0
  207              		.cfi_startproc
  208              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 24
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccv75GHJ.s 			page 24
 
 
  209              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 1
  252              	.L11:
  120:lvgl/src/draw/lv_draw_img.c ****             break;
  253              		.loc 1 120 13 is_stmt 1 view .LVU54
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 25
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccv75GHJ.s 			page 25
 
 
  121:lvgl/src/draw/lv_draw_img.c ****         case LV_IMG_CF_INDEXED_8BIT:
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 1
  297 0004 0628     		cmp	r0, #6
  298 0006 01D0     		beq	.L20
  150:lvgl/src/draw/lv_draw_img.c ****             break;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 26
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccv75GHJ.s 			page 26
 
 
  299              		.loc 1 150 29 is_stmt 0 view .LVU68
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 1
  345 000a 47F6A473 		movw	r3, #32676
  346 000e 1842     		tst	r0, r3
  347 0010 14BF     		ite	ne
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 27
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccv75GHJ.s 			page 27
 
 
  348 0012 0120     		movne	r0, #1
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 1
  213:lvgl/src/draw/lv_draw_img.c **** #endif
  392              		.loc 1 213 10 is_stmt 1 view .LVU91
  213:lvgl/src/draw/lv_draw_img.c **** #endif
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 28
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccv75GHJ.s 			page 28
 
 
  393              		.loc 1 213 12 is_stmt 0 view .LVU92
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 1
  439              		.loc 1 230 1 is_stmt 0 view .LVU102
  440 0000 30B5     		push	{r4, r5, lr}
  441              		.cfi_def_cfa_offset 12
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 29
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccv75GHJ.s 			page 29
 
 
  442              		.cfi_offset 4, -12
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 1
  490              		.cfi_offset 11, -8
  491              		.cfi_offset 14, -4
  492 0004 8DB0     		sub	sp, sp, #52
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 30
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccv75GHJ.s 			page 30
 
 
  493              		.cfi_def_cfa_offset 88
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 1
  534              		.loc 1 250 5 is_stmt 1 view .LVU123
  251:lvgl/src/draw/lv_draw_img.c ****     else if(LV_IMG_CF_ALPHA_8BIT == cdsc->dec_dsc.header.cf) cf = LV_IMG_CF_ALPHA_8BIT;
  535              		.loc 1 251 5 view .LVU124
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 31
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccv75GHJ.s 			page 31
 
 
  251:lvgl/src/draw/lv_draw_img.c ****     else if(LV_IMG_CF_ALPHA_8BIT == cdsc->dec_dsc.header.cf) cf = LV_IMG_CF_ALPHA_8BIT;
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 1
  573              		.loc 1 258 11 view .LVU141
  574 005a B3F1807F 		cmp	r3, #16777216
  575 005e 06D0     		beq	.L35
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 32
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccv75GHJ.s 			page 32
 
 
  260:lvgl/src/draw/lv_draw_img.c ****             cdsc->dec_dsc.img_data = NULL;
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 1
  255:lvgl/src/draw/lv_draw_img.c **** 
  615              		.loc 1 255 13 view .LVU157
  616 0084 4FF00408 		mov	r8, #4
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 33
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccv75GHJ.s 			page 33
 
 
  617 0088 F1E7     		b	.L35
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 1
   34:lvgl/src/draw/../misc/lv_area.h **** /**
   35:lvgl/src/draw/../misc/lv_area.h ****  * Represents a point on the screen.
   36:lvgl/src/draw/../misc/lv_area.h ****  */
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 34
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccv75GHJ.s 			page 34
 
 
   37:lvgl/src/draw/../misc/lv_area.h **** typedef struct {
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 1
   91:lvgl/src/draw/../misc/lv_area.h **** /**********************
   92:lvgl/src/draw/../misc/lv_area.h ****  * GLOBAL PROTOTYPES
   93:lvgl/src/draw/../misc/lv_area.h ****  **********************/
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 35
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccv75GHJ.s 			page 35
 
 
   94:lvgl/src/draw/../misc/lv_area.h **** 
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 1
  662              		.loc 1 275 11 view .LVU179
  663 00b2 B3F1807F 		cmp	r3, #16777216
  664 00b6 15D1     		bne	.L55
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 36
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccv75GHJ.s 			page 36
 
 
  665              	.L40:
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 1
  705              	.LBB41:
  276:lvgl/src/draw/lv_draw_img.c ****             int32_t h = lv_area_get_height(coords);
  706              		.loc 1 276 13 is_stmt 1 view .LVU194
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 37
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccv75GHJ.s 			page 37
 
 
  707              	.LBB42:
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 1
  740              	.LVL67:
  741              		.loc 3 135 49 view .LVU209
  742              	.LBE45:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 38
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccv75GHJ.s 			page 38
 
 
  743              	.LBE44:
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 1
  784              	.LVL71:
  785              	.L56:
  284:lvgl/src/draw/lv_draw_img.c ****         }
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 39
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccv75GHJ.s 			page 39
 
 
  786              		.loc 1 284 29 view .LVU223
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 1
  824 0156 BDF81820 		ldrh	r2, [sp, #24]
  125:lvgl/src/draw/../misc/lv_area.h **** }
  825              		.loc 3 125 36 view .LVU240
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 40
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccv75GHJ.s 			page 40
 
 
  826 015a 9B1A     		subs	r3, r3, r2
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 1
  112:lvgl/src/draw/../misc/lv_area.h ****     dest->y1 = src->y1;
  864              		.loc 3 112 14 view .LVU257
  865 0174 ADF82030 		strh	r3, [sp, #32]	@ movhi
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 41
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccv75GHJ.s 			page 41
 
 
  113:lvgl/src/draw/../misc/lv_area.h ****     dest->x2 = src->x2;
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 1
  322:lvgl/src/draw/lv_draw_img.c ****         int32_t row;
  903              		.loc 1 322 41 view .LVU275
  904 01a8 B5F90250 		ldrsh	r5, [r5, #2]
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 42
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccv75GHJ.s 			page 42
 
 
  905              	.LVL85:
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 1
  333:lvgl/src/draw/lv_draw_img.c ****                 lv_mem_buf_release(buf);
  944              		.loc 1 333 17 view .LVU291
  334:lvgl/src/draw/lv_draw_img.c ****                 draw_cleanup(cdsc);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 43
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccv75GHJ.s 			page 43
 
 
  945              		.loc 1 334 17 view .LVU292
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 1
  328:lvgl/src/draw/lv_draw_img.c **** 
  984              		.loc 1 328 15 is_stmt 0 view .LVU308
  985 01f2 0028     		cmp	r0, #0
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 44
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccv75GHJ.s 			page 44
 
 
  986 01f4 F2D0     		beq	.L46
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 1
  1026              		.loc 1 343 17 is_stmt 0 view .LVU322
  1027 022c BDF92630 		ldrsh	r3, [sp, #38]
  343:lvgl/src/draw/lv_draw_img.c ****             y++;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 45
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccv75GHJ.s 			page 45
 
 
  1028              		.loc 1 343 20 view .LVU323
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 1
  1073              	.LFB162:
   64:lvgl/src/draw/lv_draw_img.c ****     if(src == NULL) {
  1074              		.loc 1 64 1 is_stmt 1 view -0
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 46
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccv75GHJ.s 			page 46
 
 
  1075              		.cfi_startproc
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 1
  1115              		.loc 1 79 7 is_stmt 0 view .LVU348
  1116 0022 0128     		cmp	r0, #1
  1117 0024 05D0     		beq	.L64
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 47
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccv75GHJ.s 			page 47
 
 
  1118              	.LVL111:
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 1
  1157              		.loc 1 84 9 view .LVU363
   85:lvgl/src/draw/lv_draw_img.c ****     }
  1158              		.loc 1 85 9 view .LVU364
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 48
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccv75GHJ.s 			page 48
 
 
  1159 0044 024A     		ldr	r2, .L68
@@ -2857,36 +2857,36 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 1
  1192              		.file 20 "lvgl/src/draw/../hal/../draw/lv_draw_layer.h"
  1193              		.file 21 "lvgl/src/draw/../hal/../draw/lv_draw.h"
  1194              		.file 22 "lvgl/src/draw/../misc/lv_mem.h"
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s 			page 49
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccv75GHJ.s 			page 49
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 lv_draw_img.c
-C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s:19     .text.draw_cleanup:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s:24     .text.draw_cleanup:00000000 draw_cleanup
-C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s:46     .text.show_error:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s:51     .text.show_error:00000000 show_error
-C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s:129    .text.lv_draw_img_dsc_init:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s:135    .text.lv_draw_img_dsc_init:00000000 lv_draw_img_dsc_init
-C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s:197    .text.lv_img_cf_get_px_size:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s:203    .text.lv_img_cf_get_px_size:00000000 lv_img_cf_get_px_size
-C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s:220    .text.lv_img_cf_get_px_size:0000000a $d
-C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s:279    .text.lv_img_cf_is_chroma_keyed:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s:285    .text.lv_img_cf_is_chroma_keyed:00000000 lv_img_cf_is_chroma_keyed
-C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s:323    .text.lv_img_cf_has_alpha:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s:329    .text.lv_img_cf_has_alpha:00000000 lv_img_cf_has_alpha
-C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s:363    .text.lv_img_src_get_type:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s:369    .text.lv_img_src_get_type:00000000 lv_img_src_get_type
-C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s:426    .text.lv_draw_img_decoded:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s:432    .text.lv_draw_img_decoded:00000000 lv_draw_img_decoded
-C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s:468    .text.decode_and_draw:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s:473    .text.decode_and_draw:00000000 decode_and_draw
-C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s:1061   .rodata.lv_draw_img.str1.4:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s:1065   .text.lv_draw_img:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s:1071   .text.lv_draw_img:00000000 lv_draw_img
-C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s:1170   .text.lv_draw_img:00000050 $d
-C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s:231    .text.lv_img_cf_get_px_size:00000015 $d
-C:\Users\OSD\AppData\Local\Temp\ccWklHIb.s:231    .text.lv_img_cf_get_px_size:00000016 $t
+C:\Users\OSD\AppData\Local\Temp\ccv75GHJ.s:19     .text.draw_cleanup:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccv75GHJ.s:24     .text.draw_cleanup:00000000 draw_cleanup
+C:\Users\OSD\AppData\Local\Temp\ccv75GHJ.s:46     .text.show_error:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccv75GHJ.s:51     .text.show_error:00000000 show_error
+C:\Users\OSD\AppData\Local\Temp\ccv75GHJ.s:129    .text.lv_draw_img_dsc_init:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccv75GHJ.s:135    .text.lv_draw_img_dsc_init:00000000 lv_draw_img_dsc_init
+C:\Users\OSD\AppData\Local\Temp\ccv75GHJ.s:197    .text.lv_img_cf_get_px_size:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccv75GHJ.s:203    .text.lv_img_cf_get_px_size:00000000 lv_img_cf_get_px_size
+C:\Users\OSD\AppData\Local\Temp\ccv75GHJ.s:220    .text.lv_img_cf_get_px_size:0000000a $d
+C:\Users\OSD\AppData\Local\Temp\ccv75GHJ.s:279    .text.lv_img_cf_is_chroma_keyed:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccv75GHJ.s:285    .text.lv_img_cf_is_chroma_keyed:00000000 lv_img_cf_is_chroma_keyed
+C:\Users\OSD\AppData\Local\Temp\ccv75GHJ.s:323    .text.lv_img_cf_has_alpha:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccv75GHJ.s:329    .text.lv_img_cf_has_alpha:00000000 lv_img_cf_has_alpha
+C:\Users\OSD\AppData\Local\Temp\ccv75GHJ.s:363    .text.lv_img_src_get_type:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccv75GHJ.s:369    .text.lv_img_src_get_type:00000000 lv_img_src_get_type
+C:\Users\OSD\AppData\Local\Temp\ccv75GHJ.s:426    .text.lv_draw_img_decoded:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccv75GHJ.s:432    .text.lv_draw_img_decoded:00000000 lv_draw_img_decoded
+C:\Users\OSD\AppData\Local\Temp\ccv75GHJ.s:468    .text.decode_and_draw:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccv75GHJ.s:473    .text.decode_and_draw:00000000 decode_and_draw
+C:\Users\OSD\AppData\Local\Temp\ccv75GHJ.s:1061   .rodata.lv_draw_img.str1.4:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccv75GHJ.s:1065   .text.lv_draw_img:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccv75GHJ.s:1071   .text.lv_draw_img:00000000 lv_draw_img
+C:\Users\OSD\AppData\Local\Temp\ccv75GHJ.s:1170   .text.lv_draw_img:00000050 $d
+C:\Users\OSD\AppData\Local\Temp\ccv75GHJ.s:231    .text.lv_img_cf_get_px_size:00000015 $d
+C:\Users\OSD\AppData\Local\Temp\ccv75GHJ.s:231    .text.lv_img_cf_get_px_size:00000016 $t
 
 UNDEFINED SYMBOLS
 lv_img_decoder_close

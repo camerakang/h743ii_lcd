@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2V81au.s 			page 1
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDFmnrW.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2V81au.s 			page 1
   28:lvgl/src/draw/lv_draw_line.c **** 
   29:lvgl/src/draw/lv_draw_line.c **** /**********************
   30:lvgl/src/draw/lv_draw_line.c ****  *      MACROS
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2V81au.s 			page 2
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDFmnrW.s 			page 2
 
 
   31:lvgl/src/draw/lv_draw_line.c ****  **********************/
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2V81au.s 			page 1
   17:lvgl/src/draw/../core/../misc/lv_color.h **** #include "lv_assert.h"
   18:lvgl/src/draw/../core/../misc/lv_color.h **** #include "lv_math.h"
   19:lvgl/src/draw/../core/../misc/lv_color.h **** #include "lv_types.h"
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2V81au.s 			page 3
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDFmnrW.s 			page 3
 
 
   20:lvgl/src/draw/../core/../misc/lv_color.h **** 
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2V81au.s 			page 1
   74:lvgl/src/draw/../core/../misc/lv_color.h **** * MSVC compiler's definition of the __cplusplus indicating 199711L regardless to C++ standard versi
   75:lvgl/src/draw/../core/../misc/lv_color.h **** * see https://devblogs.microsoft.com/cppblog/msvc-now-correctly-reports-cplusplus
   76:lvgl/src/draw/../core/../misc/lv_color.h **** * so we use _MSC_VER macro instead of __cplusplus
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2V81au.s 			page 4
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDFmnrW.s 			page 4
 
 
   77:lvgl/src/draw/../core/../misc/lv_color.h **** */
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2V81au.s 			page 1
  131:lvgl/src/draw/../core/../misc/lv_color.h **** #if LV_COLOR_16_SWAP == 0
  132:lvgl/src/draw/../core/../misc/lv_color.h **** # define LV_COLOR_SET_G16(c, v) (c).ch.green = (uint8_t)((v) & 0x3FU)
  133:lvgl/src/draw/../core/../misc/lv_color.h **** #else
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2V81au.s 			page 5
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDFmnrW.s 			page 5
 
 
  134:lvgl/src/draw/../core/../misc/lv_color.h **** # define LV_COLOR_SET_G16(c, v) {(c).ch.green_h = (uint8_t)(((v) >> 3) & 0x7); (c).ch.green_l = (ui
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2V81au.s 			page 1
  188:lvgl/src/draw/../core/../misc/lv_color.h ****  **********************/
  189:lvgl/src/draw/../core/../misc/lv_color.h **** 
  190:lvgl/src/draw/../core/../misc/lv_color.h **** typedef union {
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2V81au.s 			page 6
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDFmnrW.s 			page 6
 
 
  191:lvgl/src/draw/../core/../misc/lv_color.h ****     uint8_t full; /*must be declared first to set all bits of byte via initializer list*/
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2V81au.s 			page 1
  245:lvgl/src/draw/../core/../misc/lv_color.h **** typedef uint8_t lv_opa_t;
  246:lvgl/src/draw/../core/../misc/lv_color.h **** //! @endcond
  247:lvgl/src/draw/../core/../misc/lv_color.h **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2V81au.s 			page 7
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDFmnrW.s 			page 7
 
 
  248:lvgl/src/draw/../core/../misc/lv_color.h **** struct _lv_color_filter_dsc_t;
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2V81au.s 			page 1
  302:lvgl/src/draw/../core/../misc/lv_color.h **** #elif LV_COLOR_DEPTH == 8
  303:lvgl/src/draw/../core/../misc/lv_color.h ****     if((LV_COLOR_GET_R(color) & 0x4) || (LV_COLOR_GET_G(color) & 0x4) || (LV_COLOR_GET_B(color) & 0
  304:lvgl/src/draw/../core/../misc/lv_color.h ****         return 1;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2V81au.s 			page 8
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDFmnrW.s 			page 8
 
 
  305:lvgl/src/draw/../core/../misc/lv_color.h ****     }
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2V81au.s 			page 1
  359:lvgl/src/draw/../core/../misc/lv_color.h ****     LV_COLOR_SET_R16(ret, LV_COLOR_GET_R(color) * 4);  /*(2^5 - 1)/(2^3 - 1) = 31/7 = 4*/
  360:lvgl/src/draw/../core/../misc/lv_color.h ****     LV_COLOR_SET_G16(ret, LV_COLOR_GET_G(color) * 9);  /*(2^6 - 1)/(2^3 - 1) = 63/7 = 9*/
  361:lvgl/src/draw/../core/../misc/lv_color.h ****     LV_COLOR_SET_B16(ret, LV_COLOR_GET_B(color) * 10); /*(2^5 - 1)/(2^2 - 1) = 31/3 = 10*/
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2V81au.s 			page 9
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDFmnrW.s 			page 9
 
 
  362:lvgl/src/draw/../core/../misc/lv_color.h ****     return ret.full;
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2V81au.s 			page 1
  416:lvgl/src/draw/../core/../misc/lv_color.h ****      */
  417:lvgl/src/draw/../core/../misc/lv_color.h **** 
  418:lvgl/src/draw/../core/../misc/lv_color.h ****     lv_color32_t ret;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2V81au.s 			page 10
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDFmnrW.s 			page 10
 
 
  419:lvgl/src/draw/../core/../misc/lv_color.h ****     LV_COLOR_SET_R32(ret, (LV_COLOR_GET_R(color) * 263 + 7) >> 5);
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2V81au.s 			page 1
  473:lvgl/src/draw/../core/../misc/lv_color.h **** 
  474:lvgl/src/draw/../core/../misc/lv_color.h **** static inline void LV_ATTRIBUTE_FAST_MEM lv_color_premult(lv_color_t c, uint8_t mix, uint16_t * out
  475:lvgl/src/draw/../core/../misc/lv_color.h **** {
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2V81au.s 			page 11
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDFmnrW.s 			page 11
 
 
  476:lvgl/src/draw/../core/../misc/lv_color.h **** #if LV_COLOR_DEPTH != 1
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2V81au.s 			page 1
  530:lvgl/src/draw/../core/../misc/lv_color.h **** static inline void LV_ATTRIBUTE_FAST_MEM lv_color_mix_with_alpha(lv_color_t bg_color, lv_opa_t bg_o
  531:lvgl/src/draw/../core/../misc/lv_color.h ****                                                                  lv_color_t fg_color, lv_opa_t fg_o
  532:lvgl/src/draw/../core/../misc/lv_color.h ****                                                                  lv_color_t * res_color, lv_opa_t *
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2V81au.s 			page 12
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDFmnrW.s 			page 12
 
 
  533:lvgl/src/draw/../core/../misc/lv_color.h **** {
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2V81au.s 			page 1
  587:lvgl/src/draw/../core/../misc/lv_color.h **** {
  588:lvgl/src/draw/../core/../misc/lv_color.h ****     lv_color32_t c32;
  589:lvgl/src/draw/../core/../misc/lv_color.h ****     c32.full        = lv_color_to32(color);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2V81au.s 			page 13
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDFmnrW.s 			page 13
 
 
  590:lvgl/src/draw/../core/../misc/lv_color.h ****     uint16_t bright = (uint16_t)(3u * LV_COLOR_GET_R32(c32) + LV_COLOR_GET_B32(c32) + 4u * LV_COLOR
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2V81au.s 			page 1
  644:lvgl/src/draw/../core/../misc/lv_color.h **** //! @cond Doxygen_Suppress
  645:lvgl/src/draw/../core/../misc/lv_color.h **** //!
  646:lvgl/src/draw/../core/../misc/lv_color.h **** void /* LV_ATTRIBUTE_FAST_MEM */ lv_color_fill(lv_color_t * buf, lv_color_t color, uint32_t px_num)
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2V81au.s 			page 14
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDFmnrW.s 			page 14
 
 
  647:lvgl/src/draw/../core/../misc/lv_color.h **** 
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2V81au.s 			page 1
   56              	.LBE8:
  700:lvgl/src/draw/../core/../misc/lv_color.h **** {
  701:lvgl/src/draw/../core/../misc/lv_color.h ****     return lv_color_make(0x00, 0x0, 0x00);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2V81au.s 			page 15
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDFmnrW.s 			page 15
 
 
   57              		.loc 2 701 5 view .LVU9
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2V81au.s 			page 1
  103              		.loc 1 48 5 is_stmt 1 view .LVU19
  104              		.loc 1 48 11 is_stmt 0 view .LVU20
  105 0002 B1F90440 		ldrsh	r4, [r1, #4]
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2V81au.s 			page 16
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDFmnrW.s 			page 16
 
 
  106              		.loc 1 48 7 view .LVU21
@@ -944,15 +944,15 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2V81au.s 			page 1
  143              		.file 18 "lvgl/src/draw/../core/../hal/../draw/lv_draw_layer.h"
  144              		.file 19 "lvgl/src/draw/../core/../hal/../draw/lv_draw.h"
  145              		.file 20 "lvgl/src/draw/../core/../misc/lv_mem.h"
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2V81au.s 			page 17
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDFmnrW.s 			page 17
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 lv_draw_line.c
-C:\Users\OSD\AppData\Local\Temp\cc2V81au.s:19     .text.lv_draw_line_dsc_init:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cc2V81au.s:25     .text.lv_draw_line_dsc_init:00000000 lv_draw_line_dsc_init
-C:\Users\OSD\AppData\Local\Temp\cc2V81au.s:85     .text.lv_draw_line:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cc2V81au.s:91     .text.lv_draw_line:00000000 lv_draw_line
+C:\Users\OSD\AppData\Local\Temp\ccDFmnrW.s:19     .text.lv_draw_line_dsc_init:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccDFmnrW.s:25     .text.lv_draw_line_dsc_init:00000000 lv_draw_line_dsc_init
+C:\Users\OSD\AppData\Local\Temp\ccDFmnrW.s:85     .text.lv_draw_line:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccDFmnrW.s:91     .text.lv_draw_line:00000000 lv_draw_line
 
 UNDEFINED SYMBOLS
 lv_memset_00

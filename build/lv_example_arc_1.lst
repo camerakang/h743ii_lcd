@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccAvlu4c.s 			page 1
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccK18ZCv.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccAvlu4c.s 			page 1
   24:lvgl/examples/widgets/arc/lv_example_arc_1.c **** static void value_changed_event_cb(lv_event_t * e)
   25:lvgl/examples/widgets/arc/lv_example_arc_1.c **** {
   32              		.loc 1 25 1 view -0
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccAvlu4c.s 			page 2
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccK18ZCv.s 			page 2
 
 
   33              		.cfi_startproc
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccAvlu4c.s 			page 1
   79              		.loc 1 33 1 is_stmt 0 view .LVU13
   80 002c 38BD     		pop	{r3, r4, r5, pc}
   81              	.LVL10:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccAvlu4c.s 			page 3
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccK18ZCv.s 			page 3
 
 
   82              	.L4:
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccAvlu4c.s 			page 1
   24:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**********************
   25:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  *      TYPEDEFS
   26:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  **********************/
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccAvlu4c.s 			page 4
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccK18ZCv.s 			page 4
 
 
   27:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccAvlu4c.s 			page 1
   81:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Return with the sys. layer. (Same on every screen and it is above the normal screen and the top
   82:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * layer)
   83:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to display which sys. layer should be retrieved. (NULL to use the default sc
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccAvlu4c.s 			page 5
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccK18ZCv.s 			page 5
 
 
   84:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @return pointer to the sys layer object (transparent screen sized lv_obj)
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccAvlu4c.s 			page 1
  138:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
  139:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
  140:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Manually trigger an activity on a display
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccAvlu4c.s 			page 6
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccK18ZCv.s 			page 6
 
 
  141:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to a display (NULL to use the default display)
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccAvlu4c.s 			page 1
    9:lvgl/examples/widgets/arc/lv_example_arc_1.c **** 
  123              		.loc 1 9 24 view .LVU20
  124 000a FFF7FEFF 		bl	lv_label_create
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccAvlu4c.s 			page 7
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccK18ZCv.s 			page 7
 
 
  125              	.LVL13:
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccAvlu4c.s 			page 1
  171              		.file 3 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\core\\lv_obj_pos.h"
    1:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** /**
    2:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @file lv_obj_pos.h
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccAvlu4c.s 			page 8
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccK18ZCv.s 			page 8
 
 
    3:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  *
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccAvlu4c.s 			page 1
   57:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  */
   58:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** void lv_obj_set_x(struct _lv_obj_t * obj, lv_coord_t x);
   59:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccAvlu4c.s 			page 9
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccK18ZCv.s 			page 9
 
 
   60:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** /**
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccAvlu4c.s 			page 1
  114:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** 
  115:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** /**
  116:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * Set the width reduced by the left and right padding and the border width.
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccAvlu4c.s 			page 10
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccK18ZCv.s 			page 10
 
 
  117:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @param obj       pointer to an object
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccAvlu4c.s 			page 1
  171:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * Change the alignment of an object and set new coordinates.
  172:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * Equivalent to:
  173:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * lv_obj_set_align(obj, align);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccAvlu4c.s 			page 11
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccK18ZCv.s 			page 11
 
 
  174:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * lv_obj_set_pos(obj, x_ofs, y_ofs);
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccAvlu4c.s 			page 1
  196              	.LVL25:
   22:lvgl/examples/widgets/arc/lv_example_arc_1.c **** 
  197              		.loc 1 22 1 is_stmt 0 view .LVU37
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccAvlu4c.s 			page 12
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccK18ZCv.s 			page 12
 
 
  198 0064 38BD     		pop	{r3, r4, r5, pc}
@@ -688,18 +688,18 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccAvlu4c.s 			page 1
  222              		.file 16 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/widgets/lv_arc.h"
  223              		.file 17 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/widgets/lv_label.h"
  224              		.file 18 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/hal/lv_hal_disp.h"
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccAvlu4c.s 			page 13
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccK18ZCv.s 			page 13
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 lv_example_arc_1.c
-C:\Users\OSD\AppData\Local\Temp\ccAvlu4c.s:19     .rodata.value_changed_event_cb.str1.4:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\ccAvlu4c.s:23     .text.value_changed_event_cb:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccAvlu4c.s:28     .text.value_changed_event_cb:00000000 value_changed_event_cb
-C:\Users\OSD\AppData\Local\Temp\ccAvlu4c.s:86     .text.value_changed_event_cb:00000030 $d
-C:\Users\OSD\AppData\Local\Temp\ccAvlu4c.s:91     .text.lv_example_arc_1:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccAvlu4c.s:97     .text.lv_example_arc_1:00000000 lv_example_arc_1
-C:\Users\OSD\AppData\Local\Temp\ccAvlu4c.s:204    .text.lv_example_arc_1:00000068 $d
+C:\Users\OSD\AppData\Local\Temp\ccK18ZCv.s:19     .rodata.value_changed_event_cb.str1.4:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccK18ZCv.s:23     .text.value_changed_event_cb:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccK18ZCv.s:28     .text.value_changed_event_cb:00000000 value_changed_event_cb
+C:\Users\OSD\AppData\Local\Temp\ccK18ZCv.s:86     .text.value_changed_event_cb:00000030 $d
+C:\Users\OSD\AppData\Local\Temp\ccK18ZCv.s:91     .text.lv_example_arc_1:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccK18ZCv.s:97     .text.lv_example_arc_1:00000000 lv_example_arc_1
+C:\Users\OSD\AppData\Local\Temp\ccK18ZCv.s:204    .text.lv_example_arc_1:00000068 $d
 
 UNDEFINED SYMBOLS
 lv_event_get_target

@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0KwQW.s 			page 1
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccpTO0Re.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0KwQW.s 			page 1
   13:lvgl/examples/styles/lv_example_style_6.c ****     lv_style_set_radius(&style, 5);
   44              		.loc 1 13 5 view .LVU3
   45 000a 0521     		movs	r1, #5
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0KwQW.s 			page 2
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccpTO0Re.s 			page 2
 
 
   46 000c 2046     		mov	r0, r4
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0KwQW.s 			page 1
   92 005c FFF7FEFF 		bl	lv_style_set_transform_angle
   93              	.LVL11:
   22:lvgl/examples/styles/lv_example_style_6.c **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0KwQW.s 			page 3
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccpTO0Re.s 			page 3
 
 
   23:lvgl/examples/styles/lv_example_style_6.c ****     /*Create an object with the new style*/
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0KwQW.s 			page 1
   49:lvgl/examples/styles/../../src/core/lv_disp.h ****  **********************/
   50:lvgl/examples/styles/../../src/core/lv_disp.h **** 
   51:lvgl/examples/styles/../../src/core/lv_disp.h **** /**
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0KwQW.s 			page 4
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccpTO0Re.s 			page 4
 
 
   52:lvgl/examples/styles/../../src/core/lv_disp.h ****  * Return with a pointer to the active screen
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0KwQW.s 			page 1
  106:lvgl/examples/styles/../../src/core/lv_disp.h **** void lv_disp_set_bg_color(lv_disp_t * disp, lv_color_t color);
  107:lvgl/examples/styles/../../src/core/lv_disp.h **** 
  108:lvgl/examples/styles/../../src/core/lv_disp.h **** /**
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0KwQW.s 			page 5
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccpTO0Re.s 			page 5
 
 
  109:lvgl/examples/styles/../../src/core/lv_disp.h ****  * Set the background image of a display
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0KwQW.s 			page 1
  163:lvgl/examples/styles/../../src/core/lv_disp.h **** bool lv_disp_is_invalidation_enabled(lv_disp_t * disp);
  164:lvgl/examples/styles/../../src/core/lv_disp.h **** 
  165:lvgl/examples/styles/../../src/core/lv_disp.h **** /**
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0KwQW.s 			page 6
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccpTO0Re.s 			page 6
 
 
  166:lvgl/examples/styles/../../src/core/lv_disp.h ****  * Get a pointer to the screen refresher timer to
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0KwQW.s 			page 1
  127              	.LBI10:
  128              		.file 3 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\core\\lv_obj_pos.h"
    1:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** /**
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0KwQW.s 			page 7
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccpTO0Re.s 			page 7
 
 
    2:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @file lv_obj_pos.h
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0KwQW.s 			page 1
   56:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @note            The values can be set in pixel or in percentage of parent size with `lv_pct(v)`
   57:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  */
   58:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** void lv_obj_set_x(struct _lv_obj_t * obj, lv_coord_t x);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0KwQW.s 			page 8
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccpTO0Re.s 			page 8
 
 
   59:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** 
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0KwQW.s 			page 1
  113:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** void lv_obj_set_height(struct _lv_obj_t * obj, lv_coord_t h);
  114:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** 
  115:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** /**
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0KwQW.s 			page 9
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccpTO0Re.s 			page 9
 
 
  116:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * Set the width reduced by the left and right padding and the border width.
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0KwQW.s 			page 1
  170:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** /**
  171:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * Change the alignment of an object and set new coordinates.
  172:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * Equivalent to:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0KwQW.s 			page 10
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccpTO0Re.s 			page 10
 
 
  173:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * lv_obj_set_align(obj, align);
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0KwQW.s 			page 1
  154              		.align	2
  155              		.set	.LANCHOR0,. + 0
  158              	style.0:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0KwQW.s 			page 11
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccpTO0Re.s 			page 11
 
 
  159 0000 00000000 		.space	8
@@ -621,16 +621,16 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0KwQW.s 			page 1
  175              		.file 17 "lvgl/examples/styles/../../src/hal/lv_hal_disp.h"
  176              		.file 18 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\misc\\lv_style_gen.h"
  177              		.file 19 "lvgl/examples/styles/../../src/widgets/lv_img.h"
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccV0KwQW.s 			page 12
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccpTO0Re.s 			page 12
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 lv_example_style_6.c
-C:\Users\OSD\AppData\Local\Temp\ccV0KwQW.s:19     .text.lv_example_style_6:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccV0KwQW.s:25     .text.lv_example_style_6:00000000 lv_example_style_6
-C:\Users\OSD\AppData\Local\Temp\ccV0KwQW.s:148    .text.lv_example_style_6:0000008c $d
-C:\Users\OSD\AppData\Local\Temp\ccV0KwQW.s:154    .bss.style.0:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\ccV0KwQW.s:158    .bss.style.0:00000000 style.0
+C:\Users\OSD\AppData\Local\Temp\ccpTO0Re.s:19     .text.lv_example_style_6:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccpTO0Re.s:25     .text.lv_example_style_6:00000000 lv_example_style_6
+C:\Users\OSD\AppData\Local\Temp\ccpTO0Re.s:148    .text.lv_example_style_6:0000008c $d
+C:\Users\OSD\AppData\Local\Temp\ccpTO0Re.s:154    .bss.style.0:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccpTO0Re.s:158    .bss.style.0:00000000 style.0
 
 UNDEFINED SYMBOLS
 lv_style_init

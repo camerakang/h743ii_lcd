@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccSft60R.s 			page 1
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccOMj1ue.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccSft60R.s 			page 1
   29:lvgl/examples/widgets/img/lv_example_img_2.c ****     lv_obj_align_to(intense_slider, blue_slider, LV_ALIGN_OUT_RIGHT_MID, 25, 0);
   30:lvgl/examples/widgets/img/lv_example_img_2.c **** 
   31:lvgl/examples/widgets/img/lv_example_img_2.c ****     /*Now create the actual image*/
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccSft60R.s 			page 2
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccOMj1ue.s 			page 2
 
 
   32:lvgl/examples/widgets/img/lv_example_img_2.c ****     LV_IMG_DECLARE(img_cogwheel_argb)
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccSft60R.s 			page 1
   24:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** 
   25:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** #include "../core/lv_obj.h"
   26:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** #include "lv_bar.h"
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccSft60R.s 			page 3
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccOMj1ue.s 			page 3
 
 
   27:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** 
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccSft60R.s 			page 1
   81:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h ****  * @param value     the new value
   82:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h ****  * @param anim      LV_ANIM_ON: set the value with an animation; LV_ANIM_OFF: change the value imme
   83:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h ****  */
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccSft60R.s 			page 4
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccOMj1ue.s 			page 4
 
 
   84:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** static inline void lv_slider_set_value(lv_obj_t * obj, int32_t value, lv_anim_enable_t anim)
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccSft60R.s 			page 1
   50 0004 1868     		ldr	r0, [r3]
   51              	.LVL2:
   52              		.loc 2 132 12 view .LVU7
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccSft60R.s 			page 5
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccOMj1ue.s 			page 5
 
 
   53 0006 FFF7FEFF 		bl	lv_bar_get_value
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccSft60R.s 			page 1
   10:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** extern "C" {
   11:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #endif
   12:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccSft60R.s 			page 6
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccOMj1ue.s 			page 6
 
 
   13:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** /*********************
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccSft60R.s 			page 1
   67:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #define LV_COLOR_SIZE 32
   68:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #else
   69:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #error "Invalid LV_COLOR_DEPTH in lv_conf.h! Set it to 1, 8, 16 or 32!"
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccSft60R.s 			page 7
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccOMj1ue.s 			page 7
 
 
   70:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #endif
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccSft60R.s 			page 1
  124:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** # define LV_COLOR_GET_B8(c) (c).ch.blue
  125:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** # define LV_COLOR_GET_A8(c) 0xFF
  126:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccSft60R.s 			page 8
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccOMj1ue.s 			page 8
 
 
  127:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** # define _LV_COLOR_ZERO_INITIALIZER8 {{0x00, 0x00, 0x00}}
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccSft60R.s 			page 1
  181:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #define LV_COLOR_GET_A(c) LV_CONCAT(LV_COLOR_GET_A, LV_COLOR_DEPTH)(c)
  182:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
  183:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #define _LV_COLOR_ZERO_INITIALIZER LV_CONCAT(_LV_COLOR_ZERO_INITIALIZER, LV_COLOR_DEPTH)
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccSft60R.s 			page 9
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccOMj1ue.s 			page 9
 
 
  184:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #define LV_COLOR_MAKE(r8, g8, b8) LV_CONCAT(LV_COLOR_MAKE, LV_COLOR_DEPTH)(r8, g8, b8)
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccSft60R.s 			page 1
  238:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     uint16_t h;
  239:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     uint8_t s;
  240:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     uint8_t v;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccSft60R.s 			page 10
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccOMj1ue.s 			page 10
 
 
  241:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** } lv_color_hsv_t;
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccSft60R.s 			page 1
  295:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****  *        ----------------------
  296:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****  *         Shift right with 5 - 3 = 2
  297:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****  */
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccSft60R.s 			page 11
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccOMj1ue.s 			page 11
 
 
  298:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** static inline uint8_t lv_color_to1(lv_color_t color)
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccSft60R.s 			page 1
  352:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #if LV_COLOR_DEPTH == 1
  353:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     if(color.full == 0)
  354:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****         return 0;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccSft60R.s 			page 12
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccOMj1ue.s 			page 12
 
 
  355:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     else
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccSft60R.s 			page 1
  409:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****      *       0           4      3        3       255
  410:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****      *       1           8      6        3       255
  411:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****      *       2          16     12        3       255
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccSft60R.s 			page 13
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccOMj1ue.s 			page 13
 
 
  412:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****      *       3          32     24        3       255
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccSft60R.s 			page 1
  466:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #else
  467:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     /*LV_COLOR_DEPTH == 1*/
  468:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     ret.full = mix > LV_OPA_50 ? c1.full : c2.full;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccSft60R.s 			page 14
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccOMj1ue.s 			page 14
 
 
  469:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #endif
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccSft60R.s 			page 1
  523:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****  * @param bg_color background color
  524:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****  * @param bg_opa alpha of the background color
  525:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****  * @param fg_color foreground color
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccSft60R.s 			page 15
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccOMj1ue.s 			page 15
 
 
  526:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****  * @param fg_opa alpha of the foreground color
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccSft60R.s 			page 1
  580:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
  581:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** /**
  582:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****  * Get the brightness of a color
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccSft60R.s 			page 16
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccOMj1ue.s 			page 16
 
 
  583:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****  * @param color a color
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccSft60R.s 			page 1
   49:lvgl/examples/widgets/img/lv_example_img_2.c ****     lv_obj_set_style_img_recolor(img1, color, 0);
  132              		.loc 1 49 5 is_stmt 1 view .LVU31
  133 0046 0022     		movs	r2, #0
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccSft60R.s 			page 17
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccOMj1ue.s 			page 17
 
 
  134 0048 2146     		mov	r1, r4
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccSft60R.s 			page 1
    9:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** #ifdef __cplusplus
   10:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** extern "C" {
   11:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** #endif
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccSft60R.s 			page 18
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccOMj1ue.s 			page 18
 
 
   12:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccSft60R.s 			page 1
   66:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
   67:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
   68:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Make a screen active
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccSft60R.s 			page 19
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccOMj1ue.s 			page 19
 
 
   69:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param scr pointer to a screen
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccSft60R.s 			page 1
  123:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Switch screen with animation
  124:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param scr pointer to the new screen to load
  125:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param anim_type type of the animation from `lv_scr_load_anim_t`, e.g. `LV_SCR_LOAD_ANIM_MOVE_LE
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccSft60R.s 			page 20
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccOMj1ue.s 			page 20
 
 
  126:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param time time of the animation
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccSft60R.s 			page 1
  180:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @return pointer to the active screen
  181:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
  182:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** static inline lv_obj_t * lv_scr_act(void)
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccSft60R.s 			page 21
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccOMj1ue.s 			page 21
 
 
  177              		.loc 4 182 26 view .LVU36
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccSft60R.s 			page 1
  222 0034 FFF7FEFF 		bl	lv_color_darken
  223              	.LVL24:
  224 0038 0146     		mov	r1, r0
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccSft60R.s 			page 22
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccOMj1ue.s 			page 22
 
 
  225 003a 4FF40032 		mov	r2, #131072
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccSft60R.s 			page 1
  275 0008 FFF7FEFF 		bl	lv_palette_main
  276              	.LVL28:
  277 000c FFF7FEFF 		bl	create_slider
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccSft60R.s 			page 23
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccOMj1ue.s 			page 23
 
 
  278              	.LVL29:
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccSft60R.s 			page 1
  319 0042 0022     		movs	r2, #0
  320 0044 3321     		movs	r1, #51
  321 0046 D8F80000 		ldr	r0, [r8]
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccSft60R.s 			page 24
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccOMj1ue.s 			page 24
 
 
  322 004a FFF7FEFF 		bl	lv_bar_set_value
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccSft60R.s 			page 1
  364 0068 FFF7FEFF 		bl	lv_bar_set_value
  365              	.LVL40:
   86:d:\kzc\stm32\h743ii_lcd\lvgl\src/widgets\lv_slider.h **** }
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccSft60R.s 			page 25
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccOMj1ue.s 			page 25
 
 
  366              		.loc 2 86 5 is_stmt 0 view .LVU80
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccSft60R.s 			page 1
  413              	.LBE59:
  414              	.LBE58:
   33:lvgl/examples/widgets/img/lv_example_img_2.c ****     lv_img_set_src(img1, &img_cogwheel_argb);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccSft60R.s 			page 26
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccOMj1ue.s 			page 26
 
 
  415              		.loc 1 33 12 view .LVU90
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccSft60R.s 			page 1
  469              		.section	.bss.img1,"aw",%nobits
  470              		.align	2
  471              		.set	.LANCHOR4,. + 0
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccSft60R.s 			page 27
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccOMj1ue.s 			page 27
 
 
  474              	img1:
@@ -1594,30 +1594,30 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccSft60R.s 			page 1
  508              		.file 21 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\core\\lv_obj_pos.h"
  509              		.file 22 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/core/lv_obj_style_gen.h"
  510              		.file 23 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/widgets/lv_img.h"
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccSft60R.s 			page 28
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccOMj1ue.s 			page 28
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 lv_example_img_2.c
-C:\Users\OSD\AppData\Local\Temp\ccSft60R.s:19     .text.slider_event_cb:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccSft60R.s:24     .text.slider_event_cb:00000000 slider_event_cb
-C:\Users\OSD\AppData\Local\Temp\ccSft60R.s:143    .text.slider_event_cb:00000054 $d
-C:\Users\OSD\AppData\Local\Temp\ccSft60R.s:152    .text.create_slider:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccSft60R.s:157    .text.create_slider:00000000 create_slider
-C:\Users\OSD\AppData\Local\Temp\ccSft60R.s:245    .text.create_slider:00000054 $d
-C:\Users\OSD\AppData\Local\Temp\ccSft60R.s:250    .text.lv_example_img_2:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccSft60R.s:256    .text.lv_example_img_2:00000000 lv_example_img_2
-C:\Users\OSD\AppData\Local\Temp\ccSft60R.s:446    .text.lv_example_img_2:000000dc $d
-C:\Users\OSD\AppData\Local\Temp\ccSft60R.s:456    .bss.blue_slider:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\ccSft60R.s:460    .bss.blue_slider:00000000 blue_slider
-C:\Users\OSD\AppData\Local\Temp\ccSft60R.s:463    .bss.green_slider:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\ccSft60R.s:467    .bss.green_slider:00000000 green_slider
-C:\Users\OSD\AppData\Local\Temp\ccSft60R.s:470    .bss.img1:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\ccSft60R.s:474    .bss.img1:00000000 img1
-C:\Users\OSD\AppData\Local\Temp\ccSft60R.s:477    .bss.intense_slider:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\ccSft60R.s:481    .bss.intense_slider:00000000 intense_slider
-C:\Users\OSD\AppData\Local\Temp\ccSft60R.s:484    .bss.red_slider:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\ccSft60R.s:488    .bss.red_slider:00000000 red_slider
+C:\Users\OSD\AppData\Local\Temp\ccOMj1ue.s:19     .text.slider_event_cb:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccOMj1ue.s:24     .text.slider_event_cb:00000000 slider_event_cb
+C:\Users\OSD\AppData\Local\Temp\ccOMj1ue.s:143    .text.slider_event_cb:00000054 $d
+C:\Users\OSD\AppData\Local\Temp\ccOMj1ue.s:152    .text.create_slider:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccOMj1ue.s:157    .text.create_slider:00000000 create_slider
+C:\Users\OSD\AppData\Local\Temp\ccOMj1ue.s:245    .text.create_slider:00000054 $d
+C:\Users\OSD\AppData\Local\Temp\ccOMj1ue.s:250    .text.lv_example_img_2:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccOMj1ue.s:256    .text.lv_example_img_2:00000000 lv_example_img_2
+C:\Users\OSD\AppData\Local\Temp\ccOMj1ue.s:446    .text.lv_example_img_2:000000dc $d
+C:\Users\OSD\AppData\Local\Temp\ccOMj1ue.s:456    .bss.blue_slider:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccOMj1ue.s:460    .bss.blue_slider:00000000 blue_slider
+C:\Users\OSD\AppData\Local\Temp\ccOMj1ue.s:463    .bss.green_slider:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccOMj1ue.s:467    .bss.green_slider:00000000 green_slider
+C:\Users\OSD\AppData\Local\Temp\ccOMj1ue.s:470    .bss.img1:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccOMj1ue.s:474    .bss.img1:00000000 img1
+C:\Users\OSD\AppData\Local\Temp\ccOMj1ue.s:477    .bss.intense_slider:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccOMj1ue.s:481    .bss.intense_slider:00000000 intense_slider
+C:\Users\OSD\AppData\Local\Temp\ccOMj1ue.s:484    .bss.red_slider:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccOMj1ue.s:488    .bss.red_slider:00000000 red_slider
 
 UNDEFINED SYMBOLS
 lv_bar_get_value

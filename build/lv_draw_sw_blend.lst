@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
   29:lvgl/src/draw/sw/lv_draw_sw_blend.c **** static void /* LV_ATTRIBUTE_FAST_MEM */ fill_normal(lv_color_t * dest_buf, const lv_area_t * dest_a
   30:lvgl/src/draw/sw/lv_draw_sw_blend.c ****                                                     lv_coord_t dest_stride, lv_color_t color, lv_op
   31:lvgl/src/draw/sw/lv_draw_sw_blend.c ****                                                     const lv_opa_t * mask, lv_coord_t mask_stride);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 2
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 2
 
 
   32:lvgl/src/draw/sw/lv_draw_sw_blend.c **** 
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
   86:lvgl/src/draw/sw/lv_draw_sw_blend.c ****         if(*mask_tmp_x == LV_OPA_COVER) dest_buf[x] = src_buf[x];                                 \
   87:lvgl/src/draw/sw/lv_draw_sw_blend.c ****         else dest_buf[x] = lv_color_mix(src_buf[x], dest_buf[x], *mask_tmp_x);            \
   88:lvgl/src/draw/sw/lv_draw_sw_blend.c ****     }                                                                                              
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 3
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 3
 
 
   89:lvgl/src/draw/sw/lv_draw_sw_blend.c ****     mask_tmp_x++;
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  143:lvgl/src/draw/sw/lv_draw_sw_blend.c ****     else {
  144:lvgl/src/draw/sw/lv_draw_sw_blend.c ****         src_stride = 0;
  145:lvgl/src/draw/sw/lv_draw_sw_blend.c ****     }
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 4
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 4
 
 
  146:lvgl/src/draw/sw/lv_draw_sw_blend.c **** 
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  200:lvgl/src/draw/sw/lv_draw_sw_blend.c ****             map_blended(dest_buf, &blend_area, dest_stride, src_buf, src_stride, dsc->opa, mask, ma
  201:lvgl/src/draw/sw/lv_draw_sw_blend.c ****         }
  202:lvgl/src/draw/sw/lv_draw_sw_blend.c **** #endif
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 5
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 5
 
 
  203:lvgl/src/draw/sw/lv_draw_sw_blend.c ****     }
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  257:lvgl/src/draw/sw/lv_draw_sw_blend.c ****                 dest_buf += dest_stride;
  258:lvgl/src/draw/sw/lv_draw_sw_blend.c ****             }
  259:lvgl/src/draw/sw/lv_draw_sw_blend.c ****         }
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 6
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 6
 
 
  260:lvgl/src/draw/sw/lv_draw_sw_blend.c ****         /*Has opacity*/
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  314:lvgl/src/draw/sw/lv_draw_sw_blend.c ****                             *d = c32;
  315:lvgl/src/draw/sw/lv_draw_sw_blend.c ****                             *(d + 1) = c32;
  316:lvgl/src/draw/sw/lv_draw_sw_blend.c ****                         }
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 7
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 7
 
 
  317:lvgl/src/draw/sw/lv_draw_sw_blend.c **** #else
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  371:lvgl/src/draw/sw/lv_draw_sw_blend.c ****                 mask += (mask_stride - w);
  372:lvgl/src/draw/sw/lv_draw_sw_blend.c ****             }
  373:lvgl/src/draw/sw/lv_draw_sw_blend.c ****         }
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 8
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 8
 
 
  374:lvgl/src/draw/sw/lv_draw_sw_blend.c ****     }
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  428:lvgl/src/draw/sw/lv_draw_sw_blend.c ****         last_dest_color = bg_color;
  429:lvgl/src/draw/sw/lv_draw_sw_blend.c ****         last_src_color = color;
  430:lvgl/src/draw/sw/lv_draw_sw_blend.c ****         last_opa = opa;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 9
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 9
 
 
  431:lvgl/src/draw/sw/lv_draw_sw_blend.c ****         last_res_color = blend_fp(last_src_color, last_dest_color, last_opa);
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  485:lvgl/src/draw/sw/lv_draw_sw_blend.c ****                 }
  486:lvgl/src/draw/sw/lv_draw_sw_blend.c ****                 dest_buf8_row += dest_stride * LV_IMG_PX_SIZE_ALPHA_BYTE;
  487:lvgl/src/draw/sw/lv_draw_sw_blend.c ****                 dest_buf8 = dest_buf8_row;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 10
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 10
 
 
  488:lvgl/src/draw/sw/lv_draw_sw_blend.c ****             }
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
   32              		.loc 1 537 1 is_stmt 0 view .LVU1
   33 0000 2DE9F04F 		push	{r4, r5, r6, r7, r8, r9, r10, fp, lr}
   34              		.cfi_def_cfa_offset 36
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 11
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 11
 
 
   35              		.cfi_offset 4, -36
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
   26:lvgl/src/draw/sw/../../misc/lv_area.h **** #else
   27:lvgl/src/draw/sw/../../misc/lv_area.h **** typedef int16_t lv_coord_t;
   28:lvgl/src/draw/sw/../../misc/lv_area.h **** #endif
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 12
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 12
 
 
   29:lvgl/src/draw/sw/../../misc/lv_area.h **** 
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
   83:lvgl/src/draw/sw/../../misc/lv_area.h ****     LV_DIR_BOTTOM   = (1 << 3),
   84:lvgl/src/draw/sw/../../misc/lv_area.h ****     LV_DIR_HOR      = LV_DIR_LEFT | LV_DIR_RIGHT,
   85:lvgl/src/draw/sw/../../misc/lv_area.h ****     LV_DIR_VER      = LV_DIR_TOP | LV_DIR_BOTTOM,
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 13
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 13
 
 
   86:lvgl/src/draw/sw/../../misc/lv_area.h ****     LV_DIR_ALL      = LV_DIR_HOR | LV_DIR_VER,
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
   76              	.LVL3:
   77              		.loc 2 125 12 view .LVU11
   78              	.LBE56:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 14
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 14
 
 
   79              	.LBE55:
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  548:lvgl/src/draw/sw/lv_draw_sw_blend.c ****             blend_fp = color_blend_true_color_additive;
  549:lvgl/src/draw/sw/lv_draw_sw_blend.c ****             break;
  550:lvgl/src/draw/sw/lv_draw_sw_blend.c ****         case LV_BLEND_MODE_SUBTRACTIVE:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 15
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 15
 
 
  551:lvgl/src/draw/sw/lv_draw_sw_blend.c ****             blend_fp = color_blend_true_color_subtractive;
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  117              		.cfi_remember_state
  118              		.cfi_def_cfa_offset 36
  119              		@ sp needed
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 16
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 16
 
 
  120 0050 BDE8F08F 		pop	{r4, r5, r6, r7, r8, r9, r10, fp, pc}
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  159              	.L18:
  554:lvgl/src/draw/sw/lv_draw_sw_blend.c ****             break;
  160              		.loc 1 554 22 view .LVU41
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 17
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 17
 
 
  161 0074 DFF8D4A0 		ldr	r10, .L29+8
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  200              		.loc 1 566 24 is_stmt 1 discriminator 1 view .LVU56
  566:lvgl/src/draw/sw/lv_draw_sw_blend.c ****                 if(last_dest_color.full != dest_buf[x].full) {
  201              		.loc 1 566 13 is_stmt 0 discriminator 1 view .LVU57
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 18
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 18
 
 
  202 0098 4445     		cmp	r4, r8
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  241              	.LVL25:
  242              	.L5:
  565:lvgl/src/draw/sw/lv_draw_sw_blend.c ****             for(x = 0; x < w; x++) {
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 19
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 19
 
 
  243              		.loc 1 565 20 is_stmt 1 discriminator 1 view .LVU73
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  284              	.L28:
  589:lvgl/src/draw/sw/lv_draw_sw_blend.c ****                     opa_tmp = mask[x] >= LV_OPA_MAX ? opa : (uint32_t)((uint32_t)mask[x] * opa) >> 
  285              		.loc 1 589 41 discriminator 1 view .LVU87
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 20
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 20
 
 
  286 00de 55F82430 		ldr	r3, [r5, r4, lsl #2]
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  587:lvgl/src/draw/sw/lv_draw_sw_blend.c ****                 if(mask[x] == 0) continue;
  325              		.loc 1 587 13 is_stmt 0 discriminator 1 view .LVU103
  326 0100 4445     		cmp	r4, r8
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 21
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 21
 
 
  327 0102 0EDA     		bge	.L27
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  365              		.loc 1 586 28 is_stmt 0 discriminator 2 view .LVU119
  366 012e 029A     		ldr	r2, [sp, #8]
  367 0130 0132     		adds	r2, r2, #1
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 22
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 22
 
 
  368 0132 0292     		str	r2, [sp, #8]
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  621:lvgl/src/draw/sw/lv_draw_sw_blend.c ****                 disp->driver->set_px_cb(disp->driver, (void *)dest_buf, dest_stride, dest_area->x1 
  622:lvgl/src/draw/sw/lv_draw_sw_blend.c ****                                         opa);
  623:lvgl/src/draw/sw/lv_draw_sw_blend.c ****             }
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 23
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 23
 
 
  624:lvgl/src/draw/sw/lv_draw_sw_blend.c ****             src_buf += src_stride;
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  678:lvgl/src/draw/sw/lv_draw_sw_blend.c ****             for(y = 0; y < h; y++) {
  679:lvgl/src/draw/sw/lv_draw_sw_blend.c ****                 const lv_opa_t * mask_tmp_x = mask;
  680:lvgl/src/draw/sw/lv_draw_sw_blend.c **** #if 0
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 24
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 24
 
 
  681:lvgl/src/draw/sw/lv_draw_sw_blend.c ****                 for(x = 0; x < w; x++) {
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  735:lvgl/src/draw/sw/lv_draw_sw_blend.c **** 
  736:lvgl/src/draw/sw/lv_draw_sw_blend.c **** #if LV_COLOR_SCREEN_TRANSP
  737:lvgl/src/draw/sw/lv_draw_sw_blend.c **** static void LV_ATTRIBUTE_FAST_MEM map_argb(lv_color_t * dest_buf, const lv_area_t * dest_area,
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 25
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 25
 
 
  738:lvgl/src/draw/sw/lv_draw_sw_blend.c ****                                            lv_coord_t dest_stride, const lv_color_t * src_buf,
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  792:lvgl/src/draw/sw/lv_draw_sw_blend.c ****                     dest_buf8_row += dest_stride * LV_IMG_PX_SIZE_ALPHA_BYTE;
  793:lvgl/src/draw/sw/lv_draw_sw_blend.c ****                     dest_buf8 = dest_buf8_row;
  794:lvgl/src/draw/sw/lv_draw_sw_blend.c ****                     src_buf += src_stride;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 26
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 26
 
 
  795:lvgl/src/draw/sw/lv_draw_sw_blend.c ****                 }
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  849:lvgl/src/draw/sw/lv_draw_sw_blend.c ****                 if(blend_fp == NULL) {
  850:lvgl/src/draw/sw/lv_draw_sw_blend.c ****                     for(x = 0; x < w; x++) {
  851:lvgl/src/draw/sw/lv_draw_sw_blend.c ****                         if(mask[x]) {
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 27
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 27
 
 
  852:lvgl/src/draw/sw/lv_draw_sw_blend.c ****                             lv_opa_t opa_tmp = mask[x] >= LV_OPA_MAX ? opa : ((opa * mask[x]) >> 8)
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  426 0010 0693     		str	r3, [sp, #24]
  427 0012 9DF84C30 		ldrb	r3, [sp, #76]	@ zero_extendqisi2
  428 0016 0193     		str	r3, [sp, #4]
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 28
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 28
 
 
  429 0018 BDF95430 		ldrsh	r3, [sp, #84]
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  471 0042 1BB2     		sxth	r3, r3
  472 0044 0493     		str	r3, [sp, #16]
  473              	.LVL50:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 29
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 29
 
 
  474              		.loc 2 135 12 view .LVU144
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  924:lvgl/src/draw/sw/lv_draw_sw_blend.c ****     }
  925:lvgl/src/draw/sw/lv_draw_sw_blend.c ****     /*Masked*/
  926:lvgl/src/draw/sw/lv_draw_sw_blend.c ****     else {
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 30
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 30
 
 
  927:lvgl/src/draw/sw/lv_draw_sw_blend.c ****         last_dest_color = dest_buf[0];
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  513              		.loc 1 927 25 is_stmt 0 view .LVU157
  514 0060 D8F800A0 		ldr	r10, [r8]
  928:lvgl/src/draw/sw/lv_draw_sw_blend.c ****         lv_opa_t last_opa = mask[0] >= LV_OPA_MAX ? opa : ((opa * mask[0]) >> 8);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 31
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 31
 
 
  515              		.loc 1 928 9 is_stmt 1 view .LVU158
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  555              		.loc 1 910 9 is_stmt 1 view .LVU172
  910:lvgl/src/draw/sw/lv_draw_sw_blend.c ****         lv_color_t last_res_color = blend_fp(last_src_color, last_dest_color, opa);
  556              		.loc 1 910 24 is_stmt 0 view .LVU173
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 32
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 32
 
 
  557 008a D9F80070 		ldr	r7, [r9]
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  596 00aa 3146     		mov	r1, r6
  597              	.LVL69:
  917:lvgl/src/draw/sw/lv_draw_sw_blend.c ****                 }
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 33
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 33
 
 
  598              		.loc 1 917 38 view .LVU189
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  636 00d2 059B     		ldr	r3, [sp, #20]
  637 00d4 08EB8308 		add	r8, r8, r3, lsl #2
  638              	.LVL73:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 34
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 34
 
 
  922:lvgl/src/draw/sw/lv_draw_sw_blend.c ****         }
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  930:lvgl/src/draw/sw/lv_draw_sw_blend.c ****         for(y = 0; y < h; y++) {
  680              		.loc 1 930 37 discriminator 4 view .LVU219
  681 00fa 029B     		ldr	r3, [sp, #8]
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 35
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 35
 
 
  682              	.LVL81:
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  721              		.loc 1 939 21 view .LVU234
  939:lvgl/src/draw/sw/lv_draw_sw_blend.c ****                 }
  722              		.loc 1 939 38 is_stmt 0 view .LVU235
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 36
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 36
 
 
  723 0122 2246     		mov	r2, r4
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  763 0142 F6D0     		beq	.L43
  934:lvgl/src/draw/sw/lv_draw_sw_blend.c ****                 if(last_src_color.full != src_buf[x].full || last_dest_color.full != dest_buf[x].fu
  764              		.loc 1 934 17 is_stmt 1 view .LVU250
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 37
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 37
 
 
  934:lvgl/src/draw/sw/lv_draw_sw_blend.c ****                 if(last_src_color.full != src_buf[x].full || last_dest_color.full != dest_buf[x].fu
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  931:lvgl/src/draw/sw/lv_draw_sw_blend.c ****             for(x = 0; x < w; x++) {
  805              		.loc 1 931 28 is_stmt 0 discriminator 2 view .LVU265
  806 0170 039B     		ldr	r3, [sp, #12]
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 38
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 38
 
 
  807 0172 0133     		adds	r3, r3, #1
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  858 0008 0D46     		mov	r5, r1
  859 000a 0792     		str	r2, [sp, #28]
  860 000c 0893     		str	r3, [sp, #32]
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 39
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 39
 
 
  861 000e 9DF850B0 		ldrb	fp, [sp, #80]	@ zero_extendqisi2
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  125:lvgl/src/draw/sw/../../misc/lv_area.h **** }
  899              		.loc 2 125 12 view .LVU287
  900              	.LBE73:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 40
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 40
 
 
  901              	.LBE72:
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  944              		.loc 1 219 9 view .LVU305
  945 0052 15E0     		b	.L66
  946              	.LVL111:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 41
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 41
 
 
  947              	.L68:
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  987 0088 26DB     		blt	.L64
  220:lvgl/src/draw/sw/lv_draw_sw_blend.c ****                 disp->driver->set_px_cb(disp->driver, (void *)dest_buf, dest_stride, x, y, color, o
  988              		.loc 1 220 13 is_stmt 1 view .LVU320
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 42
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 42
 
 
  220:lvgl/src/draw/sw/lv_draw_sw_blend.c ****                 disp->driver->set_px_cb(disp->driver, (void *)dest_buf, dest_stride, x, y, color, o
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  1026 00ac 02FB0BF2 		mul	r2, r2, fp
  233:lvgl/src/draw/sw/lv_draw_sw_blend.c ****                                             (uint32_t)((uint32_t)opa * mask[x]) >> 8);
  1027              		.loc 1 233 21 view .LVU338
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 43
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 43
 
 
  1028 00b0 120A     		lsrs	r2, r2, #8
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  1071 00da BDE8F08F 		pop	{r4, r5, r6, r7, r8, r9, r10, fp, pc}
  240:lvgl/src/draw/sw/lv_draw_sw_blend.c **** 
  1072              		.loc 1 240 1 view .LVU350
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 44
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 44
 
 
  1073              		.cfi_endproc
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  612:lvgl/src/draw/sw/lv_draw_sw_blend.c ****     int32_t h = lv_area_get_height(dest_area);
  1123              		.loc 1 612 5 is_stmt 1 view .LVU357
  1124              	.LBB77:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 45
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 45
 
 
  1125              	.LBI77:
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  1167              		.loc 1 616 5 view .LVU376
  618:lvgl/src/draw/sw/lv_draw_sw_blend.c ****         for(y = 0; y < h; y++) {
  1168              		.loc 1 618 5 view .LVU377
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 46
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 46
 
 
  618:lvgl/src/draw/sw/lv_draw_sw_blend.c ****         for(y = 0; y < h; y++) {
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  1209 0078 4445     		cmp	r4, r8
  1210 007a EADB     		blt	.L82
  624:lvgl/src/draw/sw/lv_draw_sw_blend.c ****         }
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 47
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 47
 
 
  1211              		.loc 1 624 13 is_stmt 1 discriminator 2 view .LVU392
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  1251 00a6 002A     		cmp	r2, #0
  1252 00a8 F8D0     		beq	.L85
  631:lvgl/src/draw/sw/lv_draw_sw_blend.c ****                                             (uint32_t)((uint32_t)opa * mask[x]) >> 8);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 48
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 48
 
 
  1253              		.loc 1 631 21 is_stmt 1 view .LVU407
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  628:lvgl/src/draw/sw/lv_draw_sw_blend.c ****             for(x = 0; x < w; x++) {
  1294              		.loc 1 628 28 is_stmt 0 discriminator 2 view .LVU421
  1295 00e4 0BF1010B 		add	fp, fp, #1
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 49
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 49
 
 
  1296              	.LVL141:
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  1345 0008 0492     		str	r2, [sp, #16]
  1346 000a 1D46     		mov	r5, r3
  1347              	.LVL144:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 50
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 50
 
 
  245:lvgl/src/draw/sw/lv_draw_sw_blend.c ****     int32_t w = lv_area_get_width(dest_area);
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  1389              		.loc 2 135 36 view .LVU445
  1390 0028 5B1A     		subs	r3, r3, r1
  1391 002a 9BB2     		uxth	r3, r3
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 51
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 51
 
 
  1392              		.loc 2 135 49 view .LVU446
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  1432              	.LVL156:
  1433              	.L144:
  297:lvgl/src/draw/sw/lv_draw_sw_blend.c ****                 for(x = 0; x < w && ((lv_uintptr_t)(mask) & 0x3); x++) {
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 52
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 52
 
 
  1434              		.loc 1 297 13 view .LVU463
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
   41:lvgl/src/draw/sw/../../misc/lv_color.h **** enum {
   42:lvgl/src/draw/sw/../../misc/lv_color.h ****     LV_OPA_TRANSP = 0,
   43:lvgl/src/draw/sw/../../misc/lv_color.h ****     LV_OPA_0      = 0,
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 53
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 53
 
 
   44:lvgl/src/draw/sw/../../misc/lv_color.h ****     LV_OPA_10     = 25,
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
   98:lvgl/src/draw/sw/../../misc/lv_color.h **** #endif
   99:lvgl/src/draw/sw/../../misc/lv_color.h **** 
  100:lvgl/src/draw/sw/../../misc/lv_color.h **** /*---------------------------------------
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 54
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 54
 
 
  101:lvgl/src/draw/sw/../../misc/lv_color.h ****  * Macros for all existing color depths
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  155:lvgl/src/draw/sw/../../misc/lv_color.h **** 
  156:lvgl/src/draw/sw/../../misc/lv_color.h **** # define LV_COLOR_SET_R32(c, v) (c).ch.red = (uint8_t)((v) & 0xFF)
  157:lvgl/src/draw/sw/../../misc/lv_color.h **** # define LV_COLOR_SET_G32(c, v) (c).ch.green = (uint8_t)((v) & 0xFF)
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 55
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 55
 
 
  158:lvgl/src/draw/sw/../../misc/lv_color.h **** # define LV_COLOR_SET_B32(c, v) (c).ch.blue = (uint8_t)((v) & 0xFF)
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  212:lvgl/src/draw/sw/../../misc/lv_color.h ****         uint16_t green : 6;
  213:lvgl/src/draw/sw/../../misc/lv_color.h ****         uint16_t red : 5;
  214:lvgl/src/draw/sw/../../misc/lv_color.h **** #else
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 56
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 56
 
 
  215:lvgl/src/draw/sw/../../misc/lv_color.h ****         uint16_t green_h : 3;
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  269:lvgl/src/draw/sw/../../misc/lv_color.h ****     LV_PALETTE_LIME,
  270:lvgl/src/draw/sw/../../misc/lv_color.h ****     LV_PALETTE_YELLOW,
  271:lvgl/src/draw/sw/../../misc/lv_color.h ****     LV_PALETTE_AMBER,
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 57
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 57
 
 
  272:lvgl/src/draw/sw/../../misc/lv_color.h ****     LV_PALETTE_ORANGE,
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  326:lvgl/src/draw/sw/../../misc/lv_color.h **** static inline uint8_t lv_color_to8(lv_color_t color)
  327:lvgl/src/draw/sw/../../misc/lv_color.h **** {
  328:lvgl/src/draw/sw/../../misc/lv_color.h **** #if LV_COLOR_DEPTH == 1
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 58
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 58
 
 
  329:lvgl/src/draw/sw/../../misc/lv_color.h ****     if(color.full == 0)
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  383:lvgl/src/draw/sw/../../misc/lv_color.h ****     LV_COLOR_SET_R32(ret, LV_COLOR_GET_R(color) * 36); /*(2^8 - 1)/(2^3 - 1) = 255/7 = 36*/
  384:lvgl/src/draw/sw/../../misc/lv_color.h ****     LV_COLOR_SET_G32(ret, LV_COLOR_GET_G(color) * 36); /*(2^8 - 1)/(2^3 - 1) = 255/7 = 36*/
  385:lvgl/src/draw/sw/../../misc/lv_color.h ****     LV_COLOR_SET_B32(ret, LV_COLOR_GET_B(color) * 85); /*(2^8 - 1)/(2^2 - 1) = 255/3 = 85*/
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 59
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 59
 
 
  386:lvgl/src/draw/sw/../../misc/lv_color.h ****     LV_COLOR_SET_A32(ret, 0xFF);
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  440:lvgl/src/draw/sw/../../misc/lv_color.h ****     lv_color_t ret;
  441:lvgl/src/draw/sw/../../misc/lv_color.h **** 
  442:lvgl/src/draw/sw/../../misc/lv_color.h **** #if LV_COLOR_DEPTH == 16 && LV_COLOR_MIX_ROUND_OFS == 0
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 60
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 60
 
 
  443:lvgl/src/draw/sw/../../misc/lv_color.h **** #if LV_COLOR_16_SWAP == 1
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  497:lvgl/src/draw/sw/../../misc/lv_color.h ****  * @note 255 won't give clearly `c1`.
  498:lvgl/src/draw/sw/../../misc/lv_color.h ****  */
  499:lvgl/src/draw/sw/../../misc/lv_color.h **** static inline lv_color_t LV_ATTRIBUTE_FAST_MEM lv_color_mix_premult(uint16_t * premult_c1, lv_color
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 61
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 61
 
 
  500:lvgl/src/draw/sw/../../misc/lv_color.h **** {
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  554:lvgl/src/draw/sw/../../misc/lv_color.h ****         static lv_color_t fg_color_save = _LV_COLOR_ZERO_INITIALIZER;
  555:lvgl/src/draw/sw/../../misc/lv_color.h ****         static lv_color_t bg_color_save = _LV_COLOR_ZERO_INITIALIZER;
  556:lvgl/src/draw/sw/../../misc/lv_color.h ****         static lv_color_t res_color_saved = _LV_COLOR_ZERO_INITIALIZER;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 62
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 62
 
 
  557:lvgl/src/draw/sw/../../misc/lv_color.h ****         static lv_opa_t res_opa_saved = 0;
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  611:lvgl/src/draw/sw/../../misc/lv_color.h **** 
  612:lvgl/src/draw/sw/../../misc/lv_color.h ****         A bit better:
  613:lvgl/src/draw/sw/../../misc/lv_color.h ****                     r = ((c & 0xF80000) >> 8)
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 63
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 63
 
 
  614:lvgl/src/draw/sw/../../misc/lv_color.h ****                     g = ((c & 0xFC00) >> 5)
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  668:lvgl/src/draw/sw/../../misc/lv_color.h ****  * @param b8 8-bit blue
  669:lvgl/src/draw/sw/../../misc/lv_color.h ****  * @return the given RGB color in HSV
  670:lvgl/src/draw/sw/../../misc/lv_color.h ****  */
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 64
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 64
 
 
  671:lvgl/src/draw/sw/../../misc/lv_color.h **** lv_color_hsv_t lv_color_rgb_to_hsv(uint8_t r8, uint8_t g8, uint8_t b8);
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  1464              		.loc 3 596 12 view .LVU472
  1465 0068 0146     		mov	r1, r0
  1466              	.LVL159:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 65
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 65
 
 
  596:lvgl/src/draw/sw/../../misc/lv_color.h **** }
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  1511 00ca 63F3070C 		bfi	ip, r3, #0, #8
  465:lvgl/src/draw/sw/../../misc/lv_color.h **** #else
  1512              		.loc 3 465 5 view .LVU483
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 66
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 66
 
 
  471:lvgl/src/draw/sw/../../misc/lv_color.h **** }
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  275:lvgl/src/draw/sw/lv_draw_sw_blend.c **** 
  1549              		.loc 1 275 22 is_stmt 0 view .LVU502
  1550 00f2 6FEA0B00 		mvn	r0, fp
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 67
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 67
 
 
  1551 00f6 C0B2     		uxtb	r0, r0
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  1591              		.loc 1 255 32 discriminator 3 view .LVU516
  1592 0126 F3E7     		b	.L95
  1593              	.LVL172:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 68
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 68
 
 
  1594              	.L146:
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  1636              		.loc 3 518 5 is_stmt 0 view .LVU528
  1637 0182 5346     		mov	r3, r10
  1638              	.LVL176:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 69
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 69
 
 
  1639              	.L100:
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  277:lvgl/src/draw/sw/lv_draw_sw_blend.c ****                 for(x = 0; x < w; x++) {
  1677              		.loc 1 277 13 is_stmt 0 discriminator 1 view .LVU545
  1678 01a2 E145     		cmp	r9, ip
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 70
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 70
 
 
  1679 01a4 80F22482 		bge	.L93
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  440:lvgl/src/draw/sw/../../misc/lv_color.h **** 
  1720              		.loc 3 440 5 discriminator 2 view .LVU559
  459:lvgl/src/draw/sw/../../misc/lv_color.h ****                                    (255 - mix) + LV_COLOR_MIX_ROUND_OFS));
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 71
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 71
 
 
  1721              		.loc 3 459 5 discriminator 2 view .LVU560
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  1766 0232 6046     		mov	r0, ip
  1767 0234 069F     		ldr	r7, [sp, #24]
  1768 0236 0996     		str	r6, [sp, #36]
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 72
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 72
 
 
  1769 0238 089E     		ldr	r6, [sp, #32]
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  1805              		.loc 1 302 17 is_stmt 0 discriminator 1 view .LVU587
  1806 024a B842     		cmp	r0, r7
  1807 024c 00F30381 		bgt	.L149
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 73
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 73
 
 
  1808              	.LBB128:
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  1849 029c 01FB0CB1 		mla	r1, r1, ip, fp
  1850 02a0 01EB012B 		add	fp, r1, r1, lsl #8
  1851 02a4 01EBCB11 		add	r1, r1, fp, lsl #7
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 74
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 74
 
 
  1852 02a8 C1F3C751 		ubfx	r1, r1, #23, #8
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  1892              		.loc 3 459 5 discriminator 2 view .LVU614
  1893 02e2 C5F30741 		ubfx	r1, r5, #16, #8
  1894              	.LVL204:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 75
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 75
 
 
  459:lvgl/src/draw/sw/../../misc/lv_color.h ****                                    (255 - mix) + LV_COLOR_MIX_ROUND_OFS));
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  1938              		.loc 1 328 25 discriminator 4 view .LVU625
  329:lvgl/src/draw/sw/lv_draw_sw_blend.c ****                         FILL_NORMAL_MASK_PX(color)
  1939              		.loc 1 329 25 discriminator 4 view .LVU626
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 76
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 76
 
 
  1940 034a 92F802C0 		ldrb	ip, [r2, #2]	@ zero_extendqisi2
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  465:lvgl/src/draw/sw/../../misc/lv_color.h **** #else
  1985              		.loc 3 465 5 is_stmt 1 discriminator 2 view .LVU636
  1986 03b6 4AF07F4A 		orr	r10, r10, #-16777216
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 77
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 77
 
 
  1987              	.LVL213:
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  2029 0406 C1F3C751 		ubfx	r1, r1, #23, #8
  2030 040a 61F30F26 		bfi	r6, r1, #8, #8
  463:lvgl/src/draw/sw/../../misc/lv_color.h ****                                    (255 - mix) + LV_COLOR_MIX_ROUND_OFS));
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 78
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 78
 
 
  2031              		.loc 3 463 5 discriminator 2 view .LVU649
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  329:lvgl/src/draw/sw/lv_draw_sw_blend.c ****                         FILL_NORMAL_MASK_PX(color)
  2074              		.loc 1 329 25 discriminator 1 view .LVU661
  2075 043e A560     		str	r5, [r4, #8]
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 79
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 79
 
 
  2076 0440 BDE7     		b	.L117
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  339:lvgl/src/draw/sw/lv_draw_sw_blend.c ****                 }
  2119              		.loc 1 339 21 is_stmt 1 discriminator 1 view .LVU673
  2120 0464 2560     		str	r5, [r4]
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 80
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 80
 
 
  2121              	.L124:
@@ -4798,7 +4798,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  2162              		.loc 3 461 5 is_stmt 1 discriminator 2 view .LVU686
  2163 04a0 C5F30721 		ubfx	r1, r5, #8, #8
  2164 04a4 C0F3072B 		ubfx	fp, r0, #8, #8
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 81
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 81
 
 
  2165 04a8 0BFB03FB 		mul	fp, fp, r3
@@ -4858,7 +4858,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  2206              		.loc 1 342 38 is_stmt 0 discriminator 2 view .LVU699
  2207 04f4 059B     		ldr	r3, [sp, #20]
  2208 04f6 5B1A     		subs	r3, r3, r1
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 82
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 82
 
 
  342:lvgl/src/draw/sw/lv_draw_sw_blend.c ****             }
@@ -4918,7 +4918,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  353:lvgl/src/draw/sw/lv_draw_sw_blend.c **** 
  2248              		.loc 1 353 13 is_stmt 1 view .LVU715
  355:lvgl/src/draw/sw/lv_draw_sw_blend.c ****                 for(x = 0; x < w; x++) {
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 83
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 83
 
 
  2249              		.loc 1 355 13 view .LVU716
@@ -4978,7 +4978,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  2289              	.LVL254:
  459:lvgl/src/draw/sw/../../misc/lv_color.h ****                                    (255 - mix) + LV_COLOR_MIX_ROUND_OFS));
  2290              		.loc 3 459 5 view .LVU731
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 84
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 84
 
 
  2291 053a C6F1FF00 		rsb	r0, r6, #255
@@ -5038,7 +5038,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  2334              		.loc 1 363 39 view .LVU742
  2335 059c 9446     		mov	ip, r2
  2336              	.LVL259:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 85
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 85
 
 
  2337              	.L131:
@@ -5098,7 +5098,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  2374 05c2 B0E7     		b	.L129
  2375              	.LVL263:
  2376              	.L157:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 86
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 86
 
 
  360:lvgl/src/draw/sw/lv_draw_sw_blend.c ****                             if(opa_tmp == LV_OPA_COVER) last_res_color = color;
@@ -5158,7 +5158,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  355:lvgl/src/draw/sw/lv_draw_sw_blend.c ****                 for(x = 0; x < w; x++) {
  2415              		.loc 1 355 13 is_stmt 0 discriminator 1 view .LVU776
  2416 05e4 039B     		ldr	r3, [sp, #12]
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 87
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 87
 
 
  2417 05e6 9E45     		cmp	lr, r3
@@ -5218,7 +5218,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  2456              		.loc 1 960 5 view .LVU786
  2457              		.loc 1 960 16 is_stmt 0 view .LVU787
  2458 0004 C1F30743 		ubfx	r3, r1, #16, #8
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 88
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 88
 
 
  2459              		.loc 1 960 28 view .LVU788
@@ -5278,7 +5278,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  2488 0028 63F30F20 		bfi	r0, r3, #8, #8
  986:lvgl/src/draw/sw/lv_draw_sw_blend.c **** #endif
  987:lvgl/src/draw/sw/lv_draw_sw_blend.c **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 89
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 89
 
 
  988:lvgl/src/draw/sw/lv_draw_sw_blend.c ****     tmp = bg.ch.blue + fg.ch.blue;
@@ -5338,7 +5338,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  2526 0056 0CEB0C24 		add	r4, ip, ip, lsl #8
  2527 005a 0CEBC41C 		add	ip, ip, r4, lsl #7
  2528 005e CCF3C75C 		ubfx	ip, ip, #23, #8
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 90
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 90
 
 
  2529 0062 4FF0000E 		mov	lr, #0
@@ -5398,7 +5398,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  953:lvgl/src/draw/sw/lv_draw_sw_blend.c **** 
  2572              		.loc 1 953 34 is_stmt 0 discriminator 1 view .LVU824
  2573 00ac 0846     		mov	r0, r1
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 91
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 91
 
 
  2574              	.LVL288:
@@ -5458,7 +5458,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  2618              		.loc 1 1012 16 is_stmt 0 view .LVU839
  2619 0018 C1F30723 		ubfx	r3, r1, #8, #8
  2620              		.loc 1 1012 30 view .LVU840
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 92
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 92
 
 
  2621 001c C0F3072C 		ubfx	ip, r0, #8, #8
@@ -5518,7 +5518,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  438:lvgl/src/draw/sw/../../misc/lv_color.h **** {
  2660              		.loc 3 438 48 view .LVU856
  2661              	.LBB155:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 93
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 93
 
 
  440:lvgl/src/draw/sw/../../misc/lv_color.h **** 
@@ -5578,7 +5578,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  2705              	.LVL306:
  471:lvgl/src/draw/sw/../../misc/lv_color.h **** }
  2706              		.loc 3 471 5 is_stmt 0 view .LVU868
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 94
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 94
 
 
  2707              	.LBE155:
@@ -5638,7 +5638,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  2752              		.loc 1 1034 28 view .LVU880
  2753 000c 0CFB03F3 		mul	r3, ip, r3
  2754              		.loc 1 1034 41 view .LVU881
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 95
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 95
 
 
  2755 0010 1B12     		asrs	r3, r3, #8
@@ -5698,7 +5698,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  438:lvgl/src/draw/sw/../../misc/lv_color.h **** {
  2793              		.loc 3 438 48 view .LVU899
  2794              	.LBB159:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 96
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 96
 
 
  440:lvgl/src/draw/sw/../../misc/lv_color.h **** 
@@ -5758,7 +5758,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
 1050:lvgl/src/draw/sw/lv_draw_sw_blend.c **** }
  2839              		.loc 1 1050 1 view .LVU910
  2840 00a6 10BD     		pop	{r4, pc}
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 97
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 97
 
 
  2841              	.LVL318:
@@ -5818,7 +5818,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  646:lvgl/src/draw/sw/lv_draw_sw_blend.c ****     int32_t w = lv_area_get_width(dest_area);
  2892              		.loc 1 646 1 view .LVU917
  2893 0010 0493     		str	r3, [sp, #16]
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 98
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 98
 
 
  2894 0012 9DF85C00 		ldrb	r0, [sp, #92]	@ zero_extendqisi2
@@ -5878,7 +5878,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  2936 0030 0133     		adds	r3, r3, #1
  2937              		.loc 2 135 12 view .LVU935
  2938 0032 1BB2     		sxth	r3, r3
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 99
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 99
 
 
  2939 0034 0393     		str	r3, [sp, #12]
@@ -5938,7 +5938,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  2977 004c 09D8     		bhi	.L221
  663:lvgl/src/draw/sw/lv_draw_sw_blend.c ****                 for(x = 0; x < w; x++) {
  2978              		.loc 1 663 19 view .LVU953
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 100
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 100
 
 
  2979 004e 4FF0000E 		mov	lr, #0
@@ -5998,7 +5998,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  3020              		.loc 1 656 32 discriminator 3 view .LVU966
  3021 008a F1E7     		b	.L189
  3022              	.LVL340:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 101
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 101
 
 
  3023              	.L230:
@@ -6058,7 +6058,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  3061              		.loc 3 459 5 discriminator 3 view .LVU982
  459:lvgl/src/draw/sw/../../misc/lv_color.h ****                                    (255 - mix) + LV_COLOR_MIX_ROUND_OFS));
  3062              		.loc 3 459 5 is_stmt 0 discriminator 3 view .LVU983
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 102
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 102
 
 
  3063 00ae C4F3074B 		ubfx	fp, r4, #16, #8
@@ -6118,7 +6118,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  3106              		.loc 1 664 36 is_stmt 0 discriminator 3 view .LVU994
  3107 0116 0131     		adds	r1, r1, #1
  3108              	.LVL351:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 103
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 103
 
 
  664:lvgl/src/draw/sw/lv_draw_sw_blend.c ****                     dest_buf[x] = lv_color_mix(src_buf[x], dest_buf[x], opa);
@@ -6178,7 +6178,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  3150              	.LBB190:
  440:lvgl/src/draw/sw/../../misc/lv_color.h **** 
  3151              		.loc 3 440 5 discriminator 4 view .LVU1008
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 104
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 104
 
 
  459:lvgl/src/draw/sw/../../misc/lv_color.h ****                                    (255 - mix) + LV_COLOR_MIX_ROUND_OFS));
@@ -6238,7 +6238,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  471:lvgl/src/draw/sw/../../misc/lv_color.h **** }
  3195              		.loc 3 471 5 is_stmt 0 discriminator 4 view .LVU1020
  3196              	.LBE190:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 105
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 105
 
 
  3197              	.LBE189:
@@ -6298,7 +6298,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  695:lvgl/src/draw/sw/lv_draw_sw_blend.c ****                             dest_buf[x + 3] = src_buf[x + 3];
  3237              		.loc 1 695 45 view .LVU1035
  3238 01de 55F82010 		ldr	r1, [r5, r0, lsl #2]
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 106
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 106
 
 
  3239 01e2 44F82010 		str	r1, [r4, r0, lsl #2]
@@ -6358,7 +6358,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  3276              		.loc 1 700 29 discriminator 1 view .LVU1052
  3277 020c FF2E     		cmp	r6, #255
  3278 020e 00F00A81 		beq	.L235
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 107
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 107
 
 
  700:lvgl/src/draw/sw/lv_draw_sw_blend.c ****                             MAP_NORMAL_MASK_PX(x + 1)
@@ -6418,7 +6418,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  3322 0272 0AEBC91A 		add	r10, r10, r9, lsl #7
  3323 0276 CAF3C75A 		ubfx	r10, r10, #23, #8
  3324 027a 6AF30708 		bfi	r8, r10, #0, #8
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 108
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 108
 
 
  465:lvgl/src/draw/sw/../../misc/lv_color.h **** #else
@@ -6478,7 +6478,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  3366 02be 60F3174E 		bfi	lr, r0, #16, #8
  461:lvgl/src/draw/sw/../../misc/lv_color.h ****                                    (255 - mix) + LV_COLOR_MIX_ROUND_OFS));
  3367              		.loc 3 461 5 is_stmt 1 discriminator 4 view .LVU1077
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 109
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 109
 
 
  3368 02c2 C9F3072B 		ubfx	fp, r9, #8, #8
@@ -6538,7 +6538,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  3412              	.LBB195:
  3413              	.LBI195:
  438:lvgl/src/draw/sw/../../misc/lv_color.h **** {
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 110
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 110
 
 
  3414              		.loc 3 438 48 discriminator 4 view .LVU1088
@@ -6598,7 +6598,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  3458              	.LBE196:
  3459              	.LBE195:
  702:lvgl/src/draw/sw/lv_draw_sw_blend.c ****                             MAP_NORMAL_MASK_PX(x + 3)
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 111
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 111
 
 
  3460              		.loc 1 702 29 discriminator 4 view .LVU1099
@@ -6658,7 +6658,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  3504 03f6 60F30F27 		bfi	r7, r0, #8, #8
  463:lvgl/src/draw/sw/../../misc/lv_color.h ****                                    (255 - mix) + LV_COLOR_MIX_ROUND_OFS));
  3505              		.loc 3 463 5 discriminator 4 view .LVU1110
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 112
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 112
 
 
  3506 03fa 5FFA89F9 		uxtb	r9, r9
@@ -6718,7 +6718,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  3551 044a 55F82010 		ldr	r1, [r5, r0, lsl #2]
  3552 044e 44F82010 		str	r1, [r4, r0, lsl #2]
  3553 0452 CDE6     		b	.L201
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 113
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 113
 
 
  3554              	.LVL398:
@@ -6778,7 +6778,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  711:lvgl/src/draw/sw/lv_draw_sw_blend.c ****                 }
  3597              		.loc 1 711 21 is_stmt 0 discriminator 4 view .LVU1131
  3598 0488 54F82390 		ldr	r9, [r4, r3, lsl #2]
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 114
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 114
 
 
  3599              	.LVL410:
@@ -6838,7 +6838,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  3642 04e8 C1F3C751 		ubfx	r1, r1, #23, #8
  3643 04ec 61F3070C 		bfi	ip, r1, #0, #8
  465:lvgl/src/draw/sw/../../misc/lv_color.h **** #else
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 115
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 115
 
 
  3644              		.loc 3 465 5 is_stmt 1 discriminator 4 view .LVU1143
@@ -6898,7 +6898,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  3684 0516 04EB8304 		add	r4, r4, r3, lsl #2
  3685              	.LVL421:
  715:lvgl/src/draw/sw/lv_draw_sw_blend.c ****                 mask += mask_stride;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 116
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 116
 
 
  3686              		.loc 1 715 17 is_stmt 1 discriminator 2 view .LVU1158
@@ -6958,7 +6958,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  3727              	.LBE204:
  3728              	.LBB205:
  724:lvgl/src/draw/sw/lv_draw_sw_blend.c ****                         dest_buf[x] = lv_color_mix(src_buf[x], dest_buf[x], opa_tmp);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 117
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 117
 
 
  3729              		.loc 1 724 34 view .LVU1172
@@ -7018,7 +7018,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  3772              		.loc 3 463 5 discriminator 4 view .LVU1183
  3773 058e 05FB03F3 		mul	r3, r5, r3
  3774 0592 04FB0131 		mla	r1, r4, r1, r3
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 118
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 118
 
 
  3775              	.LVL434:
@@ -7078,7 +7078,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  724:lvgl/src/draw/sw/lv_draw_sw_blend.c ****                         dest_buf[x] = lv_color_mix(src_buf[x], dest_buf[x], opa_tmp);
  3814              		.loc 1 724 80 discriminator 1 view .LVU1199
  3815 05c2 009B     		ldr	r3, [sp]
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 119
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 119
 
 
  3816 05c4 03FB01F1 		mul	r1, r3, r1
@@ -7138,7 +7138,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  721:lvgl/src/draw/sw/lv_draw_sw_blend.c ****                 for(x = 0; x < w; x++) {
  3856              		.loc 1 721 19 view .LVU1214
  3857 05ee 7746     		mov	r7, lr
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 120
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 120
 
 
  3858 05f0 A046     		mov	r8, r4
@@ -7198,7 +7198,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  3906 000c 0546     		mov	r5, r0
  3907 000e 0C46     		mov	r4, r1
  100:lvgl/src/draw/sw/lv_draw_sw_blend.c ****     if(!_lv_area_intersect(&blend_area, dsc->blend_area, draw_ctx->clip_area)) return;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 121
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 121
 
 
  3908              		.loc 1 100 5 is_stmt 1 view .LVU1223
@@ -7258,7 +7258,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  3948              	.LFE161:
  3950              		.section	.text.lv_draw_sw_blend_basic,"ax",%progbits
  3951              		.align	1
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 122
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 122
 
 
  3952              		.global	lv_draw_sw_blend_basic
@@ -7318,7 +7318,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  3995              		.loc 1 114 12 view .LVU1249
  3996 0014 012B     		cmp	r3, #1
  3997 0016 0FD0     		beq	.L273
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 123
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 123
 
 
  3998              	.L253:
@@ -7378,7 +7378,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  120:lvgl/src/draw/sw/lv_draw_sw_blend.c **** 
  4037              		.loc 1 120 7 view .LVU1265
  4038 0030 20B9     		cbnz	r0, .L274
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 124
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 124
 
 
  4039              	.LVL459:
@@ -7438,7 +7438,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  139:lvgl/src/draw/sw/lv_draw_sw_blend.c ****         src_stride = lv_area_get_width(dsc->blend_area);
  4080              		.loc 1 139 5 view .LVU1279
  139:lvgl/src/draw/sw/lv_draw_sw_blend.c ****         src_stride = lv_area_get_width(dsc->blend_area);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 125
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 125
 
 
  4081              		.loc 1 139 7 is_stmt 0 view .LVU1280
@@ -7498,7 +7498,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  4119 0082 511A     		subs	r1, r2, r1
  141:lvgl/src/draw/sw/lv_draw_sw_blend.c ****     }
  4120              		.loc 1 141 71 view .LVU1297
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 126
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 126
 
 
  4121 0084 00FB0911 		mla	r1, r0, r9, r1
@@ -7558,7 +7558,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  4159              	.LVL471:
  125:lvgl/src/draw/sw/../../misc/lv_area.h **** }
  4160              		.loc 2 125 12 view .LVU1314
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 127
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 127
 
 
  4161              	.LBE214:
@@ -7618,7 +7618,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  4199              		.loc 1 168 20 view .LVU1330
  4200 00e4 DB69     		ldr	r3, [r3, #28]
  168:lvgl/src/draw/sw/lv_draw_sw_blend.c ****         if(dsc->src_buf == NULL) {
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 128
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 128
 
 
  4201              		.loc 1 168 7 view .LVU1331
@@ -7678,7 +7678,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  4242 0120 BDF92020 		ldrsh	r2, [sp, #32]
  126:lvgl/src/draw/sw/lv_draw_sw_blend.c ****         }
  4243              		.loc 1 126 117 view .LVU1345
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 129
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 129
 
 
  4244 0124 B0F90000 		ldrsh	r0, [r0]
@@ -7738,7 +7738,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  4281 0150 02EB8102 		add	r2, r2, r1, lsl #2
  4282 0154 9344     		add	fp, fp, r2
  4283              	.LVL481:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 130
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 130
 
 
  133:lvgl/src/draw/sw/lv_draw_sw_blend.c ****         }
@@ -7798,7 +7798,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  4322 016e 8342     		cmp	r3, r0
  4323 0170 93DA     		bge	.L258
  154:lvgl/src/draw/sw/lv_draw_sw_blend.c ****             }
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 131
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 131
 
 
  4324              		.loc 1 154 17 is_stmt 1 view .LVU1379
@@ -7858,7 +7858,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  4366 01a4 CDF80C80 		str	r8, [sp, #12]
  4367 01a8 0297     		str	r7, [sp, #8]
  4368 01aa 237E     		ldrb	r3, [r4, #24]	@ zero_extendqisi2
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 132
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 132
 
 
  4369 01ac 0193     		str	r3, [sp, #4]
@@ -7918,7 +7918,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  4417 0204 0093     		str	r3, [sp]
  4418 0206 A368     		ldr	r3, [r4, #8]
  4419 0208 2A46     		mov	r2, r5
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 133
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 133
 
 
  4420 020a 08A9     		add	r1, sp, #32
@@ -7960,35 +7960,35 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 1
  4457              		.file 31 "lvgl/src/draw/sw/../../core/lv_event.h"
  4458              		.file 32 "lvgl/src/draw/sw/../../misc/lv_mem.h"
  4459              		.file 33 "lvgl/src/draw/sw/../../core/lv_refr.h"
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s 			page 134
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s 			page 134
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 lv_draw_sw_blend.c
-C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s:19     .text.fill_blended:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s:24     .text.fill_blended:00000000 fill_blended
-C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s:386    .text.fill_blended:00000144 $d
-C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s:2444   .text.color_blend_true_color_additive:00000000 color_blend_true_color_additive
-C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s:2591   .text.color_blend_true_color_subtractive:00000000 color_blend_true_color_subtractive
-C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s:2736   .text.color_blend_true_color_multiply:00000000 color_blend_true_color_multiply
-C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s:394    .text.map_blended:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s:399    .text.map_blended:00000000 map_blended
-C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s:823    .text.map_blended:00000184 $d
-C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s:831    .text.fill_set_px:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s:836    .text.fill_set_px:00000000 fill_set_px
-C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s:1077   .text.map_set_px:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s:1082   .text.map_set_px:00000000 map_set_px
-C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s:1318   .text.fill_normal:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s:1323   .text.fill_normal:00000000 fill_normal
-C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s:2439   .text.color_blend_true_color_additive:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s:2586   .text.color_blend_true_color_subtractive:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s:2731   .text.color_blend_true_color_multiply:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s:2861   .text.map_normal:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s:2866   .text.map_normal:00000000 map_normal
-C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s:3877   .text.lv_draw_sw_blend:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s:3883   .text.lv_draw_sw_blend:00000000 lv_draw_sw_blend
-C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s:3951   .text.lv_draw_sw_blend_basic:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccP7OzhE.s:3957   .text.lv_draw_sw_blend_basic:00000000 lv_draw_sw_blend_basic
+C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s:19     .text.fill_blended:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s:24     .text.fill_blended:00000000 fill_blended
+C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s:386    .text.fill_blended:00000144 $d
+C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s:2444   .text.color_blend_true_color_additive:00000000 color_blend_true_color_additive
+C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s:2591   .text.color_blend_true_color_subtractive:00000000 color_blend_true_color_subtractive
+C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s:2736   .text.color_blend_true_color_multiply:00000000 color_blend_true_color_multiply
+C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s:394    .text.map_blended:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s:399    .text.map_blended:00000000 map_blended
+C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s:823    .text.map_blended:00000184 $d
+C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s:831    .text.fill_set_px:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s:836    .text.fill_set_px:00000000 fill_set_px
+C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s:1077   .text.map_set_px:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s:1082   .text.map_set_px:00000000 map_set_px
+C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s:1318   .text.fill_normal:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s:1323   .text.fill_normal:00000000 fill_normal
+C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s:2439   .text.color_blend_true_color_additive:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s:2586   .text.color_blend_true_color_subtractive:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s:2731   .text.color_blend_true_color_multiply:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s:2861   .text.map_normal:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s:2866   .text.map_normal:00000000 map_normal
+C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s:3877   .text.lv_draw_sw_blend:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s:3883   .text.lv_draw_sw_blend:00000000 lv_draw_sw_blend
+C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s:3951   .text.lv_draw_sw_blend_basic:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccrPpCVL.s:3957   .text.lv_draw_sw_blend_basic:00000000 lv_draw_sw_blend_basic
 
 UNDEFINED SYMBOLS
 _lv_refr_get_disp_refreshing

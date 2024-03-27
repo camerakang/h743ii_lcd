@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccns7VJ0.s 			page 1
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuCJOIe.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccns7VJ0.s 			page 1
   46              		.loc 1 10 5 is_stmt 1 view .LVU2
   11:lvgl/examples/widgets/chart/lv_example_chart_6.c ****     lv_event_code_t code = lv_event_get_code(e);
   47              		.loc 1 11 5 view .LVU3
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccns7VJ0.s 			page 2
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuCJOIe.s 			page 2
 
 
   48              		.loc 1 11 28 is_stmt 0 view .LVU4
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccns7VJ0.s 			page 1
   45:lvgl/examples/widgets/chart/lv_example_chart_6.c **** 
   46:lvgl/examples/widgets/chart/lv_example_chart_6.c ****         lv_draw_label_dsc_t draw_label_dsc;
   47:lvgl/examples/widgets/chart/lv_example_chart_6.c ****         lv_draw_label_dsc_init(&draw_label_dsc);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccns7VJ0.s 			page 3
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuCJOIe.s 			page 3
 
 
   48:lvgl/examples/widgets/chart/lv_example_chart_6.c ****         draw_label_dsc.color = lv_color_white();
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccns7VJ0.s 			page 1
  107              	.LVL9:
   21:lvgl/examples/widgets/chart/lv_example_chart_6.c ****         lv_obj_draw_part_dsc_t * dsc = lv_event_get_draw_part_dsc(e);
  108              		.loc 1 21 40 view .LVU22
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccns7VJ0.s 			page 4
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuCJOIe.s 			page 4
 
 
  109 0042 FFF7FEFF 		bl	lv_event_get_draw_part_dsc
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccns7VJ0.s 			page 1
  148 0074 354B     		ldr	r3, .L8+12
  149 0076 1968     		ldr	r1, [r3]
  150 0078 354B     		ldr	r3, .L8+16
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccns7VJ0.s 			page 5
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuCJOIe.s 			page 5
 
 
  151 007a 1868     		ldr	r0, [r3]
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccns7VJ0.s 			page 1
   34:lvgl/examples/widgets/chart/lv_example_chart_6.c ****         a.y1 = a.y2 - size.y - 10;
  192              		.loc 1 34 27 discriminator 2 view .LVU51
  193 00ae 053A     		subs	r2, r2, #5
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccns7VJ0.s 			page 6
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuCJOIe.s 			page 6
 
 
  194 00b0 93B2     		uxth	r3, r2
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccns7VJ0.s 			page 1
   41:lvgl/examples/widgets/chart/lv_example_chart_6.c ****         draw_rect_dsc.radius = 3;
  230              		.loc 1 41 34 is_stmt 0 discriminator 2 view .LVU70
  231 00e2 0520     		movs	r0, #5
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccns7VJ0.s 			page 7
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuCJOIe.s 			page 7
 
 
  232 00e4 FFF7FEFF 		bl	lv_palette_main
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccns7VJ0.s 			page 1
   27:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #error "LV_COLOR_16_SWAP requires LV_COLOR_DEPTH == 16. Set it in lv_conf.h"
   28:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #endif
   29:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccns7VJ0.s 			page 8
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuCJOIe.s 			page 8
 
 
   30:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #include <stdint.h>
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccns7VJ0.s 			page 1
   84:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #define _LV_COLOR_HAS_MODERN_CPP 1
   85:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #endif
   86:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #endif
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccns7VJ0.s 			page 9
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuCJOIe.s 			page 9
 
 
   87:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #endif /*__cplusplus*/
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccns7VJ0.s 			page 1
  141:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** # define LV_COLOR_GET_G16(c) (c).ch.green
  142:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #else
  143:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** # define LV_COLOR_GET_G16(c) (((c).ch.green_h << 3) + (c).ch.green_l)
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccns7VJ0.s 			page 10
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuCJOIe.s 			page 10
 
 
  144:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #endif
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccns7VJ0.s 			page 1
  198:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
  199:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** typedef union {
  200:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     struct {
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccns7VJ0.s 			page 11
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuCJOIe.s 			page 11
 
 
  201:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****         uint8_t blue : 2;
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccns7VJ0.s 			page 1
  255:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** } lv_color_filter_dsc_t;
  256:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
  257:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** typedef enum {
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccns7VJ0.s 			page 12
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuCJOIe.s 			page 12
 
 
  258:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     LV_PALETTE_RED,
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccns7VJ0.s 			page 1
  312:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     }
  313:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     else {
  314:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****         return 0;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccns7VJ0.s 			page 13
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuCJOIe.s 			page 13
 
 
  315:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     }
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccns7VJ0.s 			page 1
  369:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     LV_COLOR_SET_B16(ret, LV_COLOR_GET_B(color) >> 3); /*8 - 5  = 3*/
  370:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     return ret.full;
  371:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #endif
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccns7VJ0.s 			page 14
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuCJOIe.s 			page 14
 
 
  372:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** }
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccns7VJ0.s 			page 1
  426:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #endif
  427:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** }
  428:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccns7VJ0.s 			page 15
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuCJOIe.s 			page 15
 
 
  429:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** //! @cond Doxygen_Suppress
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccns7VJ0.s 			page 1
  483:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     out[0] = LV_COLOR_GET_R(c);
  484:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     out[1] = LV_COLOR_GET_G(c);
  485:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     out[2] = LV_COLOR_GET_B(c);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccns7VJ0.s 			page 16
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuCJOIe.s 			page 16
 
 
  486:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #endif
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccns7VJ0.s 			page 1
  540:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     else if(fg_opa <= LV_OPA_MIN) {
  541:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****         res_color->full = bg_color.full;
  542:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****         *res_opa = bg_opa;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccns7VJ0.s 			page 17
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuCJOIe.s 			page 17
 
 
  543:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     }
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccns7VJ0.s 			page 1
  597:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** }
  598:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
  599:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** static inline lv_color_t lv_color_hex(uint32_t c)
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccns7VJ0.s 			page 18
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuCJOIe.s 			page 18
 
 
  600:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** {
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccns7VJ0.s 			page 1
  654:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
  655:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** /**
  656:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****  * Convert a HSV color to RGB
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccns7VJ0.s 			page 19
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuCJOIe.s 			page 19
 
 
  657:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****  * @param h hue [0..359]
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccns7VJ0.s 			page 1
  596:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** }
  265              		.loc 2 596 12 is_stmt 0 discriminator 2 view .LVU81
  266 0100 4FF0FF33 		mov	r3, #-1
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccns7VJ0.s 			page 20
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuCJOIe.s 			page 20
 
 
  267              	.LVL24:
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccns7VJ0.s 			page 1
  308 0140 00000000 		.word	.LANCHOR0
  309 0144 00000000 		.word	.LANCHOR1
  310 0148 00000000 		.word	lv_chart_class
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccns7VJ0.s 			page 21
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuCJOIe.s 			page 21
 
 
  311 014c 00000000 		.word	.LANCHOR2
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccns7VJ0.s 			page 1
    9:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** #ifdef __cplusplus
   10:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** extern "C" {
   11:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** #endif
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccns7VJ0.s 			page 22
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuCJOIe.s 			page 22
 
 
   12:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccns7VJ0.s 			page 1
   66:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
   67:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
   68:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Make a screen active
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccns7VJ0.s 			page 23
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuCJOIe.s 			page 23
 
 
   69:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param scr pointer to a screen
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccns7VJ0.s 			page 1
  123:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Switch screen with animation
  124:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param scr pointer to the new screen to load
  125:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param anim_type type of the animation from `lv_scr_load_anim_t`, e.g. `LV_SCR_LOAD_ANIM_MOVE_LE
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccns7VJ0.s 			page 24
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuCJOIe.s 			page 24
 
 
  126:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param time time of the animation
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccns7VJ0.s 			page 1
  180:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @return pointer to the active screen
  181:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
  182:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** static inline lv_obj_t * lv_scr_act(void)
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccns7VJ0.s 			page 25
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuCJOIe.s 			page 25
 
 
  348              		.loc 3 182 26 view .LVU97
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccns7VJ0.s 			page 1
  395 004c 0196     		str	r6, [sp, #4]
  396 004e 0A22     		movs	r2, #10
  397 0050 0092     		str	r2, [sp]
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccns7VJ0.s 			page 26
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuCJOIe.s 			page 26
 
 
  398 0052 2B46     		mov	r3, r5
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccns7VJ0.s 			page 1
  443              		.loc 1 76 5 view .LVU115
  444              	.LVL39:
  445              		.loc 1 76 11 is_stmt 0 view .LVU116
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccns7VJ0.s 			page 27
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuCJOIe.s 			page 27
 
 
  446 009a 0024     		movs	r4, #0
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccns7VJ0.s 			page 1
  489 00ca FFF7FEFF 		bl	lv_disp_get_default
  490              	.LVL45:
  491 00ce FFF7FEFF 		bl	lv_disp_get_scr_act
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccns7VJ0.s 			page 28
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuCJOIe.s 			page 28
 
 
  492              	.LVL46:
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccns7VJ0.s 			page 1
  550              	ser:
  551 0000 00000000 		.space	4
  552              		.section	.data.last_id.0,"aw"
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccns7VJ0.s 			page 29
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuCJOIe.s 			page 29
 
 
  553              		.align	2
@@ -1720,27 +1720,27 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccns7VJ0.s 			page 1
  591              		.file 34 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/misc/lv_math.h"
  592              		.file 35 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/widgets/lv_label.h"
  593              		.file 36 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/misc/lv_printf.h"
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccns7VJ0.s 			page 30
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuCJOIe.s 			page 30
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 lv_example_chart_6.c
-C:\Users\OSD\AppData\Local\Temp\ccns7VJ0.s:19     .rodata.event_cb.str1.4:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\ccns7VJ0.s:23     .text.event_cb:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccns7VJ0.s:28     .text.event_cb:00000000 event_cb
-C:\Users\OSD\AppData\Local\Temp\ccns7VJ0.s:308    .text.event_cb:00000140 $d
-C:\Users\OSD\AppData\Local\Temp\ccns7VJ0.s:320    .rodata.lv_example_chart_6.str1.4:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\ccns7VJ0.s:324    .text.lv_example_chart_6:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccns7VJ0.s:330    .text.lv_example_chart_6:00000000 lv_example_chart_6
-C:\Users\OSD\AppData\Local\Temp\ccns7VJ0.s:523    .text.lv_example_chart_6:000000f4 $d
-C:\Users\OSD\AppData\Local\Temp\ccns7VJ0.s:532    .bss.chart:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\ccns7VJ0.s:536    .bss.chart:00000000 chart
-C:\Users\OSD\AppData\Local\Temp\ccns7VJ0.s:539    .bss.cursor:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\ccns7VJ0.s:543    .bss.cursor:00000000 cursor
-C:\Users\OSD\AppData\Local\Temp\ccns7VJ0.s:546    .bss.ser:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\ccns7VJ0.s:550    .bss.ser:00000000 ser
-C:\Users\OSD\AppData\Local\Temp\ccns7VJ0.s:553    .data.last_id.0:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\ccns7VJ0.s:557    .data.last_id.0:00000000 last_id.0
+C:\Users\OSD\AppData\Local\Temp\ccuCJOIe.s:19     .rodata.event_cb.str1.4:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccuCJOIe.s:23     .text.event_cb:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccuCJOIe.s:28     .text.event_cb:00000000 event_cb
+C:\Users\OSD\AppData\Local\Temp\ccuCJOIe.s:308    .text.event_cb:00000140 $d
+C:\Users\OSD\AppData\Local\Temp\ccuCJOIe.s:320    .rodata.lv_example_chart_6.str1.4:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccuCJOIe.s:324    .text.lv_example_chart_6:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccuCJOIe.s:330    .text.lv_example_chart_6:00000000 lv_example_chart_6
+C:\Users\OSD\AppData\Local\Temp\ccuCJOIe.s:523    .text.lv_example_chart_6:000000f4 $d
+C:\Users\OSD\AppData\Local\Temp\ccuCJOIe.s:532    .bss.chart:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccuCJOIe.s:536    .bss.chart:00000000 chart
+C:\Users\OSD\AppData\Local\Temp\ccuCJOIe.s:539    .bss.cursor:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccuCJOIe.s:543    .bss.cursor:00000000 cursor
+C:\Users\OSD\AppData\Local\Temp\ccuCJOIe.s:546    .bss.ser:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccuCJOIe.s:550    .bss.ser:00000000 ser
+C:\Users\OSD\AppData\Local\Temp\ccuCJOIe.s:553    .data.last_id.0:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccuCJOIe.s:557    .data.last_id.0:00000000 last_id.0
 
 UNDEFINED SYMBOLS
 lv_event_get_code

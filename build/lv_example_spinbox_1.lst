@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHsRqeC.s 			page 1
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccvZajEZ.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHsRqeC.s 			page 1
   40              	.LVL1:
   17:lvgl/examples/widgets/spinbox/lv_example_spinbox_1.c ****     if(code == LV_EVENT_SHORT_CLICKED || code == LV_EVENT_LONG_PRESSED_REPEAT) {
   41              		.loc 1 17 5 is_stmt 1 view .LVU4
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHsRqeC.s 			page 2
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccvZajEZ.s 			page 2
 
 
   42              		.loc 1 17 7 is_stmt 0 view .LVU5
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHsRqeC.s 			page 1
   89 0002 FFF7FEFF 		bl	lv_event_get_code
   90              	.LVL7:
    9:lvgl/examples/widgets/spinbox/lv_example_spinbox_1.c ****         lv_spinbox_increment(spinbox);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHsRqeC.s 			page 3
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccvZajEZ.s 			page 3
 
 
   91              		.loc 1 9 5 is_stmt 1 view .LVU14
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHsRqeC.s 			page 1
  139 0000 F0B5     		push	{r4, r5, r6, r7, lr}
  140              		.cfi_def_cfa_offset 20
  141              		.cfi_offset 4, -20
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHsRqeC.s 			page 4
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccvZajEZ.s 			page 4
 
 
  142              		.cfi_offset 5, -16
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHsRqeC.s 			page 1
   44:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_OUT_BOTTOM,
   45:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** } lv_scr_load_anim_t;
   46:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHsRqeC.s 			page 5
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccvZajEZ.s 			page 5
 
 
   47:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**********************
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHsRqeC.s 			page 1
  101:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
  102:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Set the background color of a display
  103:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to a display
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHsRqeC.s 			page 6
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccvZajEZ.s 			page 6
 
 
  104:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param color color of the background
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHsRqeC.s 			page 1
  158:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
  159:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Get display invalidation is enabled.
  160:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to a display (NULL to use the default display)
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHsRqeC.s 			page 7
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccvZajEZ.s 			page 7
 
 
  161:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @return return true if invalidation is enabled
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHsRqeC.s 			page 1
  179              		.loc 1 27 5 view .LVU29
  180 0028 2868     		ldr	r0, [r5]
  181 002a FFF7FEFF 		bl	lv_spinbox_step_prev
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHsRqeC.s 			page 8
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccvZajEZ.s 			page 8
 
 
  182              	.LVL17:
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHsRqeC.s 			page 1
   43:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @note            E.g. LV_ALIGN_CENTER alignment it's the offset from the center of the parent
   44:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @note            The position is interpreted on the content area of the parent
   45:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @note            The values can be set in pixel or in percentage of parent size with `lv_pct(v)`
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHsRqeC.s 			page 9
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccvZajEZ.s 			page 9
 
 
   46:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  */
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHsRqeC.s 			page 1
  100:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  */
  101:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** void lv_obj_set_width(struct _lv_obj_t * obj, lv_coord_t w);
  102:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHsRqeC.s 			page 10
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccvZajEZ.s 			page 10
 
 
  103:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** /**
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHsRqeC.s 			page 1
  157:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @param cb        the layout update callback
  158:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @param user_data custom data that will be passed to `cb`
  159:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @return          the ID of the new layout
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHsRqeC.s 			page 11
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccvZajEZ.s 			page 11
 
 
  160:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  */
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHsRqeC.s 			page 1
   30:lvgl/examples/widgets/spinbox/lv_example_spinbox_1.c **** 
   31:lvgl/examples/widgets/spinbox/lv_example_spinbox_1.c ****     lv_coord_t h = lv_obj_get_height(spinbox);
  204              		.loc 1 31 5 is_stmt 1 view .LVU35
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHsRqeC.s 			page 12
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccvZajEZ.s 			page 12
 
 
  205              		.loc 1 31 20 is_stmt 0 view .LVU36
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHsRqeC.s 			page 1
  252 007e 1549     		ldr	r1, .L15+12
  253 0080 3846     		mov	r0, r7
  254 0082 FFF7FEFF 		bl	lv_obj_add_event_cb
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHsRqeC.s 			page 13
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccvZajEZ.s 			page 13
 
 
  255              	.LVL29:
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHsRqeC.s 			page 1
  301 00c2 03B0     		add	sp, sp, #12
  302              		.cfi_def_cfa_offset 20
  303              		@ sp needed
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHsRqeC.s 			page 14
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccvZajEZ.s 			page 14
 
 
  304 00c4 F0BD     		pop	{r4, r5, r6, r7, pc}
@@ -820,23 +820,23 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHsRqeC.s 			page 1
  343              		.file 19 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/extra/widgets/spinbox/lv_spinbox.h"
  344              		.file 20 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/widgets/lv_btn.h"
  345              		.file 21 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/core/lv_obj_style_gen.h"
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHsRqeC.s 			page 15
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccvZajEZ.s 			page 15
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 lv_example_spinbox_1.c
-C:\Users\OSD\AppData\Local\Temp\ccHsRqeC.s:19     .text.lv_spinbox_decrement_event_cb:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccHsRqeC.s:24     .text.lv_spinbox_decrement_event_cb:00000000 lv_spinbox_decrement_event_cb
-C:\Users\OSD\AppData\Local\Temp\ccHsRqeC.s:65     .text.lv_spinbox_decrement_event_cb:0000001c $d
-C:\Users\OSD\AppData\Local\Temp\ccHsRqeC.s:70     .text.lv_spinbox_increment_event_cb:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccHsRqeC.s:75     .text.lv_spinbox_increment_event_cb:00000000 lv_spinbox_increment_event_cb
-C:\Users\OSD\AppData\Local\Temp\ccHsRqeC.s:115    .text.lv_spinbox_increment_event_cb:0000001c $d
-C:\Users\OSD\AppData\Local\Temp\ccHsRqeC.s:120    .rodata.lv_example_spinbox_1.str1.4:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\ccHsRqeC.s:127    .text.lv_example_spinbox_1:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccHsRqeC.s:133    .text.lv_example_spinbox_1:00000000 lv_example_spinbox_1
-C:\Users\OSD\AppData\Local\Temp\ccHsRqeC.s:310    .text.lv_example_spinbox_1:000000c8 $d
-C:\Users\OSD\AppData\Local\Temp\ccHsRqeC.s:320    .bss.spinbox:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\ccHsRqeC.s:324    .bss.spinbox:00000000 spinbox
+C:\Users\OSD\AppData\Local\Temp\ccvZajEZ.s:19     .text.lv_spinbox_decrement_event_cb:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccvZajEZ.s:24     .text.lv_spinbox_decrement_event_cb:00000000 lv_spinbox_decrement_event_cb
+C:\Users\OSD\AppData\Local\Temp\ccvZajEZ.s:65     .text.lv_spinbox_decrement_event_cb:0000001c $d
+C:\Users\OSD\AppData\Local\Temp\ccvZajEZ.s:70     .text.lv_spinbox_increment_event_cb:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccvZajEZ.s:75     .text.lv_spinbox_increment_event_cb:00000000 lv_spinbox_increment_event_cb
+C:\Users\OSD\AppData\Local\Temp\ccvZajEZ.s:115    .text.lv_spinbox_increment_event_cb:0000001c $d
+C:\Users\OSD\AppData\Local\Temp\ccvZajEZ.s:120    .rodata.lv_example_spinbox_1.str1.4:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccvZajEZ.s:127    .text.lv_example_spinbox_1:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccvZajEZ.s:133    .text.lv_example_spinbox_1:00000000 lv_example_spinbox_1
+C:\Users\OSD\AppData\Local\Temp\ccvZajEZ.s:310    .text.lv_example_spinbox_1:000000c8 $d
+C:\Users\OSD\AppData\Local\Temp\ccvZajEZ.s:320    .bss.spinbox:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccvZajEZ.s:324    .bss.spinbox:00000000 spinbox
 
 UNDEFINED SYMBOLS
 lv_event_get_code

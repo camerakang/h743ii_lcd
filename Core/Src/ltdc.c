@@ -37,7 +37,7 @@ void MX_LTDC_Init(void)
   LTDC_LayerCfgTypeDef pLayerCfg = {0};
 
   /* USER CODE BEGIN LTDC_Init 1 */
-	__HAL_RCC_DMA2D_CLK_ENABLE();					// 浣胯兘DMA2D鏃堕�?
+	__HAL_RCC_DMA2D_CLK_ENABLE();					// 娴ｈ儻鍏楧MA2D閺冨爼鎸?
 
   /* USER CODE END LTDC_Init 1 */
   hltdc.Instance = LTDC;
@@ -80,19 +80,19 @@ void MX_LTDC_Init(void)
     Error_Handler();
   }
   /* USER CODE BEGIN LTDC_Init 2 */
-  HAL_LTDC_EnableDither(&hltdc);           // �???鍚鑹叉姈�???
-  HAL_LTDC_ProgramLineEvent(&hltdc, 0);    // 璁剧疆琛屼腑鏂紝锟??0�???
-  HAL_NVIC_SetPriority(LTDC_IRQn, 0xE, 0); // 璁剧疆浼樺厛�???
+  HAL_LTDC_EnableDither(&hltdc);           // �????閸氼垶顤�?懝鍙夊�????
+  HAL_LTDC_ProgramLineEvent(&hltdc, 0);    // 鐠佸墽鐤嗙悰灞艰厬閺傤叏绱濋�???0�????
+  HAL_NVIC_SetPriority(LTDC_IRQn, 0xE, 0); // 鐠佸墽鐤嗘导妯哄帥閿???
   HAL_NVIC_EnableIRQ(LTDC_IRQn);
 
-  	LCD_DisplayDirection(Direction_H); 	//	璁剧疆妯睆鏄剧�?
-	LCD_SetFont(&Font24); 				 	//	璁剧疆榛樿瀛椾�?	
-	LCD_ShowNumMode(Fill_Space);			//	璁剧疆鏁板瓧鏄剧ず榛樿濉厖绌烘牸
+  	LCD_DisplayDirection(Direction_H); 	//	鐠佸墽鐤嗗Ο顏勭潌閺勫墽銇?
+	LCD_SetFont(&Font24); 				 	//	鐠佸墽鐤嗘妯款吇鐎涙ぞ�??	
+	LCD_ShowNumMode(Fill_Space);			//	鐠佸墽鐤嗛弫鏉跨摟閺勫墽銇氭�?妯款吇婵夘偄鍘栫粚鐑樼壐
 	
-	LCD_SetLayer(0);  						// 鍒囨崲锟?? layer0
-	LCD_SetBackColor(LCD_YELLOW); 			//	璁剧疆鑳屾櫙�???
-	LCD_SetColor(LCD_WHITE);				//	璁剧疆鐢荤瑪棰滆�?
-	LCD_Clear(); 								//	娓呭睆锛屽埛鑳屾櫙锟??
+	LCD_SetLayer(0);  						// 閸掑洦宕查敓?? layer0
+	LCD_SetBackColor(LCD_YELLOW); 			//	鐠佸墽鐤嗛懗灞炬珯閿???
+	LCD_SetColor(LCD_WHITE);				//	鐠佸墽鐤嗛悽鑽ょ應妫版粏�??
+	LCD_Clear(); 								//	濞撳懎鐫嗛敍灞藉煕閼冲本娅欓�???
 
   HAL_Delay(100);
   HAL_GPIO_WritePin(LCD_BL_GPIO_Port, LCD_BL_Pin, SET);

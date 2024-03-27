@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccpGJWVp.s 			page 1
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJNIYOP.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccpGJWVp.s 			page 1
   45              		.cfi_offset 14, -4
    9:lvgl/examples/styles/lv_example_style_15.c ****     lv_obj_t * btn;
   46              		.loc 1 9 5 view .LVU1
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccpGJWVp.s 			page 2
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJNIYOP.s 			page 2
 
 
   10:lvgl/examples/styles/lv_example_style_15.c ****     lv_obj_t * label;
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccpGJWVp.s 			page 1
   46:lvgl/examples/styles/../../src/core/lv_disp.h **** 
   47:lvgl/examples/styles/../../src/core/lv_disp.h **** /**********************
   48:lvgl/examples/styles/../../src/core/lv_disp.h ****  * GLOBAL PROTOTYPES
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccpGJWVp.s 			page 3
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJNIYOP.s 			page 3
 
 
   49:lvgl/examples/styles/../../src/core/lv_disp.h ****  **********************/
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccpGJWVp.s 			page 1
  103:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @param disp pointer to a display
  104:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @param color color of the background
  105:lvgl/examples/styles/../../src/core/lv_disp.h ****  */
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccpGJWVp.s 			page 4
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJNIYOP.s 			page 4
 
 
  106:lvgl/examples/styles/../../src/core/lv_disp.h **** void lv_disp_set_bg_color(lv_disp_t * disp, lv_color_t color);
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccpGJWVp.s 			page 1
  160:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @param disp pointer to a display (NULL to use the default display)
  161:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @return return true if invalidation is enabled
  162:lvgl/examples/styles/../../src/core/lv_disp.h ****  */
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccpGJWVp.s 			page 5
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJNIYOP.s 			page 5
 
 
  163:lvgl/examples/styles/../../src/core/lv_disp.h **** bool lv_disp_is_invalidation_enabled(lv_disp_t * disp);
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccpGJWVp.s 			page 1
   80              		.loc 1 17 13 is_stmt 0 view .LVU11
   81 0026 2046     		mov	r0, r4
   82 0028 FFF7FEFF 		bl	lv_label_create
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccpGJWVp.s 			page 6
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJNIYOP.s 			page 6
 
 
   83              	.LVL6:
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccpGJWVp.s 			page 1
   42:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @note            With default alignment it's the distance from the top left corner
   43:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @note            E.g. LV_ALIGN_CENTER alignment it's the offset from the center of the parent
   44:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @note            The position is interpreted on the content area of the parent
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccpGJWVp.s 			page 7
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJNIYOP.s 			page 7
 
 
   45:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @note            The values can be set in pixel or in percentage of parent size with `lv_pct(v)`
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccpGJWVp.s 			page 1
   99:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  *                                      x should be in [0..1000]% range
  100:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  */
  101:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** void lv_obj_set_width(struct _lv_obj_t * obj, lv_coord_t w);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccpGJWVp.s 			page 8
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJNIYOP.s 			page 8
 
 
  102:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** 
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccpGJWVp.s 			page 1
  156:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * Register a new layout
  157:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @param cb        the layout update callback
  158:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @param user_data custom data that will be passed to `cb`
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccpGJWVp.s 			page 9
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJNIYOP.s 			page 9
 
 
  159:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @return          the ID of the new layout
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccpGJWVp.s 			page 1
  105              	.LBE22:
   20:lvgl/examples/styles/lv_example_style_15.c **** 
   21:lvgl/examples/styles/lv_example_style_15.c ****     /*Set opacity
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccpGJWVp.s 			page 10
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJNIYOP.s 			page 10
 
 
   22:lvgl/examples/styles/lv_example_style_15.c ****      *The button and the label is rendered to a layer first and that layer is blended*/
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccpGJWVp.s 			page 1
  151 0076 FFF7FEFF 		bl	lv_label_set_text
  152              	.LVL19:
   30:lvgl/examples/styles/lv_example_style_15.c ****     lv_obj_center(label);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccpGJWVp.s 			page 11
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJNIYOP.s 			page 11
 
 
  153              		.loc 1 30 5 view .LVU28
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccpGJWVp.s 			page 1
  198 00a6 0022     		movs	r2, #0
  199 00a8 4FF4A071 		mov	r1, #320
  200 00ac 2046     		mov	r0, r4
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccpGJWVp.s 			page 12
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJNIYOP.s 			page 12
 
 
  201 00ae FFF7FEFF 		bl	lv_obj_set_style_transform_zoom
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccpGJWVp.s 			page 1
  246 00ec 1A46     		mov	r2, r3
  247 00ee 0921     		movs	r1, #9
  248 00f0 2046     		mov	r0, r4
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccpGJWVp.s 			page 13
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJNIYOP.s 			page 13
 
 
  249 00f2 FFF7FEFF 		bl	lv_obj_align
@@ -757,15 +757,15 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccpGJWVp.s 			page 1
  282              		.file 17 "lvgl/examples/styles/../../src/widgets/lv_btn.h"
  283              		.file 18 "lvgl/examples/styles/../../src/widgets/lv_label.h"
  284              		.file 19 "lvgl/examples/styles/../../src/core/lv_obj_style_gen.h"
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccpGJWVp.s 			page 14
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJNIYOP.s 			page 14
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 lv_example_style_15.c
-C:\Users\OSD\AppData\Local\Temp\ccpGJWVp.s:19     .rodata.lv_example_style_15.str1.4:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\ccpGJWVp.s:29     .text.lv_example_style_15:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccpGJWVp.s:35     .text.lv_example_style_15:00000000 lv_example_style_15
-C:\Users\OSD\AppData\Local\Temp\ccpGJWVp.s:261    .text.lv_example_style_15:000000f8 $d
+C:\Users\OSD\AppData\Local\Temp\ccJNIYOP.s:19     .rodata.lv_example_style_15.str1.4:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccJNIYOP.s:29     .text.lv_example_style_15:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccJNIYOP.s:35     .text.lv_example_style_15:00000000 lv_example_style_15
+C:\Users\OSD\AppData\Local\Temp\ccJNIYOP.s:261    .text.lv_example_style_15:000000f8 $d
 
 UNDEFINED SYMBOLS
 lv_disp_get_default

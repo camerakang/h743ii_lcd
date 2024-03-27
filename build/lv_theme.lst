@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchkGAUW.s 			page 1
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cceZFure.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchkGAUW.s 			page 1
   29:lvgl/src/core/lv_theme.c ****  *      MACROS
   30:lvgl/src/core/lv_theme.c ****  **********************/
   31:lvgl/src/core/lv_theme.c **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchkGAUW.s 			page 2
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cceZFure.s 			page 2
 
 
   32:lvgl/src/core/lv_theme.c **** /**********************
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchkGAUW.s 			page 1
   86:lvgl/src/core/lv_theme.c **** const lv_font_t * lv_theme_get_font_normal(lv_obj_t * obj)
   87:lvgl/src/core/lv_theme.c **** {
   88:lvgl/src/core/lv_theme.c ****     lv_theme_t * th = lv_theme_get_from_obj(obj);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchkGAUW.s 			page 3
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cceZFure.s 			page 3
 
 
   89:lvgl/src/core/lv_theme.c ****     return th ? th->font_normal : LV_FONT_DEFAULT;
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchkGAUW.s 			page 1
   53 000e 2368     		ldr	r3, [r4]
   54              		.loc 1 117 7 view .LVU8
   55 0010 13B1     		cbz	r3, .L1
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchkGAUW.s 			page 4
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cceZFure.s 			page 4
 
 
   56              		.loc 1 117 22 is_stmt 1 discriminator 1 view .LVU9
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchkGAUW.s 			page 1
  102              		.loc 1 38 53 discriminator 2 view .LVU20
  103 000e FFF7FEFF 		bl	lv_disp_get_default
  104              	.LVL8:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchkGAUW.s 			page 5
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cceZFure.s 			page 5
 
 
   38:lvgl/src/core/lv_theme.c ****     return lv_disp_get_theme(disp);
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchkGAUW.s 			page 1
    9:lvgl/src/core/../../src/core/lv_obj_style.h **** #ifdef __cplusplus
   10:lvgl/src/core/../../src/core/lv_obj_style.h **** extern "C" {
   11:lvgl/src/core/../../src/core/lv_obj_style.h **** #endif
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchkGAUW.s 			page 6
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cceZFure.s 			page 6
 
 
   12:lvgl/src/core/../../src/core/lv_obj_style.h **** 
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchkGAUW.s 			page 1
   66:lvgl/src/core/../../src/core/lv_obj_style.h **** 
   67:lvgl/src/core/../../src/core/lv_obj_style.h **** /**
   68:lvgl/src/core/../../src/core/lv_obj_style.h ****  * Add a style to an object.
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchkGAUW.s 			page 7
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cceZFure.s 			page 7
 
 
   69:lvgl/src/core/../../src/core/lv_obj_style.h ****  * @param obj       pointer to an object
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchkGAUW.s 			page 1
  170              	.L12:
  171 0020 FFFF0F00 		.word	1048575
  172              		.cfi_endproc
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchkGAUW.s 			page 8
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cceZFure.s 			page 8
 
 
  173              	.LFE205:
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchkGAUW.s 			page 1
  224              		.syntax unified
  225              		.thumb
  226              		.thumb_func
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchkGAUW.s 			page 9
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cceZFure.s 			page 9
 
 
  228              	lv_theme_get_font_small:
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchkGAUW.s 			page 1
  274              	lv_theme_get_font_normal:
  275              	.LVL23:
  276              	.LFB209:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchkGAUW.s 			page 10
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cceZFure.s 			page 10
 
 
   87:lvgl/src/core/lv_theme.c ****     lv_theme_t * th = lv_theme_get_from_obj(obj);
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchkGAUW.s 			page 1
   93:lvgl/src/core/lv_theme.c ****     lv_theme_t * th = lv_theme_get_from_obj(obj);
  323              		.loc 1 93 1 is_stmt 1 view -0
  324              		.cfi_startproc
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchkGAUW.s 			page 11
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cceZFure.s 			page 11
 
 
  325              		@ args = 0, pretend = 0, frame = 0
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchkGAUW.s 			page 1
  371              		@ args = 0, pretend = 0, frame = 0
  372              		@ frame_needed = 0, uses_anonymous_args = 0
   99:lvgl/src/core/lv_theme.c ****     lv_theme_t * th = lv_theme_get_from_obj(obj);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchkGAUW.s 			page 12
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cceZFure.s 			page 12
 
 
  373              		.loc 1 99 1 is_stmt 0 view .LVU75
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchkGAUW.s 			page 1
  419              		.cfi_def_cfa_offset 8
  420              		.cfi_offset 3, -8
  421              		.cfi_offset 14, -4
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchkGAUW.s 			page 13
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cceZFure.s 			page 13
 
 
  106:lvgl/src/core/lv_theme.c ****     return th ? th->color_secondary : lv_palette_main(LV_PALETTE_BLUE);
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchkGAUW.s 			page 1
  469              		.file 23 "lvgl/src/core/../../src/hal/../misc/lv_ll.h"
  470              		.file 24 "lvgl/src/core/../../src/hal/lv_hal_disp.h"
  471              		.file 25 "lvgl/src/core/../../src/core/lv_theme.h"
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchkGAUW.s 			page 14
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cceZFure.s 			page 14
 
 
  472              		.file 26 "lvgl/src/core/../../src/core/lv_group.h"
@@ -787,35 +787,35 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchkGAUW.s 			page 1
  475              		.file 29 "lvgl/src/core/../../src/core/lv_event.h"
  476              		.file 30 "lvgl/src/core/../../src/core/lv_obj_tree.h"
  477              		.file 31 "lvgl/src/core/../../src/core/lv_disp.h"
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchkGAUW.s 			page 15
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cceZFure.s 			page 15
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 lv_theme.c
-C:\Users\OSD\AppData\Local\Temp\cchkGAUW.s:19     .text.apply_theme:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cchkGAUW.s:24     .text.apply_theme:00000000 apply_theme
-C:\Users\OSD\AppData\Local\Temp\cchkGAUW.s:69     .text.lv_theme_get_from_obj:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cchkGAUW.s:75     .text.lv_theme_get_from_obj:00000000 lv_theme_get_from_obj
-C:\Users\OSD\AppData\Local\Temp\cchkGAUW.s:111    .text.lv_theme_apply:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cchkGAUW.s:117    .text.lv_theme_apply:00000000 lv_theme_apply
-C:\Users\OSD\AppData\Local\Temp\cchkGAUW.s:171    .text.lv_theme_apply:00000020 $d
-C:\Users\OSD\AppData\Local\Temp\cchkGAUW.s:176    .text.lv_theme_set_parent:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cchkGAUW.s:182    .text.lv_theme_set_parent:00000000 lv_theme_set_parent
-C:\Users\OSD\AppData\Local\Temp\cchkGAUW.s:199    .text.lv_theme_set_apply_cb:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cchkGAUW.s:205    .text.lv_theme_set_apply_cb:00000000 lv_theme_set_apply_cb
-C:\Users\OSD\AppData\Local\Temp\cchkGAUW.s:222    .text.lv_theme_get_font_small:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cchkGAUW.s:228    .text.lv_theme_get_font_small:00000000 lv_theme_get_font_small
-C:\Users\OSD\AppData\Local\Temp\cchkGAUW.s:263    .text.lv_theme_get_font_small:00000010 $d
-C:\Users\OSD\AppData\Local\Temp\cchkGAUW.s:268    .text.lv_theme_get_font_normal:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cchkGAUW.s:274    .text.lv_theme_get_font_normal:00000000 lv_theme_get_font_normal
-C:\Users\OSD\AppData\Local\Temp\cchkGAUW.s:309    .text.lv_theme_get_font_normal:00000010 $d
-C:\Users\OSD\AppData\Local\Temp\cchkGAUW.s:314    .text.lv_theme_get_font_large:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cchkGAUW.s:320    .text.lv_theme_get_font_large:00000000 lv_theme_get_font_large
-C:\Users\OSD\AppData\Local\Temp\cchkGAUW.s:355    .text.lv_theme_get_font_large:00000010 $d
-C:\Users\OSD\AppData\Local\Temp\cchkGAUW.s:360    .text.lv_theme_get_color_primary:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cchkGAUW.s:366    .text.lv_theme_get_color_primary:00000000 lv_theme_get_color_primary
-C:\Users\OSD\AppData\Local\Temp\cchkGAUW.s:404    .text.lv_theme_get_color_secondary:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cchkGAUW.s:410    .text.lv_theme_get_color_secondary:00000000 lv_theme_get_color_secondary
+C:\Users\OSD\AppData\Local\Temp\cceZFure.s:19     .text.apply_theme:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\cceZFure.s:24     .text.apply_theme:00000000 apply_theme
+C:\Users\OSD\AppData\Local\Temp\cceZFure.s:69     .text.lv_theme_get_from_obj:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\cceZFure.s:75     .text.lv_theme_get_from_obj:00000000 lv_theme_get_from_obj
+C:\Users\OSD\AppData\Local\Temp\cceZFure.s:111    .text.lv_theme_apply:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\cceZFure.s:117    .text.lv_theme_apply:00000000 lv_theme_apply
+C:\Users\OSD\AppData\Local\Temp\cceZFure.s:171    .text.lv_theme_apply:00000020 $d
+C:\Users\OSD\AppData\Local\Temp\cceZFure.s:176    .text.lv_theme_set_parent:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\cceZFure.s:182    .text.lv_theme_set_parent:00000000 lv_theme_set_parent
+C:\Users\OSD\AppData\Local\Temp\cceZFure.s:199    .text.lv_theme_set_apply_cb:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\cceZFure.s:205    .text.lv_theme_set_apply_cb:00000000 lv_theme_set_apply_cb
+C:\Users\OSD\AppData\Local\Temp\cceZFure.s:222    .text.lv_theme_get_font_small:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\cceZFure.s:228    .text.lv_theme_get_font_small:00000000 lv_theme_get_font_small
+C:\Users\OSD\AppData\Local\Temp\cceZFure.s:263    .text.lv_theme_get_font_small:00000010 $d
+C:\Users\OSD\AppData\Local\Temp\cceZFure.s:268    .text.lv_theme_get_font_normal:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\cceZFure.s:274    .text.lv_theme_get_font_normal:00000000 lv_theme_get_font_normal
+C:\Users\OSD\AppData\Local\Temp\cceZFure.s:309    .text.lv_theme_get_font_normal:00000010 $d
+C:\Users\OSD\AppData\Local\Temp\cceZFure.s:314    .text.lv_theme_get_font_large:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\cceZFure.s:320    .text.lv_theme_get_font_large:00000000 lv_theme_get_font_large
+C:\Users\OSD\AppData\Local\Temp\cceZFure.s:355    .text.lv_theme_get_font_large:00000010 $d
+C:\Users\OSD\AppData\Local\Temp\cceZFure.s:360    .text.lv_theme_get_color_primary:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\cceZFure.s:366    .text.lv_theme_get_color_primary:00000000 lv_theme_get_color_primary
+C:\Users\OSD\AppData\Local\Temp\cceZFure.s:404    .text.lv_theme_get_color_secondary:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\cceZFure.s:410    .text.lv_theme_get_color_secondary:00000000 lv_theme_get_color_secondary
 
 UNDEFINED SYMBOLS
 lv_obj_get_disp

@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccvRCFet.s 			page 1
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHaK8TS.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccvRCFet.s 			page 1
   45 000a 0521     		movs	r1, #5
   46 000c 2846     		mov	r0, r5
   47 000e FFF7FEFF 		bl	lv_style_set_radius
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccvRCFet.s 			page 2
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHaK8TS.s 			page 2
 
 
   48              	.LVL1:
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccvRCFet.s 			page 1
   88 0044 2846     		mov	r0, r5
   89 0046 FFF7FEFF 		bl	lv_style_set_bg_grad
   90              	.LVL5:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccvRCFet.s 			page 3
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHaK8TS.s 			page 3
 
 
   26:lvgl/examples/styles/lv_example_style_2.c **** 
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccvRCFet.s 			page 1
   48:lvgl/examples/styles/../../src/core/lv_disp.h ****  * GLOBAL PROTOTYPES
   49:lvgl/examples/styles/../../src/core/lv_disp.h ****  **********************/
   50:lvgl/examples/styles/../../src/core/lv_disp.h **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccvRCFet.s 			page 4
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHaK8TS.s 			page 4
 
 
   51:lvgl/examples/styles/../../src/core/lv_disp.h **** /**
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccvRCFet.s 			page 1
  105:lvgl/examples/styles/../../src/core/lv_disp.h ****  */
  106:lvgl/examples/styles/../../src/core/lv_disp.h **** void lv_disp_set_bg_color(lv_disp_t * disp, lv_color_t color);
  107:lvgl/examples/styles/../../src/core/lv_disp.h **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccvRCFet.s 			page 5
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHaK8TS.s 			page 5
 
 
  108:lvgl/examples/styles/../../src/core/lv_disp.h **** /**
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccvRCFet.s 			page 1
  162:lvgl/examples/styles/../../src/core/lv_disp.h ****  */
  163:lvgl/examples/styles/../../src/core/lv_disp.h **** bool lv_disp_is_invalidation_enabled(lv_disp_t * disp);
  164:lvgl/examples/styles/../../src/core/lv_disp.h **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccvRCFet.s 			page 6
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHaK8TS.s 			page 6
 
 
  165:lvgl/examples/styles/../../src/core/lv_disp.h **** /**
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccvRCFet.s 			page 1
    9:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** #ifdef __cplusplus
   10:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** extern "C" {
   11:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** #endif
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccvRCFet.s 			page 7
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHaK8TS.s 			page 7
 
 
   12:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** 
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccvRCFet.s 			page 1
   66:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @note            The position is interpreted on the content area of the parent
   67:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @note            The values can be set in pixel or in percentage of parent size with `lv_pct(v)`
   68:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  */
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccvRCFet.s 			page 8
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHaK8TS.s 			page 8
 
 
   69:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** void lv_obj_set_y(struct _lv_obj_t * obj, lv_coord_t y);
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccvRCFet.s 			page 1
  123:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * Set the height reduced by the top and bottom padding and the border width.
  124:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @param obj       pointer to an object
  125:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @param h         the height without paddings in pixels
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccvRCFet.s 			page 9
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHaK8TS.s 			page 9
 
 
  126:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  */
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccvRCFet.s 			page 1
  180:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** void lv_obj_align(struct _lv_obj_t * obj, lv_align_t align, lv_coord_t x_ofs, lv_coord_t y_ofs);
  181:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** 
  182:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** /**
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccvRCFet.s 			page 10
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHaK8TS.s 			page 10
 
 
  183:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * Align an object to an other object.
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccvRCFet.s 			page 1
  152              		.set	.LANCHOR0,. + 0
  155              	style.1:
  156 0000 00000000 		.space	8
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccvRCFet.s 			page 11
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHaK8TS.s 			page 11
 
 
  156      00000000 
@@ -618,18 +618,18 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccvRCFet.s 			page 1
  170              		.file 15 "lvgl/examples/styles/../../src/core/lv_event.h"
  171              		.file 16 "lvgl/examples/styles/../../src/hal/lv_hal_disp.h"
  172              		.file 17 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\misc\\lv_style_gen.h"
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccvRCFet.s 			page 12
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccHaK8TS.s 			page 12
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 lv_example_style_2.c
-C:\Users\OSD\AppData\Local\Temp\ccvRCFet.s:19     .text.lv_example_style_2:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccvRCFet.s:25     .text.lv_example_style_2:00000000 lv_example_style_2
-C:\Users\OSD\AppData\Local\Temp\ccvRCFet.s:138    .text.lv_example_style_2:00000070 $d
-C:\Users\OSD\AppData\Local\Temp\ccvRCFet.s:144    .bss.grad.0:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\ccvRCFet.s:148    .bss.grad.0:00000000 grad.0
-C:\Users\OSD\AppData\Local\Temp\ccvRCFet.s:151    .bss.style.1:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\ccvRCFet.s:155    .bss.style.1:00000000 style.1
+C:\Users\OSD\AppData\Local\Temp\ccHaK8TS.s:19     .text.lv_example_style_2:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccHaK8TS.s:25     .text.lv_example_style_2:00000000 lv_example_style_2
+C:\Users\OSD\AppData\Local\Temp\ccHaK8TS.s:138    .text.lv_example_style_2:00000070 $d
+C:\Users\OSD\AppData\Local\Temp\ccHaK8TS.s:144    .bss.grad.0:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccHaK8TS.s:148    .bss.grad.0:00000000 grad.0
+C:\Users\OSD\AppData\Local\Temp\ccHaK8TS.s:151    .bss.style.1:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccHaK8TS.s:155    .bss.style.1:00000000 style.1
 
 UNDEFINED SYMBOLS
 lv_style_init

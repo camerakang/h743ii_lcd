@@ -223,8 +223,8 @@ build/lv_demo_stress.o: lvgl/demos/stress/lv_demo_stress.c \
  d:\kzc\stm32\h743ii_lcd\lvgl\src\lvgl.h \
  lvgl/demos/stress/../../src/extra/widgets/span/lv_span.h \
  d:\kzc\stm32\h743ii_lcd\lvgl\src\lvgl.h \
- lvgl/demos/stress/../widgets/lv_demo_widgets.h \
- lvgl/demos/stress/../widgets/../lv_demos.h
+ lvgl/demos/stress/../music/lv_demo_music.h \
+ lvgl/demos/stress/../music/../lv_demos.h
 lvgl/demos/stress/lv_demo_stress.h:
 lvgl/demos/stress/../lv_demos.h:
 lvgl/demos/stress/../../lvgl.h:
@@ -452,5 +452,5 @@ lvgl/demos/stress/../../src/extra/widgets/imgbtn/lv_imgbtn.h:
 d:\kzc\stm32\h743ii_lcd\lvgl\src\lvgl.h:
 lvgl/demos/stress/../../src/extra/widgets/span/lv_span.h:
 d:\kzc\stm32\h743ii_lcd\lvgl\src\lvgl.h:
-lvgl/demos/stress/../widgets/lv_demo_widgets.h:
-lvgl/demos/stress/../widgets/../lv_demos.h:
+lvgl/demos/stress/../music/lv_demo_music.h:
+lvgl/demos/stress/../music/../lv_demos.h:

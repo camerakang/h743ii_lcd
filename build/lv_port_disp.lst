@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc47X8dE.s 			page 1
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccxvgB9G.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -38,11 +38,11 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc47X8dE.s 			page 1
    9:lvgl/lv_port_disp.c **** /*********************
   10:lvgl/lv_port_disp.c ****  *      INCLUDES
   11:lvgl/lv_port_disp.c ****  *********************/
-  12:lvgl/lv_port_disp.c **** #include "lv_port_disp_template.h"
+  12:lvgl/lv_port_disp.c **** #include "lv_port_disp.h"
   13:lvgl/lv_port_disp.c **** #include "../../lvgl.h"
   14:lvgl/lv_port_disp.c **** 
   15:lvgl/lv_port_disp.c **** #include "lcd_rgb.h"
-  16:lvgl/lv_port_disp.c **** 
+  16:lvgl/lv_port_disp.c **** #include "tim.h"
   17:lvgl/lv_port_disp.c **** /*********************
   18:lvgl/lv_port_disp.c ****  *      DEFINES
   19:lvgl/lv_port_disp.c ****  *********************/
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc47X8dE.s 			page 1
   29:lvgl/lv_port_disp.c **** /**********************
   30:lvgl/lv_port_disp.c ****  *  STATIC PROTOTYPES
   31:lvgl/lv_port_disp.c ****  **********************/
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc47X8dE.s 			page 2
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccxvgB9G.s 			page 2
 
 
   32:lvgl/lv_port_disp.c **** static void disp_init(void);
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc47X8dE.s 			page 1
   86:lvgl/lv_port_disp.c **** //		lv_disp_draw_buf_init(&draw_buf_dsc_2, buf_2_1, buf_2_2, LCD_Width * 100);   /*Initialize the d
   87:lvgl/lv_port_disp.c **** 
   88:lvgl/lv_port_disp.c ****     /* Example for 3) also set disp_drv.full_refresh = 1 below*/
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc47X8dE.s 			page 3
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccxvgB9G.s 			page 3
 
 
   89:lvgl/lv_port_disp.c ****     static lv_disp_draw_buf_t draw_buf_dsc_3;
@@ -164,42 +164,41 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc47X8dE.s 			page 1
  129:lvgl/lv_port_disp.c **** /*Initialize your display and the required peripherals.*/
  130:lvgl/lv_port_disp.c **** static void disp_init(void)
  131:lvgl/lv_port_disp.c **** {
- 132:lvgl/lv_port_disp.c ****     /*You code here*/
- 133:lvgl/lv_port_disp.c **** }
- 134:lvgl/lv_port_disp.c **** 
- 135:lvgl/lv_port_disp.c **** /*Flush the content of the internal buffer the specific area on the display
- 136:lvgl/lv_port_disp.c ****  *You can use DMA or any hardware acceleration to do this operation in the background but
- 137:lvgl/lv_port_disp.c ****  *'lv_disp_flush_ready()' has to be called when finished.*/
- 138:lvgl/lv_port_disp.c **** static void disp_flush(lv_disp_drv_t * disp_drv, const lv_area_t * area, lv_color_t * color_p)
- 139:lvgl/lv_port_disp.c **** {
-  28              		.loc 1 139 1 view -0
+ 132:lvgl/lv_port_disp.c ****     HAL_TIM_Base_Start_IT(&htim17);
+ 133:lvgl/lv_port_disp.c **** 
+ 134:lvgl/lv_port_disp.c **** }
+ 135:lvgl/lv_port_disp.c **** 
+ 136:lvgl/lv_port_disp.c **** /*Flush the content of the internal buffer the specific area on the display
+ 137:lvgl/lv_port_disp.c ****  *You can use DMA or any hardware acceleration to do this operation in the background but
+ 138:lvgl/lv_port_disp.c ****  *'lv_disp_flush_ready()' has to be called when finished.*/
+ 139:lvgl/lv_port_disp.c **** static void disp_flush(lv_disp_drv_t * disp_drv, const lv_area_t * area, lv_color_t * color_p)
+ 140:lvgl/lv_port_disp.c **** {
+  28              		.loc 1 140 1 view -0
   29              		.cfi_startproc
   30              		@ args = 0, pretend = 0, frame = 0
   31              		@ frame_needed = 0, uses_anonymous_args = 0
-  32              		.loc 1 139 1 is_stmt 0 view .LVU1
+  32              		.loc 1 140 1 is_stmt 0 view .LVU1
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccxvgB9G.s 			page 4
+
+
   33 0000 08B5     		push	{r3, lr}
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc47X8dE.s 			page 4
-
-
   34              		.cfi_def_cfa_offset 8
   35              		.cfi_offset 3, -8
   36              		.cfi_offset 14, -4
- 140:lvgl/lv_port_disp.c ****     /*The most simple case (but also the slowest) to put all pixels to the screen one-by-one*/
- 141:lvgl/lv_port_disp.c **** 
+ 141:lvgl/lv_port_disp.c ****     /*The most simple case (but also the slowest) to put all pixels to the screen one-by-one*/
  142:lvgl/lv_port_disp.c **** 	LTDC_Layer1->CFBAR = (uint32_t)color_p;			// 切换显存地址
   37              		.loc 1 142 2 is_stmt 1 view .LVU2
   38              		.loc 1 142 21 is_stmt 0 view .LVU3
   39 0002 034B     		ldr	r3, .L3
   40 0004 C3F8AC20 		str	r2, [r3, #172]
- 143:lvgl/lv_port_disp.c **** 
- 144:lvgl/lv_port_disp.c **** 	/*IMPORTANT!!!
- 145:lvgl/lv_port_disp.c **** 	*Inform the graphics library that you are ready with the flushing*/
- 146:lvgl/lv_port_disp.c **** 	lv_disp_flush_ready(disp_drv);
-  41              		.loc 1 146 2 is_stmt 1 view .LVU4
+ 143:lvgl/lv_port_disp.c **** 	/*IMPORTANT!!!
+ 144:lvgl/lv_port_disp.c **** 	*Inform the graphics library that you are ready with the flushing*/
+ 145:lvgl/lv_port_disp.c **** 	lv_disp_flush_ready(disp_drv);
+  41              		.loc 1 145 2 is_stmt 1 view .LVU4
   42 0008 FFF7FEFF 		bl	lv_disp_flush_ready
   43              	.LVL1:
- 147:lvgl/lv_port_disp.c **** }
-  44              		.loc 1 147 1 is_stmt 0 view .LVU5
+ 146:lvgl/lv_port_disp.c **** }
+  44              		.loc 1 146 1 is_stmt 0 view .LVU5
   45 000c 08BD     		pop	{r3, pc}
   46              	.L4:
   47 000e 00BF     		.align	2
@@ -207,114 +206,147 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc47X8dE.s 			page 1
   49 0010 00100050 		.word	1342181376
   50              		.cfi_endproc
   51              	.LFE353:
-  53              		.section	.text.lv_port_disp_init,"ax",%progbits
+  53              		.section	.text.disp_init,"ax",%progbits
   54              		.align	1
-  55              		.global	lv_port_disp_init
-  56              		.syntax unified
-  57              		.thumb
-  58              		.thumb_func
-  60              	lv_port_disp_init:
-  61              	.LFB351:
+  55              		.syntax unified
+  56              		.thumb
+  57              		.thumb_func
+  59              	disp_init:
+  60              	.LFB352:
+ 131:lvgl/lv_port_disp.c ****     HAL_TIM_Base_Start_IT(&htim17);
+  61              		.loc 1 131 1 is_stmt 1 view -0
+  62              		.cfi_startproc
+  63              		@ args = 0, pretend = 0, frame = 0
+  64              		@ frame_needed = 0, uses_anonymous_args = 0
+  65 0000 08B5     		push	{r3, lr}
+  66              		.cfi_def_cfa_offset 8
+  67              		.cfi_offset 3, -8
+  68              		.cfi_offset 14, -4
+ 132:lvgl/lv_port_disp.c **** 
+  69              		.loc 1 132 5 view .LVU7
+  70 0002 0248     		ldr	r0, .L7
+  71 0004 FFF7FEFF 		bl	HAL_TIM_Base_Start_IT
+  72              	.LVL2:
+ 134:lvgl/lv_port_disp.c **** 
+  73              		.loc 1 134 1 is_stmt 0 view .LVU8
+  74 0008 08BD     		pop	{r3, pc}
+  75              	.L8:
+  76 000a 00BF     		.align	2
+  77              	.L7:
+  78 000c 00000000 		.word	htim17
+  79              		.cfi_endproc
+  80              	.LFE352:
+  82              		.section	.text.lv_port_disp_init,"ax",%progbits
+  83              		.align	1
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccxvgB9G.s 			page 5
+
+
+  84              		.global	lv_port_disp_init
+  85              		.syntax unified
+  86              		.thumb
+  87              		.thumb_func
+  89              	lv_port_disp_init:
+  90              	.LFB351:
   51:lvgl/lv_port_disp.c ****     /*-------------------------
-  62              		.loc 1 51 1 is_stmt 1 view -0
-  63              		.cfi_startproc
-  64              		@ args = 0, pretend = 0, frame = 0
-  65              		@ frame_needed = 0, uses_anonymous_args = 0
-  66 0000 38B5     		push	{r3, r4, r5, lr}
-  67              		.cfi_def_cfa_offset 16
-  68              		.cfi_offset 3, -16
-  69              		.cfi_offset 4, -12
-  70              		.cfi_offset 5, -8
-  71              		.cfi_offset 14, -4
+  91              		.loc 1 51 1 is_stmt 1 view -0
+  92              		.cfi_startproc
+  93              		@ args = 0, pretend = 0, frame = 0
+  94              		@ frame_needed = 0, uses_anonymous_args = 0
+  95 0000 38B5     		push	{r3, r4, r5, lr}
+  96              		.cfi_def_cfa_offset 16
+  97              		.cfi_offset 3, -16
+  98              		.cfi_offset 4, -12
+  99              		.cfi_offset 5, -8
+ 100              		.cfi_offset 14, -4
   55:lvgl/lv_port_disp.c **** 
-  72              		.loc 1 55 5 view .LVU7
+ 101              		.loc 1 55 5 view .LVU10
+ 102 0002 FFF7FEFF 		bl	disp_init
+ 103              	.LVL3:
   89:lvgl/lv_port_disp.c ****     static lv_color_t *buf_3_1 = (lv_color_t * )(LVGL_MemoryAdd);             /*A screen sized buff
-  73              		.loc 1 89 5 view .LVU8
+ 104              		.loc 1 89 5 view .LVU11
   90:lvgl/lv_port_disp.c ****     static lv_color_t *buf_3_2 = (lv_color_t * )(LVGL_MemoryAdd + LCD_Width*LCD_Height*sizeof(lv_co
-  74              		.loc 1 90 5 view .LVU9
+ 105              		.loc 1 90 5 view .LVU12
   91:lvgl/lv_port_disp.c ****     lv_disp_draw_buf_init(&draw_buf_dsc_3, buf_3_1, buf_3_2, LCD_Width * LCD_Height);   /*Initializ
-  75              		.loc 1 91 5 view .LVU10
+ 106              		.loc 1 91 5 view .LVU13
   92:lvgl/lv_port_disp.c **** 
-  76              		.loc 1 92 5 view .LVU11
-  77 0002 0E4D     		ldr	r5, .L7
-  78 0004 4FF49623 		mov	r3, #307200
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc47X8dE.s 			page 5
-
-
-  79 0008 0D4A     		ldr	r2, .L7+4
-  80 000a 0E49     		ldr	r1, .L7+8
-  81 000c 2846     		mov	r0, r5
-  82 000e FFF7FEFF 		bl	lv_disp_draw_buf_init
-  83              	.LVL2:
+ 107              		.loc 1 92 5 view .LVU14
+ 108 0006 0E4D     		ldr	r5, .L11
+ 109 0008 4FF49623 		mov	r3, #307200
+ 110 000c 0D4A     		ldr	r2, .L11+4
+ 111 000e 0E49     		ldr	r1, .L11+8
+ 112 0010 2846     		mov	r0, r5
+ 113 0012 FFF7FEFF 		bl	lv_disp_draw_buf_init
+ 114              	.LVL4:
   98:lvgl/lv_port_disp.c ****     lv_disp_drv_init(&disp_drv);                    /*Basic initialization*/
-  84              		.loc 1 98 5 view .LVU12
+ 115              		.loc 1 98 5 view .LVU15
   99:lvgl/lv_port_disp.c **** 
-  85              		.loc 1 99 5 view .LVU13
-  86 0012 0D4C     		ldr	r4, .L7+12
-  87 0014 2046     		mov	r0, r4
-  88 0016 FFF7FEFF 		bl	lv_disp_drv_init
-  89              	.LVL3:
+ 116              		.loc 1 99 5 view .LVU16
+ 117 0016 0D4C     		ldr	r4, .L11+12
+ 118 0018 2046     		mov	r0, r4
+ 119 001a FFF7FEFF 		bl	lv_disp_drv_init
+ 120              	.LVL5:
  104:lvgl/lv_port_disp.c ****     disp_drv.ver_res = LCD_Height;
-  90              		.loc 1 104 5 view .LVU14
+ 121              		.loc 1 104 5 view .LVU17
  104:lvgl/lv_port_disp.c ****     disp_drv.ver_res = LCD_Height;
-  91              		.loc 1 104 22 is_stmt 0 view .LVU15
-  92 001a 4FF4F073 		mov	r3, #480
-  93 001e 2380     		strh	r3, [r4]	@ movhi
+ 122              		.loc 1 104 22 is_stmt 0 view .LVU18
+ 123 001e 4FF4F073 		mov	r3, #480
+ 124 0022 2380     		strh	r3, [r4]	@ movhi
  105:lvgl/lv_port_disp.c **** 
-  94              		.loc 1 105 5 is_stmt 1 view .LVU16
+ 125              		.loc 1 105 5 is_stmt 1 view .LVU19
  105:lvgl/lv_port_disp.c **** 
-  95              		.loc 1 105 22 is_stmt 0 view .LVU17
-  96 0020 4FF42073 		mov	r3, #640
-  97 0024 6380     		strh	r3, [r4, #2]	@ movhi
+ 126              		.loc 1 105 22 is_stmt 0 view .LVU20
+ 127 0024 4FF42073 		mov	r3, #640
+ 128 0028 6380     		strh	r3, [r4, #2]	@ movhi
  108:lvgl/lv_port_disp.c **** 
-  98              		.loc 1 108 5 is_stmt 1 view .LVU18
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccxvgB9G.s 			page 6
+
+
+ 129              		.loc 1 108 5 is_stmt 1 view .LVU21
  108:lvgl/lv_port_disp.c **** 
-  99              		.loc 1 108 23 is_stmt 0 view .LVU19
- 100 0026 094B     		ldr	r3, .L7+16
- 101 0028 6361     		str	r3, [r4, #20]
+ 130              		.loc 1 108 23 is_stmt 0 view .LVU22
+ 131 002a 094B     		ldr	r3, .L11+16
+ 132 002c 6361     		str	r3, [r4, #20]
  111:lvgl/lv_port_disp.c **** 
- 102              		.loc 1 111 5 is_stmt 1 view .LVU20
+ 133              		.loc 1 111 5 is_stmt 1 view .LVU23
  111:lvgl/lv_port_disp.c **** 
- 103              		.loc 1 111 23 is_stmt 0 view .LVU21
- 104 002a E560     		str	r5, [r4, #12]
+ 134              		.loc 1 111 23 is_stmt 0 view .LVU24
+ 135 002e E560     		str	r5, [r4, #12]
  114:lvgl/lv_port_disp.c **** 
- 105              		.loc 1 114 5 is_stmt 1 view .LVU22
+ 136              		.loc 1 114 5 is_stmt 1 view .LVU25
  114:lvgl/lv_port_disp.c **** 
- 106              		.loc 1 114 27 is_stmt 0 view .LVU23
- 107 002c 237C     		ldrb	r3, [r4, #16]	@ zero_extendqisi2
- 108 002e 43F00203 		orr	r3, r3, #2
- 109 0032 2374     		strb	r3, [r4, #16]
+ 137              		.loc 1 114 27 is_stmt 0 view .LVU26
+ 138 0030 237C     		ldrb	r3, [r4, #16]	@ zero_extendqisi2
+ 139 0032 43F00203 		orr	r3, r3, #2
+ 140 0036 2374     		strb	r3, [r4, #16]
  122:lvgl/lv_port_disp.c **** }
- 110              		.loc 1 122 5 is_stmt 1 view .LVU24
- 111 0034 2046     		mov	r0, r4
- 112 0036 FFF7FEFF 		bl	lv_disp_drv_register
- 113              	.LVL4:
+ 141              		.loc 1 122 5 is_stmt 1 view .LVU27
+ 142 0038 2046     		mov	r0, r4
+ 143 003a FFF7FEFF 		bl	lv_disp_drv_register
+ 144              	.LVL6:
  123:lvgl/lv_port_disp.c **** 
- 114              		.loc 1 123 1 is_stmt 0 view .LVU25
- 115 003a 38BD     		pop	{r3, r4, r5, pc}
- 116              	.L8:
- 117              		.align	2
- 118              	.L7:
- 119 003c 00000000 		.word	.LANCHOR0
- 120 0040 008025C0 		.word	-1071284224
- 121 0044 00C012C0 		.word	-1072513024
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc47X8dE.s 			page 6
-
-
- 122 0048 00000000 		.word	.LANCHOR1
- 123 004c 00000000 		.word	disp_flush
- 124              		.cfi_endproc
- 125              	.LFE351:
- 127              		.section	.text.HAL_LTDC_LineEventCallback,"ax",%progbits
- 128              		.align	1
- 129              		.global	HAL_LTDC_LineEventCallback
- 130              		.syntax unified
- 131              		.thumb
- 132              		.thumb_func
- 134              	HAL_LTDC_LineEventCallback:
- 135              	.LVL5:
- 136              	.LFB354:
- 148:lvgl/lv_port_disp.c **** 
+ 145              		.loc 1 123 1 is_stmt 0 view .LVU28
+ 146 003e 38BD     		pop	{r3, r4, r5, pc}
+ 147              	.L12:
+ 148              		.align	2
+ 149              	.L11:
+ 150 0040 00000000 		.word	.LANCHOR0
+ 151 0044 008025C0 		.word	-1071284224
+ 152 0048 00C012C0 		.word	-1072513024
+ 153 004c 00000000 		.word	.LANCHOR1
+ 154 0050 00000000 		.word	disp_flush
+ 155              		.cfi_endproc
+ 156              	.LFE351:
+ 158              		.section	.text.HAL_LTDC_LineEventCallback,"ax",%progbits
+ 159              		.align	1
+ 160              		.global	HAL_LTDC_LineEventCallback
+ 161              		.syntax unified
+ 162              		.thumb
+ 163              		.thumb_func
+ 165              	HAL_LTDC_LineEventCallback:
+ 166              	.LVL7:
+ 167              	.LFB354:
+ 147:lvgl/lv_port_disp.c **** 
+ 148:lvgl/lv_port_disp.c **** /*OPTIONAL: GPU INTERFACE*/
  149:lvgl/lv_port_disp.c **** 
  150:lvgl/lv_port_disp.c **** /**
  151:lvgl/lv_port_disp.c ****   * @brief  Line Event callback.
@@ -324,99 +356,109 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc47X8dE.s 			page 1
  155:lvgl/lv_port_disp.c ****   */
  156:lvgl/lv_port_disp.c **** void HAL_LTDC_LineEvenCallback(LTDC_HandleTypeDef *hltdc)
  157:lvgl/lv_port_disp.c **** {   
- 137              		.loc 1 157 1 is_stmt 1 view -0
- 138              		.cfi_startproc
- 139              		@ args = 0, pretend = 0, frame = 0
- 140              		@ frame_needed = 0, uses_anonymous_args = 0
- 141              		.loc 1 157 1 is_stmt 0 view .LVU27
- 142 0000 08B5     		push	{r3, lr}
- 143              		.cfi_def_cfa_offset 8
- 144              		.cfi_offset 3, -8
- 145              		.cfi_offset 14, -4
+ 168              		.loc 1 157 1 is_stmt 1 view -0
+ 169              		.cfi_startproc
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccxvgB9G.s 			page 7
+
+
+ 170              		@ args = 0, pretend = 0, frame = 0
+ 171              		@ frame_needed = 0, uses_anonymous_args = 0
+ 172              		.loc 1 157 1 is_stmt 0 view .LVU30
+ 173 0000 08B5     		push	{r3, lr}
+ 174              		.cfi_def_cfa_offset 8
+ 175              		.cfi_offset 3, -8
+ 176              		.cfi_offset 14, -4
  158:lvgl/lv_port_disp.c **** 	// 重新载入参数，新显存地址生效，此时显示才会更新
- 159:lvgl/lv_port_disp.c **** 	// 每次进入中断才会更新显示，这样能有效避免撕裂现象	
- 160:lvgl/lv_port_disp.c **** 	__HAL_LTDC_RELOAD_CONFIG(hltdc);						
- 146              		.loc 1 160 2 is_stmt 1 view .LVU28
- 147 0002 0268     		ldr	r2, [r0]
- 148 0004 536A     		ldr	r3, [r2, #36]
- 149 0006 43F00103 		orr	r3, r3, #1
- 150 000a 5362     		str	r3, [r2, #36]
- 161:lvgl/lv_port_disp.c **** 	HAL_LTDC_ProgramLineEvent(hltdc, 0);
- 151              		.loc 1 161 2 view .LVU29
- 152 000c 0021     		movs	r1, #0
- 153 000e FFF7FEFF 		bl	HAL_LTDC_ProgramLineEvent
- 154              	.LVL6:
- 162:lvgl/lv_port_disp.c **** //	lv_disp_flush_ready(disp_drv_user);		// 刷新完成	
- 163:lvgl/lv_port_disp.c **** }
- 155              		.loc 1 163 1 is_stmt 0 view .LVU30
- 156 0012 08BD     		pop	{r3, pc}
- 157              		.cfi_endproc
- 158              	.LFE354:
- 160              		.section	.bss.disp_drv.0,"aw",%nobits
- 161              		.align	2
- 162              		.set	.LANCHOR1,. + 0
- 165              	disp_drv.0:
- 166 0000 00000000 		.space	80
- 166      00000000 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc47X8dE.s 			page 7
+ 159:lvgl/lv_port_disp.c **** 	// 每次进入中断才会更新显示，这样能有效避免撕裂现象
+ 160:lvgl/lv_port_disp.c **** 	__HAL_LTDC_RELOAD_CONFIG(hltdc);			
+ 177              		.loc 1 160 2 is_stmt 1 view .LVU31
+ 178 0002 0268     		ldr	r2, [r0]
+ 179 0004 536A     		ldr	r3, [r2, #36]
+ 180 0006 43F00103 		orr	r3, r3, #1
+ 181 000a 5362     		str	r3, [r2, #36]
+ 161:lvgl/lv_port_disp.c **** 	HAL_LTDC_ProgramLineEvent(hltdc, 0);	// 重新设置中断	
+ 182              		.loc 1 161 2 view .LVU32
+ 183 000c 0021     		movs	r1, #0
+ 184 000e FFF7FEFF 		bl	HAL_LTDC_ProgramLineEvent
+ 185              	.LVL8:
+ 162:lvgl/lv_port_disp.c **** }
+ 186              		.loc 1 162 1 is_stmt 0 view .LVU33
+ 187 0012 08BD     		pop	{r3, pc}
+ 188              		.cfi_endproc
+ 189              	.LFE354:
+ 191              		.section	.bss.disp_drv.0,"aw",%nobits
+ 192              		.align	2
+ 193              		.set	.LANCHOR1,. + 0
+ 196              	disp_drv.0:
+ 197 0000 00000000 		.space	80
+ 197      00000000 
+ 197      00000000 
+ 197      00000000 
+ 197      00000000 
+ 198              		.section	.bss.draw_buf_dsc_3.1,"aw",%nobits
+ 199              		.align	2
+ 200              		.set	.LANCHOR0,. + 0
+ 203              	draw_buf_dsc_3.1:
+ 204 0000 00000000 		.space	28
+ 204      00000000 
+ 204      00000000 
+ 204      00000000 
+ 204      00000000 
+ 205              		.text
+ 206              	.Letext0:
+ 207              		.file 2 "c:\\tools\\gcc-arm-none-eabi\\arm-none-eabi\\include\\machine\\_default_types.h"
+ 208              		.file 3 "c:\\tools\\gcc-arm-none-eabi\\arm-none-eabi\\include\\sys\\_stdint.h"
+ 209              		.file 4 "lvgl/src/misc/lv_types.h"
+ 210              		.file 5 "c:\\tools\\gcc-arm-none-eabi\\lib\\gcc\\arm-none-eabi\\10.3.1\\include\\stddef.h"
+ 211              		.file 6 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\misc\\lv_area.h"
+ 212              		.file 7 "lvgl/src/hal/../draw/../misc/../font/lv_font.h"
+ 213              		.file 8 "lvgl/src/hal/../draw/../misc/lv_color.h"
+ 214              		.file 9 "lvgl/src/hal/../draw/../misc/lv_txt.h"
+ 215              		.file 10 "lvgl/src/hal/../draw/../misc/lv_bidi.h"
+ 216              		.file 11 "lvgl/src/hal/../draw/../misc/lv_style.h"
+ 217              		.file 12 "lvgl/src/hal/../draw/lv_img_buf.h"
+ 218              		.file 13 "lvgl/src/hal/../draw/lv_draw_rect.h"
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccxvgB9G.s 			page 8
 
 
- 166      00000000 
- 166      00000000 
- 166      00000000 
- 167              		.section	.bss.draw_buf_dsc_3.1,"aw",%nobits
- 168              		.align	2
- 169              		.set	.LANCHOR0,. + 0
- 172              	draw_buf_dsc_3.1:
- 173 0000 00000000 		.space	28
- 173      00000000 
- 173      00000000 
- 173      00000000 
- 173      00000000 
- 174              		.text
- 175              	.Letext0:
- 176              		.file 2 "c:\\tools\\gcc-arm-none-eabi\\arm-none-eabi\\include\\machine\\_default_types.h"
- 177              		.file 3 "c:\\tools\\gcc-arm-none-eabi\\arm-none-eabi\\include\\sys\\_stdint.h"
- 178              		.file 4 "lvgl/demos/benchmark/../../src/misc/lv_types.h"
- 179              		.file 5 "c:\\tools\\gcc-arm-none-eabi\\lib\\gcc\\arm-none-eabi\\10.3.1\\include\\stddef.h"
- 180              		.file 6 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\misc\\lv_area.h"
- 181              		.file 7 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\font\\lv_font.h"
- 182              		.file 8 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\misc\\lv_color.h"
- 183              		.file 9 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\misc\\lv_txt.h"
- 184              		.file 10 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\misc\\lv_bidi.h"
- 185              		.file 11 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\misc\\lv_style.h"
- 186              		.file 12 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\draw\\lv_img_buf.h"
- 187              		.file 13 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\draw\\lv_draw_rect.h"
- 188              		.file 14 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\draw\\lv_draw_label.h"
- 189              		.file 15 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\draw\\lv_draw_img.h"
- 190              		.file 16 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\draw\\lv_draw_line.h"
- 191              		.file 17 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\draw\\lv_draw_arc.h"
- 192              		.file 18 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\draw\\lv_draw_layer.h"
- 193              		.file 19 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\draw\\lv_draw.h"
- 194              		.file 20 "lvgl/demos/benchmark/../../src/hal/lv_hal_disp.h"
- 195              		.file 21 "Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h743xx.h"
- 196              		.file 22 "Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h"
- 197              		.file 23 "Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_ltdc.h"
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc47X8dE.s 			page 8
+ 219              		.file 14 "lvgl/src/hal/../draw/lv_draw_label.h"
+ 220              		.file 15 "lvgl/src/hal/../draw/lv_draw_img.h"
+ 221              		.file 16 "lvgl/src/hal/../draw/lv_draw_line.h"
+ 222              		.file 17 "lvgl/src/hal/../draw/lv_draw_arc.h"
+ 223              		.file 18 "lvgl/src/hal/../draw/lv_draw_layer.h"
+ 224              		.file 19 "lvgl/src/hal/../draw/lv_draw.h"
+ 225              		.file 20 "lvgl/src/hal/lv_hal_disp.h"
+ 226              		.file 21 "Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h743xx.h"
+ 227              		.file 22 "Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h"
+ 228              		.file 23 "Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma.h"
+ 229              		.file 24 "Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_ltdc.h"
+ 230              		.file 25 "Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim.h"
+ 231              		.file 26 "Core/Inc/tim.h"
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccxvgB9G.s 			page 9
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 lv_port_disp.c
-C:\Users\OSD\AppData\Local\Temp\cc47X8dE.s:19     .text.disp_flush:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cc47X8dE.s:24     .text.disp_flush:00000000 disp_flush
-C:\Users\OSD\AppData\Local\Temp\cc47X8dE.s:49     .text.disp_flush:00000010 $d
-C:\Users\OSD\AppData\Local\Temp\cc47X8dE.s:54     .text.lv_port_disp_init:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cc47X8dE.s:60     .text.lv_port_disp_init:00000000 lv_port_disp_init
-C:\Users\OSD\AppData\Local\Temp\cc47X8dE.s:119    .text.lv_port_disp_init:0000003c $d
-C:\Users\OSD\AppData\Local\Temp\cc47X8dE.s:128    .text.HAL_LTDC_LineEventCallback:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cc47X8dE.s:134    .text.HAL_LTDC_LineEventCallback:00000000 HAL_LTDC_LineEventCallback
-C:\Users\OSD\AppData\Local\Temp\cc47X8dE.s:161    .bss.disp_drv.0:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\cc47X8dE.s:165    .bss.disp_drv.0:00000000 disp_drv.0
-C:\Users\OSD\AppData\Local\Temp\cc47X8dE.s:168    .bss.draw_buf_dsc_3.1:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\cc47X8dE.s:172    .bss.draw_buf_dsc_3.1:00000000 draw_buf_dsc_3.1
+C:\Users\OSD\AppData\Local\Temp\ccxvgB9G.s:19     .text.disp_flush:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccxvgB9G.s:24     .text.disp_flush:00000000 disp_flush
+C:\Users\OSD\AppData\Local\Temp\ccxvgB9G.s:49     .text.disp_flush:00000010 $d
+C:\Users\OSD\AppData\Local\Temp\ccxvgB9G.s:54     .text.disp_init:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccxvgB9G.s:59     .text.disp_init:00000000 disp_init
+C:\Users\OSD\AppData\Local\Temp\ccxvgB9G.s:78     .text.disp_init:0000000c $d
+C:\Users\OSD\AppData\Local\Temp\ccxvgB9G.s:83     .text.lv_port_disp_init:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccxvgB9G.s:89     .text.lv_port_disp_init:00000000 lv_port_disp_init
+C:\Users\OSD\AppData\Local\Temp\ccxvgB9G.s:150    .text.lv_port_disp_init:00000040 $d
+C:\Users\OSD\AppData\Local\Temp\ccxvgB9G.s:159    .text.HAL_LTDC_LineEventCallback:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccxvgB9G.s:165    .text.HAL_LTDC_LineEventCallback:00000000 HAL_LTDC_LineEventCallback
+C:\Users\OSD\AppData\Local\Temp\ccxvgB9G.s:192    .bss.disp_drv.0:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccxvgB9G.s:196    .bss.disp_drv.0:00000000 disp_drv.0
+C:\Users\OSD\AppData\Local\Temp\ccxvgB9G.s:199    .bss.draw_buf_dsc_3.1:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccxvgB9G.s:203    .bss.draw_buf_dsc_3.1:00000000 draw_buf_dsc_3.1
 
 UNDEFINED SYMBOLS
 lv_disp_flush_ready
+HAL_TIM_Base_Start_IT
+htim17
 lv_disp_draw_buf_init
 lv_disp_drv_init
 lv_disp_drv_register

@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchawIzc.s 			page 1
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7Orzw.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchawIzc.s 			page 1
   28:lvgl/src/draw/lv_draw_arc.c **** /**********************
   29:lvgl/src/draw/lv_draw_arc.c ****  *      MACROS
   30:lvgl/src/draw/lv_draw_arc.c ****  **********************/
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchawIzc.s 			page 2
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7Orzw.s 			page 2
 
 
   31:lvgl/src/draw/lv_draw_arc.c **** 
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchawIzc.s 			page 1
   18:lvgl/src/draw/../misc/lv_color.h **** #include "lv_math.h"
   19:lvgl/src/draw/../misc/lv_color.h **** #include "lv_types.h"
   20:lvgl/src/draw/../misc/lv_color.h **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchawIzc.s 			page 3
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7Orzw.s 			page 3
 
 
   21:lvgl/src/draw/../misc/lv_color.h **** /*Error checking*/
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchawIzc.s 			page 1
   75:lvgl/src/draw/../misc/lv_color.h **** * see https://devblogs.microsoft.com/cppblog/msvc-now-correctly-reports-cplusplus
   76:lvgl/src/draw/../misc/lv_color.h **** * so we use _MSC_VER macro instead of __cplusplus
   77:lvgl/src/draw/../misc/lv_color.h **** */
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchawIzc.s 			page 4
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7Orzw.s 			page 4
 
 
   78:lvgl/src/draw/../misc/lv_color.h **** #ifdef _MSC_VER
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchawIzc.s 			page 1
  132:lvgl/src/draw/../misc/lv_color.h **** # define LV_COLOR_SET_G16(c, v) (c).ch.green = (uint8_t)((v) & 0x3FU)
  133:lvgl/src/draw/../misc/lv_color.h **** #else
  134:lvgl/src/draw/../misc/lv_color.h **** # define LV_COLOR_SET_G16(c, v) {(c).ch.green_h = (uint8_t)(((v) >> 3) & 0x7); (c).ch.green_l = (ui
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchawIzc.s 			page 5
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7Orzw.s 			page 5
 
 
  135:lvgl/src/draw/../misc/lv_color.h **** #endif
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchawIzc.s 			page 1
  189:lvgl/src/draw/../misc/lv_color.h **** 
  190:lvgl/src/draw/../misc/lv_color.h **** typedef union {
  191:lvgl/src/draw/../misc/lv_color.h ****     uint8_t full; /*must be declared first to set all bits of byte via initializer list*/
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchawIzc.s 			page 6
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7Orzw.s 			page 6
 
 
  192:lvgl/src/draw/../misc/lv_color.h ****     union {
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchawIzc.s 			page 1
  246:lvgl/src/draw/../misc/lv_color.h **** //! @endcond
  247:lvgl/src/draw/../misc/lv_color.h **** 
  248:lvgl/src/draw/../misc/lv_color.h **** struct _lv_color_filter_dsc_t;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchawIzc.s 			page 7
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7Orzw.s 			page 7
 
 
  249:lvgl/src/draw/../misc/lv_color.h **** 
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchawIzc.s 			page 1
  303:lvgl/src/draw/../misc/lv_color.h ****     if((LV_COLOR_GET_R(color) & 0x4) || (LV_COLOR_GET_G(color) & 0x4) || (LV_COLOR_GET_B(color) & 0
  304:lvgl/src/draw/../misc/lv_color.h ****         return 1;
  305:lvgl/src/draw/../misc/lv_color.h ****     }
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchawIzc.s 			page 8
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7Orzw.s 			page 8
 
 
  306:lvgl/src/draw/../misc/lv_color.h ****     else {
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchawIzc.s 			page 1
  360:lvgl/src/draw/../misc/lv_color.h ****     LV_COLOR_SET_G16(ret, LV_COLOR_GET_G(color) * 9);  /*(2^6 - 1)/(2^3 - 1) = 63/7 = 9*/
  361:lvgl/src/draw/../misc/lv_color.h ****     LV_COLOR_SET_B16(ret, LV_COLOR_GET_B(color) * 10); /*(2^5 - 1)/(2^2 - 1) = 31/3 = 10*/
  362:lvgl/src/draw/../misc/lv_color.h ****     return ret.full;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchawIzc.s 			page 9
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7Orzw.s 			page 9
 
 
  363:lvgl/src/draw/../misc/lv_color.h **** #elif LV_COLOR_DEPTH == 16
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchawIzc.s 			page 1
  417:lvgl/src/draw/../misc/lv_color.h **** 
  418:lvgl/src/draw/../misc/lv_color.h ****     lv_color32_t ret;
  419:lvgl/src/draw/../misc/lv_color.h ****     LV_COLOR_SET_R32(ret, (LV_COLOR_GET_R(color) * 263 + 7) >> 5);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchawIzc.s 			page 10
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7Orzw.s 			page 10
 
 
  420:lvgl/src/draw/../misc/lv_color.h ****     LV_COLOR_SET_G32(ret, (LV_COLOR_GET_G(color) * 259 + 3) >> 6);
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchawIzc.s 			page 1
  474:lvgl/src/draw/../misc/lv_color.h **** static inline void LV_ATTRIBUTE_FAST_MEM lv_color_premult(lv_color_t c, uint8_t mix, uint16_t * out
  475:lvgl/src/draw/../misc/lv_color.h **** {
  476:lvgl/src/draw/../misc/lv_color.h **** #if LV_COLOR_DEPTH != 1
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchawIzc.s 			page 11
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7Orzw.s 			page 11
 
 
  477:lvgl/src/draw/../misc/lv_color.h ****     out[0] = (uint16_t)LV_COLOR_GET_R(c) * mix;
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchawIzc.s 			page 1
  531:lvgl/src/draw/../misc/lv_color.h ****                                                                  lv_color_t fg_color, lv_opa_t fg_o
  532:lvgl/src/draw/../misc/lv_color.h ****                                                                  lv_color_t * res_color, lv_opa_t *
  533:lvgl/src/draw/../misc/lv_color.h **** {
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchawIzc.s 			page 12
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7Orzw.s 			page 12
 
 
  534:lvgl/src/draw/../misc/lv_color.h ****     /*Pick the foreground if it's fully opaque or the Background is fully transparent*/
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchawIzc.s 			page 1
  588:lvgl/src/draw/../misc/lv_color.h ****     lv_color32_t c32;
  589:lvgl/src/draw/../misc/lv_color.h ****     c32.full        = lv_color_to32(color);
  590:lvgl/src/draw/../misc/lv_color.h ****     uint16_t bright = (uint16_t)(3u * LV_COLOR_GET_R32(c32) + LV_COLOR_GET_B32(c32) + 4u * LV_COLOR
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchawIzc.s 			page 13
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7Orzw.s 			page 13
 
 
  591:lvgl/src/draw/../misc/lv_color.h ****     return (uint8_t)(bright >> 3);
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchawIzc.s 			page 1
  645:lvgl/src/draw/../misc/lv_color.h **** //!
  646:lvgl/src/draw/../misc/lv_color.h **** void /* LV_ATTRIBUTE_FAST_MEM */ lv_color_fill(lv_color_t * buf, lv_color_t color, uint32_t px_num)
  647:lvgl/src/draw/../misc/lv_color.h **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchawIzc.s 			page 14
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7Orzw.s 			page 14
 
 
  648:lvgl/src/draw/../misc/lv_color.h **** //! @endcond
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchawIzc.s 			page 1
  700:lvgl/src/draw/../misc/lv_color.h **** {
  701:lvgl/src/draw/../misc/lv_color.h ****     return lv_color_make(0x00, 0x0, 0x00);
   57              		.loc 2 701 5 view .LVU9
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchawIzc.s 			page 15
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7Orzw.s 			page 15
 
 
   58              	.LVL2:
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchawIzc.s 			page 1
  105 0002 82B0     		sub	sp, sp, #8
  106              		.cfi_def_cfa_offset 24
  107 0004 BDF81840 		ldrh	r4, [sp, #24]
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchawIzc.s 			page 16
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7Orzw.s 			page 16
 
 
  108 0008 BDF81C50 		ldrh	r5, [sp, #28]
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchawIzc.s 			page 1
   59:lvgl/src/draw/lv_draw_arc.c **** {
  152              		.loc 1 59 1 is_stmt 1 view -0
  153              		.cfi_startproc
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchawIzc.s 			page 17
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7Orzw.s 			page 17
 
 
  154              		@ args = 16, pretend = 0, frame = 16
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchawIzc.s 			page 1
  196              		.loc 1 71 27 is_stmt 1 discriminator 1 view .LVU42
  197              		.loc 1 71 39 is_stmt 0 discriminator 1 view .LVU43
  198 002e A4F5B474 		sub	r4, r4, #360
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchawIzc.s 			page 18
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7Orzw.s 			page 18
 
 
  199 0032 A4B2     		uxth	r4, r4
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchawIzc.s 			page 1
  243              		.loc 1 65 18 view .LVU60
  244 006c 7380     		strh	r3, [r6, #2]	@ movhi
   66:lvgl/src/draw/lv_draw_arc.c ****         area->y2 = y + rout;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchawIzc.s 			page 19
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7Orzw.s 			page 19
 
 
  245              		.loc 1 66 9 is_stmt 1 view .LVU61
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchawIzc.s 			page 1
  110:lvgl/src/draw/lv_draw_arc.c ****             area->y2 = y + ((lv_trigo_sin(end_angle) * rin) >> LV_TRIGO_SHIFT) + extra_area;
  111:lvgl/src/draw/lv_draw_arc.c ****         }
  112:lvgl/src/draw/lv_draw_arc.c ****     }
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchawIzc.s 			page 20
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7Orzw.s 			page 20
 
 
  113:lvgl/src/draw/lv_draw_arc.c ****     else if(start_quarter == 0 && end_quarter == 1) {
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchawIzc.s 			page 1
  275              	.LVL18:
   76:lvgl/src/draw/lv_draw_arc.c ****     uint8_t start_quarter = start_angle / 90;
  276              		.loc 1 76 5 is_stmt 1 discriminator 4 view .LVU71
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchawIzc.s 			page 21
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7Orzw.s 			page 21
 
 
   76:lvgl/src/draw/lv_draw_arc.c ****     uint8_t start_quarter = start_angle / 90;
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchawIzc.s 			page 1
  316              		.loc 1 98 16 is_stmt 0 view .LVU86
  317 00ba 022B     		cmp	r3, #2
  318 00bc 00F0AE80 		beq	.L41
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchawIzc.s 			page 22
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7Orzw.s 			page 22
 
 
  105:lvgl/src/draw/lv_draw_arc.c ****             area->x1 = x + ((lv_trigo_sin(start_angle + 90) * rin) >> LV_TRIGO_SHIFT) - extra_area;
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchawIzc.s 			page 1
  357 00fa A3EB0903 		sub	r3, r3, r9
  107:lvgl/src/draw/lv_draw_arc.c **** 
  358              		.loc 1 107 22 view .LVU103
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchawIzc.s 			page 23
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7Orzw.s 			page 23
 
 
  359 00fe 7380     		strh	r3, [r6, #2]	@ movhi
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchawIzc.s 			page 1
  398 0136 B5E7     		b	.L13
  399              	.LVL34:
  400              	.L38:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchawIzc.s 			page 24
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7Orzw.s 			page 24
 
 
   81:lvgl/src/draw/lv_draw_arc.c **** 
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchawIzc.s 			page 1
  439 0168 1FFA8BFB 		uxth	fp, fp
  440 016c 0BEBE333 		add	r3, fp, r3, asr #15
   86:lvgl/src/draw/lv_draw_arc.c **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchawIzc.s 			page 25
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7Orzw.s 			page 25
 
 
  441              		.loc 1 86 88 view .LVU135
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchawIzc.s 			page 1
  480              		.loc 1 92 13 is_stmt 1 view .LVU150
   92:lvgl/src/draw/lv_draw_arc.c ****             area->x2 = x + ((lv_trigo_sin(start_angle + 90) * rin) >> LV_TRIGO_SHIFT) + extra_area;
  481              		.loc 1 92 30 is_stmt 0 view .LVU151
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchawIzc.s 			page 26
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7Orzw.s 			page 26
 
 
  482 01ac 20B2     		sxth	r0, r4
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchawIzc.s 			page 1
  520              	.LVL51:
   95:lvgl/src/draw/lv_draw_arc.c ****             area->x1 = x + ((lv_trigo_sin(end_angle + 90) * rout) >> LV_TRIGO_SHIFT) - extra_area;
  521              		.loc 1 95 54 view .LVU168
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchawIzc.s 			page 27
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7Orzw.s 			page 27
 
 
  522 01ec 00FB07F3 		mul	r3, r0, r7
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchawIzc.s 			page 1
  561              		.loc 1 99 26 view .LVU183
  562 022a 1FFA8BFB 		uxth	fp, fp
  563 022e 0BEBE333 		add	r3, fp, r3, asr #15
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchawIzc.s 			page 28
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7Orzw.s 			page 28
 
 
  564 0232 9BB2     		uxth	r3, r3
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchawIzc.s 			page 1
  601              		.loc 1 103 13 is_stmt 1 view .LVU200
  103:lvgl/src/draw/lv_draw_arc.c ****         }
  602              		.loc 1 103 53 is_stmt 0 view .LVU201
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchawIzc.s 			page 29
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7Orzw.s 			page 29
 
 
  603 026e 0AF15A00 		add	r0, r10, #90
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchawIzc.s 			page 1
  644 02aa 00F0E480 		beq	.L45
  143:lvgl/src/draw/lv_draw_arc.c ****         area->y1 = y - rout;
  645              		.loc 1 143 9 is_stmt 1 view .LVU215
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchawIzc.s 			page 30
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7Orzw.s 			page 30
 
 
  143:lvgl/src/draw/lv_draw_arc.c ****         area->y1 = y - rout;
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchawIzc.s 			page 1
  684 02de 0BEBE333 		add	r3, fp, r3, asr #15
  685 02e2 9BB2     		uxth	r3, r3
  114:lvgl/src/draw/lv_draw_arc.c ****         area->y1 = y + ((LV_MIN(lv_trigo_sin(end_angle),
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchawIzc.s 			page 31
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7Orzw.s 			page 31
 
 
  686              		.loc 1 114 82 view .LVU232
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchawIzc.s 			page 1
  727 0324 04F15A00 		add	r0, r4, #90
  117:lvgl/src/draw/lv_draw_arc.c ****         area->y2 = y + rout + extra_area;
  728              		.loc 1 117 26 view .LVU246
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchawIzc.s 			page 32
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7Orzw.s 			page 32
 
 
  729 0328 00B2     		sxth	r0, r0
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchawIzc.s 			page 1
  769 0360 A5EB0905 		sub	r5, r5, r9
  121:lvgl/src/draw/lv_draw_arc.c ****         area->y1 = y + ((lv_trigo_sin(end_angle) * rout) >> LV_TRIGO_SHIFT) - extra_area;
  770              		.loc 1 121 18 view .LVU261
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchawIzc.s 			page 33
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7Orzw.s 			page 33
 
 
  771 0364 3580     		strh	r5, [r6]	@ movhi
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchawIzc.s 			page 1
  813              		.loc 1 124 63 view .LVU273
  814 03ac 00FB07F7 		mul	r7, r0, r7
  815              	.LVL87:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchawIzc.s 			page 34
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7Orzw.s 			page 34
 
 
  123:lvgl/src/draw/lv_draw_arc.c ****                                 lv_trigo_sin(end_angle + 90)) * rin) >> LV_TRIGO_SHIFT) + extra_are
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchawIzc.s 			page 1
  857 03e6 FFF7FEFF 		bl	lv_trigo_sin
  858              	.LVL95:
  128:lvgl/src/draw/lv_draw_arc.c ****         area->y1 = y - rout - extra_area;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchawIzc.s 			page 35
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7Orzw.s 			page 35
 
 
  859              		.loc 1 128 57 view .LVU287
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchawIzc.s 			page 1
  131:lvgl/src/draw/lv_draw_arc.c ****                                lv_trigo_sin(start_angle) * rin) >> LV_TRIGO_SHIFT) + extra_area;
  897              		.loc 1 131 25 is_stmt 0 view .LVU304
  898 042c 0FFA8AFA 		sxth	r10, r10
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchawIzc.s 			page 36
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7Orzw.s 			page 36
 
 
  131:lvgl/src/draw/lv_draw_arc.c ****                                lv_trigo_sin(start_angle) * rin) >> LV_TRIGO_SHIFT) + extra_area;
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchawIzc.s 			page 1
  942              	.LVL104:
  943              	.L45:
  135:lvgl/src/draw/lv_draw_arc.c ****                                 lv_trigo_sin(start_angle + 90)) * rin) >> LV_TRIGO_SHIFT) - extra_a
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchawIzc.s 			page 37
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7Orzw.s 			page 37
 
 
  944              		.loc 1 135 9 is_stmt 1 view .LVU316
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchawIzc.s 			page 1
  986 04b8 20B2     		sxth	r0, r4
  987 04ba FFF7FEFF 		bl	lv_trigo_sin
  988              	.LVL110:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchawIzc.s 			page 38
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7Orzw.s 			page 38
 
 
  137:lvgl/src/draw/lv_draw_arc.c ****         area->x2 = x + rout + extra_area;
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchawIzc.s 			page 1
  1027              		.loc 1 135 26 discriminator 2 view .LVU344
  1028 04f4 0398     		ldr	r0, [sp, #12]
  1029 04f6 FFF7FEFF 		bl	lv_trigo_sin
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchawIzc.s 			page 39
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7Orzw.s 			page 39
 
 
  1030              	.LVL117:
@@ -2306,19 +2306,19 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchawIzc.s 			page 1
  1053              		.file 19 "lvgl/src/draw/lv_draw.h"
  1054              		.file 20 "lvgl/src/draw/../misc/lv_math.h"
  1055              		.file 21 "lvgl/src/draw/../misc/lv_mem.h"
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cchawIzc.s 			page 40
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccP7Orzw.s 			page 40
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 lv_draw_arc.c
-C:\Users\OSD\AppData\Local\Temp\cchawIzc.s:19     .text.lv_draw_arc_dsc_init:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cchawIzc.s:25     .text.lv_draw_arc_dsc_init:00000000 lv_draw_arc_dsc_init
-C:\Users\OSD\AppData\Local\Temp\cchawIzc.s:85     .text.lv_draw_arc:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cchawIzc.s:91     .text.lv_draw_arc:00000000 lv_draw_arc
-C:\Users\OSD\AppData\Local\Temp\cchawIzc.s:143    .text.lv_draw_arc_get_area:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cchawIzc.s:149    .text.lv_draw_arc_get_area:00000000 lv_draw_arc_get_area
-C:\Users\OSD\AppData\Local\Temp\cchawIzc.s:841    .text.lv_draw_arc_get_area:000003d4 $d
-C:\Users\OSD\AppData\Local\Temp\cchawIzc.s:845    .text.lv_draw_arc_get_area:000003d8 $t
+C:\Users\OSD\AppData\Local\Temp\ccP7Orzw.s:19     .text.lv_draw_arc_dsc_init:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccP7Orzw.s:25     .text.lv_draw_arc_dsc_init:00000000 lv_draw_arc_dsc_init
+C:\Users\OSD\AppData\Local\Temp\ccP7Orzw.s:85     .text.lv_draw_arc:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccP7Orzw.s:91     .text.lv_draw_arc:00000000 lv_draw_arc
+C:\Users\OSD\AppData\Local\Temp\ccP7Orzw.s:143    .text.lv_draw_arc_get_area:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccP7Orzw.s:149    .text.lv_draw_arc_get_area:00000000 lv_draw_arc_get_area
+C:\Users\OSD\AppData\Local\Temp\ccP7Orzw.s:841    .text.lv_draw_arc_get_area:000003d4 $d
+C:\Users\OSD\AppData\Local\Temp\ccP7Orzw.s:845    .text.lv_draw_arc_get_area:000003d8 $t
 
 UNDEFINED SYMBOLS
 lv_memset_00

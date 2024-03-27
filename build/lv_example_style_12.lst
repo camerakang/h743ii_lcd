@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc01ieWg.s 			page 1
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnUVPEy.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc01ieWg.s 			page 1
   45 000a 0920     		movs	r0, #9
   46 000c FFF7FEFF 		bl	lv_palette_main
   47              	.LVL1:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc01ieWg.s 			page 2
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnUVPEy.s 			page 2
 
 
   48 0010 0146     		mov	r1, r0
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc01ieWg.s 			page 1
   29:lvgl/examples/styles/../../src/core/lv_disp.h ****     LV_SCR_LOAD_ANIM_NONE,
   30:lvgl/examples/styles/../../src/core/lv_disp.h ****     LV_SCR_LOAD_ANIM_OVER_LEFT,
   31:lvgl/examples/styles/../../src/core/lv_disp.h ****     LV_SCR_LOAD_ANIM_OVER_RIGHT,
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc01ieWg.s 			page 3
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnUVPEy.s 			page 3
 
 
   32:lvgl/examples/styles/../../src/core/lv_disp.h ****     LV_SCR_LOAD_ANIM_OVER_TOP,
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc01ieWg.s 			page 1
   86:lvgl/examples/styles/../../src/core/lv_disp.h **** lv_obj_t * lv_disp_get_layer_sys(lv_disp_t * disp);
   87:lvgl/examples/styles/../../src/core/lv_disp.h **** 
   88:lvgl/examples/styles/../../src/core/lv_disp.h **** /**
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc01ieWg.s 			page 4
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnUVPEy.s 			page 4
 
 
   89:lvgl/examples/styles/../../src/core/lv_disp.h ****  * Set the theme of a display
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc01ieWg.s 			page 1
  143:lvgl/examples/styles/../../src/core/lv_disp.h **** void lv_disp_trig_activity(lv_disp_t * disp);
  144:lvgl/examples/styles/../../src/core/lv_disp.h **** 
  145:lvgl/examples/styles/../../src/core/lv_disp.h **** /**
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc01ieWg.s 			page 5
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnUVPEy.s 			page 5
 
 
  146:lvgl/examples/styles/../../src/core/lv_disp.h ****  * Clean any CPU cache that is related to the display.
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc01ieWg.s 			page 1
   16:lvgl/examples/styles/lv_example_style_12.c ****     lv_obj_add_style(obj, &style, 0);
   85              		.loc 1 16 5 is_stmt 1 view .LVU11
   86 003e 0022     		movs	r2, #0
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc01ieWg.s 			page 6
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnUVPEy.s 			page 6
 
 
   87 0040 2146     		mov	r1, r4
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc01ieWg.s 			page 1
   34:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * GLOBAL PROTOTYPES
   35:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  **********************/
   36:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc01ieWg.s 			page 7
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnUVPEy.s 			page 7
 
 
   37:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** /**
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc01ieWg.s 			page 1
   91:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** /**
   92:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * Set the width of an object
   93:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @param obj       pointer to an object
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc01ieWg.s 			page 8
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnUVPEy.s 			page 8
 
 
   94:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @param w         the new width
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc01ieWg.s 			page 1
  148:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** 
  149:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** /**
  150:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * Update the layout of an object.
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc01ieWg.s 			page 9
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnUVPEy.s 			page 9
 
 
  151:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @param obj      pointer to an object whose children needs to be updated
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc01ieWg.s 			page 1
  106 0056 0023     		movs	r3, #0
  107 0058 1A46     		mov	r2, r3
  108 005a 0921     		movs	r1, #9
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc01ieWg.s 			page 10
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnUVPEy.s 			page 10
 
 
  109 005c 2846     		mov	r0, r5
@@ -581,16 +581,16 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc01ieWg.s 			page 1
  147              		.file 16 "lvgl/examples/styles/../../src/hal/lv_hal_disp.h"
  148              		.file 17 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\misc\\lv_style_gen.h"
  149              		.file 18 "lvgl/examples/styles/../../src/core/lv_obj_style_gen.h"
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc01ieWg.s 			page 11
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnUVPEy.s 			page 11
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 lv_example_style_12.c
-C:\Users\OSD\AppData\Local\Temp\cc01ieWg.s:19     .text.lv_example_style_12:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cc01ieWg.s:25     .text.lv_example_style_12:00000000 lv_example_style_12
-C:\Users\OSD\AppData\Local\Temp\cc01ieWg.s:122    .text.lv_example_style_12:00000064 $d
-C:\Users\OSD\AppData\Local\Temp\cc01ieWg.s:127    .bss.style.0:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\cc01ieWg.s:131    .bss.style.0:00000000 style.0
+C:\Users\OSD\AppData\Local\Temp\ccnUVPEy.s:19     .text.lv_example_style_12:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccnUVPEy.s:25     .text.lv_example_style_12:00000000 lv_example_style_12
+C:\Users\OSD\AppData\Local\Temp\ccnUVPEy.s:122    .text.lv_example_style_12:00000064 $d
+C:\Users\OSD\AppData\Local\Temp\ccnUVPEy.s:127    .bss.style.0:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccnUVPEy.s:131    .bss.style.0:00000000 style.0
 
 UNDEFINED SYMBOLS
 lv_style_init

@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc5KyupI.s 			page 1
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc3mRqF5.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc5KyupI.s 			page 1
   10:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** extern "C" {
   11:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** #endif
   12:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc5KyupI.s 			page 2
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc3mRqF5.s 			page 2
 
 
   13:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /*********************
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc5KyupI.s 			page 1
   67:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
   68:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Make a screen active
   69:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param scr pointer to a screen
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc5KyupI.s 			page 3
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc3mRqF5.s 			page 3
 
 
   70:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc5KyupI.s 			page 1
  124:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param scr pointer to the new screen to load
  125:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param anim_type type of the animation from `lv_scr_load_anim_t`, e.g. `LV_SCR_LOAD_ANIM_MOVE_LE
  126:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param time time of the animation
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc5KyupI.s 			page 4
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc3mRqF5.s 			page 4
 
 
  127:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param delay delay before the transition
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc5KyupI.s 			page 1
  181:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
  182:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** static inline lv_obj_t * lv_scr_act(void)
   40              		.loc 2 182 26 view .LVU2
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc5KyupI.s 			page 5
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc3mRqF5.s 			page 5
 
 
   41              	.LBB9:
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc5KyupI.s 			page 1
   26:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** 
   27:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** typedef void (*lv_layout_update_cb_t)(struct _lv_obj_t *, void * user_data);
   28:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** typedef struct {
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc5KyupI.s 			page 6
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc3mRqF5.s 			page 6
 
 
   29:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****     lv_layout_update_cb_t cb;
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc5KyupI.s 			page 1
   83:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** 
   84:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** /**
   85:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * Recalculate the size of the object
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc5KyupI.s 			page 7
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc3mRqF5.s 			page 7
 
 
   86:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @param obj       pointer to an object
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc5KyupI.s 			page 1
  140:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  */
  141:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** bool lv_obj_is_layout_positioned(const struct _lv_obj_t * obj);
  142:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc5KyupI.s 			page 8
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc3mRqF5.s 			page 8
 
 
  143:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** /**
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc5KyupI.s 			page 1
  197:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @note            if the parent size changes `obj` needs to be aligned manually again
  198:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  */
  199:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** static inline void lv_obj_center(struct _lv_obj_t * obj)
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc5KyupI.s 			page 9
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc3mRqF5.s 			page 9
 
 
   66              		.loc 3 199 20 view .LVU8
@@ -517,13 +517,13 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc5KyupI.s 			page 1
   97              		.file 15 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/core/lv_event.h"
   98              		.file 16 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/hal/lv_hal_disp.h"
   99              		.file 17 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/extra/widgets/spinner/lv_spinner.h"
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc5KyupI.s 			page 10
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc3mRqF5.s 			page 10
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 lv_example_spinner_1.c
-C:\Users\OSD\AppData\Local\Temp\cc5KyupI.s:19     .text.lv_example_spinner_1:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cc5KyupI.s:25     .text.lv_example_spinner_1:00000000 lv_example_spinner_1
+C:\Users\OSD\AppData\Local\Temp\cc3mRqF5.s:19     .text.lv_example_spinner_1:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\cc3mRqF5.s:25     .text.lv_example_spinner_1:00000000 lv_example_spinner_1
 
 UNDEFINED SYMBOLS
 lv_disp_get_default

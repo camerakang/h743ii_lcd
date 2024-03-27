@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 1
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 1
   28:lvgl/src/draw/lv_img_buf.c **** 
   29:lvgl/src/draw/lv_img_buf.c **** /**********************
   30:lvgl/src/draw/lv_img_buf.c ****  *  STATIC VARIABLES
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 2
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s 			page 2
 
 
   31:lvgl/src/draw/lv_img_buf.c ****  **********************/
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 1
   21:lvgl/src/draw/../misc/lv_color.h **** /*Error checking*/
   22:lvgl/src/draw/../misc/lv_color.h **** #if LV_COLOR_DEPTH == 24
   23:lvgl/src/draw/../misc/lv_color.h **** #error "LV_COLOR_DEPTH 24 is deprecated. Use LV_COLOR_DEPTH 32 instead (lv_conf.h)"
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 3
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s 			page 3
 
 
   24:lvgl/src/draw/../misc/lv_color.h **** #endif
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 1
   78:lvgl/src/draw/../misc/lv_color.h **** #ifdef _MSC_VER
   79:lvgl/src/draw/../misc/lv_color.h **** #if _MSC_VER >= 1900 /*Visual Studio 2015*/
   80:lvgl/src/draw/../misc/lv_color.h **** #define _LV_COLOR_HAS_MODERN_CPP 1
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 4
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s 			page 4
 
 
   81:lvgl/src/draw/../misc/lv_color.h **** #endif
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 1
  135:lvgl/src/draw/../misc/lv_color.h **** #endif
  136:lvgl/src/draw/../misc/lv_color.h **** # define LV_COLOR_SET_B16(c, v) (c).ch.blue = (uint8_t)((v) & 0x1FU)
  137:lvgl/src/draw/../misc/lv_color.h **** # define LV_COLOR_SET_A16(c, v) do {} while(0)
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 5
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s 			page 5
 
 
  138:lvgl/src/draw/../misc/lv_color.h **** 
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 1
  192:lvgl/src/draw/../misc/lv_color.h ****     union {
  193:lvgl/src/draw/../misc/lv_color.h ****         uint8_t blue : 1;
  194:lvgl/src/draw/../misc/lv_color.h ****         uint8_t green : 1;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 6
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s 			page 6
 
 
  195:lvgl/src/draw/../misc/lv_color.h ****         uint8_t red : 1;
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 1
  249:lvgl/src/draw/../misc/lv_color.h **** 
  250:lvgl/src/draw/../misc/lv_color.h **** typedef lv_color_t (*lv_color_filter_cb_t)(const struct _lv_color_filter_dsc_t *, lv_color_t, lv_op
  251:lvgl/src/draw/../misc/lv_color.h **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 7
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s 			page 7
 
 
  252:lvgl/src/draw/../misc/lv_color.h **** typedef struct _lv_color_filter_dsc_t {
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 1
  306:lvgl/src/draw/../misc/lv_color.h ****     else {
  307:lvgl/src/draw/../misc/lv_color.h ****         return 0;
  308:lvgl/src/draw/../misc/lv_color.h ****     }
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 8
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s 			page 8
 
 
  309:lvgl/src/draw/../misc/lv_color.h **** #elif LV_COLOR_DEPTH == 16
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 1
  363:lvgl/src/draw/../misc/lv_color.h **** #elif LV_COLOR_DEPTH == 16
  364:lvgl/src/draw/../misc/lv_color.h ****     return color.full;
  365:lvgl/src/draw/../misc/lv_color.h **** #elif LV_COLOR_DEPTH == 32
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 9
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s 			page 9
 
 
  366:lvgl/src/draw/../misc/lv_color.h ****     lv_color16_t ret;
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 1
  420:lvgl/src/draw/../misc/lv_color.h ****     LV_COLOR_SET_G32(ret, (LV_COLOR_GET_G(color) * 259 + 3) >> 6);
  421:lvgl/src/draw/../misc/lv_color.h ****     LV_COLOR_SET_B32(ret, (LV_COLOR_GET_B(color) * 263 + 7) >> 5);
  422:lvgl/src/draw/../misc/lv_color.h ****     LV_COLOR_SET_A32(ret, 0xFF);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 10
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s 			page 10
 
 
  423:lvgl/src/draw/../misc/lv_color.h ****     return ret.full;
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 1
  477:lvgl/src/draw/../misc/lv_color.h ****     out[0] = (uint16_t)LV_COLOR_GET_R(c) * mix;
  478:lvgl/src/draw/../misc/lv_color.h ****     out[1] = (uint16_t)LV_COLOR_GET_G(c) * mix;
  479:lvgl/src/draw/../misc/lv_color.h ****     out[2] = (uint16_t)LV_COLOR_GET_B(c) * mix;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 11
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s 			page 11
 
 
  480:lvgl/src/draw/../misc/lv_color.h **** #else
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 1
  534:lvgl/src/draw/../misc/lv_color.h ****     /*Pick the foreground if it's fully opaque or the Background is fully transparent*/
  535:lvgl/src/draw/../misc/lv_color.h ****     if(fg_opa >= LV_OPA_MAX || bg_opa <= LV_OPA_MIN) {
  536:lvgl/src/draw/../misc/lv_color.h ****         res_color->full = fg_color.full;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 12
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s 			page 12
 
 
  537:lvgl/src/draw/../misc/lv_color.h ****         *res_opa = fg_opa;
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 1
  591:lvgl/src/draw/../misc/lv_color.h ****     return (uint8_t)(bright >> 3);
  592:lvgl/src/draw/../misc/lv_color.h **** }
  593:lvgl/src/draw/../misc/lv_color.h **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 13
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s 			page 13
 
 
  594:lvgl/src/draw/../misc/lv_color.h **** static inline lv_color_t lv_color_make(uint8_t r, uint8_t g, uint8_t b)
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 1
  648:lvgl/src/draw/../misc/lv_color.h **** //! @endcond
  649:lvgl/src/draw/../misc/lv_color.h **** lv_color_t lv_color_lighten(lv_color_t c, lv_opa_t lvl);
  650:lvgl/src/draw/../misc/lv_color.h **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 14
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s 			page 14
 
 
  651:lvgl/src/draw/../misc/lv_color.h **** lv_color_t lv_color_darken(lv_color_t c, lv_opa_t lvl);
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 1
   53              	.LVL1:
   54              	.LBB32:
   55              	.LBB30:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 15
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s 			page 15
 
 
   56              	.LBI30:
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 1
   54:lvgl/src/draw/lv_img_buf.c ****     }
   55:lvgl/src/draw/lv_img_buf.c ****     else if(dsc->header.cf == LV_IMG_CF_INDEXED_1BIT) {
   95              		.loc 1 55 10 is_stmt 1 view .LVU19
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 16
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s 			page 16
 
 
   96              		.loc 1 55 12 is_stmt 0 view .LVU20
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 1
   94:lvgl/src/draw/lv_img_buf.c ****             dsc->header.cf == LV_IMG_CF_ALPHA_4BIT || dsc->header.cf == LV_IMG_CF_ALPHA_8BIT) {
  112              		.loc 1 94 52 is_stmt 0 view .LVU28
  113 0046 A1F10B02 		sub	r2, r1, #11
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 17
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s 			page 17
 
 
  114              	.LVL5:
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 1
  155              		.file 3 "lvgl/src/draw/../misc/lv_mem.h"
    1:lvgl/src/draw/../misc/lv_mem.h **** /**
    2:lvgl/src/draw/../misc/lv_mem.h ****  * @file lv_mem.h
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 18
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s 			page 18
 
 
    3:lvgl/src/draw/../misc/lv_mem.h ****  *
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 1
   57:lvgl/src/draw/../misc/lv_mem.h **** 
   58:lvgl/src/draw/../misc/lv_mem.h **** /**
   59:lvgl/src/draw/../misc/lv_mem.h ****  * Initialize the dyn_mem module (work memory and other variables)
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 19
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s 			page 19
 
 
   60:lvgl/src/draw/../misc/lv_mem.h ****  */
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 1
  114:lvgl/src/draw/../misc/lv_mem.h **** void lv_mem_buf_release(void * p);
  115:lvgl/src/draw/../misc/lv_mem.h **** 
  116:lvgl/src/draw/../misc/lv_mem.h **** /**
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 20
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s 			page 20
 
 
  117:lvgl/src/draw/../misc/lv_mem.h ****  * Free all memory buffers
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 1
  171:lvgl/src/draw/../misc/lv_mem.h ****  * @param len number of byte to set
  172:lvgl/src/draw/../misc/lv_mem.h ****  */
  173:lvgl/src/draw/../misc/lv_mem.h **** static inline void lv_memset_ff(void * dst, size_t len)
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 21
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s 			page 21
 
 
  174:lvgl/src/draw/../misc/lv_mem.h **** {
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 1
  180              		.loc 3 202 9 view .LVU56
  181              		.loc 3 202 12 is_stmt 0 view .LVU57
  182 0084 013B     		subs	r3, r3, #1
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 22
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s 			page 22
 
 
  183              	.LVL17:
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 1
  221 009a 0268     		ldr	r2, [r0]
  222              	.LVL22:
   63:lvgl/src/draw/lv_img_buf.c ****         p_color.full = (buf_u8[px] & (1 << (7 - bit))) >> (7 - bit);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 23
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s 			page 23
 
 
  223              		.loc 1 63 37 view .LVU72
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 1
   68:lvgl/src/draw/lv_img_buf.c ****         x           = x >> 2;
  262              		.loc 1 68 9 view .LVU88
   68:lvgl/src/draw/lv_img_buf.c ****         x           = x >> 2;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 24
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s 			page 24
 
 
  263              		.loc 1 68 17 is_stmt 0 view .LVU89
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 1
   75:lvgl/src/draw/lv_img_buf.c ****     }
  301              		.loc 1 75 22 view .LVU106
  302 00ea 0193     		str	r3, [sp, #4]
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 25
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s 			page 25
 
 
  303              	.LVL35:
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 1
  340              		.loc 1 86 49 view .LVU123
  341 010c C3F10403 		rsb	r3, r3, #4
  342              	.LVL42:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 26
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s 			page 26
 
 
   86:lvgl/src/draw/lv_img_buf.c ****     }
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 1
  382              	.LFE54:
  384              		.section	.text.lv_img_buf_get_px_alpha,"ax",%progbits
  385              		.align	1
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 27
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s 			page 27
 
 
  386              		.global	lv_img_buf_get_px_alpha
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 1
  115:lvgl/src/draw/lv_img_buf.c ****         uint32_t px    = ((dsc->header.w + 7) >> 3) * y + x;
  116:lvgl/src/draw/lv_img_buf.c ****         uint8_t px_opa = (buf_u8[px] & (1 << (7 - bit))) >> (7 - bit);
  117:lvgl/src/draw/lv_img_buf.c ****         return px_opa ? LV_OPA_TRANSP : LV_OPA_COVER;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 28
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s 			page 28
 
 
  118:lvgl/src/draw/lv_img_buf.c ****     }
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 1
  443              		.cfi_remember_state
  444              		.cfi_def_cfa_offset 16
  445              		@ sp needed
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 29
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s 			page 29
 
 
  446 002a 70BD     		pop	{r4, r5, r6, pc}
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 1
  115:lvgl/src/draw/lv_img_buf.c ****         uint8_t px_opa = (buf_u8[px] & (1 << (7 - bit))) >> (7 - bit);
  485              		.loc 1 115 42 view .LVU171
  486 004a 0732     		adds	r2, r2, #7
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 30
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s 			page 30
 
 
  115:lvgl/src/draw/lv_img_buf.c ****         uint8_t px_opa = (buf_u8[px] & (1 << (7 - bit))) >> (7 - bit);
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 1
  117:lvgl/src/draw/lv_img_buf.c ****     }
  526              		.loc 1 117 39 view .LVU187
  527              	.LBE41:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 31
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s 			page 31
 
 
  528              	.LBB42:
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 1
  564              		.loc 1 129 38 view .LVU205
  565 009a 0B40     		ands	r3, r3, r1
  129:lvgl/src/draw/lv_img_buf.c ****         return opa_table[px_opa];
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 32
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s 			page 32
 
 
  566              		.loc 1 129 58 view .LVU206
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 1
  605 00c4 5210     		asrs	r2, r2, #1
  143:lvgl/src/draw/lv_img_buf.c ****         uint8_t px_opa = (buf_u8[px] & (0xF << (4 - bit))) >> (4 - bit);
  606              		.loc 1 143 53 view .LVU222
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 33
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s 			page 33
 
 
  607 00c6 04FB02F2 		mul	r2, r4, r2
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 1
  645 00e8 C2F38A22 		ubfx	r2, r2, #10, #11
  148:lvgl/src/draw/lv_img_buf.c ****         return buf_u8[px];
  646              		.loc 1 148 41 view .LVU239
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 34
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s 			page 34
 
 
  647 00ec 02FB0412 		mla	r2, r2, r4, r1
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 1
  159:lvgl/src/draw/lv_img_buf.c ****     if(dsc->header.cf == LV_IMG_CF_TRUE_COLOR_ALPHA) {
  695              		.loc 1 159 5 is_stmt 1 view .LVU247
  696              		.loc 1 159 23 is_stmt 0 view .LVU248
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 35
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s 			page 35
 
 
  697 0010 0378     		ldrb	r3, [r0]	@ zero_extendqisi2
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 1
  195:lvgl/src/draw/lv_img_buf.c ****          *so the possible real width are 2 ,4, 6 ...*/
  196:lvgl/src/draw/lv_img_buf.c ****         uint32_t px = ((dsc->header.w + 1) >> 1) * y + x;
  197:lvgl/src/draw/lv_img_buf.c ****         buf_u8[px]  = buf_u8[px] & ~(0xF << (4 - bit));
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 36
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s 			page 36
 
 
  198:lvgl/src/draw/lv_img_buf.c ****         buf_u8[px]  = buf_u8[px] | ((opa & 0xF) << (4 - bit));
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 1
  755              		.loc 1 161 68 view .LVU273
  756 004e 00FB06F6 		mul	r6, r0, r6
  161:lvgl/src/draw/lv_img_buf.c ****         buf_u8[px + px_size - 1] = opa;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 37
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s 			page 37
 
 
  757              		.loc 1 161 64 view .LVU274
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 1
  795 0074 07EBE606 		add	r6, r7, r6, asr #3
  796              	.LVL101:
  173:lvgl/src/draw/lv_img_buf.c ****         buf_u8[px]  = buf_u8[px] | ((opa & 0x1) << (7 - bit));
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 38
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s 			page 38
 
 
  797              		.loc 1 173 9 is_stmt 1 view .LVU291
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 1
  836 009c 01F00302 		and	r2, r1, #3
  837              	.LVL108:
  178:lvgl/src/draw/lv_img_buf.c ****         x           = x >> 2;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 39
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s 			page 39
 
 
  838              		.loc 1 178 17 view .LVU308
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 1
  875 00cc 0C43     		orrs	r4, r4, r1
  186:lvgl/src/draw/lv_img_buf.c ****     }
  876              		.loc 1 186 21 view .LVU326
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 40
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s 			page 40
 
 
  877 00ce 08F80640 		strb	r4, [r8, r6]
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 1
  915              	.LVL118:
  197:lvgl/src/draw/lv_img_buf.c ****         buf_u8[px]  = buf_u8[px] | ((opa & 0xF) << (4 - bit));
  916              		.loc 1 197 42 view .LVU343
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 41
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s 			page 41
 
 
  917 00f8 9140     		lsls	r1, r1, r2
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 1
  208:lvgl/src/draw/lv_img_buf.c ****     uint8_t * buf_u8 = (uint8_t *)dsc->data;
  964              		.loc 1 208 5 is_stmt 1 view .LVU352
  965              		.loc 1 208 15 is_stmt 0 view .LVU353
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 42
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s 			page 42
 
 
  966 000c 8568     		ldr	r5, [r0, #8]
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 1
  238:lvgl/src/draw/lv_img_buf.c ****         /*Get the current pixel.
  239:lvgl/src/draw/lv_img_buf.c ****          *dsc->header.w + 3 means rounding up to 4 because the lines are byte aligned
  240:lvgl/src/draw/lv_img_buf.c ****          *so the possible real width are 4, 8 ,12 ...*/
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 43
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s 			page 43
 
 
  241:lvgl/src/draw/lv_img_buf.c ****         uint32_t px = ((dsc->header.w + 3) >> 2) * y + x;
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 1
  211:lvgl/src/draw/lv_img_buf.c ****         uint32_t px     = dsc->header.w * y * px_size + x * px_size;
  1022              		.loc 1 211 9 is_stmt 1 view .LVU376
  211:lvgl/src/draw/lv_img_buf.c ****         uint32_t px     = dsc->header.w * y * px_size + x * px_size;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 44
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s 			page 44
 
 
  1023              		.loc 1 211 27 is_stmt 0 view .LVU377
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 1
  1061              		.loc 3 199 9 is_stmt 1 view .LVU393
  199:lvgl/src/draw/../misc/lv_mem.h ****         d8++;
  1062              		.loc 3 199 15 is_stmt 0 view .LVU394
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 45
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s 			page 45
 
 
  1063 0066 12F8011B 		ldrb	r1, [r2], #1	@ zero_extendqisi2
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 1
  1105              		.loc 1 217 9 is_stmt 1 view .LVU407
  217:lvgl/src/draw/lv_img_buf.c ****         lv_memcpy_small(&buf_u8[px], &c, px_size - 1); /*-1 to not overwrite the alpha value*/
  1106              		.loc 1 217 38 is_stmt 0 view .LVU408
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 46
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s 			page 46
 
 
  1107 0086 3368     		ldr	r3, [r6]
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 1
  201:lvgl/src/draw/../misc/lv_mem.h ****         len--;
  1145              		.loc 3 201 9 view .LVU425
  202:lvgl/src/draw/../misc/lv_mem.h ****     }
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 47
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s 			page 47
 
 
  1146              		.loc 3 202 9 view .LVU426
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 1
  1184              		.loc 1 229 54 view .LVU442
  1185 00c6 07EBE404 		add	r4, r7, r4, asr #3
  1186              	.LVL154:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 48
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s 			page 48
 
 
  230:lvgl/src/draw/lv_img_buf.c ****         buf_u8[px]  = buf_u8[px] | ((c.full & 0x1) << (7 - bit));
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 1
  1224              		.loc 1 235 17 is_stmt 0 view .LVU459
  1225 00ee 04F00301 		and	r1, r4, #3
  1226 00f2 4900     		lsls	r1, r1, #1
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 49
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s 			page 49
 
 
  1227              	.LVL159:
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 1
  1263              		.loc 1 244 44 view .LVU477
  1264 011a 00F00300 		and	r0, r0, #3
  244:lvgl/src/draw/lv_img_buf.c ****     }
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 50
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s 			page 50
 
 
  1265              		.loc 1 244 51 view .LVU478
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 1
  1303 0144 1A57     		ldrsb	r2, [r3, r4]
  255:lvgl/src/draw/lv_img_buf.c ****         buf_u8[px]  = buf_u8[px] | ((c.full & 0xF) << (4 - bit));
  1304              		.loc 1 255 48 view .LVU495
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 51
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s 			page 51
 
 
  1305 0146 C1F10401 		rsb	r1, r1, #4
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 1
  267:lvgl/src/draw/lv_img_buf.c ****     if((dsc->header.cf == LV_IMG_CF_ALPHA_1BIT && id > 1) || (dsc->header.cf == LV_IMG_CF_ALPHA_2BI
  1348              		.loc 1 267 5 view .LVU507
  1349              		.loc 1 267 24 is_stmt 0 view .LVU508
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 52
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s 			page 52
 
 
  1350 0000 0378     		ldrb	r3, [r0]	@ zero_extendqisi2
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 1
  1391              		.loc 3 193 44 is_stmt 1 view .LVU523
  1392              	.LBB63:
  196:lvgl/src/draw/../misc/lv_mem.h **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 53
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s 			page 53
 
 
  1393              		.loc 3 196 21 is_stmt 0 view .LVU524
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 1
  202:lvgl/src/draw/../misc/lv_mem.h ****     }
  1437              		.loc 3 202 12 is_stmt 0 view .LVU537
  1438 0040 013B     		subs	r3, r3, #1
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 54
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s 			page 54
 
 
  1439              	.LVL180:
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 1
  305:lvgl/src/draw/lv_img_buf.c ****     dsc->header.w = w;
  306:lvgl/src/draw/lv_img_buf.c ****     dsc->header.h = h;
  307:lvgl/src/draw/lv_img_buf.c ****     dsc->header.cf = cf;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 55
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s 			page 55
 
 
  308:lvgl/src/draw/lv_img_buf.c ****     return dsc;
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 1
  1508              		.syntax unified
  1509              		.thumb
  1510              		.thumb_func
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 56
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s 			page 56
 
 
  1512              	lv_img_buf_get_img_size:
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 1
  1557              		.loc 1 328 20 is_stmt 0 view .LVU559
  1558 0026 01FB03F0 		mul	r0, r1, r3
  1559 002a 8000     		lsls	r0, r0, #2
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 57
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s 			page 57
 
 
  1560 002c 7047     		bx	lr
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 1
  1606              	.L88:
  337:lvgl/src/draw/lv_img_buf.c ****         case LV_IMG_CF_ALPHA_8BIT:
  338:lvgl/src/draw/lv_img_buf.c ****             return LV_IMG_BUF_SIZE_ALPHA_8BIT(w, h);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 58
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s 			page 58
 
 
  1607              		.loc 1 338 13 is_stmt 1 view .LVU568
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 1
  346:lvgl/src/draw/lv_img_buf.c ****             return LV_IMG_BUF_SIZE_INDEXED_8BIT(w, h);
  1654              		.loc 1 346 13 is_stmt 1 view .LVU576
  1655              		.loc 1 346 20 is_stmt 0 view .LVU577
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 59
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s 			page 59
 
 
  1656 00ae 01FB03F0 		mul	r0, r1, r3
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 1
  283:lvgl/src/draw/lv_img_buf.c ****         return NULL;
  1701              		.loc 1 283 7 is_stmt 0 view .LVU586
  1702 0010 0446     		mov	r4, r0
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 60
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s 			page 60
 
 
  1703 0012 08B3     		cbz	r0, .L111
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 1
  1741 0040 2368     		ldr	r3, [r4]
  1742 0042 67F39423 		bfi	r3, r7, #10, #11
  1743 0046 2360     		str	r3, [r4]
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 61
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s 			page 61
 
 
  306:lvgl/src/draw/lv_img_buf.c ****     dsc->header.cf = cf;
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 1
  1784              		.cfi_endproc
  1785              	.LFE59:
  1787              		.section	.text._lv_img_buf_get_transformed_area,"ax",%progbits
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 62
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s 			page 62
 
 
  1788              		.align	1
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 1
  1834 001e 8180     		strh	r1, [r0, #4]	@ movhi
  360:lvgl/src/draw/lv_img_buf.c ****         res->y2 = h - 1;
  1835              		.loc 1 360 9 is_stmt 1 view .LVU629
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 63
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s 			page 63
 
 
  1836              		.loc 1 360 21 is_stmt 0 view .LVU630
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 1
  1859              		.loc 1 364 16 view .LVU637
  1860 002c ADF80030 		strh	r3, [sp]	@ movhi
  1861 0030 ADF80230 		strh	r3, [sp, #2]	@ movhi
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 64
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s 			page 64
 
 
  1862 0034 ADF80410 		strh	r1, [sp, #4]	@ movhi
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 1
  1907 0086 AB42     		cmp	r3, r5
  1908 0088 A8BF     		it	ge
  1909 008a 2A46     		movge	r2, r5
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 65
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s 			page 65
 
 
  1910 008c BDF90410 		ldrsh	r1, [sp, #4]
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 1
  1956 00e4 3246     		movge	r2, r6
  1957 00e6 92B2     		uxth	r2, r2
  376:lvgl/src/draw/lv_img_buf.c ****     res->y2 = LV_MAX4(p[0].y, p[1].y, p[2].y, p[3].y) + 2;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 66
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s 			page 66
 
 
  1958              		.loc 1 376 55 view .LVU655
@@ -3945,34 +3945,34 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 1
  1992              		.file 7 "lvgl/src/draw/../misc/lv_area.h"
  1993              		.file 8 "lvgl/src/draw/lv_img_buf.h"
  1994              		.file 9 "lvgl/src/draw/lv_draw_img.h"
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s 			page 67
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s 			page 67
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 lv_img_buf.c
-C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s:19     .text.lv_img_buf_get_px_color:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s:25     .text.lv_img_buf_get_px_color:00000000 lv_img_buf_get_px_color
-C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s:385    .text.lv_img_buf_get_px_alpha:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s:391    .text.lv_img_buf_get_px_alpha:00000000 lv_img_buf_get_px_alpha
-C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s:658    .text.lv_img_buf_get_px_alpha:000000f4 $d
-C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s:665    .text.lv_img_buf_set_px_alpha:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s:671    .text.lv_img_buf_set_px_alpha:00000000 lv_img_buf_set_px_alpha
-C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s:937    .text.lv_img_buf_set_px_color:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s:943    .text.lv_img_buf_set_px_color:00000000 lv_img_buf_set_px_color
-C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s:1334   .text.lv_img_buf_set_palette:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s:1340   .text.lv_img_buf_set_palette:00000000 lv_img_buf_set_palette
-C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s:1457   .text.lv_img_buf_free:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s:1463   .text.lv_img_buf_free:00000000 lv_img_buf_free
-C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s:1506   .text.lv_img_buf_get_img_size:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s:1512   .text.lv_img_buf_get_img_size:00000000 lv_img_buf_get_img_size
-C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s:1531   .text.lv_img_buf_get_img_size:0000000c $d
-C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s:1668   .text.lv_img_buf_alloc:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s:1674   .text.lv_img_buf_alloc:00000000 lv_img_buf_alloc
-C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s:1788   .text._lv_img_buf_get_transformed_area:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s:1794   .text._lv_img_buf_get_transformed_area:00000000 _lv_img_buf_get_transformed_area
-C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s:1983   .rodata:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s:1548   .text.lv_img_buf_get_img_size:0000001d $d
-C:\Users\OSD\AppData\Local\Temp\cc67CEc0.s:1548   .text.lv_img_buf_get_img_size:0000001e $t
+C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s:19     .text.lv_img_buf_get_px_color:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s:25     .text.lv_img_buf_get_px_color:00000000 lv_img_buf_get_px_color
+C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s:385    .text.lv_img_buf_get_px_alpha:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s:391    .text.lv_img_buf_get_px_alpha:00000000 lv_img_buf_get_px_alpha
+C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s:658    .text.lv_img_buf_get_px_alpha:000000f4 $d
+C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s:665    .text.lv_img_buf_set_px_alpha:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s:671    .text.lv_img_buf_set_px_alpha:00000000 lv_img_buf_set_px_alpha
+C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s:937    .text.lv_img_buf_set_px_color:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s:943    .text.lv_img_buf_set_px_color:00000000 lv_img_buf_set_px_color
+C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s:1334   .text.lv_img_buf_set_palette:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s:1340   .text.lv_img_buf_set_palette:00000000 lv_img_buf_set_palette
+C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s:1457   .text.lv_img_buf_free:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s:1463   .text.lv_img_buf_free:00000000 lv_img_buf_free
+C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s:1506   .text.lv_img_buf_get_img_size:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s:1512   .text.lv_img_buf_get_img_size:00000000 lv_img_buf_get_img_size
+C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s:1531   .text.lv_img_buf_get_img_size:0000000c $d
+C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s:1668   .text.lv_img_buf_alloc:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s:1674   .text.lv_img_buf_alloc:00000000 lv_img_buf_alloc
+C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s:1788   .text._lv_img_buf_get_transformed_area:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s:1794   .text._lv_img_buf_get_transformed_area:00000000 _lv_img_buf_get_transformed_area
+C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s:1983   .rodata:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s:1548   .text.lv_img_buf_get_img_size:0000001d $d
+C:\Users\OSD\AppData\Local\Temp\cc2Dcl7p.s:1548   .text.lv_img_buf_get_img_size:0000001e $t
 
 UNDEFINED SYMBOLS
 lv_img_cf_get_px_size

@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTa9sJr.s 			page 1
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc99JxkQ.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTa9sJr.s 			page 1
   35              		.align	1
   36              		.global	lv_example_span_1
   37              		.syntax unified
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTa9sJr.s 			page 2
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc99JxkQ.s 			page 2
 
 
   38              		.thumb
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTa9sJr.s 			page 1
    4:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****  */
    5:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h **** 
    6:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h **** #ifndef LV_STYLE_H
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTa9sJr.s 			page 3
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc99JxkQ.s 			page 3
 
 
    7:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h **** #define LV_STYLE_H
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTa9sJr.s 			page 1
   61:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****     }
   62:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h **** #else
   63:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h **** #define LV_STYLE_CONST_INIT(var_name, prop_array)                       \
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTa9sJr.s 			page 4
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc99JxkQ.s 			page 4
 
 
   64:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****     const lv_style_t var_name = {                                       \
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTa9sJr.s 			page 1
  118:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****     LV_BORDER_SIDE_FULL     = 0x0F,
  119:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****     LV_BORDER_SIDE_INTERNAL = 0x10, /**< FOR matrix-like objects (e.g. Button matrix)*/
  120:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h **** };
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTa9sJr.s 			page 5
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc99JxkQ.s 			page 5
 
 
  121:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h **** typedef uint8_t lv_border_side_t;
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTa9sJr.s 			page 1
  175:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****  *
  176:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****  * Props are split into groups of 16. When adding a new prop to a group, ensure it does not overflo
  177:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****  */
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTa9sJr.s 			page 6
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc99JxkQ.s 			page 6
 
 
  178:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h **** typedef enum {
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTa9sJr.s 			page 1
  232:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****     LV_STYLE_SHADOW_OFS_X           = 65,
  233:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****     LV_STYLE_SHADOW_OFS_Y           = 66,
  234:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****     LV_STYLE_SHADOW_SPREAD          = 67,
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTa9sJr.s 			page 7
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc99JxkQ.s 			page 7
 
 
  235:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****     LV_STYLE_SHADOW_COLOR           = 68,
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTa9sJr.s 			page 1
  289:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****     LV_STYLE_RES_FOUND,
  290:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****     LV_STYLE_RES_INHERIT
  291:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h **** };
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTa9sJr.s 			page 8
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc99JxkQ.s 			page 8
 
 
  292:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h **** 
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTa9sJr.s 			page 1
  346:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****  *       because this function won't free the used memory, just sets a default state for the style.
  347:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****  *       In other words be sure to initialize styles only once!
  348:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****  */
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTa9sJr.s 			page 9
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc99JxkQ.s 			page 9
 
 
  349:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h **** void lv_style_init(lv_style_t * style);
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTa9sJr.s 			page 1
  403:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h **** 
  404:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h **** /**
  405:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****  * Get the value of a property
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTa9sJr.s 			page 10
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc99JxkQ.s 			page 10
 
 
  406:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****  * @param style pointer to a style
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTa9sJr.s 			page 1
  460:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****                 *value = (const_prop->prop & LV_STYLE_PROP_META_INITIAL) ? lv_style_prop_get_defaul
  461:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****                 return LV_STYLE_RES_FOUND;
  462:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****             }
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTa9sJr.s 			page 11
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc99JxkQ.s 			page 11
 
 
  463:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****         }
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTa9sJr.s 			page 1
  517:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****  * @return the flags of the property
  518:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****  */
  519:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h **** uint8_t _lv_style_prop_lookup_flags(lv_style_prop_t prop);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTa9sJr.s 			page 12
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc99JxkQ.s 			page 12
 
 
  520:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h **** 
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTa9sJr.s 			page 1
    9:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** #ifdef __cplusplus
   10:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** extern "C" {
   11:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** #endif
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTa9sJr.s 			page 13
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc99JxkQ.s 			page 13
 
 
   12:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTa9sJr.s 			page 1
   66:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
   67:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
   68:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Make a screen active
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTa9sJr.s 			page 14
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc99JxkQ.s 			page 14
 
 
   69:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param scr pointer to a screen
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTa9sJr.s 			page 1
  123:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Switch screen with animation
  124:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param scr pointer to the new screen to load
  125:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param anim_type type of the animation from `lv_scr_load_anim_t`, e.g. `LV_SCR_LOAD_ANIM_MOVE_LE
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTa9sJr.s 			page 15
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc99JxkQ.s 			page 15
 
 
  126:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param time time of the animation
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTa9sJr.s 			page 1
  180:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @return pointer to the active screen
  181:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
  182:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** static inline lv_obj_t * lv_scr_act(void)
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTa9sJr.s 			page 16
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc99JxkQ.s 			page 16
 
 
  106              		.loc 3 182 26 view .LVU13
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTa9sJr.s 			page 1
   22:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** /**********************
   23:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  *      TYPEDEFS
   24:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  **********************/
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTa9sJr.s 			page 17
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc99JxkQ.s 			page 17
 
 
   25:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** struct _lv_obj_t;
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTa9sJr.s 			page 1
   79:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  *                  LV_SIZE_PCT(x)     to set size in percentage of the parent's content area size 
   80:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  *                                      x should be in [0..1000]% range
   81:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  */
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTa9sJr.s 			page 18
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc99JxkQ.s 			page 18
 
 
   82:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** void lv_obj_set_size(struct _lv_obj_t * obj, lv_coord_t w, lv_coord_t h);
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTa9sJr.s 			page 1
  136:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** /**
  137:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * Test whether the and object is positioned by a layout or not
  138:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @param obj       pointer to an object to test
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTa9sJr.s 			page 19
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc99JxkQ.s 			page 19
 
 
  139:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @return true:    positioned by a layout; false: not positioned by a layout
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTa9sJr.s 			page 1
  193:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** 
  194:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** /**
  195:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * Align an object to the center on its parent.
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTa9sJr.s 			page 20
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc99JxkQ.s 			page 20
 
 
  196:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @param obj       pointer to an object to align
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTa9sJr.s 			page 1
  174 0096 2046     		mov	r0, r4
  175 0098 FFF7FEFF 		bl	lv_spangroup_new_span
  176              	.LVL20:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTa9sJr.s 			page 21
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc99JxkQ.s 			page 21
 
 
  177 009c 0546     		mov	r5, r0
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTa9sJr.s 			page 1
  220 00da 05F10800 		add	r0, r5, #8
  221 00de FFF7FEFF 		bl	lv_style_set_text_color
  222              	.LVL32:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTa9sJr.s 			page 22
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc99JxkQ.s 			page 22
 
 
   38:lvgl/examples/widgets/span/lv_example_span_1.c **** 
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTa9sJr.s 			page 1
  265 011e 0121     		movs	r1, #1
  266 0120 2846     		mov	r0, r5
  267 0122 FFF7FEFF 		bl	lv_style_set_text_decor
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTa9sJr.s 			page 23
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc99JxkQ.s 			page 23
 
 
  268              	.LVL44:
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTa9sJr.s 			page 1
  317              		.file 8 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\misc\\lv_color.h"
  318              		.file 9 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\misc\\lv_txt.h"
  319              		.file 10 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/core/lv_obj.h"
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTa9sJr.s 			page 24
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc99JxkQ.s 			page 24
 
 
  320              		.file 11 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\misc\\lv_ll.h"
@@ -1390,17 +1390,17 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTa9sJr.s 			page 1
  326              		.file 17 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/extra/widgets/span/lv_span.h"
  327              		.file 18 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\misc\\lv_style_gen.h"
  328              		.file 19 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/hal/lv_hal_disp.h"
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTa9sJr.s 			page 25
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc99JxkQ.s 			page 25
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 lv_example_span_1.c
-C:\Users\OSD\AppData\Local\Temp\ccTa9sJr.s:19     .rodata.lv_example_span_1.str1.4:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\ccTa9sJr.s:35     .text.lv_example_span_1:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccTa9sJr.s:41     .text.lv_example_span_1:00000000 lv_example_span_1
-C:\Users\OSD\AppData\Local\Temp\ccTa9sJr.s:296    .text.lv_example_span_1:00000148 $d
-C:\Users\OSD\AppData\Local\Temp\ccTa9sJr.s:306    .bss.style.0:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\ccTa9sJr.s:310    .bss.style.0:00000000 style.0
+C:\Users\OSD\AppData\Local\Temp\cc99JxkQ.s:19     .rodata.lv_example_span_1.str1.4:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\cc99JxkQ.s:35     .text.lv_example_span_1:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\cc99JxkQ.s:41     .text.lv_example_span_1:00000000 lv_example_span_1
+C:\Users\OSD\AppData\Local\Temp\cc99JxkQ.s:296    .text.lv_example_span_1:00000148 $d
+C:\Users\OSD\AppData\Local\Temp\cc99JxkQ.s:306    .bss.style.0:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\cc99JxkQ.s:310    .bss.style.0:00000000 style.0
 
 UNDEFINED SYMBOLS
 lv_style_init

@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc0dBc4V.s 			page 1
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccAFqXfg.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc0dBc4V.s 			page 1
   44 0008 08BD     		pop	{r3, pc}
   45              		.cfi_endproc
   46              	.LFE205:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc0dBc4V.s 			page 2
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccAFqXfg.s 			page 2
 
 
   48              		.section	.text.set_angle,"ax",%progbits
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc0dBc4V.s 			page 1
   94 0002 92B0     		sub	sp, sp, #72
   95              		.cfi_def_cfa_offset 80
   19:lvgl/examples/widgets/img/lv_example_img_3.c ****     LV_IMG_DECLARE(img_cogwheel_argb);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc0dBc4V.s 			page 3
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccAFqXfg.s 			page 3
 
 
   96              		.loc 1 19 5 view .LVU11
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc0dBc4V.s 			page 1
   46:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
   47:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**********************
   48:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * GLOBAL PROTOTYPES
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc0dBc4V.s 			page 4
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccAFqXfg.s 			page 4
 
 
   49:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  **********************/
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc0dBc4V.s 			page 1
  103:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to a display
  104:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param color color of the background
  105:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc0dBc4V.s 			page 5
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccAFqXfg.s 			page 5
 
 
  106:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** void lv_disp_set_bg_color(lv_disp_t * disp, lv_color_t color);
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc0dBc4V.s 			page 1
  160:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to a display (NULL to use the default display)
  161:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @return return true if invalidation is enabled
  162:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc0dBc4V.s 			page 6
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccAFqXfg.s 			page 6
 
 
  163:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** bool lv_disp_is_invalidation_enabled(lv_disp_t * disp);
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc0dBc4V.s 			page 1
  131 0028 2046     		mov	r0, r4
  132 002a FFF7FEFF 		bl	lv_img_set_pivot
  133              	.LVL12:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc0dBc4V.s 			page 7
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccAFqXfg.s 			page 7
 
 
   26:lvgl/examples/widgets/img/lv_example_img_3.c **** 
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc0dBc4V.s 			page 1
   42:d:\kzc\stm32\h743ii_lcd\lvgl\src/misc\lv_anim.h **** struct _lv_anim_t;
   43:d:\kzc\stm32\h743ii_lcd\lvgl\src/misc\lv_anim.h **** struct _lv_timer_t;
   44:d:\kzc\stm32\h743ii_lcd\lvgl\src/misc\lv_anim.h **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc0dBc4V.s 			page 8
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccAFqXfg.s 			page 8
 
 
   45:d:\kzc\stm32\h743ii_lcd\lvgl\src/misc\lv_anim.h **** /** Get the current value during an animation*/
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc0dBc4V.s 			page 1
   99:d:\kzc\stm32\h743ii_lcd\lvgl\src/misc\lv_anim.h **** } lv_anim_t;
  100:d:\kzc\stm32\h743ii_lcd\lvgl\src/misc\lv_anim.h **** 
  101:d:\kzc\stm32\h743ii_lcd\lvgl\src/misc\lv_anim.h **** /**********************
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc0dBc4V.s 			page 9
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccAFqXfg.s 			page 9
 
 
  102:d:\kzc\stm32\h743ii_lcd\lvgl\src/misc\lv_anim.h ****  * GLOBAL PROTOTYPES
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc0dBc4V.s 			page 1
  157              		.loc 3 140 5 view .LVU30
  158              		.loc 3 140 16 is_stmt 0 view .LVU31
  159 0036 124B     		ldr	r3, .L7+4
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc0dBc4V.s 			page 10
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccAFqXfg.s 			page 10
 
 
  160 0038 0293     		str	r3, [sp, #8]
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc0dBc4V.s 			page 1
  180 0044 0B93     		str	r3, [sp, #44]
  181              	.LVL16:
  182              		.loc 3 173 18 view .LVU41
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc0dBc4V.s 			page 11
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccAFqXfg.s 			page 11
 
 
  183              	.LBE43:
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc0dBc4V.s 			page 1
  204:d:\kzc\stm32\h743ii_lcd\lvgl\src/misc\lv_anim.h ****  * @param start_cb  a function call when the animation starts
  205:d:\kzc\stm32\h743ii_lcd\lvgl\src/misc\lv_anim.h ****  */
  206:d:\kzc\stm32\h743ii_lcd\lvgl\src/misc\lv_anim.h **** static inline void lv_anim_set_start_cb(lv_anim_t * a, lv_anim_start_cb_t start_cb)
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc0dBc4V.s 			page 12
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccAFqXfg.s 			page 12
 
 
  207:d:\kzc\stm32\h743ii_lcd\lvgl\src/misc\lv_anim.h **** {
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc0dBc4V.s 			page 1
  261:d:\kzc\stm32\h743ii_lcd\lvgl\src/misc\lv_anim.h **** 
  262:d:\kzc\stm32\h743ii_lcd\lvgl\src/misc\lv_anim.h **** /**
  263:d:\kzc\stm32\h743ii_lcd\lvgl\src/misc\lv_anim.h ****  * Make the animation repeat itself.
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc0dBc4V.s 			page 13
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccAFqXfg.s 			page 13
 
 
  264:d:\kzc\stm32\h743ii_lcd\lvgl\src/misc\lv_anim.h ****  * @param a         pointer to an initialized `lv_anim_t` variable
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc0dBc4V.s 			page 1
  237              		.loc 3 172 5 is_stmt 1 view .LVU62
  172:d:\kzc\stm32\h743ii_lcd\lvgl\src/misc\lv_anim.h ****     a->end_value = end;
  238              		.loc 3 172 22 is_stmt 0 view .LVU63
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc0dBc4V.s 			page 14
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccAFqXfg.s 			page 14
 
 
  239 0062 0A93     		str	r3, [sp, #40]
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc0dBc4V.s 			page 1
  284              		.file 5 "c:\\tools\\gcc-arm-none-eabi\\arm-none-eabi\\include\\sys\\_stdint.h"
  285              		.file 6 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\misc\\lv_area.h"
  286              		.file 7 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\misc\\lv_color.h"
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc0dBc4V.s 			page 15
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccAFqXfg.s 			page 15
 
 
  287              		.file 8 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\misc\\lv_style.h"
@@ -853,18 +853,18 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc0dBc4V.s 			page 1
  296              		.file 17 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/hal/lv_hal_disp.h"
  297              		.file 18 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/widgets/lv_img.h"
  298              		.file 19 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\core\\lv_obj_pos.h"
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc0dBc4V.s 			page 16
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccAFqXfg.s 			page 16
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 lv_example_img_3.c
-C:\Users\OSD\AppData\Local\Temp\cc0dBc4V.s:19     .text.set_zoom:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cc0dBc4V.s:24     .text.set_zoom:00000000 set_zoom
-C:\Users\OSD\AppData\Local\Temp\cc0dBc4V.s:49     .text.set_angle:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cc0dBc4V.s:54     .text.set_angle:00000000 set_angle
-C:\Users\OSD\AppData\Local\Temp\cc0dBc4V.s:78     .text.lv_example_img_3:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cc0dBc4V.s:84     .text.lv_example_img_3:00000000 lv_example_img_3
-C:\Users\OSD\AppData\Local\Temp\cc0dBc4V.s:275    .text.lv_example_img_3:0000007c $d
+C:\Users\OSD\AppData\Local\Temp\ccAFqXfg.s:19     .text.set_zoom:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccAFqXfg.s:24     .text.set_zoom:00000000 set_zoom
+C:\Users\OSD\AppData\Local\Temp\ccAFqXfg.s:49     .text.set_angle:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccAFqXfg.s:54     .text.set_angle:00000000 set_angle
+C:\Users\OSD\AppData\Local\Temp\ccAFqXfg.s:78     .text.lv_example_img_3:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccAFqXfg.s:84     .text.lv_example_img_3:00000000 lv_example_img_3
+C:\Users\OSD\AppData\Local\Temp\ccAFqXfg.s:275    .text.lv_example_img_3:0000007c $d
 
 UNDEFINED SYMBOLS
 lv_img_set_zoom

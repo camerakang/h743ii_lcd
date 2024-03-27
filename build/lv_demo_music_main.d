@@ -224,8 +224,11 @@ build/lv_demo_music_main.o: lvgl/demos/music/lv_demo_music_main.c \
  d:\kzc\stm32\h743ii_lcd\lvgl\src\lvgl.h \
  lvgl/demos/music/../../src/extra/widgets/span/lv_span.h \
  d:\kzc\stm32\h743ii_lcd\lvgl\src\lvgl.h \
- lvgl/demos/music/../widgets/lv_demo_widgets.h \
- lvgl/demos/music/../widgets/../lv_demos.h
+ lvgl/demos/music/../music/lv_demo_music.h \
+ lvgl/demos/music/lv_demo_music_list.h \
+ lvgl/demos/music/assets/spectrum_1.h \
+ lvgl/demos/music/assets/spectrum_2.h \
+ lvgl/demos/music/assets/spectrum_3.h
 lvgl/demos/music/lv_demo_music_main.h:
 lvgl/demos/music/lv_demo_music.h:
 lvgl/demos/music/../lv_demos.h:
@@ -454,5 +457,8 @@ lvgl/demos/music/../../src/extra/widgets/imgbtn/lv_imgbtn.h:
 d:\kzc\stm32\h743ii_lcd\lvgl\src\lvgl.h:
 lvgl/demos/music/../../src/extra/widgets/span/lv_span.h:
 d:\kzc\stm32\h743ii_lcd\lvgl\src\lvgl.h:
-lvgl/demos/music/../widgets/lv_demo_widgets.h:
-lvgl/demos/music/../widgets/../lv_demos.h:
+lvgl/demos/music/../music/lv_demo_music.h:
+lvgl/demos/music/lv_demo_music_list.h:
+lvgl/demos/music/assets/spectrum_1.h:
+lvgl/demos/music/assets/spectrum_2.h:
+lvgl/demos/music/assets/spectrum_3.h:

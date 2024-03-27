@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDUSLEU.s 			page 1
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccX3aB4g.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDUSLEU.s 			page 1
   50              	.LVL2:
    7:lvgl/examples/widgets/table/lv_example_table_1.c ****     lv_obj_draw_part_dsc_t * dsc = lv_event_get_draw_part_dsc(e);
   51              		.loc 1 7 5 is_stmt 1 view .LVU5
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDUSLEU.s 			page 2
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccX3aB4g.s 			page 2
 
 
   52              		.loc 1 7 36 is_stmt 0 view .LVU6
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDUSLEU.s 			page 1
   10:lvgl/examples/widgets/table/lv_example_table_1.c ****         uint32_t row = dsc->id /  lv_table_get_col_cnt(obj);
   80              		.loc 1 10 35 view .LVU16
   81 0024 FFF7FEFF 		bl	lv_table_get_col_cnt
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDUSLEU.s 			page 3
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccX3aB4g.s 			page 3
 
 
   82              	.LVL9:
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDUSLEU.s 			page 1
  121              	.LVL15:
   26:lvgl/examples/widgets/table/lv_example_table_1.c ****             dsc->rect_dsc->bg_opa = LV_OPA_COVER;
  122              		.loc 1 26 89 view .LVU32
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDUSLEU.s 			page 4
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccX3aB4g.s 			page 4
 
 
  123 0056 2569     		ldr	r5, [r4, #16]
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDUSLEU.s 			page 1
   49:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     LV_OPA_60     = 153,
   50:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     LV_OPA_70     = 178,
   51:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     LV_OPA_80     = 204,
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDUSLEU.s 			page 5
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccX3aB4g.s 			page 5
 
 
   52:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     LV_OPA_90     = 229,
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDUSLEU.s 			page 1
  106:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** # define LV_COLOR_SET_B1(c, v) (c).ch.blue = (uint8_t)((v) & 0x1)
  107:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** # define LV_COLOR_SET_A1(c, v) do {} while(0)
  108:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDUSLEU.s 			page 6
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccX3aB4g.s 			page 6
 
 
  109:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** # define LV_COLOR_GET_R1(c) (c).ch.red
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDUSLEU.s 			page 1
  163:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** # define LV_COLOR_GET_B32(c) (c).ch.blue
  164:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** # define LV_COLOR_GET_A32(c) (c).ch.alpha
  165:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDUSLEU.s 			page 7
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccX3aB4g.s 			page 7
 
 
  166:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** # define _LV_COLOR_ZERO_INITIALIZER32  {{0x00, 0x00, 0x00, 0x00}}
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDUSLEU.s 			page 1
  220:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     } ch;
  221:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     uint16_t full;
  222:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** } lv_color16_t;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDUSLEU.s 			page 8
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccX3aB4g.s 			page 8
 
 
  223:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDUSLEU.s 			page 1
  277:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     _LV_PALETTE_LAST,
  278:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     LV_PALETTE_NONE = 0xff,
  279:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** } lv_palette_t;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDUSLEU.s 			page 9
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccX3aB4g.s 			page 9
 
 
  280:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDUSLEU.s 			page 1
  334:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     return color.full;
  335:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #elif LV_COLOR_DEPTH == 16
  336:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     lv_color8_t ret;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDUSLEU.s 			page 10
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccX3aB4g.s 			page 10
 
 
  337:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     LV_COLOR_SET_R8(ret, LV_COLOR_GET_R(color) >> 2); /*5 - 3  = 2*/
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDUSLEU.s 			page 1
  391:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****      *  valueto = valuefrom * ( (2^bitsto - 1) / (float)(2^bitsfrom - 1) )
  392:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****      * The faster integer math for conversion is:
  393:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****      *  valueto = ( valuefrom * multiplier + adder ) >> divisor
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDUSLEU.s 			page 11
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccX3aB4g.s 			page 11
 
 
  394:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****      *   multiplier = FLOOR( ( (2^bitsto - 1) << divisor ) / (float)(2^bitsfrom - 1) )
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDUSLEU.s 			page 1
  445:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     c2.full = c2.full << 8 | c2.full >> 8;
  446:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #endif
  447:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     /*Source: https://stackoverflow.com/a/50012418/1999969*/
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDUSLEU.s 			page 12
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccX3aB4g.s 			page 12
 
 
  448:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     mix = (uint32_t)((uint32_t)mix + 4) >> 3;
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDUSLEU.s 			page 1
  464:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****                                    (255 - mix) + LV_COLOR_MIX_ROUND_OFS));
  465:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     LV_COLOR_SET_A(ret, 0xFF);
  170              		.loc 2 465 5 is_stmt 1 view .LVU41
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDUSLEU.s 			page 13
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccX3aB4g.s 			page 13
 
 
  171 00c8 41F07F41 		orr	r1, r1, #-16777216
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDUSLEU.s 			page 1
   16:lvgl/examples/widgets/table/lv_example_table_1.c ****             dsc->rect_dsc->bg_opa = LV_OPA_COVER;
  208              		.loc 1 16 89 view .LVU56
  209 00e8 6B68     		ldr	r3, [r5, #4]
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDUSLEU.s 			page 14
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccX3aB4g.s 			page 14
 
 
  210              	.LVL25:
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDUSLEU.s 			page 1
  255 0158 40F07F40 		orr	r0, r0, #-16777216
  256              	.LVL29:
  257              		.loc 2 471 5 view .LVU66
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDUSLEU.s 			page 15
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccX3aB4g.s 			page 15
 
 
  258              		.loc 2 471 5 is_stmt 0 view .LVU67
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDUSLEU.s 			page 1
  301 0028 4D656C6F 		.ascii	"Melon\000"
  301      6E00
  302 002e 0000     		.align	2
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDUSLEU.s 			page 16
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccX3aB4g.s 			page 16
 
 
  303              	.LC6:
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDUSLEU.s 			page 1
  351              	.LBI19:
  352              		.file 3 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/core/lv_disp.h"
    1:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDUSLEU.s 			page 17
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccX3aB4g.s 			page 17
 
 
    2:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @file lv_disp.h
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDUSLEU.s 			page 1
   56:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
   57:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** lv_obj_t * lv_disp_get_scr_act(lv_disp_t * disp);
   58:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDUSLEU.s 			page 18
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccX3aB4g.s 			page 18
 
 
   59:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDUSLEU.s 			page 1
  113:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** void lv_disp_set_bg_image(lv_disp_t * disp, const void  * img_src);
  114:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
  115:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDUSLEU.s 			page 19
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccX3aB4g.s 			page 19
 
 
  116:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Set opacity of the background
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDUSLEU.s 			page 1
  170:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
  171:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** lv_timer_t * _lv_disp_get_refr_timer(lv_disp_t * disp);
  172:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDUSLEU.s 			page 20
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccX3aB4g.s 			page 20
 
 
  173:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /*------------------------------------------------
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDUSLEU.s 			page 1
  389 0032 324B     		ldr	r3, .L12+12
  390 0034 0022     		movs	r2, #0
  391 0036 0321     		movs	r1, #3
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDUSLEU.s 			page 21
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccX3aB4g.s 			page 21
 
 
  392 0038 2046     		mov	r0, r4
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDUSLEU.s 			page 1
  437              		.loc 1 49 5 view .LVU91
  438 0086 244B     		ldr	r3, .L12+40
  439 0088 0122     		movs	r2, #1
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDUSLEU.s 			page 22
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccX3aB4g.s 			page 22
 
 
  440 008a 0221     		movs	r1, #2
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDUSLEU.s 			page 1
  485              	.LBB21:
  486              	.LBI21:
  487              		.file 4 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\core\\lv_obj_pos.h"
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDUSLEU.s 			page 23
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccX3aB4g.s 			page 23
 
 
    1:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** /**
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDUSLEU.s 			page 1
   55:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @note            The position is interpreted on the content area of the parent
   56:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @note            The values can be set in pixel or in percentage of parent size with `lv_pct(v)`
   57:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  */
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDUSLEU.s 			page 24
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccX3aB4g.s 			page 24
 
 
   58:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** void lv_obj_set_x(struct _lv_obj_t * obj, lv_coord_t x);
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDUSLEU.s 			page 1
  112:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  */
  113:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** void lv_obj_set_height(struct _lv_obj_t * obj, lv_coord_t h);
  114:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDUSLEU.s 			page 25
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccX3aB4g.s 			page 25
 
 
  115:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** /**
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDUSLEU.s 			page 1
  169:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** 
  170:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** /**
  171:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * Change the alignment of an object and set new coordinates.
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDUSLEU.s 			page 26
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccX3aB4g.s 			page 26
 
 
  172:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * Equivalent to:
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDUSLEU.s 			page 1
  508 00ee 10BD     		pop	{r4, pc}
  509              	.LVL54:
  510              	.L13:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDUSLEU.s 			page 27
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccX3aB4g.s 			page 27
 
 
  511              		.loc 1 62 1 view .LVU104
@@ -1612,17 +1612,17 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDUSLEU.s 			page 1
  560              		.file 29 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/core/lv_event.h"
  561              		.file 30 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/hal/lv_hal_disp.h"
  562              		.file 31 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/widgets/lv_table.h"
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccDUSLEU.s 			page 28
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccX3aB4g.s 			page 28
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 lv_example_table_1.c
-C:\Users\OSD\AppData\Local\Temp\ccDUSLEU.s:19     .text.draw_part_event_cb:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccDUSLEU.s:24     .text.draw_part_event_cb:00000000 draw_part_event_cb
-C:\Users\OSD\AppData\Local\Temp\ccDUSLEU.s:284    .rodata.lv_example_table_1.str1.4:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\ccDUSLEU.s:333    .text.lv_example_table_1:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccDUSLEU.s:339    .text.lv_example_table_1:00000000 lv_example_table_1
-C:\Users\OSD\AppData\Local\Temp\ccDUSLEU.s:514    .text.lv_example_table_1:000000f0 $d
+C:\Users\OSD\AppData\Local\Temp\ccX3aB4g.s:19     .text.draw_part_event_cb:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccX3aB4g.s:24     .text.draw_part_event_cb:00000000 draw_part_event_cb
+C:\Users\OSD\AppData\Local\Temp\ccX3aB4g.s:284    .rodata.lv_example_table_1.str1.4:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccX3aB4g.s:333    .text.lv_example_table_1:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccX3aB4g.s:339    .text.lv_example_table_1:00000000 lv_example_table_1
+C:\Users\OSD\AppData\Local\Temp\ccX3aB4g.s:514    .text.lv_example_table_1:000000f0 $d
 
 UNDEFINED SYMBOLS
 lv_event_get_target

@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN88is6.s 			page 1
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccL6TJ6j.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN88is6.s 			page 1
   44              		.loc 1 12 5 view .LVU3
   45 000a 0020     		movs	r0, #0
   46 000c FFF7FEFF 		bl	lv_palette_main
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN88is6.s 			page 2
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccL6TJ6j.s 			page 2
 
 
   47              	.LVL1:
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN88is6.s 			page 1
   37:lvgl/examples/styles/../../src/core/lv_disp.h ****     LV_SCR_LOAD_ANIM_MOVE_BOTTOM,
   38:lvgl/examples/styles/../../src/core/lv_disp.h ****     LV_SCR_LOAD_ANIM_FADE_IN,
   39:lvgl/examples/styles/../../src/core/lv_disp.h ****     LV_SCR_LOAD_ANIM_FADE_ON = LV_SCR_LOAD_ANIM_FADE_IN, /*For backward compatibility*/
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN88is6.s 			page 3
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccL6TJ6j.s 			page 3
 
 
   40:lvgl/examples/styles/../../src/core/lv_disp.h ****     LV_SCR_LOAD_ANIM_FADE_OUT,
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN88is6.s 			page 1
   94:lvgl/examples/styles/../../src/core/lv_disp.h **** /**
   95:lvgl/examples/styles/../../src/core/lv_disp.h ****  * Get the theme of a display
   96:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @param disp pointer to a display
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN88is6.s 			page 4
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccL6TJ6j.s 			page 4
 
 
   97:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @return the display's theme (can be NULL)
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN88is6.s 			page 1
  151:lvgl/examples/styles/../../src/core/lv_disp.h **** /**
  152:lvgl/examples/styles/../../src/core/lv_disp.h ****  * Temporarily enable and disable the invalidation of the display.
  153:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @param disp pointer to a display (NULL to use the default display)
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN88is6.s 			page 5
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccL6TJ6j.s 			page 5
 
 
  154:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @param en true: enable invalidation; false: invalidation
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN88is6.s 			page 1
   82              	.LBB10:
   83              	.LBI10:
   84              		.file 3 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\core\\lv_obj_pos.h"
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN88is6.s 			page 6
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccL6TJ6j.s 			page 6
 
 
    1:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** /**
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN88is6.s 			page 1
   55:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @note            The position is interpreted on the content area of the parent
   56:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @note            The values can be set in pixel or in percentage of parent size with `lv_pct(v)`
   57:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  */
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN88is6.s 			page 7
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccL6TJ6j.s 			page 7
 
 
   58:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** void lv_obj_set_x(struct _lv_obj_t * obj, lv_coord_t x);
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN88is6.s 			page 1
  112:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  */
  113:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** void lv_obj_set_height(struct _lv_obj_t * obj, lv_coord_t h);
  114:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN88is6.s 			page 8
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccL6TJ6j.s 			page 8
 
 
  115:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** /**
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN88is6.s 			page 1
  169:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** 
  170:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** /**
  171:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * Change the alignment of an object and set new coordinates.
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN88is6.s 			page 9
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccL6TJ6j.s 			page 9
 
 
  172:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * Equivalent to:
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN88is6.s 			page 1
  109              		.align	2
  110              		.set	.LANCHOR0,. + 0
  113              	style.0:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN88is6.s 			page 10
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccL6TJ6j.s 			page 10
 
 
  114 0000 00000000 		.space	8
@@ -560,16 +560,16 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN88is6.s 			page 1
  129              		.file 16 "lvgl/examples/styles/../../src/hal/lv_hal_disp.h"
  130              		.file 17 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\misc\\lv_style_gen.h"
  131              		.file 18 "lvgl/examples/styles/../../src/widgets/lv_arc.h"
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccN88is6.s 			page 11
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccL6TJ6j.s 			page 11
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 lv_example_style_7.c
-C:\Users\OSD\AppData\Local\Temp\ccN88is6.s:19     .text.lv_example_style_7:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccN88is6.s:25     .text.lv_example_style_7:00000000 lv_example_style_7
-C:\Users\OSD\AppData\Local\Temp\ccN88is6.s:104    .text.lv_example_style_7:00000044 $d
-C:\Users\OSD\AppData\Local\Temp\ccN88is6.s:109    .bss.style.0:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\ccN88is6.s:113    .bss.style.0:00000000 style.0
+C:\Users\OSD\AppData\Local\Temp\ccL6TJ6j.s:19     .text.lv_example_style_7:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccL6TJ6j.s:25     .text.lv_example_style_7:00000000 lv_example_style_7
+C:\Users\OSD\AppData\Local\Temp\ccL6TJ6j.s:104    .text.lv_example_style_7:00000044 $d
+C:\Users\OSD\AppData\Local\Temp\ccL6TJ6j.s:109    .bss.style.0:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccL6TJ6j.s:113    .bss.style.0:00000000 style.0
 
 UNDEFINED SYMBOLS
 lv_style_init

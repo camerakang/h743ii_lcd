@@ -224,8 +224,8 @@ build/lv_demo_benchmark.o: lvgl/demos/benchmark/lv_demo_benchmark.c \
  d:\kzc\stm32\h743ii_lcd\lvgl\src\lvgl.h \
  lvgl/demos/benchmark/../../src/extra/widgets/span/lv_span.h \
  d:\kzc\stm32\h743ii_lcd\lvgl\src\lvgl.h \
- lvgl/demos/benchmark/../widgets/lv_demo_widgets.h \
- lvgl/demos/benchmark/../widgets/../lv_demos.h
+ lvgl/demos/benchmark/../music/lv_demo_music.h \
+ lvgl/demos/benchmark/../music/../lv_demos.h
 lvgl/demos/benchmark/lv_demo_benchmark.h:
 lvgl/demos/benchmark/../lv_demos.h:
 lvgl/demos/benchmark/../../lvgl.h:
@@ -453,5 +453,5 @@ lvgl/demos/benchmark/../../src/extra/widgets/imgbtn/lv_imgbtn.h:
 d:\kzc\stm32\h743ii_lcd\lvgl\src\lvgl.h:
 lvgl/demos/benchmark/../../src/extra/widgets/span/lv_span.h:
 d:\kzc\stm32\h743ii_lcd\lvgl\src\lvgl.h:
-lvgl/demos/benchmark/../widgets/lv_demo_widgets.h:
-lvgl/demos/benchmark/../widgets/../lv_demos.h:
+lvgl/demos/benchmark/../music/lv_demo_music.h:
+lvgl/demos/benchmark/../music/../lv_demos.h:

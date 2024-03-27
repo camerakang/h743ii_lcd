@@ -22,14 +22,14 @@
 #include "fmc.h"
 
 /* USER CODE BEGIN 0 */
-FMC_SDRAM_CommandTypeDef command; // 闁硅矇鍐ㄧ厬闁圭ǹ娲ｉ幎?
+FMC_SDRAM_CommandTypeDef command; // 闁硅矇鍐ㄧ厬闁圭ǹ娲ｉ�??
 /******************************************************************************************************
- *	闁???? 闁???? 闁????: SDRAM_Initialization_Sequence
- *	闁稿繈鍎辫ぐ娑㈠矗閸屾稒娈?: hsdram - SDRAM_HandleTypeDef閻庤鐭粻鐔兼儍閸曨偄缍侀梺鎻掗獜缁辨繈宕＄?圭姰?鍐矆閸濆嫮鏆板☉鏂款槺濞堟唶dram
- *				 Command	- 闁硅矇鍐ㄧ厬闁圭ǹ娲ｉ幎?
- *	闁???? 闁???? 闁????: 闁????
- *	闁告垼濮ら弳鐔煎礉閻旇鍘?: SDRAM 闁告瑥鍊归弳鐔兼煀瀹ュ洨鏋?
- *	闁????    闁????: 闂佹澘绉堕悿鍝燚RAM闁烩晝枪閸櫻囧籍鐠鸿櫣纰嶉柛婊冩湰鐢爼宕氶懜鍨厵闁????
+ *	�????? �????? �?????: SDRAM_Initialization_Sequence
+ *	闁稿繈鍎辫ぐ娑㈠矗閸屾稒�??: hsdram - SDRAM_HandleTypeDef閻庤鐭粻鐔兼儍閸曨偄缍侀梺鎻掗獜缁辨繈宕�??圭姰?鍐矆閸濆嫮鏆板☉鏂款槺濞堟唶dram
+ *				 Command	- 闁硅矇鍐ㄧ厬闁圭ǹ娲ｉ�??
+ *	�????? �????? �?????: �?????
+ *	闁告垼濮ら弳鐔煎礉閻旇�??: SDRAM 闁告瑥鍊归弳鐔兼�?瀹ュ洨鏋?
+ *	�?????    �?????: 闂佹澘绉堕悿鍝燚RAM闁烩晝枪閸櫻囧籍鐠鸿櫣纰嶉柛婊冩湰鐢爼宕氶懜鍨厵�?????
  *******************************************************************************************************/
 
 void SDRAM_Initialization_Sequence(SDRAM_HandleTypeDef *hsdram, FMC_SDRAM_CommandTypeDef *Command)
@@ -37,29 +37,29 @@ void SDRAM_Initialization_Sequence(SDRAM_HandleTypeDef *hsdram, FMC_SDRAM_Comman
   __IO uint32_t tmpmrd = 0;
 
   /* Configure a clock configuration enable command */
-  Command->CommandMode = FMC_SDRAM_CMD_CLK_ENABLE;  // 闁????闁告氨鏌嘍RAM闁哄啫鐖奸幐?
-  Command->CommandTarget = FMC_COMMAND_TARGET_BANK; // 闂侇偄顦扮?氥劎鎲版担鐟颁粯闁告帒澧庡▓鎴﹀礌閸濆嫮鍘?
+  Command->CommandMode = FMC_SDRAM_CMD_CLK_ENABLE;  // �?????闁告氨鏌嘍RAM闁哄啫鐖奸幐?
+  Command->CommandTarget = FMC_COMMAND_TARGET_BANK; // 闂侇偄顦�??氥劎鎲版担鐟颁粯闁告帒澧庡▓鎴﹀礌閸濆嫮�??
   Command->AutoRefreshNumber = 1;
   Command->ModeRegisterDefinition = 0;
 
-  HAL_SDRAM_SendCommand(hsdram, Command, SDRAM_TIMEOUT); // 闁告瑦鍩婇幏??闁跨喕濮ょ敮鍫曞礆閼搁潧鐦归柨???
-  HAL_Delay(1);                                          // 鐎点倛鍩栧鍌滅驳婢跺﹦绐?
+  HAL_SDRAM_SendCommand(hsdram, Command, SDRAM_TIMEOUT); // 闁告瑦鍩婇幏??闁跨喕濮ょ敮鍫曞礆閼搁潧鐦归�????
+  HAL_Delay(1);                                          // 鐎点倛鍩栧鍌滅驳婢跺﹦�??
 
   /* Configure a PALL (precharge all) command */
-  Command->CommandMode = FMC_SDRAM_CMD_PALL;        // 濡澘瀚崢鏍偨闂堟稒鍤掗柨???
-  Command->CommandTarget = FMC_COMMAND_TARGET_BANK; // 闂侇偄顦扮?氥劎鎲版担鐟颁粯闁告帒澧庡▓鎴﹀礌閸濆嫮鍘?
+  Command->CommandMode = FMC_SDRAM_CMD_PALL;        // 濡澘�?�崢鏍偨闂堟稒鍤掗柨???
+  Command->CommandTarget = FMC_COMMAND_TARGET_BANK; // 闂侇偄顦�??氥劎鎲版担鐟颁粯闁告帒澧庡▓鎴﹀礌閸濆嫮�??
   Command->AutoRefreshNumber = 1;
   Command->ModeRegisterDefinition = 0;
 
-  HAL_SDRAM_SendCommand(hsdram, Command, SDRAM_TIMEOUT); // 闁告瑦鍩婇幏??闁跨喕濮ょ敮鍫曞礆閼搁潧鐦归柨???
+  HAL_SDRAM_SendCommand(hsdram, Command, SDRAM_TIMEOUT); // 闁告瑦鍩婇幏??闁跨喕濮ょ敮鍫曞礆閼搁潧鐦归�????
 
   /* Configure a Auto-Refresh command */
-  Command->CommandMode = FMC_SDRAM_CMD_AUTOREFRESH_MODE; // 濞达綀娉曢弫銈夋嚊椤忓嫬袟闁告帡鏀遍弻?
-  Command->CommandTarget = FMC_COMMAND_TARGET_BANK;      // 闂侇偄顦扮?氥劎鎲版担鐟颁粯闁告帒澧庡▓鎴﹀礌閸濆嫮鍘?
-  Command->AutoRefreshNumber = 8;                        // 闁煎浜滄慨鈺呭礆闁垮鐓?婵炲棌鍓濋弳?
+  Command->CommandMode = FMC_SDRAM_CMD_AUTOREFRESH_MODE; // 濞达�?娉曢弫銈夋嚊椤忓嫬袟闁告帡鏀遍弻?
+  Command->CommandTarget = FMC_COMMAND_TARGET_BANK;      // 闂侇偄顦�??氥劎鎲版担鐟颁粯闁告帒澧庡▓鎴﹀礌閸濆嫮�??
+  Command->AutoRefreshNumber = 8;                        // 闁煎浜滄慨鈺呭礆闁垮�??婵炲棌鍓濋弳?
   Command->ModeRegisterDefinition = 0;
 
-  HAL_SDRAM_SendCommand(hsdram, Command, SDRAM_TIMEOUT); // 闁告瑦鍩婇幏??闁跨喕濮ょ敮鍫曞礆閼搁潧鐦归柨???
+  HAL_SDRAM_SendCommand(hsdram, Command, SDRAM_TIMEOUT); // 闁告瑦鍩婇幏??闁跨喕濮ょ敮鍫曞礆閼搁潧鐦归�????
 
   /* Program the external memory mode register */
   tmpmrd = (uint32_t)SDRAM_MODEREG_BURST_LENGTH_2 |
@@ -68,14 +68,14 @@ void SDRAM_Initialization_Sequence(SDRAM_HandleTypeDef *hsdram, FMC_SDRAM_Comman
            SDRAM_MODEREG_OPERATING_MODE_STANDARD |
            SDRAM_MODEREG_WRITEBURST_MODE_SINGLE;
 
-  Command->CommandMode = FMC_SDRAM_CMD_LOAD_MODE;   // 闁告梻濮惧ù鍥熼垾宕囩閻庨潧瀚悺銊╁闯閵娿儲鍤掗柨???
-  Command->CommandTarget = FMC_COMMAND_TARGET_BANK; // 闂侇偄顦扮?氥劎鎲版担鐟颁粯闁告帒澧庡▓鎴﹀礌閸濆嫮鍘?
+  Command->CommandMode = FMC_SDRAM_CMD_LOAD_MODE;   // 闁告梻濮惧ù鍥熼垾宕囩閻庨潧�?�悺銊╁闯閵娿儲鍤掗柨???
+  Command->CommandTarget = FMC_COMMAND_TARGET_BANK; // 闂侇偄顦�??氥劎鎲版担鐟颁粯闁告帒澧庡▓鎴﹀礌閸濆嫮�??
   Command->AutoRefreshNumber = 1;
   Command->ModeRegisterDefinition = tmpmrd;
 
-  HAL_SDRAM_SendCommand(hsdram, Command, SDRAM_TIMEOUT); // 闁告瑦鍩婇幏??闁跨喕濮ょ敮鍫曞礆閼搁潧鐦归柨???
+  HAL_SDRAM_SendCommand(hsdram, Command, SDRAM_TIMEOUT); // 闁告瑦鍩婇幏??闁跨喕濮ょ敮鍫曞礆閼搁潧鐦归�????
 
-  HAL_SDRAM_ProgramRefreshRate(hsdram, 918); // 闂佹澘绉堕悿鍡涘礆闁垮鐓?闁????
+  HAL_SDRAM_ProgramRefreshRate(hsdram, 918); // 闂佹澘绉堕悿鍡涘礆闁垮�??�?????
 }
 
 /* USER CODE END 0 */

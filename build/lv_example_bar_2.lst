@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMfgndw.s 			page 1
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccsMrhLM.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMfgndw.s 			page 1
   44              	.LVL0:
   13:lvgl/examples/widgets/bar/lv_example_bar_2.c ****     lv_style_set_border_color(&style_bg, lv_palette_main(LV_PALETTE_BLUE));
   45              		.loc 1 13 5 view .LVU4
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMfgndw.s 			page 2
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccsMrhLM.s 			page 2
 
 
   46 000a 0520     		movs	r0, #5
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMfgndw.s 			page 1
   37:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****  */
   38:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h **** #define LV_STYLE_PROP_FLAG_NONE             (0)
   39:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h **** #define LV_STYLE_PROP_INHERIT               (1 << 0)  /*Inherited*/
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMfgndw.s 			page 3
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccsMrhLM.s 			page 3
 
 
   40:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h **** #define LV_STYLE_PROP_EXT_DRAW              (1 << 1)  /*Requires ext. draw size update when changed
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMfgndw.s 			page 1
   94:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h **** typedef uint8_t lv_blend_mode_t;
   95:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h **** 
   96:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h **** /**
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMfgndw.s 			page 4
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccsMrhLM.s 			page 4
 
 
   97:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****  * Some options to apply decorations on texts.
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMfgndw.s 			page 1
  151:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****     uint8_t    frac;    /**< The stop position in 1/255 unit */
  152:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h **** } lv_gradient_stop_t;
  153:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMfgndw.s 			page 5
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccsMrhLM.s 			page 5
 
 
  154:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h **** /** A descriptor of a gradient. */
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMfgndw.s 			page 1
  208:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****     LV_STYLE_BG_GRAD_DIR            = 35,
  209:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****     LV_STYLE_BG_MAIN_STOP           = 36,
  210:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****     LV_STYLE_BG_GRAD_STOP           = 37,
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMfgndw.s 			page 6
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccsMrhLM.s 			page 6
 
 
  211:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****     LV_STYLE_BG_GRAD                = 38,
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMfgndw.s 			page 1
  265:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****     LV_STYLE_COLOR_FILTER_OPA       = 99,
  266:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****     LV_STYLE_ANIM                   = 100,
  267:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****     LV_STYLE_ANIM_TIME              = 101,
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMfgndw.s 			page 7
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccsMrhLM.s 			page 7
 
 
  268:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****     LV_STYLE_ANIM_SPEED             = 102,
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMfgndw.s 			page 1
  322:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****     uint32_t sentinel;
  323:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h **** #endif
  324:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMfgndw.s 			page 8
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccsMrhLM.s 			page 8
 
 
  325:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****     /*If there is only one property store it directly.
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMfgndw.s 			page 1
  379:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****  * @param style pointer to a style
  380:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****  * @param prop  a style property ORed with a state.
  381:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****  * @return true: the property was found and removed; false: the property wasn't found
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMfgndw.s 			page 9
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccsMrhLM.s 			page 9
 
 
  382:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****  */
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMfgndw.s 			page 1
  436:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h **** lv_style_value_t lv_style_prop_get_default(lv_style_prop_t prop);
  437:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h **** 
  438:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h **** /**
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMfgndw.s 			page 10
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccsMrhLM.s 			page 10
 
 
  439:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****  * Get the value of a property
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMfgndw.s 			page 1
  493:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****         return LV_STYLE_RES_FOUND;
  494:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****     }
  495:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****     return LV_STYLE_RES_NOT_FOUND;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMfgndw.s 			page 11
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccsMrhLM.s 			page 11
 
 
  496:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h **** }
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMfgndw.s 			page 1
   78              	.LVL6:
  534:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****     lv_style_set_pad_bottom(style, value);
   79              		.loc 2 534 5 view .LVU11
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMfgndw.s 			page 12
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccsMrhLM.s 			page 12
 
 
   80 0038 0621     		movs	r1, #6
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMfgndw.s 			page 1
    2:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @file lv_disp.h
    3:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  *
    4:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMfgndw.s 			page 13
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccsMrhLM.s 			page 13
 
 
    5:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMfgndw.s 			page 1
   59:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
   60:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Return with a pointer to the previous screen. Only used during screen transitions.
   61:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to display which previous screen should be get. (NULL to use the default
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMfgndw.s 			page 14
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccsMrhLM.s 			page 14
 
 
   62:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * screen)
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMfgndw.s 			page 1
  116:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Set opacity of the background
  117:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to a display
  118:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param opa opacity (0..255)
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMfgndw.s 			page 15
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccsMrhLM.s 			page 15
 
 
  119:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMfgndw.s 			page 1
  173:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /*------------------------------------------------
  174:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * To improve backward compatibility
  175:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Recommended only if you have one display
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMfgndw.s 			page 16
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccsMrhLM.s 			page 16
 
 
  176:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  *------------------------------------------------*/
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMfgndw.s 			page 1
   26:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  **********************/
   27:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** /*Can't include lv_obj.h because it includes this header file*/
   28:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** struct _lv_obj_t;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMfgndw.s 			page 17
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccsMrhLM.s 			page 17
 
 
   29:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** 
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMfgndw.s 			page 1
   83:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  * @example lv_obj_remove_style(obj, NULL, LV_PART_MAIN | LV_STATE_ANY); //Remove all styles from t
   84:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  * @example lv_obj_remove_style(obj, NULL, LV_PART_ANY | LV_STATE_ANY); //Remove all styles
   85:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h ****  */
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMfgndw.s 			page 18
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccsMrhLM.s 			page 18
 
 
   86:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_style.h **** void lv_obj_remove_style(struct _lv_obj_t * obj, lv_style_t * style, lv_style_selector_t selector);
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMfgndw.s 			page 1
    9:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** #ifdef __cplusplus
   10:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** extern "C" {
   11:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** #endif
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMfgndw.s 			page 19
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccsMrhLM.s 			page 19
 
 
   12:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** 
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMfgndw.s 			page 1
   66:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @note            The position is interpreted on the content area of the parent
   67:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @note            The values can be set in pixel or in percentage of parent size with `lv_pct(v)`
   68:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  */
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMfgndw.s 			page 20
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccsMrhLM.s 			page 20
 
 
   69:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** void lv_obj_set_y(struct _lv_obj_t * obj, lv_coord_t y);
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMfgndw.s 			page 1
  123:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * Set the height reduced by the top and bottom padding and the border width.
  124:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @param obj       pointer to an object
  125:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @param h         the height without paddings in pixels
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMfgndw.s 			page 21
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccsMrhLM.s 			page 21
 
 
  126:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  */
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMfgndw.s 			page 1
  180:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** void lv_obj_align(struct _lv_obj_t * obj, lv_align_t align, lv_coord_t x_ofs, lv_coord_t y_ofs);
  181:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** 
  182:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** /**
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMfgndw.s 			page 22
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccsMrhLM.s 			page 22
 
 
  183:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * Align an object to an other object.
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMfgndw.s 			page 1
  211              	style_bg.1:
  212 0000 00000000 		.space	8
  212      00000000 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMfgndw.s 			page 23
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccsMrhLM.s 			page 23
 
 
  213              		.section	.bss.style_indic.0,"aw",%nobits
@@ -1343,18 +1343,18 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMfgndw.s 			page 1
  233              		.file 17 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\misc\\lv_style_gen.h"
  234              		.file 18 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/hal/lv_hal_disp.h"
  235              		.file 19 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/widgets/lv_bar.h"
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccMfgndw.s 			page 24
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccsMrhLM.s 			page 24
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 lv_example_bar_2.c
-C:\Users\OSD\AppData\Local\Temp\ccMfgndw.s:19     .text.lv_example_bar_2:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccMfgndw.s:25     .text.lv_example_bar_2:00000000 lv_example_bar_2
-C:\Users\OSD\AppData\Local\Temp\ccMfgndw.s:200    .text.lv_example_bar_2:000000c8 $d
-C:\Users\OSD\AppData\Local\Temp\ccMfgndw.s:207    .bss.style_bg.1:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\ccMfgndw.s:211    .bss.style_bg.1:00000000 style_bg.1
-C:\Users\OSD\AppData\Local\Temp\ccMfgndw.s:214    .bss.style_indic.0:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\ccMfgndw.s:218    .bss.style_indic.0:00000000 style_indic.0
+C:\Users\OSD\AppData\Local\Temp\ccsMrhLM.s:19     .text.lv_example_bar_2:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccsMrhLM.s:25     .text.lv_example_bar_2:00000000 lv_example_bar_2
+C:\Users\OSD\AppData\Local\Temp\ccsMrhLM.s:200    .text.lv_example_bar_2:000000c8 $d
+C:\Users\OSD\AppData\Local\Temp\ccsMrhLM.s:207    .bss.style_bg.1:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccsMrhLM.s:211    .bss.style_bg.1:00000000 style_bg.1
+C:\Users\OSD\AppData\Local\Temp\ccsMrhLM.s:214    .bss.style_indic.0:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccsMrhLM.s:218    .bss.style_indic.0:00000000 style_indic.0
 
 UNDEFINED SYMBOLS
 lv_style_init

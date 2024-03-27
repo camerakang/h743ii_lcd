@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccSOhkUf.s 			page 1
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccihBbtV.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccSOhkUf.s 			page 1
   21:lvgl/examples/libs/freetype/lv_example_freetype_1.c ****     /*Create style with the new font*/
   22:lvgl/examples/libs/freetype/lv_example_freetype_1.c ****     static lv_style_t style;
   23:lvgl/examples/libs/freetype/lv_example_freetype_1.c ****     lv_style_init(&style);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccSOhkUf.s 			page 2
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccihBbtV.s 			page 2
 
 
   24:lvgl/examples/libs/freetype/lv_example_freetype_1.c ****     lv_style_set_text_font(&style, info.font);
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccSOhkUf.s 			page 1
   26:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  **********************/
   27:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
   28:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** typedef enum {
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccSOhkUf.s 			page 3
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccihBbtV.s 			page 3
 
 
   29:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_NONE,
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccSOhkUf.s 			page 1
   83:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to display which sys. layer should be retrieved. (NULL to use the default sc
   84:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @return pointer to the sys layer object (transparent screen sized lv_obj)
   85:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccSOhkUf.s 			page 4
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccihBbtV.s 			page 4
 
 
   86:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** lv_obj_t * lv_disp_get_layer_sys(lv_disp_t * disp);
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccSOhkUf.s 			page 1
  140:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Manually trigger an activity on a display
  141:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to a display (NULL to use the default display)
  142:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccSOhkUf.s 			page 5
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccihBbtV.s 			page 5
 
 
  143:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** void lv_disp_trig_activity(lv_disp_t * disp);
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccSOhkUf.s 			page 1
   56              	.LVL2:
   57 000e 0446     		mov	r4, r0
   58              	.LVL3:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccSOhkUf.s 			page 6
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccihBbtV.s 			page 6
 
 
   41:lvgl/examples/libs/freetype/lv_example_freetype_1.c ****     lv_label_set_text(label, "FreeType is not installed");
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccSOhkUf.s 			page 1
   45:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @note            The values can be set in pixel or in percentage of parent size with `lv_pct(v)`
   46:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  */
   47:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** void lv_obj_set_pos(struct _lv_obj_t * obj, lv_coord_t x, lv_coord_t y);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccSOhkUf.s 			page 7
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccihBbtV.s 			page 7
 
 
   48:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** 
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccSOhkUf.s 			page 1
  102:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** 
  103:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** /**
  104:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * Set the height of an object
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccSOhkUf.s 			page 8
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccihBbtV.s 			page 8
 
 
  105:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @param obj       pointer to an object
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccSOhkUf.s 			page 1
  159:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @return          the ID of the new layout
  160:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  */
  161:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** uint32_t lv_layout_register(lv_layout_update_cb_t cb, void * user_data);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccSOhkUf.s 			page 9
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccihBbtV.s 			page 9
 
 
  162:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** 
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccSOhkUf.s 			page 1
   80 0022 10BD     		pop	{r4, pc}
   81              	.LVL6:
   82              	.L4:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccSOhkUf.s 			page 10
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccihBbtV.s 			page 10
 
 
   83              		.loc 1 43 1 view .LVU12
@@ -563,15 +563,15 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccSOhkUf.s 			page 1
  103              		.file 15 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/core/lv_event.h"
  104              		.file 16 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/hal/lv_hal_disp.h"
  105              		.file 17 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/widgets/lv_label.h"
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccSOhkUf.s 			page 11
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccihBbtV.s 			page 11
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 lv_example_freetype_1.c
-C:\Users\OSD\AppData\Local\Temp\ccSOhkUf.s:19     .rodata.lv_example_freetype_1.str1.4:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\ccSOhkUf.s:23     .text.lv_example_freetype_1:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccSOhkUf.s:29     .text.lv_example_freetype_1:00000000 lv_example_freetype_1
-C:\Users\OSD\AppData\Local\Temp\ccSOhkUf.s:86     .text.lv_example_freetype_1:00000024 $d
+C:\Users\OSD\AppData\Local\Temp\ccihBbtV.s:19     .rodata.lv_example_freetype_1.str1.4:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccihBbtV.s:23     .text.lv_example_freetype_1:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccihBbtV.s:29     .text.lv_example_freetype_1:00000000 lv_example_freetype_1
+C:\Users\OSD\AppData\Local\Temp\ccihBbtV.s:86     .text.lv_example_freetype_1:00000024 $d
 
 UNDEFINED SYMBOLS
 lv_disp_get_default

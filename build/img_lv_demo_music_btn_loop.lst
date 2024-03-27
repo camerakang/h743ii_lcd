@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccxLz4Lp.s 			page 1
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbk26s.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -18,11 +18,558 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccxLz4Lp.s 			page 1
   15              		.text
   16              	.Ltext0:
   17              		.cfi_sections	.debug_frame
-  18              	.Letext0:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccxLz4Lp.s 			page 2
+  18              		.global	img_lv_demo_music_btn_loop
+  19              		.global	img_lv_demo_music_btn_loop_map
+  20              		.section	.data.img_lv_demo_music_btn_loop,"aw"
+  21              		.align	2
+  24              	img_lv_demo_music_btn_loop:
+  25 0000 05       		.byte	5
+  26 0001 60       		.byte	96
+  27 0002 00       		.byte	0
+  28 0003 03       		.byte	3
+  29 0004 00090000 		.word	2304
+  30 0008 00000000 		.word	img_lv_demo_music_btn_loop_map
+  31              		.section	.rodata.img_lv_demo_music_btn_loop_map,"a"
+  32              		.align	2
+  35              	img_lv_demo_music_btn_loop_map:
+  36 0000 FFFFFF00 		.ascii	"\377\377\377\000\377\377\377\000\377\377\377\000\377"
+  36      FFFFFF00 
+  36      FFFFFF00 
+  36      FF
+  37 000d FFFF00FF 		.ascii	"\377\377\000\377\377\377\000\377\377\377\000\377\377"
+  37      FFFF00FF 
+  37      FFFF00FF 
+  37      FF
+  38 001a FF00FFFF 		.ascii	"\377\000\377\377\377\000\377\377\377\000\377\377\377"
+  38      FF00FFFF 
+  38      FF00FFFF 
+  38      FF
+  39 0027 00FFFFFF 		.ascii	"\000\377\377\377\000\377\377\377\000\377\377\377\000"
+  39      00FFFFFF 
+  39      00FFFFFF 
+  39      00
+  40 0034 FFFFFF00 		.ascii	"\377\377\377\000\377\377\377\000\377\377\377\000\377"
+  40      FFFFFF00 
+  40      FFFFFF00 
+  40      FF
+  41 0041 FFFF00FF 		.ascii	"\377\377\000\377\377\377\000\377\377\377\000\377\377"
+  41      FFFF00FF 
+  41      FFFF00FF 
+  41      FF
+  42 004e FF00FFFF 		.ascii	"\377\000\377\377\377\000\377\377\377\000\377\377\377"
+  42      FF00FFFF 
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbk26s.s 			page 2
+
+
+  42      FF00FFFF 
+  42      FF
+  43 005b 00FFFFFF 		.ascii	"\000\377\377\377\000\377\377\377\000mMP\000mMP\000m"
+  43      00FFFFFF 
+  43      006D4D50 
+  43      006D4D50 
+  43      006D
+  44 006d 4D50006D 		.ascii	"MP\000mMP\000mMP\000mMP\000mMP\003mMPKmMP\224mMP\307"
+  44      4D50006D 
+  44      4D50006D 
+  44      4D50006D 
+  44      4D50036D 
+  45 008c 6D4D50DC 		.ascii	"mMP\334mMP\334mMP\277mMP\204mMP4mMP\000mMP\000mMP\000"
+  45      6D4D50DC 
+  45      6D4D50BF 
+  45      6D4D5084 
+  45      6D4D5034 
+  46 00ac 6D4D5000 		.ascii	"mMP\000mMP\000mMP\000mMP\000\377\377\377\000\377\377"
+  46      6D4D5000 
+  46      6D4D5000 
+  46      6D4D5000 
+  46      FFFFFF00 
+  47 00c2 FF006D4D 		.ascii	"\377\000mMP\000mMP\000mMP\000mMP\000mMP\000mMPKmMP\324"
+  47      50006D4D 
+  47      50006D4D 
+  47      50006D4D 
+  47      50006D4D 
+  48 00e0 6D4D50FF 		.ascii	"mMP\377mMP\377mMP\377mMP\377mMP\377mMP\377mMP\377mM"
+  48      6D4D50FF 
+  48      6D4D50FF 
+  48      6D4D50FF 
+  48      6D4D50FF 
+  49 00fe 50FF6D4D 		.ascii	"P\377mMP\277mMP7mMP\000mMP\000mMP\000mMP\000mMP\000"
+  49      50BF6D4D 
+  49      50376D4D 
+  49      50006D4D 
+  49      50006D4D 
+  50 011c FFFFFF00 		.ascii	"\377\377\377\000\377\377\377\000mMP\000mMP\000mMP\000"
+  50      FFFFFF00 
+  50      6D4D5000 
+  50      6D4D5000 
+  50      6D4D5000 
+  51 0130 6D4D5003 		.ascii	"mMP\003mMP\217mMP\377mMP\377mMP\377mMP\377mMP\377mM"
+  51      6D4D508F 
+  51      6D4D50FF 
+  51      6D4D50FF 
+  51      6D4D50FF 
+  52 014e 50FF6D4D 		.ascii	"P\377mMP\377mMP\377mMP\377mMP\377mMP\377mMP\373mMPk"
+  52      50FF6D4D 
+  52      50FF6D4D 
+  52      50FF6D4D 
+  52      50FF6D4D 
+  53 016c 6D4D5000 		.ascii	"mMP\000mMP\000mMP\000mMP\000\377\377\377\000\377\377"
+  53      6D4D5000 
+  53      6D4D5000 
+  53      6D4D5000 
+  53      FFFFFF00 
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbk26s.s 			page 3
+
+
+  54 0182 FF006D4D 		.ascii	"\377\000mMP\000mMP\000mMP\000mMP\240mMP\377mMP\377m"
+  54      50006D4D 
+  54      50006D4D 
+  54      50006D4D 
+  54      50A06D4D 
+  55 019d 4D50FF6D 		.ascii	"MP\377mMP\377mMP\377mMP\377mMP\377mMP\377mMP\377mMP"
+  55      4D50FF6D 
+  55      4D50FF6D 
+  55      4D50FF6D 
+  55      4D50FF6D 
+  56 01bb FF6D4D50 		.ascii	"\377mMP\377mMP\377mMP\377mMP\377mMP{mMP\000mMP\000m"
+  56      FF6D4D50 
+  56      FF6D4D50 
+  56      FF6D4D50 
+  56      FF6D4D50 
+  57 01d9 4D5000FF 		.ascii	"MP\000\377\377\377\000\377\377\377\000mMP\000mMP\000"
+  57      FFFF00FF 
+  57      FFFF006D 
+  57      4D50006D 
+  57      4D5000
+  58 01ec 6D4D506F 		.ascii	"mMPomMP\377mMP\377mMP\377mMP\377mMP\377mMP\377mMP\377"
+  58      6D4D50FF 
+  58      6D4D50FF 
+  58      6D4D50FF 
+  58      6D4D50FF 
+  59 020c 6D4D50FF 		.ascii	"mMP\377mMP\377mMP\377mMP\377mMP\377mMP\377mMP\377mM"
+  59      6D4D50FF 
+  59      6D4D50FF 
+  59      6D4D50FF 
+  59      6D4D50FF 
+  60 022a 50FF6D4D 		.ascii	"P\377mMP\377mMPHmMP\000mMP\000\377\377\377\000\377\377"
+  60      50FF6D4D 
+  60      50486D4D 
+  60      50006D4D 
+  60      5000FFFF 
+  61 0242 FF006D4D 		.ascii	"\377\000mMP\000mMP\024mMP\360mMP\377mMP\377mMP\377m"
+  61      50006D4D 
+  61      50146D4D 
+  61      50F06D4D 
+  61      50FF6D4D 
+  62 025d 4D50FF6D 		.ascii	"MP\377mMP\377mMP\377mMP\377mMP\377mMP\377mMP\377mMP"
+  62      4D50FF6D 
+  62      4D50FF6D 
+  62      4D50FF6D 
+  62      4D50FF6D 
+  63 027b FF6D4D50 		.ascii	"\377mMP\377mMP\377mMP\377mMP\377mMP\377mMP\327mMP\004"
+  63      FF6D4D50 
+  63      FF6D4D50 
+  63      FF6D4D50 
+  63      FF6D4D50 
+  64 0298 6D4D5000 		.ascii	"mMP\000\377\377\377\000\377\377\377\000mMP\000mMP\203"
+  64      FFFFFF00 
+  64      FFFFFF00 
+  64      6D4D5000 
+  64      6D4D5083 
+  65 02ac 6D4D50FF 		.ascii	"mMP\377mMP\377mMP\377mMP\377mMP\377mMP\377mMP\377mM"
+  65      6D4D50FF 
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbk26s.s 			page 4
+
+
+  65      6D4D50FF 
+  65      6D4D50FF 
+  65      6D4D50FF 
+  66 02ca 50FF6D4D 		.ascii	"P\377mMP\377mMP\377\267\247\251\377\344\335\336\377"
+  66      50FF6D4D 
+  66      50FFB7A7 
+  66      A9FFE4DD 
+  66      DEFF
+  67 02dc 6D4D50FF 		.ascii	"mMP\377mMP\377mMP\377mMP\377mMP\377mMP\377mMP\\mMP\000"
+  67      6D4D50FF 
+  67      6D4D50FF 
+  67      6D4D50FF 
+  67      6D4D50FF 
+  68 02fc FFFFFF00 		.ascii	"\377\377\377\000\377\377\377\000mMP\000mMP\327mMP\377"
+  68      FFFFFF00 
+  68      6D4D5000 
+  68      6D4D50D7 
+  68      6D4D50FF 
+  69 0310 6D4D50FF 		.ascii	"mMP\377mMP\377mMP\377mMP\377mMP\377\204jl\377\177ce"
+  69      6D4D50FF 
+  69      6D4D50FF 
+  69      6D4D50FF 
+  69      6D4D50FF 
+  70 032b FF6E4E51 		.ascii	"\377nNQ\377\255\233\235\377\377\377\377\377\332\322"
+  70      FFAD9B9D 
+  70      FFFFFFFF 
+  70      FFDAD2
+  71 033a D2FF896F 		.ascii	"\322\377\211or\377mMP\377mMP\377mMP\377mMP\377mMP\377"
+  71      72FF6D4D 
+  71      50FF6D4D 
+  71      50FF6D4D 
+  71      50FF6D4D 
+  72 0354 6D4D50B7 		.ascii	"mMP\267mMP\000\377\377\377\000\377\377\377\000mMP\030"
+  72      6D4D5000 
+  72      FFFFFF00 
+  72      FFFFFF00 
+  72      6D4D5018 
+  73 0368 6D4D50FF 		.ascii	"mMP\377mMP\377mMP\377mMP\377mMP\377mMP\377\322\311\311"
+  73      6D4D50FF 
+  73      6D4D50FF 
+  73      6D4D50FF 
+  73      6D4D50FF 
+  74 0383 FFFFFFFF 		.ascii	"\377\377\377\377\377\271\252\253\377tVY\377\377\377"
+  74      FFB9AAAB 
+  74      FF745659 
+  74      FFFFFF
+  75 0392 FFFFFFFF 		.ascii	"\377\377\377\377\377\377\337\330\331\377\377\377\377"
+  75      FFFFDFD8 
+  75      D9FFFFFF 
+  75      FF
+  76 039f FFE5E0E0 		.ascii	"\377\345\340\340\377rSV\377mMP\377mMP\377mMP\377mMP"
+  76      FF725356 
+  76      FF6D4D50 
+  76      FF6D4D50 
+  76      FF6D4D50 
+  77 03b7 EF6D4D50 		.ascii	"\357mMP\000\377\377\377\000\377\377\377\000mMP4mMP\377"
+  77      00FFFFFF 
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbk26s.s 			page 5
+
+
+  77      00FFFFFF 
+  77      006D4D50 
+  77      346D4D50 
+  78 03cc 6D4D50FF 		.ascii	"mMP\377mMP\377mMP\377mMP\377\321\306\307\377\377\377"
+  78      6D4D50FF 
+  78      6D4D50FF 
+  78      6D4D50FF 
+  78      D1C6C7FF 
+  79 03e2 FFFF9A83 		.ascii	"\377\377\232\203\206\377wY\\\377nNQ\377\251\226\227"
+  79      86FF7759 
+  79      5CFF6E4E 
+  79      51FFA996 
+  79      97
+  80 03f3 FFFFFFFF 		.ascii	"\377\377\377\377\377\323\311\312\377\215tv\377\376\376"
+  80      FFD3C9CA 
+  80      FF8D7476 
+  80      FFFEFE
+  81 0402 FEFFDFD8 		.ascii	"\376\377\337\330\331\377mMP\377mMP\377mMP\377mMP\377"
+  81      D9FF6D4D 
+  81      50FF6D4D 
+  81      50FF6D4D 
+  81      50FF6D4D 
+  82 0418 6D4D5008 		.ascii	"mMP\010\377\377\377\000\377\377\377\000mMPDmMP\377m"
+  82      FFFFFF00 
+  82      FFFFFF00 
+  82      6D4D5044 
+  82      6D4D50FF 
+  83 042d 4D50FF6D 		.ascii	"MP\377mMP\377mMP\377mMP\377\377\377\377\377\243\217"
+  83      4D50FF6D 
+  83      4D50FF6D 
+  83      4D50FFFF 
+  83      FFFFFFA3 
+  84 0442 91FF6D4D 		.ascii	"\221\377mMP\377mMP\377mMP\377mMP\377\263\242\244\377"
+  84      50FF6D4D 
+  84      50FF6D4D 
+  84      50FF6D4D 
+  84      50FFB3A2 
+  85 0458 E4DDDEFF 		.ascii	"\344\335\336\377mMP\377\222z}\377\377\377\377\377mM"
+  85      6D4D50FF 
+  85      927A7DFF 
+  85      FFFFFFFF 
+  85      6D4D
+  86 046a 50FF6D4D 		.ascii	"P\377mMP\377mMP\377mMP\377mMP\033\377\377\377\000\377"
+  86      50FF6D4D 
+  86      50FF6D4D 
+  86      50FF6D4D 
+  86      501BFFFF 
+  87 0481 FFFF006D 		.ascii	"\377\377\000mMP3mMP\377mMP\377mMP\377mMP\377mMP\377"
+  87      4D50336D 
+  87      4D50FF6D 
+  87      4D50FF6D 
+  87      4D50FF6D 
+  88 049c FFFFFFFF 		.ascii	"\377\377\377\377\257\236\240\377mMP\377mMP\377mMP\377"
+  88      AF9EA0FF 
+  88      6D4D50FF 
+  88      6D4D50FF 
+  88      6D4D50FF 
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbk26s.s 			page 6
+
+
+  89 04b0 6D4D50FF 		.ascii	"mMP\377mMP\377mMP\377mMP\377\253\231\233\377\377\377"
+  89      6D4D50FF 
+  89      6D4D50FF 
+  89      6D4D50FF 
+  89      AB999BFF 
+  90 04c6 FFFF6D4D 		.ascii	"\377\377mMP\377mMP\377mMP\377mMP\377mMP\010\377\377"
+  90      50FF6D4D 
+  90      50FF6D4D 
+  90      50FF6D4D 
+  90      50FF6D4D 
+  91 04de FF00FFFF 		.ascii	"\377\000\377\377\377\000mMP\014mMP\370mMP\377mMP\377"
+  91      FF006D4D 
+  91      500C6D4D 
+  91      50F86D4D 
+  91      50FF6D4D 
+  92 04f4 6D4D50FF 		.ascii	"mMP\377mMP\377\301\263\264\377\377\377\377\377\263\242"
+  92      6D4D50FF 
+  92      C1B3B4FF 
+  92      FFFFFFFF 
+  92      B3A2
+  93 0506 A4FF9D87 		.ascii	"\244\377\235\207\211\377\234\206\210\377\235\207\211"
+  93      89FF9C86 
+  93      88FF9D87 
+  93      89
+  94 0513 FF9A8386 		.ascii	"\377\232\203\206\377\226\177\201\377\261\237\241\377"
+  94      FF967F81 
+  94      FFB19FA1 
+  94      FF
+  95 0520 FFFFFFFF 		.ascii	"\377\377\377\377\306\271\272\377mMP\377mMP\377mMP\377"
+  95      C6B9BAFF 
+  95      6D4D50FF 
+  95      6D4D50FF 
+  95      6D4D50FF 
+  96 0534 6D4D50DC 		.ascii	"mMP\334mMP\000\377\377\377\000\377\377\377\000mMP\000"
+  96      6D4D5000 
+  96      FFFFFF00 
+  96      FFFFFF00 
+  96      6D4D5000 
+  97 0548 6D4D50B8 		.ascii	"mMP\270mMP\377mMP\377mMP\377mMP\377mMP\377\276\260\261"
+  97      6D4D50FF 
+  97      6D4D50FF 
+  97      6D4D50FF 
+  97      6D4D50FF 
+  98 0563 FFFFFFFF 		.ascii	"\377\377\377\377\377\377\377\377\377\377\377\377\377"
+  98      FFFFFFFF 
+  98      FFFFFFFF 
+  98      FF
+  99 0570 FFFFFFFF 		.ascii	"\377\377\377\377\377\377\377\377\377\377\377\377\377"
+  99      FFFFFFFF 
+  99      FFFFFFFF 
+  99      FF
+ 100 057d FFFFFFC2 		.ascii	"\377\377\377\302\264\266\377mMP\377mMP\377mMP\377mM"
+ 100      B4B6FF6D 
+ 100      4D50FF6D 
+ 100      4D50FF6D 
+ 100      4D50FF6D 
+ 101 0592 50FF6D4D 		.ascii	"P\377mMP\230mMP\000\377\377\377\000\377\377\377\000"
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbk26s.s 			page 7
+
+
+ 101      50986D4D 
+ 101      5000FFFF 
+ 101      FF00FFFF 
+ 101      FF00
+ 102 05a4 6D4D5000 		.ascii	"mMP\000mMPXmMP\377mMP\377mMP\377mMP\377mMP\377mMP\377"
+ 102      6D4D5058 
+ 102      6D4D50FF 
+ 102      6D4D50FF 
+ 102      6D4D50FF 
+ 103 05c4 6D4D50FF 		.ascii	"mMP\377mMP\377mMP\377mMP\377mMP\377mMP\377mMP\377mM"
+ 103      6D4D50FF 
+ 103      6D4D50FF 
+ 103      6D4D50FF 
+ 103      6D4D50FF 
+ 104 05e2 50FF6D4D 		.ascii	"P\377mMP\377mMP\377mMP\377mMP\377mMP0mMP\000\377\377"
+ 104      50FF6D4D 
+ 104      50FF6D4D 
+ 104      50FF6D4D 
+ 104      50FF6D4D 
+ 105 05fe FF00FFFF 		.ascii	"\377\000\377\377\377\000mMP\000mMP\003mMP\317mMP\377"
+ 105      FF006D4D 
+ 105      50006D4D 
+ 105      50036D4D 
+ 105      50CF6D4D 
+ 106 0614 6D4D50FF 		.ascii	"mMP\377mMP\377mMP\377mMP\377mMP\377mMP\377mMP\377mM"
+ 106      6D4D50FF 
+ 106      6D4D50FF 
+ 106      6D4D50FF 
+ 106      6D4D50FF 
+ 107 0632 50FF6D4D 		.ascii	"P\377mMP\377mMP\377mMP\377mMP\377mMP\377mMP\377mMP\377"
+ 107      50FF6D4D 
+ 107      50FF6D4D 
+ 107      50FF6D4D 
+ 107      50FF6D4D 
+ 108 0650 6D4D50A4 		.ascii	"mMP\244mMP\000mMP\000\377\377\377\000\377\377\377\000"
+ 108      6D4D5000 
+ 108      6D4D5000 
+ 108      FFFFFF00 
+ 108      FFFFFF00 
+ 109 0664 6D4D5000 		.ascii	"mMP\000mMP\000mMP,mMP\363mMP\377mMP\377mMP\377mMP\377"
+ 109      6D4D5000 
+ 109      6D4D502C 
+ 109      6D4D50F3 
+ 109      6D4D50FF 
+ 110 0684 6D4D50FF 		.ascii	"mMP\377mMP\377mMP\377mMP\377mMP\377mMP\377mMP\377mM"
+ 110      6D4D50FF 
+ 110      6D4D50FF 
+ 110      6D4D50FF 
+ 110      6D4D50FF 
+ 111 06a2 50FF6D4D 		.ascii	"P\377mMP\377mMP\377mMP\350mMP\030mMP\000mMP\000\377"
+ 111      50FF6D4D 
+ 111      50FF6D4D 
+ 111      50E86D4D 
+ 111      50186D4D 
+ 112 06bd FFFF00FF 		.ascii	"\377\377\000\377\377\377\000mMP\000mMP\000mMP\000mM"
+ 112      FFFF006D 
+ 112      4D50006D 
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbk26s.s 			page 8
+
+
+ 112      4D50006D 
+ 112      4D50006D 
+ 113 06d2 504C6D4D 		.ascii	"PLmMP\367mMP\377mMP\377mMP\377mMP\377mMP\377mMP\377"
+ 113      50F76D4D 
+ 113      50FF6D4D 
+ 113      50FF6D4D 
+ 113      50FF6D4D 
+ 114 06f0 6D4D50FF 		.ascii	"mMP\377mMP\377mMP\377mMP\377mMP\377mMP\377mMP\350mM"
+ 114      6D4D50FF 
+ 114      6D4D50FF 
+ 114      6D4D50FF 
+ 114      6D4D50FF 
+ 115 070e 50306D4D 		.ascii	"P0mMP\000mMP\000mMP\000\377\377\377\000\377\377\377"
+ 115      50006D4D 
+ 115      50006D4D 
+ 115      5000FFFF 
+ 115      FF00FFFF 
+ 116 0723 006D4D50 		.ascii	"\000mMP\000mMP\000mMP\000mMP\000mMP4mMP\340mMP\377m"
+ 116      006D4D50 
+ 116      006D4D50 
+ 116      006D4D50 
+ 116      006D4D50 
+ 117 0741 4D50FF6D 		.ascii	"MP\377mMP\377mMP\377mMP\377mMP\377mMP\377mMP\377mMP"
+ 117      4D50FF6D 
+ 117      4D50FF6D 
+ 117      4D50FF6D 
+ 117      4D50FF6D 
+ 118 075f FF6D4D50 		.ascii	"\377mMP\377mMP\313mMP\037mMP\000mMP\000mMP\000mMP\000"
+ 118      FF6D4D50 
+ 118      CB6D4D50 
+ 118      1F6D4D50 
+ 118      006D4D50 
+ 119 077c FFFFFF00 		.ascii	"\377\377\377\000\377\377\377\000mMP\000mMP\000mMP\000"
+ 119      FFFFFF00 
+ 119      6D4D5000 
+ 119      6D4D5000 
+ 119      6D4D5000 
+ 120 0790 6D4D5000 		.ascii	"mMP\000mMP\000mMP\010mMPsmMP\343mMP\377mMP\377mMP\377"
+ 120      6D4D5000 
+ 120      6D4D5008 
+ 120      6D4D5073 
+ 120      6D4D50E3 
+ 121 07b0 6D4D50FF 		.ascii	"mMP\377mMP\377mMP\377mMP\320mMP\\mMP\003mMP\000mMP\000"
+ 121      6D4D50FF 
+ 121      6D4D50FF 
+ 121      6D4D50D0 
+ 121      6D4D505C 
+ 122 07d0 6D4D5000 		.ascii	"mMP\000mMP\000mMP\000\377\377\377\000\377\377\377\000"
+ 122      6D4D5000 
+ 122      6D4D5000 
+ 122      FFFFFF00 
+ 122      FFFFFF00 
+ 123 07e4 6D4D5000 		.ascii	"mMP\000mMP\000mMP\000mMP\000mMP\000mMP\000mMP\000mM"
+ 123      6D4D5000 
+ 123      6D4D5000 
+ 123      6D4D5000 
+ 123      6D4D5000 
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbk26s.s 			page 9
+
+
+ 124 0802 50036D4D 		.ascii	"P\003mMP3mMPcmMPwmMPwmMP[mMP mMP\000mMP\000mMP\000m"
+ 124      50336D4D 
+ 124      50636D4D 
+ 124      50776D4D 
+ 124      50776D4D 
+ 125 0829 4D50006D 		.ascii	"MP\000mMP\000mMP\000mMP\000mMP\000\377\377\377\000\377"
+ 125      4D50006D 
+ 125      4D50006D 
+ 125      4D50006D 
+ 125      4D5000FF 
+ 126 0841 FFFF00FF 		.ascii	"\377\377\000\377\377\377\000\377\377\377\000\377\377"
+ 126      FFFF00FF 
+ 126      FFFF00FF 
+ 126      FF
+ 127 084e FF00FFFF 		.ascii	"\377\000\377\377\377\000\377\377\377\000\377\377\377"
+ 127      FF00FFFF 
+ 127      FF00FFFF 
+ 127      FF
+ 128 085b 00FFFFFF 		.ascii	"\000\377\377\377\000\377\377\377\000\377\377\377\000"
+ 128      00FFFFFF 
+ 128      00FFFFFF 
+ 128      00
+ 129 0868 FFFFFF00 		.ascii	"\377\377\377\000\377\377\377\000\377\377\377\000\377"
+ 129      FFFFFF00 
+ 129      FFFFFF00 
+ 129      FF
+ 130 0875 FFFF00FF 		.ascii	"\377\377\000\377\377\377\000\377\377\377\000\377\377"
+ 130      FFFF00FF 
+ 130      FFFF00FF 
+ 130      FF
+ 131 0882 FF00FFFF 		.ascii	"\377\000\377\377\377\000\377\377\377\000\377\377\377"
+ 131      FF00FFFF 
+ 131      FF00FFFF 
+ 131      FF
+ 132 088f 00FFFFFF 		.ascii	"\000\377\377\377\000\377\377\377\000\377\377\377\000"
+ 132      00FFFFFF 
+ 132      00FFFFFF 
+ 132      00
+ 133 089c FFFFFF00 		.ascii	"\377\377\377\000\377\377\377\000\377\377\377\000\377"
+ 133      FFFFFF00 
+ 133      FFFFFF00 
+ 133      FF
+ 134 08a9 FFFF00FF 		.ascii	"\377\377\000\377\377\377\000\377\377\377\000\377\377"
+ 134      FFFF00FF 
+ 134      FFFF00FF 
+ 134      FF
+ 135 08b6 FF00FFFF 		.ascii	"\377\000\377\377\377\000\377\377\377\000\377\377\377"
+ 135      FF00FFFF 
+ 135      FF00FFFF 
+ 135      FF
+ 136 08c3 00FFFFFF 		.ascii	"\000\377\377\377\000\377\377\377\000\377\377\377\000"
+ 136      00FFFFFF 
+ 136      00FFFFFF 
+ 136      00
+ 137 08d0 FFFFFF00 		.ascii	"\377\377\377\000\377\377\377\000\377\377\377\000\377"
+ 137      FFFFFF00 
+ 137      FFFFFF00 
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbk26s.s 			page 10
+
+
+ 137      FF
+ 138 08dd FFFF00FF 		.ascii	"\377\377\000\377\377\377\000\377\377\377\000\377\377"
+ 138      FFFF00FF 
+ 138      FFFF00FF 
+ 138      FF
+ 139 08ea FF00FFFF 		.ascii	"\377\000\377\377\377\000\377\377\377\000\377\377\377"
+ 139      FF00FFFF 
+ 139      FF00FFFF 
+ 139      FF
+ 140 08f7 00FFFFFF 		.ascii	"\000\377\377\377\000\377\377\377\000"
+ 140      00FFFFFF 
+ 140      00
+ 141              		.text
+ 142              	.Letext0:
+ 143              		.file 1 "c:\\tools\\gcc-arm-none-eabi\\arm-none-eabi\\include\\machine\\_default_types.h"
+ 144              		.file 2 "c:\\tools\\gcc-arm-none-eabi\\arm-none-eabi\\include\\sys\\_stdint.h"
+ 145              		.file 3 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\draw\\lv_img_buf.h"
+ 146              		.file 4 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/core/lv_obj.h"
+ 147              		.file 5 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/widgets/lv_bar.h"
+ 148              		.file 6 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/extra/widgets/imgbtn/lv_imgbtn.h"
+ 149              		.file 7 "lvgl/demos/music/assets/img_lv_demo_music_btn_loop.c"
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccJbk26s.s 			page 11
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 img_lv_demo_music_btn_loop.c
+C:\Users\OSD\AppData\Local\Temp\ccJbk26s.s:24     .data.img_lv_demo_music_btn_loop:00000000 img_lv_demo_music_btn_loop
+C:\Users\OSD\AppData\Local\Temp\ccJbk26s.s:35     .rodata.img_lv_demo_music_btn_loop_map:00000000 img_lv_demo_music_btn_loop_map
+C:\Users\OSD\AppData\Local\Temp\ccJbk26s.s:21     .data.img_lv_demo_music_btn_loop:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccJbk26s.s:32     .rodata.img_lv_demo_music_btn_loop_map:00000000 $d
 
 NO UNDEFINED SYMBOLS

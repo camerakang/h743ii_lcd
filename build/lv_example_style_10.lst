@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccYWvxU4.s 			page 1
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTSpKTl.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccYWvxU4.s 			page 1
   43              		.loc 1 13 5 view .LVU2
   14:lvgl/examples/styles/lv_example_style_10.c ****     lv_style_transition_dsc_init(&trans_def, props, lv_anim_path_linear, 100, 200, NULL);
   44              		.loc 1 14 5 view .LVU3
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccYWvxU4.s 			page 2
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTSpKTl.s 			page 2
 
 
   45 0006 DFF8BC80 		ldr	r8, .L3+20
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccYWvxU4.s 			page 1
   86              		.loc 1 27 5 view .LVU11
   87 004e 2046     		mov	r0, r4
   88 0050 FFF7FEFF 		bl	lv_palette_main
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccYWvxU4.s 			page 3
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTSpKTl.s 			page 3
 
 
   89              	.LVL5:
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccYWvxU4.s 			page 1
   21:lvgl/examples/styles/../../src/core/lv_disp.h ****  *      DEFINES
   22:lvgl/examples/styles/../../src/core/lv_disp.h ****  *********************/
   23:lvgl/examples/styles/../../src/core/lv_disp.h **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccYWvxU4.s 			page 4
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTSpKTl.s 			page 4
 
 
   24:lvgl/examples/styles/../../src/core/lv_disp.h **** /**********************
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccYWvxU4.s 			page 1
   78:lvgl/examples/styles/../../src/core/lv_disp.h **** lv_obj_t * lv_disp_get_layer_top(lv_disp_t * disp);
   79:lvgl/examples/styles/../../src/core/lv_disp.h **** 
   80:lvgl/examples/styles/../../src/core/lv_disp.h **** /**
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccYWvxU4.s 			page 5
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTSpKTl.s 			page 5
 
 
   81:lvgl/examples/styles/../../src/core/lv_disp.h ****  * Return with the sys. layer. (Same on every screen and it is above the normal screen and the top
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccYWvxU4.s 			page 1
  135:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @return elapsed ticks (milliseconds) since the last activity
  136:lvgl/examples/styles/../../src/core/lv_disp.h ****  */
  137:lvgl/examples/styles/../../src/core/lv_disp.h **** uint32_t lv_disp_get_inactive_time(const lv_disp_t * disp);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccYWvxU4.s 			page 6
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTSpKTl.s 			page 6
 
 
  138:lvgl/examples/styles/../../src/core/lv_disp.h **** 
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccYWvxU4.s 			page 1
  124              	.LVL12:
  125              	.LBE9:
  126              	.LBE8:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccYWvxU4.s 			page 7
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTSpKTl.s 			page 7
 
 
  127              		.loc 1 33 22 view .LVU19
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccYWvxU4.s 			page 1
   31:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** } lv_layout_dsc_t;
   32:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** 
   33:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** /**********************
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccYWvxU4.s 			page 8
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTSpKTl.s 			page 8
 
 
   34:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * GLOBAL PROTOTYPES
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccYWvxU4.s 			page 1
   88:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  */
   89:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** bool lv_obj_refr_size(struct _lv_obj_t * obj);
   90:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccYWvxU4.s 			page 9
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTSpKTl.s 			page 9
 
 
   91:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** /**
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccYWvxU4.s 			page 1
  145:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @param obj      pointer to an object whose children needs to be updated
  146:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  */
  147:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** void lv_obj_mark_layout_as_dirty(struct _lv_obj_t * obj);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccYWvxU4.s 			page 10
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTSpKTl.s 			page 10
 
 
  148:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** 
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccYWvxU4.s 			page 1
  200:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** {
  201:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****     lv_obj_align(obj, LV_ALIGN_CENTER, 0, 0);
  149              		.loc 3 201 5 view .LVU24
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccYWvxU4.s 			page 11
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTSpKTl.s 			page 11
 
 
  150 009c 2346     		mov	r3, r4
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccYWvxU4.s 			page 1
  205      00000000 
  205      00000000 
  205      00000000 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccYWvxU4.s 			page 12
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTSpKTl.s 			page 12
 
 
  205      00000000 
@@ -687,24 +687,24 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccYWvxU4.s 			page 1
  230              		.file 16 "lvgl/examples/styles/../../src/core/lv_event.h"
  231              		.file 17 "lvgl/examples/styles/../../src/hal/lv_hal_disp.h"
  232              		.file 18 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\misc\\lv_style_gen.h"
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccYWvxU4.s 			page 13
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccTSpKTl.s 			page 13
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 lv_example_style_10.c
-C:\Users\OSD\AppData\Local\Temp\ccYWvxU4.s:19     .text.lv_example_style_10:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccYWvxU4.s:25     .text.lv_example_style_10:00000000 lv_example_style_10
-C:\Users\OSD\AppData\Local\Temp\ccYWvxU4.s:169    .text.lv_example_style_10:000000b0 $d
-C:\Users\OSD\AppData\Local\Temp\ccYWvxU4.s:179    .bss.style_def.1:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\ccYWvxU4.s:183    .bss.style_def.1:00000000 style_def.1
-C:\Users\OSD\AppData\Local\Temp\ccYWvxU4.s:186    .bss.style_pr.0:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\ccYWvxU4.s:190    .bss.style_pr.0:00000000 style_pr.0
-C:\Users\OSD\AppData\Local\Temp\ccYWvxU4.s:193    .bss.trans_def.4:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\ccYWvxU4.s:197    .bss.trans_def.4:00000000 trans_def.4
-C:\Users\OSD\AppData\Local\Temp\ccYWvxU4.s:200    .bss.trans_pr.2:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\ccYWvxU4.s:204    .bss.trans_pr.2:00000000 trans_pr.2
-C:\Users\OSD\AppData\Local\Temp\ccYWvxU4.s:207    .rodata.props.3:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\ccYWvxU4.s:211    .rodata.props.3:00000000 props.3
+C:\Users\OSD\AppData\Local\Temp\ccTSpKTl.s:19     .text.lv_example_style_10:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccTSpKTl.s:25     .text.lv_example_style_10:00000000 lv_example_style_10
+C:\Users\OSD\AppData\Local\Temp\ccTSpKTl.s:169    .text.lv_example_style_10:000000b0 $d
+C:\Users\OSD\AppData\Local\Temp\ccTSpKTl.s:179    .bss.style_def.1:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccTSpKTl.s:183    .bss.style_def.1:00000000 style_def.1
+C:\Users\OSD\AppData\Local\Temp\ccTSpKTl.s:186    .bss.style_pr.0:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccTSpKTl.s:190    .bss.style_pr.0:00000000 style_pr.0
+C:\Users\OSD\AppData\Local\Temp\ccTSpKTl.s:193    .bss.trans_def.4:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccTSpKTl.s:197    .bss.trans_def.4:00000000 trans_def.4
+C:\Users\OSD\AppData\Local\Temp\ccTSpKTl.s:200    .bss.trans_pr.2:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccTSpKTl.s:204    .bss.trans_pr.2:00000000 trans_pr.2
+C:\Users\OSD\AppData\Local\Temp\ccTSpKTl.s:207    .rodata.props.3:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccTSpKTl.s:211    .rodata.props.3:00000000 props.3
 
 UNDEFINED SYMBOLS
 lv_style_transition_dsc_init

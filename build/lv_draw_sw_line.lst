@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 1
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccgzvg7d.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 1
   29:lvgl/src/draw/sw/lv_draw_sw_line.c ****                                                       const lv_point_t * point1, const lv_point_t *
   30:lvgl/src/draw/sw/lv_draw_sw_line.c **** static void /* LV_ATTRIBUTE_FAST_MEM */ draw_line_ver(struct _lv_draw_ctx_t * draw_ctx, const lv_dr
   31:lvgl/src/draw/sw/lv_draw_sw_line.c ****                                                       const lv_point_t * point1, const lv_point_t *
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 2
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccgzvg7d.s 			page 2
 
 
   32:lvgl/src/draw/sw/lv_draw_sw_line.c **** 
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 1
   86:lvgl/src/draw/sw/lv_draw_sw_line.c **** 
   87:lvgl/src/draw/sw/lv_draw_sw_line.c ****         if(dsc->round_start) {
   88:lvgl/src/draw/sw/lv_draw_sw_line.c ****             cir_area.x1 = point1->x - r;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 3
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccgzvg7d.s 			page 3
 
 
   89:lvgl/src/draw/sw/lv_draw_sw_line.c ****             cir_area.y1 = point1->y - r;
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 1
   55              		.loc 1 115 5 is_stmt 1 view .LVU5
  116:lvgl/src/draw/sw/lv_draw_sw_line.c ****     int32_t w_half1 = w_half0 + (w & 0x1); /*Compensate rounding error*/
   56              		.loc 1 116 5 view .LVU6
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 4
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccgzvg7d.s 			page 4
 
 
   57              		.loc 1 116 36 is_stmt 0 view .LVU7
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 1
  102 004a D8F80820 		ldr	r2, [r8, #8]
  103              	.LVL7:
  104              		.loc 1 125 17 view .LVU28
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 5
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccgzvg7d.s 			page 5
 
 
  105 004e 08A9     		add	r1, sp, #32
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 1
  128:lvgl/src/draw/sw/lv_draw_sw_line.c ****     bool simple_mode = true;
  152              		.loc 1 128 59 view .LVU46
  153 0088 4FF00109 		mov	r9, #1
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 6
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccgzvg7d.s 			page 6
 
 
  154 008c F2E7     		b	.L4
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 1
    3:lvgl/src/draw/sw/../../misc/lv_area.h ****  *
    4:lvgl/src/draw/sw/../../misc/lv_area.h ****  */
    5:lvgl/src/draw/sw/../../misc/lv_area.h **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 7
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccgzvg7d.s 			page 7
 
 
    6:lvgl/src/draw/sw/../../misc/lv_area.h **** #ifndef LV_AREA_H
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 1
   60:lvgl/src/draw/sw/../../misc/lv_area.h ****     LV_ALIGN_RIGHT_MID,
   61:lvgl/src/draw/sw/../../misc/lv_area.h ****     LV_ALIGN_CENTER,
   62:lvgl/src/draw/sw/../../misc/lv_area.h **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 8
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccgzvg7d.s 			page 8
 
 
   63:lvgl/src/draw/sw/../../misc/lv_area.h ****     LV_ALIGN_OUT_TOP_LEFT,
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 1
  117:lvgl/src/draw/sw/../../misc/lv_area.h **** 
  118:lvgl/src/draw/sw/../../misc/lv_area.h **** /**
  119:lvgl/src/draw/sw/../../misc/lv_area.h ****  * Get the width of an area
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 9
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccgzvg7d.s 			page 9
 
 
  120:lvgl/src/draw/sw/../../misc/lv_area.h ****  * @param area_p pointer to an area
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 1
  230 00d6 1344     		add	r3, r3, r2
  231              		.loc 1 154 42 view .LVU80
  232 00d8 9BFBF3F2 		sdiv	r2, fp, r3
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 10
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccgzvg7d.s 			page 10
 
 
  233 00dc 03FB12BB 		mls	fp, r3, r2, fp
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 1
  162:lvgl/src/draw/sw/lv_draw_sw_line.c ****             lv_memset_ff(mask_buf, blend_area_w);
  163:lvgl/src/draw/sw/lv_draw_sw_line.c ****             blend_dsc.mask_res = lv_draw_mask_apply(mask_buf, blend_area.x1, h, blend_area_w);
  164:lvgl/src/draw/sw/lv_draw_sw_line.c **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 11
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccgzvg7d.s 			page 11
 
 
  165:lvgl/src/draw/sw/lv_draw_sw_line.c ****             if(dashed) {
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 1
  310 0122 0BDA     		bge	.L24
  170:lvgl/src/draw/sw/lv_draw_sw_line.c ****                             int16_t diff = dsc->dash_width - dash_cnt;
  311              		.loc 1 170 25 is_stmt 1 view .LVU108
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 12
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccgzvg7d.s 			page 12
 
 
  170:lvgl/src/draw/sw/lv_draw_sw_line.c ****                             int16_t diff = dsc->dash_width - dash_cnt;
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 1
  186:lvgl/src/draw/sw/lv_draw_sw_line.c **** 
  187:lvgl/src/draw/sw/lv_draw_sw_line.c ****             lv_draw_sw_blend(draw_ctx, &blend_dsc);
  349              		.loc 1 187 13 is_stmt 1 discriminator 2 view .LVU123
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 13
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccgzvg7d.s 			page 13
 
 
  350 0142 01A9     		add	r1, sp, #4
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 1
  391              		.loc 1 165 15 is_stmt 0 view .LVU139
  392 017e B9F1000F 		cmp	r9, #0
  393 0182 DED0     		beq	.L10
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 14
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccgzvg7d.s 			page 14
 
 
  166:lvgl/src/draw/sw/lv_draw_sw_line.c ****                     lv_coord_t dash_cnt = dash_start;
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 1
  436              		.loc 1 199 1 is_stmt 0 view .LVU150
  437 0000 2DE9F04F 		push	{r4, r5, r6, r7, r8, r9, r10, fp, lr}
  438              		.cfi_def_cfa_offset 36
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 15
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccgzvg7d.s 			page 15
 
 
  439              		.cfi_offset 4, -36
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 1
  485 0028 B3F90230 		ldrsh	r3, [r3, #2]
  486              	.LVL53:
  487              		.loc 1 207 21 view .LVU168
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 16
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccgzvg7d.s 			page 16
 
 
  488 002c B2F90220 		ldrsh	r2, [r2, #2]
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 1
  215:lvgl/src/draw/sw/lv_draw_sw_line.c ****     bool simple_mode = true;
  535              		.loc 1 215 5 is_stmt 1 discriminator 6 view .LVU186
  216:lvgl/src/draw/sw/lv_draw_sw_line.c ****     if(lv_draw_mask_is_any(&blend_area)) simple_mode = false;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 17
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccgzvg7d.s 			page 17
 
 
  536              		.loc 1 216 5 discriminator 6 view .LVU187
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 1
  580 009c B37A     		ldrb	r3, [r6, #10]	@ zero_extendqisi2
  581              		.loc 1 223 19 view .LVU204
  582 009e 8DF81C30 		strb	r3, [sp, #28]
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 18
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccgzvg7d.s 			page 18
 
 
  224:lvgl/src/draw/sw/lv_draw_sw_line.c **** 
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 1
  269:lvgl/src/draw/sw/lv_draw_sw_line.c ****             blend_area.y1++;
  270:lvgl/src/draw/sw/lv_draw_sw_line.c ****             blend_area.y2++;
  271:lvgl/src/draw/sw/lv_draw_sw_line.c ****         }
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 19
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccgzvg7d.s 			page 19
 
 
  272:lvgl/src/draw/sw/lv_draw_sw_line.c ****         lv_mem_buf_release(mask_buf);
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 1
  633              		.loc 1 238 31 is_stmt 0 view .LVU224
  634 00ce 2846     		mov	r0, r5
  635 00d0 FFF7FEFF 		bl	lv_mem_buf_get
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 20
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccgzvg7d.s 			page 20
 
 
  636              	.LVL67:
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 1
  672 00fa BDF92240 		ldrsh	r4, [sp, #34]
  673              	.LVL71:
  250:lvgl/src/draw/sw/lv_draw_sw_line.c ****             lv_memset_ff(mask_buf, draw_area_w);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 21
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccgzvg7d.s 			page 21
 
 
  674              		.loc 1 250 9 view .LVU243
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 1
  250:lvgl/src/draw/sw/lv_draw_sw_line.c ****             lv_memset_ff(mask_buf, draw_area_w);
  714              		.loc 1 250 9 is_stmt 0 discriminator 1 view .LVU258
  715 0126 A345     		cmp	fp, r4
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 22
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccgzvg7d.s 			page 22
 
 
  716 0128 21DB     		blt	.L45
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 1
  754              		.loc 1 260 55 view .LVU274
  755 0160 B6F90620 		ldrsh	r2, [r6, #6]
  260:lvgl/src/draw/sw/lv_draw_sw_line.c ****                         dash_cnt = 0;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 23
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccgzvg7d.s 			page 23
 
 
  756              		.loc 1 260 50 view .LVU275
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 1
  804 0006 0390     		str	r0, [sp, #12]
  805 0008 0C46     		mov	r4, r1
  280:lvgl/src/draw/sw/lv_draw_sw_line.c **** #if LV_DRAW_COMPLEX
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 24
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccgzvg7d.s 			page 24
 
 
  281:lvgl/src/draw/sw/lv_draw_sw_line.c ****     /*Keep the great y in p1*/
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 1
  843 0038 A5EB0609 		sub	r9, r5, r6
  844              	.LVL88:
  298:lvgl/src/draw/sw/lv_draw_sw_line.c ****     int32_t ydiff = p2.y - p1.y;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 25
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccgzvg7d.s 			page 25
 
 
  845              		.loc 1 298 5 is_stmt 1 view .LVU302
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 1
  883              		.loc 1 314 19 view .LVU320
  884 006e 9B5C     		ldrb	r3, [r3, r2]	@ zero_extendqisi2
  885              		.loc 1 314 12 view .LVU321
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 26
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccgzvg7d.s 			page 26
 
 
  886 0070 01FB03F3 		mul	r3, r1, r3
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 1
  933 00aa 4745     		cmp	r7, r8
  934 00ac A8BF     		it	ge
  935 00ae 4246     		movge	r2, r8
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 27
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccgzvg7d.s 			page 27
 
 
  936 00b0 92B2     		uxth	r2, r2
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 1
  975              		.loc 1 336 11 is_stmt 0 view .LVU359
  976 00e2 B9F1000F 		cmp	r9, #0
  977 00e6 7BDD     		ble	.L54
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 28
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccgzvg7d.s 			page 28
 
 
  337:lvgl/src/draw/sw/lv_draw_sw_line.c ****             lv_draw_mask_line_points_init(&mask_left_param, p1.x, p1.y - w_half0, p2.x, p2.y - w_ha
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 1
  348:lvgl/src/draw/sw/lv_draw_sw_line.c ****     }
  349:lvgl/src/draw/sw/lv_draw_sw_line.c ****     else {
  350:lvgl/src/draw/sw/lv_draw_sw_line.c ****         lv_draw_mask_line_points_init(&mask_left_param, p1.x + w_half1, p1.y, p2.x + w_half1, p2.y,
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 29
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccgzvg7d.s 			page 29
 
 
  351:lvgl/src/draw/sw/lv_draw_sw_line.c ****                                       LV_DRAW_MASK_LINE_SIDE_LEFT);
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 1
  373:lvgl/src/draw/sw/lv_draw_sw_line.c ****     int32_t draw_area_w = lv_area_get_width(&blend_area);
  1051              		.loc 1 373 5 is_stmt 1 view .LVU382
  1052              	.LBB22:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 30
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccgzvg7d.s 			page 30
 
 
  1053              	.LBI22:
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 1
  1100              	.LVL121:
  1101 0184 8046     		mov	r8, r0
  1102              	.LVL122:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 31
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccgzvg7d.s 			page 31
 
 
  380:lvgl/src/draw/sw/lv_draw_sw_line.c **** 
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 1
  394:lvgl/src/draw/sw/lv_draw_sw_line.c **** 
  395:lvgl/src/draw/sw/lv_draw_sw_line.c ****     /*Fill the first row with 'color'*/
  396:lvgl/src/draw/sw/lv_draw_sw_line.c ****     for(h = blend_area.y1; h <= y2; h++) {
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 32
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccgzvg7d.s 			page 32
 
 
  1143              		.loc 1 396 5 is_stmt 1 discriminator 4 view .LVU420
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 1
  1182              	.LVL133:
  1183              	.L54:
  343:lvgl/src/draw/sw/lv_draw_sw_line.c ****                                           LV_DRAW_MASK_LINE_SIDE_LEFT);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 33
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccgzvg7d.s 			page 33
 
 
  1184              		.loc 1 343 13 is_stmt 1 view .LVU438
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 1
  1228              	.L53:
  350:lvgl/src/draw/sw/lv_draw_sw_line.c ****                                       LV_DRAW_MASK_LINE_SIDE_LEFT);
  1229              		.loc 1 350 9 is_stmt 1 view .LVU449
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 34
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccgzvg7d.s 			page 34
 
 
  350:lvgl/src/draw/sw/lv_draw_sw_line.c ****                                       LV_DRAW_MASK_LINE_SIDE_LEFT);
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 1
  364:lvgl/src/draw/sw/lv_draw_sw_line.c ****         lv_draw_mask_line_points_init(&mask_bottom_param, p2.x, p2.y, p2.x - ydiff, p2.y + xdiff,  
  1273              		.loc 1 364 70 is_stmt 0 view .LVU461
  1274 026e B3B2     		uxth	r3, r6
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 35
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccgzvg7d.s 			page 35
 
 
  364:lvgl/src/draw/sw/lv_draw_sw_line.c ****         lv_draw_mask_line_points_init(&mask_bottom_param, p2.x, p2.y, p2.x - ydiff, p2.y + xdiff,  
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 1
  1318 02bc 0490     		str	r0, [sp, #16]
  1319              	.LVL150:
  367:lvgl/src/draw/sw/lv_draw_sw_line.c ****     }
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 36
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccgzvg7d.s 			page 36
 
 
  1320              		.loc 1 367 9 is_stmt 1 view .LVU473
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 1
  1360              		.loc 1 396 28 is_stmt 1 discriminator 1 view .LVU483
  396:lvgl/src/draw/sw/lv_draw_sw_line.c ****         blend_dsc.mask_res = lv_draw_mask_apply(&mask_buf[mask_p], blend_area.x1, h, draw_area_w);
  1361              		.loc 1 396 5 is_stmt 0 discriminator 1 view .LVU484
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 37
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccgzvg7d.s 			page 37
 
 
  1362 02ea B245     		cmp	r10, r6
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 1
  1400              		.loc 1 410 39 is_stmt 0 view .LVU499
  1401 031e BDF8F630 		ldrh	r3, [sp, #246]
  1402              		.loc 1 410 43 view .LVU500
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 38
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccgzvg7d.s 			page 38
 
 
  1403 0322 0133     		adds	r3, r3, #1
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 1
  1439              		.loc 1 427 5 view .LVU513
  1440 0352 26A8     		add	r0, sp, #152
  1441 0354 FFF7FEFF 		bl	lv_draw_mask_free_param
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 39
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccgzvg7d.s 			page 39
 
 
  1442              	.LVL167:
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 1
  1482 0384 00000000 		.word	.LANCHOR0
  1483              	.LVL173:
  1484              	.L73:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 40
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccgzvg7d.s 			page 40
 
 
  1485              		.cfi_restore_state
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 1
  1532              		.cfi_offset 4, -32
  1533              		.cfi_offset 5, -28
  1534              		.cfi_offset 6, -24
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 41
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccgzvg7d.s 			page 41
 
 
  1535              		.cfi_offset 7, -20
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 1
  1576 0032 54D0     		beq	.L78
  1577              	.L80:
   60:lvgl/src/draw/sw/lv_draw_sw_line.c ****     clip_line.x1 = LV_MIN(point1->x, point2->x) - dsc->width / 2;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 42
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccgzvg7d.s 			page 42
 
 
  1578              		.loc 1 60 5 is_stmt 1 view .LVU546
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 1
  1620 007e 9B1A     		subs	r3, r3, r2
   63:lvgl/src/draw/sw/lv_draw_sw_line.c ****     clip_line.y2 = LV_MAX(point1->y, point2->y) + dsc->width / 2;
  1621              		.loc 1 63 18 view .LVU559
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 43
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccgzvg7d.s 			page 43
 
 
  1622 0080 ADF85A30 		strh	r3, [sp, #90]	@ movhi
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 1
  1659 00b6 9A42     		cmp	r2, r3
  1660 00b8 18D0     		beq	.L93
   73:lvgl/src/draw/sw/lv_draw_sw_line.c ****     else draw_line_skew(draw_ctx, dsc, point1, point2);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 44
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccgzvg7d.s 			page 44
 
 
  1661              		.loc 1 73 10 is_stmt 1 view .LVU577
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 1
  1703              	.L92:
   63:lvgl/src/draw/sw/lv_draw_sw_line.c ****     clip_line.y2 = LV_MAX(point1->y, point2->y) + dsc->width / 2;
  1704              		.loc 1 63 49 view .LVU590
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 45
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccgzvg7d.s 			page 45
 
 
  1705 00e8 0132     		adds	r2, r2, #1
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 1
  1747              		.loc 1 81 29 is_stmt 0 view .LVU602
  1748 011a A37A     		ldrb	r3, [r4, #10]	@ zero_extendqisi2
   81:lvgl/src/draw/sw/lv_draw_sw_line.c **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 46
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccgzvg7d.s 			page 46
 
 
  1749              		.loc 1 81 24 view .LVU603
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 1
  1785              		.loc 1 96 25 view .LVU621
  1786 014e ADF80020 		strh	r2, [sp]	@ movhi
   97:lvgl/src/draw/sw/lv_draw_sw_line.c ****             cir_area.x2 = point2->x + r - r_corr;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 47
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccgzvg7d.s 			page 47
 
 
  1787              		.loc 1 97 13 is_stmt 1 view .LVU622
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 1
  1825              		.loc 1 88 37 view .LVU638
  1826 0184 1FFA8AF3 		uxth	r3, r10
  1827 0188 D11A     		subs	r1, r2, r3
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 48
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccgzvg7d.s 			page 48
 
 
   88:lvgl/src/draw/sw/lv_draw_sw_line.c ****             cir_area.y1 = point1->y - r;
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 1
  1870      81828283 
  1870      84858687 
  1870      89
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 49
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccgzvg7d.s 			page 49
 
 
  1871 000d 8A8C8D8F 		.ascii	"\212\214\215\217\221\223\225\227\231\233\236\240\242"
@@ -2911,23 +2911,23 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 1
  1894              		.file 22 "lvgl/src/draw/sw/../../core/lv_refr.h"
  1895              		.file 23 "lvgl/src/draw/sw/../../hal/lv_hal_disp.h"
  1896              		.file 24 "lvgl/src/draw/sw/../../misc/lv_mem.h"
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s 			page 50
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccgzvg7d.s 			page 50
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 lv_draw_sw_line.c
-C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s:19     .text.draw_line_hor:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s:24     .text.draw_line_hor:00000000 draw_line_hor
-C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s:424    .text.draw_line_ver:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s:429    .text.draw_line_ver:00000000 draw_line_ver
-C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s:778    .text.draw_line_skew:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s:783    .text.draw_line_skew:00000000 draw_line_skew
-C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s:1482   .text.draw_line_skew:00000384 $d
-C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s:1488   .text.draw_line_skew:00000388 $t
-C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s:1516   .text.lv_draw_sw_line:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s:1522   .text.lv_draw_sw_line:00000000 lv_draw_sw_line
-C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s:1865   .rodata.wcorr.0:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\ccnlYVR7.s:1869   .rodata.wcorr.0:00000000 wcorr.0
+C:\Users\OSD\AppData\Local\Temp\ccgzvg7d.s:19     .text.draw_line_hor:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccgzvg7d.s:24     .text.draw_line_hor:00000000 draw_line_hor
+C:\Users\OSD\AppData\Local\Temp\ccgzvg7d.s:424    .text.draw_line_ver:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccgzvg7d.s:429    .text.draw_line_ver:00000000 draw_line_ver
+C:\Users\OSD\AppData\Local\Temp\ccgzvg7d.s:778    .text.draw_line_skew:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccgzvg7d.s:783    .text.draw_line_skew:00000000 draw_line_skew
+C:\Users\OSD\AppData\Local\Temp\ccgzvg7d.s:1482   .text.draw_line_skew:00000384 $d
+C:\Users\OSD\AppData\Local\Temp\ccgzvg7d.s:1488   .text.draw_line_skew:00000388 $t
+C:\Users\OSD\AppData\Local\Temp\ccgzvg7d.s:1516   .text.lv_draw_sw_line:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccgzvg7d.s:1522   .text.lv_draw_sw_line:00000000 lv_draw_sw_line
+C:\Users\OSD\AppData\Local\Temp\ccgzvg7d.s:1865   .rodata.wcorr.0:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccgzvg7d.s:1869   .rodata.wcorr.0:00000000 wcorr.0
 
 UNDEFINED SYMBOLS
 _lv_area_intersect

@@ -30,12 +30,15 @@ build/main.o: Core/Src/main.c Core/Inc/main.h \
  Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr_ex.h \
  Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_sdram.h \
  Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_fmc.h \
+ Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim.h \
+ Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h \
  Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h \
  Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h \
- Core/Inc/dma2d.h Core/Inc/main.h Core/Inc/ltdc.h Core/Inc/usart.h \
- Core/Inc/gpio.h Core/Inc/fmc.h lvgl/lvgl.h lvgl/src/misc/lv_log.h \
- lvgl/src/misc/../lv_conf_internal.h lvgl/src/misc/../lv_conf_kconfig.h \
- lvgl/lv_conf.h lvgl/src/misc/lv_types.h lvgl/src/misc/lv_timer.h \
+ Core/Inc/dma2d.h Core/Inc/main.h Core/Inc/ltdc.h Core/Inc/tim.h \
+ Core/Inc/usart.h Core/Inc/gpio.h Core/Inc/fmc.h lvgl/lvgl.h \
+ lvgl/src/misc/lv_log.h lvgl/src/misc/../lv_conf_internal.h \
+ lvgl/src/misc/../lv_conf_kconfig.h lvgl/lv_conf.h \
+ lvgl/src/misc/lv_types.h lvgl/src/misc/lv_timer.h \
  lvgl/src/misc/../hal/lv_hal_tick.h \
  lvgl/src/misc/../hal/../lv_conf_internal.h lvgl/src/misc/lv_math.h \
  lvgl/src/misc/lv_mem.h lvgl/src/misc/lv_async.h \
@@ -242,11 +245,14 @@ Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr.h:
 Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr_ex.h:
 Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_sdram.h:
 Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_fmc.h:
+Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim.h:
+Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h:
 Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:
 Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h:
 Core/Inc/dma2d.h:
 Core/Inc/main.h:
 Core/Inc/ltdc.h:
+Core/Inc/tim.h:
 Core/Inc/usart.h:
 Core/Inc/gpio.h:
 Core/Inc/fmc.h:

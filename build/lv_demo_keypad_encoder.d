@@ -226,7 +226,7 @@ build/lv_demo_keypad_encoder.o: \
  d:\kzc\stm32\h743ii_lcd\lvgl\src\lvgl.h \
  d:\kzc\stm32\h743ii_lcd\lvgl\src/extra/widgets/span/lv_span.h \
  d:\kzc\stm32\h743ii_lcd\lvgl\src\lvgl.h \
- lvgl/demos/keypad_encoder/../widgets/lv_demo_widgets.h \
+ lvgl/demos/keypad_encoder/../music/lv_demo_music.h \
  d:\kzc\stm32\h743ii_lcd\lvgl\demos\lv_demos.h
 lvgl/demos/keypad_encoder/lv_demo_keypad_encoder.h:
 lvgl/demos/keypad_encoder/../lv_demos.h:
@@ -455,5 +455,5 @@ d:\kzc\stm32\h743ii_lcd\lvgl\src/extra/widgets/imgbtn/lv_imgbtn.h:
 d:\kzc\stm32\h743ii_lcd\lvgl\src\lvgl.h:
 d:\kzc\stm32\h743ii_lcd\lvgl\src/extra/widgets/span/lv_span.h:
 d:\kzc\stm32\h743ii_lcd\lvgl\src\lvgl.h:
-lvgl/demos/keypad_encoder/../widgets/lv_demo_widgets.h:
+lvgl/demos/keypad_encoder/../music/lv_demo_music.h:
 d:\kzc\stm32\h743ii_lcd\lvgl\demos\lv_demos.h:

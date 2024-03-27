@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccdCVLOl.s 			page 1
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccF5XBtJ.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccdCVLOl.s 			page 1
   20:lvgl/examples/styles/lv_example_style_14.c ****     lv_style_init(&style_btn);
   37              		.loc 1 20 5 view .LVU1
   38 0002 1B4C     		ldr	r4, .L3
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccdCVLOl.s 			page 2
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccF5XBtJ.s 			page 2
 
 
   39 0004 2046     		mov	r0, r4
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccdCVLOl.s 			page 1
   29:lvgl/examples/styles/lv_example_style_14.c **** 
   30:lvgl/examples/styles/lv_example_style_14.c ****     /*Set the parent theme and the style apply callback for the new theme*/
   31:lvgl/examples/styles/lv_example_style_14.c ****     lv_theme_set_parent(&th_new, th_act);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccdCVLOl.s 			page 3
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccF5XBtJ.s 			page 3
 
 
   85              		.loc 1 31 5 is_stmt 1 view .LVU11
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccdCVLOl.s 			page 1
   12:lvgl/examples/styles/lv_example_style_14.c ****         lv_obj_add_style(obj, &style_btn, 0);
  133              		.loc 1 12 5 view .LVU19
   12:lvgl/examples/styles/lv_example_style_14.c ****         lv_obj_add_style(obj, &style_btn, 0);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccdCVLOl.s 			page 4
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccF5XBtJ.s 			page 4
 
 
  134              		.loc 1 12 8 is_stmt 0 view .LVU20
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccdCVLOl.s 			page 1
  178              		.thumb_func
  180              	lv_example_style_14:
  181              	.LFB206:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccdCVLOl.s 			page 5
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccF5XBtJ.s 			page 5
 
 
   37:lvgl/examples/styles/lv_example_style_14.c **** 
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccdCVLOl.s 			page 1
   31:lvgl/examples/styles/../../src/core/lv_disp.h ****     LV_SCR_LOAD_ANIM_OVER_RIGHT,
   32:lvgl/examples/styles/../../src/core/lv_disp.h ****     LV_SCR_LOAD_ANIM_OVER_TOP,
   33:lvgl/examples/styles/../../src/core/lv_disp.h ****     LV_SCR_LOAD_ANIM_OVER_BOTTOM,
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccdCVLOl.s 			page 6
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccF5XBtJ.s 			page 6
 
 
   34:lvgl/examples/styles/../../src/core/lv_disp.h ****     LV_SCR_LOAD_ANIM_MOVE_LEFT,
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccdCVLOl.s 			page 1
   88:lvgl/examples/styles/../../src/core/lv_disp.h **** /**
   89:lvgl/examples/styles/../../src/core/lv_disp.h ****  * Set the theme of a display
   90:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @param disp pointer to a display
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccdCVLOl.s 			page 7
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccF5XBtJ.s 			page 7
 
 
   91:lvgl/examples/styles/../../src/core/lv_disp.h ****  */
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccdCVLOl.s 			page 1
  145:lvgl/examples/styles/../../src/core/lv_disp.h **** /**
  146:lvgl/examples/styles/../../src/core/lv_disp.h ****  * Clean any CPU cache that is related to the display.
  147:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @param disp pointer to a display (NULL to use the default display)
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccdCVLOl.s 			page 8
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccF5XBtJ.s 			page 8
 
 
  148:lvgl/examples/styles/../../src/core/lv_disp.h ****  */
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccdCVLOl.s 			page 1
  212 0010 1423     		movs	r3, #20
  213 0012 0022     		movs	r2, #0
  214 0014 0221     		movs	r1, #2
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccdCVLOl.s 			page 9
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccF5XBtJ.s 			page 9
 
 
  215 0016 FFF7FEFF 		bl	lv_obj_align
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccdCVLOl.s 			page 1
   58:lvgl/examples/styles/lv_example_style_14.c ****     lv_label_set_text(label, "New theme");
  258              		.loc 1 58 5 is_stmt 1 view .LVU48
  259 004a 0349     		ldr	r1, .L13+4
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccdCVLOl.s 			page 10
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccF5XBtJ.s 			page 10
 
 
  260 004c FFF7FEFF 		bl	lv_label_set_text
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccdCVLOl.s 			page 1
  313              		.file 26 "lvgl/examples/styles/../../src/core/lv_group.h"
  314              		.file 27 "lvgl/examples/styles/../../src/core/lv_obj_scroll.h"
  315              		.file 28 "lvgl/examples/styles/../../src/core/lv_obj_style.h"
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccdCVLOl.s 			page 11
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccF5XBtJ.s 			page 11
 
 
  316              		.file 29 "lvgl/examples/styles/../../src/core/lv_obj_class.h"
@@ -609,25 +609,25 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccdCVLOl.s 			page 1
  321              		.file 34 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\core\\lv_obj_pos.h"
  322              		.file 35 "lvgl/examples/styles/../../src/widgets/lv_label.h"
  323              		.file 36 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\misc\\lv_style_gen.h"
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccdCVLOl.s 			page 12
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccF5XBtJ.s 			page 12
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 lv_example_style_14.c
-C:\Users\OSD\AppData\Local\Temp\ccdCVLOl.s:19     .text.new_theme_init_and_set:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccdCVLOl.s:24     .text.new_theme_init_and_set:00000000 new_theme_init_and_set
-C:\Users\OSD\AppData\Local\Temp\ccdCVLOl.s:107    .text.new_theme_init_and_set:00000070 $d
-C:\Users\OSD\AppData\Local\Temp\ccdCVLOl.s:119    .text.new_theme_apply_cb:00000000 new_theme_apply_cb
-C:\Users\OSD\AppData\Local\Temp\ccdCVLOl.s:114    .text.new_theme_apply_cb:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccdCVLOl.s:161    .text.new_theme_apply_cb:0000001c $d
-C:\Users\OSD\AppData\Local\Temp\ccdCVLOl.s:167    .rodata.lv_example_style_14.str1.4:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\ccdCVLOl.s:174    .text.lv_example_style_14:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccdCVLOl.s:180    .text.lv_example_style_14:00000000 lv_example_style_14
-C:\Users\OSD\AppData\Local\Temp\ccdCVLOl.s:269    .text.lv_example_style_14:00000054 $d
-C:\Users\OSD\AppData\Local\Temp\ccdCVLOl.s:275    .bss.style_btn:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\ccdCVLOl.s:279    .bss.style_btn:00000000 style_btn
-C:\Users\OSD\AppData\Local\Temp\ccdCVLOl.s:282    .bss.th_new.0:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\ccdCVLOl.s:286    .bss.th_new.0:00000000 th_new.0
+C:\Users\OSD\AppData\Local\Temp\ccF5XBtJ.s:19     .text.new_theme_init_and_set:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccF5XBtJ.s:24     .text.new_theme_init_and_set:00000000 new_theme_init_and_set
+C:\Users\OSD\AppData\Local\Temp\ccF5XBtJ.s:107    .text.new_theme_init_and_set:00000070 $d
+C:\Users\OSD\AppData\Local\Temp\ccF5XBtJ.s:119    .text.new_theme_apply_cb:00000000 new_theme_apply_cb
+C:\Users\OSD\AppData\Local\Temp\ccF5XBtJ.s:114    .text.new_theme_apply_cb:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccF5XBtJ.s:161    .text.new_theme_apply_cb:0000001c $d
+C:\Users\OSD\AppData\Local\Temp\ccF5XBtJ.s:167    .rodata.lv_example_style_14.str1.4:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccF5XBtJ.s:174    .text.lv_example_style_14:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccF5XBtJ.s:180    .text.lv_example_style_14:00000000 lv_example_style_14
+C:\Users\OSD\AppData\Local\Temp\ccF5XBtJ.s:269    .text.lv_example_style_14:00000054 $d
+C:\Users\OSD\AppData\Local\Temp\ccF5XBtJ.s:275    .bss.style_btn:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccF5XBtJ.s:279    .bss.style_btn:00000000 style_btn
+C:\Users\OSD\AppData\Local\Temp\ccF5XBtJ.s:282    .bss.th_new.0:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccF5XBtJ.s:286    .bss.th_new.0:00000000 th_new.0
 
 UNDEFINED SYMBOLS
 lv_style_init

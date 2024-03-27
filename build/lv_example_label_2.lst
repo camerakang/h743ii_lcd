@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc3uuIzf.s 			page 1
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc9aw08D.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc3uuIzf.s 			page 1
   40              		.cfi_offset 5, -8
   41              		.cfi_offset 14, -4
   42 0002 83B0     		sub	sp, sp, #12
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc3uuIzf.s 			page 2
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc9aw08D.s 			page 2
 
 
   43              		.cfi_def_cfa_offset 24
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc3uuIzf.s 			page 1
   34:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****  *********************/
   35:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** LV_EXPORT_CONST_INT(LV_COLOR_DEPTH);
   36:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** LV_EXPORT_CONST_INT(LV_COLOR_16_SWAP);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc3uuIzf.s 			page 3
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc9aw08D.s 			page 3
 
 
   37:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc3uuIzf.s 			page 1
   91:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #endif
   92:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
   93:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #if _LV_COLOR_HAS_MODERN_CPP
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc3uuIzf.s 			page 4
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc9aw08D.s 			page 4
 
 
   94:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** /*Fix msvc compiler error C4576 inside C++ code*/
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc3uuIzf.s 			page 1
  148:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #if LV_COLOR_16_SWAP == 0
  149:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** # define _LV_COLOR_ZERO_INITIALIZER16  {{0x00, 0x00, 0x00}}
  150:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** # define LV_COLOR_MAKE16(r8, g8, b8) {{(uint8_t)((b8 >> 3) & 0x1FU), (uint8_t)((g8 >> 2) & 0x3FU), 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc3uuIzf.s 			page 5
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc9aw08D.s 			page 5
 
 
  151:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #else
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc3uuIzf.s 			page 1
  205:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     uint8_t full;
  206:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** } lv_color8_t;
  207:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc3uuIzf.s 			page 6
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc9aw08D.s 			page 6
 
 
  208:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** typedef union {
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc3uuIzf.s 			page 1
  262:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     LV_PALETTE_INDIGO,
  263:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     LV_PALETTE_BLUE,
  264:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     LV_PALETTE_LIGHT_BLUE,
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc3uuIzf.s 			page 7
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc9aw08D.s 			page 7
 
 
  265:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     LV_PALETTE_CYAN,
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc3uuIzf.s 			page 1
  319:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     }
  320:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     else {
  321:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****         return 0;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc3uuIzf.s 			page 8
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc9aw08D.s 			page 8
 
 
  322:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     }
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc3uuIzf.s 			page 1
  376:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** #if LV_COLOR_DEPTH == 1
  377:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     if(color.full == 0)
  378:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****         return 0xFF000000;
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc3uuIzf.s 			page 9
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc9aw08D.s 			page 9
 
 
  379:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     else
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc3uuIzf.s 			page 1
  433:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****  * @param c1 the first color to mix (usually the foreground)
  434:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****  * @param c2 the second color to mix (usually the background)
  435:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****  * @param mix The ratio of the colors. 0: full `c2`, 255: full `c1`, 127: half `c1` and half`c2`
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc3uuIzf.s 			page 10
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc9aw08D.s 			page 10
 
 
  436:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****  * @return the mixed color
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc3uuIzf.s 			page 1
  490:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** /**
  491:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****  * Mix two colors with a given ratio. It runs faster then `lv_color_mix` but requires some pre comp
  492:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****  * @param premult_c1 The first color. Should be preprocessed with `lv_color_premult(c1)`
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc3uuIzf.s 			page 11
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc9aw08D.s 			page 11
 
 
  493:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****  * @param c2 The second color. As it is no pre computation required on it
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc3uuIzf.s 			page 1
  547:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****         *res_opa = LV_OPA_COVER;
  548:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     }
  549:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     /*Both colors have alpha. Expensive calculation need to be applied*/
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc3uuIzf.s 			page 12
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc9aw08D.s 			page 12
 
 
  550:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     else {
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc3uuIzf.s 			page 1
  604:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****     /* Convert a 4 bytes per pixel in format ARGB32 to R5G6B5 format
  605:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****         naive way (by calling lv_color_make with components):
  606:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****                     r = ((c & 0xFF0000) >> 19)
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc3uuIzf.s 			page 13
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc9aw08D.s 			page 13
 
 
  607:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****                     g = ((c & 0xFF00) >> 10)
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc3uuIzf.s 			page 1
  661:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h ****  */
  662:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** lv_color_t lv_color_hsv_to_rgb(uint16_t h, uint8_t s, uint8_t v);
  663:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc3uuIzf.s 			page 14
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc9aw08D.s 			page 14
 
 
  664:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** /**
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc3uuIzf.s 			page 1
   72 001e 6FF31741 		bfc	r1, #16, #8
   73              	.LVL2:
  596:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_color.h **** }
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc3uuIzf.s 			page 15
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc9aw08D.s 			page 15
 
 
   74              		.loc 2 596 12 view .LVU10
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc3uuIzf.s 			page 1
   39:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_FADE_ON = LV_SCR_LOAD_ANIM_FADE_IN, /*For backward compatibility*/
   40:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_FADE_OUT,
   41:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_OUT_LEFT,
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc3uuIzf.s 			page 16
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc9aw08D.s 			page 16
 
 
   42:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****     LV_SCR_LOAD_ANIM_OUT_RIGHT,
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc3uuIzf.s 			page 1
   96:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to a display
   97:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @return the display's theme (can be NULL)
   98:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc3uuIzf.s 			page 17
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc9aw08D.s 			page 17
 
 
   99:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** lv_theme_t * lv_disp_get_theme(lv_disp_t * disp);
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc3uuIzf.s 			page 1
  153:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to a display (NULL to use the default display)
  154:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param en true: enable invalidation; false: invalidation
  155:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc3uuIzf.s 			page 18
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc9aw08D.s 			page 18
 
 
  156:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** void lv_disp_enable_invalidation(lv_disp_t * disp, bool en);
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc3uuIzf.s 			page 1
  108              	.LBB21:
  109              	.LBI21:
  182:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** {
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc3uuIzf.s 			page 19
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc9aw08D.s 			page 19
 
 
  110              		.loc 3 182 26 view .LVU19
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc3uuIzf.s 			page 1
  151 0078 2846     		mov	r0, r5
  152 007a FFF7FEFF 		bl	lv_obj_align_to
  153              	.LVL17:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc3uuIzf.s 			page 20
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc9aw08D.s 			page 20
 
 
   34:lvgl/examples/widgets/label/lv_example_label_2.c **** }
@@ -1179,17 +1179,17 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc3uuIzf.s 			page 1
  190              		.file 16 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\misc\\lv_style_gen.h"
  191              		.file 17 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/widgets/lv_label.h"
  192              		.file 18 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\core\\lv_obj_pos.h"
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc3uuIzf.s 			page 21
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc9aw08D.s 			page 21
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 lv_example_label_2.c
-C:\Users\OSD\AppData\Local\Temp\cc3uuIzf.s:19     .rodata.lv_example_label_2.str1.4:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\cc3uuIzf.s:24     .text.lv_example_label_2:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cc3uuIzf.s:30     .text.lv_example_label_2:00000000 lv_example_label_2
-C:\Users\OSD\AppData\Local\Temp\cc3uuIzf.s:164    .text.lv_example_label_2:00000084 $d
-C:\Users\OSD\AppData\Local\Temp\cc3uuIzf.s:170    .bss.style_shadow.0:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\cc3uuIzf.s:174    .bss.style_shadow.0:00000000 style_shadow.0
+C:\Users\OSD\AppData\Local\Temp\cc9aw08D.s:19     .rodata.lv_example_label_2.str1.4:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\cc9aw08D.s:24     .text.lv_example_label_2:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\cc9aw08D.s:30     .text.lv_example_label_2:00000000 lv_example_label_2
+C:\Users\OSD\AppData\Local\Temp\cc9aw08D.s:164    .text.lv_example_label_2:00000084 $d
+C:\Users\OSD\AppData\Local\Temp\cc9aw08D.s:170    .bss.style_shadow.0:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\cc9aw08D.s:174    .bss.style_shadow.0:00000000 style_shadow.0
 
 UNDEFINED SYMBOLS
 lv_style_init

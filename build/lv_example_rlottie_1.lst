@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQdmJ9P.s 			page 1
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccvJbZxg.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQdmJ9P.s 			page 1
   35              		@ frame_needed = 0, uses_anonymous_args = 0
   36 0000 10B5     		push	{r4, lr}
   37              		.cfi_def_cfa_offset 8
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQdmJ9P.s 			page 2
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccvJbZxg.s 			page 2
 
 
   38              		.cfi_offset 4, -8
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQdmJ9P.s 			page 1
   45:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** } lv_scr_load_anim_t;
   46:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
   47:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**********************
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQdmJ9P.s 			page 3
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccvJbZxg.s 			page 3
 
 
   48:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * GLOBAL PROTOTYPES
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQdmJ9P.s 			page 1
  102:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Set the background color of a display
  103:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to a display
  104:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param color color of the background
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQdmJ9P.s 			page 4
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccvJbZxg.s 			page 4
 
 
  105:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQdmJ9P.s 			page 1
  159:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Get display invalidation is enabled.
  160:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @param disp pointer to a display (NULL to use the default display)
  161:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * @return return true if invalidation is enabled
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQdmJ9P.s 			page 5
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccvJbZxg.s 			page 5
 
 
  162:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  */
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQdmJ9P.s 			page 1
    7:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** #define LV_OBJ_POS_H
    8:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** 
    9:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** #ifdef __cplusplus
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQdmJ9P.s 			page 6
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccvJbZxg.s 			page 6
 
 
   10:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** extern "C" {
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQdmJ9P.s 			page 1
   64:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @note            With default alignment it's the distance from the top left corner
   65:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @note            E.g. LV_ALIGN_CENTER alignment it's the offset from the center of the parent
   66:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @note            The position is interpreted on the content area of the parent
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQdmJ9P.s 			page 7
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccvJbZxg.s 			page 7
 
 
   67:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @note            The values can be set in pixel or in percentage of parent size with `lv_pct(v)`
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQdmJ9P.s 			page 1
  121:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** 
  122:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** /**
  123:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * Set the height reduced by the top and bottom padding and the border width.
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQdmJ9P.s 			page 8
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccvJbZxg.s 			page 8
 
 
  124:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @param obj       pointer to an object
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQdmJ9P.s 			page 1
  178:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  * @param y_ofs     y coordinate offset after alignment
  179:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h ****  */
  180:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** void lv_obj_align(struct _lv_obj_t * obj, lv_align_t align, lv_coord_t x_ofs, lv_coord_t y_ofs);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQdmJ9P.s 			page 9
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccvJbZxg.s 			page 9
 
 
  181:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_obj_pos.h **** 
@@ -538,21 +538,21 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQdmJ9P.s 			page 1
  100              		.file 12 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/core/lv_obj_scroll.h"
  101              		.file 13 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/core/lv_obj_style.h"
  102              		.file 14 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/core/lv_obj_class.h"
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQdmJ9P.s 			page 10
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccvJbZxg.s 			page 10
 
 
  103              		.file 15 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/core/lv_event.h"
  104              		.file 16 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/hal/lv_hal_disp.h"
  105              		.file 17 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/widgets/lv_label.h"
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccQdmJ9P.s 			page 11
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccvJbZxg.s 			page 11
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 lv_example_rlottie_1.c
-C:\Users\OSD\AppData\Local\Temp\ccQdmJ9P.s:19     .rodata.lv_example_rlottie_1.str1.4:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\ccQdmJ9P.s:23     .text.lv_example_rlottie_1:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccQdmJ9P.s:29     .text.lv_example_rlottie_1:00000000 lv_example_rlottie_1
-C:\Users\OSD\AppData\Local\Temp\ccQdmJ9P.s:86     .text.lv_example_rlottie_1:00000024 $d
+C:\Users\OSD\AppData\Local\Temp\ccvJbZxg.s:19     .rodata.lv_example_rlottie_1.str1.4:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\ccvJbZxg.s:23     .text.lv_example_rlottie_1:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\ccvJbZxg.s:29     .text.lv_example_rlottie_1:00000000 lv_example_rlottie_1
+C:\Users\OSD\AppData\Local\Temp\ccvJbZxg.s:86     .text.lv_example_rlottie_1:00000024 $d
 
 UNDEFINED SYMBOLS
 lv_disp_get_default

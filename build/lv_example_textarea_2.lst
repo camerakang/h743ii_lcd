@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccAUTgoj.s 			page 1
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cccjPHYB.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccAUTgoj.s 			page 1
   29:lvgl/examples/widgets/textarea/lv_example_textarea_2.c ****     lv_obj_add_event_cb(text_ta, ta_event_cb, LV_EVENT_ALL, NULL);
   30:lvgl/examples/widgets/textarea/lv_example_textarea_2.c ****     lv_obj_align(text_ta, LV_ALIGN_TOP_RIGHT, -5, 20);
   31:lvgl/examples/widgets/textarea/lv_example_textarea_2.c **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccAUTgoj.s 			page 2
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cccjPHYB.s 			page 2
 
 
   32:lvgl/examples/widgets/textarea/lv_example_textarea_2.c ****     /*Create a label and position it above the text box*/
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccAUTgoj.s 			page 1
   63              	.LVL4:
   64              		.loc 1 50 11 view .LVU11
   65 001e 08B1     		cbz	r0, .L1
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccAUTgoj.s 			page 3
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cccjPHYB.s 			page 3
 
 
   66              		.loc 1 50 24 is_stmt 1 discriminator 1 view .LVU12
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccAUTgoj.s 			page 1
  112              		.cfi_offset 7, -8
  113              		.cfi_offset 14, -4
  114 0002 83B0     		sub	sp, sp, #12
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccAUTgoj.s 			page 4
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cccjPHYB.s 			page 4
 
 
  115              		.cfi_def_cfa_offset 32
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccAUTgoj.s 			page 1
   49:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  **********************/
   50:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
   51:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccAUTgoj.s 			page 5
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cccjPHYB.s 			page 5
 
 
   52:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Return with a pointer to the active screen
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccAUTgoj.s 			page 1
  106:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** void lv_disp_set_bg_color(lv_disp_t * disp, lv_color_t color);
  107:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
  108:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccAUTgoj.s 			page 6
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cccjPHYB.s 			page 6
 
 
  109:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Set the background image of a display
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccAUTgoj.s 			page 1
  163:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** bool lv_disp_is_invalidation_enabled(lv_disp_t * disp);
  164:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** 
  165:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h **** /**
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccAUTgoj.s 			page 7
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cccjPHYB.s 			page 7
 
 
  166:d:\kzc\stm32\h743ii_lcd\lvgl\src/core\lv_disp.h ****  * Get a pointer to the screen refresher timer to
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccAUTgoj.s 			page 1
  150              		.file 3 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\misc\\lv_area.h"
    1:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** /**
    2:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * @file lv_area.h
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccAUTgoj.s 			page 8
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cccjPHYB.s 			page 8
 
 
    3:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  *
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccAUTgoj.s 			page 1
   57:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****     LV_ALIGN_BOTTOM_MID,
   58:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****     LV_ALIGN_BOTTOM_RIGHT,
   59:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****     LV_ALIGN_LEFT_MID,
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccAUTgoj.s 			page 9
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cccjPHYB.s 			page 9
 
 
   60:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****     LV_ALIGN_RIGHT_MID,
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccAUTgoj.s 			page 1
  114:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****     dest->x2 = src->x2;
  115:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****     dest->y2 = src->y2;
  116:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** }
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccAUTgoj.s 			page 10
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cccjPHYB.s 			page 10
 
 
  117:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** 
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccAUTgoj.s 			page 1
  171:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** /**
  172:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * Get the common parts of two areas
  173:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * @param res_p pointer to an area, the result will be stored her
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccAUTgoj.s 			page 11
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cccjPHYB.s 			page 11
 
 
  174:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * @param a1_p pointer to the first area
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccAUTgoj.s 			page 1
  228:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * @return true: `aout_p` is fully outside `aholder_p`
  229:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  */
  230:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** bool _lv_area_is_out(const lv_area_t * aout_p, const lv_area_t * aholder_p, lv_coord_t radius);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccAUTgoj.s 			page 12
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cccjPHYB.s 			page 12
 
 
  231:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** 
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccAUTgoj.s 			page 1
  285:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** LV_EXPORT_CONST_INT(LV_COORD_MAX);
  286:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** LV_EXPORT_CONST_INT(LV_COORD_MIN);
  287:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccAUTgoj.s 			page 13
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cccjPHYB.s 			page 13
 
 
  288:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** /**
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccAUTgoj.s 			page 1
  189              		.loc 1 21 5 is_stmt 1 view .LVU37
  190 0058 3149     		ldr	r1, .L10+8
  191 005a FFF7FEFF 		bl	lv_label_set_text
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccAUTgoj.s 			page 14
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cccjPHYB.s 			page 14
 
 
  192              	.LVL21:
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccAUTgoj.s 			page 1
  237 0094 3346     		mov	r3, r6
  238 0096 3246     		mov	r2, r6
  239 0098 3946     		mov	r1, r7
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccAUTgoj.s 			page 15
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cccjPHYB.s 			page 15
 
 
  240 009a 2846     		mov	r0, r5
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccAUTgoj.s 			page 1
  286              		.loc 2 184 12 is_stmt 0 view .LVU61
  287 00d0 FFF7FEFF 		bl	lv_disp_get_default
  288              	.LVL38:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccAUTgoj.s 			page 16
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cccjPHYB.s 			page 16
 
 
  289 00d4 FFF7FEFF 		bl	lv_disp_get_scr_act
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccAUTgoj.s 			page 1
  336              		.cfi_restore_state
   39:lvgl/examples/widgets/textarea/lv_example_textarea_2.c **** 
  337              		.loc 1 39 5 view .LVU69
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccAUTgoj.s 			page 17
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cccjPHYB.s 			page 17
 
 
  338 0114 421C     		adds	r2, r0, #1
@@ -998,20 +998,20 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccAUTgoj.s 			page 1
  375              		.file 19 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/widgets/lv_textarea.h"
  376              		.file 20 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\core\\lv_obj_pos.h"
  377              		.file 21 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src/widgets/lv_label.h"
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccAUTgoj.s 			page 18
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cccjPHYB.s 			page 18
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 lv_example_textarea_2.c
-C:\Users\OSD\AppData\Local\Temp\ccAUTgoj.s:19     .text.ta_event_cb:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccAUTgoj.s:24     .text.ta_event_cb:00000000 ta_event_cb
-C:\Users\OSD\AppData\Local\Temp\ccAUTgoj.s:80     .text.ta_event_cb:00000028 $d
-C:\Users\OSD\AppData\Local\Temp\ccAUTgoj.s:85     .rodata.lv_example_textarea_2.str1.4:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\ccAUTgoj.s:95     .text.lv_example_textarea_2:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccAUTgoj.s:101    .text.lv_example_textarea_2:00000000 lv_example_textarea_2
-C:\Users\OSD\AppData\Local\Temp\ccAUTgoj.s:343    .text.lv_example_textarea_2:00000118 $d
-C:\Users\OSD\AppData\Local\Temp\ccAUTgoj.s:352    .bss.kb:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\ccAUTgoj.s:356    .bss.kb:00000000 kb
+C:\Users\OSD\AppData\Local\Temp\cccjPHYB.s:19     .text.ta_event_cb:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\cccjPHYB.s:24     .text.ta_event_cb:00000000 ta_event_cb
+C:\Users\OSD\AppData\Local\Temp\cccjPHYB.s:80     .text.ta_event_cb:00000028 $d
+C:\Users\OSD\AppData\Local\Temp\cccjPHYB.s:85     .rodata.lv_example_textarea_2.str1.4:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\cccjPHYB.s:95     .text.lv_example_textarea_2:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\cccjPHYB.s:101    .text.lv_example_textarea_2:00000000 lv_example_textarea_2
+C:\Users\OSD\AppData\Local\Temp\cccjPHYB.s:343    .text.lv_example_textarea_2:00000118 $d
+C:\Users\OSD\AppData\Local\Temp\cccjPHYB.s:352    .bss.kb:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\cccjPHYB.s:356    .bss.kb:00000000 kb
 
 UNDEFINED SYMBOLS
 lv_event_get_code

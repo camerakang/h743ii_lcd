@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc11BFo9.s 			page 1
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cceLKsFk.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc11BFo9.s 			page 1
   44              		.loc 1 12 5 view .LVU3
   45 000a 1220     		movs	r0, #18
   46 000c FFF7FEFF 		bl	lv_palette_main
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc11BFo9.s 			page 2
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cceLKsFk.s 			page 2
 
 
   47              	.LVL1:
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc11BFo9.s 			page 1
   31:lvgl/examples/styles/../../src/core/lv_disp.h ****     LV_SCR_LOAD_ANIM_OVER_RIGHT,
   32:lvgl/examples/styles/../../src/core/lv_disp.h ****     LV_SCR_LOAD_ANIM_OVER_TOP,
   33:lvgl/examples/styles/../../src/core/lv_disp.h ****     LV_SCR_LOAD_ANIM_OVER_BOTTOM,
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc11BFo9.s 			page 3
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cceLKsFk.s 			page 3
 
 
   34:lvgl/examples/styles/../../src/core/lv_disp.h ****     LV_SCR_LOAD_ANIM_MOVE_LEFT,
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc11BFo9.s 			page 1
   88:lvgl/examples/styles/../../src/core/lv_disp.h **** /**
   89:lvgl/examples/styles/../../src/core/lv_disp.h ****  * Set the theme of a display
   90:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @param disp pointer to a display
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc11BFo9.s 			page 4
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cceLKsFk.s 			page 4
 
 
   91:lvgl/examples/styles/../../src/core/lv_disp.h ****  */
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc11BFo9.s 			page 1
  145:lvgl/examples/styles/../../src/core/lv_disp.h **** /**
  146:lvgl/examples/styles/../../src/core/lv_disp.h ****  * Clean any CPU cache that is related to the display.
  147:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @param disp pointer to a display (NULL to use the default display)
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc11BFo9.s 			page 5
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cceLKsFk.s 			page 5
 
 
  148:lvgl/examples/styles/../../src/core/lv_disp.h ****  */
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc11BFo9.s 			page 1
   82 0036 0022     		movs	r2, #0
   83 0038 2146     		mov	r1, r4
   84 003a FFF7FEFF 		bl	lv_obj_add_style
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc11BFo9.s 			page 6
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cceLKsFk.s 			page 6
 
 
   85              	.LVL9:
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc11BFo9.s 			page 1
   38:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * Set the position of an object relative to the set alignment.
   39:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @param obj       pointer to an object
   40:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @param x         new x coordinate
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc11BFo9.s 			page 7
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cceLKsFk.s 			page 7
 
 
   41:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @param y         new y coordinate
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc11BFo9.s 			page 1
   95:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  * @note            possible values are:
   96:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  *                  pixel               simple set the size accordingly
   97:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  *                  LV_SIZE_CONTENT     set the size to involve all children in the given direction
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc11BFo9.s 			page 8
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cceLKsFk.s 			page 8
 
 
   98:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  *                  lv_pct(x)           to set size in percentage of the parent's content area size
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc11BFo9.s 			page 1
  152:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h ****  */
  153:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** void lv_obj_update_layout(const struct _lv_obj_t * obj);
  154:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc11BFo9.s 			page 9
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cceLKsFk.s 			page 9
 
 
  155:d:\kzc\stm32\h743ii_lcd\lvgl\src\core\lv_obj_pos.h **** /**
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc11BFo9.s 			page 1
  104 0050 FFF7FEFF 		bl	lv_obj_align
  105              	.LVL11:
  106              		.loc 3 201 5 is_stmt 0 view .LVU17
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc11BFo9.s 			page 10
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cceLKsFk.s 			page 10
 
 
  107              	.LBE11:
@@ -588,18 +588,18 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc11BFo9.s 			page 1
  154              		.file 16 "lvgl/examples/styles/../../src/hal/lv_hal_disp.h"
  155              		.file 17 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\misc\\lv_style_gen.h"
  156              		.file 18 "lvgl/examples/styles/../../src/widgets/lv_line.h"
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc11BFo9.s 			page 11
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cceLKsFk.s 			page 11
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 lv_example_style_9.c
-C:\Users\OSD\AppData\Local\Temp\cc11BFo9.s:19     .text.lv_example_style_9:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\cc11BFo9.s:25     .text.lv_example_style_9:00000000 lv_example_style_9
-C:\Users\OSD\AppData\Local\Temp\cc11BFo9.s:116    .text.lv_example_style_9:00000058 $d
-C:\Users\OSD\AppData\Local\Temp\cc11BFo9.s:122    .bss.style.1:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\cc11BFo9.s:126    .bss.style.1:00000000 style.1
-C:\Users\OSD\AppData\Local\Temp\cc11BFo9.s:129    .data.p.0:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\cc11BFo9.s:133    .data.p.0:00000000 p.0
+C:\Users\OSD\AppData\Local\Temp\cceLKsFk.s:19     .text.lv_example_style_9:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\cceLKsFk.s:25     .text.lv_example_style_9:00000000 lv_example_style_9
+C:\Users\OSD\AppData\Local\Temp\cceLKsFk.s:116    .text.lv_example_style_9:00000058 $d
+C:\Users\OSD\AppData\Local\Temp\cceLKsFk.s:122    .bss.style.1:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\cceLKsFk.s:126    .bss.style.1:00000000 style.1
+C:\Users\OSD\AppData\Local\Temp\cceLKsFk.s:129    .data.p.0:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\cceLKsFk.s:133    .data.p.0:00000000 p.0
 
 UNDEFINED SYMBOLS
 lv_style_init

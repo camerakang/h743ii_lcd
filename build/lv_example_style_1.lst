@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuvKmE0.s 			page 1
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc3rnnPh.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuvKmE0.s 			page 1
   45 0004 2046     		mov	r0, r4
   46 0006 FFF7FEFF 		bl	lv_style_init
   47              	.LVL0:
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuvKmE0.s 			page 2
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc3rnnPh.s 			page 2
 
 
   11:lvgl/examples/styles/lv_example_style_1.c ****     lv_style_set_radius(&style, 5);
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuvKmE0.s 			page 1
   29:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****  *********************/
   30:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h **** 
   31:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h **** #define LV_STYLE_SENTINEL_VALUE     0xAABBCCDD
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuvKmE0.s 			page 3
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc3rnnPh.s 			page 3
 
 
   32:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h **** 
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuvKmE0.s 			page 1
   86:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h **** enum {
   87:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****     LV_BLEND_MODE_NORMAL,     /**< Simply mix according to the opacity value*/
   88:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****     LV_BLEND_MODE_ADDITIVE,   /**< Add the respective color channels*/
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuvKmE0.s 			page 4
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc3rnnPh.s 			page 4
 
 
   89:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****     LV_BLEND_MODE_SUBTRACTIVE,/**< Subtract the foreground from the background*/
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuvKmE0.s 			page 1
  143:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h **** 
  144:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h **** typedef uint8_t lv_dither_mode_t;
  145:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuvKmE0.s 			page 5
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc3rnnPh.s 			page 5
 
 
  146:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h **** /** A gradient stop definition.
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuvKmE0.s 			page 1
  200:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****     LV_STYLE_PAD_COLUMN             = 21,
  201:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****     LV_STYLE_BASE_DIR               = 22,
  202:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****     LV_STYLE_CLIP_CORNER            = 23,
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuvKmE0.s 			page 6
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc3rnnPh.s 			page 6
 
 
  203:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h **** 
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuvKmE0.s 			page 1
  257:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****     LV_STYLE_TEXT_LINE_SPACE        = 89,
  258:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****     LV_STYLE_TEXT_DECOR             = 90,
  259:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****     LV_STYLE_TEXT_ALIGN             = 91,
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuvKmE0.s 			page 7
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc3rnnPh.s 			page 7
 
 
  260:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h **** 
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuvKmE0.s 			page 1
  314:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h **** } lv_style_const_prop_t;
  315:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h **** 
  316:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h **** /**
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuvKmE0.s 			page 8
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc3rnnPh.s 			page 8
 
 
  317:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****  * Descriptor of a style (a collection of properties and values).
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuvKmE0.s 			page 1
  371:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h **** 
  372:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h **** /**
  373:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****  * Get the number of custom properties that have been registered thus far.
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuvKmE0.s 			page 9
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc3rnnPh.s 			page 9
 
 
  374:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****  */
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuvKmE0.s 			page 1
  428:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h **** void lv_style_transition_dsc_init(lv_style_transition_dsc_t * tr, const lv_style_prop_t props[],
  429:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****                                   lv_anim_path_cb_t path_cb, uint32_t time, uint32_t delay, void * 
  430:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuvKmE0.s 			page 10
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc3rnnPh.s 			page 10
 
 
  431:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h **** /**
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuvKmE0.s 			page 1
  485:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****             }
  486:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****         }
  487:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****     }
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuvKmE0.s 			page 11
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc3rnnPh.s 			page 11
 
 
  488:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h ****     else if(LV_STYLE_PROP_ID_MASK(style->prop1) == prop) {
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuvKmE0.s 			page 1
  542:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h **** 
  543:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_style.h **** static inline void lv_style_set_pad_ver(lv_style_t * style, lv_coord_t value)
   67              		.loc 2 543 20 view .LVU7
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuvKmE0.s 			page 12
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc3rnnPh.s 			page 12
 
 
   68              	.LBB9:
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuvKmE0.s 			page 1
   28:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** #endif
   29:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** 
   30:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** /**********************
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuvKmE0.s 			page 13
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc3rnnPh.s 			page 13
 
 
   31:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  *      TYPEDEFS
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuvKmE0.s 			page 1
   85:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****     LV_DIR_VER      = LV_DIR_TOP | LV_DIR_BOTTOM,
   86:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****     LV_DIR_ALL      = LV_DIR_HOR | LV_DIR_VER,
   87:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** };
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuvKmE0.s 			page 14
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc3rnnPh.s 			page 14
 
 
   88:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** 
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuvKmE0.s 			page 1
  142:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  */
  143:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** void lv_area_set_width(lv_area_t * area_p, lv_coord_t w);
  144:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuvKmE0.s 			page 15
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc3rnnPh.s 			page 15
 
 
  145:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** /**
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuvKmE0.s 			page 1
  199:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * @param a_p pointer to an area
  200:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * @param p_p pointer to a point
  201:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * @param radius radius of area (e.g. for rounded rectangle)
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuvKmE0.s 			page 16
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc3rnnPh.s 			page 16
 
 
  202:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h ****  * @return false:the point is out of the area
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuvKmE0.s 			page 1
  256:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** #define _LV_COORD_TYPE_SHIFT    (13U)
  257:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** #endif
  258:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuvKmE0.s 			page 17
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc3rnnPh.s 			page 17
 
 
  259:d:\kzc\stm32\h743ii_lcd\lvgl\src\misc\lv_area.h **** #define _LV_COORD_TYPE_MASK     (3 << _LV_COORD_TYPE_SHIFT)
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuvKmE0.s 			page 1
  101              	.LBB10:
  102              	.LBI10:
  103              		.file 4 "lvgl/examples/styles/../../src/core/lv_disp.h"
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuvKmE0.s 			page 18
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc3rnnPh.s 			page 18
 
 
    1:lvgl/examples/styles/../../src/core/lv_disp.h **** /**
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuvKmE0.s 			page 1
   55:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @return pointer to the active screen object (loaded by 'lv_scr_load()')
   56:lvgl/examples/styles/../../src/core/lv_disp.h ****  */
   57:lvgl/examples/styles/../../src/core/lv_disp.h **** lv_obj_t * lv_disp_get_scr_act(lv_disp_t * disp);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuvKmE0.s 			page 19
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc3rnnPh.s 			page 19
 
 
   58:lvgl/examples/styles/../../src/core/lv_disp.h **** 
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuvKmE0.s 			page 1
  112:lvgl/examples/styles/../../src/core/lv_disp.h ****  */
  113:lvgl/examples/styles/../../src/core/lv_disp.h **** void lv_disp_set_bg_image(lv_disp_t * disp, const void  * img_src);
  114:lvgl/examples/styles/../../src/core/lv_disp.h **** 
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuvKmE0.s 			page 20
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc3rnnPh.s 			page 20
 
 
  115:lvgl/examples/styles/../../src/core/lv_disp.h **** /**
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuvKmE0.s 			page 1
  169:lvgl/examples/styles/../../src/core/lv_disp.h ****  * @return pointer to the display refresher timer. (NULL on error)
  170:lvgl/examples/styles/../../src/core/lv_disp.h ****  */
  171:lvgl/examples/styles/../../src/core/lv_disp.h **** lv_timer_t * _lv_disp_get_refr_timer(lv_disp_t * disp);
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuvKmE0.s 			page 21
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc3rnnPh.s 			page 21
 
 
  172:lvgl/examples/styles/../../src/core/lv_disp.h **** 
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuvKmE0.s 			page 1
  140 0074 00000000 		.word	.LANCHOR0
  141 0078 00000000 		.word	.LC0
  142              		.cfi_endproc
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuvKmE0.s 			page 22
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc3rnnPh.s 			page 22
 
 
  143              	.LFE204:
@@ -1283,17 +1283,17 @@ ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuvKmE0.s 			page 1
  164              		.file 15 "d:\\kzc\\stm32\\h743ii_lcd\\lvgl\\src\\misc\\lv_style_gen.h"
  165              		.file 16 "lvgl/examples/styles/../../src/hal/lv_hal_disp.h"
  166              		.file 17 "lvgl/examples/styles/../../src/widgets/lv_label.h"
-ARM GAS  C:\Users\OSD\AppData\Local\Temp\ccuvKmE0.s 			page 23
+ARM GAS  C:\Users\OSD\AppData\Local\Temp\cc3rnnPh.s 			page 23
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 lv_example_style_1.c
-C:\Users\OSD\AppData\Local\Temp\ccuvKmE0.s:19     .rodata.lv_example_style_1.str1.4:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\ccuvKmE0.s:23     .text.lv_example_style_1:00000000 $t
-C:\Users\OSD\AppData\Local\Temp\ccuvKmE0.s:29     .text.lv_example_style_1:00000000 lv_example_style_1
-C:\Users\OSD\AppData\Local\Temp\ccuvKmE0.s:140    .text.lv_example_style_1:00000074 $d
-C:\Users\OSD\AppData\Local\Temp\ccuvKmE0.s:146    .bss.style.0:00000000 $d
-C:\Users\OSD\AppData\Local\Temp\ccuvKmE0.s:150    .bss.style.0:00000000 style.0
+C:\Users\OSD\AppData\Local\Temp\cc3rnnPh.s:19     .rodata.lv_example_style_1.str1.4:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\cc3rnnPh.s:23     .text.lv_example_style_1:00000000 $t
+C:\Users\OSD\AppData\Local\Temp\cc3rnnPh.s:29     .text.lv_example_style_1:00000000 lv_example_style_1
+C:\Users\OSD\AppData\Local\Temp\cc3rnnPh.s:140    .text.lv_example_style_1:00000074 $d
+C:\Users\OSD\AppData\Local\Temp\cc3rnnPh.s:146    .bss.style.0:00000000 $d
+C:\Users\OSD\AppData\Local\Temp\cc3rnnPh.s:150    .bss.style.0:00000000 style.0
 
 UNDEFINED SYMBOLS
 lv_style_init
