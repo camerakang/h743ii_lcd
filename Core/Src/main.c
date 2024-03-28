@@ -113,8 +113,8 @@ int main(void)
   /* USER CODE BEGIN 2 */
   // Touch_Init(); // 触摸屏初始化
 
-  lv_init(); //	LVGL初始化
-  lv_port_disp_init();  //	LVGL显示接口初始化
+  lv_init();           //	LVGL初始化
+  lv_port_disp_init(); //	LVGL显示接口初始化
   // lv_port_indev_init(); // LVGL触摸接口初始化
   lv_demo_widgets();
   /* USER CODE END 2 */
@@ -123,10 +123,10 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-    lv_task_handler(); // LVGL杩涚�???
-    // Touch_Scan();			// 瑙︽懜鎵弿锛屾壂鎻忛鐜囦笉鑳戒綆�????10ms
+    lv_task_handler(); // LVGL进程
+                       // Touch_Scan();			// 触摸扫描，扫描频率不能低于10ms
     HAL_Delay(20);
-    LED1_Toggle; // LED闂�???
+    LED1_Toggle; // LED闪烁
 
     /* USER CODE END WHILE */
 

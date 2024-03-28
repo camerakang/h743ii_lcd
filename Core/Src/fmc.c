@@ -22,14 +22,15 @@
 #include "fmc.h"
 
 /* USER CODE BEGIN 0 */
-FMC_SDRAM_CommandTypeDef command; // 闂佺鐭囬崘銊у幀闂佸湱枪濞诧綁骞??
+FMC_SDRAM_CommandTypeDef command; // 控制指令
+
 /******************************************************************************************************
- *	�?????? �?????? �??????: SDRAM_Initialization_Sequence
- *	闂佺ǹ绻堥崕杈亹濞戙垹鐭楅柛灞剧⊕濞??: hsdram - SDRAM_HandleTypeDef闁诲氦顫夐惌顔剧不閻斿吋鍎嶉柛鏇ㄥ亜缂嶄線姊洪幓鎺楃崪缂佽鲸绻堝畷锛??鍦О?閸愵亞鐭嗛柛婵嗗閺嗘澘鈽夐弬娆炬Ш婵炲牊鍞禿ram
- *				 Command	- 闂佺鐭囬崘銊у幀闂佸湱枪濞诧綁骞??
- *	�?????? �?????? �??????: �??????
- *	闂佸憡鍨兼慨銈夊汲閻旂厧�?夐柣鏃囶嚙閸??: SDRAM 闂佸憡鐟ラ崐褰掑汲閻斿吋�??鐎广儱娲ㄩ弸?
- *	�??????    �??????: 闂備焦婢樼粔鍫曟偪閸濈嚉RAM闂佺儵鏅濇灙闁告鍥х睄閻犻缚娅ｇ喊宥夋煕濠婂啯婀伴悽顖氱埣�?�曟岸鎳滈崹顐ゅ幍闂?????
+ *	函 数 名: SDRAM_Initialization_Sequence
+ *	入口参数: hsdram - SDRAM_HandleTypeDef定义的变量，即表示定义的sdram
+ *				 Command	- 控制指令
+ *	返 回 值: 无
+ *	函数功能: SDRAM 参数配置
+ *	说    明: 配置SDRAM相关时序和控制方式
  *******************************************************************************************************/
 
 void SDRAM_Initialization_Sequence(SDRAM_HandleTypeDef *hsdram, FMC_SDRAM_CommandTypeDef *Command)
@@ -37,29 +38,29 @@ void SDRAM_Initialization_Sequence(SDRAM_HandleTypeDef *hsdram, FMC_SDRAM_Comman
   __IO uint32_t tmpmrd = 0;
 
   /* Configure a clock configuration enable command */
-  Command->CommandMode = FMC_SDRAM_CMD_CLK_ENABLE;  // �??????闂佸憡姘ㄩ弻鍢峈AM闂佸搫鍟悥濂稿�??
-  Command->CommandTarget = FMC_COMMAND_TARGET_BANK; // 闂備緡鍋勯ˇ鎵??姘ュ妿閹茬増鎷呴悷棰佺帛闂佸憡甯掓晶搴♀枔閹达箑�?岄柛婵嗗閸??
+  Command->CommandMode = FMC_SDRAM_CMD_CLK_ENABLE;  // 开启SDRAM时钟
+  Command->CommandTarget = FMC_COMMAND_TARGET_BANK; // 选择要控制的区域
   Command->AutoRefreshNumber = 1;
   Command->ModeRegisterDefinition = 0;
 
-  HAL_SDRAM_SendCommand(hsdram, Command, SDRAM_TIMEOUT); // 闂佸憡鐟﹂崺濠囧�???闂佽法鍠曟慨銈囨暜閸洖�?嗛柤鎼佹涧閻�?綊鏌????
-  HAL_Delay(1);                                          // 閻庣偣鍊涢崺鏍ь渻閸屾粎椹冲璺猴功缁??
+  HAL_SDRAM_SendCommand(hsdram, Command, SDRAM_TIMEOUT); // 发送控制指令
+  HAL_Delay(1);                                          // 延时等待
 
   /* Configure a PALL (precharge all) command */
-  Command->CommandMode = FMC_SDRAM_CMD_PALL;        // 婵☆偅婢�??氼剟宕㈤弽顓熷仺闂傚牊绋掗崵鎺楁�????
-  Command->CommandTarget = FMC_COMMAND_TARGET_BANK; // 闂備緡鍋勯ˇ鎵??姘ュ妿閹茬増鎷呴悷棰佺帛闂佸憡甯掓晶搴♀枔閹达箑�?岄柛婵嗗閸??
+  Command->CommandMode = FMC_SDRAM_CMD_PALL;        // 预充电命令
+  Command->CommandTarget = FMC_COMMAND_TARGET_BANK; // 选择要控制的区域
   Command->AutoRefreshNumber = 1;
   Command->ModeRegisterDefinition = 0;
 
-  HAL_SDRAM_SendCommand(hsdram, Command, SDRAM_TIMEOUT); // 闂佸憡鐟﹂崺濠囧�???闂佽法鍠曟慨銈囨暜閸洖�?嗛柤鎼佹涧閻�?綊鏌????
+  HAL_SDRAM_SendCommand(hsdram, Command, SDRAM_TIMEOUT); // 发送控制指令
 
   /* Configure a Auto-Refresh command */
-  Command->CommandMode = FMC_SDRAM_CMD_AUTOREFRESH_MODE; // 婵炶揪缍?濞夋洟寮妶澶嬪殜妞ゅ繐瀚闂佸憡甯￠弨閬嶅蓟?
-  Command->CommandTarget = FMC_COMMAND_TARGET_BANK;      // 闂備緡鍋勯ˇ鎵??姘ュ妿閹茬増鎷呴悷棰佺帛闂佸憡甯掓晶搴♀枔閹达箑�?岄柛婵嗗閸??
-  Command->AutoRefreshNumber = 8;                        // 闂佺厧顨庢禍婊勬叏閳哄懎�?嗛梺鍨儐閻??濠电偛妫岄崜婵嬪�??
+  Command->CommandMode = FMC_SDRAM_CMD_AUTOREFRESH_MODE; // 使用自动刷新
+  Command->CommandTarget = FMC_COMMAND_TARGET_BANK;      // 选择要控制的区域
+  Command->AutoRefreshNumber = 8;                        // 自动刷新次数
   Command->ModeRegisterDefinition = 0;
 
-  HAL_SDRAM_SendCommand(hsdram, Command, SDRAM_TIMEOUT); // 闂佸憡鐟﹂崺濠囧�???闂佽法鍠曟慨銈囨暜閸洖�?嗛柤鎼佹涧閻�?綊鏌????
+  HAL_SDRAM_SendCommand(hsdram, Command, SDRAM_TIMEOUT); // 发送控制指令
 
   /* Program the external memory mode register */
   tmpmrd = (uint32_t)SDRAM_MODEREG_BURST_LENGTH_2 |
@@ -68,14 +69,14 @@ void SDRAM_Initialization_Sequence(SDRAM_HandleTypeDef *hsdram, FMC_SDRAM_Comman
            SDRAM_MODEREG_OPERATING_MODE_STANDARD |
            SDRAM_MODEREG_WRITEBURST_MODE_SINGLE;
 
-  Command->CommandMode = FMC_SDRAM_CMD_LOAD_MODE;   // 闂佸憡姊绘慨鎯归崶顬喖鍨惧畷鍥╊攨闁诲酣娼�??氼剟鎮洪妸鈺�?棷闁靛ǹ鍎查崵鎺楁�????
-  Command->CommandTarget = FMC_COMMAND_TARGET_BANK; // 闂備緡鍋勯ˇ鎵??姘ュ妿閹茬増鎷呴悷棰佺帛闂佸憡甯掓晶搴♀枔閹达箑�?岄柛婵嗗閸??
+  Command->CommandMode = FMC_SDRAM_CMD_LOAD_MODE;   // 加载模式寄存器命令
+  Command->CommandTarget = FMC_COMMAND_TARGET_BANK; // 选择要控制的区域
   Command->AutoRefreshNumber = 1;
   Command->ModeRegisterDefinition = tmpmrd;
 
-  HAL_SDRAM_SendCommand(hsdram, Command, SDRAM_TIMEOUT); // 闂佸憡鐟﹂崺濠囧�???闂佽法鍠曟慨銈囨暜閸洖�?嗛柤鎼佹涧閻�?綊鏌????
+  HAL_SDRAM_SendCommand(hsdram, Command, SDRAM_TIMEOUT); // 发送控制指令
 
-  HAL_SDRAM_ProgramRefreshRate(hsdram, 918); // 闂備焦婢樼粔鍫曟偪閸℃稑�?嗛梺鍨儐閻??�??????
+  HAL_SDRAM_ProgramRefreshRate(hsdram, 918); // 配置刷新率
 }
 
 /* USER CODE END 0 */
@@ -96,7 +97,7 @@ void MX_FMC_Init(void)
   /* USER CODE END FMC_Init 1 */
 
   /** Perform the SDRAM1 memory initialization sequence
-  */
+   */
   hsdram1.Instance = FMC_SDRAM_DEVICE;
   /* hsdram1.Init */
   hsdram1.Init.SDBank = FMC_SDRAM_BANK1;
@@ -120,12 +121,11 @@ void MX_FMC_Init(void)
 
   if (HAL_SDRAM_Init(&hsdram1, &SdramTiming) != HAL_OK)
   {
-    Error_Handler( );
+    Error_Handler();
   }
 
   /* USER CODE BEGIN FMC_Init 2 */
-  SDRAM_Initialization_Sequence(&hsdram1, &command); // 闂備焦婢樼粔鍫曟偪閸濈嚉RAM
-
+  SDRAM_Initialization_Sequence(&hsdram1, &command); // 配置SDRAM
   HAL_GPIO_WritePin(CSB_GPIO_Port, CSB_Pin, SET);
   KD024VGFPD094_init();
   /* USER CODE END FMC_Init 2 */
@@ -133,25 +133,27 @@ void MX_FMC_Init(void)
 
 static uint32_t FMC_Initialized = 0;
 
-static void HAL_FMC_MspInit(void){
+static void HAL_FMC_MspInit(void)
+{
   /* USER CODE BEGIN FMC_MspInit 0 */
 
   /* USER CODE END FMC_MspInit 0 */
   GPIO_InitTypeDef GPIO_InitStruct = {0};
-  if (FMC_Initialized) {
+  if (FMC_Initialized)
+  {
     return;
   }
   FMC_Initialized = 1;
   RCC_PeriphCLKInitTypeDef PeriphClkInitStruct = {0};
 
   /** Initializes the peripherals clock
-  */
-    PeriphClkInitStruct.PeriphClockSelection = RCC_PERIPHCLK_FMC;
-    PeriphClkInitStruct.FmcClockSelection = RCC_FMCCLKSOURCE_D1HCLK;
-    if (HAL_RCCEx_PeriphCLKConfig(&PeriphClkInitStruct) != HAL_OK)
-    {
-      Error_Handler();
-    }
+   */
+  PeriphClkInitStruct.PeriphClockSelection = RCC_PERIPHCLK_FMC;
+  PeriphClkInitStruct.FmcClockSelection = RCC_FMCCLKSOURCE_D1HCLK;
+  if (HAL_RCCEx_PeriphCLKConfig(&PeriphClkInitStruct) != HAL_OK)
+  {
+    Error_Handler();
+  }
 
   /* Peripheral clock enable */
   __HAL_RCC_FMC_CLK_ENABLE();
@@ -198,9 +200,7 @@ static void HAL_FMC_MspInit(void){
   PE1   ------> FMC_NBL1
   */
   /* GPIO_InitStruct */
-  GPIO_InitStruct.Pin = GPIO_PIN_0|GPIO_PIN_1|GPIO_PIN_2|GPIO_PIN_3
-                          |GPIO_PIN_4|GPIO_PIN_5|GPIO_PIN_11|GPIO_PIN_12
-                          |GPIO_PIN_13|GPIO_PIN_14|GPIO_PIN_15;
+  GPIO_InitStruct.Pin = GPIO_PIN_0 | GPIO_PIN_1 | GPIO_PIN_2 | GPIO_PIN_3 | GPIO_PIN_4 | GPIO_PIN_5 | GPIO_PIN_11 | GPIO_PIN_12 | GPIO_PIN_13 | GPIO_PIN_14 | GPIO_PIN_15;
   GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
@@ -209,7 +209,7 @@ static void HAL_FMC_MspInit(void){
   HAL_GPIO_Init(GPIOF, &GPIO_InitStruct);
 
   /* GPIO_InitStruct */
-  GPIO_InitStruct.Pin = GPIO_PIN_2|GPIO_PIN_3|GPIO_PIN_5;
+  GPIO_InitStruct.Pin = GPIO_PIN_2 | GPIO_PIN_3 | GPIO_PIN_5;
   GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
@@ -218,8 +218,7 @@ static void HAL_FMC_MspInit(void){
   HAL_GPIO_Init(GPIOH, &GPIO_InitStruct);
 
   /* GPIO_InitStruct */
-  GPIO_InitStruct.Pin = GPIO_PIN_0|GPIO_PIN_1|GPIO_PIN_2|GPIO_PIN_4
-                          |GPIO_PIN_5|GPIO_PIN_8|GPIO_PIN_15;
+  GPIO_InitStruct.Pin = GPIO_PIN_0 | GPIO_PIN_1 | GPIO_PIN_2 | GPIO_PIN_4 | GPIO_PIN_5 | GPIO_PIN_8 | GPIO_PIN_15;
   GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
@@ -228,9 +227,7 @@ static void HAL_FMC_MspInit(void){
   HAL_GPIO_Init(GPIOG, &GPIO_InitStruct);
 
   /* GPIO_InitStruct */
-  GPIO_InitStruct.Pin = GPIO_PIN_7|GPIO_PIN_8|GPIO_PIN_9|GPIO_PIN_10
-                          |GPIO_PIN_11|GPIO_PIN_12|GPIO_PIN_13|GPIO_PIN_14
-                          |GPIO_PIN_15|GPIO_PIN_0|GPIO_PIN_1;
+  GPIO_InitStruct.Pin = GPIO_PIN_7 | GPIO_PIN_8 | GPIO_PIN_9 | GPIO_PIN_10 | GPIO_PIN_11 | GPIO_PIN_12 | GPIO_PIN_13 | GPIO_PIN_14 | GPIO_PIN_15 | GPIO_PIN_0 | GPIO_PIN_1;
   GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
@@ -239,8 +236,7 @@ static void HAL_FMC_MspInit(void){
   HAL_GPIO_Init(GPIOE, &GPIO_InitStruct);
 
   /* GPIO_InitStruct */
-  GPIO_InitStruct.Pin = GPIO_PIN_8|GPIO_PIN_9|GPIO_PIN_10|GPIO_PIN_14
-                          |GPIO_PIN_15|GPIO_PIN_0|GPIO_PIN_1;
+  GPIO_InitStruct.Pin = GPIO_PIN_8 | GPIO_PIN_9 | GPIO_PIN_10 | GPIO_PIN_14 | GPIO_PIN_15 | GPIO_PIN_0 | GPIO_PIN_1;
   GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
@@ -256,7 +252,8 @@ static void HAL_FMC_MspInit(void){
   /* USER CODE END FMC_MspInit 1 */
 }
 
-void HAL_SDRAM_MspInit(SDRAM_HandleTypeDef* sdramHandle){
+void HAL_SDRAM_MspInit(SDRAM_HandleTypeDef *sdramHandle)
+{
   /* USER CODE BEGIN SDRAM_MspInit 0 */
 
   /* USER CODE END SDRAM_MspInit 0 */
@@ -268,11 +265,13 @@ void HAL_SDRAM_MspInit(SDRAM_HandleTypeDef* sdramHandle){
 
 static uint32_t FMC_DeInitialized = 0;
 
-static void HAL_FMC_MspDeInit(void){
+static void HAL_FMC_MspDeInit(void)
+{
   /* USER CODE BEGIN FMC_MspDeInit 0 */
 
   /* USER CODE END FMC_MspDeInit 0 */
-  if (FMC_DeInitialized) {
+  if (FMC_DeInitialized)
+  {
     return;
   }
   FMC_DeInitialized = 1;
@@ -321,21 +320,15 @@ static void HAL_FMC_MspDeInit(void){
   PE1   ------> FMC_NBL1
   */
 
-  HAL_GPIO_DeInit(GPIOF, GPIO_PIN_0|GPIO_PIN_1|GPIO_PIN_2|GPIO_PIN_3
-                          |GPIO_PIN_4|GPIO_PIN_5|GPIO_PIN_11|GPIO_PIN_12
-                          |GPIO_PIN_13|GPIO_PIN_14|GPIO_PIN_15);
+  HAL_GPIO_DeInit(GPIOF, GPIO_PIN_0 | GPIO_PIN_1 | GPIO_PIN_2 | GPIO_PIN_3 | GPIO_PIN_4 | GPIO_PIN_5 | GPIO_PIN_11 | GPIO_PIN_12 | GPIO_PIN_13 | GPIO_PIN_14 | GPIO_PIN_15);
 
-  HAL_GPIO_DeInit(GPIOH, GPIO_PIN_2|GPIO_PIN_3|GPIO_PIN_5);
+  HAL_GPIO_DeInit(GPIOH, GPIO_PIN_2 | GPIO_PIN_3 | GPIO_PIN_5);
 
-  HAL_GPIO_DeInit(GPIOG, GPIO_PIN_0|GPIO_PIN_1|GPIO_PIN_2|GPIO_PIN_4
-                          |GPIO_PIN_5|GPIO_PIN_8|GPIO_PIN_15);
+  HAL_GPIO_DeInit(GPIOG, GPIO_PIN_0 | GPIO_PIN_1 | GPIO_PIN_2 | GPIO_PIN_4 | GPIO_PIN_5 | GPIO_PIN_8 | GPIO_PIN_15);
 
-  HAL_GPIO_DeInit(GPIOE, GPIO_PIN_7|GPIO_PIN_8|GPIO_PIN_9|GPIO_PIN_10
-                          |GPIO_PIN_11|GPIO_PIN_12|GPIO_PIN_13|GPIO_PIN_14
-                          |GPIO_PIN_15|GPIO_PIN_0|GPIO_PIN_1);
+  HAL_GPIO_DeInit(GPIOE, GPIO_PIN_7 | GPIO_PIN_8 | GPIO_PIN_9 | GPIO_PIN_10 | GPIO_PIN_11 | GPIO_PIN_12 | GPIO_PIN_13 | GPIO_PIN_14 | GPIO_PIN_15 | GPIO_PIN_0 | GPIO_PIN_1);
 
-  HAL_GPIO_DeInit(GPIOD, GPIO_PIN_8|GPIO_PIN_9|GPIO_PIN_10|GPIO_PIN_14
-                          |GPIO_PIN_15|GPIO_PIN_0|GPIO_PIN_1);
+  HAL_GPIO_DeInit(GPIOD, GPIO_PIN_8 | GPIO_PIN_9 | GPIO_PIN_10 | GPIO_PIN_14 | GPIO_PIN_15 | GPIO_PIN_0 | GPIO_PIN_1);
 
   /* Peripheral interrupt DeInit */
   HAL_NVIC_DisableIRQ(FMC_IRQn);
@@ -344,7 +337,8 @@ static void HAL_FMC_MspDeInit(void){
   /* USER CODE END FMC_MspDeInit 1 */
 }
 
-void HAL_SDRAM_MspDeInit(SDRAM_HandleTypeDef* sdramHandle){
+void HAL_SDRAM_MspDeInit(SDRAM_HandleTypeDef *sdramHandle)
+{
   /* USER CODE BEGIN SDRAM_MspDeInit 0 */
 
   /* USER CODE END SDRAM_MspDeInit 0 */
@@ -354,9 +348,9 @@ void HAL_SDRAM_MspDeInit(SDRAM_HandleTypeDef* sdramHandle){
   /* USER CODE END SDRAM_MspDeInit 1 */
 }
 /**
-  * @}
-  */
+ * @}
+ */
 
 /**
-  * @}
-  */
+ * @}
+ */
