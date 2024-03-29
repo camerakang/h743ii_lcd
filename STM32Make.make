@@ -36,6 +36,10 @@ BUILD_DIR = build
 ######################################
 # C sources
 C_SOURCES =  \
+Core/H743ii_lcd_code/components/ui_comp_hook.c \
+Core/H743ii_lcd_code/screens/ui_Screen1.c \
+Core/H743ii_lcd_code/ui.c \
+Core/H743ii_lcd_code/ui_helpers.c \
 Core/Src/KD024VGFPD094.c \
 Core/Src/dma2d.c \
 Core/Src/fmc.c \
@@ -438,6 +442,7 @@ AS_INCLUDES = \
 # C includes
 C_INCLUDES =  \
 -ICore/Inc \
+-ICore/h743ii_lcd_code \
 -IDrivers/CMSIS/Device/ST/STM32H7xx/Include \
 -IDrivers/CMSIS/Include \
 -IDrivers/STM32H7xx_HAL_Driver/Inc \

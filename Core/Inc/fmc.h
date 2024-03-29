@@ -42,10 +42,10 @@ void HAL_SDRAM_MspInit(SDRAM_HandleTypeDef* hsdram);
 void HAL_SDRAM_MspDeInit(SDRAM_HandleTypeDef* hsdram);
 
 /* USER CODE BEGIN Prototypes */
-#define SDRAM_Size 32*1024*1024  //32M瀛楄�?
-#define SDRAM_BANK_ADDR     ((uint32_t)0xC0000000) 				// FMC SDRAM 鏁版嵁鍩哄湴�??
-#define FMC_COMMAND_TARGET_BANK   FMC_SDRAM_CMD_TARGET_BANK1	//	SDRAM 鐨刡ank閫夋�?
-#define SDRAM_TIMEOUT     ((uint32_t)0x1000) 						// 瓒呮椂鍒ゆ柇鏃堕�?
+#define SDRAM_Size 32*1024*1024  //32M瀛楄�?
+#define SDRAM_BANK_ADDR     ((uint32_t)0xC0000000) 				// FMC SDRAM 鏁版嵁鍩哄湴�??
+#define FMC_COMMAND_TARGET_BANK   FMC_SDRAM_CMD_TARGET_BANK1	//	SDRAM 鐨刡ank閫夋�?
+#define SDRAM_TIMEOUT     ((uint32_t)0x1000) 						// 瓒呮椂鍒ゆ柇鏃堕�?
 
 #define SDRAM_MODEREG_BURST_LENGTH_1             ((uint16_t)0x0000)
 #define SDRAM_MODEREG_BURST_LENGTH_2             ((uint16_t)0x0001)

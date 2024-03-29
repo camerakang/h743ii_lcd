@@ -58,6 +58,7 @@
 extern DMA2D_HandleTypeDef hdma2d;
 extern SDRAM_HandleTypeDef hsdram1;
 extern LTDC_HandleTypeDef hltdc;
+extern TIM_HandleTypeDef htim16;
 extern TIM_HandleTypeDef htim17;
 extern UART_HandleTypeDef huart1;
 /* USER CODE BEGIN EV */
@@ -259,6 +260,20 @@ void DMA2D_IRQHandler(void)
 }
 
 /**
+  * @brief This function handles TIM16 global interrupt.
+  */
+void TIM16_IRQHandler(void)
+{
+  /* USER CODE BEGIN TIM16_IRQn 0 */
+  // HAL_GPIO_WritePin(LCD_BL_GPIO_Port, LCD_BL_Pin, SET);
+  /* USER CODE END TIM16_IRQn 0 */
+  HAL_TIM_IRQHandler(&htim16);
+  /* USER CODE BEGIN TIM16_IRQn 1 */
+
+  /* USER CODE END TIM16_IRQn 1 */
+}
+
+/**
   * @brief This function handles TIM17 global interrupt.
   */
 void TIM17_IRQHandler(void)
@@ -273,5 +288,21 @@ void TIM17_IRQHandler(void)
 }
 
 /* USER CODE BEGIN 1 */
+
+
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
+    static uint32_t count = 0;
+    static uint32_t dutyCycle = 100; // 模拟50%占空比
+
+    if (htim->Instance == TIM16) {
+        if (count < dutyCycle) {
+            HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, GPIO_PIN_SET);
+        } else {
+            HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, GPIO_PIN_RESET);
+        }
+
+        count = (count + 1) % 1000; // 更新计数器，保持在0-999范围
+    }
+}
 
 /* USER CODE END 1 */

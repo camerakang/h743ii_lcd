@@ -74,11 +74,11 @@ includeDirectories:
   - Inc/**
   - Core/Inc/**
   - Core/Lib/**
+  - Core/h743ii_lcd_code/**
   - Src/**
   - Core/Src/**
   - Core/Lib/**
   - lvgl/**
-  - Drivers/user/**
 
 
 # Files that should be included in the compilation.
@@ -90,8 +90,8 @@ sourceFiles:
   - Src/**
   - Core/Src/**
   - Core/Lib/**
+  - Core/H743ii_lcd_code/**
   - lvgl/**
-  - Drivers/user/**
 # When no makefile is present it will show a warning pop-up.
 # However when compilation without the CubeMX Makefile is desired, this can be turned of.
 suppressMakefileWarning: false
