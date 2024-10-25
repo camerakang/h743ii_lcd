@@ -1,43 +1,75 @@
-/* USER CODE BEGIN Header */
-/**
-  ******************************************************************************
-  * @file    usart.c
-  * @brief   This file provides code for the configuration
-  *          of the USART instances.
-  ******************************************************************************
-  * @attention
-  *
-  * Copyright (c) 2024 STMicroelectronics.
-  * All rights reserved.
-  *
-  * This software is licensed under terms that can be found in the LICENSE file
-  * in the root directory of this software component.
-  * If no LICENSE file comes with this software, it is provided AS-IS.
-  *
-  ******************************************************************************
-  */
-/* USER CODE END Header */
-/* Includes ------------------------------------------------------------------*/
+/***
+	************************************************************************************************
+	*	@file  	usart.c
+	*	@version V1.0
+	*  @date    2021-7-20
+	*	@author  反客科技	
+	*	@brief   串口打印测试
+   *************************************************************************************************
+   *  @description
+	*
+	*	实验平台：反客STM32H743IIT6核心板 （型号：FK743M2-IIT6）
+	*	淘宝地址：https://shop212360197.taobao.com
+	*	QQ交流群：536665479
+	*
+>>>>> 文件说明：
+	*
+	*  初始化usart引脚，配置波特率等参数
+	*
+	************************************************************************************************
+***/
+
+
 #include "usart.h"
 
-/* USER CODE BEGIN 0 */
 
-/* USER CODE END 0 */
 
-UART_HandleTypeDef huart1;
+UART_HandleTypeDef huart1;  // UART_HandleTypeDef 结构体变量
 
-/* USART1 init function */
 
-void MX_USART1_UART_Init(void)
+/*************************************************************************************************
+*	函 数 名:	HAL_UART_MspInit
+*	入口参数:	huart - UART_HandleTypeDef定义的变量，即表示定义的串口
+*	返 回 值:	无
+*	函数功能:	初始化串口引脚
+*	说    明:	无		
+*************************************************************************************************/
+
+
+void HAL_UART_MspInit(UART_HandleTypeDef* huart)
 {
+	GPIO_InitTypeDef GPIO_InitStruct = {0};
+	
+	if(huart->Instance==USART1)
+	{
+		__HAL_RCC_USART1_CLK_ENABLE();		// 开启 USART1 时钟
 
-  /* USER CODE BEGIN USART1_Init 0 */
+		GPIO_USART1_TX_CLK_ENABLE;				// 开启 USART1 TX 引脚的 GPIO 时钟
+		GPIO_USART1_RX_CLK_ENABLE;				// 开启 USART1 RX 引脚的 GPIO 时钟
 
-  /* USER CODE END USART1_Init 0 */
+		GPIO_InitStruct.Pin 			= USART1_TX_PIN;					// TX引脚
+		GPIO_InitStruct.Mode 		= GPIO_MODE_AF_PP;				// 复用推挽输出
+		GPIO_InitStruct.Pull 		= GPIO_PULLUP;						// 上拉
+		GPIO_InitStruct.Speed 		= GPIO_SPEED_FREQ_VERY_HIGH;	// 速度等级 
+		GPIO_InitStruct.Alternate 	= GPIO_AF7_USART1;				// 复用为USART1
+		HAL_GPIO_Init(USART1_TX_PORT, &GPIO_InitStruct);
 
-  /* USER CODE BEGIN USART1_Init 1 */
+		GPIO_InitStruct.Pin 			= USART1_RX_PIN;					// RX引脚
+		HAL_GPIO_Init(USART1_RX_PORT, &GPIO_InitStruct);		
+	}
 
-  /* USER CODE END USART1_Init 1 */
+}
+
+/*************************************************************************************************
+*	函 数 名:	USART1_Init
+*	入口参数:	无
+*	返 回 值:	无
+*	函数功能:	初始化串口配置
+*	说    明:	无		 
+*************************************************************************************************/
+
+void USART1_Init(void)
+{
   huart1.Instance = USART1;
   huart1.Init.BaudRate = 115200;
   huart1.Init.WordLength = UART_WORDLENGTH_8B;
@@ -51,95 +83,31 @@ void MX_USART1_UART_Init(void)
   huart1.AdvancedInit.AdvFeatureInit = UART_ADVFEATURE_NO_INIT;
   if (HAL_UART_Init(&huart1) != HAL_OK)
   {
-    Error_Handler();
+
   }
   if (HAL_UARTEx_SetTxFifoThreshold(&huart1, UART_TXFIFO_THRESHOLD_1_8) != HAL_OK)
   {
-    Error_Handler();
+
   }
   if (HAL_UARTEx_SetRxFifoThreshold(&huart1, UART_RXFIFO_THRESHOLD_1_8) != HAL_OK)
   {
-    Error_Handler();
+
   }
   if (HAL_UARTEx_DisableFifoMode(&huart1) != HAL_OK)
   {
-    Error_Handler();
-  }
-  /* USER CODE BEGIN USART1_Init 2 */
 
-  /* USER CODE END USART1_Init 2 */
-
-}
-
-void HAL_UART_MspInit(UART_HandleTypeDef* uartHandle)
-{
-
-  GPIO_InitTypeDef GPIO_InitStruct = {0};
-  RCC_PeriphCLKInitTypeDef PeriphClkInitStruct = {0};
-  if(uartHandle->Instance==USART1)
-  {
-  /* USER CODE BEGIN USART1_MspInit 0 */
-
-  /* USER CODE END USART1_MspInit 0 */
-
-  /** Initializes the peripherals clock
-  */
-    PeriphClkInitStruct.PeriphClockSelection = RCC_PERIPHCLK_USART1;
-    PeriphClkInitStruct.Usart16ClockSelection = RCC_USART16CLKSOURCE_D2PCLK2;
-    if (HAL_RCCEx_PeriphCLKConfig(&PeriphClkInitStruct) != HAL_OK)
-    {
-      Error_Handler();
-    }
-
-    /* USART1 clock enable */
-    __HAL_RCC_USART1_CLK_ENABLE();
-
-    __HAL_RCC_GPIOA_CLK_ENABLE();
-    /**USART1 GPIO Configuration
-    PA9     ------> USART1_TX
-    PA10     ------> USART1_RX
-    */
-    GPIO_InitStruct.Pin = GPIO_PIN_9|GPIO_PIN_10;
-    GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
-    GPIO_InitStruct.Pull = GPIO_NOPULL;
-    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-    GPIO_InitStruct.Alternate = GPIO_AF7_USART1;
-    HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
-
-    /* USART1 interrupt Init */
-    HAL_NVIC_SetPriority(USART1_IRQn, 0, 0);
-    HAL_NVIC_EnableIRQ(USART1_IRQn);
-  /* USER CODE BEGIN USART1_MspInit 1 */
-
-  /* USER CODE END USART1_MspInit 1 */
   }
 }
 
-void HAL_UART_MspDeInit(UART_HandleTypeDef* uartHandle)
-{
-
-  if(uartHandle->Instance==USART1)
-  {
-  /* USER CODE BEGIN USART1_MspDeInit 0 */
-
-  /* USER CODE END USART1_MspDeInit 0 */
-    /* Peripheral clock disable */
-    __HAL_RCC_USART1_CLK_DISABLE();
-
-    /**USART1 GPIO Configuration
-    PA9     ------> USART1_TX
-    PA10     ------> USART1_RX
-    */
-    HAL_GPIO_DeInit(GPIOA, GPIO_PIN_9|GPIO_PIN_10);
-
-    /* USART1 interrupt Deinit */
-    HAL_NVIC_DisableIRQ(USART1_IRQn);
-  /* USER CODE BEGIN USART1_MspDeInit 1 */
-
-  /* USER CODE END USART1_MspDeInit 1 */
-  }
+/*************************************************************************************************
+*	函 数 名:	fputc
+*	入口参数:	ch - 要输出的字符 ，  f - 文件指针（这里用不到）
+*	返 回 值:	正常时返回字符，出错时返回 EOF（-1）
+*	函数功能:	重定向 fputc 函数，目的是使用 printf 函数
+*	说    明:	无		
+*************************************************************************************************/
+int _write(int fd, char *ptr, int len)  
+{  
+  HAL_UART_Transmit(&huart1, (uint8_t*)ptr, len, 0xFFFF);
+  return len;
 }
-
-/* USER CODE BEGIN 1 */
-
-/* USER CODE END 1 */

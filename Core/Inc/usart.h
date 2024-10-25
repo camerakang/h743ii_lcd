@@ -1,52 +1,30 @@
-/* USER CODE BEGIN Header */
-/**
-  ******************************************************************************
-  * @file    usart.h
-  * @brief   This file contains all the function prototypes for
-  *          the usart.c file
-  ******************************************************************************
-  * @attention
-  *
-  * Copyright (c) 2024 STMicroelectronics.
-  * All rights reserved.
-  *
-  * This software is licensed under terms that can be found in the LICENSE file
-  * in the root directory of this software component.
-  * If no LICENSE file comes with this software, it is provided AS-IS.
-  *
-  ******************************************************************************
-  */
-/* USER CODE END Header */
-/* Define to prevent recursive inclusion -------------------------------------*/
-#ifndef __USART_H__
-#define __USART_H__
+#ifndef __USART_H
+#define __USART_H
 
-#ifdef __cplusplus
-extern "C" {
-#endif
+#include "stm32h7xx_hal.h"
+#include "stdio.h"
 
-/* Includes ------------------------------------------------------------------*/
-#include "main.h"
+/*-------------------------------------------- USART配置宏 ---------------------------------------*/
 
-/* USER CODE BEGIN Includes */
+#define  USART1_BaudRate  115200
 
-/* USER CODE END Includes */
+#define  USART1_TX_PIN									GPIO_PIN_9								// TX 引脚
+#define	USART1_TX_PORT									GPIOA										// TX 引脚端口
+#define 	GPIO_USART1_TX_CLK_ENABLE        	   __HAL_RCC_GPIOA_CLK_ENABLE()	 	// TX 引脚时钟
 
-extern UART_HandleTypeDef huart1;
 
-/* USER CODE BEGIN Private defines */
+#define  USART1_RX_PIN									GPIO_PIN_10             			// RX 引脚
+#define	USART1_RX_PORT									GPIOA                 				// RX 引脚端口
+#define 	GPIO_USART1_RX_CLK_ENABLE         	   __HAL_RCC_GPIOA_CLK_ENABLE()		// RX 引脚时钟
 
-/* USER CODE END Private defines */
 
-void MX_USART1_UART_Init(void);
+/*---------------------------------------------- 函数声明 ---------------------------------------*/
 
-/* USER CODE BEGIN Prototypes */
+void USART1_Init(void) ;	// USART1初始化函数
 
-/* USER CODE END Prototypes */
+#endif //__USART_H
 
-#ifdef __cplusplus
-}
-#endif
 
-#endif /* __USART_H__ */
+
+
 

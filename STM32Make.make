@@ -36,20 +36,12 @@ BUILD_DIR = build
 ######################################
 # C sources
 C_SOURCES =  \
-Core/Src/KD024VGFPD094.c \
-Core/Src/dma2d.c \
-Core/Src/fmc.c \
-Core/Src/gpio.c \
-Core/Src/lcd_fonts.c \
-Core/Src/lcd_image.c \
-Core/Src/lcd_rgb.c \
-Core/Src/lcd_test.c \
-Core/Src/ltdc.c \
+Core/Src/led.c \
 Core/Src/main.c \
+Core/Src/sdram.c \
 Core/Src/stm32h7xx_hal_msp.c \
 Core/Src/stm32h7xx_it.c \
 Core/Src/system_stm32h7xx.c \
-Core/Src/tim.c \
 Core/Src/usart.c \
 Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c \
 Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c \
