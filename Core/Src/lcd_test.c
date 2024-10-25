@@ -613,33 +613,31 @@ void LCD_Test_Image(void)
 		
 // 绘制初始界面，包括标题、LOGO以及进度条>>>>>
 	
-	// LCD_SetBackColor(0xffB9EDF8); 			//	设置背景色，使用自定义颜色
-	// LCD_Clear(); 									//	清屏，刷背景色
+	LCD_SetBackColor(0xffB9EDF8); 			//	设置背景色，使用自定义颜色
+	LCD_Clear(); 									//	清屏，刷背景色
 	
-	// LCD_SetTextFont(&CH_Font32);				// 设置3232中文字体,ASCII字体对应为3216
-	// LCD_SetColor(0xff333333);					//	设置画笔色，使用自定义颜色
-	// LCD_DisplayText(176, 87,"图片绘制");	// 显示文本
+	LCD_SetTextFont(&CH_Font32);				// 设置3232中文字体,ASCII字体对应为3216
+	LCD_SetColor(0xff333333);					//	设置画笔色，使用自定义颜色
+	LCD_DisplayText(176, 87,"图片绘制");	// 显示文本
 	
-	// LCD_SetColor(0xfffd7923);					//	设置画笔色，使用自定义颜色
-	// LCD_DrawImage(  120, 120, 240, 83, Image_FANKE_240x83) ;		// 显示LOGO图片
+	LCD_SetColor(0xfffd7923);					//	设置画笔色，使用自定义颜色
+	LCD_DrawImage(  120, 120, 240, 83, Image_FANKE_240x83) ;		// 显示LOGO图片
 
-	// LCD_SetColor(0xff003366);					//	设置画笔色，使用自定义颜色	
-// 	for(i=0;i<100;i++)
-//    {
-// 		LCD_FillRect(44,228,4*i,6);	// 绘制矩形，实现简易进度条的效果
-// 		HAL_Delay(15);	
-//    }
+	LCD_SetColor(0xff003366);					//	设置画笔色，使用自定义颜色	
+	for(i=0;i<100;i++)
+   {
+		LCD_FillRect(44,228,4*i,6);	// 绘制矩形，实现简易进度条的效果
+		HAL_Delay(15);	
+   }
 	
 // 图片绘制>>>>>>>	
 
-	// LCD_SetBackColor(LCD_BLACK); 			//	设置背景色
-	// LCD_Clear(); 								// 清屏
+	LCD_SetBackColor(LCD_BLACK); 			//	设置背景色
+	LCD_Clear(); 								// 清屏
 	
-	// LCD_SetColor( 0xFFFFAD60);
-	// LCD_DrawImage( 84, 49, 60, 60, Image_Android_60x60) ;
 	
-	// LCD_SetColor( 0xFFFFB6B9);
-	// LCD_DrawImage( 210, 55, 60, 60, Image_Cloud_60x60) ;
+	LCD_SetColor( 0xFF8AC6D1);
+	LCD_DrawImage( 210, 55, 60, 60, Image_Cloud_60x60) ;
 	
 	// LCD_SetColor( 0xFF8AC6D1);
 	// LCD_DrawImage( 336, 55, 60, 60, Image_Folder_60x60) ;
@@ -653,13 +651,13 @@ void LCD_Test_Image(void)
 	// LCD_SetColor( 0xFFE59572);
 	// LCD_DrawImage( 336, 162, 60, 60, Image_Video_60x60) ;	
 
-	// HAL_Delay(2000);
-	
-	LCD_SetBackColor(LCD_WHITE); 			//	设置背景色
-	LCD_Clear(); 								// 清屏
-	LCD_SetColor( LCD_BLACK);
-	LCD_DrawImage( 0, 16, 480, 239, Image_FANKE_480x239) ;	
 	HAL_Delay(2000);
+	
+	// LCD_SetBackColor(LCD_WHITE); 			//	设置背景色
+	// LCD_Clear(); 								// 清屏
+	// LCD_SetColor( LCD_BLACK);
+	// LCD_DrawImage( 0, 16, 480, 239, Image_FANKE_480x239) ;	
+	// HAL_Delay(2000);
 	
 }
 

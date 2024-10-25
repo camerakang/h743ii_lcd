@@ -1,6 +1,6 @@
 {
     "cortex-debug.armToolchainPath": "C:\\TOOLS\\GCC-ARM-NONE-EABI\\BIN",
-    "cortex-debug.openocdPath": "C:\\tools\\OpenOCD\\bin\\OPENOCD.EXE",
+    "cortex-debug.openocdPath": "C:\\TOOLS\\OPENOCD\\BIN\\OPENOCD.EXE",
     "files.associations": {
         "kd024vgfpd094.h": "c",
         "main.h": "c",
@@ -8,6 +8,7 @@
         "sdram.h": "c",
         "stm32h7xx_hal.h": "c",
         "lcd_rgb.h": "c",
-        "lcd_image.h": "c"
+        "lcd_image.h": "c",
+        "lcd_test.h": "c"
     }
 }

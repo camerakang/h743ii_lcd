@@ -14,7 +14,6 @@ extern const uint8_t	Image_Video_60x60[];
 	
 extern const uint8_t Image_FANKE_240x83[];
 extern const uint8_t Image_FANKE_480x239[];
-
 #endif  // __LCD_IMAGE_H
 
 

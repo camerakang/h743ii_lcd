@@ -22,62 +22,62 @@
 #include "fmc.h"
 
 /* USER CODE BEGIN 0 */
-FMC_SDRAM_CommandTypeDef command; // 閹貉冨煑閹稿洣鎶?
+FMC_SDRAM_CommandTypeDef command;	// 控制指令
 /******************************************************************************************************
- *	�???? �???? �????: SDRAM_Initialization_Sequence
- *	閸忋儱褰涢崣鍌涙�?: hsdram - SDRAM_HandleTypeDef鐎规矮绠熼惃鍕綁闁插骏绱濋崡�?�犮?冪粈鍝勭暰娑斿娈憇dram
- *				 Command	- 閹貉冨煑閹稿洣鎶?
- *	�???? �???? �????: �????
- *	閸戣姤鏆熼崝鐔诲�?: SDRAM 閸欏倹鏆熼柊宥囩�?
- *	�????    �????: 闁板秶鐤哠DRAM閻╃ǹ鍙ч弮璺虹碍閸滃本甯堕崚鑸垫煙�????
- *******************************************************************************************************/
+*	函 数 名: SDRAM_Initialization_Sequence
+*	入口参数: hsdram - SDRAM_HandleTypeDef定义的变量，即表示定义的sdram
+*				 Command	- 控制指令
+*	返 回 值: 无
+*	函数功能: SDRAM 参数配置
+*	说    明: 配置SDRAM相关时序和控制方式
+*******************************************************************************************************/
 
 void SDRAM_Initialization_Sequence(SDRAM_HandleTypeDef *hsdram, FMC_SDRAM_CommandTypeDef *Command)
 {
-  __IO uint32_t tmpmrd = 0;
+	__IO uint32_t tmpmrd = 0;
 
-  /* Configure a clock configuration enable command */
-  Command->CommandMode = FMC_SDRAM_CMD_CLK_ENABLE;  // �????閸氱柇DRAM閺冨爼鎸?
-  Command->CommandTarget = FMC_COMMAND_TARGET_BANK; // 闁�?�ㄧ憰浣瑰付閸掑墎娈戦崠鍝勭�?
-  Command->AutoRefreshNumber = 1;
-  Command->ModeRegisterDefinition = 0;
+	/* Configure a clock configuration enable command */
+	Command->CommandMode 				= FMC_SDRAM_CMD_CLK_ENABLE;	// 开启SDRAM时钟 
+	Command->CommandTarget 				= FMC_COMMAND_TARGET_BANK; 	// 选择要控制的区域
+	Command->AutoRefreshNumber 		= 1;
+	Command->ModeRegisterDefinition 	= 0;
 
-  HAL_SDRAM_SendCommand(hsdram, Command, SDRAM_TIMEOUT); // 閸欐埊鎷??閿熻姤甯堕崚鑸靛瘹閿???
-  HAL_Delay(1);                                          // 瀵よ埖妞傜粵澶婄�?
+	HAL_SDRAM_SendCommand(hsdram, Command, SDRAM_TIMEOUT);	// 发送控制指令
+	HAL_Delay(1);		// 延时等待
 
-  /* Configure a PALL (precharge all) command */
-  Command->CommandMode = FMC_SDRAM_CMD_PALL;        // 妫板嫬鍘栭悽闈涙嚒閿???
-  Command->CommandTarget = FMC_COMMAND_TARGET_BANK; // 闁�?�ㄧ憰浣瑰付閸掑墎娈戦崠鍝勭�?
-  Command->AutoRefreshNumber = 1;
-  Command->ModeRegisterDefinition = 0;
+	/* Configure a PALL (precharge all) command */ 
+	Command->CommandMode 				= FMC_SDRAM_CMD_PALL;		// 预充电命令
+	Command->CommandTarget 				= FMC_COMMAND_TARGET_BANK;	// 选择要控制的区域
+	Command->AutoRefreshNumber 		= 1;
+	Command->ModeRegisterDefinition 	= 0;
 
-  HAL_SDRAM_SendCommand(hsdram, Command, SDRAM_TIMEOUT); // 閸欐埊鎷??閿熻姤甯堕崚鑸靛瘹閿???
+	HAL_SDRAM_SendCommand(hsdram, Command, SDRAM_TIMEOUT);  // 发送控制指令
 
-  /* Configure a Auto-Refresh command */
-  Command->CommandMode = FMC_SDRAM_CMD_AUTOREFRESH_MODE; // 娴ｈ法鏁ら懛顏勫З閸掗攱鏌?
-  Command->CommandTarget = FMC_COMMAND_TARGET_BANK;      // 闁�?�ㄧ憰浣瑰付閸掑墎娈戦崠鍝勭�?
-  Command->AutoRefreshNumber = 8;                        // 閼奉亜濮╅崚閿嬫�?濞嗏剝鏆?
-  Command->ModeRegisterDefinition = 0;
+	/* Configure a Auto-Refresh command */ 
+	Command->CommandMode 				= FMC_SDRAM_CMD_AUTOREFRESH_MODE;	// 使用自动刷新
+	Command->CommandTarget 				= FMC_COMMAND_TARGET_BANK;          // 选择要控制的区域
+	Command->AutoRefreshNumber			= 8;                                // 自动刷新次数
+	Command->ModeRegisterDefinition 	= 0;
 
-  HAL_SDRAM_SendCommand(hsdram, Command, SDRAM_TIMEOUT); // 閸欐埊鎷??閿熻姤甯堕崚鑸靛瘹閿???
+	HAL_SDRAM_SendCommand(hsdram, Command, SDRAM_TIMEOUT);	// 发送控制指令
 
-  /* Program the external memory mode register */
-  tmpmrd = (uint32_t)SDRAM_MODEREG_BURST_LENGTH_2 |
-           SDRAM_MODEREG_BURST_TYPE_SEQUENTIAL |
-           SDRAM_MODEREG_CAS_LATENCY_3 |
-           SDRAM_MODEREG_OPERATING_MODE_STANDARD |
-           SDRAM_MODEREG_WRITEBURST_MODE_SINGLE;
+	/* Program the external memory mode register */
+	tmpmrd = (uint32_t)SDRAM_MODEREG_BURST_LENGTH_2         |
+							SDRAM_MODEREG_BURST_TYPE_SEQUENTIAL   |
+							SDRAM_MODEREG_CAS_LATENCY_3           |
+							SDRAM_MODEREG_OPERATING_MODE_STANDARD |
+							SDRAM_MODEREG_WRITEBURST_MODE_SINGLE;
 
-  Command->CommandMode = FMC_SDRAM_CMD_LOAD_MODE;   // 閸旂姾娴囧Ο鈥崇础鐎靛嫬鐡ㄩ崳銊ユ嚒閿???
-  Command->CommandTarget = FMC_COMMAND_TARGET_BANK; // 闁�?�ㄧ憰浣瑰付閸掑墎娈戦崠鍝勭�?
-  Command->AutoRefreshNumber = 1;
-  Command->ModeRegisterDefinition = tmpmrd;
+	Command->CommandMode					= FMC_SDRAM_CMD_LOAD_MODE;	// 加载模式寄存器命令
+	Command->CommandTarget 				= FMC_COMMAND_TARGET_BANK;	// 选择要控制的区域
+	Command->AutoRefreshNumber 		= 1;
+	Command->ModeRegisterDefinition 	= tmpmrd;
 
-  HAL_SDRAM_SendCommand(hsdram, Command, SDRAM_TIMEOUT); // 閸欐埊鎷??閿熻姤甯堕崚鑸靛瘹閿???
+	HAL_SDRAM_SendCommand(hsdram, Command, SDRAM_TIMEOUT);	// 发送控制指令
+	
+	HAL_SDRAM_ProgramRefreshRate(hsdram, 918);  // 配置刷新率
 
-  HAL_SDRAM_ProgramRefreshRate(hsdram, 918); // 闁板秶鐤嗛崚閿嬫�?�????
 }
-
 /* USER CODE END 0 */
 
 SDRAM_HandleTypeDef hsdram1;
@@ -124,7 +124,7 @@ void MX_FMC_Init(void)
   }
 
   /* USER CODE BEGIN FMC_Init 2 */
-  SDRAM_Initialization_Sequence(&hsdram1, &command); // 闁板秶鐤哠DRAM
+  SDRAM_Initialization_Sequence(&hsdram1, &command); // 闂佹澘绉堕悿鍝燚RAM
 
   HAL_GPIO_WritePin(CSB_GPIO_Port, CSB_Pin, SET);
   KD024VGFPD094_init();

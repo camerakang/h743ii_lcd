@@ -37,22 +37,22 @@ void MX_LTDC_Init(void)
   LTDC_LayerCfgTypeDef pLayerCfg = {0};
 
   /* USER CODE BEGIN LTDC_Init 1 */
-	__HAL_RCC_DMA2D_CLK_ENABLE();					// 浣胯兘DMA2D鏃堕�?
+  __HAL_RCC_DMA2D_CLK_ENABLE(); // 娴ｈ儻鍏楧MA2D閺冨爼锟�?
 
   /* USER CODE END LTDC_Init 1 */
   hltdc.Instance = LTDC;
   hltdc.Init.HSPolarity = LTDC_HSPOLARITY_AL;
   hltdc.Init.VSPolarity = LTDC_VSPOLARITY_AL;
   hltdc.Init.DEPolarity = LTDC_DEPOLARITY_AL;
-  hltdc.Init.PCPolarity = LTDC_PCPOLARITY_IPC;
-  hltdc.Init.HorizontalSync = 1;
-  hltdc.Init.VerticalSync = 1;
-  hltdc.Init.AccumulatedHBP = 15;
-  hltdc.Init.AccumulatedVBP = 11;
-  hltdc.Init.AccumulatedActiveW = 495;
-  hltdc.Init.AccumulatedActiveH = 651;
-  hltdc.Init.TotalWidth = 503;
-  hltdc.Init.TotalHeigh = 659;
+  hltdc.Init.PCPolarity = LTDC_PCPOLARITY_IIPC;
+  hltdc.Init.HorizontalSync = 7;
+  hltdc.Init.VerticalSync = 7;
+  hltdc.Init.AccumulatedHBP = 127;
+  hltdc.Init.AccumulatedVBP = 27;
+  hltdc.Init.AccumulatedActiveW = 607;
+  hltdc.Init.AccumulatedActiveH = 667;
+  hltdc.Init.TotalWidth = 727;
+  hltdc.Init.TotalHeigh = 687;
   hltdc.Init.Backcolor.Blue = 0;
   hltdc.Init.Backcolor.Green = 0;
   hltdc.Init.Backcolor.Red = 0;
@@ -80,19 +80,19 @@ void MX_LTDC_Init(void)
     Error_Handler();
   }
   /* USER CODE BEGIN LTDC_Init 2 */
-  HAL_LTDC_EnableDither(&hltdc);           // �???鍚鑹叉姈�???
-  HAL_LTDC_ProgramLineEvent(&hltdc, 0);    // 璁剧疆琛屼腑鏂紝锟??0�???
-  HAL_NVIC_SetPriority(LTDC_IRQn, 0xE, 0); // 璁剧疆浼樺厛�???
+  HAL_LTDC_EnableDither(&hltdc);           // 锟�???閸氼垶顤侀懝鍙夊锟�???
+  HAL_LTDC_ProgramLineEvent(&hltdc, 0);    // 鐠佸墽鐤嗙悰灞艰厬閺傤叏绱濋敓??0锟�???
+  HAL_NVIC_SetPriority(LTDC_IRQn, 0xE, 0); // 鐠佸墽鐤嗘导妯哄帥锟�???
   HAL_NVIC_EnableIRQ(LTDC_IRQn);
 
-  	LCD_DisplayDirection(Direction_H); 	//	璁剧疆妯睆鏄剧�?
-	LCD_SetFont(&Font24); 				 	//	璁剧疆榛樿瀛椾�?	
-	LCD_ShowNumMode(Fill_Space);			//	璁剧疆鏁板瓧鏄剧ず榛樿濉厖绌烘牸
-	
-	LCD_SetLayer(0);  						// 鍒囨崲锟?? layer0
-	LCD_SetBackColor(LCD_YELLOW); 			//	璁剧疆鑳屾櫙�???
-	LCD_SetColor(LCD_WHITE);				//	璁剧疆鐢荤瑪棰滆�?
-	LCD_Clear(); 								//	娓呭睆锛屽埛鑳屾櫙锟??
+  LCD_DisplayDirection(Direction_H); //	鐠佸墽鐤嗗Ο顏勭潌閺勫墽锟�?
+  LCD_SetFont(&Font24);              //	鐠佸墽鐤嗘妯款吇鐎涙ぞ锟�?
+  LCD_ShowNumMode(Fill_Space);       //	鐠佸墽鐤嗛弫鏉跨摟閺勫墽銇氭妯款吇婵夘偄鍘栫粚鐑樼壐
+
+  LCD_SetLayer(0);              // 閸掑洦宕查敓?? layer0
+  LCD_SetBackColor(LCD_YELLOW); //	鐠佸墽鐤嗛懗灞炬珯锟�???
+  LCD_SetColor(LCD_WHITE);      //	鐠佸墽鐤嗛悽鑽ょ應妫版粏锟�?
+  LCD_Clear();                  //	濞撳懎鐫嗛敍灞藉煕閼冲本娅欓敓??
 
   HAL_Delay(100);
   HAL_GPIO_WritePin(LCD_BL_GPIO_Port, LCD_BL_Pin, SET);
@@ -116,10 +116,10 @@ void HAL_LTDC_MspInit(LTDC_HandleTypeDef* ltdcHandle)
   */
     PeriphClkInitStruct.PeriphClockSelection = RCC_PERIPHCLK_LTDC;
     PeriphClkInitStruct.PLL3.PLL3M = 5;
-    PeriphClkInitStruct.PLL3.PLL3N = 100;
+    PeriphClkInitStruct.PLL3.PLL3N = 110;
     PeriphClkInitStruct.PLL3.PLL3P = 2;
     PeriphClkInitStruct.PLL3.PLL3Q = 2;
-    PeriphClkInitStruct.PLL3.PLL3R = 25;
+    PeriphClkInitStruct.PLL3.PLL3R = 19;
     PeriphClkInitStruct.PLL3.PLL3RGE = RCC_PLL3VCIRANGE_2;
     PeriphClkInitStruct.PLL3.PLL3VCOSEL = RCC_PLL3VCOWIDE;
     PeriphClkInitStruct.PLL3.PLL3FRACN = 0;
@@ -231,8 +231,6 @@ void HAL_LTDC_MspInit(LTDC_HandleTypeDef* ltdcHandle)
     /* LTDC interrupt Init */
     HAL_NVIC_SetPriority(LTDC_IRQn, 0, 0);
     HAL_NVIC_EnableIRQ(LTDC_IRQn);
-    HAL_NVIC_SetPriority(LTDC_ER_IRQn, 0, 0);
-    HAL_NVIC_EnableIRQ(LTDC_ER_IRQn);
   /* USER CODE BEGIN LTDC_MspInit 1 */
 
   /* USER CODE END LTDC_MspInit 1 */
@@ -300,7 +298,6 @@ void HAL_LTDC_MspDeInit(LTDC_HandleTypeDef* ltdcHandle)
 
     /* LTDC interrupt Deinit */
     HAL_NVIC_DisableIRQ(LTDC_IRQn);
-    HAL_NVIC_DisableIRQ(LTDC_ER_IRQn);
   /* USER CODE BEGIN LTDC_MspDeInit 1 */
 
   /* USER CODE END LTDC_MspDeInit 1 */

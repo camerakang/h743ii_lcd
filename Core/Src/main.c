@@ -21,6 +21,7 @@
 #include "main.h"
 #include "dma2d.h"
 #include "ltdc.h"
+#include "tim.h"
 #include "usart.h"
 #include "gpio.h"
 #include "fmc.h"
@@ -104,6 +105,8 @@ int main(void)
   MX_FMC_Init();
   MX_DMA2D_Init();
   MX_LTDC_Init();
+  MX_TIM17_Init();
+  MX_TIM16_Init();
   /* USER CODE BEGIN 2 */
 
   /* USER CODE END 2 */
@@ -112,15 +115,16 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-    LCD_SetBackColor(DARK_GREY);
-    // HAL_Delay(1000);
-    // LCD_ClearRect(240, 0, 480, 640);
-    LCD_Clear();
-    HAL_Delay(2000);
-    LCD_SetBackColor(LCD_GREEN);
-    // LCD_ClearRect(0, 0, 240, 640);
-    LCD_Clear();
-    HAL_Delay(2000);
+    LCD_Test_Image();
+    // LCD_SetBackColor(DARK_GREY);
+    // // HAL_Delay(1000);
+    // // LCD_ClearRect(240, 0, 480, 640);
+    // LCD_Clear();
+    // HAL_Delay(2000);
+    // LCD_SetBackColor(LCD_GREEN);
+    // // LCD_ClearRect(0, 0, 240, 640);
+    // LCD_Clear();
+    // HAL_Delay(2000);
     // LCD_Test_Image();
     //     HAL_Delay(1000);
     // LCD_SetBackColor(LCD_BLACK);

@@ -58,6 +58,8 @@
 extern DMA2D_HandleTypeDef hdma2d;
 extern SDRAM_HandleTypeDef hsdram1;
 extern LTDC_HandleTypeDef hltdc;
+extern TIM_HandleTypeDef htim16;
+extern TIM_HandleTypeDef htim17;
 extern UART_HandleTypeDef huart1;
 /* USER CODE BEGIN EV */
 
@@ -244,20 +246,6 @@ void LTDC_IRQHandler(void)
 }
 
 /**
-  * @brief This function handles LTDC global error interrupt.
-  */
-void LTDC_ER_IRQHandler(void)
-{
-  /* USER CODE BEGIN LTDC_ER_IRQn 0 */
-
-  /* USER CODE END LTDC_ER_IRQn 0 */
-  HAL_LTDC_IRQHandler(&hltdc);
-  /* USER CODE BEGIN LTDC_ER_IRQn 1 */
-
-  /* USER CODE END LTDC_ER_IRQn 1 */
-}
-
-/**
   * @brief This function handles DMA2D global interrupt.
   */
 void DMA2D_IRQHandler(void)
@@ -269,6 +257,34 @@ void DMA2D_IRQHandler(void)
   /* USER CODE BEGIN DMA2D_IRQn 1 */
 
   /* USER CODE END DMA2D_IRQn 1 */
+}
+
+/**
+  * @brief This function handles TIM16 global interrupt.
+  */
+void TIM16_IRQHandler(void)
+{
+  /* USER CODE BEGIN TIM16_IRQn 0 */
+
+  /* USER CODE END TIM16_IRQn 0 */
+  HAL_TIM_IRQHandler(&htim16);
+  /* USER CODE BEGIN TIM16_IRQn 1 */
+
+  /* USER CODE END TIM16_IRQn 1 */
+}
+
+/**
+  * @brief This function handles TIM17 global interrupt.
+  */
+void TIM17_IRQHandler(void)
+{
+  /* USER CODE BEGIN TIM17_IRQn 0 */
+
+  /* USER CODE END TIM17_IRQn 0 */
+  HAL_TIM_IRQHandler(&htim17);
+  /* USER CODE BEGIN TIM17_IRQn 1 */
+
+  /* USER CODE END TIM17_IRQn 1 */
 }
 
 /* USER CODE BEGIN 1 */

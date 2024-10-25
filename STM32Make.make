@@ -49,6 +49,7 @@ Core/Src/main.c \
 Core/Src/stm32h7xx_hal_msp.c \
 Core/Src/stm32h7xx_it.c \
 Core/Src/system_stm32h7xx.c \
+Core/Src/tim.c \
 Core/Src/usart.c \
 Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c \
 Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c \
@@ -246,13 +247,13 @@ $(BUILD_DIR):
 # flash
 #######################################
 flash: $(BUILD_DIR)/$(TARGET).elf
-	"C:/tools/OpenOCD/bin/OPENOCD.EXE" -f ./openocd.cfg -c "program $(BUILD_DIR)/$(TARGET).elf verify reset exit"
+	"C:/TOOLS/OPENOCD/BIN/OPENOCD.EXE" -f ./openocd.cfg -c "program $(BUILD_DIR)/$(TARGET).elf verify reset exit"
 
 #######################################
 # erase
 #######################################
 erase: $(BUILD_DIR)/$(TARGET).elf
-	"C:/tools/OpenOCD/bin/OPENOCD.EXE" -f ./openocd.cfg -c "init; reset halt; stm32h7x mass_erase 0; exit"
+	"C:/TOOLS/OPENOCD/BIN/OPENOCD.EXE" -f ./openocd.cfg -c "init; reset halt; stm32h7x mass_erase 0; exit"
 
 #######################################
 # clean up
