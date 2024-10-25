@@ -639,22 +639,22 @@ void LCD_Test_Image(void)
 	LCD_SetColor( 0xFF8AC6D1);
 	LCD_DrawImage( 210, 55, 60, 60, Image_Cloud_60x60) ;
 	
-	// LCD_SetColor( 0xFF8AC6D1);
-	// LCD_DrawImage( 336, 55, 60, 60, Image_Folder_60x60) ;
+	LCD_SetColor( 0xFF8AC6D1);
+	LCD_DrawImage( 336, 55, 60, 60, Image_Folder_60x60) ;
 
-	// LCD_SetColor( 0xFFFFF5C3);
-	// LCD_DrawImage( 84,  162, 60, 60, Image_Message_60x60) ;
+	LCD_SetColor( 0xFFFFF5C3);
+	LCD_DrawImage( 84,  162, 60, 60, Image_Message_60x60) ;
 	
-	// LCD_SetColor( 0xFFA696C8);
-	// LCD_DrawImage( 210, 162, 60, 60, Image_Toys_60x60) ;
+	LCD_SetColor( 0xFFA696C8);
+	LCD_DrawImage( 210, 162, 60, 60, Image_Toys_60x60) ;
 	
-	// LCD_SetColor( 0xFFE59572);
-	// LCD_DrawImage( 336, 162, 60, 60, Image_Video_60x60) ;	
+	LCD_SetColor( 0xFFE59572);
+	LCD_DrawImage( 336, 162, 60, 60, Image_Video_60x60) ;	
 
 	HAL_Delay(2000);
 	
-	// LCD_SetBackColor(LCD_WHITE); 			//	设置背景色
-	// LCD_Clear(); 								// 清屏
+	LCD_SetBackColor(LIGHT_GREY); 			//	设置背景色
+	LCD_Clear(); 								// 清屏
 	// LCD_SetColor( LCD_BLACK);
 	// LCD_DrawImage( 0, 16, 480, 239, Image_FANKE_480x239) ;	
 	// HAL_Delay(2000);
