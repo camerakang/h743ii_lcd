@@ -247,13 +247,13 @@ $(BUILD_DIR):
 # flash
 #######################################
 flash: $(BUILD_DIR)/$(TARGET).elf
-	"C:/TOOLS/OPENOCD/BIN/OPENOCD.EXE" -f ./openocd.cfg -c "program $(BUILD_DIR)/$(TARGET).elf verify reset exit"
+	"D:/kzc/STM32/h743ii_lcd/Toolchain/OpenOCD_CH347/bin/OPENOCD.EXE" -f ./openocd.cfg -c "program $(BUILD_DIR)/$(TARGET).elf verify reset exit"
 
 #######################################
 # erase
 #######################################
 erase: $(BUILD_DIR)/$(TARGET).elf
-	"C:/TOOLS/OPENOCD/BIN/OPENOCD.EXE" -f ./openocd.cfg -c "init; reset halt; stm32h7x mass_erase 0; exit"
+	"D:/kzc/STM32/h743ii_lcd/Toolchain/OpenOCD_CH347/bin/OPENOCD.EXE" -f ./openocd.cfg -c "init; reset halt; stm32h7x mass_erase 0; exit"
 
 #######################################
 # clean up
