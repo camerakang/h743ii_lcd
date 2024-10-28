@@ -59,8 +59,6 @@ void Error_Handler(void);
 /* Private defines -----------------------------------------------------------*/
 #define SPI1_RST_Pin GPIO_PIN_0
 #define SPI1_RST_GPIO_Port GPIOA
-#define CSB_Pin GPIO_PIN_4
-#define CSB_GPIO_Port GPIOA
 #define SCLB_Pin GPIO_PIN_5
 #define SCLB_GPIO_Port GPIOA
 #define SDO_Pin GPIO_PIN_6
@@ -71,6 +69,8 @@ void Error_Handler(void);
 #define LCD_BL_GPIO_Port GPIOH
 #define LED_Pin GPIO_PIN_7
 #define LED_GPIO_Port GPIOH
+#define CSB_Pin GPIO_PIN_11
+#define CSB_GPIO_Port GPIOD
 
 /* USER CODE BEGIN Private defines */
 #include "stdio.h"

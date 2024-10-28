@@ -126,7 +126,7 @@ void MX_FMC_Init(void)
 
   /* USER CODE BEGIN FMC_Init 2 */
   SDRAM_Initialization_Sequence(&hsdram1, &command); // 配置SDRAM
-  HAL_GPIO_WritePin(CSB_GPIO_Port, CSB_Pin, SET);
+  HAL_GPIO_WritePin(LCD_BL_GPIO_Port, LCD_BL_Pin, SET);
   KD024VGFPD094_init();
   /* USER CODE END FMC_Init 2 */
 }
