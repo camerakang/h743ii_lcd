@@ -1,5 +1,5 @@
 {
-    "cortex-debug.armToolchainPath": "C:\\TOOLS\\GCC-ARM-NONE-EABI\\BIN",
+    "cortex-debug.armToolchainPath": "C:\\tools\\gcc-arm-none-eabi\\bin",
     "cortex-debug.openocdPath": "D:\\KZC\\STM32\\H743II_LCD\\TOOLCHAIN\\OPENOCD_CH347\\BIN\\OPENOCD.EXE",
     "files.associations": {
         "kd024vgfpd094.h": "c",
@@ -17,6 +17,7 @@
         "lv_math.h": "c",
         "lv_conf_internal.h": "c",
         "lv_disp.h": "c",
-        "lv_demo_widgets.h": "c"
+        "lv_demo_widgets.h": "c",
+        "ui_helpers.h": "c"
     }
 }

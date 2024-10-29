@@ -37,7 +37,12 @@ BUILD_DIR = build
 # C sources
 C_SOURCES =  \
 Core/H743ii_lcd_code/components/ui_comp_hook.c \
+Core/H743ii_lcd_code/images/ui_img_battery2_png.c \
+Core/H743ii_lcd_code/images/ui_img_motor_disconnected_png.c \
+Core/H743ii_lcd_code/images/ui_img_single6_png.c \
+Core/H743ii_lcd_code/images/ui_img_ue_png.c \
 Core/H743ii_lcd_code/screens/ui_Screen1.c \
+Core/H743ii_lcd_code/screens/ui_Screen2.c \
 Core/H743ii_lcd_code/ui.c \
 Core/H743ii_lcd_code/ui_helpers.c \
 Core/Src/KD024VGFPD094.c \
@@ -388,7 +393,7 @@ PREFIX = arm-none-eabi-
 POSTFIX = "
 # The gcc compiler bin path can be either defined in make command via GCC_PATH variable (> make GCC_PATH=xxx)
 # either it can be added to the PATH environment variable.
-GCC_PATH="C:/TOOLS/GCC-ARM-NONE-EABI/BIN
+GCC_PATH="C:/tools/gcc-arm-none-eabi/bin
 ifdef GCC_PATH
 CXX = $(GCC_PATH)/$(PREFIX)g++$(POSTFIX)
 CC = $(GCC_PATH)/$(PREFIX)gcc$(POSTFIX)
