@@ -45,14 +45,14 @@ void MX_LTDC_Init(void)
   hltdc.Init.VSPolarity = LTDC_VSPOLARITY_AL;
   hltdc.Init.DEPolarity = LTDC_DEPOLARITY_AL;
   hltdc.Init.PCPolarity = LTDC_PCPOLARITY_IIPC;
-  hltdc.Init.HorizontalSync = 7;
-  hltdc.Init.VerticalSync = 7;
-  hltdc.Init.AccumulatedHBP = 127;
-  hltdc.Init.AccumulatedVBP = 27;
-  hltdc.Init.AccumulatedActiveW = 607;
-  hltdc.Init.AccumulatedActiveH = 667;
-  hltdc.Init.TotalWidth = 727;
-  hltdc.Init.TotalHeigh = 687;
+  hltdc.Init.HorizontalSync = 2;
+  hltdc.Init.VerticalSync = 2;
+  hltdc.Init.AccumulatedHBP = 17;
+  hltdc.Init.AccumulatedVBP = 13;
+  hltdc.Init.AccumulatedActiveW = 497;
+  hltdc.Init.AccumulatedActiveH = 653;
+  hltdc.Init.TotalWidth = 506;
+  hltdc.Init.TotalHeigh = 662;
   hltdc.Init.Backcolor.Blue = 0;
   hltdc.Init.Backcolor.Green = 0;
   hltdc.Init.Backcolor.Red = 0;
@@ -116,10 +116,10 @@ void HAL_LTDC_MspInit(LTDC_HandleTypeDef* ltdcHandle)
   */
     PeriphClkInitStruct.PeriphClockSelection = RCC_PERIPHCLK_LTDC;
     PeriphClkInitStruct.PLL3.PLL3M = 5;
-    PeriphClkInitStruct.PLL3.PLL3N = 110;
+    PeriphClkInitStruct.PLL3.PLL3N = 100;
     PeriphClkInitStruct.PLL3.PLL3P = 2;
     PeriphClkInitStruct.PLL3.PLL3Q = 2;
-    PeriphClkInitStruct.PLL3.PLL3R = 19;
+    PeriphClkInitStruct.PLL3.PLL3R = 25;
     PeriphClkInitStruct.PLL3.PLL3RGE = RCC_PLL3VCIRANGE_2;
     PeriphClkInitStruct.PLL3.PLL3VCOSEL = RCC_PLL3VCOWIDE;
     PeriphClkInitStruct.PLL3.PLL3FRACN = 0;
@@ -229,7 +229,7 @@ void HAL_LTDC_MspInit(LTDC_HandleTypeDef* ltdcHandle)
     HAL_GPIO_Init(GPIOD, &GPIO_InitStruct);
 
     /* LTDC interrupt Init */
-    HAL_NVIC_SetPriority(LTDC_IRQn, 0, 0);
+    HAL_NVIC_SetPriority(LTDC_IRQn, 5, 0);
     HAL_NVIC_EnableIRQ(LTDC_IRQn);
   /* USER CODE BEGIN LTDC_MspInit 1 */
 
