@@ -25,7 +25,8 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "hu_entry.h"
+#include "app_entry.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -50,9 +51,9 @@
 /* Definitions for defaultTask */
 osThreadId_t defaultTaskHandle;
 const osThreadAttr_t defaultTask_attributes = {
-  .name = "defaultTask",
-  .stack_size = 2048 * 4,
-  .priority = (osPriority_t) osPriorityNormal,
+    .name = "defaultTask",
+    .stack_size = 2048 * 4,
+    .priority = (osPriority_t)osPriorityNormal,
 };
 
 /* Private function prototypes -----------------------------------------------*/
@@ -63,13 +64,17 @@ const osThreadAttr_t defaultTask_attributes = {
 void StartDefaultTask(void *argument);
 
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
+#define TASK_STACK_SIZE configMINIMAL_STACK_SIZE
 
+StaticTask_t xTaskBuffer;
+StackType_t xStack[TASK_STACK_SIZE];
 /**
-  * @brief  FreeRTOS initialization
-  * @param  None
-  * @retval None
-  */
-void MX_FREERTOS_Init(void) {
+ * @brief  FreeRTOS initialization
+ * @param  None
+ * @retval None
+ */
+void MX_FREERTOS_Init(void)
+{
   /* USER CODE BEGIN Init */
 
   /* USER CODE END Init */
@@ -93,7 +98,15 @@ void MX_FREERTOS_Init(void) {
   /* Create the thread(s) */
   /* creation of defaultTask */
   defaultTaskHandle = osThreadNew(StartDefaultTask, NULL, &defaultTask_attributes);
-
+  // TaskHandle_t xTaskHandle = xTaskCreateStatic(
+  //     StartDefaultTask,    // 任务函数
+  //     "StartDefaultTask",       // 任务的名称
+  //     TASK_STACK_SIZE,  // 堆栈大小
+  //     NULL,             // 任务参数
+  //     tskIDLE_PRIORITY, // 任务优先级
+  //     xStack,           // 任务堆栈空间
+  //     &xTaskBuffer      // 任务控制块
+  // );
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
   /* USER CODE END RTOS_THREADS */
@@ -101,7 +114,6 @@ void MX_FREERTOS_Init(void) {
   /* USER CODE BEGIN RTOS_EVENTS */
   /* add events, ... */
   /* USER CODE END RTOS_EVENTS */
-
 }
 
 /* USER CODE BEGIN Header_StartDefaultTask */
@@ -114,16 +126,15 @@ void MX_FREERTOS_Init(void) {
 void StartDefaultTask(void *argument)
 {
   /* USER CODE BEGIN StartDefaultTask */
+  hu_entry();
+  setup();
+
   /* Infinite loop */
   for (;;)
   {
-    LCD_Test_Clear();      // 清屏测试
-    LCD_Test_Text();       //	文本显示测试
-    LCD_Test_Variable();   // 变量显示，包括整数和小数
-    LCD_Test_Color();      // 颜色测试
-    LCD_Test_GrahicTest(); // 2D图形绘制
-    LCD_Test_FillRect();   // 矩形填充测试
-    LCD_Test_Image();      // 图片显示测试
+
+    // loop();
+
     osDelay(1);
   }
   /* USER CODE END StartDefaultTask */
@@ -133,4 +144,3 @@ void StartDefaultTask(void *argument)
 /* USER CODE BEGIN Application */
 
 /* USER CODE END Application */
-

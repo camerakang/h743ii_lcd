@@ -51,7 +51,10 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-
+#ifdef __cplusplus
+extern "C"
+{
+#endif
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -59,7 +62,9 @@ void SystemClock_Config(void);
 static void MPU_Config(void);
 void MX_FREERTOS_Init(void);
 /* USER CODE BEGIN PFP */
-
+#ifdef __cplusplus
+}
+#endif
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -126,13 +131,13 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-    LCD_Test_Clear();      // 清屏测试
-    LCD_Test_Text();       //	文本显示测试
-    LCD_Test_Variable();   // 变量显示，包括整数和小数
-    LCD_Test_Color();      // 颜色测试
-    LCD_Test_GrahicTest(); // 2D图形绘制
-    LCD_Test_FillRect();   // 矩形填充测试
-    LCD_Test_Image();      // 图片显示测试
+    // LCD_Test_Clear();      // 清屏测试
+    // LCD_Test_Text();       //	文本显示测试
+    // LCD_Test_Variable();   // 变量显示，包括整数和小数
+    // LCD_Test_Color();      // 颜色测试
+    // LCD_Test_GrahicTest(); // 2D图形绘制
+    // LCD_Test_FillRect();   // 矩形填充测试
+    // LCD_Test_Image();      // 图片显示测试
     // LCD_Test_Vertical();   // 竖直显示测试
     //   write_command(0xff);
     // write_data(0x77);

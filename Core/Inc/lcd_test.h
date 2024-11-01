@@ -1,6 +1,9 @@
 #ifndef  __LCD_TEST_H
 #define	__LCD_TEST_H
-
+#ifdef __cplusplus
+extern "C"
+{
+#endif
 #include "stm32h7xx_hal.h"
 #include "lcd_rgb.h"
 #include	"lcd_image.h"
@@ -15,6 +18,8 @@ void LCD_Test_FillRect(void);			// 矩形填充测试
 void LCD_Test_Image(void);				// 图片显示测试
 void LCD_Test_Vertical(void);			// 竖直显示测试
 void LCD_Test_DoubleLayer(void);		// 双层显示
-
+#ifdef __cplusplus
+}
+#endif
 #endif //__LCD_TEST_H
 

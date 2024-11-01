@@ -8,7 +8,7 @@
 # The project name
 target: h743ii_lcd
 # Can be C or C++
-language: C
+language: C++
 
 optimization: Og
 
@@ -37,16 +37,19 @@ cFlags:
   - -Wall
   - -fdata-sections
   - -ffunction-sections
+  - -std=c18
 
-cxxFlags: []
+cxxFlags: 
+  - -fno-rtti
+  - -fno-exceptions
+  - -std=c++20
 assemblyFlags: 
   - -Wall
   - -fdata-sections
   - -ffunction-sections
-
 linkerFlags: 
   - -Wl,--print-memory-usage
-
+  - -lstdc++
 
 # libraries to be included. The -l prefix to the library will be automatically added.
 libraries: 
@@ -77,6 +80,15 @@ includeDirectories:
   - Src/**
   - Core/Src/**
   - Core/Lib/**
+  - User/**
+  - User/asset/**
+  - User/lib/**
+  - User/lib/lvgl/**
+  - User/module/**
+  - User/peripheral/**
+  - User/peripheral/lcd/**
+  - User/router/**
+  - User/config/**
 
 
 # Files that should be included in the compilation.
@@ -88,6 +100,15 @@ sourceFiles:
   - Src/**
   - Core/Src/**
   - Core/Lib/**
+  - User/**
+  - User/asset/**
+  - User/lib/**
+  - User/lib/lvgl/**
+  - User/module/**
+  - User/peripheral/**
+  - User/peripheral/lcd/**
+  - User/router/**
+  - User/config/**
 
 
 # When no makefile is present it will show a warning pop-up.
