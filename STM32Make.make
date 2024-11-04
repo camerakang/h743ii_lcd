@@ -91,6 +91,7 @@ Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c \
 Middlewares/Third_Party/FreeRTOS/Source/tasks.c \
 Middlewares/Third_Party/FreeRTOS/Source/timers.c \
 User/config/lvgl/lv_port_disp.c \
+User/config/lvgl/lv_port_indev.c \
 User/lib/lvgl/demos/benchmark/assets/img_benchmark_cogwheel_alpha16.c \
 User/lib/lvgl/demos/benchmark/assets/img_benchmark_cogwheel_argb.c \
 User/lib/lvgl/demos/benchmark/assets/img_benchmark_cogwheel_chroma_keyed.c \
