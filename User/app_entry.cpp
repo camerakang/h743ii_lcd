@@ -11,9 +11,9 @@ void ui_display()
 {
     KD024VGFPD094_init();
     HAL_GPIO_WritePin(LCD_BL_GPIO_Port, LCD_BL_Pin, GPIO_PIN_SET);
-     lv_init();
-     lv_port_disp_init(); 
-     lv_port_indev_init();
+    lv_init();
+    lv_port_disp_init();
+    lv_port_indev_init();
     ui_init();
     while (1)
     {
