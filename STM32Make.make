@@ -390,6 +390,8 @@ User/module/ui/screens/ui_Screen1.c \
 User/module/ui/screens/ui_Screen2.c \
 User/module/ui/ui.c \
 User/module/ui/ui_helpers.c \
+User/module/ui/ui_user.c \
+User/peripheral/sdram/sdram_user.c \
 User/router/crouter.c
 
 
@@ -587,6 +589,7 @@ C_INCLUDES =  \
 -IUser/peripheral \
 -IUser/peripheral/abstract_if \
 -IUser/peripheral/knob_dji \
+-IUser/peripheral/sdram \
 -IUser/router \
 -IUser/router/radio_comm
 

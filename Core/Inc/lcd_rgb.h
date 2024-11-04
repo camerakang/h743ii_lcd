@@ -5,7 +5,7 @@
 #include "usart.h"
 #include "lcd_fonts.h"
 #include <stdio.h>
-#include "fmc.h"
+#include "sdram_user.h"
 
 // 1. 如果只用单层，该参数定义为1即可，使用双层的话，需要修改为 2
 // 2. FK743M1-IIT6 核心板 使用的是外部SDRAM作为显存，起始地址0xC0000000，大小为32MB

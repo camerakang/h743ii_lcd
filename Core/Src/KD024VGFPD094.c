@@ -414,7 +414,7 @@ void KD024VGFPD094_init(void)
     write_command(0x29); // DISPLAY ON
     HAL_Delay(50);
 
-    printf("LCD init done\n");
+    // printf("LCD init done\n");
 }
 //*******************************************
 void EnterSleep(void)
