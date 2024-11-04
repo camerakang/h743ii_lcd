@@ -16,16 +16,6 @@ void ui_display()
     while (1)
     {
         lv_task_handler();
-        // UTDEBUG("log_demo");
-        // LCD_Test_Clear();      // 清屏测试
-        // LCD_Test_Text();       //	文本显示测试
-        // LCD_Test_Variable();   // 变量显示，包括整数和小数
-        // LCD_Test_Color();      // 颜色测试
-        // LCD_Test_GrahicTest(); // 2D图形绘制
-        // LCD_Test_FillRect();   // 矩形填充测试
-        // LCD_Test_Image();      // 图片显示测试
-        // utcollab::Task::sleep_for(100);
-
     }
 }
 
