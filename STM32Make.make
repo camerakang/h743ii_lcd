@@ -380,6 +380,15 @@ User/lib/lvgl/tests/src/test_fonts/font_3.c \
 User/lib/lvgl/tests/src/test_fonts/ubuntu_font.c \
 User/lib/lvgl/tests/unity/unity.c \
 User/lib/lvgl/tests/unity/unity_support.c \
+User/module/ui/components/ui_comp_hook.c \
+User/module/ui/images/ui_img_battery2_png.c \
+User/module/ui/images/ui_img_motor_disconnected_png.c \
+User/module/ui/images/ui_img_single6_png.c \
+User/module/ui/images/ui_img_ue_png.c \
+User/module/ui/screens/ui_Screen1.c \
+User/module/ui/screens/ui_Screen2.c \
+User/module/ui/ui.c \
+User/module/ui/ui_helpers.c \
 User/router/crouter.c
 
 
@@ -573,6 +582,7 @@ C_INCLUDES =  \
 -IUser/module/fzi_map \
 -IUser/module/language \
 -IUser/module/sensor_calibration \
+-IUser/module/ui \
 -IUser/peripheral \
 -IUser/peripheral/abstract_if \
 -IUser/peripheral/knob_dji \
