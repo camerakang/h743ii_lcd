@@ -108,7 +108,7 @@ const lv_img_dsc_t * ui_imgset_battery[1] = {&ui_img_battery2_png};
 const lv_img_dsc_t * ui_imgset_single[1] = {&ui_img_single6_png};
 
 ///////////////////// TEST LVGL SETTINGS ////////////////////
-#if LV_COLOR_DEPTH != 32
+#if LV_COLOR_DEPTH != 16
     #error "LV_COLOR_DEPTH should be 32bit to match SquareLine Studio's settings"
 #endif
 #if LV_COLOR_16_SWAP !=0

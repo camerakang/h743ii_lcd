@@ -21,7 +21,6 @@
 #include "main.h"
 #include "cmsis_os.h"
 #include "dma2d.h"
-#include "i2c.h"
 #include "ltdc.h"
 #include "tim.h"
 #include "usart.h"
@@ -115,7 +114,6 @@ int main(void)
   MX_LTDC_Init();
   MX_TIM17_Init();
   MX_TIM16_Init();
-  MX_I2C1_Init();
   /* USER CODE BEGIN 2 */
 
   /* USER CODE END 2 */

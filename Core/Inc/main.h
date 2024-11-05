@@ -57,6 +57,10 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define LCD_TCH_INT_Pin GPIO_PIN_2
+#define LCD_TCH_INT_GPIO_Port GPIOE
+#define LCD_TCH_INTE3_Pin GPIO_PIN_3
+#define LCD_TCH_INTE3_GPIO_Port GPIOE
 #define SPI1_RST_Pin GPIO_PIN_0
 #define SPI1_RST_GPIO_Port GPIOA
 #define SCLB_Pin GPIO_PIN_5
@@ -71,6 +75,10 @@ void Error_Handler(void);
 #define LED_GPIO_Port GPIOH
 #define CSB_Pin GPIO_PIN_11
 #define CSB_GPIO_Port GPIOD
+#define LCD_TCH_SCL_Pin GPIO_PIN_8
+#define LCD_TCH_SCL_GPIO_Port GPIOB
+#define LCD_TCH_SDA_Pin GPIO_PIN_9
+#define LCD_TCH_SDA_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 #include "stdio.h"

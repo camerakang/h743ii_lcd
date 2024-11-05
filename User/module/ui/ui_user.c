@@ -15,10 +15,10 @@ void ui_display()
     lv_port_disp_init();
     lv_port_indev_init();
     ui_init();
-    while (1)
-    {
-        lv_task_handler();
-    }
+    // while (1)
+    // {
+    //     lv_task_handler();
+    // }
 }
 
 

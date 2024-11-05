@@ -41,7 +41,6 @@ Core/Src/dma2d.c \
 Core/Src/fmc.c \
 Core/Src/freertos.c \
 Core/Src/gpio.c \
-Core/Src/i2c.c \
 Core/Src/lcd_fonts.c \
 Core/Src/lcd_image.c \
 Core/Src/lcd_rgb.c \
@@ -382,6 +381,7 @@ User/lib/lvgl/tests/src/test_fonts/ubuntu_font.c \
 User/lib/lvgl/tests/unity/unity.c \
 User/lib/lvgl/tests/unity/unity_support.c \
 User/module/ui/components/ui_comp_hook.c \
+User/module/ui/images/relayYes.c \
 User/module/ui/images/ui_img_battery2_png.c \
 User/module/ui/images/ui_img_motor_disconnected_png.c \
 User/module/ui/images/ui_img_single6_png.c \

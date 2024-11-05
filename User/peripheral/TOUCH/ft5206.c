@@ -117,6 +117,7 @@ u8 FT5206_Scan(u8 mode)
     if ((t % 10) == 0 || t < 10) // 空闲时,每进入10次CTP_Scan函数才检测1次,从而节省CPU使用率
     {
         FT5206_RD_Reg(FT_REG_NUM_FINGER, &mode, 1); // 读取触摸点的状态
+        printf("mode:%d\r\n", mode);
         if ((mode & 0XF) && ((mode & 0XF) < 6))
         {
             temp = 0XFF << (mode & 0XF); // 将点的个数转换为1的位数,匹配tp_dev.sta定义
