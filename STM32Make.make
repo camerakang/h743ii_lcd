@@ -391,7 +391,15 @@ User/module/ui/screens/ui_Screen2.c \
 User/module/ui/ui.c \
 User/module/ui/ui_helpers.c \
 User/module/ui/ui_user.c \
+User/peripheral/TOUCH/ctiic.c \
+User/peripheral/TOUCH/ft5206.c \
+User/peripheral/TOUCH/gt9147.c \
+User/peripheral/TOUCH/gt9271.c \
+User/peripheral/TOUCH/ott2001a.c \
+User/peripheral/TOUCH/touch.c \
+User/peripheral/delay/delay.c \
 User/peripheral/sdram/sdram_user.c \
+User/peripheral/sys/sys.c \
 User/router/crouter.c
 
 
@@ -587,9 +595,12 @@ C_INCLUDES =  \
 -IUser/module/sensor_calibration \
 -IUser/module/ui \
 -IUser/peripheral \
+-IUser/peripheral/TOUCH \
 -IUser/peripheral/abstract_if \
+-IUser/peripheral/delay \
 -IUser/peripheral/knob_dji \
 -IUser/peripheral/sdram \
+-IUser/peripheral/sys \
 -IUser/router \
 -IUser/router/radio_comm
 
