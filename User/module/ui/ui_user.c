@@ -7,6 +7,10 @@
 #include "sdram_user.h"
 #include "fmc.h"
 #include "ui_user_animation.h"
+void lvgl_log_cb(const char * buf)
+{
+    printf(buf);
+}
 void ui_display()
 {
     // SDRAM_Initialization_Sequence(&hsdram1, &command);// 控制指令
@@ -22,6 +26,7 @@ void ui_display()
     create_label_animation(ui_Screen1_Label8);
     create_label_animation(ui_Screen1_Label7);
     create_label_animation(ui_Screen1_Label4);
+    lv_log_register_print_cb(lvgl_log_cb);
     // while (1)
     // {
     //     lv_task_handler();

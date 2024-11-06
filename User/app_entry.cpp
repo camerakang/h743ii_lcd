@@ -4,6 +4,8 @@
 #include "ui_user.h"
 #include "ft5206.h"
 #include "lvgl.h"
+ 
+
 void touch_sacn()
 {
     FT5206_Init();
