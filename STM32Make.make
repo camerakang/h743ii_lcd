@@ -391,6 +391,7 @@ User/module/ui/screens/ui_Screen2.c \
 User/module/ui/ui.c \
 User/module/ui/ui_helpers.c \
 User/module/ui/ui_user.c \
+User/module/ui/ui_user_animation.c \
 User/peripheral/TOUCH/ctiic.c \
 User/peripheral/TOUCH/ft5206.c \
 User/peripheral/TOUCH/gt9147.c \

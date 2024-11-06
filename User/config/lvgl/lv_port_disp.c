@@ -15,6 +15,7 @@
 #include "lcd_rgb.h"
 #include "tim.h"
 #include "stm32h7xx_hal_ltdc.h"
+#include "string.h"
 /*********************
  *      DEFINES
  *********************/
@@ -35,7 +36,8 @@ static void disp_init(void);
 static void disp_flush(lv_disp_drv_t *disp_drv, const lv_area_t *area, lv_color_t *color_p);
 // static void gpu_fill(lv_disp_drv_t * disp_drv, lv_color_t * dest_buf, lv_coord_t dest_width,
 //         const lv_area_t * fill_area, lv_color_t color);
-
+ static lv_color_t *buf_3_1 = (lv_color_t *)(LVGL_MemoryAdd);                                               /*A screen sized buffer*/
+    static lv_color_t *buf_3_2 = (lv_color_t *)(LVGL_MemoryAdd + LCD_Width * LCD_Height * sizeof(lv_color_t)); /*Another screen sized buffer*/
 /**********************
  *  STATIC VARIABLES
  **********************/
@@ -88,8 +90,8 @@ void lv_port_disp_init(void)
 
     /* Example for 3) also set disp_drv.full_refresh = 1 below*/
     static lv_disp_draw_buf_t draw_buf_dsc_3;
-    static lv_color_t *buf_3_1 = (lv_color_t *)(LVGL_MemoryAdd);                                               /*A screen sized buffer*/
-    static lv_color_t *buf_3_2 = (lv_color_t *)(LVGL_MemoryAdd + LCD_Width * LCD_Height * sizeof(lv_color_t)); /*Another screen sized buffer*/
+    // static lv_color_t *buf_3_1 = (lv_color_t *)(LVGL_MemoryAdd);                                               /*A screen sized buffer*/
+    // static lv_color_t *buf_3_2 = (lv_color_t *)(LVGL_MemoryAdd + LCD_Width * LCD_Height * sizeof(lv_color_t)); /*Another screen sized buffer*/
     lv_disp_draw_buf_init(&draw_buf_dsc_3, buf_3_1, buf_3_2, LCD_Width * LCD_Height);                          /*Initialize the display buffer*/
 
     /*-----------------------------------
@@ -141,7 +143,11 @@ static void disp_init(void)
 static void disp_flush(lv_disp_drv_t *disp_drv, const lv_area_t *area, lv_color_t *color_p)
 {
     /*The most simple case (but also the slowest) to put all pixels to the screen one-by-one*/
+    
+    SCB_CleanInvalidateDCache();
+    while(!(LTDC->CDSR & LTDC_CDSR_VSYNCS));
     LTDC_Layer1->CFBAR = (uint32_t)color_p; // 切换显存地址
+    // memcpy(buf_3_1,buf_3_2,LCD_Width * LCD_Height );
     /*IMPORTANT!!!
      *Inform the graphics library that you are ready with the flushing*/
     lv_disp_flush_ready(disp_drv);
