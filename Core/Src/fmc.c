@@ -22,7 +22,7 @@
 #include "fmc.h"
 
 /* USER CODE BEGIN 0 */
-
+#include "sdram_user.h"
 /* USER CODE END 0 */
 
 SDRAM_HandleTypeDef hsdram1;
@@ -69,7 +69,7 @@ void MX_FMC_Init(void)
   }
 
   /* USER CODE BEGIN FMC_Init 2 */
-  // SDRAM_Initialization_Sequence(&hsdram1, &command); // 闂佹澘绉堕悿鍝燚RAM
+  SDRAM_Initialization_Sequence(&hsdram1, &command); // 闂佹澘绉堕悿鍝燚RAM
 
   // HAL_GPIO_WritePin(LCD_BL_GPIO_Port, LCD_BL_Pin, SET);
   // KD024VGFPD094_init();

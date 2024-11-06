@@ -80,11 +80,15 @@ void MX_LTDC_Init(void)
     Error_Handler();
   }
   /* USER CODE BEGIN LTDC_Init 2 */
-  HAL_LTDC_EnableDither(&hltdc);           // 闁跨噦鎷�???闂佸憡鍑归崹鍫暵锋笟鈧幊婵嬪矗婢跺⿴娼旈柨鐕傛嫹???
-  HAL_LTDC_ProgramLineEvent(&hltdc, 0);    // 闁荤姳绀佹晶浠嬫偪閸℃瑦鍋橀悘鐐跺閸橆剟鏌￠崒銈呭伎缂佽鲸绻堥弫锟�??0闁跨噦鎷�???
-  HAL_NVIC_SetPriority(LTDC_IRQn, 0xE, 0); // 闁荤姳绀佹晶浠嬫偪閸℃ê顕辨俊顖氭惈鐢儵鏁撻敓锟�???
-  HAL_NVIC_EnableIRQ(LTDC_IRQn);
 
+
+#if ((ColorMode_0 == LTDC_PIXEL_FORMAT_RGB888) || (ColorMode_0 == LTDC_PIXEL_FORMAT_ARGB8888)) // 判断是否使用24位或者32位色
+  // 因为743每个通道的低位都是采用伪随机抖动输出，如果不开启颜色抖动，则无法正常显示24位或者32位色
+  // HAL_LTDC_EnableDither(&hltdc); // 开启颜色抖动
+#endif
+	HAL_LTDC_ProgramLineEvent(&hltdc, 0 );			// 设置行中断，第0行
+	HAL_NVIC_SetPriority(LTDC_IRQn, 0xE, 0);		// 设置优先级
+	HAL_NVIC_EnableIRQ(LTDC_IRQn);					// 使能中断	
   /* USER CODE END LTDC_Init 2 */
 
 }
@@ -107,7 +111,7 @@ void HAL_LTDC_MspInit(LTDC_HandleTypeDef* ltdcHandle)
     PeriphClkInitStruct.PLL3.PLL3N = 100;
     PeriphClkInitStruct.PLL3.PLL3P = 2;
     PeriphClkInitStruct.PLL3.PLL3Q = 2;
-    PeriphClkInitStruct.PLL3.PLL3R = 25;
+    PeriphClkInitStruct.PLL3.PLL3R = 20;
     PeriphClkInitStruct.PLL3.PLL3RGE = RCC_PLL3VCIRANGE_2;
     PeriphClkInitStruct.PLL3.PLL3VCOSEL = RCC_PLL3VCOWIDE;
     PeriphClkInitStruct.PLL3.PLL3FRACN = 0;

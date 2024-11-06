@@ -8,7 +8,7 @@
 #include "fmc.h"
 void ui_display()
 {
-    SDRAM_Initialization_Sequence(&hsdram1, &command);// 控制指令
+    // SDRAM_Initialization_Sequence(&hsdram1, &command);// 控制指令
     KD024VGFPD094_init();
     HAL_GPIO_WritePin(LCD_BL_GPIO_Port, LCD_BL_Pin, GPIO_PIN_SET);
     lv_init();
