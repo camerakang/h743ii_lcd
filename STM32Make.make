@@ -91,6 +91,7 @@ Middlewares/Third_Party/FreeRTOS/Source/tasks.c \
 Middlewares/Third_Party/FreeRTOS/Source/timers.c \
 User/config/lvgl/lv_port_disp.c \
 User/config/lvgl/lv_port_indev.c \
+User/lib/ee/ee.c \
 User/lib/lvgl/demos/benchmark/assets/img_benchmark_cogwheel_alpha16.c \
 User/lib/lvgl/demos/benchmark/assets/img_benchmark_cogwheel_argb.c \
 User/lib/lvgl/demos/benchmark/assets/img_benchmark_cogwheel_chroma_keyed.c \
@@ -421,6 +422,7 @@ User/lib/utools/src/logger/logger.cpp \
 User/lib/utools/src/ufmt/f_string.cpp \
 User/lib/utools/src/umempool/mempool_ipml.cpp \
 User/lib/utools/src/utime/time_configurator.cpp \
+User/peripheral/memory_ee/memory_ee.cpp \
 User/router/hu_entry.cpp \
 build/main.cpp
 
@@ -503,6 +505,7 @@ C_INCLUDES =  \
 -IUser/asset \
 -IUser/config \
 -IUser/config/lvgl \
+-IUser/lib/ee \
 -IUser/lib/lvgl \
 -IUser/lib/lvgl/demos \
 -IUser/lib/lvgl/demos/benchmark \
@@ -600,6 +603,7 @@ C_INCLUDES =  \
 -IUser/peripheral/abstract_if \
 -IUser/peripheral/delay \
 -IUser/peripheral/knob_dji \
+-IUser/peripheral/memory_ee \
 -IUser/peripheral/sdram \
 -IUser/peripheral/sys \
 -IUser/router \
