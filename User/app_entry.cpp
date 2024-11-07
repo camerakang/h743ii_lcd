@@ -24,16 +24,14 @@ void setup()
     {
         printf("EEPROM initialization failed\n");
     }
+    
     // 保存 JSON 到 EEPROM
     SaveJsonToEEPROM(custom_config_string.c_str());
 
     // 从 EEPROM 加载 JSON 字符串
     LoadJsonFromEEPROM(jsonBuffer, sizeof(jsonBuffer));
-        printf("Loaded JSON: %s\n", jsonBuffer);
-
+    printf("Loaded JSON: %s\n", jsonBuffer);
     custom_config = json::parse(jsonBuffer);
-
-
 }
 
 void loop()

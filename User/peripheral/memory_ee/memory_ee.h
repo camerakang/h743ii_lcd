@@ -3,6 +3,9 @@
 
 #include "ee.h"
 #define JSON_SIZE 1024  // 根据实际需要定义 JSON 字符串的大小
+extern EE_HandleTypeDef eeHandle;
+
+
 bool InitializeEEPROM(uint32_t size);
 void SaveJsonToEEPROM(const char* jsonStr);
 void LoadJsonFromEEPROM(char* buffer, uint32_t bufferSize);
