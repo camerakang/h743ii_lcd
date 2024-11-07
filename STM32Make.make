@@ -506,6 +506,7 @@ C_INCLUDES =  \
 -IUser/config \
 -IUser/config/lvgl \
 -IUser/lib/ee \
+-IUser/lib/json \
 -IUser/lib/lvgl \
 -IUser/lib/lvgl/demos \
 -IUser/lib/lvgl/demos/benchmark \

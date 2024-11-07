@@ -18,7 +18,7 @@ void ui_display()
     HAL_GPIO_WritePin(LCD_BL_GPIO_Port, LCD_BL_Pin, GPIO_PIN_SET);
     lv_init();
     lv_port_disp_init();
-    lv_port_indev_init();
+    // lv_port_indev_init();
     ui_init();
     create_slider_animation(ui_Screen1_Slider1);
     create_slider_animation(ui_Screen1_Slider2);
