@@ -6,7 +6,7 @@
 #include "lvgl.h"
 #include "memory_ee.h"
 #include "sys_config.h"
-
+#include "JsonPreferences.h"
 // JSON 字符串缓冲区
 char jsonBuffer[JSON_SIZE];
 void setup()
@@ -32,6 +32,13 @@ void setup()
     LoadJsonFromEEPROM(jsonBuffer, sizeof(jsonBuffer));
     printf("Loaded JSON: %s\n", jsonBuffer);
     custom_config = json::parse(jsonBuffer);
+
+    JsonPreferences custom_config_1;
+    custom_config_1.putChar("putChar", 1);
+    custom_config_1.putString("putString", "hello");
+    custom_config_1.putInt("putInt", 2);
+    custom_config_1.putLong("putLong", 3);
+    printf("%s\n", custom_config_1.toString().c_str());
 }
 
 void loop()

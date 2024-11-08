@@ -422,6 +422,7 @@ User/lib/utools/src/logger/logger.cpp \
 User/lib/utools/src/ufmt/f_string.cpp \
 User/lib/utools/src/umempool/mempool_ipml.cpp \
 User/lib/utools/src/utime/time_configurator.cpp \
+User/module/JsonPreferences/JsonPreferences.cpp \
 User/peripheral/memory_ee/memory_ee.cpp \
 User/router/hu_entry.cpp \
 build/main.cpp
@@ -595,6 +596,7 @@ C_INCLUDES =  \
 -IUser/lib/utools/src/umemory \
 -IUser/lib/utools/src/umempool \
 -IUser/lib/utools/src/utime \
+-IUser/module/JsonPreferences \
 -IUser/module/fzi_map \
 -IUser/module/language \
 -IUser/module/sensor_calibration \

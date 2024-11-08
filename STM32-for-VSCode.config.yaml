@@ -86,6 +86,7 @@ includeDirectories:
   - User/lib/ee/**
   - User/lib/lvgl/**
   - User/module/**
+  - User/module/JsonPreferences/**
   - User/module/ui/**
   - User/peripheral/**
   - User/peripheral/lcd/**
@@ -109,6 +110,7 @@ sourceFiles:
   - User/lib/ee/**
   - User/lib/lvgl/**
   - User/module/**
+  - User/module/JsonPreferences/**
   - User/module/ui/**
   - User/peripheral/**
   - User/peripheral/lcd/**
@@ -117,7 +119,6 @@ sourceFiles:
   - User/peripheral/sys/**
   - User/peripheral/IIC/**
   - User/peripheral/delay/**
-  
   - User/router/**
   - User/config/**
 
