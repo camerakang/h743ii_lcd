@@ -5,10 +5,10 @@
 #include "ft5206.h"
 #include "lvgl.h"
 #include "memory_ee.h"
-#include "sys_config.h"
 #include "JsonPreferences.h"
 // JSON 字符串缓冲区
-char jsonBuffer[JSON_SIZE];
+JsonPreferences custom_config;
+
 void setup()
 {
     // 1、初始化外设
@@ -24,21 +24,15 @@ void setup()
     {
         printf("EEPROM initialization failed\n");
     }
-    
-    // 保存 JSON 到 EEPROM
-    SaveJsonToEEPROM(custom_config_string.c_str());
 
-    // 从 EEPROM 加载 JSON 字符串
-    LoadJsonFromEEPROM(jsonBuffer, sizeof(jsonBuffer));
-    printf("Loaded JSON: %s\n", jsonBuffer);
-    custom_config = json::parse(jsonBuffer);
-
-    JsonPreferences custom_config_1;
-    custom_config_1.putChar("putChar", 1);
-    custom_config_1.putString("putString", "hello");
-    custom_config_1.putInt("putInt", 2);
-    custom_config_1.putLong("putLong", 3);
-    printf("%s\n", custom_config_1.toString().c_str());
+    custom_config.putChar("putChar", 1);
+    custom_config.putString("putString", "hello");
+    custom_config.putInt("putInt", 2);
+    custom_config.putLong("putLong", 3);
+    printf("%s\n", custom_config.toString().c_str());
+    LoadPreferencesFromEEPROM(custom_config);
+    custom_config.putChar("putchar1", 3);
+    SavePreferencesToEEPROM(custom_config);
 }
 
 void loop()

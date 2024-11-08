@@ -2,7 +2,8 @@
 #include "NimaLTD.I-CUBE-EE_conf.h"
 #include <string.h>
 #include <stdio.h>
-
+#include <stdexcept>
+#include <cstdio>
 
 bool InitializeEEPROM(uint32_t size)
 {
@@ -45,5 +46,35 @@ void LoadJsonFromEEPROM(char *buffer, uint32_t bufferSize)
     else
     {
         printf("Invalid buffer or buffer size\n");
+    }
+}
+
+void SavePreferencesToEEPROM(JsonPreferences &prefs)
+{
+    // 将 JsonPreferences 对象转换为 JSON 字符串
+    std::string jsonStr = prefs.toString();
+
+    // 调用现有的函数保存到 EEPROM
+    SaveJsonToEEPROM(jsonStr.c_str());
+}
+
+void LoadPreferencesFromEEPROM(JsonPreferences &prefs)
+{
+    char buffer[JSON_SIZE]; // 定义用于存储从 EEPROM 读取的数据的缓冲区
+
+    // 从 EEPROM 读取 JSON 字符串
+    LoadJsonFromEEPROM(buffer, sizeof(buffer));
+
+    try
+    {
+        // 使用 fromString 方法解析缓冲区中的 JSON 字符串并更新偏好设置
+        prefs = JsonPreferences::fromString(buffer);
+
+        // 输出 JSON 对象的字符串表示形式
+        printf("Loaded preferences: %s\n", prefs.toString().c_str());
+    }
+    catch (const std::runtime_error &e)
+    {
+        fprintf(stderr, "Failed to load preferences: %s\n", e.what());
     }
 }

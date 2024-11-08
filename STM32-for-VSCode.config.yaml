@@ -41,8 +41,8 @@ cFlags:
 
 cxxFlags: 
   - -fno-rtti
-  - -fno-exceptions
   - -std=c++20
+  - -fexceptions
 assemblyFlags: 
   - -Wall
   - -fdata-sections

@@ -297,6 +297,16 @@ public:
      * @return 删除操作成功与否
      */
     bool remove(const char *key); // 删除指定键
+
+    /**
+     * @brief 从 JSON 格式的字符串创建 JsonPreferences 对象
+     *
+     * 静态方法，用于解析 JSON 字符串并生成对应的 JsonPreferences 对象
+     *
+     * @param jsonStr JSON 格式的字符串
+     * @return 解析后的 JsonPreferences 对象
+     */
+    static JsonPreferences fromString(const std::string &jsonStr);
     std::string toString() const;
 
 private:

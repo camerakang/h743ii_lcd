@@ -423,6 +423,7 @@ User/lib/utools/src/ufmt/f_string.cpp \
 User/lib/utools/src/umempool/mempool_ipml.cpp \
 User/lib/utools/src/utime/time_configurator.cpp \
 User/module/JsonPreferences/JsonPreferences.cpp \
+User/module/JsonPreferences/example.cpp \
 User/peripheral/memory_ee/memory_ee.cpp \
 User/router/hu_entry.cpp \
 build/main.cpp
@@ -629,7 +630,7 @@ endif
 # Add additional flags
 CFLAGS += -Wall -fdata-sections -ffunction-sections -std=c18 
 ASFLAGS += -Wall -fdata-sections -ffunction-sections 
-CXXFLAGS += -fno-exceptions -fno-rtti -std=c++20 
+CXXFLAGS += -fexceptions -fno-rtti -std=c++20 
 
 # Generate dependency information
 CFLAGS += -MMD -MP -MF"$(@:%.o=%.d)"
