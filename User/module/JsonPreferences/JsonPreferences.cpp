@@ -246,18 +246,52 @@ std::string JsonPreferences::getString(const char *key, const std::string &defau
     return defaultValue;
 }
 
+
+
+/**
+ * @brief 检查给定的键是否存在于 JSON 对象中
+ * 
+ * 该函数用于确定一个键是否存在于 JSON 对象中，以便决定是否需要更新或添加该键的值
+ * 
+ * @param key 要检查的键名
+ * @return true 如果键存在于 JSON 对象中
+ * @return false 如果键不存在于 JSON 对象中
+ */
 bool JsonPreferences::isKey(const char *key)
 {
     // 检查键是否存在于 JSON 对象中
     return preferences.contains(key);
 }
 
+
+
+/**
+ * 清除所有偏好设置
+ * 
+ * 该函数将从偏好设置中移除所有已存储的键值对， essentially 重置 the 偏好设置到其初始状态
+ * 没有参数传递给这个函数，它返回一个布尔值来指示操作是否成功
+ * 
+ * @return 总是返回 true，因为 clear 操作在逻辑上不涉及失败的情形
+ */
 bool JsonPreferences::clear()
 {
     // 清除所有键值对
     preferences.clear();
     return true; // 返回 true 表示清除成功
 }
+
+
+/**
+ * @brief 删除指定键的偏好设置
+ * 
+ * 该函数接受一个键名字符串作为参数，从偏好设置中删除与该键名关联的值
+ * 如果键名为空或者键不存在于偏好设置中，则函数返回 false
+ * 否则，函数将成功删除键对应的值，并返回 true
+ * 
+ * @param key 要删除的键名，键名不能为空
+ * @return true 如果键存在且删除成功
+ * @return false 如果键为空或不存在
+ */
 bool JsonPreferences::remove(const char *key)
 {
     if (!key)
@@ -270,6 +304,17 @@ bool JsonPreferences::remove(const char *key)
     }
     return false; // 返回 false 表示键不存在
 }
+
+
+
+/**
+ * 将JsonPreferences对象转换为字符串表示形式。
+ * 
+ * 此函数用于生成当前JsonPreferences对象的JSON字符串表示。
+ * 它通过调用底层json对象的dump方法来实现，该方法负责序列化JSON对象为字符串。
+ * 
+ * @return 返回包含JSON对象序列化结果的字符串。
+ */
 std::string JsonPreferences::toString() const
 {
     return preferences.dump();
